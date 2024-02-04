@@ -1,0 +1,73 @@
+\usepackage[
+  paper=letterpaper,
+  nofoot,nomarginpar,
+  includehead,
+  margin=1cm
+]{geometry}
+
+\usepackage[T1]{fontenc}
+
+\usepackage{unicode-math}
+\setmainfont{TeX Gyre Schola}
+\setmathfont{TeX Gyre Schola Math}
+
+\setlength{\columnsep}{2em}
+
+\setlength{\parindent}{0.5em}
+\setlength{\parskip}{0.5\smallskipamount}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.3em}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headsep}{1em}
+\fancyhead[L]{\textbf{Rule Changes from {\AS} to {\AP}}}
+\fancyhead[C]{}
+\fancyhead[R]{\textbf{Page \thepage}}
+\fancyfoot[L,C,R]{}
+\setlength{\footskip}{4pt}
+
+\setlength{\arrayrulewidth}{0.4pt}
+\setlength{\columnseprule}{0.4pt}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\usepackage{enumitem}
+\setlist[itemize]{
+  label=--,
+  leftmargin=1em,
+  rightmargin=1em,
+  nosep,
+  parsep=\parskip
+}
+
+\usepackage{titlesec}
+
+\newlength{\interwordspace}
+\setlength{\interwordspace}{\fontdimen2\font plus \fontdimen3\font minus \fontdimen4\font}
+
+\titleformat{\section}{\bfseries}{}{0em}{\MakeUppercase}
+\titlespacing{\section}{0pt}{1.3ex plus .1ex minus .1ex}{0.3ex minus .1ex}
+
+\titleformat{\subsection}[runin]{\bfseries}{}{0em}{}[:]
+\titlespacing{\subsection}{0em}{0em}{\interwordspace}
+%\titlespacing{\subsection}{0em}{0em}{0.3em}
+
+\let\originalhline\hline
+\renewcommand{\hline}{\originalhline\\[-1em]}
+\newcommand{\tablecaption}[1]{
+  \centering
+  \caption{#1}
+  \medskip
+}
+
+\newcommand{\AS}{\itshape Air Superiority}
+\newcommand{\AP}{\itshape Air Power}
+\newcommand{\FP}  {\text{FP}}
+\newcommand{\FPs} {\text{FPs}}
+\newcommand{\HFP} {\text{HFP}}
+\newcommand{\HFPs}{\text{HFPs}}
+\newcommand{\VFP} {\text{VFP}}
+\newcommand{\VFPs}{\text{VFPs}}
+\newcommand{\CC}  {\text{CC}}
+\renewcommand{\deg}{\ensuremath{^\circ}}
