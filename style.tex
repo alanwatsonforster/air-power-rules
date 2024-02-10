@@ -1,3 +1,6 @@
+
+% Use the full page with 1 cm margins.
+
 \usepackage[
   paper=letterpaper,
   nofoot,nomarginpar,
@@ -5,64 +8,154 @@
   margin=1cm
 ]{geometry}
 
-\usepackage[T1]{fontenc}
+% Use TeX Gyre Schola for text and math.
 
+\usepackage[T1]{fontenc}
 \usepackage{unicode-math}
 \setmainfont{TeX Gyre Schola}
 \setmathfont{TeX Gyre Schola Math}
 
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{microtype}
+
+% Basic spacing.
+
 \setlength{\columnsep}{2em}
 
-\setlength{\parindent}{0.5em}
-\setlength{\parskip}{0.5\smallskipamount}
-
 \setlength{\parindent}{0em}
-\setlength{\parskip}{0.3em}
+\setlength{\parskip}{0.8ex plus 0.1ex}
 
-\usepackage{fancyhdr}
+% Headers
+
+\newcommand{\therunningtitle}{}
+\newcommand{\runningtitle}[1]{\renewcommand{\therunningtitle}{#1}}
+
 \pagestyle{fancy}
 \setlength{\headsep}{1em}
-\fancyhead[L]{\textbf{Rule Changes from {\AS} to {\AP}}}
+\fancyhead[L]{\textbf{\therunningtitle}}
 \fancyhead[C]{}
 \fancyhead[R]{\textbf{Page \thepage}}
 \fancyfoot[L,C,R]{}
 \setlength{\footskip}{4pt}
+\renewcommand{\headruleskip}{0.1em}
+\addtolength{\headheight}{\headruleskip}
+
+% Line weights
 
 \setlength{\arrayrulewidth}{0.4pt}
 \setlength{\columnseprule}{0.4pt}
 \renewcommand{\headrulewidth}{0.4pt}
 
-\usepackage{enumitem}
+% Add a little bit of space after \hline
+
+\let\originalhline\hline
+\renewcommand{\hline}{\originalhline\\[-1em]}
+
+% Lists
+
 \setlist[itemize]{
   label=--,
-  leftmargin=1em,
-  rightmargin=1em,
+  leftmargin=1.5em,
+  rightmargin=1.5em,
+  nosep,
+  parsep=\parskip
+}
+\setlist[enumerate]{
+  leftmargin=1.5em,
+  rightmargin=1.5em,
   nosep,
   parsep=\parskip
 }
 
-\usepackage{titlesec}
+\newcommand{\itemparagraph}[1]{\item {\bfseries #1}}
 
-\newlength{\interwordspace}
-\setlength{\interwordspace}{\fontdimen2\font plus \fontdimen3\font minus \fontdimen4\font}
+% Sections
 
-\titleformat{\section}{\bfseries}{}{0em}{\MakeUppercase}
-\titlespacing{\section}{0pt}{1.3ex plus .1ex minus .1ex}{0.3ex minus .1ex}
+\setcounter{secnumdepth}{3}
 
-\titleformat{\subsection}[runin]{\bfseries}{}{0em}{}[:]
-\titlespacing{\subsection}{0em}{0em}{\interwordspace}
-%\titlespacing{\subsection}{0em}{0em}{0.3em}
+\newcommand{\beforesectionnumber}{}
+\newcommand{\aftersectionnumber}{}
+\newcommand{\beforesubsectionnumber}{}
+\newcommand{\aftersubsectionnumber}{}
+\newcommand{\beforesubsubsectionnumber}{}
+\newcommand{\aftersubsubsectionnumber}{}
 
-\let\originalhline\hline
-\renewcommand{\hline}{\originalhline\\[-1em]}
+\titleformat{\section}
+    [block]
+    {\filcenter\large\bfseries}
+    {\beforesectionnumber\thesection\aftersectionnumber}
+    {\wordsep}
+    {\MakeUppercase}
+\titlespacing{\section}{0pt}{2.4ex plus .1ex minus .1ex}{1.3ex minus .1ex}
+
+\titleformat{\subsection}
+    {\filright\bfseries}
+    {\beforesubsectionnumber\thesubsection\aftersubsectionnumber}
+    {\wordsep}
+    {\MakeUppercase}
+\titlespacing{\subsection}{0pt}{1.8ex plus .1ex minus .1ex}{0.3ex minus .1ex}
+
+\titleformat{\subsubsection}
+    {\filright\bfseries\itshape}
+    {\beforesubsubsectionnumber\thesubsubsection\aftersubsubsectionnumber}
+    {\wordsep}
+    {\MakeUppercase}
+\titlespacing{\subsubsection}{0pt}{1.2ex plus .1ex minus .1ex}{0.3ex minus .1ex}
+
+\newcommand{\afterparagraphtitle}{}
+\titleformat{\paragraph}[runin]{\bfseries}{}{0.5em}{}[\afterparagraphtitle]
+\titlespacing{\paragraph}{0em}{0em}{\wordsep}
+
+\newcommand{\advancedrules}{
+  \vspace{1ex}
+  \begin{center}
+    \bfseries{ADVANCED RULES}
+  \end{center}
+  \vspace{0.5ex}
+}
+
+\newcommand{\trainingnote}[1]{
+  \vspace{1ex}
+  \begin{center}
+    \framebox{\begin{minipage}{0.9\linewidth} #1\end{minipage}}
+  \end{center}
+  \vspace{1ex}
+}
+
+% Captions
+
 \newcommand{\tablecaption}[1]{
   \centering
   \caption{#1}
   \medskip
 }
 
-\newcommand{\AS}{\itshape Air Superiority}
-\newcommand{\AP}{\itshape Air Power}
+% Style for the standard title page
+
+\let\originaltitle\title
+\renewcommand{\title}[1]{\originaltitle{\bfseries\Large\MakeUppercase{#1}}}
+\let\originalauthor\author
+\renewcommand{\author}[1]{\originalauthor{\itshape\normalsize{#1}}}
+\let\originaldate\date
+\renewcommand{\date}[1]{\originaldate{\normalsize{#1}}}
+
+% Abbreviations
+
+\newcommand{\AirSup}{\itshape Air Superiority}
+\newcommand{\AirStr}{\itshape Air Strike}
+\newcommand{\DF}{\itshape Desert Falcons}
+\newcommand{\EOTG}{\itshape Eagles of the Gulf}
+\newcommand{\TSOH}{\itshape The Speed of Heat}
+\newcommand{\AirPow}{\itshape Air Power}
+\newcommand{\APJ}{\itshape Air Power Journal}
+
 \newcommand{\FP}  {\text{FP}}
 \newcommand{\FPs} {\text{FPs}}
 \newcommand{\HFP} {\text{HFP}}
@@ -70,4 +163,5 @@
 \newcommand{\VFP} {\text{VFP}}
 \newcommand{\VFPs}{\text{VFPs}}
 \newcommand{\CC}  {\text{CC}}
+
 \renewcommand{\deg}{\ensuremath{^\circ}}
