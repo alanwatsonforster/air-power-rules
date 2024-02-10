@@ -1,0 +1,191 @@
+\section{Changing Aircraft Speeds}
+
+Aircraft speed can change during play as a result of using various power settings, and as a result of doing climbs, dives, turns and maneuvers. To keep things simple, an aircraft's start speed is used as its speed for an entire game turn. Activities which may affect that speed, are noted in the log as the aircraft moves and any speed changes which result are determined after the aircraft completes its move. The changed speed is logged in the next turn as the aircraft's new start speed.
+
+\subsection{Power Settings}
+
+In the game, aircraft engines produce thrust in terms of accel points; how many depends on the aircraft's chosen power setting and current configuration. At the beginning of each aircraft's move, the player must select one of the four allowed power settings. If a new setting is not selected, the setting from the previous turn remains in effect. Note the selected power setting code on the Power line of the Log.
+
+\paragraph{Power Settings.} The four power settings are: Idle, Normal, Military, and Afterburner (Codes: I, N, M, and AB).
+
+\begin{itemize}
+    \itemparagraph{Idle.} This is the minimum setting that will keep a jet engine functioning; it provides no accel points, but on the turn in which Idle power is selected, the aircraft start speed is immediately reduced by the FP amount shown on the power chart. (This is the only game action that will change an aircraft's speed within the same game turn before it moves.)
+
+    \itemparagraph{Normal.} Normal power is an economic setting used to conserve fuel and increase range. Normal power provides enough thrust to maintain an aircraft's current speed if that speed is equal to or less than its listed cruise speed and no drag producing maneuvers or climbs are performed. No accel points are received.
+
+    \itemparagraph{Military.} Military power is the maximum setting for a jet engine not having an Afterburner. Selecting Military power provides Accel points which can result in increased speed when sufficient points are accumulated. The minimum in Accel points that can be taken in Military (unless damaged) is 0.5; the maximum is the value shown on the Power Setting Chart for the aircraft's configuration.  The player may select any value of accel points within that range. Write the amount in the Accel line of the Log.
+
+    \itemparagraph{Afterburner.} Afterburners provide increased thrust by dumping extra fuel directly into a jet engine's tailpipe to create a blowtorch effect. This provides extra thrust at a great cost in fuel consumption. Afterburner power provides more accel points than Military. The minimum Accel points a player may take while in AB is maximum Military power plus 0.5; the maximum allowed is the value shown on the Power Setting Chart. The player may select any value of accel points within that range. Aircraft not equipped with an afterburner have dashes instead of numbers.
+
+\end{itemize}
+
+\paragraph{Rapid Power Response.} An aircraft is normally limited in its ability to increase its power setting from turn to turn. Normal aircraft may safely increase power by one or two levels per game turn. For example, power may be increased from Idle to Military, but not from Idle to Afterburner. Aircraft may decrease their power setting without limit. Aircraft noted as being Rapid Power Response capable on their ADC are unrestricted and may increase power any amount each turn. Normal aircraft may increase power from Idle to Afterburner at the risk of flaming out (see 6.7).
+
+\paragraph{Decel Point Penalty for Insufficient Power.} If an aircraft selects Idle or Normal power, and its speed is greater than its listed Cruise speed, it incurs one Decel point in addition to any others received that turn.
+
+\subsection{Acceleration \& Deceleration Points}
+
+Aircraft speed will increase or decrease as a result of the accel points and decel points it accumulates in a game-turn.
+
+\paragraph{Accel Points.} Accel points represent the energy gain from high power settings and/or from diving flight. Accel points gained will cancel an equal number of any decel points gained.
+
+\paragraph{Decel Points.} Decel points represent the energy lost due to using low power settings, aircraft maneuvering, and/or climbing flight. The advanced rules discuss additional sources of decel points. Decel points will cancel an equal number of any accel points gained.
+
+\paragraph{Speed Change Determination Procedure.} When an aircraft completes its move, it may have received both accel and decel points. Note the totals of each, then subtract any secel points from accel points. If the result is 0.0, there is no change in aircraft speed for the turn and you can ignore all following steps. If the result is positive, the aircraft may gain speed (accelerate). If the result is negative, the aircraft may lose speed (decelerate).
+
+\paragraph{Speed Gain.} Add 0.5 to the aircraft's current speed for each 2.0 accel points left after subtracting decel.  Any unused Accel points (up to 1.5) are carried forward to the next game turn and will be added to any accel points received in that turn.
+
+Example: An aircraft accumulating 6.0 accel points and 3.0 decel has a net accel of 3.0. Two of those accel are used to increase its speed by 0.5 and the rest is carried to the next turn.
+
+\paragraph{Speed Loss.} Subtract 0.5 from the aircraft's current speed for each 2.0 decel points left. Any unused decel points (up to 1.5) are carried forward to the next game turn and will be added to any decel points received in that turn.
+
+Example: An aircraft accumulating 2.5 accel and 5.0 decel has a net accel of -2.5, or in other terms has 2.5 decel left over. Two of those decel are used to reduce its speed by 0.5. The remaining 0.5 decel is carried to the next game turn.
+
+\paragraph{Maximum Deceleration.} Regardless of the number of decel points accumulated in a turn, no aircraft can end up with a start speed of less than 0.0. When an aircraft's speed reaches 0.0, all remaining Decel points are ignored and considered lost.
+
+\paragraph{New Start Speed.} The sum of the aircraft's current speed plus any speed gain or loss at the end of its flight becomes the aircraft's start speed for the next game turn. Accel and decel points are almost always received in steps of 0.5 points. If the aircraft is damaged, Power setting points may be halved, and consequently they may produce fractional steps of accel or decel points. In order to keep the math simple, no fraction of less than 0.25 is ever used in play.
+
+\paragraph{Rapid Accel Aircraft.} An aircraft noted on its ADC as being Rapid Accel capable is considered to be an exceptionally clean design which speeds up quicker than normal. This kind of aircraft receives a speed increase of 0.5 FP for each 1.5 accel points instead of each 2.0. It decelerates normally.
+
+Example: A rapid accel aircraft gaining 6.0 accel points and 2.0 decel points in a turn, would gain 1.0 of speed. Its net accel is 4.0 ($6.0 - 2.0$). Each 1.5 of Accel gains 0.5 speed so 3.0 Accel is good for the 1.0 speed increase and the left over 1.0 Accel would be carried to the next game turn.
+
+Reminder:  Do not confuse Accel and Decel points with flight points. They are separate things.
+
+\subsection{Speed Limits}
+
+Aircraft are restricted in the minimum and maximum speeds they may use.
+
+\paragraph{Minimum Allowed Speed.} An aircraft must maintain a minimum speed or it will stall. The Minimum-Maximum Velocity Chart (MMVC) of the ADC shows the minimum allowed speeds in each altitude band for each aircraft configuration. This minimum speed is the smaller of the two numbers listed. An aircraft with a start speed below this minimum is stalled, and must check to see if it enters departed flight. Whether stalled or departed, it will use the abnormal flight procedures (see 6.4) instead of regular flight.
+
+\paragraph{Maximum Allowed Speed.} The Minimum-Maximum Velocity Chart shows the maximum allowed speed for the aircraft by altitude band and con-figuration for level or climbing flight. The Dive Speed column indicates the maximum speed allowed (regardless of configuration) after a turn of diving.
+
+\paragraph{Acceleration Limits.} If an aircraft is in level or climbing flight, Accel points that would push it beyond its maximum speed on the MMVC (for the altitude band in which it ends its flight) are unusable and ignored. If an aircraft in level or climbing flight is at its maximum speed, up to 1.5 Accel points may be carried forward; excess Accel are lost (because they would accelerate the aircraft beyond its maximum speed).
+
+If an aircraft is in diving flight, it may use accel points to accelerate beyond the maximum speed on the MMVC up to the indicated dive speed (for the altitude band in which it ends its flight); configuration has no effect on dive speed. If an aircraft in diving flight is at its dive speed, up to 1.5 accel points may be carried forward; excess accel points are lost (because they would accelerate the aircraft beyond its dive speed.)
+
+\paragraph{Exceeding Level and Climbing Speed Limits.} An aircraft choosing level or climbing flight may, if the previous turn involved diving, have a start speed greater than its maximum speed on the MMVC. If at the end of the non-diving turn, after accel/decel effects are determined, the speed still exceeds maximum allowed, a speed fadeback is performed.
+
+\paragraph{Speed Fadeback.} If a new start speed is determined to still be illegal, it must be reduced a further 1.0 or to the aircraft's maximum speed, whichever is greater.
+
+Fadeback Example: An aircraft which dove on the previous turn has a start speed of 12.0 which is in its allowed dive speed range. It chooses level flight, where its maximum allowed speed is 9.0, and maneuvers such that its power accel nearly balances decel. At the end of its move it loses 0.5 speed due to decel. Its new start speed is 11.5, still greater than its maximum level so a fadeback penalty applies reducing its new start speed to 10.5. In the new turn it stays level accumulating only enough decel to lose 1.0 speed. The subsequent start speed is 9.5, still above the limit of 9.0, so a fadeback applies, again reducing speed to 9.0.
+
+\paragraph{Diving Speed Limits.} An aircraft in diving flight may never have a start speed greater than its dive speed on the MMVC. If (at the end of its move) its new start speed would be higher than its allowed dive speed, its start speed is automatically reduced to maximum dive speed. This usually occurs when an aircraft enters a new altitude band having a lesser dive speed.
+
+\subsection{Abnormal Flight (Stalls and Departures)}
+
+An aircraft which does not maintain sufficient speed stalls. A stalled aircraft rapidly loses altitude, but remains under minimal control. A stalled aircraft has a chance of going out of control meaning it departs controlled flight. If it does, it enters departed flight and tumbles or spins uncontrollably earthward until it crashes or the pilot regains control.
+
+\paragraph{Check for Departed Flight.} If the Start speed for an aircraft is less than its minimum allowed speed at the beginning of a turn, the aircraft is stalled. All stalled aircraft must check to see if they depart from controlled flight. During the Stalled Aircraft Phase, roll the die once for each stalled aircraft and apply any appropriate modifiers (see play aid tables). If the result is 5 or less, the aircraft enters Departed Flight; otherwise, it remains in Stalled Flight.
+
+\paragraph{Stalled Flight Procedure.} Aircraft in stalled flight may not change map location or facing. An aircraft in stalled flight loses altitude levels equal to its start speed FPs plus one for each turn it remains stalled (round 0.5 up). The aircraft receives 0.5 accel points per altitude level lost on the first game turn of the stall (in subsequent game turns, it receives 1.0 Accel points per altitude level lost). Accel points may also be received from the aircraft power setting.
+
+\paragraph{Ending A Stall.} An aircraft will exit stalled flight at the beginning of the first turn in which its start speed is no longer less than its current minimum speed (which may have changed from the original stall speed due to altitude loss, or configuration change). Upon exiting the stall, the aircraft may only perform level flight or diving flight. It may go directly into a vertical dive if desired.
+
+\paragraph{Configuration Effects.} Configuration has an effect on stall speed. An aircraft may jettison external stores in order to reduce its configuration from DT to 1/2 or CL, or from 1/2 to CL. This change in configuration may change the aircraft's stall speed helping it to recover sooner.
+
+\paragraph{Departed Flight Procedure.} An aircraft in Departed Flight remains in Departed Flight until it executes a successful recovery. While departed, the aircraft's facing randomly changes as follows:
+
+\begin{itemize}
+
+    \item Roll the die once to determine direction of facing change. Odd results change the facing left; even results change the facing right.
+
+    \item Roll the die again; the result is the number of facing changes in the designated direction. If the aircraft is on a hexside, shift it to the adjacent hex in the direction of its facing changes even if it reverses direction. Departed aircraft do not otherwise change their map location.
+
+    \item An aircraft in departed flight loses altitude levels equal to its start speed FPs plus two for each turn of departed flight (round 0.5 up).
+
+\end{itemize}
+
+Aircraft speed cannot be changed while in departed flight and all accel/decel points are ignored. Power setting does not aid recovery or affect speed. Aircraft that enter departed flight with a power selling of A/B or military risk flame-out.
+
+\paragraph{Recovering From Departed Flight.} During the Stalled Aircraft phase of each turn, each departed aircraft checks to see if it recovers from departed flight. Roll a die and apply any appropriate modifiers. If the result is 6 or less, the aircraft recovers; otherwise, it remains in departed flight.
+
+If the aircraft recovers, it may resume normal flight. Start speed is automatically minimum speed (from the MMVC) or the speed at which it departed (whichever is greater). On the turn of recovery, an aircraft may only choose diving flight (vertical dives are allowed). Exception: a High Pitch Rate capable aircraft may choose level flight.
+
+\advancedrules
+
+\subsection{Speedbrakes}
+
+Most jet aircraft are equipped with speedbrakes. Speedbrakes may be applied once per game turn, at any point in an aircraft's flight, to burn off FPs.  Speedbrakes (when applied) expend FPs up to the amount listed on the speedbrake (SPBR) row of the power chart of the ADC without actually moving the aircraft.
+
+The FPs burned may be either HFPs, or VFPs if in climbing or diving flight. FPs burned by speedbrakes simply go away; they may not be counter toward any required expenditure of FPs such as those for doing turning flight, maneuvers, proportional moves, or combat.
+
+\paragraph{Decel Penalty for Speedbrake Use.} The aircraft receives one decel point for each 0.5 FP burned in speedbraking.
+
+\subsection{Supersonic Speed Effects}
+
+Aircraft flying at speeds approaching or exceeding the speed of sound are affected by the buildup of sonic shock waves and may receive decel penalties and restrictions as outlined below.
+
+\paragraph{The Speed Of Sound.} The speed of sound is referred to as Mach 1.0 (M1). Speeds just under the speed of sound are termed Transonic speeds. Speeds equal to or greater than M1 are termed Supersonic speeds. The actual game speeds that are considered Transonic or M1 vary by Altitude Band (The speed of sound decreases as air temperature decreases with increased altitude). These speeds are summarized in the Transonic/Supersonic Speed Reference Table.
+
+\paragraph{Transonic Speeds.} An aircraft with a start speed 1.0 less than M1 is considered to be at Low Transonic speed. Aircraft with a start speed 0.5 less than M1 are considered to be at High Transonic speed. Aircraft flying at Low Transonic speed, High Transonic speed, or at exactly M1 receive Transonic Decel point penalties. These are listed in the Transonic Drag Table and vary depending on whether the aircraft is a design which suffers from High Transonic Drag (HTD) or benefits from Low Transonic Drag (LTD) or is average (normal). The ADC will note if an aircraft is an HTD or LTD design.
+
+\paragraph{Supersonic Speeds.} An aircraft flying at M1 or faster is in supersonic flight and is subject to the following effects:
+
+\begin{itemize}
+
+    \item An aircraft selecting Idle power loses 0.5 FPs of speed over that listed on the Power Setting Chart.  In addition, the aircraft is subject to the normal 1.0 decel point for being over cruise speed while at idle power.
+
+    \item An aircraft in Normal power receives 2.0 Decel per 0.5 FP of speed over High Transonic. In addition, the aircraft gets 1.0 Decel for flying at greater than cruise speed.
+
+    \item An aircraft in Military power receives 1.0 Decel per 0.5 FP of speed over High Transonic.
+
+    \item An aircraft in Afterburner power is not penalized as for other power settings.
+
+    \item An aircraft which uses Speedbrakes may lose up to 0.5 FPs of speed over the amount listed in the power chart.
+
+    \item An aircraft which turns (even at the EZ rate) while supersonic incurs 1.0 additional decel point for the game turn.
+
+    \item An aircraft which performs rolling maneuvers while supersonic incurs 1.0 additional decel point for the game turn.
+
+\end{itemize}
+
+\paragraph{Poor Supersonic Maneuvering Aircraft (PSSM).} Some aircraft, usually early delta-wing designs without tails or canards, maneuver poorly when at supersonic speeds due to shifts in their aerodynamic center of lift.  Such aircraft are noted on their ADC. They are penalized as follows when Supersonic:
+
+\begin{itemize}
+
+    \item The maximum allowed Turn-Rate of a PSSM aircraft is reduced by one level when at supersonic speeds (but never to less than HT).
+
+    \item A PSSM aircraft which turns at supersonic speeds (even at the EZ rate) incurs 2.0 additional decel points instead of 1.0.
+
+    \item A PSSM aircraft performing a roll maneuver at supersonic speed incurs 2.0 additional decel points per roll executed instead of 1.0.
+
+\end{itemize}
+
+\paragraph{Good Supersonic Maneuvering Aircraft (GSSM).} An aircraft noted as being a GSSM aircraft maneuvers well at Supersonic speeds. They receive the following benefits:
+
+\begin{itemize}
+
+    \item GSSM aircraft do not incur the decel point penalty for turning while at supersonic speeds.
+
+    \item GSSM aircraft are not subject to the Decel point penalty for doing rolling maneuvers while supersonic.
+
+\end{itemize}
+
+\paragraph{Supersonic Delta Aircraft.} Some Air Superiority game aircraft were noted as being Supersonic Deltas. These are now treated as Low Transonic Drag aircraft under Air Power rules.
+
+\paragraph{Supersonic Effects On Climb Capability.} At supersonic speeds reduce the aircraft's CCC numbers to 2/3ds that listed due to shock wave effects on wing lift. (The wings are less efficient due to shifting of aerodynamic center of lift).
+
+\subsection{Engine Flame-Outs}
+
+Rapid throttle movements or uncontrolled yaw rates can flame-out jet engines which are at high power settings.
+
+\paragraph{When Does A Jet Flame-Out?} An aircraft may experience a flame-out if:
+
+\begin{itemize}
+    \item it is at Military or Afterburner power and in departed flight.
+
+    \item it is not Rapid Power Response and changes power setting from Idle to Afterburner.
+
+    \item it starts the turn above its maximum altitude ceiling and selects any power setting other than Idle.
+
+\end{itemize}
+
+\paragraph{Flame-Out Procedure.} If an aircraft meets one of the above conditions, roll a die for each engine at the start of its move. A flame-out occurs on a roll of 4 or less. Apply a die roll modifier of $-1$ for each turn an aircraft has been above its ceiling. If a flame-out is called for on the damage tables, it occurs automatically.
+
+Note: The number of engines an aircraft has is indicated on the Power Chart by dots to the right of the chart title. One dot per engine is used.
+
+\paragraph{Effects of Flame-Out.} A single-engine jet is treated as if it is in Idle power. On multi-engine aircraft, if half (or less) of the engines flame-out, the aircraft produces half normal Accel points (keep fractions). If more than half (but not all) are flamed out, the aircraft produces 1/3 normal Accel points (drop fractions). If all engines are out, the aircraft is at idle power.
+
+\paragraph{Engine Relights.} Attempts to restart flamed out engines are allowed if an aircraft is not in abnormal flight and during its turn it performs or meets the same criteria as for performing Damage Control (see chapter 10). Roll a die once at the end of the aircraft's flight phase. On the first attempt, 2 or less indicates success; on the second and third attempts, 4 or less indicates success.
+
+One attempt is allowed per engine per turn beginning on the game-turn following the flame-out. A maximum of three relight attempts per engine is allowed; if all three relight attempts are unsuccessful, the engine is permanently flamed out. (If in a single engine jet, the pilot might consider reading the ejection rules).
