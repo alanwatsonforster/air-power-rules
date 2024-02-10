@@ -1,0 +1,122 @@
+\documentclass[10pt]{article}
+
+\input style.tex
+
+\title{Updated Rules Project}
+\author{Alan Watson Forster}
+\date{5 February 2024}
+\runningtitle{Updated Rules Project}
+
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+
+\twocolumn
+\thispagestyle{empty}
+\maketitle
+\suppressfloats
+
+\section*{Aims}
+
+This project aims to produce updated rules for {\AirPow}.
+
+\section*{Context}
+
+At the time of writing, there are several sets of rules available:
+\begin{enumerate}
+    \item The original {\AirSup} and {\AirStr} rules from 1987, with extensions in {\DF} and {\EOTG}. I understand that a limited number of copies of {\AirSup} are still available. Nevertheless, these rules are considered obsolete.
+    \item The first-edition {\AirPow} rules, with official errata, published in 1992 with {\TSOH}. Again, I understand that a very limited number of copies are still available.
+    \item Several proposals for second-edition rules outlined by J.D.\ Webster mainly in {\APJ} during the 1990s.
+    \item The second-edition {\AirPow} rules, edited by Malcolm Pipes and published in 2022 on the \href{https://airpower.groups.io/g/main}{airpower email group} site. The current text is labeled “v2.4”. Crucially, it is available in an editable format.
+\end{enumerate}
+
+\section*{Rationale}
+
+There is already a set of second-edition rules. Why is the project necessary?
+\begin{itemize}
+    \item The second-edition rules do not fully incorporate previous errata and have certain errors.
+    \item Where they incorporate errata, it is often inserted literally rather than changing the text to include the sense of the errata.
+    \item There is no traceability. Changes have been made, but there is no way to see what changed or why.
+    \item There are no internal hyperlinks for cross references.
+    \item There is no attempt to incorporate examples or explanations. Indeed, there is little effort to distinguish examples or explanations in the original text.
+    \item Many of the diagrams have not been fixed.
+    \item The text needs copy editing and, in certain places, could benefit from being rewritten or perhaps reorganized.
+    \item The text still refers to pilots, crew, and players using masculine pronouns. That was understandable when the first-edition rules were written, but nevertheless it needs correcting .
+    \item I think it would be helpful to incorporate diagrams and tables into the text (and also have them on the play-aid sheets). With printed rules, this separation reduced costs and, to a large degree, was more convenient. When viewed on the screen, these considerations are different.
+\end{itemize}
+
+\section*{Versions}
+
+There will be several different versions of the rules and play aids, each based on the previous one.
+
+\begin{itemize}
+    \item Version 1A will correspond to the original first-edition rules without the official errata.
+    \item Version 1B will incorporate the official errata published in {\APJ} \#24.
+    \item Version 1C will have additional changes from authoritative sources, including statements by J.D.\ Webster or Felix Hack’s article in {\APJ} \#36.
+    \item Version 1D will use gender-neutral language.
+    \item Version 1E will have corrected and redrawn diagrams.
+    \item Version 2A will incorporate changes from the Malcolm Pipe’s second-edition rules. Not all changes will be adopted since some seem to have issues.
+    \item Version 2B will incorporate changes according to additional authoritative sources.
+    \item Version 2C will have additional non-authoritative changes.
+    \item Version 2Z will separate examples, comments, and explanations from the rules. It will include additional examples. Certain rules may be rewritten for clarity and conciseness while preserving their meaning. Parts of the text may be reorganized.
+\end{itemize}
+
+Version 1E and 2B represent attempts to produce modern first- and second-edition rules while remaining faithful to the designer's intent and making only minor changes to the text. Version 2C is more speculative.
+
+The versions up to and including 2C will include only minimal changes to the text, and these changes will largely be drawn from authoritative sources. I’m pretty sure about the nature of these versions. I’m less sure about 2Z, and I am considering designating version 2Z as version 3 since it will include significantly rewritten and reorganized text.
+
+I use “versions” to distinguish my efforts from the other “editions”.
+
+\section*{Products}
+
+I will produce PDF files for versions 1E, 2B, 2C, and 2Z. (Other versions can be generated from the sources.) Furthermore, there will be two options for version 2Z: with comments and examples and without. The latter option will have the advantage of conciseness. 
+
+There will also be a PDF file that shows all of the changes along with their origins. This will give traceability.
+
+\section*{Process}
+
+I will typeset the rules using LaTeX on Overleaf and track the source text using GitHub.
+
+The text for version 1A will be generated by taking Malcolm Pipe’s second-edition text, manually comparing it to the first-edition rules, and making any changes necessary to obtain agreement.
+
+\section*{Design}
+
+The {\AirSup} rules were published in GDW’s house style. This used a san serif font, which favors compactness over readability. The first-edition rules followed this style to a large degree.
+
+I want the rules to be readable and beautiful, but I also wish to preserve some of the design heritage of the earlier rules. 
+
+Therefore, I have maintained a layout with a two-column design, with a line separating the columns, and adapted the header from the GDW editions and the section format from the first-edition rules. 
+
+The major change is to use a serif font designed for readability. I have chosen \href{https://www.gust.org.pl/projects/e-foundry/tex-gyre/schola}{Schola}, based on URW Century Schoolbook and adapted for LaTeX by the GUST foundry as part of the TeX Gyre project. Schola has a version for math, which is useful for text like “$1 ≤ \CC ≤ 2$”. Of the other TeX Gyre fonts, the Palatino version would also be suitable, but it is heavily used for {\itshape Birds of Prey}, and I wish to maintain a clear distinction.
+
+\section*{Gender-Neutral Language}
+ 
+Many of the terms used in the rules are already gender-neutral, including:
+\begin{itemize}
+    \item “player”
+    \item “pilot”
+    \item “navigator”
+    \item “observer”
+    \item “radar-intercept officer”
+    \item “electronic-warfare officer”
+    \item “gunner”
+\end{itemize}
+No change is required to these. However, we need to make the following substitutions: 
+\begin{itemize}
+    \item “they/them/their” for “he/him/his”
+    \item “crewmember” for “crewman”
+    \item “winger” for “wingman” (cf. section “leader”)
+\end{itemize}
+
+\section*{Rewriting and Reorganization}
+
+This section collects my ideas for rewriting and reorganization.
+
+\begin{itemize}
+    \item Move the rules on formations to their own section.
+    \item Move the modifications to the rules for aircraft with properties (e.g., LRR, HPR) to their own appendix.
+    \item Move the rule on loss of thrust with altitude to the section on speed.
+\end{itemize}
+
+\end{document}
+
