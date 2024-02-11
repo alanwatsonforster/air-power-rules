@@ -2,8 +2,8 @@
 
 \input style.tex
 
-%\newcommand{\thisversion}{All Changes}
-\newcommand{\thisversion}{1A}
+\newcommand{\thisversion}{All Changes}
+%\newcommand{\thisversion}{1A}
 %\newcommand{\thisversion}{1B}
 
 \runningtitle{Air Power Rules (\thisversion)}
@@ -29,23 +29,30 @@
 \IfStrEq{\thisversion}{1D}{
     \newcommand{\previousversions}{1A1B1C}
 }{}
-\IfStrEq{\thisversion}{2A}{
+\IfStrEq{\thisversion}{1ED}{
     \newcommand{\previousversions}{1A1B1C1D}
 }{}
-\IfStrEq{\thisversion}{2B}{
+\IfStrEq{\thisversion}{2A}{
     \newcommand{\previousversions}{1A1B1C1D1E}
+}{}
+\IfStrEq{\thisversion}{2B}{
+    \newcommand{\previousversions}{1A1B1C1D1E2A}
 }{}
 
 \IfStrEq{\thisversion}{All Changes}{
-    \newcommand{\addedin}[3]{{\color{orange}[Added in #1: #2] {\color{blue} #3}}}
-    \newcommand{\deletedin}[3]{{\color{orange}[Deleted in #1: #2] {\color{red} #3}}}
-    \newcommand{\changedin}[4]{{\color{orange}[Changed in #1: #2] {\color{red} #3} {\color{blue} #4}}}
+    \newcommand{\addedin}[3]{{\color{orange}[Added in #1 by #2 {\color{blue} #3}]}}
+    \newcommand{\deletedin}[3]{{\color{orange}[Deleted in #1 by #2 {\color{red} #3}]}}
+    \newcommand{\changedin}[4]{{\color{orange}[Changed in #1 by #2 {\color{red} #3} {\color{blue} #4}]}}
     \newcommand{\notein}[2]{{\color{orange}[Note in #1: #2]}}
+    \newcommand{\itemaddedin}[3]{{\color{blue} \item \addedin{#1}{#2}{#3}}}
+    \newcommand{\itemdeletedin}[3]{{\color{red} \item \deletedin{#1}{#2}{#3}}}
 }{
     \newcommand{\addedin}[3]{\IfSubStr{\previousversions\thisversion}{#1}{#3}{}}
     \newcommand{\deletedin}[3]{\IfSubStr{\previousversions\thisversion}{#1}{}{#3}}
     \newcommand{\changedin}[4]{\IfSubStr{\previousversions\thisversion}{#1}{#4}{#3}}
     \newcommand{\notein}[2]{}
+    \newcommand{\itemaddedin}[3]{\addedin{#1}{}{\item #2}}
+    \newcommand{\itemdeletedin}[3]{\deletedin{#1}{}{\item #2}}
 }
 
 \begin{document}
