@@ -10,9 +10,10 @@ This chapter details the procedures for visual detection and tracking of targets
 
 \paragraph{Sighting Eligibility.} Any aircraft or missile which is not currently sighted, and is within visibility range, and is not in the blind arc of the searcher, is eligible to be sighted. Count each two levels of altitude as one hex of range.
 
-\paragraph{Visual Sighting Procedure.} In the Visual Sighting Procedure Phase, the friendly aircraft which is closest to, and not blind to, an unsighted or unpadlocked enemy aircraft or missile is used as the reference aircraft for sighting attempts against it.  If more than one friendly aircraft is the same distance from an enemy, the searching player may designate which of the friendly aircraft will be the searcher.
+\paragraph{Visual Sighting Procedure.} In the Visual Sighting Procedure Phase, the friendly aircraft which is closest to\addedin{1B}{JDW: TSOH errata}{, and not blind to,} an unsighted or unpadlocked enemy aircraft or missile is used as the reference aircraft for sighting attempts against it. If more than one friendly aircraft is the same distance from an enemy, the searching player may designate which of the friendly aircraft will be the searcher. \addedin{1B}{JDW: TSOH errata}{All aircraft on a side within sighting range may participate in the sighting attempt of that enemy even if they were used to padlock other targets in the same sighting phase.}
 
 All ranges and applicable sighting die roll modifiers are determined from the relative positions of the reference aircraft and the targets it is attempting to sight. Unless padlocked by friendly aircraft, previously sighted enemy aircraft or missiles do not remain sighted. Sighting must be successfully accomplished anew to keep them in sight (padlocking previously sighted targets, makes sighting anew automatic).
+
 
 Declare any Padlocks first. Roll the die for each unsighted or unpadlocked eligible target. If the result is less than or equal to the target's visibility number, it is considered sighted for the game-turn. A sighted target is considered sighted to all friendly aircraft.
 
@@ -31,6 +32,13 @@ Padlocking is an administrative procedure used only in the Visual Sighting Phase
     \item Whether lock-ons exist to target.
     \item Whether target is smoking, ejecting flares, or in various weather conditions.
 \end{itemize}
+
+\changedin{1E}{AMW}{
+\addedin{1B}{JDW: TSOH errata}{\paragraph{Look-Up and Smoker Effects} When visually searching for aircraft that are higher, count each four levels of altitude difference as a hex of range instead of two (it is easier to see aircraft outlined against the sky.) Some aircraft are noted on their power charts as being smokers at military power. When Mil power is used the smoker modifier for sighting attempts against them applies. Some results on the Optional damage tables cause aircraft to become smokers regardless of power setting. The modifier applies to them as well.}
+}{
+\paragraph{Look-Up.} When visually searching for aircraft that are higher, count each four levels of altitude difference as one hex of range instead of two. (It is easier to see aircraft outlined against the sky.) 
+\paragraph{Smokers.} Some aircraft are noted on their power charts as being smokers at military power. When military power is used the smoker modifier for sighting attempts against them applies. Some results on the optional damage tables cause aircraft to become smokers regardless of power setting. The modifier applies to them as well.
+}
 
 \paragraph{Gun and IR Missile Attack Restrictions.} A target aircraft may not be attacked by guns or fired on by IR missiles, unless the attacker has visual sight of the target at the start of his movement. However, if an enemy aircraft moved first and was lost from sight due to entering haze or passing through a stratus layer, it may be followed and attacked.
 
@@ -95,7 +103,7 @@ There exists a blocked line of sight between the aircraft and target if:
 
 Note: Aircraft deliberately flying so that terrain is blocking a line of sight between them and a ground unit, are using “Terrain Masking”.
 
-\paragraph{Effects of Camouflage.} Ground units may be camouflaged as a result of being in certain terrain types, or if designated as camouflaged in the scenario instructions. The sighting range of a camouflaged ground unit is half its normal range. Also, sighting is no longer automatic. When sighting a camouflaged unit, roll the die. On a 5 or less it is spotted. A \changedin{1D}{minus 2}{$-2$} modifier applies to the roll if the target is marked by a FAC with smoke, or by laser if the sighting aircraft has laser spot tracker technology. Any crew quality or eyesight modifiers also apply unless VAS is used.
+\paragraph{Effects of Camouflage.} Ground units may be camouflaged as a result of being in certain terrain types, or if designated as camouflaged in the scenario instructions. The sighting range of a camouflaged ground unit is half its normal range. Also, sighting is no longer automatic. When sighting a camouflaged unit, roll the die. On a 5 or less it is spotted. A \changedin{1E}{AWF}{minus 2}{$-2$} modifier applies to the roll if the target is marked by a FAC with smoke, or by laser if the sighting aircraft has laser spot tracker technology. Any crew quality or eyesight modifiers also apply unless VAS is used.
 
 \paragraph{Effects of Activity by Camouflaged Units.}  Any camouflaged AAA or SAM units which fired or launched missiles on the previous game turn may be sighted out to normal range with a die roll as above.
 
@@ -181,7 +189,7 @@ Furthermore, generic AAA and SAM site counters (mobile and static types) may be 
 
 \subsection{Forward Air Controllers (FACs)}
 
-Forward Air Controllers identify targets and direct ground attacks for pilots. A FAC may be ground-based or airborne. A FAC marks a ground target with smoke or with a laser spot. An attack on a marked target receives a \changedin{1D}{Homogenization}{minus 1}{$-1$} die roll modifier.
+Forward Air Controllers identify targets and direct ground attacks for pilots. A FAC may be ground-based or airborne. A FAC marks a ground target with smoke or with a laser spot. An attack on a marked target receives a \changedin{1E}{AWF}{minus 1}{$-1$} die roll modifier.
 
 \paragraph{Ground FAC.} A ground FAC is a vehicle-mounted observer on the ground. A Ground FAC automatically sees any enemy ground units (camou-flaged or not) within six hexes provided LOS is not blocked. It sees units in adjacent hexes even if LOS is blocked.
 
@@ -217,4 +225,4 @@ Hidden units which fire on or launch missiles at aircraft are immediately “det
 
 \paragraph{Close Formations Restrictions.} Wingmen in close formations may not padlock enemy aircraft, nor be counted for the multiple searching aircraft modifier. They may not be the reference aircraft either. They are concentrating on holding formation on the leader. Aircraft in tactical formations have no sighting restrictions.
 
-\paragraph{Close Formation Effects.} Any sighting attempts against aircraft in a close formation are done treating the close formation as a single entity. The sighting number of the largest aircraft in the formation is used and a \changedin{1D}{Homogenization}{minus 1}{$-1$} modifier is applied to the sighting roll for each two aircraft in the formation. Success indicates all aircraft in the formation are spotted.
+\paragraph{Close Formation Effects.} Any sighting attempts against aircraft in a close formation are done treating the close formation as a single entity. The sighting number of the largest aircraft in the formation is used and a \changedin{1E}{AWF}{minus 1}{$-1$} modifier is applied to the sighting roll for each two aircraft in the formation. Success indicates all aircraft in the formation are spotted.

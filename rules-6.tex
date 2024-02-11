@@ -9,13 +9,13 @@ In the game, aircraft engines produce thrust in terms of accel points; how many 
 \paragraph{Power Settings.} The four power settings are: Idle, Normal, Military, and Afterburner (Codes: I, N, M, and AB).
 
 \begin{itemize}
-    \itemparagraph{Idle.} This is the minimum setting that will keep a jet engine functioning; it provides no accel points, but on the turn in which Idle power is selected, the aircraft start speed is immediately reduced by the FP amount shown on the power chart. (This is the only game action that will change an aircraft's speed within the same game turn before it moves.)
+    \item\itemparagraph{Idle.} This is the minimum setting that will keep a jet engine functioning; it provides no accel points, but on the turn in which Idle power is selected, the aircraft start speed is immediately reduced by the FP amount shown on the power chart. (This is the only game action that will change an aircraft's speed within the same game turn before it moves.)
 
-    \itemparagraph{Normal.} Normal power is an economic setting used to conserve fuel and increase range. Normal power provides enough thrust to maintain an aircraft's current speed if that speed is equal to or less than its listed cruise speed and no drag producing maneuvers or climbs are performed. No accel points are received.
+    \item\itemparagraph{Normal.} Normal power is an economic setting used to conserve fuel and increase range. Normal power provides enough thrust to maintain an aircraft's current speed if that speed is equal to or less than its listed cruise speed and no drag producing maneuvers or climbs are performed. No accel points are received.
 
-    \itemparagraph{Military.} Military power is the maximum setting for a jet engine not having an Afterburner. Selecting Military power provides Accel points which can result in increased speed when sufficient points are accumulated. The minimum in Accel points that can be taken in Military (unless damaged) is 0.5; the maximum is the value shown on the Power Setting Chart for the aircraft's configuration.  The player may select any value of accel points within that range. Write the amount in the Accel line of the Log.
+    \item\itemparagraph{Military.} Military power is the maximum setting for a jet engine not having an Afterburner. Selecting Military power provides Accel points which can result in increased speed when sufficient points are accumulated. The minimum in Accel points that can be taken in Military (unless damaged) is 0.5; the maximum is the value shown on the Power Setting Chart for the aircraft's configuration.  The player may select any value of accel points within that range. Write the amount in the Accel line of the Log.
 
-    \itemparagraph{Afterburner.} Afterburners provide increased thrust by dumping extra fuel directly into a jet engine's tailpipe to create a blowtorch effect. This provides extra thrust at a great cost in fuel consumption. Afterburner power provides more accel points than Military. The minimum Accel points a player may take while in AB is maximum Military power plus 0.5; the maximum allowed is the value shown on the Power Setting Chart. The player may select any value of accel points within that range. Aircraft not equipped with an afterburner have dashes instead of numbers.
+    \item\itemparagraph{Afterburner.} Afterburners provide increased thrust by dumping extra fuel directly into a jet engine's tailpipe to create a blowtorch effect. This provides extra thrust at a great cost in fuel consumption. Afterburner power provides more accel points than Military. The minimum Accel points a player may take while in AB is maximum Military power plus 0.5; the maximum allowed is the value shown on the Power Setting Chart. The player may select any value of accel points within that range. Aircraft not equipped with an afterburner have dashes instead of numbers.
 
 \end{itemize}
 
@@ -49,7 +49,7 @@ Example: An aircraft accumulating 2.5 accel and 5.0 decel has a net accel of -2.
 
 Example: A rapid accel aircraft gaining 6.0 accel points and 2.0 decel points in a turn, would gain 1.0 of speed. Its net accel is 4.0 ($6.0 - 2.0$). Each 1.5 of Accel gains 0.5 speed so 3.0 Accel is good for the 1.0 speed increase and the left over 1.0 Accel would be carried to the next game turn.
 
-Reminder:  Do not confuse Accel and Decel points with flight points. They are separate things.
+Reminder:  Do not confuse Accel and Decel points with \changedin{1B}{JDW: TSOH errata}{speed}{flight} points. They are separate things.
 
 \subsection{Speed Limits}
 
@@ -123,13 +123,15 @@ Aircraft flying at speeds approaching or exceeding the speed of sound are affect
 
 \begin{itemize}
 
-    \item An aircraft selecting Idle power loses 0.5 FPs of speed over that listed on the Power Setting Chart.  In addition, the aircraft is subject to the normal 1.0 decel point for being over cruise speed while at idle power.
+    \item An aircraft selecting Idle power loses 0.5 FPs of speed over that listed on the Power Setting Chart.  In addition, \changedin{1B}{JDW: TSOH errata}{the aircraft is subject to the normal 1.0 decel point for being over cruise speed while at idle power}{it suffers decel penalties as if it were in Normal power.}.
 
     \item An aircraft in Normal power receives 2.0 Decel per 0.5 FP of speed over High Transonic. In addition, the aircraft gets 1.0 Decel for flying at greater than cruise speed.
 
-    \item An aircraft in Military power receives 1.0 Decel per 0.5 FP of speed over High Transonic.
+    \item An aircraft in Military power receives \changedin{1B}{JDW: TSOH errata}{1.0}{1.5} decel per 0.5 FP of speed over High Transonic.
 
     \item An aircraft in Afterburner power is not penalized as for other power settings.
+
+    \addedin{1B}{TSOH Errara}{\item Aircraft at supersonic speeds require 3 accel per 0.5 speed gain unless they are Rapid Accel, in which case they now require the normal two accel per 0.5 speed.}
 
     \item An aircraft which uses Speedbrakes may lose up to 0.5 FPs of speed over the amount listed in the power chart.
 
