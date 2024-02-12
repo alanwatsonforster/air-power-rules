@@ -2,11 +2,18 @@
 
 \input style.tex
 
-\newcommand{\thisversion}{All Changes}
+%\newcommand{\thisversion}{All}
 %\newcommand{\thisversion}{1A}
 %\newcommand{\thisversion}{1B}
+%\newcommand{\thisversion}{1B}
+\newcommand{\thisversion}{1C}
+%\newcommand{\thisversion}{1D}
 
-\runningtitle{Air Power Rules (\thisversion)}
+%\newcommand{\thissubversion{}}
+%\newcommand{\thissubversion}{\ Changes}
+\newcommand{\thissubversion}{\ Verbose Changes}
+
+\runningtitle{Air Power Rules (\thisversion\thissubversion)}
 
 \renewcommand{\beforesectionnumber}{RULE\ }
 \renewcommand{\aftersectionnumber}{ ---}
@@ -18,18 +25,22 @@
 \usepackage{xstring}
 
 \IfStrEq{\thisversion}{1A}{
+    \newcommand{\previousversion}{}
     \newcommand{\previousversions}{}
 }{}
 \IfStrEq{\thisversion}{1B}{
+    \newcommand{\previousversion}{1A}
     \newcommand{\previousversions}{1A}
 }{}
 \IfStrEq{\thisversion}{1C}{
+    \newcommand{\previousversion}{1B}
     \newcommand{\previousversions}{1A1B}
 }{}
 \IfStrEq{\thisversion}{1D}{
+    \newcommand{\previousversion}{1C}
     \newcommand{\previousversions}{1A1B1C}
 }{}
-\IfStrEq{\thisversion}{1ED}{
+\IfStrEq{\thisversion}{1E}{
     \newcommand{\previousversions}{1A1B1C1D}
 }{}
 \IfStrEq{\thisversion}{2A}{
@@ -39,21 +50,7 @@
     \newcommand{\previousversions}{1A1B1C1D1E2A}
 }{}
 
-\IfStrEq{\thisversion}{All Changes}{
-    \newcommand{\addedin}[3]{{\color{orange}[Added in #1 by #2 {\color{blue} #3}]}}
-    \newcommand{\deletedin}[3]{{\color{orange}[Deleted in #1 by #2 {\color{red} #3}]}}
-    \newcommand{\changedin}[4]{{\color{orange}[Changed in #1 by #2 {\color{red} #3} {\color{blue} #4}]}}
-    \newcommand{\notein}[2]{{\color{orange}[Note in #1: #2]}}
-    \newcommand{\itemaddedin}[3]{{\color{blue} \item \addedin{#1}{#2}{#3}}}
-    \newcommand{\itemdeletedin}[3]{{\color{red} \item \deletedin{#1}{#2}{#3}}}
-}{
-    \newcommand{\addedin}[3]{\IfSubStr{\previousversions\thisversion}{#1}{#3}{}}
-    \newcommand{\deletedin}[3]{\IfSubStr{\previousversions\thisversion}{#1}{}{#3}}
-    \newcommand{\changedin}[4]{\IfSubStr{\previousversions\thisversion}{#1}{#4}{#3}}
-    \newcommand{\notein}[2]{}
-    \newcommand{\itemaddedin}[3]{\addedin{#1}{}{\item #2}}
-    \newcommand{\itemdeletedin}[3]{\deletedin{#1}{}{\item #2}}
-}
+\input rules-changes.tex
 
 \begin{document}
 
