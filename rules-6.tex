@@ -31,7 +31,7 @@ Aircraft speed will increase or decrease as a result of the accel points and dec
 
 \paragraph{Decel Points.} Decel points represent the energy lost due to using low power settings, aircraft maneuvering, and/or climbing flight. The advanced rules discuss additional sources of decel points. Decel points will cancel an equal number of any accel points gained.
 
-\paragraph{Speed Change Determination Procedure.} When an aircraft completes its move, it may have received both accel and decel points. Note the totals of each, then subtract any secel points from accel points. If the result is 0.0, there is no change in aircraft speed for the turn and you can ignore all following steps. If the result is positive, the aircraft may gain speed (accelerate). If the result is negative, the aircraft may lose speed (decelerate).
+\paragraph{Speed Change Determination Procedure.} When an aircraft completes its move, it may have received both accel and decel points. Note the totals of each, then subtract any decel points from accel points. If the result is 0.0, there is no change in aircraft speed for the turn and you can ignore all following steps. If the result is positive, the aircraft may gain speed (accelerate). If the result is negative, the aircraft may lose speed (decelerate).
 
 \paragraph{Speed Gain.} Add 0.5 to the aircraft's current speed for each 2.0 accel points left after subtracting decel.  Any unused Accel points (up to 1.5) are carried forward to the next game turn and will be added to any accel points received in that turn.
 
@@ -39,7 +39,7 @@ Example: An aircraft accumulating 6.0 accel points and 3.0 decel has a net accel
 
 \paragraph{Speed Loss.} Subtract 0.5 from the aircraft's current speed for each 2.0 decel points left. Any unused decel points (up to 1.5) are carried forward to the next game turn and will be added to any decel points received in that turn.
 
-Example: An aircraft accumulating 2.5 accel and 5.0 decel has a net accel of -2.5, or in other terms has 2.5 decel left over. Two of those decel are used to reduce its speed by 0.5. The remaining 0.5 decel is carried to the next game turn.
+Example: An aircraft accumulating 2.5 accel and 5.0 decel has a net accel of $-2.5$, or in other terms has 2.5 decel left over. Two of those decel are used to reduce its speed by 0.5. The remaining 0.5 decel is carried to the next game turn.
 
 \paragraph{Maximum Deceleration.} Regardless of the number of decel points accumulated in a turn, no aircraft can end up with a start speed of less than 0.0. When an aircraft's speed reaches 0.0, all remaining Decel points are ignored and considered lost.
 
