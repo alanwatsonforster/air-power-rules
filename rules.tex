@@ -2,16 +2,19 @@
 
 \input style.tex
 
-\newcommand{\thisversion}{All}
+%\newcommand{\thisversion}{All}
 %\newcommand{\thisversion}{1A}
 %\newcommand{\thisversion}{1B}
 %\newcommand{\thisversion}{1B}
 %\newcommand{\thisversion}{1C}
 %\newcommand{\thisversion}{1D}
+\newcommand{\thisversion}{2Z}
 
-%\newcommand{\thissubversion{}}
-%\newcommand{\thissubversion}{\ Changes}
-\newcommand{\thissubversion}{\ Verbose Changes}
+%\newcommand{\thissubversion}{}
+\newcommand{\thissubversion}{\ Changes}
+%\newcommand{\thissubversion}{\ Verbose Changes}
+
+\newcommand{\thisrevision}{2024-02-13}
 
 \runningtitle{Air Power Rules (\thisversion\thissubversion)}
 
@@ -49,8 +52,26 @@
 \IfStrEq{\thisversion}{2B}{
     \newcommand{\previousversions}{1A1B1C1D1E2A}
 }{}
+\IfStrEq{\thisversion}{2Z}{
+    \newcommand{\previousversions}{1A1B1C1D1E2A2B}
+}{}
 
 \input rules-changes.tex
+
+\newcommand{\x}[2]{\changedin{2Z}{AWF}{#1}{#2}}
+\newcommand{\xlc}[1]{\x{#1}{\MakeLowercase{#1}}}
+\newcommand{\xuc}[1]{\x{#1}{\MakeUppercase{#1}}}
+\newcommand{\xhyphen}[0]{\x{ }{-}}
+\newcommand{\xAP}[1]{\x{#1}{AP}}
+\newcommand{\xAPs}[1]{\x{#1}{APs}}
+\newcommand{\xDP}[1]{\x{#1}{DP}}
+\newcommand{\xDPs}[1]{\x{#1}{DPs}}
+\newcommand{\xGT}[1]{\x{#1}{game turn}}
+\newcommand{\xGTs}[1]{\x{#1}{game turns}}
+
+\newcommand{\onethird}{$1/3$}
+\newcommand{\onehalf}{$1/2$}
+\newcommand{\twothirds}{$2/3$}
 
 \begin{document}
 
@@ -74,5 +95,34 @@
 \input rules-16.tex
 \input rules-17.tex
 \input rules-18.tex
+\input rules-19.tex
+\input rules-20.tex
+
+\section{Air to Ground Combat}
+[Text not yet incorporated.]
+
+\section{Strafing and Air to Ground Rockets}
+[Text not yet incorporated.]
+
+\section{Bombing Attacks}
+[Text not yet incorporated.]
+
+\section{Anti Aircraft Artillery (AAA) Units}
+[Text not yet incorporated.]
+
+\section{Surface to Air Missiles}
+[Text not yet incorporated.]
+
+\section{Anti-Radiation Missiles}
+[Text not yet incorporated.]
+
+\section{Air-to-Ground Guided Weapons}
+[Text not yet incorporated.]
+
+\section{Air-to-Ground Smart (Self-Guiding) Weapons}
+[Text not yet incorporated.]
+
+\input rules-29.tex
+\input rules-30.tex
 
 \end{document}
