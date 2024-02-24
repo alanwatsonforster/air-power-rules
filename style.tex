@@ -22,8 +22,11 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{tabularx}
 \usepackage{multicol}
 \usepackage{microtype}
+\usepackage{multirow}
+\usepackage{pdflscape}
 
 % Basic spacing.
 
@@ -31,6 +34,7 @@
 
 \setlength{\parindent}{0em}
 \setlength{\parskip}{0.8ex plus 0.1ex}
+\newcommand{\numberspace}{\phantom{0}}
 
 % Headers
 
@@ -53,11 +57,6 @@
 \setlength{\columnseprule}{0.4pt}
 \renewcommand{\headrulewidth}{0.4pt}
 
-% Add a little bit of space after \hline
-
-\let\originalhline\hline
-\renewcommand{\hline}{\originalhline\\[-1em]}
-
 % Lists
 
 \setlist[itemize]{
@@ -75,6 +74,23 @@
 }
 
 \newcommand{\itemparagraph}[1]{{\bfseries #1}}
+
+% Tables
+
+%\newcommand{\minitable}[2][l]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\newcommand{\minitable}[3][c]{\begin{tabular}[#1]{@{}#2@{}}#3\end{tabular}}
+\newcommand*\rot{\rotatebox{90}}
+
+% Add a little bit of space after \hline
+\let\originalhline\hline
+\renewcommand{\hline}{\originalhline\\[-1em]}
+
+\newcommand{\tablesmallskip}{\\[-1.5ex]}
+\newcommand{\tablemedskip}{\\[-1.0ex]}
+
+\newcommand{\tablenotes}[3]{%
+  \multicolumn{#1}{l}{\begin{minipage}{#2}#3\end{minipage}}\\
+}
 
 % Sections
 

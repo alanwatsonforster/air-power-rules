@@ -1,0 +1,46 @@
+\begin{table}
+\centering\small
+
+\caption{Ejection/Bail-Out Success}
+\medskip
+
+\begin{tabular}{lcccc}
+\hline
+\multirow{2}{*}{\minitable{c}{Aircraft\\Damage}}&
+\multicolumn{4}{c}{Type Ejection Seat}\\
+&None&Early&Standard&Advanced\\
+\hline
+L, or 2L&7&8&9&9\\
+H, or C&6&7&8&9\\
+\multicolumn{5}{l}{Kill by Progressive Damage die roll.}\\
+&3&5&6&8\\
+\multicolumn{5}{l}{Kill by weapon with attack rating of 6 or less.}\\
+&2&4&6&7\\
+\multicolumn{5}{l}{Kill by weapon with attack rating of 7 or more.}\\
+&1&2&4&6\\
+\hline
+\tablemedskip
+\tablenotes{5}{0.9\linewidth}{
+\begin{itemize}[nosep]
+    \item Roll one die when egressing. If result, after applying modifiers is <= to above numbers; Egress succeeds.
+    \item Bail-outs allowed only if speed <= 4.0 and if aircraft was destroyed, only if at least 4 levels above ground.
+\end{itemize}
+
+\medskip
+
+Ejection/Bailout Die Roll Modifiers
+
+\medskip
+
+\begin{enumerate}[nosep]
+    \item Aircraft at T-Level = $+2$
+    \item Aircraft 1 or 2 levels above ground = $+1$
+    \item Aircraft Speed <= 3.0 at egress = $-1$
+    \item Aircraft Speed >= 5.0 at egress = $+1$
+    \item Aircraft Speed >= High Mach at egress = $+3$
+\end{enumerate}
+
+}
+\end{tabular}
+
+\end{table}
