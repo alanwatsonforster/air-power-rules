@@ -1,3 +1,54 @@
+%\newcommand{\thisversion}{All}
+%\newcommand{\thisversion}{1A}
+%\newcommand{\thisversion}{1B}
+\newcommand{\thisversion}{1C}
+%\newcommand{\thisversion}{1D}
+%\newcommand{\thisversion}{2Z}
+
+%\newcommand{\thissubversion}{}
+\newcommand{\thissubversion}{\ Changes}
+%\newcommand{\thissubversion}{\ Verbose Changes}
+
+\newcommand{\thisrevision}{2024-02-13}
+
+\renewcommand{\beforesectionnumber}{RULE\ }
+\renewcommand{\aftersectionnumber}{ ---}
+\renewcommand{\aftersubsectionnumber}{ ---}
+\renewcommand{\aftersubsubsectionnumber}{ ---}
+\newcommand{\rulename}{rule}
+\newcommand{\Rulename}{Rule}
+  
+\usepackage{xstring}
+
+\IfStrEq{\thisversion}{1A}{
+    \newcommand{\previousversion}{}
+    \newcommand{\previousversions}{}
+}{}
+\IfStrEq{\thisversion}{1B}{
+    \newcommand{\previousversion}{1A}
+    \newcommand{\previousversions}{1A}
+}{}
+\IfStrEq{\thisversion}{1C}{
+    \newcommand{\previousversion}{1B}
+    \newcommand{\previousversions}{1A1B}
+}{}
+\IfStrEq{\thisversion}{1D}{
+    \newcommand{\previousversion}{1C}
+    \newcommand{\previousversions}{1A1B1C}
+}{}
+\IfStrEq{\thisversion}{1E}{
+    \newcommand{\previousversions}{1A1B1C1D}
+}{}
+\IfStrEq{\thisversion}{2A}{
+    \newcommand{\previousversions}{1A1B1C1D1E}
+}{}
+\IfStrEq{\thisversion}{2B}{
+    \newcommand{\previousversions}{1A1B1C1D1E2A}
+}{}
+\IfStrEq{\thisversion}{2Z}{
+    \newcommand{\previousversions}{1A1B1C1D1E2A2B}
+}{}
+
 \IfStrEq{\thisversion}{All}{
     \newcommand{\addedin}[3]{%
         {\color{orange}[Added in #1 by #2: {\color{blue} {#3}}]}%
@@ -66,3 +117,18 @@
     \newcommand{\itemdeletedin}[3]{\deletedin{#1}{}{\item {#3}}}
     \newcommand{\silentlyaddedin}[2]{\IfSubStr{\previousversions\thisversion}{#1}{#2}{}}
 }}}
+
+\newcommand{\x}[2]{\changedin{2Z}{AWF}{#1}{#2}}
+\newcommand{\xlc}[1]{\x{#1}{\MakeLowercase{#1}}}
+\newcommand{\xuc}[1]{\x{#1}{\MakeUppercase{#1}}}
+\newcommand{\xhyphen}[0]{\x{ }{-}}
+\newcommand{\xAP}[1]{\x{#1}{AP}}
+\newcommand{\xAPs}[1]{\x{#1}{APs}}
+\newcommand{\xDP}[1]{\x{#1}{DP}}
+\newcommand{\xDPs}[1]{\x{#1}{DPs}}
+\newcommand{\xGT}[1]{\x{#1}{game turn}}
+\newcommand{\xGTs}[1]{\x{#1}{game turns}}
+
+\newcommand{\onethird}{$1/3$}
+\newcommand{\onehalf}{$1/2$}
+\newcommand{\twothirds}{$2/3$}
