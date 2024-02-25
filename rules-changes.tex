@@ -5,9 +5,9 @@
 \newcommand{\thisversion}{1D}
 %\newcommand{\thisversion}{2Z}
 
-%\newcommand{\thissubversion}{}
+\newcommand{\thissubversion}{}
 %\newcommand{\thissubversion}{\ Changes}
-\newcommand{\thissubversion}{\ Verbose Changes}
+%\newcommand{\thissubversion}{\ Verbose Changes}
 
 \newcommand{\thisrevision}{2024-02-13}
 
@@ -40,15 +40,19 @@
     \newcommand{\earlierversions}{1A1B1C}
 }{}
 \IfStrEq{\thisversion}{1E}{
+    \newcommand{\earlierversion}{1D}
     \newcommand{\earlierversions}{1A1B1C1D}
 }{}
 \IfStrEq{\thisversion}{2A}{
+    \newcommand{\earlierversion}{1E}
     \newcommand{\earlierversions}{1A1B1C1D1E}
 }{}
 \IfStrEq{\thisversion}{2B}{
+    \newcommand{\earlierversion}{2A}
     \newcommand{\earlierversions}{1A1B1C1D1E2A}
 }{}
 \IfStrEq{\thisversion}{2Z}{
+    \newcommand{\earlierversion}{2B}
     \newcommand{\earlierversions}{1A1B1C1D1E2A2B}
 }{}
 
@@ -156,7 +160,7 @@
         \iflaterversion{#1}{#3}%
     }
     \newcommand{\changedin}[4]{%
-        \deletedin{#1}{#2}{#3} \addedin{#1}{#2}{#4}%
+        \deletedin{#1}{#2}{#3}\addedin{#1}{#2}{#4}%
     }
     \newcommand{\notein}[2]{%
     }
