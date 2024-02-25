@@ -88,14 +88,31 @@ Note: Boresight and Auto-Track Modes allow maneuver restrictions to be ignored b
 \begin{enumerate}
     \item AJM \# $-$ Air Radar or EWR ECCM.
     \item BJM \# $-$ Air Radar or EWR ECCM.
-    \item CHAFF PPL Effectiveness No.
+    \item \changedin{1B}{JDW in the TSOH errata and APJ \#24}{CHAFF PPL Effectiveness No.}{Chaff PPL Eff.\ No.\ $-$ $1/2$ radar ECCM (round up).}
     \item Mini-Jammer PPL Effectiveness No.
     \item Aircraft Size Modifier from ADC.
-    \item $+4$ if aircraft has Stealth Technology.
+    \itemdeletedin{1B}{JDW in the TSOH errata and APJ \#24}{$+4$ if aircraft has Stealth Technology.}
+    \itemaddedin{1B}{JDW in the TSOH errata and APJ \#24}{$-2$ if target aircraft IFF on.}
     \item Tactics Master or Veteran = $-1$ ($-2$ if both).
     \item Novice = $+1$, Green = $+2$
 \end{enumerate}
 \end{minipage}
+\end{table}
+
+\begin{table}
+\centering
+\addedin{1B}{JDW in the TSOH errata and APJ \#24}{
+\caption{Radar Lock-On Modifiers}
+\medskip
+\begin{minipage}{\linewidth}
+\begin{enumerate}
+    \item $-2$ if target IFF on
+    \item Chaff PPL Eff.\ No.\ $-$ $1/2$ radar ECCM (round up).
+    \item Mini-Jammer PPL Effectiveness No.
+\end{enumerate}
+\end{minipage}
+
+}
 \end{table}
 
 \begin{table}
