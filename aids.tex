@@ -4,7 +4,6 @@
 \input rules-changes.tex
 \runningtitle{Air Power Play Aids (\thisversion\thissubversion)}
 
-
 \begin{document}
 
 \input tables/table-sop.tex
@@ -33,12 +32,7 @@
 \includegraphics[width=1.0\linewidth]{figures/aids-angle-off-diagrams.pdf}
 \end{figure*}
 
-\begin{figure*}
-\centering
-\caption{AIR-2 Genie Scatter}
-\medskip
-\includegraphics[width=0.5\linewidth]{figures/aids-genie-scatter.pdf}
-\end{figure*}
+\input{figures/figure-genie-scatter}
 
 \begin{figure*}
 \centering
@@ -89,12 +83,7 @@
 \includegraphics[width=0.6\linewidth]{figures/aids-barrel-roll.pdf}
 \end{figure}
 
-\begin{figure*}
-\centering
-\caption{Jamming Cell Formations}
-\medskip
-\includegraphics[width=0.6\linewidth]{figures/aids-jamming-cells.pdf}
-\end{figure*}
+\input{figures/figure-jamming-cells}
 
 \begin{figure*}
 \centering
@@ -110,9 +99,11 @@
 \input{tables/table-air-to-air-rocketry}
 \input{tables/table-aircraft-damage-effects}
 \input{tables/table-systems-loss}
+\input{tables/table-optional-advanced-aircraft-damage}
 
 \input{tables/table-air-to-air-missile-launch-modifiers}
 \input{tables/table-air-to-air-and-sam-attack-modifiers}
+\input{tables/table-internal-dds}
 
 \input{tables/table-crew-generation}
 \input{tables/table-crew-modifiers-summary}
@@ -135,5 +126,7 @@
 \input{tables/table-gun-pods}
 \input{tables/table-ew-pods}
 \input{tables/table-fuel-tanks}
+
+\input{tables/table-terrain-effects}
 
 \end{document}
