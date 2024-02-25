@@ -1,0 +1,28 @@
+\begin{fitwidth}{0.7\linewidth}
+\begin{tikzpicture}
+    \scriptsize
+    \drawhex{0}{0}  
+    \drawhex{0}{+1}  
+    \drawhex{0}{-1}  
+    \drawhex{+1}{+0.5}  
+    \drawhex{+1}{-0.5}  
+    \drawhex{-1}{+0.5}  
+    \drawhex{-1}{-0.5}  
+    \begin{scope}[thick,->]
+        \draw (0,0) -- (0:1.8) node [anchor=180] {E};
+        \draw (0,0) -- (30:1.8) node [anchor=210] {NE};
+        \draw (0,0) -- (60:1.8) node [anchor=240] {NNE};
+        \draw (0,0) -- (90:1.8) node [anchor=270] {N};
+        \draw (0,0) -- (120:1.8) node [anchor=300] {NNW};
+        \draw (0,0) -- (150:1.8) node [anchor=330] {NW};
+        \draw (0,0) -- (180:1.8) node [anchor=0] {W};
+        \draw (0,0) -- (210:1.8) node [anchor=30] {SW};
+        \draw (0,0) -- (240:1.8) node [anchor=60] {SSW};
+        \draw (0,0) -- (270:1.8) node [anchor=90] {S};
+        \draw (0,0) -- (300:1.8) node [anchor=120] {SSE};
+        \draw (0,0) -- (330:1.8) node [anchor=150] {SE};
+    \end{scope}
+    \drawaircraftcounter{0}{0}{60}{F-4}{}
+\end{tikzpicture}
+\end{fitwidth}
+

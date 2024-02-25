@@ -39,6 +39,16 @@
 \setlength{\parskip}{0.8ex plus 0.1ex}
 \newcommand{\numberspace}{\phantom{0}}
 
+\newlength{\fitwidthwidth}
+\newsavebox{\fitwidthbox}
+\newenvironment{fitwidth}[1]{%
+    \setlength{\fitwidthwidth}{#1}%
+    \begin{lrbox}{\fitwidthbox}%
+}{%
+    \end{lrbox}%
+    \resizebox{\the\fitwidthwidth}{!}{\usebox{\fitwidthbox}}%
+}
+
 % Headers
 
 \newcommand{\therunningtitle}{}
