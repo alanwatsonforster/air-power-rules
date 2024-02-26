@@ -1,0 +1,62 @@
+\newcommand{\drawjammingcellhex}[2]{
+    \drawhex[black!10]{#1}{#2}
+}
+
+\newcommand{\drawjammingcellaircraft}[3]{
+    \drawaircraftcounter{#1}{#2}{#3}{F-105}{}
+}
+
+\newcommand{\drawjammingcellhexandaircraft}[3]{
+    \drawjammingcellhex{#1}{#2}
+    \drawjammingcellaircraft{#1}{#2}{#3}
+}
+
+\begin{tikzfigure}{\linewidth}
+    \drawhexgrid{12}{10}
+
+    \drawjammingcellhexandaircraft{1.0}{1.5}{90}
+    \drawjammingcellhexandaircraft{2.0}{1.0}{90}
+    \drawjammingcellhexandaircraft{2.0}{2.0}{90}
+    \drawjammingcellhexandaircraft{3.0}{1.5}{90}
+
+    \drawjammingcellhexandaircraft{5.0}{1.5}{120}
+    \drawjammingcellhexandaircraft{6.0}{2.0}{120}
+    \drawjammingcellhexandaircraft{7.0}{2.5}{120}
+    \drawjammingcellhexandaircraft{8.0}{3.0}{120}
+    
+    \drawjammingcellhexandaircraft{8.0}{1.0}{90}
+    \drawjammingcellhexandaircraft{9.0}{1.5}{90}
+    \drawjammingcellhexandaircraft{10.0}{1.0}{90}
+    \drawjammingcellhexandaircraft{11.0}{1.5}{90}
+    
+    \drawjammingcellhexandaircraft{1.0}{4.5}{120}
+    \drawjammingcellhexandaircraft{1.0}{5.5}{120}
+    \drawjammingcellhexandaircraft{2.0}{5.0}{120}
+    
+    \drawjammingcellhexandaircraft{4.0}{5.0}{90}
+    \drawjammingcellhexandaircraft{5.0}{5.5}{90}
+    \drawjammingcellhexandaircraft{6.0}{5.0}{90}
+    
+    \drawjammingcellhexandaircraft{8.0}{5.0}{90}
+    \drawjammingcellhexandaircraft{9.0}{5.5}{90}
+    \drawjammingcellhexandaircraft{10.0}{6.0}{90}
+    
+    \drawjammingcellhexandaircraft{1.0}{7.5}{120}
+    \drawjammingcellhexandaircraft{2.0}{8.0}{120}
+    
+    \drawjammingcellhexandaircraft{4.0}{8.0}{90}
+    \drawjammingcellhexandaircraft{5.0}{8.5}{90}
+    
+    \drawjammingcellhex{7.0}{8.5}
+    \drawjammingcellhex{8.0}{9.0}
+    \drawjammingcellaircraft{6.5}{8.25}{120}
+    \drawjammingcellaircraft{8.5}{9.25}{120}
+    
+    \drawjammingcellhexandaircraft{10.0}{8.0}{120}
+    \drawjammingcellhexandaircraft{11.0}{7.5}{120}
+
+    \draw (0.75,3.00) node [anchor=west, fill=white, draw=black] {Four-Aircraft Cells};
+    \draw (0.75,6.50) node [anchor=west, fill=white, draw=black] {Three-Aircraft Cells};
+    \draw (0.75,9.00) node [anchor=west, fill=white, draw=black] {Two-Aircraft Cells};
+
+\end{tikzfigure}

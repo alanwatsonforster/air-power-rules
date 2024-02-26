@@ -240,10 +240,10 @@
 }
 \newcommand{\miniathex}[3]{\begin{athex}{#1}{#2}#3\end{athex}}
 
-\newcommand{\drawhex}[2]{
-    \begin{athex}{#1}{#2}
+\newcommand{\drawhex}[3][white]{
+    \begin{athex}{#2}{#3}
         \begin{scope}[xscale=\hexxfactor]
-            \draw (+0.667,+0.000) -- (+0.333,+0.500) -- (-0.333,+0.500) -- (-0.667,+0.000) -- (-0.333,-0.500) -- (+0.333,-0.500) -- cycle;
+            \draw [fill=#1] (+0.667,+0.000) -- (+0.333,+0.500) -- (-0.333,+0.500) -- (-0.667,+0.000) -- (-0.333,-0.500) -- (+0.333,-0.500) -- cycle;
         \end{scope}
     \end{athex}
 }
