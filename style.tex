@@ -231,6 +231,7 @@
     \end{athex}
 }
 
+% The number is sqrt(0.75) to three decimal places. It is the distance between column centers of a hex grid in which the difference between row centers is 1.0.
 \newcommand{\hexxfactor}{0.866}
 
 \newenvironment{athex}[2]{
@@ -240,7 +241,7 @@
 }
 \newcommand{\miniathex}[3]{\begin{athex}{#1}{#2}#3\end{athex}}
 
-\newcommand{\drawhex}[3][white]{
+\newcommand{\drawhex}[3][none]{
     \begin{athex}{#2}{#3}
         \begin{scope}[xscale=\hexxfactor]
             \draw [fill=#1] (+0.667,+0.000) -- (+0.333,+0.500) -- (-0.333,+0.500) -- (-0.667,+0.000) -- (-0.333,-0.500) -- (+0.333,-0.500) -- cycle;
@@ -250,7 +251,7 @@
 
 \newcommand{\drawmegahex}[2]{
     \begin{athex}{#1}{#2}
-        \begin{scope}[yscale=5,xscale=5*\hexxfactor,line width=2,color=black!50]
+        \begin{scope}[yscale=5,xscale=5*\hexxfactor,ultra thick,color=black!25]
             \draw (+0.667,+0.000) -- (+0.333,+0.500) -- (-0.333,+0.500) -- (-0.667,+0.000) -- (-0.333,-0.500) -- (+0.333,-0.500) -- cycle;
         \end{scope}
     \end{athex}
