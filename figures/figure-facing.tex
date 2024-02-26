@@ -1,5 +1,4 @@
-\begin{fitwidth}{0.7\linewidth}
-\begin{tikzpicture}
+\begin{tikzfigure}{0.5\linewidth}
     \scriptsize
     \drawhex{0}{0}  
     \drawhex{0}{+1}  
@@ -9,20 +8,18 @@
     \drawhex{-1}{+0.5}  
     \drawhex{-1}{-0.5}  
     \begin{scope}[thick,->]
-        \draw (0,0) -- (0:1.8) node [anchor=180] {E};
-        \draw (0,0) -- (30:1.8) node [anchor=210] {NE};
-        \draw (0,0) -- (60:1.8) node [anchor=240] {NNE};
-        \draw (0,0) -- (90:1.8) node [anchor=270] {N};
-        \draw (0,0) -- (120:1.8) node [anchor=300] {NNW};
-        \draw (0,0) -- (150:1.8) node [anchor=330] {NW};
-        \draw (0,0) -- (180:1.8) node [anchor=0] {W};
-        \draw (0,0) -- (210:1.8) node [anchor=30] {SW};
-        \draw (0,0) -- (240:1.8) node [anchor=60] {SSW};
-        \draw (0,0) -- (270:1.8) node [anchor=90] {S};
-        \draw (0,0) -- (300:1.8) node [anchor=120] {SSE};
-        \draw (0,0) -- (330:1.8) node [anchor=150] {SE};
+        \draw   (0:1.3) --   (0:1.8) node [anchor=180] {E};
+        \draw  (30:1.3) --  (30:1.8) node [anchor=210] {NE};
+        \draw  (60:1.3) --  (60:1.8) node [anchor=240] {NNE};
+        \draw  (90:1.3) --  (90:1.8) node [anchor=270] {N};
+        \draw (120:1.3) -- (120:1.8) node [anchor=300] {NNW};
+        \draw (150:1.3) -- (150:1.8) node [anchor=330] {NW};
+        \draw (180:1.3) -- (180:1.8) node [anchor=0  ] {W};
+        \draw (210:1.3) -- (210:1.8) node [anchor=30 ] {SW};
+        \draw (240:1.3) -- (240:1.8) node [anchor=60 ] {SSW};
+        \draw (270:1.3) -- (270:1.8) node [anchor=90 ] {S};
+        \draw (300:1.3) -- (300:1.8) node [anchor=120] {SSE};
+        \draw (330:1.3) -- (330:1.8) node [anchor=150] {SE};
     \end{scope}
-    \drawaircraftcounter{0}{0}{60}{F-4}{}
-\end{tikzpicture}
-\end{fitwidth}
-
+    \drawaircraftcounter{0}{0}{60}{F-4}{}   
+\end{tikzfigure}
