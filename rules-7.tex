@@ -15,8 +15,8 @@ Five rates of turn are available to an aircraft. Each rate of turn corresponds t
     \item the turn rate, either Easy, Tactical, Hard, Break, or Emergency. (EZ, TT, HT, BT, ET respectively).
 \end{itemize}
 
-Next consult the Integrated Turn Charts and cross index the selected turn rate with the aircraft's current speed (rounded down). \notein{1C}{FH in APJ 36 states: “A/C speed, not FPs, is used on the Integrated Turn Charts.” However, the text already states that it is speed. I have not incorporated this.}
-Be sure to use the chart corresponding to the altitude band the aircraft is in. If an “NA” is encountered, that combination of turn rate and speed is not allowed. If a number appears, that is the minimum number of FPs that the aircraft must expend in flight before changing facing. If a 60 or 90 appears, that indicates the aircraft may change facing by up to 60 or 90 degrees respectively for each FP expended inflight that game turn. \addedin{1C}{FH: APJ}{A 60 or 90 degree turn is considered one facing change except for purposes of sustained turning decel.}
+Next consult the Integrated Turn Charts and cross index the selected turn rate with the aircraft's current speed (rounded down). \notein{1B}{FH in APJ 36 states: “A/C speed, not FPs, is used on the Integrated Turn Charts.” However, the text already states that it is speed. I have not incorporated this.}
+Be sure to use the chart corresponding to the altitude band the aircraft is in. If an “NA” is encountered, that combination of turn rate and speed is not allowed. If a number appears, that is the minimum number of FPs that the aircraft must expend in flight before changing facing. If a 60 or 90 appears, that indicates the aircraft may change facing by up to 60 or 90 degrees respectively for each FP expended inflight that game turn. \addedin{1B}{FH: APJ}{A 60 or 90 degree turn is considered one facing change except for purposes of sustained turning decel.}
 
 Changing facing does not cost any FPs; it is the end result of having begun to turn and having used the specified number of FPs (or more) in flight while turning. A turn consists of all the FPs used prior to changing the aircraft's facing plus the act of facing itself. If an aircraft is on a hexside at the time of facing, shift it to the adjacent hex (in the direction the aircraft is turning) and then change its facing as shown \changedin{1D}{AWF}{below}{Figure~\ref{figure:changing-facing}}. 
 
@@ -50,13 +50,13 @@ Changing facing does not cost any FPs; it is the end result of having begun to t
 
 For example, “2BTL” indicates the aircraft has expended 2 FPs on a break turn to the left.
 
-\paragraph{Move to Face Requirement.} An aircraft must move in order to change facing. If an aircraft ends a game turn with sufficient FPs expended to meet the turning requirements but does not face; it may not change facing in the next game turn until it expends at least one FP in flight. \addedin{1C}{FH in APJ 36 errata}{If an aircraft is carrying a turn and the new turning requirement due to the new speed and altitude is equal to or less than what is has already expended, it must still expend one FP before changing facing} \changedin{1C}{AWF}{It}{In both case, it} may not face freely and then begin moving; it must move to face.
+\paragraph{Move to Face Requirement.} An aircraft must move in order to change facing. If an aircraft ends a game turn with sufficient FPs expended to meet the turning requirements but does not face; it may not change facing in the next game turn until it expends at least one FP in flight. \addedin{1B}{FH in APJ 36 errata}{If an aircraft is carrying a turn and the new turning requirement due to the new speed and altitude is equal to or less than what is has already expended, it must still expend one FP before changing facing} \changedin{1C}{AWF}{It}{In both case, it} may not face freely and then begin moving; it must move to face.
 
 \paragraph{Turn Induced Decel.} Turning creates drag, which causes deceleration. If an aircraft used turning flight in a game turn (whether it changed facing or not), check the Turn Drag Chart on the ADC. At the intersection of the Configuration column and the Turn Rate row is the number of Decel points it receives for making the turn. EZ turns are not listed; there is no Turn Drag for EZ rates (exception; see sustained turning). 
 
 Note: An aircraft is assessed decel points for Turn Drag based on the highest turn rate used in the game turn. Those Turn Drag Decel points are imposed if any turning occurred, whether the aircraft faced once, more than once, not at all, or used different turn rates in the game turn.
 
-\addedin{1C}{FH in APJ 36 errata}{A turn that is carried over from one game-turn to the next must be considered for decel in both game-turns. If it corresponds to the highest turn rate during both game-turns, the decel will be paid twice.}
+\addedin{1B}{FH in APJ 36 errata}{A turn that is carried over from one game-turn to the next must be considered for decel in both game-turns. If it corresponds to the highest turn rate during both game-turns, the decel will be paid twice.}
 
 \trainingnote{You are now ready to play Training Scenario 1.\\The Sequence of Play is not required, ignore it.}
 
@@ -68,7 +68,7 @@ Note: An aircraft is assessed decel points for Turn Drag based on the highest tu
 
 Whenever an aircraft changes facing more than once in a game turn, it is performing a sustained turn.
 
-\paragraph{Sustained Turn Drag Penalty.} An aircraft performing a sustained turn receives a drag penalty to 1.0 decel point for each \changedin{1C}{FH in APJ 36 errata}{change of facing beyond the first}{30 degrees of facing change in the second and subsequent facing changes} in addition to any decel from the Turn Drag Chart. The drag penalty for sustained turning applies even if mixed turn rates or turn rates that normally incur 0 decel points are used.  
+\paragraph{Sustained Turn Drag Penalty.} An aircraft performing a sustained turn receives a drag penalty to 1.0 decel point for each \changedin{1B}{FH in APJ 36 errata}{change of facing beyond the first}{30 degrees of facing change in the second and subsequent facing changes} in addition to any decel from the Turn Drag Chart. The drag penalty for sustained turning applies even if mixed turn rates or turn rates that normally incur 0 decel points are used.  
 
 Special maneuvers which cause facing changes are not considered for purposes of the sustained turn penalty. The snap turn facing change is counter toward determining sustained turn penalties.
 
@@ -109,11 +109,11 @@ When an aircraft turns, it banks in the direction of that turn.  If an aircraft 
 
 \paragraph{Low Roll Rate.} An aircraft noted as having a Low Roll Rate must spend 2 FP after the last facing (or after aborting the other turn) before FPs can be used to turn in the opposite direction. The aircraft is reversing its bank while spending these FPs; the FPs cannot be used for any other maneuvering requirement.
 
-\addedin{1C}{FH in APJ 36 errata}{The term “wings level” means an aircraft did not just face, abort a turn, or prep for or complete a maneuver. Thus it reflects an aircraft's readiness to maneuver further. Being “not wings level” is \emph{not} synonymous with being banked.}
+\addedin{1B}{FH in APJ 36 errata}{The term “wings level” means an aircraft did not just face, abort a turn, or prep for or complete a maneuver. Thus it reflects an aircraft's readiness to maneuver further. Being “not wings level” is \emph{not} synonymous with being banked.}
 
-\addedin{1C}{FH in APJ 36 errata}{Normal and High Roll Rate aircraft do not track angle of bank as such. For example, after coming out of a rolling maneuver they are not banked, but are also not “wings level”. In this situation they are eligible to immediately commence a normal turn, but would pay 1 HFP prep for a snap turn.}
+\addedin{1B}{FH in APJ 36 errata}{Normal and High Roll Rate aircraft do not track angle of bank as such. For example, after coming out of a rolling maneuver they are not banked, but are also not “wings level”. In this situation they are eligible to immediately commence a normal turn, but would pay 1 HFP prep for a snap turn.}
 
-If wings level, a Low Roll Rate aircraft must first spend 1 FP to establish an angle of bank (either left or right) before spending FPs for turns or snap turns. A Low Roll Rate aircraft may elect to end a flight phase with wings banked, even if no turn carry is in effect. Note BL (Banked Left) or BR (Banked Right) on the Turn Carry line of the Aircraft Log. \addedin{1C}{FH in APJ 36 errata}{Low Roll Rate aircraft cannot snap turn immediately if aborting a normal turn, after facing from a normal turn, or coming out of a rolling maneuver that leaves them banked. Though already banked, 1 prep HFP must still be expended. If banked the other way, 2 prep HFPs are required. Only if it did not just face, abort a turn, prep, or complete a maneuver, may it use a pre-existing bank attitude to eliminate the banking prep requirement for snap turns.} Low Roll Rate aircraft must also expend an extra HFP above the normal amount to prep-move for rolling maneuvers.
+If wings level, a Low Roll Rate aircraft must first spend 1 FP to establish an angle of bank (either left or right) before spending FPs for turns or snap turns. A Low Roll Rate aircraft may elect to end a flight phase with wings banked, even if no turn carry is in effect. Note BL (Banked Left) or BR (Banked Right) on the Turn Carry line of the Aircraft Log. \addedin{1B}{FH in APJ 36 errata}{Low Roll Rate aircraft cannot snap turn immediately if aborting a normal turn, after facing from a normal turn, or coming out of a rolling maneuver that leaves them banked. Though already banked, 1 prep HFP must still be expended. If banked the other way, 2 prep HFPs are required. Only if it did not just face, abort a turn, prep, or complete a maneuver, may it use a pre-existing bank attitude to eliminate the banking prep requirement for snap turns.} Low Roll Rate aircraft must also expend an extra HFP above the normal amount to prep-move for rolling maneuvers.
 
 
 \paragraph{Rolling Maneuvers and Banks.} When an aircraft performs a rolling maneuver, it may exit that maneuver banked in any desired direction.
@@ -188,7 +188,7 @@ A Maneuvering Departure is always automatic in the first case and occurs on a di
 
 \paragraph{Facing Changes.} Determine the direction and quantity of facing changes as for regular departures. However, initially make only the first facing change, then shift the aircraft the required number of hexes determined as described above, and only then apply the remaining facing changes.
 
-\addedin{1C}{FH in APJ 36 errata}{\paragraph{Altitude Loss.} On the turn in which it occurs, a Maneuvering Departure does not, by itself, impose an altitude loss. The subsequent departed flight most likely will.}
+\addedin{1B}{FH in APJ 36 errata}{\paragraph{Altitude Loss.} On the turn in which it occurs, a Maneuvering Departure does not, by itself, impose an altitude loss. The subsequent departed flight most likely will.}
 
 \paragraph{Subsequent Turns.} On subsequent game turns, a maneuvering departure is treated as regular departed flight.
 
