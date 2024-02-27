@@ -1,5 +1,8 @@
-\begin{figure*}
+\changedin{1D}{AMW}{
+
+\begin{figure}
 \centering
+
 \caption{AIR-2 Genie Scatter}
 \medskip
 \includegraphics[width=0.5\linewidth]{figures/aids-genie-scatter.pdf}
@@ -11,4 +14,65 @@
 The aircraft counter represents the Genie's start position and facing from which the scattering is determined.}
 \end{minipage}
 
-\end{figure*}
+\end{figure}
+
+}{
+\begin{figure}
+\centering
+\begin{tikzfigure}{1.0\linewidth}
+
+    \drawhexgrid{10}{9}
+
+    \begin{athex}{3.00}{2.50}
+        \begin{scope}[very thick, ->]
+            \draw (0,0) --   (90:1.5) node [anchor=270] {1};
+            \draw (0,0) --   (60:1.5) node [anchor=240] {2};
+            \draw (0,0) --   (30:1.5) node [anchor=210] {3};
+            \draw (0,0) --    (0:1.5) node [anchor=180] {4};
+            \draw (0,0) --  (330:1.5) node [anchor=150] {5};
+            \draw (0,0) --  (270:1.5) node [anchor=90 ] {6};
+            \draw (0,0) --  (210:1.5) node [anchor=60 ] {7};
+            \draw (0,0) --  (180:1.5) node [anchor=0  ] {8};
+            \draw (0,0) --  (150:1.5) node [anchor=330] {9};
+            \draw (0,0) --  (120:1.5) node [anchor=300] {10};
+        \end{scope}
+        \drawdotathex{0}{0}
+    \end{athex}
+
+    \begin{athex}{3.00}{6.50}
+        \begin{scope}[very thick,->]
+            \draw (0,0) --   (60:1.5) node [anchor=240] {1};
+            \draw (0,0) --   (30:1.5) node [anchor=210] {2};
+            \draw (0,0) --    (0:1.5) node [anchor=180] {3};
+            \draw (0,0) --  (330:1.5) node [anchor=150] {4};
+            \draw (0,0) --  (300:1.5) node [anchor=120] {5};
+            \draw (0,0) --  (240:1.5) node [anchor=60] {6};
+            \draw (0,0) --  (180:1.5) node [anchor=0  ] {7};
+            \draw (0,0) --  (150:1.5) node [anchor=330] {8};
+            \draw (0,0) --  (120:1.5) node [anchor=300] {9};
+            \draw (0,0) --   (90:1.5) node [anchor=270] {10};
+        \end{scope}
+        \drawdotathex{0}{0}
+    \end{athex}
+    
+    \begin{athex}{7.50}{4.25}
+        \begin{scope}[very thick,->]
+            \draw (0,0) --   (60:1.7) node [anchor=240] {1};
+            \draw (60:1.000*\hexxfactor) -- +(30:1.0) node [anchor=210] {2};
+            \draw (60:0.333*\hexxfactor) --  +(0:1.2) node [anchor=180] {3};
+            \draw (0,0) --  (330:1.5) node [anchor=150] {4};
+            \draw (240:0.333*\hexxfactor) --  +(300:1.2) node [anchor=120] {5};
+            \draw (0,0) --  (240:1.7) node [anchor=60] {6};
+            \draw (240:0.333*\hexxfactor) --  +(180:1.2) node [anchor=0  ] {7};
+            \draw (0,0) --  (150:1.5) node [anchor=330] {8};
+            \draw (60:0.333*\hexxfactor) --  +(120:1.2) node [anchor=300] {9};
+            \draw (60:1*\hexxfactor) -- +(90:1.0) node [anchor=270] {10};
+        \end{scope}
+        \drawdotathex{0}{0}
+    \end{athex}
+    
+\end{tikzfigure}
+\caption{AIR-2 Genie Scatter}
+\label{figure:genie-scatter}
+\end{figure}
+}
