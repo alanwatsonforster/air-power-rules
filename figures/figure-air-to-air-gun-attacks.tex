@@ -1,61 +1,3 @@
-\x{
-\begin{tikzfigure}{0.9\linewidth}
-
-    \drawhexgrid{9}{4}  
-
-    \begin{athex}{2.00}{1.00}
-        \drawdotathex{+0.00}{0.50}
-        \drawdotathex{+0.00}{1.00}
-        \drawdotathex{-0.50}{1.25}
-        \drawdotathex{+0.50}{1.25}
-        \drawdotathex{+0.00}{1.50}
-        \drawdotathex{-0.50}{1.75}
-        \drawdotathex{+0.50}{1.75}
-        \drawdotathex{+0.00}{2.00}
-        \begin{scope}[shift={(90:1.375)}]
-            \draw [very thick,dashed] (180:1.2) -- (0:1.2);
-            \draw (180:0.9) node [anchor=90] {\tiny Range 1};
-            \draw (180:0.9) node [anchor=270] {\tiny Range 2};
-        \end{scope}
-        \drawaircraftcounter{0.00}{0.00}{90}{F-4}{}
-    \end{athex}
-
-    \begin{athex}{4.00}{1.00}
-        \drawdotathex{+0.50}{0.75}
-        \drawdotathex{+0.50}{1.25}
-        \drawdotathex{+1.00}{1.00}
-        \drawdotathex{+1.00}{1.50}
-        \drawdotathex{+0.50}{1.75}
-        \drawdotathex{+1.50}{1.25}
-        \drawdotathex{+1.00}{2.00}
-        \drawdotathex{+1.50}{1.75}
-        \begin{scope}[shift={(60:1.6)}]
-            \draw[ very thick,dashed] (150:1.2) -- (-30:1.2);
-            \draw (150:1.0) node [rotate=-30,anchor=north] {\tiny Range 1};
-            \draw (150:1.0) node [rotate=-30,anchor=south] {\tiny Range 2};
-        \end{scope}
-        \drawaircraftcounter{0.00}{0.00}{60}{F-4}{}
-    \end{athex}
-
-    \begin{athex}{6.50}{0.75}
-        \drawdotathex{+0.50}{0.75}
-        \drawdotathex{+0.50}{1.25}
-        \drawdotathex{+1.00}{1.00}
-        \drawdotathex{+1.00}{1.50}
-        \drawdotathex{+0.50}{1.75}
-        \drawdotathex{+1.50}{1.25}
-        \drawdotathex{+1.00}{2.00}
-        \drawdotathex{+1.50}{1.75}
-        \begin{scope}[shift={(60:1.6)}]
-            \draw[ very thick,dashed] (150:1.2) -- (-30:1.2);
-            \draw (150:1.0) node [rotate=-30,anchor=north] {\tiny Range 1};
-            \draw (150:1.0) node [rotate=-30,anchor=south] {\tiny Range 2};
-        \end{scope}
-        \drawaircraftcounter{0.00}{0.00}{60}{F-4}{}
-    \end{athex}
-    
-\end{tikzfigure}
-}{
 \begin{tikzfigure}{0.9\linewidth}
 
     \drawhexgrid{9}{4}  
@@ -69,6 +11,11 @@
         \drawdotathex[white]{-0.50}{1.75}
         \drawdotathex[white]{+0.50}{1.75}
         \drawdotathex[white]{+0.00}{2.00}
+        \begin{scope}[shift={(90:1.375)}]
+            \draw [very thick,dashed] (180:1.2) -- (0:1.2);
+            \draw (180:0.9) node [anchor=90] {\tiny Range 1};
+            \draw (180:0.9) node [anchor=270] {\tiny Range 2};
+        \end{scope}
         \drawaircraftcounter{0.00}{0.00}{90}{F-4}{}
     \end{athex}
 
@@ -81,6 +28,11 @@
         \drawdotathex[white]{+1.50}{1.25}
         \drawdotathex[white]{+1.00}{2.00}
         \drawdotathex[white]{+1.50}{1.75}
+        \begin{scope}[shift={(60:1.6)}]
+            \draw[ very thick,dashed] (150:1.2) -- (-30:1.2);
+            \draw (150:1.0) node [rotate=-30,anchor=north] {\tiny Range 1};
+            \draw (150:1.0) node [rotate=-30,anchor=south] {\tiny Range 2};
+        \end{scope}
         \drawaircraftcounter{0.00}{0.00}{60}{F-4}{}
     \end{athex}
 
@@ -93,8 +45,12 @@
         \drawdotathex[white]{+1.50}{1.25}
         \drawdotathex[white]{+1.00}{2.00}
         \drawdotathex[white]{+1.50}{1.75}
+        \begin{scope}[shift={(60:1.6)}]
+            \draw[ very thick,dashed] (150:1.2) -- (-30:1.2);
+            \draw (150:1.0) node [rotate=-30,anchor=north] {\tiny Range 1};
+            \draw (150:1.0) node [rotate=-30,anchor=south] {\tiny Range 2};
+        \end{scope}
         \drawaircraftcounter{0.00}{0.00}{60}{F-4}{}
     \end{athex}
     
 \end{tikzfigure}
-}
