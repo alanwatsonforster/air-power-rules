@@ -1,11 +1,11 @@
 \begin{figure}[p]
 \centering
-\begin{tikzfigure}{1.0\linewidth}
+\begin{tikzfigure}{11.333\standardhexwidth}
 \scriptsize
 
-    \drawhexgrid{1}{0}{11}{5.5}
+    \drawhexgrid{0}{0}{10}{4}
 
-    \begin{athex}{2.00}{1.00}
+    \begin{athex}{1.00}{0.50}
         \drawdashedcounter  {+0.00}{+0.00}{90}
         \drawdashedcounter  {+0.00}{+1.00}{90}
         \drawaircraftcounter{+0.00}{+2.00}{90}{F-4}{}
@@ -19,7 +19,22 @@
         \miniathex{+0.00}{+2.00}{\draw [thick,->] (30:0.35) -- (30:0.65);}
     \end{athex}
 
-    \begin{athex}{6.00}{1.00}
+
+    \begin{athex}{2.50}{0.75}
+        \drawdashedcounter{+0.00}{+0.00}{60}
+        \drawdashedcounter{+0.50}{+0.75}{60}
+        \drawaircraftcounter{+1.00}{+1.50}{60}{F-4}{}
+        \drawaircraftcounter{+2.00}{+2.00}{60}{F-4}{}
+        \drawdashedcounter{+2.50}{+2.75}{60}
+        \begin{scope}[shift={(105:0.3)},thick,->]
+            \miniathex{+0.00}{+0.00}{\draw (60:0.05) -- (60:0.4);}
+            \miniathex{+0.50}{+0.75}{\draw (60:0.05) -- (60:0.4);}
+            \miniathex{+2.00}{+2.00}{\draw (60:0.05) -- (60:0.4);}
+        \end{scope}
+        \miniathex{+1.00}{+1.50}{\draw [thick,->] (30:0.35) -- (30:0.65);}
+    \end{athex}
+    
+    \begin{athex}{5.00}{0.50}
         \drawdashedcounter  {+0.00}{+0.00}{60}
         \drawdashedcounter  {+0.50}{+0.75}{60}
         \drawaircraftcounter{+1.00}{+1.50}{60}{F-4}{}
@@ -40,19 +55,6 @@
         \end{scope}
     \end{athex}
 
-    \begin{athex}{3.50}{1.25}
-        \drawdashedcounter{+0.00}{+0.00}{60}
-        \drawdashedcounter{+0.50}{+0.75}{60}
-        \drawaircraftcounter{+1.00}{+1.50}{60}{F-4}{}
-        \drawaircraftcounter{+2.00}{+2.00}{60}{F-4}{}
-        \drawdashedcounter{+2.50}{+2.75}{60}
-        \begin{scope}[shift={(105:0.3)},thick,->]
-            \miniathex{+0.00}{+0.00}{\draw (60:0.05) -- (60:0.4);}
-            \miniathex{+0.50}{+0.75}{\draw (60:0.05) -- (60:0.4);}
-            \miniathex{+2.00}{+2.00}{\draw (60:0.05) -- (60:0.4);}
-        \end{scope}
-        \miniathex{+1.00}{+1.50}{\draw [thick,->] (30:0.35) -- (30:0.65);}
-    \end{athex}
     
 \end{tikzfigure}
 \x{
