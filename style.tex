@@ -202,6 +202,30 @@
 \usetikzlibrary{calc}
 \usetikzlibrary{arrows.meta}
 
+\newif\ifaids
+\aidsfalse
+
+\newenvironment{FIGURE}[1][tbp]{
+    \begin{figure}[#1]
+    \centering
+}{
+    \end{figure}
+}
+\newenvironment{FIGURE*}[1][tbp]{
+    \begin{figure*}[#1]
+    \centering
+}{
+    \end{figure*}
+}
+\newcommand{\CAPTION}[2]{
+    \ifaids
+    Figure~\ref{#1}: #2
+    \else
+    \caption{#2}
+    \label{#1}
+    \fi
+}
+
 \newenvironment{tikzfigure}[1]{%
     \begin{fitwidth}{#1}%
     \begin{tikzpicture}[>={Stealth[length=1.5mm,inset=0pt]}]%

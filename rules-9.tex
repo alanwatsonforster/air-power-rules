@@ -6,13 +6,8 @@ This chapter details how to conduct gun and rocket attacks against other aircraf
 
 An aircraft equipped with guns may conduct one or two gun attacks per game turn. It may attack at any point during its move, but at least one FP (HFP or VFP) must be expended before each shot. The Internal Gun Data section on the Combat Characteristics panel of the ADC provides basic information about internal guns on an aircraft. If the aircraft has been fitted with a gun pod, the Gun Pod Weapons Table shows the basic information.
 
-\addedin{1D}{AWF}{
-\begin{figure}[tb]
-    \centering
+\addedin{1D}{AMW}{
     \input{figures/figure-air-to-air-gun-attacks}
-    \caption{\protect\x{Air-to-Air Gun Attacks}{The fields of fire of fixed guns and gun pods. The horizontal range is zero if the target occupies the same hex or hexside as the firer. Otherwise, the filled circles indicate positions with a horizontal range of 1 and the empty circles indicate positions with a horizontal range of 2. When firing at a target at a different altitude, each two full levels of altitude difference equals one hex of range.}}
-    \label{figure:air-to-air-gun-attacks}
-\end{figure}
 }
 
 \paragraph{Range.} All aircraft guns have a range of two hexes unless noted otherwise on the ADC. \changedin{1D}{AWF}{The Aircraft Gun Range Diagram}{Figure~\ref{figure:air-to-air-gun-attacks}} shows the field of fire for fixed or pod mounted guns. When firing at a target at a different altitude, each two full levels of altitude difference equals one hex of range.
@@ -100,86 +95,10 @@ For example, an aircraft directly behind the target aircraft and facing in the s
 
 The following illustrations show examples of angle-off arc determinations\notein{1B}{AWF: JDW has comments on this in APJ 22 QA, but they are superseded by the following change.}\changedin{1B}{JDW in the APJ 23 errata}{:}{. The diagram examples assume the target aircraft is co-speed or faster than the other aircraft. In the case that the other aircraft were faster, the two Phantoms in the earlier diagram would still be in the arcs shown, Phantom B in the later diagram would be in the left 120 arc and Phantom C would be in the left 30 arc.}
 
-\changedin{1D}{AWF}{
-\begin{figure}
-    \centering
-    \changedin{1B}{JDW in the TSOH errata}{
-    \includegraphics[width=0.9\linewidth]{figures/figure-angle-off-facing-hex-corner.pdf}
-    }{
-    \includegraphics[width=0.9\linewidth]{figures/figure-angle-off-facing-hex-corner-errata.pdf}    
-    }
-\end{figure}
-}{
-\begin{figure}[tb]
-    \centering
+\addedin{1D}{AMW}{
     \input{figures/figure-angle-off-facing-hex-corner}
-
-    \medskip
-
-    \begin{minipage}{0.8\linewidth}
-    A is the reference aircraft.
-
-    B is in the right 150{\deg} arc.
-
-    C is on the 0{\deg} line.
-    
-    \end{minipage}
-    \caption{Angle Off --- Facing Hex Corner}
-    \label{figure:angle-off-facing-hex-corner}
-\end{figure}
-}
-
-\changedin{1D}{AWF}{
-\begin{figure}
-    \centering
-    \includegraphics[width=0.9\linewidth]{figures/figure-angle-off-facing-hex-side.pdf}
-\end{figure}
-}{
-\begin{figure}[tb]
-    \centering
     \input{figures/figure-angle-off-facing-hex-side}
-
-    \medskip
-
-    \begin{minipage}{0.8\linewidth}
-    A is the reference aircraft.
-
-    B is in the right 60{\deg} arc.
-
-    C is in the right 90{\deg} arc.
-    
-    \end{minipage}
-    \caption{Angle Off --- Facing Hex Side}
-    \label{figure:angle-off-facing-hex-side}
-\end{figure}
-}
-
-\changedin{1D}{AWF}{
-\begin{figure}
-    \addedin{1B}{FH in APJ 36 errata}{\raggedright The following diagram has the 180L/R and 30L/R lines out of place, the Play Aids Diagrams: Page 1 shows them correctly, issuing from the centers of the hexes in front of and behind the A/C.}
-    \medskip
-
-    \centering
-    \includegraphics[width=0.9\linewidth]{figures/figure-angle-off-on-hex-side.pdf}
-\end{figure}
-}{
-\begin{figure}[tb]
-    \centering
     \input{figures/figure-angle-off-on-hex-side}
-
-    \medskip
-
-    \begin{minipage}{0.8\linewidth}
-    A is the reference aircraft.
-
-    B is in the left 90{\deg} arc.
-
-    C is in the right 30{\deg} arc (if it was facing A it would be on the 0{\deg} line).
-    
-    \end{minipage}
-    \caption{Angle Off --- On Hex Side}
-    \label{figure:angle-off-on-hex-side}
-\end{figure}
 }
 
 \notein{1B}{FH in APJ 36 has text about not returning fire to a head-on attack after an ET. I have added it above in the section on head-on attacks.}
@@ -249,7 +168,7 @@ To qualify for the CCA to hit modifier, the attacking aircraft must start a game
 
 \subsection{Additional Gun and Rocket Attack Modifiers}
 
-\addedin{1D}{AWF}{
+\addedin{1D}{AMW}{
     \input{figures/figure-ssgt-lines}
 }
 
@@ -283,7 +202,7 @@ Having previous radar contact or lock-ons is not a prerequisite for ranging nor 
 
 \subsection{Nuclear Rockets (AIR-2 Genie)}
 
-\addedin{1D}{AWF}{
+\addedin{1D}{AMW}{
     \input{figures/figure-genie-scatter}
 }
 
