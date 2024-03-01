@@ -1,0 +1,130 @@
+\begin{figure*}[tbp]
+\centering
+
+% These are arcs derived directly from the TSOH play aids.
+
+\newcommand{\drawlimitedarcA}[1][]{   
+    \draw [yscale=\hexxfactor,#1]
+        (-1.600,20.000) --
+        (-1.600,10.000) --
+        (-1.100, 9.000) --
+        (-1.100, 5.000) --
+        (-0.600, 4.000) --
+        (-0.600, 2.000) --
+        (-0.000, 0.333) -- 
+        (+0.600, 2.000) --
+        (+0.600, 4.000) --
+        (+1.100, 5.000) --
+        (+1.100, 9.000) --
+        (+1.600,10.000) --
+        (+1.600,20.000);   
+    \draw[yscale=\hexxfactor, <->, transform shape]
+        (-1.6,10.5) -- 
+        (0,10.5) node [anchor=south] {\minitable{c}{maximum\\width}} --
+        (+1.6,10.5);
+}
+\newcommand{\drawlimitedarcB}[1][]{  
+    \draw [yscale=\hexxfactor,#1]
+        (-1.6,20.000) --
+        (-1.6,11.000) --
+        (-1.1,10.000) --
+        (-1.1, 6.000) --
+        (-0.6, 5.000) --
+        (-0.6, 2.000) --
+        (+0.0, 0.333) -- 
+        (+0.6, 2.000) --
+        (+0.6, 5.000) --
+        (+1.1, 6.000) --
+        (+1.1,10.000) --
+        (+1.6,11.000) --
+        (+1.6,20.000);  
+    \draw[yscale=\hexxfactor, <->, transform shape]
+        (-1.6,11.5) -- 
+        (0,11.5) node [anchor=south] {\minitable{c}{maximum\\width}} --
+        (+1.6,11.5);
+}
+\newcommand{\drawlimitedarcC}[1][]{  
+    \draw [xscale=\hexxfactor,#1]
+        (-1.6,20.000) --
+        (-1.6, 9.250) --
+        (-1.1, 8.500) --
+        (-1.1, 5.000) --
+        (-0.6, 4.250) --
+        (-0.6, 1.250) --
+        (-0.0, 0.333) -- 
+        (+0.6, 1.250) --
+        (+0.6, 4.250) --
+        (+1.1, 5.000) --
+        (+1.1, 8.500) --
+        (+1.6, 9.250) --
+        (+1.6,20.000);   
+    \draw[xscale=\hexxfactor, <->, transform shape]
+        (-1.6,9.75) -- 
+        (0,9.75) node [anchor=south] {\minitable{c}{maximum\\width}} --
+        (+1.6,9.75);
+}
+
+% This figure shows them in the same orientation as in the TSOH play aids.
+%\begin{tikzfigure}{0.5\linewidth}
+%\begin{scope}[rotate=0]
+%    \drawdottedhexgrid{15.0}{15.5}
+%    
+%    \begin{athex}{1.00}{13.00}
+%        \begin{scope}[rotate=-90,thick]
+%            \drawlimitedarcA
+%        \end{scope}
+%        \drawaircraftcounter{0.00}{0.00}{90}{F-4}{}
+%    \end{athex}
+%
+%    \begin{athex}{1.00}{8.50}
+%        \begin{scope}[rotate=-90,thick,]
+%            \drawlimitedarcB
+%        \end{scope}
+%        \drawaircraftcounter{0.00}{0.00}{90}{F-4}{}
+%    \end{athex}
+%
+%    \begin{athex}{1.00}{7.50}
+%        \begin{scope}[rotate=-120,thick]
+%            \drawlimitedarcC
+%        \end{scope}
+%        \drawaircraftcounter{0.00}{0.00}{60}{F-4}{}
+%    \end{athex}
+%    
+%\end{scope}
+%\end{tikzfigure}
+
+\begin{tikzfigure}{0.7\linewidth}
+\begin{scope}[rotate=0]
+
+    \drawhexgrid{1}{0}{19}{12}
+    \drawpositiongrid{1}{0}{19}{12}
+    
+    \begin{athex}{6.50}{2.75}
+        \begin{scope}[rotate=-30,thick]
+            \drawlimitedarcA
+        \end{scope}
+        \drawaircraftcounter{0.00}{0.00}{60}{F-4}{}
+    \end{athex}
+
+    \begin{athex}{10.00}{1.00}
+        \begin{scope}[rotate=-30,thick]
+            \drawlimitedarcB
+        \end{scope}
+        \drawaircraftcounter{0.00}{0.00}{60}{F-4}{}
+    \end{athex}
+
+    \begin{athex}{4.00}{1.00}
+        \begin{scope}[rotate=0,thick]
+            \drawlimitedarcC
+        \end{scope}
+        \drawaircraftcounter{0.00}{0.00}{90}{F-4}{}
+    \end{athex}
+    
+\end{scope}
+\end{tikzfigure}
+
+\caption{Limited Arcs}
+\label{figure:limited-arcs}
+
+\end{figure*}
+
