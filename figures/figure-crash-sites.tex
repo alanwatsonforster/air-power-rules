@@ -2,16 +2,16 @@
 \centering
 \begin{tikzfigure}{1.0\linewidth}
 
-    \drawhexgrid{0}{0}{13}{6}
+    \drawhexgrid{0}{0}{14}{5}
 
     \newcommand{\drawcrashhex}[3]{
         \miniathex{#1}{#2}{
-            \drawhex[black!10]{0}{0}
+            \drawhex[fill=black!10]{0}{0}
             \draw node {#3};
         }
     }
 
-    \begin{athex}{2.00}{1.00}
+    \begin{athex}{7.00}{0.50}
         \drawcrashhex{+0}{+1.0}{1}
         \drawcrashhex{-1}{+1.5}{2}
         \drawcrashhex{+0}{+2.0}{3}
@@ -25,7 +25,7 @@
         \drawaircraftcounter{0.00}{0.00}{90}{F-4}{}
     \end{athex}
 
-    \begin{athex}{5.00}{1.50}
+    \begin{athex}{1.00}{0.5}
         \drawcrashhex{+0}{+1.0}{1}
         \drawcrashhex{+1}{+0.5}{2}
         \drawcrashhex{+0}{+2.0}{3}
@@ -39,7 +39,7 @@
         \drawaircraftcounter{0.00}{0.00}{60}{F-4}{}
     \end{athex}
 
-    \begin{athex}{9.50}{1.25}
+    \begin{athex}{10.50}{0.75}
         \drawcrashhex{-0.5}{+1.25}{1}
         \drawcrashhex{+0.5}{+0.75}{2}
         \drawcrashhex{+1.5}{+0.25}{3}
