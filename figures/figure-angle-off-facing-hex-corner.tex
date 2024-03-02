@@ -10,7 +10,7 @@
 
 }{
 
-\begin{FIGURE}[tb]
+\begin{FIGURE}[tbp]
 
 \begin{tikzfigure}{9.333\standardhexwidth}
     \tiny
@@ -49,13 +49,19 @@
         \miniathex{+3.0}{-0.5}{\draw node {\minitable{c}{Right\\120{\deg}}};}
     }
 
+\ifaids
+    \drawaircraftcounter{4.00}{4.00}{60}{F-105}{}
+\else
     \drawaircraftcounter{4.00}{4.00}{60}{F-105}{A}
     \drawaircraftcounter{5.00}{4.50}{270}{MiG-21}{B}
     \drawaircraftcounter{2.50}{1.75}{60}{F-105}{C}
-    
+\fi
+
 \end{tikzfigure}
 
-\medskip
+\ifaids\else
+
+\par\bigskip
 
 \begin{minipage}{0.8\linewidth}
 A is the reference aircraft.
@@ -65,6 +71,8 @@ B is in the right 150{\deg} arc.
 C is on the 0{\deg} line.
 
 \end{minipage}
+\fi
+
 \CAPTION{figure:angle-off-facing-hex-corner}{Angle Off --- Facing Hex Corner}
 
 \end{FIGURE}
