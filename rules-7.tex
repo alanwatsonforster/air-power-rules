@@ -58,12 +58,13 @@ Whenever an aircraft changes facing more than once in a game turn, it is perform
 
 \paragraph{Sustained Turn Drag Penalty.} An aircraft performing a sustained turn receives a drag penalty to 1.0 decel point for each \changedin{2A}{FH in APJ 36 errata, but stated by JDW in APJ 28 QA as applying to 2nd edition rules}{change of facing beyond the first}{30 degrees of facing change in the second and subsequent facing changes} in addition to any decel from the Turn Drag Chart. The drag penalty for sustained turning applies even if mixed turn rates or turn rates that normally incur 0 decel points are used.  
 
-Special maneuvers which cause facing changes are not considered for purposes of the sustained turn penalty. The snap turn facing change is counter toward determining sustained turn penalties.
+Special maneuvers which cause facing changes are not considered for purposes of the sustained turn penalty. \deletedin{2A}{2A:snap}{The snap turn facing change is counter toward determining sustained turn penalties.}
 
 \paragraph{High Bleed Rate Drag Penalty.} An aircraft noted as having a High Bleed Rate loses speed faster than others in a sustained turn. Such aircraft receive a drag penalty of 2.0 decel points for each change of facing (after the first; in addition to any penalty from the Turn Drag Chart).
 
 As above, the penalty for sustained turning applies even if mixed turn rates or turn rates that normally incur 0 Decel points are used.
 
+\deletedin{2A}{2A:snap}{
 \subsection{Snap Turning}
 
 \notein{1B}{ISSUE: JDW states in APJ 22 that a snap turn can also be carried out at the ET rate (in order to gain a 60 or 90 degree turn), but I'm not sure how to incorporate this here.}
@@ -89,20 +90,21 @@ A snap turn represents an aircraft using its instantaneous maximum angle of atta
 \paragraph{Snap Turn Drag} Any time a Snap Turn is used in a game turn, the aircraft incrues decel points as it if did a \changedin{1B}{JDW in APH 22 QA}{BT}{BT or ET} turn unless the aircraft's highest allowed turn rate was HT, in which case HT decel + 2.0 is incurred. If an aircraft later turns at the ET turn rate within the game turn, the ET decel would be used instead.
 
 \paragraph{Snap Turn Equivalent to Break Turn.} For purposes of gun combat, weapons launches, and other restrictions, a Snap Turn is equivalent to a \changedin{1B}{JDW in APH 22 QA}{BT}{BT or ET} turn. However, if the aircraft also turned at ET rate during the game-turn, the ET restrictions would apply.
+}
 
 \subsection{Angle of Bank}
 
 When an aircraft turns, it banks in the direction of that turn.  If an aircraft first turns left, and then immediately turns right, it must first roll out of the left bank and into a right bank. To reflect this momentary delay, an aircraft must spend 1 FP after the last facing (or after aborting the other turn) before FPs can be used to turn in the opposite direction. The aircraft is reversing its bank while spending this FP; this FP cannot be used for any other maneuvering requirement.
 
-\paragraph{High Roll Rate.} An aircraft noted as having a High Roll Rate can instantly reverse its angle of bank. It is not required to spend the 1 FP to reverse angle of bank. \addedin{1B}{JDW in the APJ 23 errata}{It must still pay the one HFP prep to snap turn if not beginning from wings level, or if having just faced, prepped for or executed a maneuver.}
+\paragraph{High Roll Rate.} An aircraft noted as having a High Roll Rate can instantly reverse its angle of bank. It is not required to spend the 1 FP to reverse angle of bank. \deletedin{2A}{2A:snap}{\addedin{1B}{JDW in the APJ 23 errata}{It must still pay the one HFP prep to snap turn if not beginning from wings level, or if having just faced, prepped for or executed a maneuver.}}
 
 \paragraph{Low Roll Rate.} An aircraft noted as having a Low Roll Rate must spend 2 FP after the last facing (or after aborting the other turn) before FPs can be used to turn in the opposite direction. The aircraft is reversing its bank while spending these FPs; the FPs cannot be used for any other maneuvering requirement.
 
 \addedin{1B}{FH in APJ 36 errata}{The term “wings level” means an aircraft did not just face, abort a turn, or prep for or complete a maneuver. Thus it reflects an aircraft's readiness to maneuver further. Being “not wings level” is \emph{not} synonymous with being banked.}
 
-\addedin{1B}{FH in APJ 36 errata}{Normal and High Roll Rate aircraft do not track angle of bank as such. For example, after coming out of a rolling maneuver they are not banked, but are also not “wings level”. In this situation they are eligible to immediately commence a normal turn, but would pay 1 HFP prep for a snap turn.}
+\addedin{1B}{FH in APJ 36 errata}{Normal and High Roll Rate aircraft do not track angle of bank as such. For example, after coming out of a rolling maneuver they are not banked, but are also not “wings level”. In this situation they are eligible to immediately commence a normal turn\deletedin{2A}{2A:snap}{, but would pay 1 HFP prep for a snap turn.}}
 
-If wings level, a Low Roll Rate aircraft must first spend 1 FP to establish an angle of bank (either left or right) before spending FPs for turns or snap turns. A Low Roll Rate aircraft may elect to end a flight phase with wings banked, even if no turn carry is in effect. Note BL (Banked Left) or BR (Banked Right) on the Turn Carry line of the Aircraft Log. \addedin{1B}{FH in APJ 36 errata}{Low Roll Rate aircraft cannot snap turn immediately if aborting a normal turn, after facing from a normal turn, or coming out of a rolling maneuver that leaves them banked. Though already banked, 1 prep HFP must still be expended. If banked the other way, 2 prep HFPs are required. Only if it did not just face, abort a turn, prep, or complete a maneuver, may it use a pre-existing bank attitude to eliminate the banking prep requirement for snap turns.} Low Roll Rate aircraft must also expend an extra HFP above the normal amount to prep-move for rolling maneuvers.
+If wings level, a Low Roll Rate aircraft must first spend 1 FP to establish an angle of bank (either left or right) before spending FPs for turns\deletedin{2A}{2A:snap}{ or snap turns}. A Low Roll Rate aircraft may elect to end a flight phase with wings banked, even if no turn carry is in effect. Note BL (Banked Left) or BR (Banked Right) on the Turn Carry line of the Aircraft Log. \deletedin{2A}{2A:snap}{\addedin{1B}{FH in APJ 36 errata}{Low Roll Rate aircraft cannot snap turn immediately if aborting a normal turn, after facing from a normal turn, or coming out of a rolling maneuver that leaves them banked. Though already banked, 1 prep HFP must still be expended. If banked the other way, 2 prep HFPs are required. Only if it did not just face, abort a turn, prep, or complete a maneuver, may it use a pre-existing bank attitude to eliminate the banking prep requirement for snap turns.}} Low Roll Rate aircraft must also expend an extra HFP above the normal amount to prep-move for rolling maneuvers.
 
 
 \paragraph{Rolling Maneuvers and Banks.} When an aircraft performs a rolling maneuver, it may exit that maneuver banked in any desired direction.
@@ -163,7 +165,7 @@ An aircraft may depart controlled flight for reasons other than being stalled. A
 
     \item When its Start speed is insufficient for a carried turn rate.
 
-    \item When performing a risky snap-turn.
+    \itemdeletedin{2A}{2A:snap}{When performing a risky snap-turn.}
 
     \item When an aircraft is above its ceiling and attempts to roll or use higher than EZ turns.
 

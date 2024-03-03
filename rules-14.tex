@@ -167,13 +167,13 @@ If an aircraft's speed includes a fraction; say it is 4.5 instead of 5.0, round 
 
     \end{itemize}
 
-    \item \itemparagraph{Turning.} Missiles use the Turn Charts just as do aircraft. Missiles do not receive decel points for turning or changing facing. Missiles never consider angles of bank and may therefore reverse turns instantly. Missiles may use a snap tuen once in their entire flight. If the snap turn is the first action performed, the normal prep-move requirements for snap-turning are waived (see Arming below). If a divisor is given, then the turn rate is better by the divisor's factor.
+    \item \itemparagraph{Turning.} Missiles use the Turn Charts just as do aircraft. Missiles do not receive decel points for turning or changing facing. Missiles never consider angles of bank and may therefore reverse turns instantly.\deletedin{2A}{2A:snap}{ Missiles may use a snap turn once in their entire flight. If the snap turn is the first action performed, the normal prep-move requirements for snap-turning are waived (see Arming below).} If a divisor is given, then the turn rate is better by the divisor's factor.
 
     Example: A missile with ET/2 turn rate requires only half the normal ET requirement. At speed 16.0, in the LO band, it would only have to move 3 FPs per facing change (half of six). Always round fractions up when determining missile turn requirements (i.e., half of 5 would be 3, or a third of 7 would be 3).
 
     \item \itemparagraph{Maneuvers.} Missiles are allowed slide maneuvers on every game turn like aircraft, lag displacement, and barrel rolls are not allowed. Any missile which expends more than one FP from the same position while climbing or diving may execute a vertical roll. Missiles are limited to one vertical roll in their entire flight unless they are pursuing a target which also does vertical rolls. In this case, the missile is allowed as many additional vertical rolls in a game turn as their target has performed.
 
-    The normal prep-move requirements for all maneuvers must be met just as for aircraft and all maneuvers cost 1 FP to execute except for vertical rolls which cost 0. \addedin{1B}{JDW in the APJ 23 errata}{Missile snap turns (except those performed as Instant Snap Turns) and missile slides are subject to a $+1$ prep requirement if the missiles are supersonic.}
+    The normal prep-move requirements for all maneuvers must be met just as for aircraft and all maneuvers cost 1 FP to execute except for vertical rolls which cost 0. \addedin{1B}{JDW in the APJ 23 errata}{Missile\deletedin{2A}{2A:snap}{ snap turns (except those performed as Instant Snap Turns) and missile} slides are subject to a $+1$ prep requirement if the missiles are supersonic.}
 
 \end{itemize}
 
@@ -182,9 +182,11 @@ If an aircraft's speed includes a fraction; say it is 4.5 instead of 5.0, round 
 To become armed, missiles must expend their first FP moving forward in level flight unless on the turn of launch the firing aircraft was in a climb or dive where more than half the aircraft's flight was spent as VFPs. In this case, the missile could use an FP to gain or lose altitude as appropriate instead. This one FP in which missiles are becoming armed may not be counted toward prep-moves, or turning requirements, nor can the missile attack targets it reaches (they are missed). They may commence maneuvering normally on second and subsequent FPs.                                                          
 \paragraph{Missile Tracking.} At the end of each game turn, and at the end of each segment of proportional movement, a missile must have the target within the tracking parameters of its seeker head (in terms of angle-off) or it will lose contact and either self-destruct or enter ballistic unguided flight. In either case, it is removed from play. The exact tracking requirements are described for each missile kind of missile later in the rules.
 
+\deletedin{2A}{2A:snap}{
 \paragraph{Instant Snap Turning (adv. rule 7.3).} Instant arming missiles, (indicated by an asterisk on the MDT) may begin maneuvering and attack immediately after launch. They are also allowed to immediately snap turn without prep-moving with their first FP or any FP later in their flight so long as no turns, maneuvers, or switches between climbs and dives have yet commenced. If they elect to snap-turn later in their flight, after any turns, maneuvers, or switches have occurred, they must prep-move for the snap-turn normally.
 
 Non-instant arming missiles may also snap-turn as their first maneuvering actions, but only after becoming armed. This is allowed as above, with their first FP following becoming armed, or later as long as no turns, maneuvers, or switches between climbs and dives have yet occurred or commenced. As above, if they elect to snap turn later in their flight they must prep-turn normally.
+}
 
 \paragraph{Follow On Missiles.} Whenever two missiles are launched at a time, the second one is termed a “follow-on” missile. This missile may not begin moving until the first missile has moved at least two FPs. This simulates the time delay between the firing of the two missiles. The time delay may be longer, but not more than 1/3 the first missile's speed.
 
