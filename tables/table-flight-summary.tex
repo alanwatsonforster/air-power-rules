@@ -135,13 +135,13 @@
 \subheading{Unloaded Dives}
 
 \begin{enumerate}[nosep]
-    \item All FPs are HFPs.
-    \item At least 1 HFP must be expended with the aircraft “unloaded”. More than 1 and up to all may be expended “unloaded”.
-    \item Each HFP expended while unloaded moves the aircraft forward one hex/hexside and loses it one altitude level.
-    \item The aircraft gains accel as if Steep Diving.
+    \item \changedin{2A}{2A:unloaded-dives}{All FPs are HFPs.}{One or two FPs are VFPs. The rest are HFPs.}
+    \item \changedin{2A}{2A:unloaded-dives}{At least 1 HFP must be expended with the aircraft “unloaded”. More than 1 and up to all may be expended “unloaded”.}{The first VFP may only be used after half of the HFPs have been expended with the aircraft unloaded. The second VPF may only be used after all of the HFPs have been expended with the aircraft unloaded.}
+    \item \changedin{2A}{2A:unloaded-dives}{Each HFP expended while unloaded moves the aircraft forward one hex/hexside and loses it one altitude level.}{The aircraft loses 1 level on each VFP.}
+    \item \changedin{2A}{2A:unloaded-dives}{The aircraft gains accel as if Steep Diving.}{The aircraft gains 1.0 AP per level lost.}
     \item The aircraft may not make any attacks, guide weapons or aim while unloaded.
-    \item HFPs done while unloaded may not be used for turning or prep-moving.
-    \item All unloaded HFPs done in a single game-turn must be done in one continuous string.
+    \item \changedin{2A}{2A:unloaded-dives}{FPs done while unloaded may not be used for turning or prep-moving.}{Unloaded FPs may not be used for turning flight or for preparing or executing any maneuver except a slide.}
+    \item All unloaded \changedin{2A}{2A:unloaded-dives}{HFPs}{FPs} done in a single game-turn must be done in one continuous string.
 \end{enumerate}
 
 \subheading{Vertical Dives}
