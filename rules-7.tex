@@ -16,7 +16,7 @@ Five rates of turn are available to an aircraft. Each rate of turn corresponds t
 \end{itemize}
 
 Next consult the Integrated Turn Charts and cross index the selected turn rate with the aircraft's current speed (rounded down). \notein{1B}{FH in APJ 36 states: “A/C speed, not FPs, is used on the Integrated Turn Charts.” However, the text already states that it is speed. I have not incorporated this.}
-Be sure to use the chart corresponding to the altitude band the aircraft is in. If an “NA” is encountered, that combination of turn rate and speed is not allowed. If a number appears, that is the minimum number of FPs that the aircraft must expend in flight before changing facing. If a 60 or 90 appears, that indicates the aircraft may change facing by up to 60 or 90 degrees respectively for each FP expended inflight that game turn. \addedin{1B}{FH: APJ}{A 60 or 90 degree turn is considered one facing change except for purposes of sustained turning decel.}
+Be sure to use the chart corresponding to the altitude band the aircraft is in. If an “NA” is encountered, that combination of turn rate and speed is not allowed. If a number appears, that is the minimum number of FPs that the aircraft must expend in flight before changing facing. If a 60 or 90 appears, that indicates the aircraft may change facing by up to 60 or 90 degrees respectively for each FP expended inflight that game turn. \addedin{2A}{2A:sustained, from FH in APJ 36}{A 60 or 90 degree turn is considered one facing change except for purposes of sustained turning decel.}
 
 Changing facing does not cost any FPs; it is the end result of having begun to turn and having used the specified number of FPs (or more) in flight while turning. A turn consists of all the FPs used prior to changing the aircraft's facing plus the act of facing itself. If an aircraft is on a hexside at the time of facing, shift it to the adjacent hex (in the direction the aircraft is turning) and then change its facing as shown \changedin{1C}{AWF}{below}{Figure~\ref{figure:changing-facing}}. 
 
@@ -56,7 +56,9 @@ Note: An aircraft is assessed decel points for Turn Drag based on the highest tu
 
 Whenever an aircraft changes facing more than once in a game turn, it is performing a sustained turn.
 
-\paragraph{Sustained Turn Drag Penalty.} An aircraft performing a sustained turn receives a drag penalty to 1.0 decel point for each \changedin{2A}{FH in APJ 36 errata, but stated by JDW in APJ 28 QA as applying to 2nd edition rules}{change of facing beyond the first}{30 degrees of facing change in the second and subsequent facing changes} in addition to any decel from the Turn Drag Chart. The drag penalty for sustained turning applies even if mixed turn rates or turn rates that normally incur 0 decel points are used.  
+\notein{1B}{AWF: FH in APJ 36 errata stated that the penalty was for each 30 degrees of facing change, JDW in APJ 38 QA stated that this was a change in the 2nd edition rules.}
+
+\paragraph{Sustained Turn Drag Penalty.} An aircraft performing a sustained turn receives a drag penalty to 1.0 decel point for each \changedin{2A}{2A:sustained}{change of facing beyond the first}{30 degrees of facing change in the second and subsequent facing changes} in addition to any decel from the Turn Drag Chart. The drag penalty for sustained turning applies even if mixed turn rates or turn rates that normally incur 0 decel points are used.  
 
 Special maneuvers which cause facing changes are not considered for purposes of the sustained turn penalty. \deletedin{2A}{2A:snap}{The snap turn facing change is counter toward determining sustained turn penalties.}
 
