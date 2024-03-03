@@ -62,9 +62,17 @@ Whenever an aircraft changes facing more than once in a game turn, it is perform
 
 Special maneuvers which cause facing changes are not considered for purposes of the sustained turn penalty. \deletedin{2A}{2A:snap}{The snap turn facing change is counter toward determining sustained turn penalties.}
 
+\changedin{2A}{2A:sustained}{
 \paragraph{High Bleed Rate Drag Penalty.} An aircraft noted as having a High Bleed Rate loses speed faster than others in a sustained turn. Such aircraft receive a drag penalty of 2.0 decel points for each change of facing (after the first; in addition to any penalty from the Turn Drag Chart).
 
 As above, the penalty for sustained turning applies even if mixed turn rates or turn rates that normally incur 0 Decel points are used.
+
+}{
+\paragraph{Low Bleed Rate.} An aircraft noted as having a low bleed rate loses speed slower than others in a sustained turn and receives a drag penalty of 0.5 DPs (rather than 1.0 DP) for each 30 degrees of facing change in the second and subsequent facing changes.
+
+\paragraph{High Bleed Rate.} An aircraft noted as having a high bleed rate loses speed faster than others in a sustained turn and receives a drag penalty of 1.5 DPs (rather than 1.0 DP) for each 30 degrees of facing change in the second and subsequent facing changes.
+}
+
 
 \deletedin{2A}{2A:snap}{
 \subsection{Snap Turning}
