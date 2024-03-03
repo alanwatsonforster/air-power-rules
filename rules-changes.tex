@@ -3,6 +3,7 @@
 %\newcommand{\thisversion}{1B}
 %\newcommand{\thisversion}{1C}
 \newcommand{\thisversion}{2A}
+%\newcommand{\thisversion}{2B}
 %\newcommand{\thisversion}{2Z}
 
 \newcommand{\thissubversion}{}
@@ -35,25 +36,17 @@
     \newcommand{\earlierversion}{1B}
     \newcommand{\earlierversions}{1A1B}
 }{}
-\IfStrEq{\thisversion}{1D}{
+\IfStrEq{\thisversion}{2A}{
     \newcommand{\earlierversion}{1C}
     \newcommand{\earlierversions}{1A1B1C}
 }{}
-\IfStrEq{\thisversion}{1E}{
-    \newcommand{\earlierversion}{1C}
-    \newcommand{\earlierversions}{1A1B1C1D}
-}{}
-\IfStrEq{\thisversion}{2A}{
-    \newcommand{\earlierversion}{1E}
-    \newcommand{\earlierversions}{1A1B1C1D1E}
-}{}
 \IfStrEq{\thisversion}{2B}{
     \newcommand{\earlierversion}{2A}
-    \newcommand{\earlierversions}{1A1B1C1D1E2A}
+    \newcommand{\earlierversions}{1A1B1C12A}
 }{}
 \IfStrEq{\thisversion}{2Z}{
     \newcommand{\earlierversion}{2B}
-    \newcommand{\earlierversions}{1A1B1C1D1E2A2B}
+    \newcommand{\earlierversions}{1A1B1C12A2B}
 }{}
 
 % These commands compare their first argument to \thisversion. If their first argument is an equal to, earlier than, or later than \thisversion, they evaluate their second argument. The first argument will normally be the version in which a change was made. The commands should be read as "if the change was made in this, in an earlier, or in a later version, then evaluate the second argument."
@@ -62,9 +55,9 @@
 \newcommand{\ifearlierversion}[2]{\IfSubStr{\earlierversions}{#1}{#2}{}}
 \newcommand{\iflaterversion}[2]{\IfSubStr{\earlierversions\thisversion}{#1}{}{#2}}
 
-\newcommand{\added}[1]{{\color{blue} #1}}
-\newcommand{\deleted}[1]{{\color{red} #1}}
-\newcommand{\note}[1]{{\color{orange} [#1]}}
+\newcommand{\added}[1]{{\color{blue}#1}}
+\newcommand{\deleted}[1]{{\color{red}#1}}
+\newcommand{\note}[1]{{\color{orange}[#1]}}
 
 \IfStrEq{\thisversion}{All}{
     \newcommand{\addedin}[3]{%
@@ -116,6 +109,9 @@
     \newcommand{\tablerownotein}[3]{%
         \ifthisversion{#1}{\multicolumn{#2}{l}{\note{Note in #1: #3}}\\}%
 	}
+    \newcommand{\tablerowdeletedin}[3]{%
+        #3\\%
+    }
     \newcommand{\silentlyaddedin}[2]{%
         \ifthisversion{#1}{#2}%
         \ifearlierversion{#1}{#2}%
@@ -149,6 +145,10 @@
     \newcommand{\tablerownotein}[3]{%
         \ifthisversion{#1}{\multicolumn{#2}{l}{\note{#3}}\\}%
 	}
+    \newcommand{\tablerowdeletedin}[3]{%
+        \iflaterversion{#1}{#3\\}%
+        \ifthisversion{#1}{#3\\}%
+    }
     \newcommand{\silentlyaddedin}[2]{%
         \ifthisversion{#1}{#2}%
         \ifearlierversion{#1}{#2}%
@@ -172,6 +172,9 @@
     }
     \newcommand{\itemdeletedin}[3]{%
         \iflaterversion{#1}{\item #3}%
+    }
+    \newcommand{\tablerowdeletedin}[3]{%
+        \iflaterversion{#1}{#3\\}%
     }
     \newcommand{\tablerownotein}[3]{%
 	}
