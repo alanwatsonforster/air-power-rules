@@ -1,10 +1,57 @@
-\begin{FIGURE*}[!ht]
+\changedin{1C}{AMW}{
 
+\begin{FIGURE*}[!ht]
 \includegraphics[width=0.7\linewidth]{figures/figure-adc-flight-side.pdf}
 \includegraphics[width=0.7\linewidth]{figures/figure-adc-combat-side.pdf}
+\end{FIGURE*}
 
-\addedin{1C}{AWF}{
-\CAPTION{figure:adc}{An aircraft data card (ADC).}
+}{
+\begin{FIGURE*}[!ht]
+
+\newcommand{\drawleftlabel}[3]{
+    \draw [thick,->] (-8.5,#3-0.3*8.5-0.3*#2) [anchor=east, inner sep=1mm] node {\normalsize #1} -- (#2,#3);
+}
+\newcommand{\drawrightlabel}[3]{
+    \draw [thick,->] (+8.5,#3+0.3*8.5-0.3*#2) [anchor=west, inner sep=1mm] node {\normalsize #1} -- (#2,#3);
 }
 
+\begin{tikzfigure}{\linewidth}
+
+% Fix the width.
+\draw [color=white] (-10,0) -- (+10,0);
+
+\changedin{2A}{AMW}{
+\draw (+0.0,-0.05) node 
+    {\includegraphics[width=14cm]{figures/figure-adc-first-edition.png}};
+}{
+\draw (+0.0,+0) node 
+    {\includegraphics[width=14cm]{figures/figure-adc-second-edition.png}};
+}
+%\draw[step=1cm,color=black!20] (-10,-10) grid (10,12);
+
+\drawleftlabel{1}{-6.7}{+9.0}
+\drawleftlabel{2}{-2.3}{+6.9}
+\drawleftlabel{3}{-2.4}{+4.7}
+\drawrightlabel{4}{+6.7}{+8.0}
+\drawleftlabel{5}{-6.7}{+7.40}
+\drawleftlabel{6}{-6.7}{+4.2}
+\drawrightlabel{7}{+6.7}{+7.0}
+\drawrightlabel{8}{+6.7}{+4.2}
+\drawleftlabel{9}{-6.7}{-0.8}
+\drawleftlabel{10}{-2.5}{-0.8}
+\drawleftlabel{11}{-6.7}{-3.05}
+\drawleftlabel{12}{-6.7}{-5.35}
+\drawleftlabel{13}{-2.5}{-3.05}
+\drawrightlabel{14}{+6.7}{-0.8}
+\drawrightlabel{15}{+6.7}{-3.2}
+\drawrightlabel{16}{+3.9}{-3.6}
+\drawrightlabel{17}{+6.7}{-4.2}
+\drawleftlabel{18}{-6.7}{-6.1}
+\drawrightlabel{19}{+6.7}{-8.9}
+
+\end{tikzfigure}
+
+\CAPTION{figure:adc}{An aircraft data card (ADC).}
+
 \end{FIGURE*}
+}
