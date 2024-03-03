@@ -105,6 +105,8 @@ If the aircraft recovers, it may resume normal flight. Start speed is automatica
 
 \subsection{Speedbrakes}
 
+\changedin{2A}{2A:spbr}{
+
 Most jet aircraft are equipped with speedbrakes. Speedbrakes may be applied once per game turn, at any point in an aircraft's flight, to burn off FPs.  Speedbrakes (when applied) expend FPs up to the amount listed on the speedbrake (SPBR) row of the power chart of the ADC without actually moving the aircraft.
 
 The FPs burned may be either HFPs, or VFPs if in climbing or diving flight. FPs burned by speedbrakes simply go away; they may not be counter toward any required expenditure of FPs such as those for doing turning flight, maneuvers, proportional moves, or combat. \addedin{1B}{FH in APJ 36 errata}{Speedbrakes may not be used to eliminate the only VFP of a climb or dive, or the only unloaded HFP in an unloaded dive. They may, in general, be used to eliminate a VFP in a vertical climb or dive.}
@@ -114,6 +116,13 @@ The FPs burned may be either HFPs, or VFPs if in climbing or diving flight. FPs 
 \addedin{1B}{FH in APJ 36 errata}{FPs burned by speedbrakes may not contribute to a recovery period, nor do they satisfy SSGT or ground attack aiming requirements. They may be used to eliminate HFPs required when switching from a dive to a climb or vice versa, and VFPs or unloaded HFPs mandated after a vertical dive.}
 
 \paragraph{Decel Penalty for Speedbrake Use.} The aircraft receives one decel point for each 0.5 FP burned in speedbraking.
+
+}{
+
+Most jet aircraft are equipped with speedbrakes. Speedbrakes may be applied once per game turn, at any point in an aircraft's movement, to burn off energy and incur DPs up to the maximum listed on the speedbrake row of the power chart of the ADC.  The deceleration from speedbrakes is in addition to any other DPs incurred by the aircraft.
+
+(In earlier ADCs, the speedbrake row is labeled “Spbr.\ FP” rather than “Spbr.\ DP”, and the values should be doubled to obtain the corresponding number of DPs.)
+}
 
 \subsection{Supersonic Speed Effects}
 
@@ -140,7 +149,7 @@ Aircraft flying at speeds approaching or exceeding the speed of sound are affect
 
     \item An aircraft in Afterburner power is not penalized as for other power settings.
 
-    \item An aircraft which uses Speedbrakes may lose up to 0.5 FPs of speed over the amount listed in the power chart.
+    \item \changedin{2A}{2A:spbr and AWF on the basis of that $1 \mathrm{FP} = 2\math{DP}$ used elsewhere, although MP in v2.4 has 4 DPs here.}{An aircraft which uses Speedbrakes may lose up to 0.5 FPs of speed over the amount listed in the power chart.}{An aircraft that uses speedbrakes may incur 1 DP more than the maximum listed in the ADC.}
 
     \item An aircraft which turns (even at the EZ rate) while supersonic incurs 1.0 additional decel point for the game turn.
 
