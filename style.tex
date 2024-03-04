@@ -263,6 +263,16 @@
     \end{athex}
 }
 
+\newcommand{\drawarrowcounter}[3]{
+    \begin{athex}{#1}{#2}
+        \begin{scope}[rotate=#3-45]
+            \draw[fill=white] (-0.3,-0.3) rectangle (0.3,0.3);
+            \draw[very thick, ->] (-0.2,-0.2) -- (0.2,0.2);
+        \end{scope}
+    \end{athex}
+}
+
+
 % The number is sqrt(0.75) to three decimal places. It is the distance between column centers of a hex grid in which the difference between row centers is 1.0.
 \newcommand{\hexxfactor}{0.866}
 
