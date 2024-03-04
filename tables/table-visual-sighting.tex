@@ -45,8 +45,10 @@ Number of aircraft searching:\\
 3 or 4&$-1$\\
 5 or 8&$-2$\\
 9+    &$-3$\\
-Tgt.\ is just launched Missile or SAM$^*$&$-3$\\
-Tgt.\ is aircraft which just launched Missile$^*$&$-3$\\
+\changedin{2A}{2A:missile-sighting}{Tgt.\ is just launched Missile or SAM$^*$}{Target is a missile with a normal boost or sustainer motor burning}&$-3$\\
+\tablerowaddedin{2A}{2A:missile-sighting}{\addedin{2A}{2A:missile-sighting}{Target is a missile with a smokeless boost or sustainer motor burning}&\addedin{2A}{2A:missile-sighting}{$-1$}}
+\tablerowaddedin{2A}{2A:missile-sighting}{\addedin{2A}{2A:missile-sighting}{Target is a missile just launched from a spotted aircraft}&\addedin{2A}{2A:missile-sighting}{$-2$}}
+\changedin{2A}{2A:missile-sighting}{Tgt.\ is aircraft which just launched Missile$^*$}{Target just launched a missile that was spotted}&\changedin{2A}{2A:missile-sighting}{$-3$}{$-2$}\\
 Tgt.\ is in all searcher's Restricted Arcs&$+2$\\
 Searcher is Looking out of Stratus&$+2$\\
 Searcher is Veteran and Tactics Master&$-2$\\
@@ -62,7 +64,7 @@ Target using DDS Flare program&$+$PPL No.\\
 \hline
 \tablemedskip
 \tablenotes{2}{0.9\linewidth}{
-$^*$ does not apply to smokeless missiles.
+\deletedin{2A}{2A:missile-sighting}{$^*$ does not apply to smokeless missiles.}
 
 NOTE: All modifiers are cumulative. Disoriented or GLOC aircrew may not search.
 }

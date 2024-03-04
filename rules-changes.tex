@@ -109,6 +109,9 @@
     \newcommand{\tablerownotein}[3]{%
         \ifthisversion{#1}{\multicolumn{#2}{l}{\note{Note in #1: #3}}\\}%
 	}
+    \newcommand{\tablerowaddedin}[3]{%
+        #3\\%
+    }
     \newcommand{\tablerowdeletedin}[3]{%
         #3\\%
     }
@@ -145,6 +148,10 @@
     \newcommand{\tablerownotein}[3]{%
         \ifthisversion{#1}{\multicolumn{#2}{l}{\note{#3}}\\}%
 	}
+    \newcommand{\tablerowaddedin}[3]{%
+        \ifthisversion{#1}{#3\\}%
+        \ifearlierversion{#1}{#3\\}%
+    }
     \newcommand{\tablerowdeletedin}[3]{%
         \iflaterversion{#1}{#3\\}%
         \ifthisversion{#1}{#3\\}%
@@ -172,6 +179,10 @@
     }
     \newcommand{\itemdeletedin}[3]{%
         \iflaterversion{#1}{\item #3}%
+    }
+    \newcommand{\tablerowaddedin}[3]{%
+        \ifthisversion{#1}{#3\\}%
+        \ifearlierversion{#1}{#3\\}%
     }
     \newcommand{\tablerowdeletedin}[3]{%
         \iflaterversion{#1}{#3\\}%
