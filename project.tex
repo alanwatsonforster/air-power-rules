@@ -8,6 +8,7 @@
 \runningtitle{Updated Rules Project}
 
 \setcounter{secnumdepth}{0}
+%\setlist[enumerate,1]{label = (\alph*)}
 
 \begin{document}
 
@@ -23,12 +24,12 @@ This project aims to produce updated rules for {\AirPow}.
 \section*{Context}
 
 At the time of writing, there are several sets of rules available:
-\begin{enumerate}
+\begin{itemize}
     \item The original {\AirSup} and {\AirStr} rules from 1987, with extensions in {\DF} and {\EOTG}. I understand that a limited number of copies of {\AirSup} are still available. Nevertheless, these rules are considered obsolete.
     \item The first-edition {\AirPow} rules, with official errata, published in 1992 with {\TSOH}. There are two sets of errata: one page provided with {\TSOH} and four pages published in {\APJ} \#24. Again, I understand that a very limited number of copies are still available.
     \item Several proposals for second-edition rules outlined by J.D.\ Webster mainly in {\APJ} during the 1990s.
-    \item The second-edition {\AirPow} rules, edited by Malcolm Pipes and published in 2022 on the \href{https://airpower.groups.io/g/main}{airpower email group} site. The current text is labeled “v2.4”. Crucially, it is available in an editable format.
-\end{enumerate}
+    \item The second-edition {\AirPow} rules, edited by Malcolm Pipes and published in 2022 on the \href{https://airpower.groups.io/g/main}{airpower email group} site. The current text is labeled “v2.4”.
+\end{itemize}
 
 \section*{Rationale}
 
@@ -38,55 +39,59 @@ There is already a set of second-edition rules. Why is the project necessary?
     \item Where they incorporate errata, it is often inserted literally rather than changing the text to include the sense of the errata.
     \item There is no traceability. Changes have been made, but there is no way to see what changed or why.
     \item There are no internal hyperlinks for cross references.
-    \item There is no attempt to incorporate examples or explanations. Indeed, there is little effort to distinguish examples or explanations in the original text.
     \item Many of the diagrams have not been fixed.
-    \item The text needs copy editing and, in certain places, could benefit from being rewritten or perhaps reorganized.
-    \item The text still refers to pilots, crew, and players using masculine pronouns. That was understandable when the first-edition rules were written, but nevertheless it needs correcting.
     \item I think it would be helpful to incorporate diagrams and tables into the text (and also have them on the play-aid sheets). With printed rules, this separation reduced costs and, to a large degree, was more convenient. When viewed on the screen, these considerations are different.
+    \item The text needs copy editing and, in certain places, could benefit from being rewritten or perhaps reorganized.
+    \item There are few examples or explanations. Indeed, there is little effort to distinguish examples or explanations in the original text.
+    \item The text still refers to pilots, crew, and players using masculine pronouns. That was understandable when the first-edition rules were written, but nevertheless it needs correcting.
 \end{itemize}
 
 \section*{Versions}
 
-There will be several versions of the rules and play aids, each based on the previous one.
+I use “versions” to distinguish my efforts from the other “editions.” There will be several versions of the rules and play aids, each based on the previous one. 
 
 \begin{itemize}
     \item Version 1A will correspond to the original first-edition rules without the official errata.
     \item Version 1B will incorporate the errata from authoritative sources, including the pubished errata, statements by J.D.\ Webster, and Felix Hack’s article in {\APJ} 36.
-    \item Version 1C will have corrected and redrawn diagrams.
+    \item Version 1C will have corrected and redrawn diagrams and will incorporate these into the body of the text in addition to the play aid sheets.
 %    \item Version 1E will have additional minor changes from non-authoritative sources.
-    \item Version 2A will incorporate changes from the Malcolm Pipe’s second-edition rules. Not all changes will be adopted since some seem to have issues.
-    \item Version 2B will incorporate changes according to additional authoritative sources.
-    \item Version 2C will have additional non-authoritative changes.
-    \item Version 2Z will separate examples, comments, and explanations from the rules. It will include additional examples. Certain rules may be rewritten for clarity and conciseness while preserving their meaning. Parts of the text may be reorganized.
+    \item Version 2A will incorporate second-edition changes from {\APJ}, email messages from JD Webster, and  Malcolm Pipe’s second-edition rules. Not all changes will be adopted since some seem to have issues.
+    %\item Version 2B will incorporate changes according to additional authoritative sources.
+    %\item Version 2C will have additional non-authoritative changes.
+    %\item Version 2Z will separate examples, comments, and explanations from the rules. It will include additional examples. Certain rules may be rewritten for clarity and conciseness while preserving their meaning. Parts of the text may be reorganized.
 \end{itemize}
 
-Version 1E and 2B represent attempts to produce modern first- and second-edition rules while remaining faithful to the designer’s intent and making only minor changes to the text. Version 2C is more speculative.
+%Version 1E and 2B represent attempts to produce modern first- and second-edition rules while remaining faithful to the designer’s intent and making only minor changes to the text. Version 2C is more speculative.
 
-The versions up to and including 2C will include only minimal changes to the text, and these changes will largely be drawn from authoritative sources. I’m pretty sure about the nature of these versions. I’m less sure about 2Z, and I am considering designating version 2Z as version 3 since it will include significantly rewritten and reorganized text.
+Having multiple versions allow us to more easily review changes. For example, the changes between 1A and 1B do change the rules according to authoritative sources, but the changes between 1B and 1C are mainly concerned with improving the figures.
 
-I use “versions” to distinguish my efforts from the other “editions.”
+The versions up to and including 2A will include only minimal changes to the text, and these changes will largely be drawn from authoritative sources. 
+
+% I’m pretty sure about the nature of these versions. I’m less sure about 2Z, and I am considering designating version 2Z as version 3 since it will include significantly rewritten and reorganized text.
 
 \section*{Products}
 
-I will produce PDF files for versions 1E, 2B, 2C, and 2Z. (Other versions can be generated from the sources.) Furthermore, there will be two options for version 2Z: with comments and examples and without. The latter option will have the advantage of conciseness. 
+I will produce two PDF files for each version, on showing the changes with respect to the previous version and one clean version.
 
-There will also be a PDF file showing all of the changes and their origins. This will give traceability.
+%(Other versions can be generated from the sources.) Furthermore, there will be two options for version 2Z: with comments and examples and without. The latter option will have the advantage of conciseness. 
+
+%There will also be a PDF file showing all of the changes and their origins. This will give traceability.
 
 \section*{Process}
 
 I will typeset the rules using LaTeX on Overleaf and track the source text using GitHub.
 
-The text for version 1A will be generated by taking Malcolm Pipe’s second-edition text, manually comparing it to the first-edition rules, and making any changes necessary to obtain agreement. (I believe permission to do this is implicit in his statement, “Edit as desired after download.” on 2021-02-05 to the airpower.io group.)
+The source text for version 1A will be generated by taking Malcolm Pipe’s second-edition text, manually comparing it to the first-edition rules, and making any changes necessary to obtain agreement. (I believe permission to do this is implicit in his statement, “Edit as desired after download.” on 2021-02-05 to the airpower.io group.)
+
+I will use custom LaTeX commands to introduce changes into the source text. These changes will be tagged and the tags described in this document. This gives traceability.
 
 \section*{Design}
 
 The {\AirSup} rules were published in GDW’s house style. This used a san serif font, which favors compactness over readability. The first-edition rules followed this style to a large degree.
 
-I want the rules to be readable and beautiful, but I also wish to preserve some of the design heritage of the earlier rules. 
+I want the rules to be readable and beautiful, but I also wish to preserve some of the design heritage of the earlier rules. Therefore, I have maintained a layout with a two-column design, with a line separating the columns, and adapted the header from the GDW editions and the section format from the first-edition rules. However, I have replaced the san serif font with a serif font designed for readability.
 
-Therefore, I have maintained a layout with a two-column design, with a line separating the columns, and adapted the header from the GDW editions and the section format from the first-edition rules. 
-
-The significant change is to use a serif font designed for readability. I have chosen \href{https://www.gust.org.pl/projects/e-foundry/tex-gyre/schola}{Schola}, based on URW Century Schoolbook and adapted for LaTeX by the GUST foundry as part of the TeX Gyre project. Schola has a version for math, which is useful for text like “$1 ≤ \CC ≤ 2$”. Of the other TeX Gyre fonts, the Palatino version would also be suitable, but it is heavily used for {\itshape Birds of Prey}, and I wish to maintain a clear distinction.
+After considering several options, I have chosen the \href{https://www.gust.org.pl/projects/e-foundry/tex-gyre/schola}{Schola} font, based on the URW Century Schoolbook font and adapted for LaTeX by the GUST foundry as part of the TeX Gyre project. Schola has a version for math, which is useful for text like “$1 ≤ \CC ≤ 2$”. Of the other TeX Gyre fonts, the Palatino version would also be suitable, but Palatino is heavily used in {\itshape Birds of Prey}, and I wish to maintain a clear distinction.
 
 \section{Rules Changes}
 
@@ -94,16 +99,15 @@ The significant change is to use a serif font designed for readability. I have c
 
 Version 1B incorporates the following errata:
 
-\begin{itemize}
+\begin{enumerate}
     \item All changes in the single sheet of errata included with TSOH. (These changes are tagged in the source as “TSOH errata”).
     \item The optional advanced damage tables from APJ 22. (These changes are tagged in the source as “APJ 22 damage tables”).
     \item All changes in the four sheets of errata published in APJ 23. (These changes are tagged in the source as “APJ 23 errata”).
     \item All changes in the revised play aids published in APJ 24. (These changes are tagged in the source as “APJ 24 play aids”).
     \item All changes in Felix Hack’s list of errata published in APJ 36. (These changes are tagged in the source as “APJ 36 errata”).
     \item Changes and clarifications from JD Webster’s Q\&A articles in {\APJ} 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 34, 35, 36, 37, 38, and 39. (These changes are tagged in the source as, for example, “APJ 20 QA”).
-    \item A correction to the rule on tailing following an email message by JD Webster to the airpower group.
-    
-\end{itemize}
+    \item A correction to the rule on tailing following an email message by JD Webster to the airpower group.    
+\end{enumerate}
 
 \subsection{Version 1C}
 
@@ -119,51 +123,52 @@ Version 1C incorporates the following changes:
 
 Version 2A incorporates the following changes:
 
+\newcommand{\itemtag}[1]{\item \textbf{Change: #1.}}
 \begin{itemize}
 
-    \item The first-edition F-4B/C ADC is replaced with the second-edition F-4F ADC from {\APJ}~44.
+    \itemtag{2A:adc} The first-edition F-4B/C ADC is replaced with the second-edition F-4F ADC from {\APJ}~44.
 
-    \item An aircraft that selects idle power no longer has its start speed reduced. Instead, the aircraft incurs DPs for normal power plus the additional DPs listed in the ADC. (See the Origins rules in {\APJ}~39, 41, 44, and 53 and the v2.4 rules. These changes are tagged in the source as “2A:idle”.) 
+    \itemtag{2A:idle} An aircraft that selects idle power no longer has its start speed reduced. Instead, the aircraft incurs DPs for normal power plus the additional DPs listed in the ADC. This change is taken from the Origins rules in {\APJ}~39, 41, 44, and 53 and the v2.4 rules. 
 
-    \item Similarly, an aircraft that uses speedbrakes no longer loses FPs. Instead, the aircraft incurs DPs up to the value shown in the ADC. If the aircraft is supersonic, the maximum is increased by 1 DP. (See the Origins rules in {\APJ}~39, 41, 44, and 53 and the v2.4 rules. These changes are tagged in the source as “2A:spbr”.) 
+    \itemtag{2A:spbr} Similarly, an aircraft that uses speedbrakes no longer loses FPs. Instead, the aircraft incurs DPs up to the value shown in the ADC. If the aircraft is supersonic, the maximum is increased by 1 DP. This change is taken from the Origins rules in {\APJ}~39, 41, 44, and 53 and the v2.4 rules.
 
-    \item The conversion factor from FPs to DPs for the new idle power and speedbrake rules is 2. (See the Origins rules in {\APJ}~41 and the v2.4 rules.)
+    \itemtag{2A:fp-to-dp} The conversion factor from FPs to DPs for the new idle power and speedbrake rules is 2. This change appears in the Origins rules in {\APJ}~41 and the v2.4 rules.
 
-    \item An aircraft that selects idle or military power at supersonic speeds automatically and immediately suffers a flame-out. (See the 1995 GEnie post by JD Webster and the v2.4 rules. These changes are tagged in the source as “2A:supersonic-flame-out”.)
+    \itemtag{2A:supersonic-flame-out} An aircraft that selects idle or military power at supersonic speeds automatically and immediately suffers a flame-out. This change appeats the 1995 GEnie post by JD Webster and the v2.4 rules.
 
-    \item The cruise speed in the ADC is for CL configuration and is 0.5 less for 1/2 configuration and 1.0 less for DT configuration. (This change was initially suggested by Guy Acala in {\APJ}~24. See the Origins rules in {\APJ}~44 and 53 and the v2.4 rules. These changes are tagged in the source as “2A:cruise”.) 
+    \itemtag{2A:cruise} The cruise speed in the ADC is for CL configuration and is 0.5 less for 1/2 configuration and 1.0 less for DT configuration. This change was initially suggested by Guy Acala in {\APJ}~24, and appears in the Origins rules in {\APJ}~44 and 53 and the v2.4 rules.
 
-    \item Aircraft and missiles can no longer execute snap turns. See the Origins rules in {\APJ}~41 and the v2.4 rules. These changes are tagged in the rules as “2A:snap”.)
+    \itemtag{2A:snap} Aircraft and missiles can no longer execute snap turns. This change appears in the 1995 GEnie post by JD Webster, the Origins rules in {\APJ}~41, and the v2.4 rules.
 
-    \item Sustained turning penalties are now assessed per 30 degrees of facing change for second and subsequent facing changes. (This change was included by Felix Hack in the errata in {\APJ}~36 but was clarified as applying to 2nd edition rules by JD Webster in the {\APJ} 38 QA. It was included in the Origins rules in {\APJ}~39, 44, and 53 and the v2.4 rules. These changes are tagged in the source as “2A:sustained”.)
+    \itemtag{2A:sustained} Sustained turning penalties are now assessed per 30 degrees of facing change for second and subsequent facing changes. This change was included by Felix Hack in the errata in {\APJ}~36 but was clarified as applying to 2nd edition rules by JD Webster in the {\APJ} 38 QA. It was included in the Origins rules in {\APJ}~39, 44, and 53 and the v2.4 rules.
 
-    \item For aircraft with low and high bleed rates, the sustained turning penalties are 0.5 and 1.5 DP. (See the “Props against Jets” article in {\APJ}~32 and the Origins rules {\APJ}~39, 44, and 53 and the v2.4 rules. These changes are tagged in the source as “2A:sustained”.) 
+    For aircraft with low and high bleed rates, the sustained turning penalties are 0.5 and 1.5 DP. This change was included in the “Props against Jets” article in {\APJ}~32 and the Origins rules {\APJ}~39, 44, and 53 and the v2.4 rules.
 
-    \item The deceleration for zoom climbs (and sustained climbs that gain more than the CC) is now always 1.0 DP per level. (See the Origins rules {in \APJ}~44 and 53 and the v2.4 rules. These changes are tagged in the source as “2A:zoom-climbs”.) 
+    \itemtag{2A:zoom-climbs} The deceleration for zoom climbs (and sustained climbs that gain more than the CC) is now always 1.0 DP per level. See the 1995 GEnie post by JD Webster, the Origins rules {in \APJ}~44 and 53, and the v2.4 rules.
 
-    \item Aircraft with a CC of 6.0 or more in a ZC or SC can use one of their VFPs to climb three levels. (See the 1995 GEnie post by JD Webster and the v2.4 rules. These changes are tagged in the source as “2A:super-climbs”.)
+    \itemtag{2A:super-climbs} Aircraft with a CC of 6.0 or more in a ZC or SC can use one of their VFPs to climb three levels. This change appeared in the 1995 GEnie post by JD Webster and the v2.4 rules.
 
-    \item The acceleration for steep dives is now always 1.0 AP per level. (See the Origins rules in {\APJ}~44 and 53 and the v2.4 rules. These changes are tagged in the source as “2A:steep-dives”.)
+    \itemtag{2A:steep-dives} The acceleration for steep dives is now always 1.0 AP per level. This change appeared in the 1995 GEnie post by JD Webster, the Origins rules in {\APJ}~44 and 53, and the v2.4 rules.
 
-    \item The unloaded dives rule is changed to follow the Origins rules in {\APJ}~44 and 53 and the v2.4 rules. (These changes are tagged in the source as “2A:unloaded-dives”.) 
+    \itemtag{2A:unloaded-dives} The unloaded dives rule is changed to follow the Origins rules in {\APJ}~44 and 53 and the v2.4 rules.
     
     The proposed wording is not completely clear, and in an attempt to state the rule more clearly, I have added that the VFPs are unloaded, too. 
     
     Two things cause me to pause. First, with this rule, unloaded dives do not give any advantage over steep dives in terms of acceleration of horizontal distance. Indeed, a steep dive is better since one VFP can lose two altitude levels, whereas in an unloaded dive, each VFP can only lose one altitude level. Second, the rule appears to state that unloaded dives are a form of level flight, in which case other rules need modifying (e.g., an aircraft cannot recover from a vertical dive into an unloaded dive, and unloaded dives do not count as diving for barrel rolls). If unloaded dives are a form of level flight, treating them separately from diving flight would probably be better.
 
-    \item The sighting rules are changed so that attempts to sight missiles come before attempts to sight aircraft, and the modifiers are changed. (See the Origins rules in {\APJ}~44 and 53. These changes are tagged in the source as “2A:missile-sighting”.) 
+    \itemtag{2A:missile-sighting} The sighting rules are changed so that attempts to sight missiles come before attempts to sight aircraft, and the modifiers are changed. This change appeared in the Origins rules in {\APJ}~44 and 53.
     
     The Origins rules mention that missiles launched from sighted aircraft are no longer sighted, but I can’t find this in the original rules.
 
-    \item An aircraft in a vertical climb may disadvantage aircraft at the same level or lower. (See the Origins rules in {\APJ}~39, 41, 44, and 53 and the v2.4 rules. These changes are tagged in the source as “2A:advantage”.)
+    \itemtag{2A:advantage} An aircraft in a vertical climb may disadvantage aircraft at the same level or lower. This change appeared in the Origins rules in {\APJ}~39, 41, 44, and 53 and the v2.4 rules.
 
-    \item Lag and displacement rolls now require preparatory HFPs equal to {\onethird} of the aircraft's speed (rounded down). See the 1995 GEnie post by JD Webster and the v2.4 rules. These changes are tagged in the source as “2A:roll-preparatory-fps”.)
+    \itemtag{2A:roll-preparatory-fps} Lag and displacement rolls now require preparatory HFPs equal to {\onethird} of the aircraft's speed (rounded down). This change appeared in the 1995 GEnie post by JD Webster and the v2.4 rules.
     
-    \item The missile launch rules are changed so that if the launch roll fails by exactly one and is not an unmodified ten, the missile fails to launch but remains on the rail and can be used in the future. (See the Origins rules in \APJ~39, 31, 44 and 53. These changes are tagged in the source as “2A:missile-launches”.) 
+    \itemtag{2A:missile-launches} The missile launch rules are changed so that if the launch roll fails by exactly one and is not an unmodified ten, the missile fails to launch but remains on the rail and can be used in the future. This change appeared in the Origins rules in \APJ~39, 31, 44 and 53.
 
-    \item Air-to-air missiles always move before their target. (See the Origins rules in \APJ~44 and 53. These changes are tagged in the source as “2A:missile-flight”.) 
+    \itemtag{2A:missile-flight} Air-to-air missiles always move before their target. This change appeared in the Origins rules in \APJ~44 and 53.
 
-    \item Missile attacks occur when the missile has the same position and altitude as the target or when it has the same altitude, at least one FP left in its proportional move, and the target is one of the seven positions immediately in front of the missile. (See the Origins rules in \APJ~44 and 53. These changes are tagged in the source as “2A:missile-attacks”.) 
+    \itemtag{2A:missile-attacks} Missile attacks occur when the missile has the same position and altitude as the target or when it has the same altitude, at least one FP left in its proportional move, and the target is one of the seven positions immediately in front of the missile. This change appeared in the Origins rules in \APJ~44 and 53.
 
 \end{itemize}
 
