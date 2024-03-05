@@ -1,7 +1,8 @@
 %\newcommand{\thisversion}{All}
 %\newcommand{\thisversion}{1A}
 %\newcommand{\thisversion}{1B}
-\newcommand{\thisversion}{1C}
+%\newcommand{\thisversion}{1C}
+\newcommand{\thisversion}{1D}
 %\newcommand{\thisversion}{2A}
 %\newcommand{\thisversion}{2B}
 %\newcommand{\thisversion}{2Z}
@@ -22,19 +23,20 @@
 \usepackage{xstring}
 
 \IfStrEq{\thisversion}{1A}{
-    % The original first-edition rules without the official errata.
     \newcommand{\earlierversion}{}
     \newcommand{\earlierversions}{}
 }{}
 \IfStrEq{\thisversion}{1B}{
-    % Incorporating the official errata published in APJ 24.
     \newcommand{\earlierversion}{1A}
     \newcommand{\earlierversions}{1A}
 }{}
 \IfStrEq{\thisversion}{1C}{
-    % With additional changes from authoritative sources, including statements by JDW or FH’s article in APJ 36.
     \newcommand{\earlierversion}{1B}
     \newcommand{\earlierversions}{1A1B}
+}{}
+\IfStrEq{\thisversion}{1D}{
+    \newcommand{\earlierversion}{1C}
+    \newcommand{\earlierversions}{1A1B1C}
 }{}
 \IfStrEq{\thisversion}{2A}{
     \newcommand{\earlierversion}{1C}
