@@ -211,6 +211,29 @@
 \newif\ifaids
 \aidsfalse
 
+\newenvironment{TABLE}[1][tbp]{
+    \begin{table}[#1]
+    \centering
+}{
+    \end{table}
+}
+\newenvironment{TABLE*}[1][tbp]{
+    \begin{table*}[#1]
+    \centering
+}{
+    \end{table*}
+}
+\newcommand{\TABLECAPTION}[2]{
+    \ifaids
+    \par
+    Table~\ref{#1}: #2
+    \else
+    \caption{#2}
+    \label{#1}
+    \fi
+    \medskip
+}
+
 \newenvironment{FIGURE}[1][tbp]{
     \begin{figure}[#1]
     \centering
@@ -223,7 +246,7 @@
 }{
     \end{figure*}
 }
-\newcommand{\CAPTION}[2]{
+\newcommand{\FIGURECAPTION}[2]{
     \ifaids
     \par
     \medskip
