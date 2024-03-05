@@ -24,7 +24,7 @@
 \heading{Turning Flight}
 \begin{enumerate}[nosep]
     \item Turn Drag decel based on highest turn rate used in game turn, incur it only once per game turn even if aircraft faced more often than once.
-    \item \changedin{2A}{2A:sustained}{Extra facings in a game turn constitute sustained turns. 1.0 decel is incurred for each dacing change after the first.}{The second and subsequent facing change in a game turn constitute sustained turns. 1.0 DP are incurred for each 30 degrees of facing change in sustained turns (0.5 DP for LBR and 1.5 DP for HBR aircraft).}
+    \item \changedin{2A}{2A-sustained}{Extra facings in a game turn constitute sustained turns. 1.0 decel is incurred for each dacing change after the first.}{The second and subsequent facing change in a game turn constitute sustained turns. 1.0 DP are incurred for each 30 degrees of facing change in sustained turns (0.5 DP for LBR and 1.5 DP for HBR aircraft).}
     \item TT, HT, BT, ET turns require start speed of 0.5, 1.0, 1.5, and 2.0 $>$ minimum respectively to perform.
     \item Low Roll Rate aircraft take 1 FP of flight to enter a left or right bank before turning and 2 FPs of flight to reverse bank.
     \item High Roll Rate aircraft may instantly switch from one angle of bank to another; others require 1 FP of flight to reverse.
@@ -32,7 +32,7 @@
     \item[--] A recovery period = half of the aircraft's flight (round up) while not ET turning and not doing rolls or prep-moving for them.
 \end{enumerate}
 
-\deletedin{2A}{2A:snap}{
+\deletedin{2A}{2A-snap}{
 \heading{Snap Turning}
 \begin{enumerate}[nosep]
     \item Aircraft must be capable of BT turn rate.
@@ -54,7 +54,7 @@
 \vfill\null\columnbreak
 
 \heading{Speedbrake Usage}
-\changedin{2A}{2A:spbr}{
+\changedin{2A}{2A-spbr}{
 \begin{enumerate}[nosep]
     \item FPs up to amount listed on the ADC may be eliminated.
     \item Eliminated FPs may not be used for any turns or other maneuver/combat/proportional move requirements.
@@ -74,10 +74,10 @@
     \item At least one, but up to {\twothirds} of FPs may be VFPs.
     \item If CCC rate for power setting <= 2.0, then each VFP can gain 1 altitude level only.
     \item If CCC rate for power setting > 2, each VFP can gain 1 or 2 altitude levels.
-    \itemaddedin{2A}{2A:super-climbs}{If CCC rate for power setting >= 6.0, one of the VFPs can gain 1, 2, or 3 altitude levels.}
-    \itemdeletedin{2A}{2A:zoom-climbs}{If this is the first turn of climbing flight, 1.0 decel is incurred per level climbed.}
-    \itemdeletedin{2A}{2A:zoom-climbs}{If this is the second or subsequent turn of climbing flight, 1.5 decel is incurred per level climbed.}
-    \itemaddedin{2A}{2A:zoom-climbs}{1.0 DP per level climbed.}
+    \itemaddedin{2A}{2A-super-climbs}{If CCC rate for power setting >= 6.0, one of the VFPs can gain 1, 2, or 3 altitude levels.}
+    \itemdeletedin{2A}{2A-zoom-climbs}{If this is the first turn of climbing flight, 1.0 decel is incurred per level climbed.}
+    \itemdeletedin{2A}{2A-zoom-climbs}{If this is the second or subsequent turn of climbing flight, 1.5 decel is incurred per level climbed.}
+    \itemaddedin{2A}{2A-zoom-climbs}{1.0 DP per level climbed.}
     \item ET turn rates not allowed in zoom climbs.
 \end{enumerate}
 
@@ -88,10 +88,10 @@
     \item If CCC value is < than 1.0, only one VFP may be used in game-turn and it gains only the fractional altitude level.
     \item If CCC value >= 1.0 but <= 2.0, up to 2/3s of the FPs may be VFPs. The first VFP gains any listed fraction (or 1 if no fractions listed), and the rest gain one altitude level each.
     \item If CCC value is > 2.0, up to 2/3s of the FPs may be VFPs. The first VFP gains 1.0 level $+$ any fraction and the rest may gain 1.0 or 2.0 altitude levels each.
-    \itemaddedin{2A}{2A:super-climbs}{If CCC value >= 6.0, one of the VFPs after the first can gain 1, 2, or 3 altitude levels.}
+    \itemaddedin{2A}{2A-super-climbs}{If CCC value >= 6.0, one of the VFPs after the first can gain 1, 2, or 3 altitude levels.}
     \item If enough VFPs exist, an aircraft may climb more levels than listed on the CCC. However, the extra levels climbed cause decel as if zoom climbing.
     \item Only EZ turns and Slide maneuvers allowed.
-    \item 0.5 decel is incurred for each level up to the CCC limit. Extra levels incur decel as for zoom climbing\addedin{2A}{2A:zoom-climbs}{\ at 1.0 DP per level climbed.}.
+    \item 0.5 decel is incurred for each level up to the CCC limit. Extra levels incur decel as for zoom climbing\addedin{2A}{2A-zoom-climbs}{\ at 1.0 DP per level climbed.}.
 \end{enumerate}
 
 \subheading{Vertical Climbs}
@@ -128,22 +128,22 @@
 \begin{enumerate}[nosep]
     \item At least one FP must be and up to 2/3s FPs may be VFPs.
     \item Each VFP may Lose 1.0 or 2.0 altitude levels.
-    \itemdeletedin{2A}{2A:steep-dives}{Each level dived gains 0.5 accel on the first turn of Diving.}
-    \itemdeletedin{2A}{2A:steep-dives}{If this is the second or subsequent turn of
+    \itemdeletedin{2A}{2A-steep-dives}{Each level dived gains 0.5 accel on the first turn of Diving.}
+    \itemdeletedin{2A}{2A-steep-dives}{If this is the second or subsequent turn of
     continuous Diving, each level dive gains 1.0 accel.}
-    \itemaddedin{2A}{2A:steep-dives}{1.0 AP per level.}
+    \itemaddedin{2A}{2A-steep-dives}{1.0 AP per level.}
 \end{enumerate}
 
 \subheading{Unloaded Dives}
 
 \begin{enumerate}[nosep]
-    \item \changedin{2A}{2A:unloaded-dives}{All FPs are HFPs.}{One or two FPs are VFPs. The rest are HFPs.}
-    \item \changedin{2A}{2A:unloaded-dives}{At least 1 HFP must be expended with the aircraft “unloaded”. More than 1 and up to all may be expended “unloaded”.}{The first VFP may only be used after half of the HFPs have been expended with the aircraft unloaded. The second VPF may only be used after all of the HFPs have been expended with the aircraft unloaded.}
-    \item \changedin{2A}{2A:unloaded-dives}{Each HFP expended while unloaded moves the aircraft forward one hex/hexside and loses it one altitude level.}{The aircraft loses 1 level on each VFP.}
-    \item \changedin{2A}{2A:unloaded-dives}{The aircraft gains accel as if Steep Diving.}{The aircraft gains 1.0 AP per level lost.}
+    \item \changedin{2A}{2A-unloaded-dives}{All FPs are HFPs.}{One or two FPs are VFPs. The rest are HFPs.}
+    \item \changedin{2A}{2A-unloaded-dives}{At least 1 HFP must be expended with the aircraft “unloaded”. More than 1 and up to all may be expended “unloaded”.}{The first VFP may only be used after half of the HFPs have been expended with the aircraft unloaded. The second VPF may only be used after all of the HFPs have been expended with the aircraft unloaded.}
+    \item \changedin{2A}{2A-unloaded-dives}{Each HFP expended while unloaded moves the aircraft forward one hex/hexside and loses it one altitude level.}{The aircraft loses 1 level on each VFP.}
+    \item \changedin{2A}{2A-unloaded-dives}{The aircraft gains accel as if Steep Diving.}{The aircraft gains 1.0 AP per level lost.}
     \item The aircraft may not make any attacks, guide weapons or aim while unloaded.
-    \item \changedin{2A}{2A:unloaded-dives}{FPs done while unloaded may not be used for turning or prep-moving.}{Unloaded FPs may not be used for turning flight or for preparing or executing any maneuver except a slide.}
-    \item All unloaded \changedin{2A}{2A:unloaded-dives}{HFPs}{FPs} done in a single game-turn must be done in one continuous string.
+    \item \changedin{2A}{2A-unloaded-dives}{FPs done while unloaded may not be used for turning or prep-moving.}{Unloaded FPs may not be used for turning flight or for preparing or executing any maneuver except a slide.}
+    \item All unloaded \changedin{2A}{2A-unloaded-dives}{HFPs}{FPs} done in a single game-turn must be done in one continuous string.
 \end{enumerate}
 
 \subheading{Vertical Dives}
@@ -195,8 +195,8 @@
 \subheading{Lag/Displacement Rolls}
 
 \begin{enumerate}[nosep]
-    \item Expend \changedin{2A}{2A:roll-preparatory-fps}{one HFP}{HFPs equal to {\onethird} of speed (round down)} to prep for rolls. One HFP to execute.
-    \item Shift in direction of roll (see \changedin{1C}{1C:figures}{diagram}{Figures~\ref{figure:displacement-roll-maneuvers} and \ref{figure:lag-roll-maneuvers}}) and optionally face 30 degrees in direction opposite to roll.
+    \item Expend \changedin{2A}{2A-roll-preparatory-fps}{one HFP}{HFPs equal to {\onethird} of speed (round down)} to prep for rolls. One HFP to execute.
+    \item Shift in direction of roll (see \changedin{1C}{1C-figures}{diagram}{Figures~\ref{figure:displacement-roll-maneuvers} and \ref{figure:lag-roll-maneuvers}}) and optionally face 30 degrees in direction opposite to roll.
     \item A displacement roll from a hexside shifts the aircraft to a hexside as in a slide and not sideways as depicted for the lag roll. Decel for these rolls varies, see ADC.
 \end{enumerate}
 
@@ -214,7 +214,7 @@
 \begin{enumerate}[nosep]
     \item Executed as 2 or more consecutive Lag/Displacement rolls.
     \item If done in level flight, 1 altitude level may be gained or lost upon executing last roll at no additional FP code.
-    \itemaddedin{1B}{1B:apj-39-qa}{If done in climbing or diving flight, 1 altitude level may be gained or lost upon executing each roll after the first at no additional FP cost.}
+    \itemaddedin{1B}{1B-apj-39-qa}{If done in climbing or diving flight, 1 altitude level may be gained or lost upon executing each roll after the first at no additional FP cost.}
     \item Altitude changes that occur in a diving or climbing B-Roll may be in lieu of, or in conjunction with altitude changes done via VFP expenditure.
     \item Incur 2.0 decel per level gained in climbing Barrel Roll, and gain 0.5 accel per altitude level lost in a Barrel Roll.
 \end{enumerate}
