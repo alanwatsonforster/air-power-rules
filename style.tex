@@ -92,6 +92,13 @@
 \newcommand{\minitable}[3][c]{\begin{tabular}[#1]{@{}#2@{}}#3\end{tabular}}
 \newcommand*\rot{\rotatebox{90}}
 
+\newenvironment{tablenote}[1]{%
+    %\medskip%
+    \tabularx{#1}{X}%
+}{%
+    \endtabularx%
+}
+
 % Add a little bit of space after \hline
 \let\originalhline\hline
 \renewcommand{\hline}{\originalhline\\[-1em]}
@@ -212,13 +219,13 @@
 \newif\ifaids
 \aidsfalse
 
-\newenvironment{TABLE}[1][tbp]{
+\newenvironment{TABLE}[1][tp]{
     \begin{table}[#1]
     \centering
 }{
     \end{table}
 }
-\newenvironment{TABLE*}[1][tbp]{
+\newenvironment{TABLE*}[1][tp]{
     \begin{table*}[#1]
     \centering
 }{
@@ -235,13 +242,13 @@
     \medskip
 }
 
-\newenvironment{FIGURE}[1][tbp]{
+\newenvironment{FIGURE}[1][tp]{
     \begin{figure}[#1]
     \centering
 }{
     \end{figure}
 }
-\newenvironment{FIGURE*}[1][tbp]{
+\newenvironment{FIGURE*}[1][tp]{
     \begin{figure*}[#1]
     \centering
 }{

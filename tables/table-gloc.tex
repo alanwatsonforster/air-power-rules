@@ -1,10 +1,8 @@
-\begin{table}
-\centering
+\begin{TABLE}
 
-\caption{G-Induced Loss of Consciousness}
+\TABLECAPTION{table:gloc-avoidance}{G-Induced Loss of Consciousness}
 
-\medskip
-\begin{tabular}{p{0.75\linewidth}l}
+\begin{tabularx}{1.0\linewidth}{Xl}
 \hline
 \multicolumn{2}{c}{Crewmember}\\
 \hline
@@ -19,27 +17,41 @@ Poor fitness         &$-1$\\
 Has canted seat (e.g., F-16)    &$+1$\\
 2nd or subsequent GLOC die roll in GLOC cycle (cumulative)&$-1$\\
 \hline
-\tablemedskip
-\tablenotes{2}{0.9\linewidth}{
+\end{tabularx}
+\begin{tablenote}{1.0\linewidth}
 \begin{itemize}
     \item Check for GLOC if aircraft turned at ET rate while in the LO, ML, or MH altitude bands.
     \item Roll one die after each facing at the the ET rate for each crewmember. A “1” or less indicates he has GLOC'd.
     \item Cycle lasts until no BT/ET turns used in a game-turn.
 \end{itemize}
-}
-\end{tabular}
-\end{table}
+\end{tablenote}
 
-\begin{table}
-\centering
+\end{TABLE}
 
-\caption{GLOC/Disoriented Flight}
-\small
-\medskip
-\begin{tabular}{lp{6cm}}
+\begin{TABLE}
+
+\TABLECAPTION{table:gloc-recovery}{Recovery from GLOC}
+\begin{tabularx}{\linewidth}{X}
 \hline
-Die Roll&Aircraft Random Movement\\
-&(Based on Current Flight Type)\\
+\begin{itemize}
+    \item Automatic during admin phase of 2d game turn following the one in which GLOC occured.
+    \item Early recovery possible in admin phase of game turn of GLOC occurence and in the admin phase of the turn following if crewmember has excellent fitness or is in a multi-crew aircraft where other member not GLOC'd. Die roll 4 or less equals early recovery.
+\end{itemize}
+\\
+\hline
+\end{tabularx}
+
+\end{TABLE}
+
+\begin{TABLE}
+
+\TABLECAPTION{table:gloc-flight}{GLOC/Disoriented Flight}
+
+\small
+\begin{tabularx}{\linewidth}{lX}
+\hline
+Die&Aircraft Random Movement\\
+Roll&(Based on Current Flight Type)\\
 \hline
 \multicolumn{2}{c}{Level Flight}\\
 \hline
@@ -80,29 +92,15 @@ Die Roll&Aircraft Random Movement\\
 9   &Minimum vertical dive, random vertical rolls.\\
 10  &Maximum vertical dive, random vertical rolls.\\
 \hline
-\end{tabular}
+\end{tabularx}
 
 \medskip
-\begin{minipage}{\linewidth}
-\begin{center}
-Directions
-\end{center}
+
+\begin{tablenote}{\linewidth}
+\multicolumn{1}{c}{Directions}\\
 \begin{itemize}
     \item Expend all remaining FPs via directions above, it is allowed to switch between climbs and dives in mid-moves if required. Randomly determine direction of turns. Random vertical rolls occur on last VFP only, roll for direction and number of facings.
     \item For climbs and dives, use maximum allowed VFPs. A maximum climb/dive means each VFP gains max possible levels. Minimum means each gains least amount possible.
 \end{itemize}
-\end{minipage}
-\end{table}
-
-\begin{table}
-
-\caption{Recovery from GLOC}
-
-\medskip
-\begin{minipage}{\linewidth}\begin{itemize}
-    \item Automatic during admin phase of 2d game turn following the one in which GLOC occured.
-    \item Early recovery possible in admin phase of game turn of GLOC occurence and in the admin phase of the turn following if crewmember has excellent fitness or is ina multi-crew aircraft where other member not GLOC'd. Die roll 4 or less equals early recovery.
-\end{itemize}
-\end{minipage}
-
-\end{table}
+\end{tablenote}
+\end{TABLE}
