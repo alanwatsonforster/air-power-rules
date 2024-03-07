@@ -1,8 +1,8 @@
-\begin{table}
-\centering
-\caption{Aircraft Damage}
-\medskip
-\begin{tabular}{lcccccccccc}
+\begin{TABLE}
+
+\TABLECAPTION{table:aircraft-damage}{Aircraft Damage}
+
+\begin{tabularx}{0.8\linewidth}{X*{10}{@{ }c@{ }}}
 \hline
 \multirow{2}{*}{\minitable{c}{Die\\Roll}}&
 \multicolumn{10}{c}{Weapon Attack Rating}\\
@@ -20,8 +20,12 @@ $0-$&K&K&K&K&K&K&K&K&K&K\\
 9&---&---&---&L&L&2L&H&H&H&C\\
 $10+$&---&---&---&---&L&L&2L&H&H&H\\
 \hline
-\tablemedskip
-\tablenotes{11}{0.95\linewidth}{
+&\phantom{2L}&\phantom{2L}&\phantom{2L}&\phantom{2L}&\phantom{2L}&\phantom{2L}&\phantom{2L}&\phantom{2L}&\phantom{2L}&\phantom{2L}\\[-3ex]
+\end{tabularx}
+
+\medskip
+
+\begin{tablenote}{0.8\linewidth}
 Damage Modifiers
 \medskip
 
@@ -31,7 +35,7 @@ Damage Modifiers
     \item $-2$ to die roll if air to air rocket hit or direct hit from missile.
     \item Plus or Minus Aircraft Vulnerability as listed on target ADC.
 \end{itemize}
-}
-\end{tabular}
 
-\end{table}
+\end{tablenote}
+
+\end{TABLE}

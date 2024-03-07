@@ -6,6 +6,10 @@ This chapter details the procedures for determining the damage results of succes
 
 When a gun, rocket, or missile hit is achieved on an aircraft, determine the damage inflicted and apply it to the aircraft.
 
+\addedin{1D}{1D-tables}{
+    \input{tables/table-aircraft-damage-effects}
+}
+
 \paragraph{Levels of Damage.} A hit can potentially produce one of five levels of damage.
 
 \begin{itemize}
@@ -22,9 +26,12 @@ When a gun, rocket, or missile hit is achieved on an aircraft, determine the dam
 
 \end{itemize}
 
-A result of no affect, or aircraft kill requires no further action. Light, Heavy, and Crippled damage produce the appropriate performance and combat restrictions listed on the Aircraft Damage Table.
+A result of no affect, or aircraft kill requires no further action. Light, Heavy, and Crippled damage produce the appropriate performance and combat restrictions \changedin{1D}{1D-tables}{listed on the Aircraft Damage Table}{Table~\ref{table:aircraft-damage-effects}}.
 
-\paragraph{Procedure.} When a gun or missile hit is achieved on an aircraft, consult the Damage Table. Roll the die once and apply any required modifiers. Cross index the modified roll with the attacking gun or rocket's Air To Air rating or missile's listed Attack Rating for the type of hit achieved (Proximity or Direct). The result gives the level of damage achieved.
+\addedin{1D}{1D-tables}{
+    \input{tables/table-aircraft-damage}
+}
+\paragraph{Procedure.} When a gun or missile hit is achieved on an aircraft, consult \changedin{1D}{1D-tables}{the Damage Table}{Table~\ref{table:aircraft-damage}}. Roll the die once and apply any required modifiers. Cross index the modified roll with the attacking gun or rocket's Air To Air rating or missile's listed Attack Rating for the type of hit achieved (Proximity or Direct). The result gives the level of damage achieved.
 
 \paragraph{Previous Damage Effect.} \changedin{1B}{1B-apj-36-errata}{If the aircraft was previously damage, the hitting weapon's attack rating is increased one.}{The damage column is shifted once to the right if the aircraft has sustained L or worse damage, regardless of the prior or current cause of damage.}
 
@@ -42,7 +49,11 @@ A result of no affect, or aircraft kill requires no further action. Light, Heavy
 
 \subsection{Cumulative Damage Effects}
 
-\paragraph{Cumulative Damage.} At the end of a scenario, an aircraft's damage level for purposes of victory points equals the highest level of damage it has sustained. When an aircraft is repeatedly hit, it can accumulate several hits of one or more types. These multiple hits are cumulative and sufficient hits of a lesser type will equal a worse level of damage as follows:
+\addedin{1D}{1D-tables}{
+    \input{tables/table-cummulative-damage}
+}
+
+\paragraph{Cumulative Damage.} At the end of a scenario, an aircraft's damage level for purposes of victory points equals the highest level of damage it has sustained. When an aircraft is repeatedly hit, it can accumulate several hits of one or more types. These multiple hits are cumulative and sufficient hits of a lesser type will equal a worse level of damage as follows\addedin{1D}{1D-tables}{\ and as shown in Table~\ref{table:cummulative-damage}}:
 
 \begin{itemize}
 
@@ -65,11 +76,15 @@ The Sequence of play is still not required.
 
 \subsection{Progressive Damage}
 
+\addedin{1D}{1D-tables}{
+    \input{tables/table-progressive-damage}
+}
+
 An aircraft's damage can worsen or spread if not contained by Damage Control (for example, leaking hydraulic fluid could burst into flame, or a damaged engine could fall).
 
 \paragraph{Procedure.} Roll the die once for each damaged aircraft during the Aircraft Admin Phase of every game-turn following the one in which it was hit. Do not check for progressive damage on any game-turn in which a damaged aircraft is hit again if the hit resulted in a higher damage level.
 
-Consult the progressive damage table, if the die roll ls fess than or equal to the number given next to the aircraft's current damage level, then the aircraft's damage increases to the next higher level.
+Consult \changedin{1D}{1D-tables}{the progressive damage table}{Table~\ref{table:progressive-damage}}, if the die roll is less than or equal to the number given next to the aircraft's current damage level, then the aircraft's damage increases to the next higher level.
 
 \paragraph{Damage Control.} Performing damage control involves the crew activating back-up electrical, fuel transfer, and hydraulic systems and/or shutting down damaged ones and/or fighting fires. Damage Control essentially stabilizes the aircraft's current damage level so that it will not progress. Aircraft which perform Damage Control negate progressive damage and do not check for it until they suffer a new hit.
 
@@ -91,7 +106,11 @@ Once an aircraft completes its flight without violating the above restrictions, 
 
 \subsection{Optional Aircraft Damage Tables}
 
-The optional Damage Tables may be substituted for the generic damage level restrictions. These tables determine specific effects of L, H, and C level hits. For each hit consult the appropriate Damage Table and roll the die with no modifiers. (Optional damage tables are in play aids sheets.)
+\addedin{1D}{1D-tables}{
+    \input{tables/table-optional-advanced-aircraft-damage}
+}
+
+The optional Damage Tables may be substituted for the generic damage level restrictions. These tables determine specific effects of L, H, and C level hits. For each hit consult \changedin{1D}{1D-tables}{the appropriate Damage Table}{Table~\ref{table:optional-damage}} and roll the die with no modifiers. \deletedin{1D}{1D-tables}{(Optional damage tables are in play aids sheets.)}
 
 \paragraph{Optional Damage Table Results.} Only the indicated results from the die roll are applied to a damaged aircraft. In some cases, an aircraft may lose systems and not performance, or lose performance and not systems, or it may lose both systems and performance. The specifics of the damage rolled are not revealed to the enemy; they are recorded on paper. Visible signs of damage such as smoke or fire indicated on the tables are told to the opponent.
 
