@@ -1,10 +1,12 @@
-\begin{table*}
-\centering\small
-\addedin{1B}{1B-apj-22-damage-tables}{
-\caption{Optional Advanced Aircraft Damage}
-\medskip
+\begin{TABLE*}
 
-\begin{tabular}{lcp{40em}}
+\addedin{1B}{1B-apj-22-damage-tables}{
+
+\TABLECAPTION{table:optional-damage}{Optional Advanced Aircraft Damage}
+
+\small
+
+\begin{tabularx}{\linewidth}{lcX}
 \hline
 \multirow{2}{*}{\minitable{c}{Die\\Roll}}&
 \multirow{2}{*}{\minitable{c}{Hit\\Location}}&
@@ -46,8 +48,9 @@ No supersonic flight.$^*$ Low roll rate. No high pitch. No rolling maneuvers. EZ
 7&Fuel Fire**&Aircraft becomes Smoker. Lose 3 die rolls of fuel/turn. Jettison external stores. Roll die after each turn after flight. On 1 or 2 aircraft explodes, crew killed. On 9 or 10, fire goes out permanently but fuel leak still there.\\
 8,9,10&Engines&A/B power lost. Mli power halved. Aircraft becomes Smoker. Roll for flame-outs twice per engine (1 or 2 = F.O. in this case). On subsequent turns, roll for flame-out whenever power seting is changed (1 = F.O.).\\
 \hline
-\tablemedskip
-\tablenotes{3}{52em}{
+\end{tabularx}
+
+\begin{tablenote}{\linewidth}
 \begin{itemize}
     \item The specifics of the damage rolled are not revealed to the enemy, but are recorded on paper. Visible signs of damage such as smoke or vapor, as indicated on the tables, must be told to the opponent.
     \item Jettison of Stores: Only the results calling for jettison of ordnance require an aircraft to do so. If this is the case, the aircraft must jettison enough stores to become CL configured. 
@@ -55,9 +58,7 @@ No supersonic flight.$^*$ Low roll rate. No high pitch. No rolling maneuvers. EZ
    \item[$^*$] If supersonic speeds exceeded in game turn, roll for progressive damage twice even if Damage Control was done.
    \item[$^{**}$] A Fuel Fire and risk of explosion can only be stopped by shutting down all engines. Declare this when doing damage control. Treat aircraft as flamed-out. When engines relit, A/B is disabled. Roll one die, on 1 to 4 fire resumes permanently; otherwise it stays out.
 \end{itemize}
-
-}
-\end{tabular}
+\end{tablenote}
 }
 
-\end{table*}
+\end{TABLE*}
