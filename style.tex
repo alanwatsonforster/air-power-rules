@@ -25,6 +25,7 @@
 \usepackage{xcolor}
 \usepackage{tabularx}
 \usepackage{tabulary}
+\usepackage{booktabs}
 \usepackage{multicol}
 \usepackage{microtype}
 \usepackage{multirow}
@@ -219,6 +220,13 @@
 \newif\ifaids
 \aidsfalse
 
+% New tabularx columns
+\newcolumntype{P}{X}%
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+\newcolumntype{q}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+
 \newenvironment{TABLE}[1][tp]{
     \begin{table}[#1]
     \centering
@@ -235,10 +243,23 @@
     \ifaids
     \par
     Table~\ref{#1}: #2
+    \par
     \else
     \caption{#2}
     \label{#1}
     \fi
+    \medskip
+}
+\newcommand{\AIDSONLYTABLECAPTION}[2]{
+    \par
+    \caption{#2}
+    \label{#1}
+    \medskip
+}
+\newcommand{\CONTINUEDTABLECAPTION}[2]{
+    \par
+    Table~\ref{#1} (continued): #2
+    \par
     \medskip
 }
 

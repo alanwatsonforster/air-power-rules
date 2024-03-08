@@ -1,11 +1,11 @@
-\begin{table}
-\centering\small
-\caption{Missile Flight Rules}
+\begin{TABLE}
 
-\medskip
-FP Costs
-\medskip
+\TABLECAPTION{table:missile-flight-rules}{Missile Flight Rules}
 
+\small
+\begin{tabularx}{\linewidth}{X}
+\toprule\\
+\multicolumn{1}{c}{FP Costs}\\
 \begin{enumerate}
     \item One FP to move forward one hex/hexside.
     \item One FP to climb 1 or 2 Altitude levels.
@@ -13,12 +13,9 @@ FP Costs
     \item One FP to dive 2 or 3 Altitude levels.
     \item Once per turn may dive 1 level with 1 FP.
     \item One FP to\deletedin{2A}{2A-snap}{ Snap-turn or} Slide, 0 FP to vert.\ roll.
-\end{enumerate}
+\end{enumerate}\\
 
-\medskip
-
-Manuever Limits
-\medskip
+\multicolumn{1}{c}{Manuever Limits}\\
 
 \begin{enumerate}
     \itemdeletedin{2A}{2A-snap}{One Snap-turn allowed during entire flight.}
@@ -26,12 +23,9 @@ Manuever Limits
     \item Normally, 1 Vert.\ roll allowed in entire flight except anytime target performs one, missiles may in next move.
     \itemdeletedin{2A}{2A-snap}{If Snap-turn first action other than forward flight after missile arms, no prep-move required.}
     \itemdeletedin{2A}{2A-snap}{If missile turns, or switches between climbs and dives before Snap-turning, normal prep-move must be met.}
-\end{enumerate}
+\end{enumerate}\\
 
-\medskip
-
-Flight Restrictions
-\medskip
+\multicolumn{1}{c}{Flight Restrictions}\\
 
 \begin{enumerate}
     \item Missiles may climb and dive in same game turn, and some may do both in same proportional move.
@@ -43,27 +37,26 @@ Flight Restrictions
         \item They are CG SAMs in boost phase.
         \item They are TVM SAMs of MCG missiles.
     \end{enumerate}
-\end{enumerate}
+\end{enumerate}\\
 
-\medskip
-Missile Speed Changes
-\medskip
+\multicolumn{1}{c}{Missile Speed Changes}\\
 
 \begin{enumerate}
     \item If missile gained altitude over turn, $-1$ to speed for each set of alt.\ levels climbed equal to half or less of missile's speed.
     \item If missile lost altitude over turn, $+1$ to speed for each set of alt.\ levels dived equal to half or more of missile's speed.
     \itemaddedin{1B}{1B-apj-23-errata and 1B-apj-24-play-aids}{If missile changed facing by turning, $-1$ to speed for each 30 degrees of facing change done.}
-\end{enumerate}
+\end{enumerate}\\
 
-\medskip
-Missile Speed Determination
-\medskip
+\multicolumn{1}{c}{Missile Speed Determination}\\
 
 \begin{enumerate}
     \item Air to air first turn = $(\textrm{Base} + \textrm{aircraft}) \times \textrm{Speed Att.\ Factor}$. \addedin{1B}{1B-apj-23-errata and 1B-apj-24-play-aids}{If the missile has a sustainer, use the factor for the altitude band two above the one in which the missile was launched.}
     \item SAM first turn = listed Base Speed.
     \item Subsequent turns = $(\textrm{Previous} \pm \textrm{changes})  \times \textrm{Speed Att.\ factor}$.
     \item \changedin{1B}{1B-apj-23-errata and 1B-apj-24-play-aids}{If sustainer motor in effect}{On subsequent turns, if the sustainer motor is in effect}, Speed Att.\ Factor = 1.0.
-\end{enumerate}
+\end{enumerate}\\
 
-\end{table}
+\bottomrule
+\end{tabularx}
+
+\end{TABLE}
