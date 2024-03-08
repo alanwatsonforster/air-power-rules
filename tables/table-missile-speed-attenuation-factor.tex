@@ -1,12 +1,15 @@
-\begin{table}
-\centering
-\caption{Missile Speed Attenuation Factor}
-\medskip
+\begin{TABLE}
+
+
+\TABLECAPTION{table:missile-speed-attenuation-factor}{Missile Speed Attenuation Factor}
+
+
 \begin{tabular}{crrrrrr}
-\hline
-\multirow{2}{*}{\minitable{c}{Alt.\\Band}}&\multicolumn{6}{c}{Game Turn of Flight}\\
+\toprule
+\multirow{2}{*}[-0.5ex]{\minitable{c}{Alt.\\Band}}&\multicolumn{6}{c}{Game Turn of Flight}\\
+\cmidrule{2-7}
 &1&2&3&4&5&6+\\
-\hline
+\midrule
 \minitable{p{2em}}{LO}&0.6&0.6&0.6&0.7&0.8&0.8\\
 \minitable{p{2em}}{ML}&0.7&0.7&0.6&0.7&0.8&0.8\\
 \minitable{p{2em}}{MH}&0.8&0.7&0.6&0.7&0.8&0.8\\
@@ -14,18 +17,22 @@
 \minitable{p{2em}}{VH}&0.9&0.8&0.7&0.8&0.8&0.9\\
 \minitable{p{2em}}{EH}&0.9&0.9&0.8&0.8&0.9&0.9\\
 \minitable{p{2em}}{UH}&1.0&0.9&0.9&0.9&0.9&0.9\\
-\hline
+\bottomrule
 \end{tabular}
 
-\bigskip
+\end{TABLE}
 
-\caption{Missile Speed Math-Saver}
-\medskip
+
+\begin{TABLE}
+
+\TABLECAPTION{table:missile-speed-math-saver}{Missile Speed Math-Saver}
+
 \begin{tabular}{crrrr}
-\hline
-\multirow{2}{*}{\minitable{c}{Miss.\\Speed}}&\multicolumn{4}{c}{Attenuation Factor}\\
+\toprule
+\multirow{2}{*}[-0.5ex]{\minitable{c}{Miss.\\Speed}}&\multicolumn{4}{c}{Attenuation Factor}\\
+\cmidrule{2-5}
 &0.9&0.8&0.7&0.6\\
-\hline
+\midrule
 \phantom{0}2& 2& 2& 1& 1\\
 \phantom{0}3& 3& 2& 2& 2\\
 \phantom{0}4& 4& 3& 3& 2\\
@@ -61,23 +68,23 @@
 \phantom{}34&31&27&24&20\\
 \phantom{}35&32&28&25&21\\
 \phantom{}36&32&29&25&22\\
-\hline
+\bottomrule
 \end{tabular}
 
-\end{table}
+\end{TABLE}
 
-\begin{table}
-\centering
-\caption{Missile Speed Limits}
-\medskip
+\begin{TABLE}
+
+\TABLECAPTION{table:missile-speed-limits}{Missile Speed Limits}
+
 \begin{tabular}{cccc}
-\hline
+\toprule
 \multirow{2}{*}{\minitable{c}{Alt.\\Band}}&
 \multirow{2}{*}{\minitable{c}{Minimum\\Speed}}&
 \multirow{2}{*}{\minitable{c}{Maneuver\\Speed}}&
 \multirow{2}{*}{\minitable{c}{Maximum\\Speed}}\\
 \\
-\hline
+\midrule
 \minitable{p{2em}}{LO}&2&\phantom{0}4&24\\
 \minitable{p{2em}}{ML}&3&\phantom{0}5&26\\
 \minitable{p{2em}}{MH}&3&\phantom{0}6&28\\
@@ -85,6 +92,7 @@
 \minitable{p{2em}}{VH}&4&\phantom{0}8&32\\
 \minitable{p{2em}}{EH}&5&\phantom{}10&34\\
 \minitable{p{2em}}{UH}&7&\phantom{}14&36\\
-\hline\end{tabular}
+\bottomrule
+\end{tabular}
 
-\end{table}
+\end{TABLE}

@@ -1,73 +1,62 @@
-\begin{table}
-\centering
-\caption{Air to Air Missile and SAM Attack Modifiers}
-\medskip
-\begin{tabular}{p{20em}l}
-\hline
+\begin{TABLE}
+
+\TABLECAPTION{table:missile-attack-modifiers}{Air to Air Missile and SAM Attack Modifiers}
+
+\begin{tabularx}{\linewidth}{Pl}
+\toprule
 \multicolumn{2}{c}{IRMs and IR SAMs}\\
-\hline
+\midrule
 Target in Afterburner Power&$-3$\\
 Target in Military Power&$-2$\\
 Target in Idle Power&$+1$\\
 Missile must lose 2 or more levels during proportional move of attack against tgt.\ in LO alt.\ band (ground clutter)&$+2$\\
 Target in Terrain Following Flight&$+1$\\
 Lesser of Flare PPL or missile Flare Vulnerability no.&$+$\\
-\hline
+\midrule
 \multicolumn{2}{c}{BRMs, RHMs, AHMs, \& BR, CG, CW and TVM SAMs}\\
-\hline
+\midrule
 DJM rating $-$ missile ECCM$+$\\
 Lesser of Chaff PPL or missile Chaff Vulnerability&$+$\\
 Lesser of Mini-jammer PPL or Chaff Vulnerability $+$ 1&$+$\\
 Ground clutter (air to air missiles only) = $6 - \text{target Altitude above terrain} - \text{missile ECCM}$.&$+$\\
 Listed “T” level modifier (SAMs only, if applicable)&$+$\\
-\hline
+\midrule
 \multicolumn{2}{c}{OG and LG SAMs}\\
-\hline
+\midrule
 \multicolumn{2}{l}{No modifiers other than angle-off and aircraft size apply.}\\
-\hline
-\multicolumn{2}{c}{ALL Missiles}\\
-\hline
+\midrule
+\multicolumn{2}{c}{All Missiles}\\
+\midrule
 Target aircraft size modifier from ADC&$+/-$\\
 Target did not engage the missile&$-1$\\
-\hline
-\tablemedskip
-\tablenotes{2}{0.9\linewidth}{
+\bottomrule
+\end{tabularx}
+
+\medskip
+
+\begin{tablenote}{\linewidth}
 Reminder: $\text{Max launch range for \changedin{1B}{1B-apj-23-errata and 1B-apj-24-play-aids}{RHM/AHM}{RHM}} = 3 \times \text{radar Track Str.\ \#}$.
-}
-\end{tabular}
+\end{tablenote}
 
-\bigskip
+\end{TABLE}
 
-\caption{Missile Angle-Off Modifiers to Attack}
-\medskip
-\begin{tabular}{lccccccc}
-\hline
-\multirow{2}{*}{\minitable{c}{Angle-Off\\Arc}}&\multicolumn{7}{c}{Missile Seeker Type}\\
-&E&I&M&A&BR&RH&AH\\
-\hline
-0 line        &$-1$&$-1$&$-1$&$-2$&$+0$&$-1$&$-2$\\
-30 arcs       &$+0$&$+0$&$+0$&$+0$&$+0$&$+0$&$+0$\\
-60 arcs       &$+1$&$+0$&$+0$&$+0$&$+1$&$+0$&$+0$\\
-90/120 arcs   &$+3$&$+2$&$+2$&$+2$&$+3$&$+3$&$+2$\\
-150 arcs      &$+4$&$+3$&$+2$&$+2$&$+5$&$+2$&$+2$\\
-180 arcs, line&$+5$&$+4$&$+3$&$+1$&$+5$&$+1$&$+1$\\
-\hline
-\end{tabular}
+\begin{TABLE*}
 
-\medskip
+\TABLECAPTION{table:missile-attack-angle-off-modifiers}{Missile Angle-Off Modifiers to Attack}
 
-\begin{tabular}{lccccccc}
-\hline
-\multirow{2}{*}{\minitable{c}{Angle-Off\\Arc}}&\multicolumn{5}{c}{SAM Guidance Type}\\
-&CG&CW&TVM&OG&LG\\
-\hline
-0 line        &$-1$&$-1$&$-1$&$+0$&$-1$\\
-30 arcs       &$+0$&$+0$&$+0$&$+0$&$+0$\\
-60 arcs       &$+0$&$+0$&$+0$&$+1$&$+0$\\
-90/120 arcs   &$+2$&$+3$&$+2$&$+3$&$+2$\\
-150 arcs      &$+2$&$+2$&$+1$&$+2$&$+2$\\
-180 arcs, line&$+1$&$+1$&$+1$&$+1$&$+1$\\
-\hline
-\hline
-\end{tabular}
-\end{table}
+\begin{tabularx}{0.9\linewidth}{l*{12}{C}}
+\toprule
+\multirow{2}{*}{\minitable{c}{Angle-Off\\Arc}}&\multicolumn{7}{c}{Missile Seeker Type}&\multicolumn{5}{c}{SAM Guidance Type}\\
+\cmidrule(lr){2-8}
+\cmidrule(lr){9-13}
+&E&I&M&A&BR&RH&AH&CG&CW&TVM&OG&LG\\
+\midrule
+0 line        &$-1$&$-1$&$-1$&$-2$&$+0$&$-1$&$-2$&$-1$&$-1$&$-1$&$+0$&$-1$\\
+30 arcs       &$+0$&$+0$&$+0$&$+0$&$+0$&$+0$&$+0$&$+0$&$+0$&$+0$&$+0$&$+0$\\
+60 arcs       &$+1$&$+0$&$+0$&$+0$&$+1$&$+0$&$+0$&$+0$&$+0$&$+0$&$+1$&$+0$\\
+90/120 arcs   &$+3$&$+2$&$+2$&$+2$&$+3$&$+3$&$+2$&$+2$&$+3$&$+2$&$+3$&$+2$\\
+150 arcs      &$+4$&$+3$&$+2$&$+2$&$+5$&$+2$&$+2$&$+2$&$+2$&$+1$&$+2$&$+2$\\
+180 arcs, line&$+5$&$+4$&$+3$&$+1$&$+5$&$+1$&$+1$&$+1$&$+1$&$+1$&$+1$&$+1$\\
+\bottomrule
+\end{tabularx}
+\end{TABLE*}
