@@ -7,7 +7,7 @@ This chapter details the operations of infra-red heat-seeking missiles (weapon c
 To launch IRMs, the firing aircraft must:
 
 \begin{enumerate}
-    \item Have a sighted target in the missile seeker's field of view and be within the launch angle off limits of the missile's seeker head (see below).
+    \item Have a sighted target in the missile seeker's field of view and be within the launch angle off limits of the missile's seeker head \changedin{1D}{1D-tables}{(see below)}{according to Table~\ref{table:irm-seeker-limits}}.
     \item Obtain a seeker lock-up while within the minimum and maximum ranges given on the MDT under the missile's launch envelope for the type of shot (front, side, or rear).
     \item Not have violated the missile launch restrictions of rule 14.2.
 \end{enumerate}
@@ -16,21 +16,11 @@ To launch IRMs, the firing aircraft must:
 
 \paragraph{IR Uncage Technology FOV.} Some aircraft have the ability to uncage a missile's IR seeker head allowing it to swivel freely to acquire targets over a wider area. An uncaged IR seeker always has an FOV equal to a 180° radar arc. The act of uncaging missiles is declared in the Aircraft Decisions Phase. The technology section of the ADC indicates whether an aircraft has “IR Uncage” ability or not. Only “I”, “M”, or “A” type seekers can be uncaged.
 
-\paragraph{Seeker Head Launch Angle-Off Limits.} IR seeker heads cannot lock-up a target unless the firer is within the listed target angle-off arcs as given below by seeker type.
+\input{tables/table-irm-seeker-limits}
 
-\begin{table}[!ht]
-\centering
-\begin{tabular}{llp{5cm}}
-\hline
-\textbf{Seeker}  &\textbf{Type}       &\textbf{Angle-Off Limits}\\
-\hline
-E       &Early      &Target's 60 degree arc or less if target used A/B power; target's 30 degree arc or less otherwise.\\
-I       &Improved   &Target's 60 degree arc or less at any target power setting.\\
-M       &Modern	    &Target's 120 degree arc or less if it used A/B power; target's 90 degree arc or less otherwise.\\
-A       &Advanced   &Any of target's angle-off arcs at any target power setting.\\
-\hline
-\end{tabular}
-\end{table}
+\paragraph{Seeker Head Launch Angle-Off Limits.} IR seeker heads cannot lock-up a target unless the firer is within the listed target angle-off arcs as given \changedin{1D}{1D-tables}{below by seeker type}{by Table~\ref{table:irm-seeker-limits}}.
+
+
 
 \addedin{1B}{1B-apj-23-errata}{IRMs of any type may be launched from any angle-off arc about propellor driven and helicopter targets. If launch or attack modifiers apply to these targets for low heat signature, it will be stated in the scenarios.}
 
