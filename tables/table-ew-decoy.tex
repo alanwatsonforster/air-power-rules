@@ -1,23 +1,27 @@
-\begin{table*}
-\centering
-\caption{Decoy PPL Effectiveness}
-\begin{tabular}{*{13}{c}}
+\begin{twocolumntable}
+\tablecaption{table:ew-decoy-ppl-effectiveness}{Decoy PPL Effectiveness}
+\small
+\begin{tabularx}{\linewidth}{cc*{11}{C}}
 \toprule
 \multicolumn{2}{c}{\minitable{c}{DDS\\Program}}&
 \multicolumn{5}{c}{\minitable{c}{EWR Passdown Modifier and\\TTR Lock-on Modifier}}&
 \multicolumn{2}{c}{\minitable{c}{TTR\\Break-Lock No.}}&
-\multicolumn{2}{c}{\minitable{c}{Air Radar Search\\and Lock-on Modifier}}&
+\multicolumn{2}{c}{\minitable{c}{Air Radar\\ Search and\\ Lock-on\\ Modifier}}&
 \multicolumn{2}{c}{\minitable{c}{Air Radar\\Break-lock No.}}\\
 Chaff&Mini-jam&
 \multicolumn{5}{c}{Radar Frequency}&
 \multicolumn{2}{c}{SAM Type}&
 \multicolumn{2}{c}{Type}&
 \multicolumn{2}{c}{Type}\\
+\cmidrule(lr){3-7}
+\cmidrule(lr){8-9}
+\cmidrule(lr){10-11}
+\cmidrule(lr){12-13}
 PPL \#&PPL \#&
-LF&MF&HF&VF&MW&
-BR/CG&CW/TWM&
-Lim./180&150/120&
-Lim./180&150/120\\
+\vertical{LF}&\vertical{MF}&\vertical{HF}&\vertical{VF}&\vertical{MW}&
+\vertical{BR/CG}&\vertical{CW/TVM}&
+\vertical{Lim./180}&\vertical{150/120}&
+\vertical{Lim./180}&\vertical{150/120}\\
 \midrule
 1&---&1&1&---&---&---&---&---&1&---&1&---\\
 2&1&2&1&1&---&---&1&---&1&1&1&1\\
@@ -28,5 +32,5 @@ Lim./180&150/120\\
 ---&5&4&3&3&2&2&5&3&4&3&5&3\\
 ---&6&4&4&3&3&2&5&4&4&4&6&4\\
 \bottomrule
-\end{tabular}
-\end{table*}
+\end{tabularx}
+\end{twocolumntable}

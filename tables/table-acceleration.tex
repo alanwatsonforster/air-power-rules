@@ -1,8 +1,10 @@
 \begin{onecolumntable}
 \tablecaption{table:acceleration}{Accel/Decel Point Summary}
 
-Accel Point Summary\par
-\medskip
+\begin{tabularx}{\linewidth}{C}
+\toprule
+Accel Point Summary\\
+\midrule
 \begin{minipage}{\linewidth}
 \begin{itemize}
     \item Aircraft power = + Variable.
@@ -11,10 +13,10 @@ Accel Point Summary\par
     \itemaddedin{2A}{2A-steep-dives and 2A-unloaded-dives}{Steep, unloaded, and vertical  dive = 1.0 AP per level.}
 \end{itemize}
 \end{minipage}
-\medskip
-
-Decel Point Summary\par
-\medskip
+\\
+\midrule
+Decel Point Summary\\
+\midrule
 \begin{minipage}{\linewidth}
 \begin{itemize}
     \item Turning = Variable.
@@ -28,5 +30,7 @@ Decel Point Summary\par
     \itemaddedin{2A}{2A-sustained}{Sustained turns = 1.0 DP per 30 degree facing change in the second and subsequent facing changes (0.5 if LBR and 1.5 DP if HBR).}
     \itemaddedin{1B}{1B-apj-23-errata}{Sustained rolls 1.0 each}.
 \end{itemize}
-\end{minipage}
+\end{minipage}\\
+\bottomrule
+\end{tabularx}
 \end{onecolumntable}
