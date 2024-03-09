@@ -1,20 +1,17 @@
-\begin{twocolumntable}
-
 \addedin{1B}{1B-apj-22-damage-tables}{
 
+\begin{twocolumntable}
 \tablecaption{table:optional-damage}{Optional Advanced Aircraft Damage}
-
 \small
-
 \begin{tabularx}{\linewidth}{lcX}
-\hline
+\toprule
 \multirow{2}{*}{\minitable{c}{Die\\Roll}}&
 \multirow{2}{*}{\minitable{c}{Hit\\Location}}&
 Damage Effects to Aircraft and Notes\\
 \\
-\hline
+\midrule
 \multicolumn{3}{c}{Light Damage}\\
-\hline
+\midrule
 &&$+1$ to all attacks, $+1$ to weapons launches.\\
 1&Airframe&No supersonic speeds allowed.$^*$\\
 2&Airframe&No BT or ET turn rate allowed.\\
@@ -26,9 +23,9 @@ Damage Effects to Aircraft and Notes\\
 8&Weapons&Internal guns/gun pods disabled.\\
 9&Engines&Afterburner disabled. No A/B power available.\\
 10&Engines&Thrust loss; reduce Mil and A/B power numbers by 0.5. White Vapor emitted.\\
-\hline
+\midrule
 \multicolumn{3}{c}{Heavy Damage}\\
-\hline
+\midrule
 &&+2 to all attacks, +2 to weapon launches.\\
 1,2&Airframe&No supersonic flight.$^*$ No BT or ET turns. Low roll rate. No high pitch rate. Add two to prep-move requirements for all maneuvers.\\
 3&Controls&No rolling maneuvers allowed. Low roll rate. No high pitch rate. No ET turn rate.\\
@@ -37,9 +34,9 @@ Damage Effects to Aircraft and Notes\\
 6,7&Avionics&Radar knocked out, all ECM knocked out, and lose all technology\\
 8&Weapons&Guns disabled, no RHM/AHM/ARM/ASM missile or BS/RS weapon launches allowed.\\
 9,10&Engines&Mil and A/B power halved. Roll for flame out whenever power setting changed. On 1, a Flame-Out occurs in one good engine. Aircraft becomes a smoker.\\
-\hline
+\midrule
 \multicolumn{3}{c}{Critical Damage}\\
-\hline
+\midrule
 &&$+3$ to all attacks, $+3$ to weapon launches. Roll once on the H table and once below.\\
 1&Cockpit&Roll die again: 1, 2 = pilot killed (aircraft lost). 3, 4 = Crewman Killed (lose multi-crew functions). +5 = crew okay. Regardless, treat aircraft as having both an Airframe and Avionics hit as described immediately below.\\
 2,3&Airframe&
@@ -47,9 +44,8 @@ No supersonic flight.$^*$ Low roll rate. No high pitch. No rolling maneuvers. EZ
 4,5,6&Avionics&Lose radar, all ECM, and all technology. No external pods work. Bombsight degrades to manual and gunsight = TT+1, HT+2, BT+3.\\
 7&Fuel Fire**&Aircraft becomes Smoker. Lose 3 die rolls of fuel/turn. Jettison external stores. Roll die after each turn after flight. On 1 or 2 aircraft explodes, crew killed. On 9 or 10, fire goes out permanently but fuel leak still there.\\
 8,9,10&Engines&A/B power lost. Mli power halved. Aircraft becomes Smoker. Roll for flame-outs twice per engine (1 or 2 = F.O. in this case). On subsequent turns, roll for flame-out whenever power seting is changed (1 = F.O.).\\
-\hline
+\bottomrule
 \end{tabularx}
-
 \begin{tablenote}{\linewidth}
 \begin{itemize}
     \item The specifics of the damage rolled are not revealed to the enemy, but are recorded on paper. Visible signs of damage such as smoke or vapor, as indicated on the tables, must be told to the opponent.
@@ -59,6 +55,6 @@ No supersonic flight.$^*$ Low roll rate. No high pitch. No rolling maneuvers. EZ
    \item[$^{**}$] A Fuel Fire and risk of explosion can only be stopped by shutting down all engines. Declare this when doing damage control. Treat aircraft as flamed-out. When engines relit, A/B is disabled. Roll one die, on 1 to 4 fire resumes permanently; otherwise it stays out.
 \end{itemize}
 \end{tablenote}
-}
-
 \end{twocolumntable}
+
+}
