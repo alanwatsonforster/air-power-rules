@@ -1,11 +1,12 @@
-\begin{table*}
+\begin{twocolumntable}
 
-\newcommand{\heading}[1]{\smallskip\textbf{\MakeUppercase{#1}}\par\smallskip}
-\newcommand{\subheading}[1]{\smallskip\textbf{#1}\par\smallskip}
+\newcommand{\heading}[1]{\medskip\par\textbf{\MakeUppercase{#1}}\par\smallskip}
+\newcommand{\subheading}[1]{\smallskip\par\textbf{#1}\par\smallskip}
 
-\caption{Aircraft Flight Rules Summary}
-\medskip
+\tablecaption{table:aircraft-flight-rules-summary}{Aircraft Flight Rules Summary}
 \footnotesize
+\begin{tabularx}{\linewidth}{P}
+\toprule
 \begin{multicols}{2}
 
 \heading{Accel/Decel}
@@ -109,16 +110,20 @@
 
 
 \end{multicols}
+\\
+\bottomrule
+\end{tabularx}
+\end{twocolumntable}
 
-\end{table*}
+\begin{twocolumntable}
 
-\begin{table*}
+\newcommand{\heading}[1]{\medskip\par\textbf{\MakeUppercase{#1}}\par\smallskip}
+\newcommand{\subheading}[1]{\smallskip\par\textbf{#1}\par\smallskip}
 
-\newcommand{\heading}[1]{\smallskip\textbf{\MakeUppercase{#1}}\par\smallskip}
-\newcommand{\subheading}[1]{\smallskip\textbf{#1}\par\smallskip}
-
-\medskip
+\tablecaptioncontinued{table:aircraft-flight-rules-summary}{Aircraft Flight Rules Summary}
 \footnotesize
+\begin{tabularx}{\linewidth}{P}
+\toprule
 \begin{multicols}{2}
 
 \heading{Diving Flight}
@@ -264,5 +269,7 @@
 \end{enumerate}
 
 \end{multicols}
-
-\end{table*}
+\\
+\bottomrule
+\end{tabularx}
+\end{twocolumntable}
