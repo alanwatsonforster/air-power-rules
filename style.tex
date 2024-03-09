@@ -87,19 +87,6 @@
 
 \newcommand{\itemparagraph}[1]{{\bfseries #1}}
 
-% Tables
-
-%\newcommand{\minitable}[2][l]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\newcommand{\minitable}[3][c]{\begin{tabular}[#1]{@{}#2@{}}#3\end{tabular}}
-\newcommand*\rot{\rotatebox{90}}
-
-\newenvironment{tablenote}[1]{%
-    %\medskip%
-    \tabularx{#1}{X}%
-}{%
-    \endtabularx%
-}
-
 % Add a little bit of space after \hline
 \let\originalhline\hline
 \renewcommand{\hline}{\originalhline\\[-1em]}
@@ -220,6 +207,19 @@
 \newif\ifaids
 \aidsfalse
 
+% Tables
+
+%\newcommand{\minitable}[2][l]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\newcommand{\minitable}[3][c]{\begin{tabular}[#1]{@{}#2@{}}#3\end{tabular}}
+\newcommand*\rot{\rotatebox{90}}
+
+\newenvironment{tablenote}[1]{%
+    \tabularx{#1}{X}%
+    \vspace{\parskip}%
+}{%
+    \endtabularx%
+}
+
 % New tabularx columns
 \newcolumntype{P}{X}%
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}%
@@ -230,22 +230,24 @@
 \newenvironment{TABLE}[1][tp]{
     \begin{table}[#1]
     \centering
+    \small
 }{
     \end{table}
 }
 \newenvironment{TABLE*}[1][tp]{
     \begin{table*}[#1]
     \centering
+    \small
 }{
     \end{table*}
 }
 \newcommand{\TABLECAPTION}[2]{
     \ifaids
     \par
-    Table~\ref{#1}: #2
+    {\normalsize Table~\ref{#1}: #2}
     \par
     \else
-    \caption{#2}
+    \caption{\normalsize #2}
     \label{#1}
     \fi
     \medskip
