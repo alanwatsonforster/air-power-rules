@@ -1,0 +1,83 @@
+\changedin{1D}{1D-tables}{
+
+\begin{table}[!ht]
+\centering
+WEATHER GENERATION TABLES
+
+\bigskip
+GEOGRAPHIC AREA\\
+(roll one die for sky condition)
+
+\medskip
+\begin{tabular}{p{2cm}*{4}{p{1.2cm}}}
+\hline
+Sky Type     &Far North/South    &Middle Regions &Desert Areas &Tropical Areas  \\
+\hline
+Clear        &1 to 4             &1 to 5         &1 to 8       &1 to 6          \\
+Broken       &5 to 7             &6 to 8         &9 to 10      &7               \\
+Overcast     &8 to 10            &9 to 10        &NA           &8 to 10         \\
+Contrail Alt.&20                 &25             &30           &25              \\
+\hline
+\end{tabular}
+
+\bigskip
+
+ACTUAL WEATHER\\
+(roll die to determine haze and cloud layers)
+
+\medskip
+\begin{tabular}{p{1.0cm}*{3}{p{2.2cm}}}
+\hline
+Die Roll    &Clear      &Broken         &Overcast               \\
+\hline
+    1	    &LO Hz      &LO Hz, 3 Str.  &LO Hz, 3 Str., 1 Dns.   \\
+    2       &ML Hz      &ML Hz, 1 Dns.  &LO Hz, 3 Str., 1 Dns.   \\
+    3	    &1 Str.     &ML Hz, 1 Dns.  &LO Hz, 2 Str., 2 Dns.   \\
+    4	    &1 Str.     &1 Str., 1 Dns. &1 Str., 3 Dns.         \\
+    5	    &2 Str.     &2 Str., 1 Dns. &2 Str., 2 Dns.         \\
+    6	    &---        &3 Str,         &2 Str., 2 Dns.          \\
+    7       &---        &4 Str.	        &2 Str., 2 Dns.         \\
+    8  	    &---        &HI Hz, 1 Str.	&ML Hz., 1 Dns.	        \\
+    9	    &---        &LO Hz, 1 Str.  &2 Dns.                 \\
+   10	    &---	    &2 Str.	        &1 Dns.	                \\
+\hline
+\end{tabular}
+\end{table}
+
+}{
+
+\begin{TABLE*}
+\TABLECAPTION{table:climate-zones}{Weather Generation: Geographic Area}
+\begin{tabularx}{0.7\linewidth}{l*{4}{C}}
+\toprule
+Sky Type     &Far North/South    &Middle\break Regions &Desert\break Areas &Tropical\break Areas  \\
+\midrule
+Clear        &\phantom{0}1 to 4\phantom{0} &\phantom{0}1 to 5\phantom{0} &\phantom{0}1 to 8\phantom{0} &\phantom{0}1 to 6\phantom{0} \\
+Broken       &\phantom{0}5 to 7\phantom{0} &\phantom{0}6 to 8\phantom{0} &\phantom{0}9 to 10           &7                            \\
+Overcast     &\phantom{0}8 to 10\phantom{} &\phantom{0}9 to 10\phantom{} &NA                           &\phantom{0}8 to 10\phantom{} \\
+Contrail Alt.&20                 &25             &30           &25              \\
+\bottomrule
+\end{tabularx}
+
+\vspace{\floatsep}
+
+\TABLECAPTION{table:haze-and-clouds}{Weather Generation: Actual Weather}
+\begin{tabularx}{0.7\linewidth}{lLLL}
+\toprule
+Die Roll    &Clear      &Broken         &Overcast               \\
+\midrule
+    1	    &LO Hz      &LO Hz, 3 Str.  &LO Hz, 3 Str., 1 Dns.   \\
+    2       &ML Hz      &ML Hz, 1 Dns.  &LO Hz, 3 Str., 1 Dns.   \\
+    3	    &1 Str.     &ML Hz, 1 Dns.  &LO Hz, 2 Str., 2 Dns.   \\
+    4	    &1 Str.     &1 Str., 1 Dns. &1 Str., 3 Dns.         \\
+    5	    &2 Str.     &2 Str., 1 Dns. &2 Str., 2 Dns.         \\
+    6	    &---        &3 Str,         &2 Str., 2 Dns.          \\
+    7       &---        &4 Str.	        &2 Str., 2 Dns.         \\
+    8  	    &---        &HI Hz, 1 Str.	&ML Hz., 1 Dns.	        \\
+    9	    &---        &LO Hz, 1 Str.  &2 Dns.                 \\
+   10	    &---	    &2 Str.	        &1 Dns.	                \\
+\bottomrule
+\end{tabularx}
+\end{TABLE*}
+
+}
