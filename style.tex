@@ -176,14 +176,33 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Aids.
+
+% We use this flag to change formatting according to whether we are in
+% the main text or the aids.
+
+\newif\ifaids
+\aidsfalse
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % Floats
 
 \newenvironment{onecolumntable}[1][tp]{
     \begin{table}[#1]
+    \ifaids
+        \centering
+        \begin{minipage}{0.5\linewidth}
+    \fi
     \centering
+    
 }{
+    \ifaids
+        \end{minipage}
+    \fi
     \end{table}
 }
+
 \newenvironment{twocolumntable}[1][tp]{
     \begin{table*}[#1]
     \centering
@@ -191,18 +210,27 @@
     \end{table*}
 }
 
-% Align floats on their own page or column to the top.
-\makeatletter
-\setlength{\@fptop}{0pt}
-\setlength{\@fpbot}{0pt plus 1fil}
-\makeatother
+\newenvironment{fullwidthtable}[1][tp]{
+    \begin{table*}[#1]
+    \centering
+}{
+    \end{table*}
+}
 
 \newenvironment{onecolumnfigure}[1][tp]{
     \begin{figure}[#1]
+    \ifaids
+        \centering
+        \begin{minipage}{0.5\linewidth}
+    \fi
     \centering
 }{
+    \ifaids
+        \end{minipage}
+    \fi
     \end{figure}
 }
+
 \newenvironment{twocolumnfigure}[1][tp]{
     \begin{figure*}[#1]
     \centering
@@ -210,15 +238,18 @@
     \end{figure*}
 }
 
+% Align floats in their own page or column to the top.
+\makeatletter
+\setlength{\@fptop}{0pt}
+\setlength{\@fpbot}{0pt plus 1fil}
+\makeatother
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Table and figure captions. 
 
 % Some tables appear in both the main text
 % and the play aids. Others only in the play aids.
-
-\newif\ifaids
-\aidsfalse
 
 \newcommand{\tablecaption}[2]{
     \ifaids
