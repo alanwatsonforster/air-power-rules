@@ -151,14 +151,6 @@
   \vspace{1ex}
 }
 
-% Captions
-
-\newcommand{\tablecaption}[1]{
-  \centering
-  \caption{#1}
-  \medskip
-}
-
 % Style for the standard title page
 
 \let\originaltitle\title
@@ -192,7 +184,23 @@
 
 \renewcommand{\deg}{\ensuremath{^\circ}}
 
-% Figures and tables.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Floats
+
+\newenvironment{onecolumntable}[1][tp]{
+    \begin{table}[#1]
+    \centering
+}{
+    \end{table}
+}
+\newenvironment{twocolumntable}[1][tp]{
+    \begin{table*}[#1]
+    \centering
+}{
+    \end{table*}
+}
 
 % Align floats on their own page or column to the top.
 \makeatletter
@@ -200,12 +208,71 @@
 \setlength{\@fpbot}{0pt plus 1fil}
 \makeatother
 
+\newenvironment{onecolumnfigure}[1][tp]{
+    \begin{figure}[#1]
+    \centering
+}{
+    \end{figure}
+}
+\newenvironment{twocolumnfigure}[1][tp]{
+    \begin{figure*}[#1]
+    \centering
+}{
+    \end{figure*}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Table and figure captions. 
+
+% Some tables appear in both the main text
+% and the play aids. Others only in the play aids.
+
+\newif\ifaids
+\aidsfalse
+
+\newcommand{\tablecaption}[2]{
+    \ifaids
+        \par
+        {\normalsize Table~\ref{#1}: #2}
+        \par
+    \else
+        \caption{\normalsize #2}
+        \label{#1}
+    \fi
+    \medskip
+}
+
+\newcommand{\tablecaptionforaidsonly}[2]{
+    \par
+    \caption{#2}
+    \label{#1}
+    \medskip
+}
+\newcommand{\tablecaptioncontinued}[2]{
+    \par
+    Table~\ref{#1} (continued): #2
+    \par
+    \medskip
+}
+
+\newcommand{\figurecaption}[2]{
+    \ifaids
+        \par
+        \medskip
+        Figure~\ref{#1}: #2
+    \else
+        \caption{#2}
+        \label{#1}
+    \fi
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usetikzlibrary{arrows.meta}
 
-\newif\ifaids
-\aidsfalse
 
 % Tables
 
@@ -227,64 +294,6 @@
 \newcolumntype{C}{>{\centering\arraybackslash}X}%
 \newcolumntype{q}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
 
-\newenvironment{TABLE}[1][tp]{
-    \begin{table}[#1]
-    \centering
-}{
-    \end{table}
-}
-\newenvironment{TABLE*}[1][tp]{
-    \begin{table*}[#1]
-    \centering
-}{
-    \end{table*}
-}
-\newcommand{\TABLECAPTION}[2]{
-    \ifaids
-    \par
-    {\normalsize Table~\ref{#1}: #2}
-    \par
-    \else
-    \caption{\normalsize #2}
-    \label{#1}
-    \fi
-    \medskip
-}
-\newcommand{\AIDSONLYTABLECAPTION}[2]{
-    \par
-    \caption{#2}
-    \label{#1}
-    \medskip
-}
-\newcommand{\CONTINUEDTABLECAPTION}[2]{
-    \par
-    Table~\ref{#1} (continued): #2
-    \par
-    \medskip
-}
-
-\newenvironment{FIGURE}[1][tp]{
-    \begin{figure}[#1]
-    \centering
-}{
-    \end{figure}
-}
-\newenvironment{FIGURE*}[1][tp]{
-    \begin{figure*}[#1]
-    \centering
-}{
-    \end{figure*}
-}
-\newcommand{\FIGURECAPTION}[2]{
-    \ifaids
-    \par
-    \medskip
-    Figure~\ref{#1}: #2
-    \else
-    \caption{#2}
-    \label{#1}
-    \fi
-}
 
 \newenvironment{tikzfigure}[1]{%
     \begin{fitwidth}{#1}%
