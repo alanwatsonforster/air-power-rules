@@ -87,17 +87,6 @@
 
 \newcommand{\itemparagraph}[1]{{\bfseries #1}}
 
-% Add a little bit of space after \hline
-\let\originalhline\hline
-\renewcommand{\hline}{\originalhline\\[-1em]}
-
-\newcommand{\tablesmallskip}{\\[-1.5ex]}
-\newcommand{\tablemedskip}{\\[-1.0ex]}
-
-\newcommand{\tablenotes}[3]{%
-  \multicolumn{#1}{l}{\begin{minipage}{#2}#3\end{minipage}}\\
-}
-
 % Sections
 
 \setcounter{secnumdepth}{3}
@@ -289,6 +278,14 @@
 }{%
     \endtabularx%
 }
+
+\newcommand{\tablesmallskip}{\\[-1.5ex]}
+\newcommand{\tablemedskip}{\\[-1.0ex]}
+
+\newcommand{\tablenotes}[3]{%
+  \multicolumn{#1}{l}{\begin{minipage}{#2}#3\end{minipage}}\\
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

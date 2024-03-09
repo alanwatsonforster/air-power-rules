@@ -1,37 +1,33 @@
 \begin{onecolumntable}
-
 \tablecaption{table:supersonic-speed}{Transonic/Supersonic Speed}
-
 \begin{tabularx}{1.0\linewidth}{Xccc}
-\hline
+\toprule
 Alt. Band&Low Trans.&High Trans.&Mach One\\
-\hline
+\midrule
 LO, ML&6.5&7.0&7.5\\
 MH,HI&6.0&6.5&7.0\\
 VH+&5.5&6.0&6.5\\
-\hline
+\bottomrule
 \end{tabularx}
 
-\bigskip
+\vspace{\floatsep}
 
 \tablecaption{table:supersonic-drag}{Transonic/Supersonic Drag Penalty}
-
 \begin{tabularx}{1.0\linewidth}{Xccc}
-\hline
+\toprule
 Aircraft Type&Low Trans.&High Trans.&Mach One\\
-\hline
+\midrule
 LTD&0.0&0.5&1.0\\
 NORMAL&0.5&1.0&1.5\\
 HTD&1.0&1.5&2.0\\
-\hline
+\bottomrule
 \end{tabularx}
 
-\bigskip
+\vspace{\floatsep}
 
 \tablecaption{table:supersonic-penalties}{Supersonic Penalties}
-
 \begin{tabularx}{\linewidth}{X}
-\hline
+\toprule
 \begin{itemize}[nosep]
     \item Add 1 prep to all maneuvers\deletedin{2A}{2A-snap}{ and snap turns}. Climb cap. = 2/3ds
     \item PSSM aircraft = $+2.0$ decel if any turns \changedin{1B}{1B-apj-23-errata}{or rolls}{and $+2.0$ decel if any rolls} done, and reduce maximum turn rate by one but not to less than HT.
@@ -45,7 +41,7 @@ HTD&1.0&1.5&2.0\\
     \item Takes 3.0 accel to gain 0.5 speed (2.0 if Rapid Accel aircraft).
 \end{itemize}
 \\
-\hline
+\bottomrule
 \end{tabularx}
 
 \end{onecolumntable}
