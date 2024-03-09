@@ -1,63 +1,54 @@
-\begin{table*}
+\begin{TABLE*}
 \centering
 
-\caption{RWR and Internal DJM/AJM Detectable and Jammable Frequencies}
-\medskip
-\begin{tabular}{*{15}{c}}
-\hline
-\multirow{3}{*}{\minitable{c}{RWR or\\Jammer\\Type}}\\
+\TABLECAPTION{table:ew-coverage}{RWR and Internal DJM/AJM Detectable and Jammable Frequencies}
+\small
+\begin{tabularx}{\linewidth}{c*{22}{@{ }C@{}}}
+\toprule
+\multirow{3}{*}{\minitable{c}{RWR or\\Jammer\\Type}}&
+\multicolumn{12}{c}{Detectable and Jammable Radar Frequencies}&
+\multicolumn{8}{c}{RWR Also Detects}
+\\
+\cmidrule(lr){2-13}
+\cmidrule(l){14-21}
 &
-\multicolumn{3}{c}{EWR}&&
-\multicolumn{4}{c}{FCR}&&
-\multicolumn{5}{c}{TTR}\\
-\cline{2-4}
-\cline{6-9}
-\cline{11-15}
+\multicolumn{3}{c}{EWR}&
+\multicolumn{4}{c}{FCR}&
+\multicolumn{5}{c}{TTR}&
+\multicolumn{4}{c}{SAM Launches}&
 &
-LF&MF&HF&&
-LF&HF&VF&MW&&
-LF&MF&HF&VF&MW\\
-\hline
-A&X&---&---&&X&X&---&---&&X&X&X&---&---\\
-B&X&X&X&&X&X&X&---&&X&X&X&---&---\\
-C&X&X&X&&X&X&X&X&&X&X&X&X&---\\
-D&X&X&X&&X&X&X&X&&X&X&X&X&X\\
-\hline
-\tablemedskip
-\tablenotes{15}{0.7\linewidth}{
+&
+\multirow[t]{2}{*}[3ex]{}&
+\multirow[t]{2}{*}[3ex]{}\\
+\cmidrule(rl){2-4}
+\cmidrule(rl){5-8}
+\cmidrule(rl){9-13}
+\cmidrule(rl){14-17}
+&
+\rot{LF}&\rot{MF}&\rot{HF}&
+\rot{LF}&\rot{HF}&\rot{VF}&\rot{MW}&
+\rot{LF}&\rot{MF}&\rot{HF}&\rot{VF}&\rot{MW}&
+\rot{BR}&\rot{CG}&\rot{CW}&\rot{TVM}&
+\rot{Air Search}&
+\rot{Air Lock}&
+\rot{Tgt. Ilum.}&
+\rot{AHM Active}\\
+\midrule
+A&X&---&---&X&X&---&---&X&X&X&---&---&X&X&---&---&---&X&---&---\\
+B&X&X&X&X&X&X&---&X&X&X&---&---&X&X&---&---&---&X&X&---\\
+C&X&X&X&X&X&X&X&X&X&X&X&---&X&X&X&---&---&X&X&X\\
+D&X&X&X&X&X&X&X&X&X&X&X&X&X&X&X&X&X&X&X&X\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{\linewidth}
 Notes
 \begin{enumerate}
     \item “X” indicates that radar operating in that frequency is detectable to RWR and vulnerable to DJMs and AJMs.
     \item DJM and AJM pods have their frequency capabilities listed in the external stores tables under EPs.
     \item Internal DJMs A and B cannot break CW or TVM lock-ons. Internal DJM C cannot break TVM lock-ons.
 \end{enumerate}
-}
-\end{tabular}
-
-\medskip
-
-\caption{RWR Also Detects}
-\medskip
-\begin{tabular}{c*{8}{c}}
-\hline
-\multirow{3}{*}{\minitable{c}{RWR or\\Jammer\\Type}}\\
-&
-\multicolumn{4}{c}{SAM Launches}&
-\multirow{2}{*}{\minitable{c}{Air\\Search}}&
-\multirow{2}{*}{\minitable{c}{Air\\Lock}}&
-\multirow{2}{*}{\minitable{c}{Tgt.\\Ilum.}}&
-\multirow{2}{*}{\minitable{c}{AHM\\Active}}\\
-\cline{2-5}
-&
-BR&CG&CW&TVM\\
-\hline
-A&X&X&---&---&---&X&---&---\\
-B&X&X&---&---&---&X&X&---\\
-C&X&X&X&---&---&X&X&X\\
-D&X&X&X&X&X&X&X&X\\
-\hline
-\end{tabular}
+\end{tablenote}
 
 
 
-\end{table*}
+\end{TABLE*}

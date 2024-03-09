@@ -48,9 +48,12 @@ When the decoys in the DDS run low and the remaining quantity of decoys is less 
 
 \subsection{Radar Warning Receivers (RWR)}
 
+\addedin{1D}{1D-tables}{
+    \input{tables/table-ew-coverage}
+}
 Radar Warning Receivers are designed to alert aircraft to hostile radar emissions and missile guidance signals. An aircraft's RWR, if any, is listed in the ECM section of the ADC. As for DDS, RWRs are classified as A, B, C, and D systems.
 
-\paragraph{RWR Capabilities.} The RWR Table lists ground unit radars (according to the frequency they use) and air radars (by modes) and indicates if that frequency or mode is detectable to each type of RWR.
+\paragraph{RWR Capabilities.} \changedin{1D}{1D-table}{The RWR Table}{Table~\ref{table:ew-coverage}} lists ground unit radars (according to the frequency they use) and air radars (by modes) and indicates if that frequency or mode is detectable to each type of RWR.
 
 \paragraph{RWR Benefits Against Radar Equipped Units.} All RWRs have the ability to indicate the relative direction of incoming radar strobes. Thus, if an aircraft with an RWR is searched for and/or locked onto by a detectable radar equipped enemy aircraft or ground unit, that aircraft receives a $-1$ to any visual sighting rolls made against those radar equipped units.
 
@@ -78,9 +81,13 @@ Aircraft may carry internal jammers or carry jamming pods to degrade the capabil
 
 \subsubsection{Barrage Jammers (BJMs)}
 
+\addedin{1D}{1D-tables}{
+    \input{tables/table-ew-bjm}
+}
+
 A Barrage Jammer floods enemy radar scopes with continuous noise to render them useless. This is the earliest type of jamming; it is countered by the use of home-on-jam missiles.
 
-A barrage jammer has two modes: Noise and Stand-Off. The ability of an aircraft to switch between selected modes and jamming frequencies varies with the type of jammer and crew (pilot only or multi-crew) as detailed in the EW charts and EP tables. 
+A barrage jammer has two modes: Noise and Stand-Off. The ability of an aircraft to switch between selected modes and jamming frequencies varies with the type of jammer and crew (pilot only or multi-crew) \changedin{1D}{1D-tables}{as detailed in the EW charts and EP tables}{is shown in Table~\ref{table:ew-bjm-flexibility}}. 
 
 \begin{itemize}
 
@@ -88,7 +95,7 @@ A barrage jammer has two modes: Noise and Stand-Off. The ability of an aircraft 
 
     Subtract the ECCM rating of the jammed radar from the barrage jammer rating and apply any positive results as a die roll modifier for any search, passdowns, and/or lock-on attempts by the radar.
 
-    \item \itemparagraph{Stand-Off Mode.} Instead of flooding an arc with noise, the BJM can be focused on particular enemy radars in a concentrated jamming attack. A successfully jammed radar is blind and may not search, lock-on, or guide radar missiles. Stand-off jamming does not otherwise protect other aircraft. The EW tables indicate how many stand-off attacks can be made by a single jammer and the die roll required for success. A radar's ECCM acts as a modifier against the jamming roll.
+    \item \itemparagraph{Stand-Off Mode.} Instead of flooding an arc with noise, the BJM can be focused on particular enemy radars in a concentrated jamming attack. A successfully jammed radar is blind and may not search, lock-on, or guide radar missiles. Stand-off jamming does not otherwise protect other aircraft. \changedin{1D}{1D-tables}{The EW tables}{Table~\ref{table:ew-bjm-capabilities}} indicate how many stand-off attacks can be made by a single jammer and the die roll required for success. A radar's ECCM acts as a modifier against the jamming roll.
     
 \end{itemize}
 
@@ -114,7 +121,7 @@ A Deceptive Jammer breaks radar lock-ons by shifting the radar beam off the inte
 
 When an air radar or TTR lock-on is achieved against an aircraft, Deceptive Jammers come into play to break the lock. When a radar controlled AAA gun fires at an aircraft, a DJM may act to spoof the FCR adding adverse to hit modifiers.
 
-Refer to the RWR/DJM coverage table to see if a DJM is effective against particular radars. If so, take the DJM's numerical self-protection rating and subtract the radar's ECCM rating from it.  If the result is positive, this is the number or less that must be rolled on one die to break the lock-on. DJMs also provide modifiers to radar guided missile attacks as detailed in the EW tables. If an aircraft has both podded and internal DJMs, only the most effective one in the given frequency is used.
+Refer to \changedin{1D}{1D-tables}{the RWR/DJM coverage table}{Table~\ref{table:ew-coverage}} to see if a DJM is effective against particular radars. If so, take the DJM's numerical self-protection rating and subtract the radar's ECCM rating from it.  If the result is positive, this is the number or less that must be rolled on one die to break the lock-on. DJMs also provide modifiers to radar guided missile attacks as detailed in \changedin{1D}{1D-tables}{the EW tables}{Table~\ref{table:missile-attack-modifiers}}. If an aircraft has both podded and internal DJMs, only the most effective one in the given frequency is used.
 
 \addedin{1B}{1B-apj-39-qa}{All internal DJM types may attempt to break any air radar lock-ons.}
 
