@@ -6,7 +6,7 @@ Aircraft change facing by turning. Facing changes usually occur in 30 degree inc
 
 \subsection{Turning}
 
-\addedin{1D}{1D-tables}{
+\addedin{1C}{1C-tables}{
     \input{tables/table-turn}
 }
 
@@ -19,7 +19,7 @@ Five rates of turn are available to an aircraft. Each rate of turn corresponds t
     \item the turn rate, either Easy, Tactical, Hard, Break, or Emergency. (EZ, TT, HT, BT, ET respectively).
 \end{itemize}
 
-Next consult \changedin{1D}{1D-tables}{the Integrated Turn Charts}{Table~\ref{table:turn}} and cross index the selected turn rate with the aircraft's current speed (rounded down). \notein{1B}{FH in APJ 36 states: “A/C speed, not FPs, is used on the Integrated Turn Charts.” However, the text already states that it is speed. I have not incorporated this.}
+Next consult \changedin{1C}{1C-tables}{the Integrated Turn Charts}{Table~\ref{table:turn}} and cross index the selected turn rate with the aircraft's current speed (rounded down). \notein{1B}{FH in APJ 36 states: “A/C speed, not FPs, is used on the Integrated Turn Charts.” However, the text already states that it is speed. I have not incorporated this.}
 Be sure to use the chart corresponding to the altitude band the aircraft is in. If an “NA” is encountered, that combination of turn rate and speed is not allowed. If a number appears, that is the minimum number of FPs that the aircraft must expend in flight before changing facing. If a 60 or 90 appears, that indicates the aircraft may change facing by up to 60 or 90 degrees respectively for each FP expended inflight that game turn. \addedin{2A}{2A-sustained, from FH in APJ 36}{A 60 or 90 degree turn is considered one facing change except for purposes of sustained turning decel.}
 
 Changing facing does not cost any FPs; it is the end result of having begun to turn and having used the specified number of FPs (or more) in flight while turning. A turn consists of all the FPs used prior to changing the aircraft's facing plus the act of facing itself. If an aircraft is on a hexside at the time of facing, shift it to the adjacent hex (in the direction the aircraft is turning) and then change its facing as shown \changedin{1C}{1C-figures}{below}{Figure~\ref{figure:changing-facing}}. 
@@ -125,7 +125,7 @@ If wings level, a Low Roll Rate aircraft must first spend 1 FP to establish an a
 
 \subsection{Turning and Minimum Speeds}
 
-As the angle of attack on an aircraft's wing increases, so does the speed at which it stalls. To simulate this, no aircraft may utilize turn rates greater than EZ unless their start speed for the turn equals or exceeds their minimum speed plus the amount shown \changedin{1D}{1D-tables}{on the table below}{in Table~\ref{table:turn-minimum-speed}}.
+As the angle of attack on an aircraft's wing increases, so does the speed at which it stalls. To simulate this, no aircraft may utilize turn rates greater than EZ unless their start speed for the turn equals or exceeds their minimum speed plus the amount shown \changedin{1C}{1C-tables}{on the table below}{in Table~\ref{table:turn-minimum-speed}}.
 
 \input{tables/table-turn-minimum-speed}
 
@@ -137,11 +137,11 @@ Aircrew aboard aircraft which turn too sharply may lose consciousness due to G f
 
 \paragraph{When Can GLOC Occur?} When an aircraft turns at the ET rate in the LO, ML, or MH altitude bands its crew may lose consciousness (at higher altitudes, the G-force of these turn rates is insufficient to cause GLOC). Each crew member must check for GLOC after each facing change at the ET rate.
 
-\addedin{1D}{1D-tables}{
+\addedin{1C}{1C-tables}{
     \input{tables/table-gloc}
 }
 
-\paragraph{GLOC Procedure.} Roll the die once for each crewman and apply any required modifiers\addedin{1D}{1D-tables}{\ from Table~\ref{table:gloc-avoidance}}. A result of 1 or less results in GLOC. \deletedin{1D}{1D-tables}{The GLOC roll is modified for the following:
+\paragraph{GLOC Procedure.} Roll the die once for each crewman and apply any required modifiers\addedin{1C}{1C-tables}{\ from Table~\ref{table:gloc-avoidance}}. A result of 1 or less results in GLOC. \deletedin{1C}{1C-tables}{The GLOC roll is modified for the following:
 
 \begin{itemize}
     \item Second or subsequent GLOC roll in a GLOC cycle = $-1$ (cumulative)
@@ -153,7 +153,7 @@ Aircrew aboard aircraft which turn too sharply may lose consciousness due to G f
 
 \paragraph{GLOC Cycle.} The GLOC check cycle continues with increasing probability of unconsciousness until the aircraft does no ET or BT turn rates in a game turn.
 
-\paragraph{GLOC Duration and Recovery.} \addedin{1D}{1D-tables}{Table~\ref{table:gloc-recovery} summarizes the procedure for recovery from GLOC.} GLOC normally lasts from the instant it occurs until the affected crewmember recovers. Affected crewmembers automatically recover in the Admin Phase of the second game turn following the one in which GLOC occurred (If a pilot blacked-out during turn 5, recovery would occur in the Admin Phase of turn 7).
+\paragraph{GLOC Duration and Recovery.} \addedin{1C}{1C-tables}{Table~\ref{table:gloc-recovery} summarizes the procedure for recovery from GLOC.} GLOC normally lasts from the instant it occurs until the affected crewmember recovers. Affected crewmembers automatically recover in the Admin Phase of the second game turn following the one in which GLOC occurred (If a pilot blacked-out during turn 5, recovery would occur in the Admin Phase of turn 7).
 
 \paragraph{Early Recovery.} A crewmember may recover from GLOC early. \notein{1B}{AWF: APJ 21 QA has a comment on this, but it is superseded by the following change from the APJ 23 errata.}\changedin{1B}{1B-apj-23-errata}{Unconscious crewmembers with excellent fitness, or unconscious crewmembers in multi-crew aircraft in which another member is not GLOC'd, are eligible for early recovery.  Check for early recovery during the Admin Phase of the game turn following the one in which GLOC occurred. }{All GLOC'd crewmembers are eligible for early recovery in the admin phase of the turn following the one in which GLOC occurred. Additionally, GLOC'd crew having excellent fitness or in a multi-crew aircraft where another crewman is not GLOC'd are eligible for early recovery in the admin phase of the turn in which GLOC occurred.} To check for early recovery, roll the die: the crewmembers recover on a result of 4 or less (no modifiers apply).
 
