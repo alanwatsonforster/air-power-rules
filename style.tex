@@ -256,11 +256,22 @@
 \newcommand{\tablecaption}[2]{
     \ifaids
         \par
-        Table~\ref{#1}: #2
+        \changedin{1C}{1C-tables}{
+            #2\par
+            \medskip
+        }{
+            Table~\ref{#1}: #2\par
+            \medskip
+        }
         \par
     \else
-        \caption{#2}
-        \label{#1}
+        \changedin{1C}{1C-tables}{
+            #2\par
+            \medskip
+        }{
+            \caption{#2}
+            \label{#1}
+        }
     \fi
     \medskip
 }
@@ -272,8 +283,13 @@
     \medskip
 }
 \newcommand{\tablecaptioncontinued}[2]{
-    \par
-    Table~\ref{#1} (continued): #2
+    \changedin{1C}{1C-tables}{
+        \par
+        #2 (continued)
+    }{
+        \par
+        Table~\ref{#1} (continued): #2
+    }
     \par
     \medskip
 }
@@ -284,9 +300,21 @@
         \medskip
         Figure~\ref{#1}: #2
     \else
-        \caption{#2}
+        \protect\addedin{1C}{1C-figures}{\caption{#2}}
         \label{#1}
     \fi
+}
+
+\newcommand{\simplefigurecaption}[1]{
+    % This is used for the original unnumbered figure captions.
+    \medskip
+    #1\par
+}
+
+\newcommand{\simplecaption}[1]{
+    % This is used for the original unnumbered figure captions.
+    \medskip
+    #1\par
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
