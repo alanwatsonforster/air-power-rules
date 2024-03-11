@@ -190,13 +190,18 @@
 % Floats
 
 \newenvironment{onecolumntable}[1][tp]{
-    \begin{table}[#1]
     \ifaids
+        \begin{table}[tp]
         \centering
         \begin{minipage}{0.5\linewidth}
+    \else
+        \silentlychangedin{1C}{1C-tables}{
+            \begin{table}[h!]
+        }{
+            \begin{table}[#1]
+        }
     \fi
     \centering
-    
 }{
     \ifaids
         \end{minipage}
@@ -219,10 +224,16 @@
 }
 
 \newenvironment{onecolumnfigure}[1][tp]{
-    \begin{figure}[#1]
     \ifaids
+        \begin{figure}[#1]
         \centering
         \begin{minipage}{0.5\linewidth}
+    \else
+        \silentlychangedin{1C}{1C-figures}{
+            \begin{figure}[h!]
+        }{
+            \begin{figure}[#1]
+        }        
     \fi
     \centering
 }{
@@ -244,6 +255,7 @@
 \makeatletter
 \setlength{\@fptop}{5pt}
 \setlength{\@fpbot}{0pt plus 1fil}
+\setlength{\@fpsep}{10ex plus 0fil}
 \makeatother
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -254,43 +266,37 @@
 % and the play aids. Others only in the play aids.
 
 \newcommand{\tablecaption}[2]{
-    \ifaids
+    \silentlychangedin{1C}{1C-tables}{
+        #2
         \par
-        \changedin{1C}{1C-tables}{
-            #2\par
-            \medskip
-        }{
-            Table~\ref{#1}: #2\par
-            \medskip
-        }
-        \par
-    \else
-        \changedin{1C}{1C-tables}{
-            #2\par
-            \medskip
-        }{
-            \caption{#2}
-            \label{#1}
-        }
-    \fi
+    }{
+        \ifaids
+            \textaddedin{1C}{1C-tables}{Table~\ref{#1}: #2}
+            \par
+        \else
+            \textaddedin{1C}{1C-tables}{\caption{#2\label{#1}}}
+        \fi
+    }
     \medskip
 }
 
 \newcommand{\tablecaptionforaidsonly}[2]{
-    \par
-    \caption{#2}
-    \label{#1}
+    \silentlychangedin{1C}{1C-tables}{
+        #2
+        \par
+    }{
+        \textaddedin{1C}{1C-tables}{\caption{#2\label{#1}}}
+    }
     \medskip
 }
 \newcommand{\tablecaptioncontinued}[2]{
-    \changedin{1C}{1C-tables}{
-        \par
+    \silentlychangedin{1C}{1C-tables}{
         #2 (continued)
-    }{
         \par
-        Table~\ref{#1} (continued): #2
+    }{
+        \textaddedin{1C}{1C-tables}{Table~\ref{#1} (continued): #2}
+        \par
     }
-    \par
     \medskip
 }
 
@@ -298,20 +304,19 @@
     \ifaids
         \par
         \medskip
-        Figure~\ref{#1}: #2
+        \textaddedin{1C}{1C-figures}{Figure~\ref{#1}: #2}
     \else
-        \protect\addedin{1C}{1C-figures}{\caption{#2}}
-        \label{#1}
+        \textaddedin{1C}{1C-figures}{\caption{#2\label{#1}}}
     \fi
 }
 
-\newcommand{\simplefigurecaption}[1]{
-    % This is used for the original unnumbered figure captions.
+\newcommand{\simpletablecaption}[1]{
+    % This is used for the original unnumbered table captions.
     \medskip
     #1\par
 }
 
-\newcommand{\simplecaption}[1]{
+\newcommand{\simplefigurecaption}[1]{
     % This is used for the original unnumbered figure captions.
     \medskip
     #1\par

@@ -6,8 +6,8 @@
 %\newcommand{\thisversion}{2B}
 %\newcommand{\thisversion}{2Z}
 
-\newcommand{\thissubversion}{}
-%\newcommand{\thissubversion}{\ Changes}
+%\newcommand{\thissubversion}{}
+\newcommand{\thissubversion}{\ Changes}
 %\newcommand{\thissubversion}{\ Verbose Changes}
 
 \newcommand{\thisrevision}{2024-02-13}
@@ -204,6 +204,9 @@
 	}
 }}}
 
+\newcommand{\silentlydeletedin}[3]{%
+    \iflaterversion{#1}{#3}%
+}
 \newcommand{\silentlyaddedin}[3]{%
     \ifthisversion{#1}{#3}%
     \ifearlierversion{#1}{#3}%
