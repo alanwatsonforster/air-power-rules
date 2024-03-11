@@ -99,6 +99,8 @@
 \newcommand{\beforesubsubsectionnumber}{}
 \newcommand{\aftersubsubsectionnumber}{}
 
+\usepackage[section]{placeins}
+
 \titleformat{\section}
     [block]
     {\filcenter\large\bfseries}
@@ -106,6 +108,7 @@
     {\wordsep}
     {\MakeUppercase}
 \titlespacing{\section}{0pt}{2.4ex plus .1ex minus .1ex}{1.3ex minus .1ex}
+\newcommand{\sectionbreak}{\clearpage}
 
 \titleformat{\subsection}
     {\filright\large\bfseries}
