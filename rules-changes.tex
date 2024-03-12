@@ -84,7 +84,7 @@
         \ifearlierversion{#1}{#4}%
     }
     \newcommand{\notein}[2]{%
-        \ifthisversion{#1}{\note{Note in #1: #2}}%
+        \ifthisversion{#1}{\endnote{Note in #1: #2}}%
     }
     \newcommand{\itemaddedin}[3]{%
         \ifthisversion{#1}{\added{\item \added{#3}\endnote{Added in #2.}}}%
