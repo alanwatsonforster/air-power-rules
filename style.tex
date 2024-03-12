@@ -29,6 +29,7 @@
 \usepackage{microtype}
 \usepackage{multirow}
 \usepackage{pdflscape}
+\usepackage{enotez}
 
 % Basic spacing.
 
@@ -95,6 +96,12 @@ minus \fontdimen4\font}
 
 \setcounter{secnumdepth}{2}
 \renewcommand{\chaptername}{Rule}
+
+\newcommand{\rulechapter}[1]{
+    \chapter{#1}%
+    \addtocontents{toc}{\protect\vspace{-1ex}}%
+    \thispagestyle{empty}%
+}
 
 \makeatletter
 \renewcommand\paragraph{%
@@ -182,8 +189,10 @@ minus \fontdimen4\font}
             \begin{table}[#1]
         }
     \fi
+    \begin{minipage}{\linewidth}
     \centering
 }{
+    \end{minipage}
     \ifaids
         \end{minipage}
     \fi
@@ -192,15 +201,19 @@ minus \fontdimen4\font}
 
 \newenvironment{twocolumntable}[1][tp]{
     \begin{table*}[#1]
+    \begin{minipage}{\linewidth}
     \centering
 }{
+    \end{minipage}
     \end{table*}
 }
 
 \newenvironment{fullwidthtable}[1][tp]{
     \begin{table*}[#1]
+    \begin{minipage}{\linewidth}
     \centering
 }{
+    \end{minipage}
     \end{table*}
 }
 
