@@ -16,7 +16,6 @@
 \setmathfont{TeX Gyre Schola Math}
 \setsansfont{TeX Gyre Heros}
 
-\usepackage{titlesec}
 \usepackage{titletoc}
 \usepackage{fancyhdr}
 \usepackage{enumitem}
@@ -36,7 +35,7 @@
 \setlength{\columnsep}{2em}
 
 \setlength{\parindent}{0em}
-\setlength{\parskip}{0.8ex plus 0.1ex}
+\setlength{\parskip}{0.8ex plus 0.3ex}
 \newcommand{\numberspace}{\phantom{0}}
 \setlength{\multicolsep}{0ex}
 
@@ -90,49 +89,28 @@
 
 % Sections
 
-\setcounter{secnumdepth}{3}
+\newlength{\interwordspace}
+\setlength{\interwordspace}{\fontdimen2\font plus \fontdimen3\font
+minus \fontdimen4\font}
 
-\newcommand{\beforesectionnumber}{}
-\newcommand{\aftersectionnumber}{}
-\newcommand{\beforesubsectionnumber}{}
-\newcommand{\aftersubsectionnumber}{}
-\newcommand{\beforesubsubsectionnumber}{}
-\newcommand{\aftersubsubsectionnumber}{}
+\setcounter{secnumdepth}{2}
+\renewcommand{\chaptername}{Rule}
 
-\usepackage[section]{placeins}
-
-\titleformat{\section}
-    [block]
-    {\filcenter\large\bfseries}
-    {\beforesectionnumber\thesection\aftersectionnumber}
-    {\wordsep}
-    {\MakeUppercase}
-\titlespacing{\section}{0pt}{2.4ex plus .1ex minus .1ex}{1.3ex minus .1ex}
-\newcommand{\sectionbreak}{\clearpage}
-
-\titleformat{\subsection}
-    {\filright\large\bfseries}
-    {\beforesubsectionnumber\thesubsection\aftersubsectionnumber}
-    {\wordsep}
-    {}
-\titlespacing{\subsection}{0pt}{1.8ex plus .1ex minus .1ex}{0.3ex minus .1ex}
-
-\titleformat{\subsubsection}
-    {\filright\bfseries}
-    {\beforesubsubsectionnumber\thesubsubsection\aftersubsubsectionnumber}
-    {\wordsep}
-    {}
-\titlespacing{\subsubsection}{0pt}{1.2ex plus .1ex minus .1ex}{0.3ex minus .1ex}
-
-\newcommand{\afterparagraphtitle}{}
-\titleformat{\paragraph}[runin]{\bfseries}{}{0.5em}{}[\afterparagraphtitle]
-\titlespacing{\paragraph}{0em}{0em}{\wordsep}
+\makeatletter
+\renewcommand\paragraph{%
+    \@startsection{paragraph}{4}%
+        {\z@}%
+        {\parskip}%
+        {-\interwordspace}%
+        {\normalfont\normalsize\bfseries}%
+    }
+\makeatother
 
 \newcommand{\advancedrules}{
     \vspace{1ex}
     \pagebreak[1]
     \begin{center}
-        \bfseries{\large Advanced Rules}
+        \bfseries{\Large Advanced Rules}
     \end{center}
 }
 
