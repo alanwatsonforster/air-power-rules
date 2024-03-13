@@ -2,14 +2,14 @@
 %\newcommand{\thisversion}{1A}
 %\newcommand{\thisversion}{1B}
 %\newcommand{\thisversion}{1C}
-\newcommand{\thisversion}{2A}
+%\newcommand{\thisversion}{2A}
 %\newcommand{\thisversion}{2B}
-%\newcommand{\thisversion}{2Z}
+\newcommand{\thisversion}{2Z}
 
-%\newcommand{\thissubversion}{}
-\newcommand{\thissubversion}{\ Changes}
+\newcommand{\thissubversion}{}
+%\newcommand{\thissubversion}{\ Changes}
 
-\newcommand{\thisrevision}{2024-02-13}
+\newcommand{\thisrevision}{2024-03-12}
 
 \usepackage{xstring}
 
@@ -148,12 +148,17 @@
 }
 
 \newcommand{\x}[3][AWF]{\changedin{2Z}{#1}{#2}{#3}}
+\newcommand{\addedinx}[2][AWF]{\addedin{2Z}{#1}{#2}}
+\newcommand{\deletedinx}[2][AWF]{\deletedin{2Z}{#1}{#2}}
 \newcommand{\xlc}[1]{\x{#1}{\MakeLowercase{#1}}}
 \newcommand{\xuc}[1]{\x{#1}{\MakeUppercase{#1}}}
 \newcommand{\xhyphen}[0]{\x{ }{-}}
+\newcommand{\xcomma}{\addedinx{,}}
 \newcommand{\xAP}[1]{\x{#1}{AP}}
 \newcommand{\xAPs}[1]{\x{#1}{APs}}
 \newcommand{\xDP}[1]{\x{#1}{DP}}
 \newcommand{\xDPs}[1]{\x{#1}{DPs}}
 \newcommand{\xGT}[1]{\x{#1}{game turn}}
 \newcommand{\xGTs}[1]{\x{#1}{game turns}}
+
+\renewcommand{\chaptername}{Rule}
