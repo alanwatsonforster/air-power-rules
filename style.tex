@@ -73,17 +73,21 @@
 % Lists
 
 \setlist[itemize]{
-  label=--,
-  leftmargin=1.5em,
-  rightmargin=1.5em,
-  nosep,
-  parsep=\parskip
+    label=--,
+    leftmargin=1.5em,
+    rightmargin=1.5em,
+    nosep,
+    parsep=\parskip
 }
 \setlist[enumerate]{
-  leftmargin=1.5em,
-  rightmargin=1.5em,
-  nosep,
-  parsep=\parskip
+    leftmargin=1.5em,
+    rightmargin=1.5em,
+    parsep=\parskip
+}
+\setlist[enumerate,2]{
+    align=left, 
+    labelwidth=0.7em, 
+    label=\alph*.
 }
 
 \newcommand{\itemparagraph}[1]{{\bfseries #1}}
