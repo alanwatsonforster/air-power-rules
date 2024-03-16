@@ -3,6 +3,7 @@
 Aircraft speed can change during play as a result of using various power settings, and as a result of doing climbs, dives, turns and maneuvers. To keep things simple, an aircraft's start speed is used as its speed for an entire game turn. Activities which may affect that speed, are noted in the log as the aircraft moves and any speed changes which result are determined after the aircraft completes its move. The changed speed is logged in the next turn as the aircraft's new start speed.
 
 \section{Power Settings}
+\label{rule:power-settings}
 
 In the game, aircraft engines produce thrust in terms of accel points; how many depends on the aircraft's chosen power setting and current configuration. At the beginning of each aircraft's move, the player must select one of the four allowed power settings. If a new setting is not selected, the setting from the previous turn remains in effect. Note the selected power setting code on the Power line of the Log.
 
@@ -24,6 +25,7 @@ In the game, aircraft engines produce thrust in terms of accel points; how many 
 \paragraph{Decel Point Penalty for Insufficient Power.} If an aircraft selects Idle or Normal power, and its speed is greater than its listed Cruise speed, it incurs one Decel point in addition to any others received that turn.
 
 \section{Acceleration \& Deceleration Points}
+\label{rule:acceleration-and-deceleration-points}
 
 \addedin{1C}{1C-tables}{
     \input{tables/table-acceleration}
@@ -113,6 +115,7 @@ If the aircraft recovers, it may resume normal flight. Start speed is automatica
 \advancedrules
 
 \section{Speedbrakes}
+\label{rule:speedbrakes}
 
 \changedin{2A}{2A-spbr,2A-fp-to-dp}{
 
@@ -228,6 +231,9 @@ Note: The number of engines an aircraft has is indicated on the Power Chart by d
 
 One attempt is allowed per engine per turn beginning on the game-turn following the flame-out. A maximum of three relight attempts per engine is allowed; if all three relight attempts are unsuccessful, the engine is permanently flamed out. (If in a single engine jet, the pilot might consider reading the ejection rules).
 
-\addedin{2A}{2A-cruise}{\section{Cruise Speed} The cruise speed of an aircraft depends on its configuration. The cruise speed given on the ADC is for CL configuration. If the configuration is 1/2, reduce the cruise speed by 0.5. If the configuration is DT, reduce the cruise speed by 1.0.}
+\addedin{2A}{2A-cruise}{\section{Cruise Speed} 
+\label{rule:cruise-speed}
+The cruise speed of an aircraft depends on its configuration. The cruise speed given on the ADC is for CL configuration. If the configuration is 1/2, reduce the cruise speed by 0.5. If the configuration is DT, reduce the cruise speed by 1.0.
+}
 
 \addedin{2B}{AWF}{If idle or normal power is selected, the determination of consequent additional deceleration uses the cruise speed at the start of a game turn.}
