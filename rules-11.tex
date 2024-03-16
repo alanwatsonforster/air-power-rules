@@ -7,6 +7,7 @@ This chapter details the procedures for visual detection and tracking of targets
 }
 
 \section{Sighting Aircraft and Missiles}
+\label{rule:sighting-aircraft-and-missiles}
 
 \paragraph{When is Sighting Checked?}  Enemy aircraft and missiles in flight are determined to be sighted or not during the Visual Sighting Phase of every game-turn. Sighting probability is based on range and visibility numbers. Visually aimed weapons may only be fired at sighted aircraft targets.
 
@@ -71,6 +72,7 @@ Padlocking is an administrative procedure used only in the Visual Sighting Phase
 \addedin{1B}{1B-apj-36-errata}{\paragraph{Initial Spotting.} When a scenario provides information on initial spotting, this applies to 'game-turn 0'. The normal spotting rules should be followed starting with game-turn 1, taking into account possible padlocks due to previous spotting.}
 
 \section{Sighting Ground and Naval Units}
+\label{rule:sighting-ground-and-naval-units}
 
 Each ground or naval unit (or target terrain type) has a sighting number on its counter. The sighting number is the range (in terms of hexes, count two altitude levels as one hex) at which it becomes automatically sighted to an aircraft. Any aircraft which starts a game-turn within that range may see and attack the sighted ground units and/or targets.
 
@@ -137,7 +139,7 @@ Aircraft can be augmented by television and optical equipment to enhance the air
 
 \begin{itemize}
 
-    \item attempt to sight one eligible target already detected by radar (but not locked on) in the searcher's 180° angle off arcs and within 10 times the target's visibility number, or
+    \item attempt to sight one eligible target already detected by radar (but not locked on) in the searcher's 180{deg} angle off arcs and within 10 times the target's visibility number, or
 
     \item visually search in the limited radar arc within 6 times the target's visibility number for one eligible target (whether previously detected or not).
 
@@ -150,7 +152,7 @@ Ignore multi-crew and HUD interface modifiers. The VAS range modifiers are used 
 \paragraph{Radar/VAS Interface.} An aircraft equipped with VAS may (upon establishing a radar lock) automatically sight one of the locked targets in the next Visual Sighting Phase if it is:
 
 \begin{itemize}
-    \item in the searcher's 180° angle off arc and,
+    \item in the searcher's 180{deg} angle off arc and,
     \item within 10 times the target's visibility number.
 \end{itemize}
 
@@ -162,20 +164,21 @@ An Infra-Red Search and Track System is capable of passively detecting and track
 
 \paragraph{IRSTS Types.} Two types of IRSTS systems exist: A (Early) and B (Advanced). IRSTS is used in the Radar Search and Lock-On Phase. A single pilot aircraft may use radar or IRSTS in this phase, a multi-crew aircraft may do both. \addedin{1B}{1B-apj-25-qa}{Unlike radar, there are no maneuver-related restrictions on the use of IRSTS.}
 
-\paragraph{Detection.} IRSTS detects heat based on fuel consumption: Detection range equals four times the fuel used number (based on the Fuel column of the Power Chart for the current power setting). The range is doubled if the IRSTS is in the target's 30° arc or less. The target is detected if it is in detection range.
+\paragraph{Detection.} IRSTS detects heat based on fuel consumption: Detection range equals four times the fuel used number (based on the Fuel column of the Power Chart for the current power setting). The range is doubled if the IRSTS is in the target's 30{deg} arc or less. The target is detected if it is in detection range.
 
 \begin{itemize}
     \item IRSTS-A operates in the limited radar arc of an aircraft.
-    \item IRSTS-B operates in the 180° arc of an aircraft.
+    \item IRSTS-B operates in the 180{deg} arc of an aircraft.
 \end{itemize}
 
-\paragraph{IRSTS Lock-on.} One lock-on attempt is allowed against the nearest detected target or the target with the highest fuel point use (and consequently the largest IR signature); double the value as seen from 30° arc or less. Roll the die. On a 6 or less for type A or 8 or less for type B, the target is locked-up.
+\paragraph{IRSTS Lock-on.} One lock-on attempt is allowed against the nearest detected target or the target with the highest fuel point use (and consequently the largest IR signature); double the value as seen from 30{deg} arc or less. Roll the die. On a 6 or less for type A or 8 or less for type B, the target is locked-up.
 
 \paragraph{Lock-on Sighting Benefits.} In the visual sighting phase, an aircraft with an IRSTS lock-on and having HUD interface receives the HUD modifier. Visual Sighting at night is permitted against a locked-on target out to twice the normal range.
 
 \paragraph{IR Missile Targeting.} An IRM equipped-fighter with an IRSTS lock-on may launch missiles at the target even if they are not visually spotted (handy at night and in haze).  A Type-B system lock-on allows IRMs to be launched as if IR uncage technology were available even if the fighter does not normally have that technology.
 
 \section{Limited Intelligence}
+\label{rule:limited-intelligence}
 
 Some scenarios allow players to start with aircraft types unknown to their opponent or they restrict one side (or both sides) from firing until an unknown aircraft is identified.
 
@@ -204,12 +207,13 @@ Furthermore, generic AAA and SAM site counters (mobile and static types) may be 
 \paragraph{I.D. Procedure.} Visual identification of ground and Naval units may occur before a unit is attacked or fires. Aircraft may attempt to visually I.D. targets in the sighting phase after sighting them. Roll once for each sighted unit in an aircraft's searched arc. If the number is less than or equal to 10 minus the range in hexes (counting 2 altitude levels as a hex), the unit is identified and flipped over to its non-generic side. Once a unit is identified through visual sighting or by attack or when it fires, it remains I.D.'d for the rest of the game.
 
 \section{Forward Air Controllers (FACs)}
+\label{rule:sighting-facs}
 
 Forward Air Controllers identify targets and direct ground attacks for pilots. A FAC may be ground-based or airborne. A FAC marks a ground target with smoke or with a laser spot. An attack on a marked target receives a \changedin{1E}{AWF}{minus 1}{$-1$} die roll modifier.
 
 \paragraph{Ground FAC.} A ground FAC is a vehicle-mounted observer on the ground. A Ground FAC automatically sees any enemy ground units (camouflaged or not) within six hexes provided LOS is not blocked. It sees units in adjacent hexes even if LOS is blocked.
 
-Each Ground FAC may mark one enemy unit (which it can see) during the AAA Planning Phase of each turn. If the Ground FAC marks the target with a laser spot, the marking is removed at the end of the game turn. If the Ground FAC marks the target with smoke, the marking is removed at the end of the next game-turn (the marking lasts two turns).
+Each Ground FAC may mark one enemy unit (which it can see) during the \changedin{2B}{2B-consistency}{AAA Planning Phase}{visual sighting phase} of each turn. If the Ground FAC marks the target with a laser spot, the marking is removed at the end of the game turn. If the Ground FAC marks the target with smoke, the marking is removed at the end of the next game-turn (the marking lasts two turns).
 
 \paragraph{Airborne FAC.} An airborne FAC is in an aircraft flying over the target area. The aircraft can usually carry smoke rocket pods for marking targets, and some may be equipped with laser designators. An Airborne FAC sights ground targets using normal Visual Sighting but is better at sighting camouflaged units.
 

@@ -5,6 +5,7 @@ This chapter details the procedures for the use of radar for detection and track
 \paragraph{Detection and Lock-On Eligibility.} Any aircraft not currently detected, within radar range, and in the radar arc of the searcher, is eligible to be detected. Count each two levels of altitude as one hex of range. An aircraft that is, or becomes, radar detected is eligible to be locked-on to. Radar guided missiles may only be launched at locked-on targets.
 
 \section{Radar Searches}
+\label{rule:radar-searches}
 
 \paragraph{Radar Search Data.} The Radar Data section of the ADC shows two numbers on the search line. The first number is the maximum detection range in hexes; the second number is the radar search strength rating. If a dash exists there, the aircraft has no search capability.
 
@@ -12,7 +13,7 @@ This chapter details the procedures for the use of radar for detection and track
     \input{figures/figure-limited-arc}
 }
 
-\paragraph{Radar Arcs.} The Radar Data section of the ADC shows a number on the Arcs line. This is aircraft's radar arc. The radar arc for an aircraft is expressed in terms of its angle-off arcs and followed by a plus. Because angle off arcs begin from the tail of the aircraft, the forward direction for an aircraft is 180°.  Radar arcs include all angle-off arcs higher than the number stated. Thus, the 150+ radar arc includes the right and left 150° angle-off arcs, and the right and left 180° angle-off arcs (because they are higher than 150°). Some aircraft have a “Limited” radar arc. This arc is less than the 180+ radar arc, and is shown in \changedin{1C}{1C-figures}{the Limited Radar Arc diagram of the play aids}{Figure~\ref{figure:limited-arcs}}. \addedin{1B}{1B-apj-28-qa}{In the \changedin{1C}{1C-figures}{diagram}{figure}, only the center point of hexes and hexsides within the limited arc line, as drawn, are within the limited arc.}
+\paragraph{Radar Arcs.} The Radar Data section of the ADC shows a number on the Arcs line. This is aircraft's radar arc. The radar arc for an aircraft is expressed in terms of its angle-off arcs and followed by a plus. Because angle off arcs begin from the tail of the aircraft, the forward direction for an aircraft is 180{deg}.  Radar arcs include all angle-off arcs higher than the number stated. Thus, the 150+ radar arc includes the right and left 150{deg} angle-off arcs, and the right and left 180{deg} angle-off arcs (because they are higher than 150{deg}). Some aircraft have a “Limited” radar arc. This arc is less than the 180+ radar arc, and is shown in \changedin{1C}{1C-figures}{the Limited Radar Arc diagram of the play aids}{Figure~\ref{figure:limited-arcs}}. \addedin{1B}{1B-apj-28-qa}{In the \changedin{1C}{1C-figures}{diagram}{figure}, only the center point of hexes and hexsides within the limited arc line, as drawn, are within the limited arc.}
 
 \paragraph{Radar Search Procedure.} Aircraft may attempt to detect targets which are in the search aircraft's radar arc and within its maximum detection range. To detect a target, a successful die roll must be made. The actual detection probability depends on the aircraft's search strength rating and the range. Use the following procedure to determine the die roll required:
 
@@ -39,6 +40,7 @@ Once an aircraft switches to tracking mode it loses contact with all detected ai
 \paragraph{Electronic Warfare and ECCM.} The effects of jamming are fully described in rule 19, but generally, the presence of jamming will cause modifiers to the detection die roll. Aircraft radars may have an ECCM (electronic counter-countermeasures) rating on the ADC which is used to counter jamming modifiers.
 
 \section{Radar Tracking and Lock-Ons}
+\label{rule:radar-tracking-and-lock-ons}
 
 For weapons guidance, an aircraft must refine and concentrate its radar beam on a target for accurate position readings. This is accomplished by switching to a tracking mode and achieving a lock-on.
 
@@ -153,6 +155,7 @@ Note: Aircraft with Look-Down Technology ignore this limit. Aircraft with Limite
 For example, an aircraft in a zoom climb with a 180+ arc radar can search for or track higher targets up to 5 levels higher for each hex away they are (“$\times5$”). It cannot search for lower targets as its Down limit is “$\times0$” meaning the allowed down difference per hex of range the target is away is zero. Thus, a target 10 hexes away could be as much as 50 levels above the searcher but not lower. The target could be at the same level.
 
 \section{Special Radar Modes}
+\label{rule:special-radar-modes}
 
 \paragraph{Boresight Radar Mode.} Boresight mode slaves the radar to the gunsight. All aircraft can use boresight mode. \addedin{1B}{1B-apj-35-qa}{Aircraft whose radar has a lock-on capability but no search capability can only use boresight mode to achieve a lock-on.} \addedin{1C}{1C-tables}{Table~\ref{table:radar-boresight-mode} summarizes boresight mode.}
 
@@ -162,9 +165,9 @@ One Boresight Mode lock-on attempt is allowed against the detected target even i
 
 \paragraph{Auto-Track Radar Mode.} Auto-Track Radar mode allows an aircraft to automatically detect and then lock-on a target. Only aircraft with Auto-Track Technology may use this mode. \addedin{1C}{1C-tables}{Table~\ref{table:radar-auto-track-mode} summarizes auto-track mode.}
 
-\paragraph{Procedure.} Announce Auto-Track when the aircraft begins its flight. All previous contacts and lock-ons are lost. Normal radar search is not allowed. The aircraft's effective radar arc becomes the 180° arc (regardless of the aircraft's normal radar arc). In the Air Radar Search and Lock-On Phase, the closest aircraft within a range equal to the radar's SEARCH strength in hexes in the 180° arc is automatically detected.
+\paragraph{Procedure.} Announce Auto-Track when the aircraft begins its flight. All previous contacts and lock-ons are lost. Normal radar search is not allowed. The aircraft's effective radar arc becomes the 180{deg} arc (regardless of the aircraft's normal radar arc). In the Air Radar Search and Lock-On Phase, the closest aircraft within a range equal to the radar's SEARCH strength in hexes in the 180{deg} arc is automatically detected.
 
-One Auto-Track Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. Auto-Track will ignore all friendly aircraft with IFF on. A visually sighted enemy aircraft may be selected for detection and lock-on even if it was not the closest as long as it meets the range and 180° arc requirements. \addedin{1B}{1B-apj-22-qa and 1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for auto-track mode.}
+One Auto-Track Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. Auto-Track will ignore all friendly aircraft with IFF on. A visually sighted enemy aircraft may be selected for detection and lock-on even if it was not the closest as long as it meets the range and 180{deg} arc requirements. \addedin{1B}{1B-apj-22-qa and 1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for auto-track mode.}
 
 \addedin{1B}{1B-apj-37-qa}{BJMs and AJMs have no impact on auto-track radar detections, but do impact lock-on attempts.}
 
