@@ -1,10 +1,18 @@
 \begin{twocolumntable}
 \tablecaption{table:expanded-sequence-of-play}{Expanded Sequence of Play}
-\newcommand{\sopphase}[1]{\smallskip\textbf{#1}\par\smallskip}
 \footnotesize
-\begin{tabularx}{1.0\linewidth}{L}
+
+\x{
+    \newcommand{\sopphase}[1]{\smallskip\textbf{#1}\par\smallskip}
+}{
+    \newcommand{\sopphase}[1]{\item\textbf{#1}\par}
+}
+
+\begin{tabularx}{1.0\linewidth}{L@{\hspace{\columnsep}}L}
 \toprule
-\begin{multicols}{2}
+
+\x{
+
 \sopphase{AAA Interaction Phase}
 
 \begin{enumerate}[nosep]
@@ -17,7 +25,7 @@
 \begin{enumerate}[nosep]
     \item Attempt to reactivate shutdown radars (Die Roll $6-$).
     \item Attempt to showdown alerted radars (Die Roll $6-$).
-    \item Declare BJM Nose Jamming arcs.
+    \item Declare BJM Noise Jamming arcs.
     \item Execute BJM Stand-Off Jamming attacks.
     \item[--] Multiple attacks against single radars allowed.
     \item Attempt Quick Reactions SAM unit Lock-ons.
@@ -52,12 +60,13 @@
     \item[--] Count each 2 alt. level difference as 1 hex or range if looking down and each 4 levels as 1 if looking up.
     \item[--] At night, 2 alt. levels difference equal 1 hex of range if looking up or down.
 \end{enumerate}
-    
+
 \sopphase{Aircraft Decisions Phase}
 
 \begin{enumerate}[nosep]
+    \itemaddedin{1B}{1B-apj-35-qa}{Declare IFF on or off.}
     \item Declare DDS programs on or off.
-    \item Declare illuminating for RH/AH missiles.
+    \item Declare whether illuminating the target of RH/AH missiles (rule~\ref{rule:target-illumination}).
     \item Declare Engaging Missiles.
     \item Declare Laser Designating aircraft.
     \item Declare Target Marking FAC aircraft.
@@ -70,14 +79,14 @@
 \begin{enumerate}[nosep]
     \item Check aircraft relative positions; determine who is Disadvantaged, non-advantaged, and advantaged.
 
-    To be advantaged over target, target must be in your 150+ arc, withing 9 hexes range, no more than 6 levels higher or 9 levels lower than you.
+    To be advantaged over target, target must be in your 150+ arc, within 9 hexes\addedin{1B}{1B-apj-36-errata}{\ horizontal} range, no more than 6 levels higher or 9 levels lower than you. \changedin{2A}{2A-advantage}{\addedin{1B}{1B-apj-23-errata}{Aircraft in vertical climbs or vertical dives may not disadvantage aircraft that are lower or higher than them, respectively.}}{An aircraft in a vertical dive may not disadvantage higher aircraft.} \addedin{1B}{1B-apj-23-errata}{Aircraft in the same hex, regardless of relative altitudes, have no effect on each other advantage-wise unless one is tailing another.}
 
     \item Roll one die per side to establish base initiative.
 
     \item Each aircraft uses base number pluss any applicable modifiers. Low number in each categrory moves first. Ties are rolled off, no mods. apply
 \end{enumerate}
 
-\newpage
+&
 
 \sopphase{Flight Phase}
 
@@ -96,6 +105,7 @@
     \item[--] Illmuminating aircraft move when their targets do.
     \item[--] Tailing aircraft move immediately after tailees do.
     \item[--] Defensive Pre-emptions, and shoot outs may alter the order of movement.
+    \item[--] Resolve stacking collisions at the end of the flight phase.
 \end{enumerate}
 
 \sopphase{Air to Air Missile Phase}
@@ -112,7 +122,7 @@
     \item Roll for radar contacts (4 rolls per aircraft).
     \item Roll for radar lock-ons.
     \item Roll to break lock-ons due to DJMs.
-    \item Roll to break lock-ons due tu Chaff or Mini-jammers.
+    \item Roll to break lock-ons due to Chaff or Mini-jammers.
     \item[--] Regular radars limited to one lock-on attempot per turn.
     \item[--] Multi-tgt. Track radars may make as many lock-on attempts as capability allows per turn.
     \item[--] Regular radars upon gaining lock, lose all other tgts.
@@ -123,7 +133,7 @@
 \sopphase{Ground Unit Interaction Phase}
 
 \begin{enumerate}[nosep]
-    \item Remove last game-turns's plooted fire markers.
+    \item Remove last game-turns's plotted fire markers.
     \item Reveal target hex and alt. of this turn's plotted fire.
     \item Resolve any plotted fire attacks and place markers.
     \item Conduct ground unit movement allowed.
@@ -140,7 +150,7 @@
     \item Remove aircraft meeting disengagement criteria.
 \end{enumerate}
 
-\sopphase{End of Turn Adminstrative Phase}
+\sopphase{End of Turn Administrative Phase}
 
 \begin{enumerate}[nosep]
     \item Remove laser spots unless weapons still in flight.
@@ -152,12 +162,174 @@
     \item Flip Barrage fire markers to Out of Ammo side.
     \item Roll for AAA resupply (Die Roll $2-$).
     \item Roll for infantry SAM reloads (Die Roll $3-$).
-    \item Auto.reload capable SAM units that did not guide or launch missiles may reload up to two expended rails.
+    \item Auto-reload capable SAM units that did not guide or launch missiles may reload up to two expended rails.
 \end{enumerate}
 
-\end{multicols}
+}{
+
+\begin{enumerate}
+
+\sopphase{AAA Interaction Phase}
+
+\begin{enumerate}[nosep]
+    \item Record the target hex and altitude of plotted fire.
+    \item Place barrage markers on units using barrage fire.
+\end{enumerate}
+
+\sopphase{SAM Interaction Phase}
+
+\begin{enumerate}[nosep]
+    \item Attempt to reactivate shutdown radars (on a die roll of $6-$).
+    \item Attempt to showdown alerted radars (on a die roll of $6-$).
+    \item Declare BJM noise jamming arcs.
+    \item Execute BJM stand-off jamming attacks. Multiple attacks against the same radar are allowed.
+    \item Attempt lock-ons by quick reaction SAM units.
+    \item Attempt SAM missile launches.
+    \item Attempt EWR/CCU passdowns (on a die roll on $7-$).
+    \item Attempt lock-ons by regular SAM units.
+    \item Attempt to break lock-ons by radar-guided SAM units with DJMs.
+    \item Attempt to break lock-ons by radar-guided SAM units with chaff and mini-jammers.
+    \item Attempt to break lock-ons by OG/LG SAM units with flares.
+    \item Attempt self-defense ARM launches
+\end{enumerate}
+
+\sopphase{Stalled Aircraft Phase}
+
+\begin{enumerate}[nosep]
+    \item Determine if departed aircraft recover (rule~\ref{rule:abnormal-flight}).
+    \item Determine if stalled aircraft depart (rule~\ref{rule:abnormal-flight}).
+\end{enumerate}
+
+\sopphase{Visual Sighting Phase}
+
+\begin{enumerate}[nosep]
+    \item Ground FACs place laser spots and smoke markers (rule~\ref{rule:sighting-facs}).
+    \item Check lines of sight if necessary (rule~\ref{rule:sighting-ground-and-naval-units}).
+    \item Declare which aircraft are searching for ground units (rule~\ref{rule:sighting-ground-and-naval-units}).
+    \item Determine which ground units are openly sighted (rule~\ref{rule:sighting-ground-and-naval-units}),
+    \item Attempt to sight camouflaged units (rule~\ref{rule:sighting-ground-and-naval-units}).
+    \item Attempt to identify ground units (rule~\ref{rule:sighting-ground-and-naval-units}).
+    \item Announce padlocked aircraft or missiles (rule~\ref{rule:sighting-aircraft-and-missiles}). Those that are not padlocked are unsighted.
+    \item Attempt to sight unsighted aircraft and missiles (rule~\ref{rule:sighting-aircraft-and-missiles}).
+    \item Attempt to identify aircraft (rule~\ref{rule:limited-intelligence}).
+\end{enumerate}
+
+\sopphase{Aircraft Decisions Phase}
+
+\begin{enumerate}[nosep]
+    \item Declare whether IFFs are on or off (rule~\ref{rule:iff}).
+    \item Declare whether DDS programs are on or off (rule~\ref{rule:dds}).
+    \item Declare whether illuminating for RH/AH missiles (rule~\ref{rule:target-illumination}).
+    \item Declare whether engaging missiles (rule~\ref{rule:engaging-missiles}).
+    \item Declare whether laser-designating.
+    \item Declare whether FAC aircraft are marking a target with a laser.
+    \item Declare whether using special radar or weapons modes:
+    \begin{itemize}
+        \item IR uncage (rule~\ref{rule:irm-launch-prerequisites}).
+        \item Boresight radar mode (rule~\ref{rule:special-radar-modes}).
+        \item Auto-track radar mode (rule~\ref{rule:special-radar-modes}).
+    \end{itemize}
+    \item[--] Damage control is declared in the flight phase when an aircraft commences moving.
+\end{enumerate}
+
+\sopphase{Order of Flight Determination Phase}
+
+\begin{enumerate}[nosep]
+    \item Determine which aircraft are disadvantaged, non-advantaged, and advantaged (rule~\ref{rule:positions-of-advantage}).
+    \item Each side rolls one die to establish its base initiative (rule~\ref{rule:initiative}). Each aircraft uses the base initiative plus any applicable modifiers. In each category, aircraft with lower initiative numbers move first. In the case of ties between aircraft, roll again with no modifiers.
+\end{enumerate}
+
+\end{enumerate}
+
+&
+
+\begin{enumerate}[start=7]
+
+\sopphase{Flight Phase}
+
+\begin{enumerate}[nosep]
+    \item Move air-to-ground weapons not in a shoot-out.
+    \item Move departed aircraft (rule~\ref{rule:abnormal-flight}).
+    \item Move stalled aircraft (rule~\ref{rule:abnormal-flight}).
+    \item Move aircraft with GLOCed pilots (rule~\ref{rule:gloc}).
+    \item Move aircraft with disoriented pilots (rules~\ref{rule:gloc} and \ref{rule:night-and-adverse-weather-flight}).
+    \item Move engaged aircraft (rule~\ref{rule:engaging-missiles}).
+    \item Move FAC aircraft marking targets.
+    \item Move joint-attack laser-designating aircraft.
+    \item Move aircraft guiding air-to-ground weapons.
+    \item Move disadvantaged aircraft (rule~\ref{rule:positions-of-advantage}).
+    \item Move non-advantaged aircraft (rule~\ref{rule:positions-of-advantage}).
+    \item Move advantaged aircraft (rule~\ref{rule:positions-of-advantage}).
+    \item Move unsighted but detected aircraft.
+    \item Move unsighted and undetected aircraft.
+    \item[--] Missiles move when their targets do (rule~\ref{rule:missile-flight}).
+    \item[--] Illuminating aircraft move when their targets do (rule~\ref{rule:target-illumination}).
+    \item[--] Tailing aircraft move immediately after the aircraft they are tailing (rule~\ref{rule:tailing-enemy-aircraft}).
+    \item[--] Defensive preemptions (rule~\ref{rule:defendive-preemptions})  and shoot-outs (rule~\ref{rule:missile-shoot-outs}) may alter the order of flight.
+    \item[--] Resolve stacking collisions (rule~\ref{rule:aircraft-collisions}) at the end of the flight phase.
+\end{enumerate}
+
+\sopphase{Air-to-Air Missile Phase}
+
+\begin{enumerate}[nosep]
+    \item Determine if launch prerequisites are met (rule~\ref{rule:missile-launches} and \ref{rule:irm-launch-prerequisites} for IRM, \ref{rule:beam-riding-missiles} for BRM, \ref{rule:semi-active-radar-homing-missiles} for RHM, and \ref{rule:active-radar-homing-missiles} for AHM).
+    \item Aircraft may declare and attempt to launch one or two missiles (rule~\ref{rule:missile-launches}). If all declared attempts fail, one additional attempt is allowed (rule~\ref{rule:missile-launches}).
+\end{enumerate}
+
+\sopphase{Air Radar Search and Lock-On Phase}
+
+\begin{enumerate}[nosep]
+    \item Attempt searches (rule~\ref{rule:radar-searches}).
+    \item Attempt lock-ons (rule~\ref{rule:radar-tracking-and-lock-ons}).
+    \item Attempt to break lock-ons using DJMs (rule~\ref{rule:deceptive-jammers}).
+    \item Attempt to break locks using chaff and mini-jammers (rule~\ref{rule:dds}).
+    \item[--] Radars can search for four different targets.
+    \item[--] Regular radars are limited to one lock-on attempt. MTT radars may make as many lock-on attempts as their capability allows.
+    \item[--] Upon gaining a lock-on, regular radars lose all other contacts, TWS radars retain other contacts and may continue to search for more, and limited TWS radars retain other contacts but may not search for more.    
+\end{enumerate}
+
+\sopphase{Ground Unit Interaction Phase}
+
+\begin{enumerate}[nosep]
+    \item Remove last game turns's plotted fire markers.
+    \item Reveal the target hex and altitude of this game turn's plotted fire.
+    \item Resolve any plotted fire attacks and place markers.
+    \item Move ground units.
+    \item Resolve ground combat.
+\end{enumerate}
+
+\sopphase{Aircraft Administrative Phase}
+
+\begin{enumerate}[nosep]
+    \item Remove missiles whose time of flight is ended (rule~\ref{rule:missile-data}).
+    \item Check for progressive damage (rule~\ref{rule:progressive-damage}).
+    \item Check for early recovery from GLOC (rule~\ref{rule:gloc}).
+    \item Update the aircraft logs (rule~\ref{rule:aircraft-logs}).
+    \item Remove any disengagement aircraft (rule~\ref{rule:prolonged-scenarios}).
+\end{enumerate}
+
+\sopphase{End of Turn Administrative Phase}
+
+\begin{enumerate}[nosep]
+    \item Remove laser spots unless weapons are still in flight.
+    \item Remove blast zone markers.
+    \item Remove suppression removal markers.
+    \item Remove smoke-2 markers.
+    \item Flip suppression markers to their suppression removal side.
+    \item Flip smoke-1 markers to their smoke-2 side.
+    \item Flip barrage fire markers to their out-of-ammo side.
+    \item Check for AAA resupply (die roll $2-$).
+    \item Check for infantry SAM reloads (die roll $3-$).
+    \item Auto-reload capable SAM units that did not guide or launch missiles may reload up to two expended rails.
+\end{enumerate}
+
+\end{enumerate}
+
+}
+
 \\
 \bottomrule
 \end{tabularx}
 
 \end{twocolumntable}
+
