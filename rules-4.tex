@@ -69,9 +69,9 @@ The flight characteristics panel is divided into the following sections:
 
     Note: The dots to the right of the Power Chart heading indicate the number of engines the aircraft has.
     }{
-    The power chart indicates the number of APs per game turn available to the aircraft in a single game turn when the power setting for the engines is afterburner, military, or normal (see rule~\ref{rule:power-settings}). Three columns appear, one for each possible configuration of the aircraft. 
+    The power chart indicates the number of APs per game turn available to the aircraft in a single game turn when the power setting for the engines is afterburner, military, or normal (see rule~\ref{rule:engine-thrust}). Three columns appear, one for each possible configuration of the aircraft. 
 
-    It also shows the decelerations in DPs per game turn for selecting idle power (see rule~\ref{rule:power-settings}) and speedbrakes (see rule~\ref{rule:speedbrakes}). (In earlier ADCs, these rows are labeled “Idle FP” and “Spbr.\ FP”, and the values should be doubled to obtain the corresponding number of DPs.) 
+    It also shows the decelerations in DPs per game turn for selecting idle power (see rule~\ref{rule:engine-thrust}) and speedbrakes (see rule~\ref{rule:speedbrakes}). (In earlier ADCs, these rows are labeled “Idle FP” and “Spbr.\ FP”, and the values should be doubled to obtain the corresponding number of DPs.) 
 
     The last column shows the fuel points used per game turn at each power setting (see rule~\ref{rule:fuel-consumption}).
 
@@ -188,9 +188,9 @@ The combat capabilities panel is divided into the following sections.
     \x{
     Each weapons station is limited in the amount of weight it can carry. This section lists each station's weight limit, and the types of ordnance and equipment which can be placed on the station. The types of loads that may be placed on each station are indicated in letter codes (i.e., BB = Ballistic Bombs, RP = Rocket Pods, etc.). The listed codes correspond to the codes given in the weapons tables.
     }{
-    This section lists the maximum weight and types of stores that each station can carry. The codes for the types of store given in Table~\ref{table:store-codes}.
+    This section lists the maximum weight and types of stores that each station can carry. The codes for the types of store given in Table~\ref{table:stores}.
 
-    \input{tables/table-store-codes}
+    \input{tables/table-stores}
 
     }
 
@@ -273,20 +273,20 @@ Configuration changes affect several aspects of play and are handled as follows:
 \begin{itemize}
 
     \item \x{
-    Engine Power Available: Configuration changes can only occur after the power setting is selected, so no increase in Accel is available until the following turn.
+    Engine Power Available. Configuration changes can only occur after the power setting is selected, so no increase in Accel is available until the following turn.
     }{
-    Engine Power: As configuration changes can only occur after the power setting is selected, the APs available for a given power setting are determined using the configuration at the start of the game turn.
+    Engine Thrust. As configuration changes can only occur after the power setting is selected, the APs from engine thrust available for a given power setting are determined using the configuration at the start of the game turn.
     }
 
     \itemaddedin{2B}{AWF}{Cruise Speed. If idle or normal power is selected, the cruise speed (rule~\ref{rule:cruise-speed}) is modified according to the configuration at the start of a game turn.}
 
-    \item When Turning: \x{
+    \item When Turning. \x{
     The turn drag decel points an aircraft receives for turning is that for the configuration which existed when the highest turn rate was used that game turn.
     }{
     The turn drag deceleration is determined for the configuration when the highest turn rate was used during the game turn.
     }
 
-    \item When Climbing: \x{
+    \item When Climbing. \x{
     The climb rate allowed is that of the configuration which exists when the aircraft expends its first VFP during the game turn.
     }{
     The climb rate is determined for the configuration when the aircraft expends its first VFP during the game turn.
@@ -321,7 +321,7 @@ Aircraft may voluntarily jettison weapons and/or stores to change configuration,
 Aircraft may voluntarily jettison stores to change configuration or may be required to do so due to combat damage. If the action is voluntary, the player may selectively choose the number and type of stores that are jettisoned. If it is required due to damage, the player must select sufficient stores to allow the aircraft to achieve a clean configuration.
 }
 
-\paragraph{\protect\x{Jettison Procedure}{Procedure}.} 
+\paragraph{Jettison Procedure.} 
 \x{
 Weapons and/or stores may be jettisoned by simply announcing the act during an aircraft's move. The configuration change takes effect immediately after the aircraft's next expenditure of an FP in movement.
 }{
