@@ -273,15 +273,6 @@ minus \fontdimen4\font}
     \medskip
 }
 
-\newcommand{\tablecaptionforaidsonly}[2]{
-    \silentlychangedin{1C}{1C-tables}{
-        #2
-        \par
-    }{
-        \textaddedin{1C}{1C-tables}{\caption{#2\label{#1}}}
-    }
-    \medskip
-}
 \newcommand{\tablecaptioncontinued}[2]{
     \silentlychangedin{1C}{1C-tables}{
         #2 (continued)
