@@ -107,6 +107,11 @@ minus \fontdimen4\font}
     \addtocontents{toc}{\protect\vspace{-1ex}}%
     \thispagestyle{fancy}%
 }
+\newcommand{\appendixchapter}[1]{
+    \chapter{#1}%
+    \addtocontents{toc}{\protect\vspace{-1ex}}%
+    \thispagestyle{fancy}%
+}
 
 \makeatletter
 \renewcommand\paragraph{%
