@@ -1,23 +1,23 @@
 \begin{onecolumntable}
+
+\x{
+
 \tablecaption{table:acceleration}{Accel/Decel Point Summary}
 
 \begin{tabularx}{\linewidth}{C}
 \toprule
 Accel Point Summary\\
 \midrule
-\begin{minipage}{\linewidth}
 \begin{itemize}
     \item Aircraft power = + Variable.
     \itemdeletedin{2A}{2A-steep-dives and 2A-unloaded-dives}{Steep or Unloaded dive = +0.5 per level initially, then +1.0 per level.}
     \itemdeletedin{2A}{2A-steep-dives and 2A-unloaded-dives}{Vert. dive = +1.0 per lvl.}
     \itemaddedin{2A}{2A-steep-dives and 2A-unloaded-dives}{Steep, unloaded, and vertical  dive = 1.0 AP per level.}
 \end{itemize}
-\end{minipage}
 \\
 \midrule
 Decel Point Summary\\
 \midrule
-\begin{minipage}{\linewidth}
 \begin{itemize}
     \item Turning = Variable.
     \item Sust. climb = 0.5 per lvl.
@@ -30,7 +30,39 @@ Decel Point Summary\\
     \itemaddedin{2A}{2A-sustained}{Sustained turns = 1.0 DP per 30 degree facing change in the second and subsequent facing changes (0.5 if LBR and 1.5 DP if HBR).}
     \itemaddedin{1B}{1B-apj-23-errata}{Sustained rolls 1.0 each}.
 \end{itemize}
-\end{minipage}\\
+\\
 \bottomrule
 \end{tabularx}
+
+}{
+\tablecaption{table:acceleration}{AP/DP Summary}
+
+\begin{tabularx}{\linewidth}{C}
+\toprule
+AP Summary\\
+\midrule
+\begin{itemize}
+    \item Military or afterburner power = APs up to the limit on the ADC and modified by damage and altitude.
+    \item Steep, unloaded, and vertical dive = 1.0 AP per level.
+\end{itemize}
+\\
+\midrule
+DP Summary\\
+\midrule
+\begin{itemize}
+    \item Turning = DPs according to the ADC and the maximum turn rate.
+    \item Sustained climb = 0.5 DPs per level up to the sustained climb limit.
+    \item Zoom climb = 1.0 DP per level.
+    \item Vertical climb = 2.0 per level.
+    \item Speedbrakes = DPs up to the maximum value on the ADC.
+    \item Idle power = DPs according to the ADC.
+    \item Idle or normal power above the cruise speed for the configuration = 1.0 DP
+    \item Sustained turns = 1.0 DP for each 30{\deg} facing change in the second and subsequent facing changes (0.5 DP if LBR and 1.5 DP if HBR).
+    \item Sustained rolls = 1.0 DP each for the second and subsequent rolls.
+\end{itemize}
+\\
+\bottomrule
+\end{tabularx}
+
+}
 \end{onecolumntable}
