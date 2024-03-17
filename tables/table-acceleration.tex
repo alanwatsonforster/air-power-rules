@@ -1,6 +1,6 @@
-\begin{onecolumntable}
-
 \x{
+
+\begin{onecolumntable}
 
 \tablecaption{table:acceleration}{Accel/Decel Point Summary}
 
@@ -34,35 +34,51 @@ Decel Point Summary\\
 \bottomrule
 \end{tabularx}
 
+\end{onecolumntable}
+
 }{
+
+\begin{twocolumntable}[t]
+
 \tablecaption{table:acceleration}{AP/DP Summary}
 
-\begin{tabularx}{\linewidth}{C}
+\begin{tabularx}{0.9\linewidth}{LLl}
 \toprule
-AP Summary\\
+Cause&APs or DPs&Rule\\
 \midrule
-\begin{itemize}
-    \item Military or afterburner power = APs up to the limit on the ADC and modified by damage and altitude.
-    \item Steep, unloaded, and vertical dive = 1.0 AP per level.
-\end{itemize}
-\\
+\addlinespace
+\raggedright
+Military or afterburner power&APs up to the maximum on the ADC and modified by damage and altitude.&\mbox{\ref{rule:engine-thrust}}\\
+\addlinespace
+Steep dives&1.0 AP per level&\mbox{\ref{rule:steep-dives}}\\
+Unloaded dives&1.0 AP per level&\mbox{\ref{rule:unloaded-dives}}\\
+Vertical dives&1.0 AP per level&\mbox{\ref{rule:vertical-dives}}\\
+\addlinespace
 \midrule
-DP Summary\\
-\midrule
-\begin{itemize}
-    \item Turning = DPs according to the ADC and the maximum turn rate.
-    \item Sustained climb = 0.5 DPs per level up to the sustained climb limit.
-    \item Zoom climb = 1.0 DP per level.
-    \item Vertical climb = 2.0 per level.
-    \item Speedbrakes = DPs up to the maximum value on the ADC.
-    \item Idle power = DPs according to the ADC.
-    \item Idle or normal power above the cruise speed for the configuration = 1.0 DP
-    \item Sustained turns = 1.0 DP for each 30{\deg} facing change in the second and subsequent facing changes (0.5 DP if LBR and 1.5 DP if HBR).
-    \item Sustained rolls = 1.0 DP each for the second and subsequent rolls.
-\end{itemize}
-\\
+\addlinespace
+Idle power&DPs according to the ADC&\mbox{\ref{rule:engine-thrust}}\\
+Idle or normal power above the cruise speed&1.0 DP&\mbox{\ref{rule:engine-thrust}}\\
+\addlinespace
+Speedbrakes& DPs up to the maximum on the ADC&\mbox{\ref{rule:speedbrakes}$^*$}\\
+\addlinespace
+Turning&DPs according to the ADC and the maximum turn rate.&\mbox{\ref{rule:turning}}\\
+Sustained turning&1.0 DP (0.5 DP if LBR and 1.5 DP if HBR) for each 30{\deg} of facing change after the first facing change.&\mbox{\ref{rule:sustained-turning}$^*$}\\
+\addlinespace
+Zoom climb&1.0 DP per level&\mbox{\ref{rule:zoom-climbs}}\\
+Sustained climb&0.5 DPs per level up to the sustained climb limit, then 1.0 DP per level&\mbox{\ref{rule:sustained-climbs}}\\
+Vertical climbs&2.0 per level&\mbox{\ref{rule:vertical-climbs}}\\
+\addlinespace
+Rolling maneuvers&DPs according to the ADC.&\mbox{\ref{rule:rolling-maneuvers}}\\
+Sustained rolling&1.0 DP additionally for each roll after the first.&\mbox{\ref{rule:sustained-rolling-maneuvers}}\\
+\addlinespace
+VIFF maneuvers&DPs according to the maneuver&\mbox{\ref{rule:viff-maneuvers}$^*$}\\
+\addlinespace
 \bottomrule
 \end{tabularx}
+\begin{tablenote}{0.9\linewidth}
+$^*$ Advanced rule.
+\end{tablenote}
+
+\end{twocolumntable}
 
 }
-\end{onecolumntable}
