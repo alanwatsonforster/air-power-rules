@@ -56,14 +56,50 @@ Most ground and naval units have their position defined only by their map locati
     \item\itemparagraph{Map Location.} Ground and naval unit counters are always placed wholly within hexes and never on hex sides.
     
     \item\itemparagraph{Facing.} Heavy AAA units (see rule~\ref{rule:heavy-aaa-unit-facing}) and large naval units must be faced like aircraft and missiles. Other ground and naval units do not consider facing.
+
+    \item\itemparagraph{Altitude.} Ground units and naval units on rivers or lakes are always at the altitude of terrain (see rule~\ref{rule:ground-terrain}). Naval units on seas or oceans are always at altitude level 0.
 \end{itemize}
 }
 
 \Ax{
 \section{Altitude Structure} 
-Altitude levels are grouped into altitude bands, each several levels thick. Aircraft and missile performance can vary between the altitude bands. The altitude structure is shown in  Table~\ref{table:altitude-bands}.
+Altitude levels are grouped into altitude bands, each several levels thick. Aircraft and missile performance can vary between the altitude bands, as the air density and temperature typically decrease with altitude. The altitude structure is shown in  Table~\ref{table:altitude-bands}.
 
 \input {tables/table-altitude-bands}
+}
+
+\addedin{2B}{2B-range}{
+\section{Range}
+
+Many rules depend on the range between two counters. Other than in the exceptional cases noted subsequently, the range in hexes between two counters is determined as using the following procedure.
+
+\paragraph{Range Procedure.}
+The range has two components, the horizontal and vertical ranges. They are determined and combined as follows:
+
+\begin{itemize}
+\item
+The horizontal range is the length of the shortest route between the counters, measured in hexes. Moving between a hex side and one of the two adjacent hexes or four adjacent hex sides counts as one-half of a hex. After determining the number of hexes, including half hexes, round down.
+\item
+The vertical range is the difference in altitude levels divided by two and rounded down.
+\item
+The range is the sum of the horizontal range and the vertical range.
+\end{itemize}
+
+\paragraph{Range Exceptions.}
+The normal range procedure is not used in the following cases:
+\begin{itemize}
+
+\item
+The range for air-to-air gun attacks is determined according to rule~\ref{rule:air-to-air-gunnery}.
+
+\item
+When attempting to search for a higher aircraft in daylight, the vertical range is the difference in altitude levels divided by \emph{four} and rounded down (see rule~\ref{rule:sighting-aircraft-and-missiles}).
+
+\item
+When considering positions of advantage, the horizontal range and vertical altitude difference are considered separately (see rule~\ref{rule:positions-of-advantage}).
+
+\end{itemize}
+
 }
 
 \section{Stacking}
@@ -140,34 +176,3 @@ Collisions are possible in the following situations:
 If an aircraft carries out a head-on gun attack at range 0 and the same altitude, it immediately checks for a collision. The other cases are resolved at the end of the flight phase. Of the aircraft that could collide and which have not already checked for a collision at the same position (because of a head-on gun attack), the one that moved last checks for a collision. To check for a collision, roll the die. On a roll of 1, the aircraft collides with one of the others. Determine the other aircraft randomly. Both aircraft suffer damage from a weapon with an attack rating of 10 (see rule~\ref{rule:aircraft-damage-resolution}).
 }
 
-\addedin{2B}{2B-range}{
-\section{Range}
-
-\paragraph{Range Procedure.}
-Other than in the exceptional cases noted below, the range in hexes between two counters is determined as follows.
-
-\begin{itemize}
-\item
-The horizontal range is the length of the shortest route between the counters, measured in hexes. Moving between a hex side and one of the two adjacent hexes or four adjacent hex sides counts as one-half of a hex. After determining the number of hexes, including half hexes, round down.
-\item
-The vertical range is the difference in altitude levels divided by two and rounded down.
-\item
-The range is the sum of the horizontal range and the vertical range.
-\end{itemize}
-
-\paragraph{Range Exceptions.}
-The normal range procedure is not used in the following cases:
-\begin{itemize}
-
-\item
-The range for air-to-air gun attacks is determined according to rule~\ref{rule:air-to-air-gunnery}.
-
-\item
-When attempting to search for a higher aircraft in daylight, the vertical range is the difference in altitude levels divided by \emph{four} and rounded down (see rule~\ref{rule:sighting-aircraft-and-missiles}).
-
-\item
-When considering positions of advantage, the horizontal range and vertical altitude difference are considered separately (see rule~\ref{rule:positions-of-advantage}).
-
-\end{itemize}
-
-}
