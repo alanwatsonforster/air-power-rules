@@ -1,19 +1,24 @@
+\x{
 \rulechapter{Positioning Game Counters}
+}{
+\rulechapter{Positions}
+}
 
 \x{
 This chapter describes how the map hexes are utilized to position counters during play. The game map is used to show exactly where aircraft, missiles, and other units, are located in relationship to each other. Every game counter must be placed on the maps so that its position is clear to all players.
 }{
-This rule describes how the hex grid on the game map is used to position game counters during play. The game map serves to show exactly where aircraft, missiles, and other units are located. Every game counter must be placed on the map to make its position clear to all players.
+This rule describes how the position of the game counters is defined with the help of the game map. The game map serves to show the exact location of aircraft, missiles, and other units. Every game counter must be placed on the map to make its location clear to all players. Aircraft and missiles in flight additionally have their position defined by their facing and altitude.
 }
 
-\section{\x{Basic Elements of Position}{Position}}
+\section{\x{Basic Elements of Position}{Elements of Position}}
 \label{rule:position}
 
-\paragraph{Aircraft and Missile Counters.} 
 \x{
+\paragraph{Aircraft and Missile Counters.} 
 Each aircraft and missile counter has a position which is defined by its map location, facing, and altitude.
 }{
-Each aircraft and missile counter has a position defined by its map location, facing, and altitude.
+\paragraph{Aircraft and Missiles.} 
+All aircraft and missiles have their position defined by their map location, facing, and altitude.
 }
 
 \begin{itemize}
@@ -26,7 +31,7 @@ Each aircraft and missile counter has a position defined by its map location, fa
     \item \itemparagraph{Facing.} \x{
     This is the horizontal direction in which an aircraft or missile is flying. Use the silhouette on the counter to show facing by pointing the nose of the aircraft or missile in one of the twelve possible directions. Each direction differs by 30 degrees and has a corresponding compass heading associated with it (i.e., N = North, SSE = South South-East, etc.). In the scenario booklets, next to the map layout diagrams, there will be a compass arrow indicating which direction relative to the hexgrid that is North. \changedin{1C}{1C-figures}{See diagram below.}{See Figure~\ref{figure:facing}.}
     }{
-    This is the horizontal direction in which an aircraft or missile is flying. Use the silhouette on the counter to show facing by pointing the nose of the aircraft or missile in one of the twelve possible directions shown in Figure~\ref{figure:facing}. Each direction differs by 30 degrees and has a corresponding compass heading associated with it (i.e., N = north, SSE = south-south-east, etc.). In the scenario booklets, next to the map layout diagrams, there will be a compass arrow indicating the direction of north relative to the hex grid.
+    This is the horizontal direction in which an aircraft or missile is flying. Use the silhouette on the counter to show facing by pointing the nose of the aircraft or missile in one of the twelve possible directions shown in Figure~\ref{figure:facing}. Each direction differs by 30 degrees and has a corresponding compass heading associated with it (i.e., N is north, SSE is south-south-east, etc.). In the scenario booklets, next to the map layout diagrams, there will be a compass arrow indicating the direction of north relative to the hex grid.
     }
 
     \item \itemparagraph{Altitude.} \x{
@@ -37,14 +42,21 @@ Each aircraft and missile counter has a position defined by its map location, fa
 
 \end{itemize}
 
-    \input{figures/figure-map-location}
+\input{figures/figure-map-location}
 
-    \input{figures/figure-facing}
+\input{figures/figure-facing}
 
-\paragraph{Ground and Naval Unit Counters.} \x{
+\x{
+\paragraph{Ground and Naval Unit Counters.}
 Ground combat units and naval units have their positions defined simply by map location. They are always placed wholly within hexes and never on hexsides. Ground units never consider facing\addedin{1B}{1B-apj-23-errata}{ (except heavy AAA units under advanced rule 24.5)}, but large naval units must be faced in specific directions as for aircraft and missiles.
 }{
-Ground combat and naval units are always placed wholly within hexes and never on hex sides. Heavy AAA units (see rule~\ref{rule:heavy-aaa-unit-facing}) and large naval units must be faced like aircraft and missiles. Other ground units do not consider facing.
+\paragraph{Ground and Naval Units.}
+Most ground and naval units have their position defined only by their map location, although some also use facing.
+\begin{itemize}
+    \item\itemparagraph{Map Location.} Ground and naval unit counters are always placed wholly within hexes and never on hex sides.
+    
+    \item\itemparagraph{Facing.} Heavy AAA units (see rule~\ref{rule:heavy-aaa-unit-facing}) and large naval units must be faced like aircraft and missiles. Other ground and naval units do not consider facing.
+\end{itemize}
 }
 
 \section{Stacking}
@@ -67,9 +79,9 @@ No more than four ground unit counters may ever stack in the same ground terrain
 
 }{
 
-\paragraph{Missiles.} Missiles may stack with other missiles, aircraft, ground units, and naval units without limit.
-
 \paragraph{Aircraft.} Aircraft may stack with other aircraft, missiles, ground units, and naval units without limit. However, if aircraft are stacked at the same altitude level, there may be a risk of collision according to rule~\ref{rule:aircraft-collisions}.
+
+\paragraph{Missiles.} Missiles may stack with other missiles, aircraft, ground units, and naval units without limit.
 
 \paragraph{Ground Units.} No more than four ground unit counters may be stacked in the same ground terrain hex. No more than four aircraft may move together in a stack when taxiing on the ground.
 
@@ -102,7 +114,8 @@ Collisions are possible in the following situations:
     \itemaddedin{2B}{2B-stacking}{If more than four friendly aircraft are stacked at the same altitude after all aircraft have moved, even if they are in a close formation.}
 \end{itemize}
 
-\paragraph{Collision Resolution.} \x{
+\x{
+\paragraph{Collision Resolution.} 
 \addedin{2B}{2B-collisions}{Potential collisions resulting from head-on gun attacks are resolved immediately after the attack. Other potential collisions are resolved at the end of the flight phase.} For each potential collision, the player who last moved into the position must roll the die. On a roll of 1, his aircraft collides with one of the others. Determine which aircraft it collides with randomly. Both aircraft immediately roll on the 10 column of the Damage table to determine their damage.
 
 \paragraph{Collision Exceptions:} There are \changedin{1B}{1B-apj-36-errata}{two}{three} exceptions to the Potential Collision rule.
@@ -116,12 +129,14 @@ Collisions are possible in the following situations:
 \notein{1B}{AWF: There is a clarification of the collision exceptions in the APJ 23 errata, but it seems to restate the original exceptions. I have not included it.}
 
 }{
+\paragraph{Collision Resolution Procedure.} 
 If an aircraft carries out a head-on gun attack at range 0 and the same altitude, it immediately checks for a collision. The other cases are resolved at the end of the flight phase. Of the aircraft that could collide and which have not already checked for a collision at the same position (because of a head-on gun attack), the one that moved last checks for a collision. To check for a collision, roll the die. On a roll of 1, the aircraft collides with one of the others. Determine the other aircraft randomly. Both aircraft suffer damage from a weapon with an attack rating of 10 (see rule~\ref{rule:aircraft-damage-resolution}).
 }
 
 \addedin{2B}{2B-range}{
 \section{Range}
 
+\paragraph{Range Procedure.}
 Other than in the exceptional cases noted below, the range in hexes between two counters is determined as follows.
 
 \begin{itemize}
@@ -133,7 +148,8 @@ The vertical range is the difference in altitude levels divided by two and round
 The range is the sum of the horizontal range and the vertical range.
 \end{itemize}
 
-The exceptions are the following:
+\paragraph{Range Exceptions.}
+The normal range procedure is not used in the following cases:
 \begin{itemize}
 
 \item
