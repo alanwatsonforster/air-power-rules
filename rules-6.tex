@@ -134,7 +134,7 @@ In the game, the thrust produced by an aircraft's engines results in the aircraf
 \paragraph{Power Settings.} The four power settings and their codes are: idle (I), normal (N), military (M), and afterburner (AB).
 
 \begin{itemize}
-    \item\itemparagraph{Idle.} Idle power is the minimum setting that will keep a jet engine functioning. Selecting idle power incurs the DPs given in the idle power row of the power chart on the ADC for the aircraft's configuration.
+    \item\itemparagraph{Idle.} Idle power is the minimum setting that will keep a jet engine functioning. An aircraft using idle power receives the DPs given in the idle power row of the power chart on the ADC for the aircraft's configuration.
 
     (In earlier ADCs, the idle power row is labeled “Idle FP” rather than “Idle Dec.”, and the values should be doubled to obtain the corresponding number of DPs.)
 
@@ -149,7 +149,7 @@ In the game, the thrust produced by an aircraft's engines results in the aircraf
 
 \paragraph{Changing Power Settings.} An aircraft is normally limited in increasing its power setting from game turn to game turn. Normal aircraft may safely increase power by one or two levels per game turn. For example, they may safely increase power from idle to military but not from idle to afterburner. If an ADC notes that an aircraft has rapid power response (RPR),  it may safely increase power by any amount each turn. Normal aircraft may increase power from idle to afterburner at the risk of flaming out (see rule~\ref{rule:engine-flame-outs}). Aircraft may decrease their power setting without limit. 
 
-\paragraph{DP Penalty for Insufficient Power.} If an aircraft selects idle or normal power, and its speed exceeds its listed cruise speed, it incurs one DP in addition to any others received that turn.
+\paragraph{Insufficient Power Aboce Cruise Speed.} If an aircraft uses idle or normal power, and its speed exceeds its listed cruise speed, it receives one DP in addition to any others received that turn.
 
 }
 
@@ -307,27 +307,52 @@ The FPs burned may be either HFPs, or VFPs if in climbing or diving flight. FPs 
 
 }{
 
-Most jet aircraft are equipped with speedbrakes. Speedbrakes may be applied once per game turn, at any point in an aircraft's movement, to burn off energy and incur DPs up to the maximum listed on the speedbrake row of the power chart on the ADC.  The deceleration from speedbrakes is in addition to any other DPs incurred by the aircraft.
+Most jet aircraft are equipped with speedbrakes. Speedbrakes may be applied once per game turn, at any point in an aircraft's movement, to burn off energy and receive DPs up to the maximum listed on the speedbrake row of the power chart on the ADC.  The deceleration from speedbrakes is in addition to any other DPs received by the aircraft.
 
 (In earlier ADCs, the speedbrake row is labeled “Spbr.\ FP” rather than “Spbr.\ Dec.”, and the values should be doubled to obtain the corresponding number of DPs.)
 }
 
 \section{Supersonic Speed Effects}
+\label{rule:supersonic-speed-effects}
 
 \addedin{1C}{1C-tables}{
     \input{tables/table-supersonic}
 }
 
+\x{
 Aircraft flying at speeds approaching or exceeding the speed of sound are affected by the buildup of sonic shock waves and may receive decel penalties and restrictions as outlined below.
+}{
+Aircraft flying at speeds approaching or exceeding the speed of sound are affected by the buildup of sonic shock waves and may receive DPs and restrictions as described below.
+}
 
-\paragraph{The Speed Of Sound.} The speed of sound is referred to as Mach 1.0 (M1). Speeds just under the speed of sound are termed Transonic speeds. Speeds equal to or greater than M1 are termed Supersonic speeds. The actual game speeds that are considered Transonic or M1 vary by Altitude Band (The speed of sound decreases as air temperature decreases with increased altitude). These speeds are summarized in \changedin{1C}{1C-tables}{the Transonic/Supersonic Speed Reference Table}{Table~\ref{table:supersonic-speed}}.
+\paragraph{The Speed Of Sound.} 
+\x{
+The speed of sound is referred to as Mach 1.0 (M1). Speeds just under the speed of sound are termed Transonic speeds. Speeds equal to or greater than M1 are termed Supersonic speeds. The actual game speeds that are considered Transonic or M1 vary by Altitude Band (The speed of sound decreases as air temperature decreases with increased altitude). These speeds are summarized in \changedin{1C}{1C-tables}{the Transonic/Supersonic Speed Reference Table}{Table~\ref{table:supersonic-speed}}.
+}{
+The speed of sound is called Mach 1.0 or M1. Speeds just under the speed of sound are transonic speeds, and those equal to or greater than the speed of sound are supersonic speeds. The actual game speeds considered transonic or supersonic vary by altitude band, as the speed of sound decreases as the air temperature decreases with increasing altitude. These speeds are given in Table~\ref{table:supersonic-speed}.
+}
 
-\paragraph{Transonic Speeds.} An aircraft with a start speed 1.0 less than M1 is considered to be at Low Transonic speed. Aircraft with a start speed 0.5 less than M1 are considered to be at High Transonic speed. Aircraft flying at Low Transonic speed, High Transonic speed, or at exactly M1 receive Transonic Decel point penalties. These are listed in \changedin{1C}{1C-tables}{the Transonic Drag Table}{Table~\ref{table:supersonic-drag}} and vary depending on whether the aircraft is a design which suffers from High Transonic Drag (HTD) or benefits from Low Transonic Drag (LTD) or is average (normal). The ADC will note if an aircraft is an HTD or LTD design.
+\paragraph{Transonic Speeds.} 
+\x{
+An aircraft with a start speed 1.0 less than M1 is considered to be at Low Transonic speed. Aircraft with a start speed 0.5 less than M1 are considered to be at High Transonic speed. Aircraft flying at Low Transonic speed, High Transonic speed, or at exactly M1 receive Transonic Decel point penalties. These are listed in \changedin{1C}{1C-tables}{the Transonic Drag Table}{Table~\ref{table:transonic-and-supersonic-drag}} and vary depending on whether the aircraft is a design which suffers from High Transonic Drag (HTD) or benefits from Low Transonic Drag (LTD) or is average (normal). The ADC will note if an aircraft is an HTD or LTD design.
 
 \addedin{1B}{1B-apj-36-errata}{The decel for transonic or M1 speed is assessed at the start of the turn, based on the aircraft's starting speed and altitude.}
+}{
+An aircraft with a start speed 1.0 less than M1 is at low transonic speed. An aircraft with a start speed 0.5 less than M1 is at high transonic speed. 
 
-\paragraph{Supersonic Speeds.} An aircraft flying at M1 or faster is in supersonic flight and is subject to the following effects\addedin{1C}{1C-tables}{, which are summarized in Table~\ref{table:supersonic-penalties}}:
+\paragraph{Transonic and Mach One Drag.} An aircraft whose start speed is low transonic, high transonic, or exactly M1 at its starting altitude receives DPs according to Table~\ref{table:transonic-and-supersonic-drag}. 
 
+If an aircraft's ADC notes that it has low transonic drag (LTD) or high transonic drag (HTD), the drag penalty is lower or higher than for normal aircraft. (Some earlier ADCs note that an aircraft is a “supersonic delta.” Such an aircraft is treated as having low transonic drag.)
+}
+
+\paragraph{Supersonic Speeds.} 
+\x{
+An aircraft flying at M1 or faster is in supersonic flight and is subject to the following effects\addedin{1C}{1C-tables}{, which are summarized in Table~\ref{table:supersonic-penalties}}:
+}{
+An aircraft flying at M1 or faster is in supersonic flight and is subject to the following effects, which are summarized in Table~\ref{table:supersonic-penalties}:
+}
+
+\x{
 \begin{itemize}
 
     \itemaddedin{1B}{1B-apj-23-errata and 1B-apj-38-qa}{Aircraft at supersonic speeds require 3 accel per 0.5 speed gain unless they are Rapid Accel, in which case they now require the normal two accel per 0.5 speed.}
@@ -351,44 +376,112 @@ Aircraft flying at speeds approaching or exceeding the speed of sound are affect
     \item An aircraft which performs rolling maneuvers while supersonic incurs 1.0 additional decel point for the game turn.
 
 \end{itemize}
+}{
+\begin{itemize}
 
-\addedin{1B}{1B-apj-36-errata}{The supersonic maneuver costs and penalties depend on the aircraft's supersonic status at the start of a maneuver.}
+   \item It requires 3 APs per 0.5 of speed gain unless it is an RA aircraft, which requires 2 APs per 0.5 of speed.
 
+    \item If it uses idle or normal power, it suffers an automatic and immediate flame-out (see \ref{rule:engine-flame-outs}).
+
+    \item If it has all of its engines flamed out, it receives the normal DPs for idle power, plus 1.0 additional DP for idle power at supersonic speeds, plus 1.0 additional DP for idle power above cruise speed, plus 2.0 additional DPs for each 0.5 of speed above high-transonic speed.
+   
+    \item If it uses military power, it receives 1.5 DPs per 0.5 FP of speed over high transonic speed.
+
+    \item If it uses afterburner power, it is not penalized as for other power settings.
+
+    \item If it uses speedbrakes, it may receive 1.0 DPs more than the maximum listed in the ADC.
+
+    \item If it uses turning flight (even at the EZ rate), it receives 1.0 additional DP for the game turn.
+
+    \item It requires one additional preparatory HFP for all maneuvers. 
+
+    \item If it performs rolling maneuvers, it receives 1.0 additional DP per roll.
+
+    \item It has its climb capability reduced to {\twothirds} of that given on the ADC (see rule~\ref{rule:climbing-flight}). At supersonic speeds, an aircraft's wings are less efficient due to shock effects and a shift of the aerodynamic center of lift.
+
+\end{itemize}
+}
+
+\addedin{1B}{1B-apj-36-errata}{The supersonic \addedin{2B}{2B-supersonic}{turning and }maneuver costs and penalties depend on the aircraft's supersonic status at the start of a \addedin{2B}{2B-supersonic}{turn or }maneuver.}
+
+\x{
 \paragraph{Poor Supersonic Maneuvering Aircraft (PSSM).} Some aircraft, usually early delta-wing designs without tails or canards, maneuver poorly when at supersonic speeds due to shifts in their aerodynamic center of lift.  Such aircraft are noted on their ADC. They are penalized as follows when Supersonic:
+}{
+\paragraph{Poor Supersonic Maneuverability}. Some aircraft, usually early delta-wing designs without tails or canards, maneuver poorly at supersonic speeds due to shifts in their aerodynamic center of lift. If the ADC of an aircraft notes that it has poor supersonic maneuverability (PSSM), it is penalized as follows when supersonic:
+}
 
 \begin{itemize}
 
-    \item The maximum allowed Turn-Rate of a PSSM aircraft is reduced by one level when at supersonic speeds (but never to less than HT).
+    \item 
+    \x{
+    The maximum allowed Turn-Rate of a PSSM aircraft is reduced by one level when at supersonic speeds (but never to less than HT).
+    }{
+    The maximum allowed turn rate of a PSSM aircraft is reduced by one level (but never to less than HT).
+    }
 
-    \item A PSSM aircraft which turns at supersonic speeds (even at the EZ rate) incurs 2.0 additional decel points instead of 1.0.
+    \item 
+    \x{
+    A PSSM aircraft which turns at supersonic speeds (even at the EZ rate) incurs 2.0 additional decel points instead of 1.0.
+    }{
+    A PSSM aircraft that turns (even at the EZ rate) receives 2.0 additional DPs instead of 1.0.
+    }
 
-    \item A PSSM aircraft performing a roll maneuver at supersonic speed incurs 2.0 additional decel points per roll executed instead of 1.0.
+    \item 
+    \x{
+    A PSSM aircraft performing a roll maneuver at supersonic speed incurs 2.0 additional decel points per roll executed instead of 1.0.
+    }{
+    A PSSM aircraft that performs a rolling maneuver receives 2.0 additional DPs per roll instead of 1.0.
+    }
 
 \end{itemize}
 
+\x{
 \paragraph{Good Supersonic Maneuvering Aircraft (GSSM).} An aircraft noted as being a GSSM aircraft maneuvers well at Supersonic speeds. They receive the following benefits:
+}{
+\paragraph{Good Supersonic Maneuverability.} If the ADC of an aircraft notes that it has good supersonic maneuverability (GSSM), it receives the following benefits when supersonic:
+
+}
 
 \begin{itemize}
 
-    \item GSSM aircraft do not incur the decel point penalty for turning while at supersonic speeds.
+    \item 
+    \x{
+    GSSM aircraft do not incur the decel point penalty for turning while at supersonic speeds.
+    }{
+    A GSSM aircraft does not receive additional DPs for turning.
+    }
 
-    \item GSSM aircraft are not subject to the Decel point penalty for doing rolling maneuvers while supersonic.
+    \item 
+    \x{
+    GSSM aircraft are not subject to the Decel point penalty for doing rolling maneuvers while supersonic.
+    }{
+    A GSSM aircraft does not receive additional DPs for rolling maneuvers.
+    }
 
 \end{itemize}
 
+\Dx{
 \paragraph{Supersonic Delta Aircraft.} Some Air Superiority game aircraft were noted as being Supersonic Deltas. These are now treated as Low Transonic Drag aircraft under Air Power rules.
+}
 
+\Dx{
 \paragraph{Supersonic Effects On Climb Capability.} At supersonic speeds reduce the aircraft's CCC numbers to 2/3ds that listed due to shock wave effects on wing lift. (The wings are less efficient due to shifting of aerodynamic center of lift).
+}
 
 \section{Engine Flame-Outs}
 \label{rule:engine-flame-outs}
 
+\x{
 Rapid throttle movements or uncontrolled yaw rates can flame-out jet engines which are at high power settings.
+}{
+A jet engine can suffer a flame-out if its air supply is disturbed or inadequate. This can be caused by using low engine power at supersonic speeds, rapid throttle movements, uncontrolled yaw rates, and excess altitude.
+}
 
+\x{
 \paragraph{When Does A Jet Flame-Out?} An aircraft may experience a flame-out if:
 
 \begin{itemize}
-    \itemaddedin{2A}{2a:supersonic-flame-out}{It selects idle or normal power at supersonic speed.}
+    \itemaddedin{2A}{2a:supersonic-flame-out}{It selects idle or normal power at supersonic speeds.}
 
     \item it is at Military or Afterburner power and in departed flight.
 
@@ -397,20 +490,60 @@ Rapid throttle movements or uncontrolled yaw rates can flame-out jet engines whi
     \item it starts the turn above its maximum altitude ceiling and selects any power setting other than Idle.
 
 \end{itemize}
+}{
+\paragraph{When Does A Jet Flame Out?} An aircraft may experience a flame-out if:
 
-\paragraph{Flame-Out Procedure.} \changedin{2A}{2A-supersonic-flame-out}{If an aircraft meets one of the above conditions}{In the first case, the flame-out is automatic. In the other cases}, roll a die for each engine at the start of its move. A flame-out occurs on a roll of 4 or less. Apply a die roll modifier of $-1$ for each turn an aircraft has been above its ceiling. If a flame-out is called for on the damage tables, it occurs automatically.
+\begin{itemize}
 
-Note: The number of engines an aircraft has is indicated on the Power Chart by dots to the right of the chart title. One dot per engine is used.
+    \item It receives a flame-out as the result of damage.
 
-\paragraph{Effects of Flame-Out.} A single-engine jet is treated as if it is in Idle power. On multi-engine aircraft, if half (or less) of the engines flame-out, the aircraft produces half normal Accel points (keep fractions). If more than half (but not all) are flamed out, the aircraft produces 1/3 normal Accel points (drop fractions). If all engines are out, the aircraft is at idle power.
+    \item It uses idle or normal power at supersonic speeds.
 
-\paragraph{Engine Relights.} Attempts to restart flamed out engines are allowed if an aircraft is not in abnormal flight and during its turn it performs or meets the same criteria as for performing Damage Control (see chapter 10). Roll a die once at the end of the aircraft's flight phase. On the first attempt, 2 or less indicates success; on the second and third attempts, 4 or less indicates success.
+    \item It uses military or afterburner power in departed flight.
 
-One attempt is allowed per engine per turn beginning on the game-turn following the flame-out. A maximum of three relight attempts per engine is allowed; if all three relight attempts are unsuccessful, the engine is permanently flamed out. (If in a single engine jet, the pilot might consider reading the ejection rules).
+    \item It does not have rapid power response (RPR) and changes its power setting from idle to afterburner.
 
-\addedin{2A}{2A-cruise}{\section{Cruise Speed} 
-\label{rule:cruise-speed}
-The cruise speed of an aircraft depends on its configuration. The cruise speed given on the ADC is for CL configuration. If the configuration is 1/2, reduce the cruise speed by 0.5. If the configuration is DT, reduce the cruise speed by 1.0.
+    \item Its starting altitude is above its maximum ceiling, and it selects any power setting other than idle.
+
+\end{itemize}
 }
 
-\addedin{2B}{AWF}{If idle or normal power is selected, the determination of consequent additional deceleration uses the cruise speed at the start of a game turn.}
+\paragraph{Flame-Out Procedure.} 
+\x{
+\changedin{2A}{2A-supersonic-flame-out}{If an aircraft meets one of the above conditions}{In the first case, the flame-out is automatic. In the other cases}, roll a die for each engine at the start of its move. A flame-out occurs on a roll of 4 or less. Apply a die roll modifier of $-1$ for each turn an aircraft has been above its ceiling. If a flame-out is called for on the damage tables, it occurs automatically.
+
+Note: The number of engines an aircraft has is indicated on the Power Chart by dots to the right of the chart title. One dot per engine is used.
+}{
+If the flame-out is caused by damage or supersonic speeds, the flame-out is automatic.  In the other cases, at the start of the aircraft's move, roll a die for each engine. A flame-out occurs on a roll of $4-$. In the last case, apply a die roll modifier of $-1$ for each game turn that an aircraft has been above its ceiling. The power chart in the ADC indicates the number of engines an aircraft has by dots. One dot is used per engine.
+}
+\x{
+\paragraph{Effects of Flame-Out.} 
+A single-engine jet is treated as if it is in Idle power. On multi-engine aircraft, if half (or less) of the engines flame-out, the aircraft produces half normal Accel points (keep fractions). If more than half (but not all) are flamed out, the aircraft produces 1/3 normal Accel points (drop fractions). If all engines are out, the aircraft is at idle power.
+}{
+\paragraph{Effects of Flame-Outs.} 
+A single-engined aircraft is treated as using idle power.  For multi-engined aircraft, if half or less of the engines are flamed out, the aircraft receives half the normal APs (keep fractions). If more than half (but not all) are flamed out, the aircraft receives {\onethird} of normal APs (round down). If all the engines are flamed out, the aircraft is treated as using idle power.
+}
+
+\paragraph{Engine Relights.} 
+\x{
+Attempts to restart flamed out engines are allowed if an aircraft is not in abnormal flight and during its turn it performs or meets the same criteria as for performing Damage Control (see chapter 10). Roll a die once at the end of the aircraft's flight phase. On the first attempt, 2 or less indicates success; on the second and third attempts, 4 or less indicates success.
+
+One attempt is allowed per engine per turn beginning on the game-turn following the flame-out. A maximum of three relight attempts per engine is allowed; if all three relight attempts are unsuccessful, the engine is permanently flamed out. (If in a single engine jet, the pilot might consider reading the ejection rules).
+}{
+A pilot can attempt to relight flamed-out engines. One attempt is allowed per engine per turn starting on the game turn following the flame-out. The aircraft must not be in abnormal flight and must meet the requirements for performing damage control (see rule~\ref{rule:progressive-damage}). At the end of the aircraft's move, roll a die. The attempt is successful on a roll of $2-$ on the first attempt and $4-$ on the second and third attempts.
+
+A maximum of three relight attempts per engine are allowed; if all three attempts fail, the engine is permanently flamed out. (The pilot of a single-engine jet might consider reading rule~\ref{rule:ejections-and-bail-outs}.)
+}
+
+\addedin{2A}{2A-cruise}{\section{Realistic Cruise Speed} 
+\label{rule:cruise-speed}
+
+The cruise speed of an aircraft depends on its configuration:
+\begin{itemize}
+    \item If the configuration is CL, use the cruise speed given on the ADC.
+    \item If the configuration is $1/2$, use the cruise speed on the ADC reduced by 0.5. 
+    \item If the configuration is DT, use the cruise speed on the ADC reduced by 1.0.
+\end{itemize} 
+
+\addedin{2B}{AWF}{If idle or normal power is selected, the determination of whether the aircraft receives DPs for being above the cruise speed uses the configuration at the start of a game turn.}
+}

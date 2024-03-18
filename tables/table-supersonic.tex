@@ -1,4 +1,5 @@
 \begin{onecolumntable}[p]
+\x{
 \tablecaption{table:supersonic-speed}{Transonic/Supersonic Speed}
 \begin{tabularx}{1.0\linewidth}{Xccc}
 \toprule
@@ -9,10 +10,23 @@ MH,HI&6.0&6.5&7.0\\
 VH+&5.5&6.0&6.5\\
 \bottomrule
 \end{tabularx}
+}{
+\tablecaption{table:supersonic-speed}{Transonic and Supersonic Speeds}
+\begin{tabularx}{1.0\linewidth}{XCCC}
+\toprule
+Altitude Band&Low-Transonic Speed&High-Transonic Speed&Mach One\\
+\midrule
+LO and ML&6.5&7.0&7.5\\
+MH and HI&6.0&6.5&7.0\\
+VH+&5.5&6.0&6.5\\
+\bottomrule
+\end{tabularx}
+}
 \end{onecolumntable}
 
 \begin{onecolumntable}[p]
-\tablecaption{table:supersonic-drag}{Transonic/Supersonic Drag Penalty}
+\x{
+\tablecaption{table:transonic-and-supersonic-drag}{Transonic/Supersonic Drag Penalty}
 \begin{tabularx}{1.0\linewidth}{Xccc}
 \toprule
 Aircraft Type&Low Trans.&High Trans.&Mach One\\
@@ -22,9 +36,23 @@ NORMAL&0.5&1.0&1.5\\
 HTD&1.0&1.5&2.0\\
 \bottomrule
 \end{tabularx}
+}{
+\tablecaption{table:transonic-and-supersonic-drag}{Transonic and Supersonic Drag}
+\begin{tabularx}{1.0\linewidth}{LCCC}
+\toprule
+Aircraft Transonic Drag&Low-Transonic Speed&High-Transonic Speed&Mach One\\
+\midrule
+Low&0.0&0.5&1.0\\
+Normal&0.5&1.0&1.5\\
+High&1.0&1.5&2.0\\
+\bottomrule
+\end{tabularx}
+}
 \end{onecolumntable}
 
 \begin{onecolumntable}
+
+\x{
 \tablecaption{table:supersonic-penalties}{Supersonic Penalties}
 \begin{tabularx}{\linewidth}{X}
 \toprule
@@ -43,5 +71,28 @@ HTD&1.0&1.5&2.0\\
 \\
 \bottomrule
 \end{tabularx}
+}{
+\tablecaption{table:supersonic-penalties}{Supersonic Effects}
+\begin{tabularx}{\linewidth}{X}
+\toprule
+\begin{itemize}
+    
+    \item Increasing speed by 0.5 requires 3.0 APs (2.0 APs if RA).
+
+    \item If idle or normal power is used, the engines automatically flame out.
+    \item If all engines are flamed out, the aircraft receives DPs for idle power from the ADC, plus 1.0 DPs for idle power at supersonic speed, plus 1.0 DPs for idle power above cruise speed, plus 2.0 DPs for each 0.5 of speed above high-transonic speed.
+    \item If military power is used, the aircraft receives 1.5 DPs per 0.5 speed over high-transonic speed.
+
+    \item PSSM aircraft have their maximum turn rate reduced by one level, but not to less than HT.
+    \item If the aircraft uses turning flight, it receives 1.0 additional DPs (0.0 DPs if GSSM and 2.0 DPs if PSSM) per game turn
+    \item The aircraft's climb capability is reduced to {\twothirds}.
+    \item The aircraft requires one additional preparatory HFP for all maneuvers. 
+    \item If the aircraft executes any rolling maneuvers, it receives 1.0 additional DP (0.0 DPs if GSSM and 2.0 DPs if PSSM) per game turn.
+
+\end{itemize}
+\\
+\bottomrule
+\end{tabularx}
+}
 
 \end{onecolumntable}
