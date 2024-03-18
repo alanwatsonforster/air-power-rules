@@ -1,10 +1,13 @@
 \begin{onecolumntable}
 \tablecaption{table:altitude-bands}{Altitude Bands}
+
+\x{
+
 \begin{tabular}{lll}
 \toprule
 ALTITUDE BAND&CODE&LEVELS\\
 \midrule
-Low             &LO &1 to 7\\
+Low             &LO &\changedin{2B}{2B-low}{1}{0} to 7\\
 Medium Low      &ML &8 to 16\\
 Medium High     &MH &17 to 25\\
 High            &HI &26 to 35\\
@@ -13,4 +16,22 @@ Extremely High  &EH &46 to 60\\
 Ultra High +    &UH &61 and Higher\\
 \bottomrule
 \end{tabular}
+
+}{
+
+\begin{tabular}{lll}
+\toprule
+Altitude Band&Code&Altitude Levels\\
+\midrule
+Low             &LO &0 to 7\\
+Medium Low      &ML &8 to 16\\
+Medium High     &MH &17 to 25\\
+High            &HI &26 to 35\\
+Very High       &VH &36 to 45\\
+Extremely High  &EH &46 to 60\\
+Ultra High      &UH &61 and higher\\
+\bottomrule
+\end{tabular}
+
+}
 \end{onecolumntable}
