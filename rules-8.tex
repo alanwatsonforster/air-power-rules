@@ -79,7 +79,7 @@ A zoom climb (ZC) is a maneuvering climb in which the aircraft gains altitude mo
 
 \paragraph{ZC Procedure.} Declare climbing flight and note ZC as flight type on the aircraft log sheet. At least 1/3 of the FPs must be HFPs. 
 
-\paragraph{ZC VFPs.} At least one and at most 2/3 of the FPs may be VFPs. ZC VFPs produce an altitude gain based on the aircraft's CC:
+\paragraph{ZC FPs.} At least one and at most 2/3 of the FPs may be VFPs. ZC VFPs produce an altitude gain based on the aircraft's CC:
 \begin{itemize}
     \item If the CC is 2.0 or less, each VFP produces a gain of 1 altitude level.
     \item If the CC is more than 2.0 but less than 6.0, each VFP produces a gain of 1 or 2 altitude levels.
@@ -137,7 +137,7 @@ A sustained climb relies on lift and is the most efficient way to climb over sev
 
 \paragraph{SC Procedure.} Declare climbing flight and note SC as flight type on the aircraft log sheet.
 
-\paragraph{SC VFPs.} At least one FP must be a VFP. The number of VFPs available and the altitude gain they produce depends on the aircraft’s CC:
+\paragraph{SC FPs.} At least one FP must be a VFP. The number of VFPs available and the altitude gain they produce depends on the aircraft’s CC:
 
 \begin{itemize}
     \item If the CC is less than 1.0, only 1 VFP is allowed, and the rest are HFPs. The VFP gains only the CC value in levels.
@@ -279,9 +279,9 @@ A steep dive is a maneuvering dive in which some of the aircraft's acceleration 
 
 A steep dive is a maneuvering dive in which some of the aircraft's acceleration is committed to maneuvering the aircraft instead of increasing speed. A steep dive is the least restrictive type of dive.
 
-\paragraph{SD Procedure.} Declare diving flight and note SD as flight type on the aircraft log. 
+\paragraph{SD Procedure.} Declare diving flight and note SD as flight type on the aircraft log sheet. 
 
-\paragraph{SD VFPs.} At least one and at most $2/3$ of the FPs may be VFPs. SD VFPs produce an altitude loss of  1 or 2 altitude levels per VFP.
+\paragraph{SD FPs.} At least one and at most $2/3$ of the FPs may be VFPs. SD VFPs produce an altitude loss of  1 or 2 altitude levels per VFP.
 
 \paragraph{SD Restrictions.} An aircraft in an SD suffers no additional restrictions.
 
@@ -292,6 +292,7 @@ A steep dive is a maneuvering dive in which some of the aircraft's acceleration 
 \subsection{Unloaded Dives}
 \label{rule:unloaded-dives}
 
+\x{
 An unloaded dive is used to rapidly gain acceleration. The aircraft dives to match the fall of gravity; this causes weightlessness and eliminates induced drag from the aircraft. Combined with acceleration from gravity and the engine's thrust, the aircraft achieves rapid gains in distance and speed.
 
 \begin{itemize}
@@ -308,9 +309,24 @@ An unloaded dive is used to rapidly gain acceleration. The aircraft dives to mat
 
 Note: The advantage to unloaded over steep dives is the horizontal distance gained over similar dives.
 
+}{
+
+An unloaded dive is used to accelerate rapidly while maintaining horizontal speed. The aircraft dives to match the fall of gravity, which causes weightlessness and eliminates induced drag. The reduced drag, combined with acceleration from gravity and the engine's thrust, gives the aircraft rapid acceleration. The advantage of unloaded dives over steep dives is the horizontal distance traveled.
+
+\paragraph{UD Procedure.} Declare diving flight and note UD on the aircraft log sheet. 
+
+\paragraph{UD FPs.} All FPs are HFPs. HFPs may be expended with the aircraft loaded or unloaded. At least half (round down) of the HFPs must be spent with the aircraft unloaded. Unloaded HFPs must be expended consecutively. The aircraft loses one altitude level after half of the HFPs (round down) have been used unloaded. If all of the HFPs are used unloaded, the aircraft loses another altitude level after the last HFP.
+   
+\paragraph{UD Restrictions.} Unloaded FPs may not be used for turning flight or preparing for or executing any maneuver except a slide. An aircraft using unloaded HFPs may not conduct any attacks, aim, track targets, launch weapons, or use its radar until after a recovery period. If an aircraft unloads early in its move and then completes the recovery period before or as its last unloaded FP, it may still launch missiles, conduct attacks, and use its radar in the subsequent phases of the game turn.
+
+\paragraph{UD APs.} An aircraft in a UD receives 1.0 APs per altitude level lost.
+
+}
+
 \subsection{Vertical Dives}
 \label{rule:vertical-dives}
 
+\x{
 A vertical dive sends an aircraft nearly straight down; altitude is lost quickly and acceleration builds up rapidly.
 
 \begin{itemize}
@@ -332,14 +348,56 @@ A vertical dive sends an aircraft nearly straight down; altitude is lost quickly
     \item\itemparagraph{VD Accel Points:} Aircraft in a vertical dive gain 1 Accel point per altitude level lost.
 
 \end{itemize}
+}{
 
+A vertical dive sends an aircraft nearly straight down. It loses altitude quickly and accelerates rapidly.
+
+\paragraph{VD Prerequisites.} To use a VD, the aircraft must have used diving flight on the previous game turn or must use a half-roll and dive (rule~\ref{rule:half-rolls-and-dives}). An aircraft can also enter a VD after recovery from stalled or departed flight (rule~\ref{rule:abnormal-flight}) or after a successful vertical reverse (rule~\ref{rule:vertical-reverses}).
+
+\paragraph{VD Procedure.} Declare diving flight and note VD on the aircraft log sheet. 
+
+\paragraph{VD FPs.} If this is the first turn of vertical diving, 1/3 of the FPs must be HFPs and the rest VFPs. If this is the second or subsequent turn of consecutive vertical dives, then no more than 1/3 of the FPs can be HFPs, but all can be VFPs. Each VFP produces a loss of 2 or 3 altitude levels.
+
+\paragraph{VD Restrictions.} An aircraft in a VD may not turn or use maneuvers except for vertical rolls. 
+
+\paragraph{VD APs.} An aircraft in a VD gains 1.0 APs per altitude level lost.
+
+\paragraph{VD Recovery.} Due to the difficulty of pulling out of a VD, an aircraft that ceases to a VD and changes to a different flight type may not climb and must obey the following restrictions:
+\begin{itemize}
+    \item An aircraft with a high pitch rate whose start speed is 3.0 or less may use level flight or a steep dive in which at least 1/3 (round down) of the FPs are VFPs.
+    \item An aircraft with a high pitch rate whose start speed is 3.5 or more may use a steep dive in which at least 1/3 (round down) of the FPs are VFPs.
+    \item Other aircraft must use a steep dive in which least 1/2 (round down) of the FPs are VFPs.
+\end{itemize}
+
+}
+
+\x{
 \section{Free Descent}
+}{
+\section{Free Descents}
+}
 
-\paragraph{Level Flight Free Descent.} An aircraft in level flight may choose free descent and lose one altitude level during the game-turn. \changedin{1B}{1B-apj-36-errata}{This descent}{If a vertical climb was used in the preceding turn, this descent may not occur until after the aircraft has expended HFPs equal to 1/3 of its speed (according to the 1/3-2/3 chart). Otherwise, it} may be selected to take place after the expenditure of any HFP during the game-turn. No Accel points are received. No other restrictions apply.
+\x{
+\paragraph{Level Flight Free Descents.} An aircraft in level flight may choose free descent and lose one altitude level during the game-turn. \changedin{1B}{1B-apj-36-errata}{This descent}{If a vertical climb was used in the preceding turn, this descent may not occur until after the aircraft has expended HFPs equal to 1/3 of its \changedin{2B}{2B-free-descent}{speed}{HFPs} (according to the 1/3-2/3 chart). Otherwise, it} may be selected to take place after the expenditure of any HFP during the game-turn. No Accel points are received. No other restrictions apply.
+}{
+\paragraph{Free Descents in Level Flight.} An aircraft in level flight may choose to take a free descent and lose one altitude level during its move. 
+
+If the aircraft used a vertical climb in the preceding turn, this descent may not occur until after it has expended 1/3 (round down) of its HFPs. Otherwise, it may occur after any HFP. 
+
+An aircraft taking a free descent receives no APs and suffers no additional restrictions.
+}
 
 \trainingnote{
-You are now ready to play Training Scenario 2.\\
+\centering
+\x{
+You are now ready to play Training Scenario 2.
+
 The sequence of play is still not required.
+}{
+You are now ready to play Training Scenario 2.
+
+The sequence of play (rule~\ref{rule:phases}) is still not required, and you may ignore it.
+}
 }
 
 \begin{advancedrules}
