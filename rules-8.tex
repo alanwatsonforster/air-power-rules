@@ -45,7 +45,7 @@ As an aircraft changes altitude during its flight, mark the number of altitude l
 \x{
 An aircraft in climbing flight selects one of three types of climb to use: Zoom Climb, Sustained Climb, or Vertical Climb. Each type of climb prescribes how many VFPs and HFPs an aircraft must or may have available to it.
 }{
-An aircraft in climbing flight selects one of three types of climb: zoom, sustained, or vertical climb. 
+An aircraft in climbing flight selects one of three types of climb: zoom, sustained, or vertical. 
 }
 
 \Ax{\paragraph{Climb Capability.} The climb capability (CC) quantifies the sustained climb rate of an aircraft. To determine the climb capability, refer to aircraft's ADC and cross-index the aircraft's altitude band, configuration, and power setting in the climb-capability chart.}
@@ -242,12 +242,24 @@ Example. Consider an aircraft with an altitude of 10, a CC of 0.25, and initiall
 \section{Diving Flight}
 \label{rule:diving-flight}
 
+\x{
+
 An aircraft in diving flight selects one of three types of dive: Steep Dive, Unloaded Dive, or Vertical Dive. Diving flight is handled in a manner similar to climbing flight. \changedin{1B}{1B-apj-21-qa and 1B-apj-36-errata}{For purposes of maintaining dive speeds (rule 6), at least two or more altitude levels must be lost in a game turn through diving flight.}{
 
 For purposes of maintaining dive speeds (rule 6), at least two or more altitude levels must be lost in a game turn through diving flight. Aircraft that dive fewer than 2 altitude levels in a turn do not use dive speed as their maximum speed, and may accordingly be forced to perform a Speed Fadeback.}
 
+}{
+
+An aircraft in diving flight selects one of three types of dive: steep, unloaded, or vertical. 
+
+\paragraph{Dive Speed.} To be limited by its dive speed (rule~\ref{rule:speed-limits}), an aircraft must lose at least two altitude levels per game turn through diving flight. An aircraft that only loses one altitude level in a game turn is limited in speed as if in level flight.
+
+}
+
 \subsection{Steep Dives}
 \label{rule:steep-dives}
+
+\x{
 
 A steep dive is a maneuvering dive in which some of the aircraft's acceleration is committed toward maneuvering the aircraft instead of speeding up. A steep dive is the least restrictive type of dive.
 
@@ -262,6 +274,20 @@ A steep dive is a maneuvering dive in which some of the aircraft's acceleration 
     \item\itemparagraph{SD Accel Points:} \changedin{2A}{2A-steep-dives}{On the first turn of \changedin{1B}{1B-apj-36-errata}{steep diving, the aircraft}{diving flight, an aircraft in a SD} receives 0.5 accel points per altitude level lost; on \changedin{1B}{1B-apj-36-errata}{subsequent turns of continued diving, it}{the second or subsequent consecutive turns of diving flight, an aircraft in a SD} receives 1.0 accel points per altitude level lost.}{An aircraft in a SD receives 1.0 AP per altitude level lost.}
 
 \end{itemize}
+
+}{
+
+A steep dive is a maneuvering dive in which some of the aircraft's acceleration is committed to maneuvering the aircraft instead of increasing speed. A steep dive is the least restrictive type of dive.
+
+\paragraph{SD Procedure.} Declare diving flight and note SD as flight type on the aircraft log. 
+
+\paragraph{SD VFPs.} At least one and at most $2/3$ of the FPs may be VFPs. SD VFPs produce an altitude loss of  1 or 2 altitude levels per VFP.
+
+\paragraph{SD Restrictions.} An aircraft in an SD suffers no additional restrictions.
+
+\paragraph{SD APs.} An aircraft in an SD receives 1.0 APs per altitude level lost.
+
+}
 
 \subsection{Unloaded Dives}
 \label{rule:unloaded-dives}
