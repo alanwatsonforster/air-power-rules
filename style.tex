@@ -30,6 +30,7 @@
 \usepackage{multirow}
 \usepackage{pdflscape}
 \usepackage{enotez}
+\usepackage{comment}
 
 % Basic spacing.
 
@@ -123,13 +124,29 @@ minus \fontdimen4\font}
     }
 \makeatother
 
-\newcommand{\advancedrules}{
+\newcommand{\OLDadvancedrules}{
     \vspace{1ex}
     \pagebreak[1]
     \begin{center}
         \bfseries{\Large Advanced Rules}
     \end{center}
 }
+
+\newif\ifbasicrulesonly
+\basicrulesonlyfalse
+
+\ifbasicrulesonly
+    \excludecomment{advancedrules}
+\else
+    \newenvironment{advancedrules}{
+        \vspace{1ex}
+        \pagebreak[1]
+        \begin{center}
+            \bfseries{\Large Advanced Rules}
+        \end{center}
+    }{
+    }
+\fi
 
 \newcommand{\trainingnote}[1]{
   \vspace{1ex}
