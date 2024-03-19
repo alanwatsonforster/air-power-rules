@@ -271,16 +271,16 @@ For example, an aircraft directly behind the target aircraft and facing in the s
 \paragraph{Angle-Off Procedure for Attack Modifiers.}
 This procedure is used to determine the angle-off modifiers for gun (rule~\ref{rule:air-to-air-gun-combat}), rocket (rule~\ref{rule:air-to-air-rocket-combat}), and missile (rule~\ref{rule:air-to-air-missiles}) attacks on aircraft.
 
-Consult figures~\ref{figure:angle-off-facing-hex-corner}, \ref{figure:angle-off-facing-hex-side}, and \ref{figure:angle-off-on-hex-side} according to the map location of the target. Often the attacking aircraft or missile will unambiguously be in an angle-off arc. 
+If the attacking aircraft or missile and the target are at the same map location (hex or hex side), the angle-off arc is given by the difference in their facings. A difference of 180{\deg} corresponds to the 180{\deg} line rather than the 180{\deg} arc. For example, if the target is facing N and the attacker is facing NNW, the facing difference is 30{\deg}, and the attacker is in the target's left 30{\deg} arc.
 
-However, sometimes the attacker will be located on the borderline between two arcs. To resolve these cases, consider the speeds of the attacker and target at the start of the game turn:
+Otherwise, consult whichever of Figures~\ref{figure:angle-off-facing-hex-corner}, \ref{figure:angle-off-facing-hex-side}, and \ref{figure:angle-off-on-hex-side} corresponds to the map location and facing of the target. Often the attacking aircraft or missile will unambiguously be in an angle-off arc. However, sometimes the attacker will be located on the borderline between two arcs. To resolve these cases, consider the speeds of the attacker and target at the start of the game turn:
 \begin{itemize}
 \item If the target is slower, the attacker is in the arc it would move into if it moved forward.
 \item If the target is faster, the attacker is in the arc it would move into if the target moved forward.
 \item If neither is faster or if the attacker remains on the borderline after one of the previous two cases, the attacker is in the arc that gives it the more beneficial modifier.
 \end{itemize}
 
-For example, consider Figures~\ref{figure:angle-off-facing-hex-side}, \ref{figure:angle-off-facing-hex-corner}, \ref{figure:angle-off-on-hex-side} in which the aircraft A are targets and the aircraft B and C are attackers.
+For example, consider Figures~\ref{figure:angle-off-facing-hex-side}, \ref{figure:angle-off-facing-hex-corner}, and \ref{figure:angle-off-on-hex-side} in which the aircraft A are targets and the aircraft B and C are attackers.
 Aircraft C in Figure~\ref{figure:angle-off-facing-hex-side} is unambiguously in the right 90{\deg} arc of its target, the other attackers are on borderlines between two arcs. If the target were slower than the attackers, then B would be in the right 150{\deg} arc and C on the right 0{\deg} line in Figure~\ref{figure:angle-off-facing-hex-corner}, B would be able to chose the more beneficial of either the right 60{\deg} or right 90{\deg} arc in Figure~\ref{figure:angle-off-facing-hex-side}, and B would be in the left 120{\deg} arc and C in the left 30{\deg} arc in Figure~\ref{figure:angle-off-on-hex-side}. On the other hand, if the target were faster than the attackers, then B would be in the right 60{\deg} arc in Figure~\ref{figure:angle-off-facing-hex-side}, B would be in the left 90{\deg} arc in Figure~\ref{figure:angle-off-on-hex-side}, and the other arcs would be unchanged.
 
 \paragraph{Other Uses of Angle-Off Arcs.}
