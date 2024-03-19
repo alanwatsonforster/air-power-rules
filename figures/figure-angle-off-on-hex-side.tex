@@ -72,27 +72,29 @@
 \ifaids
     \drawaircraftcounter{3.50}{4.25}{60}{MiG-21}{}
 \else
-    \drawaircraftcounter{3.50}{4.25}{60}{MiG-21}{A}
-    \drawaircraftcounter{2.00}{5.00}{0}{F-4}{B}
-    \drawaircraftcounter{3.00}{3.50}{90}{F-4}{C}
+    \drawaircraftcounter{3.50}{4.25}{60}{MiG-21}{A}{3}
+    \drawaircraftcounter{2.00}{5.00}{0}{F-4}{B}{3}
+    \drawaircraftcounter{3.00}{3.50}{90}{F-4}{C}{3}
 \fi
 \end{tikzfigure}
 
 \ifaids\else
 
+\Dx{
 \par\bigskip
 
 \begin{minipage}{0.8\linewidth}
-A is the reference aircraft.
+A3 is the reference aircraft.
 
-B is in the left 90{\deg} arc.
+B3 is in the left 90{\deg} arc.
 
-C is in the right 30{\deg} arc (if it was facing A it would be on the 0{\deg} line).
+C3 is in the right 30{\deg} arc (if it was facing A it would be on the 0{\deg} line).
 
 \end{minipage}
+}
 \fi
 
-\figurecaption{figure:angle-off-on-hex-side}{Angle Off --- On Hex Side}
+\figurecaption{figure:angle-off-on-hex-side}{Angle-Off Arcs --- On Hex Side}
 
 \end{onecolumnfigure}
 }
