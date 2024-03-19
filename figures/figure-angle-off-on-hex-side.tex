@@ -21,20 +21,38 @@
 
     \miniathex{3.50}{4.25}{
 
-        \begin{scope}[dashed,very thick,->]
-            \miniathex{+0.167}{+0.250}{\draw (0,0) --   (0:10);}
-            \miniathex{+0.500}{+0.750}{\draw (0,0) --  (30:10);}
-            \draw (0,0) --  (60:10);
-            \miniathex{+0.500}{+0.750}{\draw (0,0) --  (90:10);}
-            \miniathex{+0.167}{+0.250}{\draw (0,0) -- (120:10);}
-            \draw (0,0) -- (150:10);
-            \miniathex{-0.167}{-0.250}{\draw (0,0) -- (180:10);}
-            \miniathex{-0.500}{-0.750}{\draw (0,0) -- (210:10);}
-            \draw (0,0) -- (240:10);
-            \miniathex{-0.500}{-0.750}{\draw (0,0) -- (270:10);}
-            \miniathex{-0.167}{-0.250}{\draw (0,0) -- (300:10);}
-            \draw (0,0) -- (330:10);
-        \end{scope}
+        \changedin{2B}{2B-angle-off-on-hex-side}{
+            \begin{scope}[dashed,very thick,->]
+                \miniathex{+0.167}{+0.250}{\draw (0,0) --   (0:10);}
+                \miniathex{+0.500}{+0.750}{\draw (0,0) --  (30:10);}
+                \draw (0,0) --  (60:10);
+                \miniathex{+0.500}{+0.750}{\draw (0,0) --  (90:10);}
+                \miniathex{+0.167}{+0.250}{\draw (0,0) -- (120:10);}
+                \draw (0,0) -- (150:10);
+                \miniathex{-0.167}{-0.250}{\draw (0,0) -- (180:10);}
+                \miniathex{-0.500}{-0.750}{\draw (0,0) -- (210:10);}
+                \draw (0,0) -- (240:10);
+                \miniathex{-0.500}{-0.750}{\draw (0,0) -- (270:10);}
+                \miniathex{-0.167}{-0.250}{\draw (0,0) -- (300:10);}
+                \draw (0,0) -- (330:10);
+            \end{scope}
+        }{
+            \begin{scope}[dashed,very thick,->]
+                \draw (0,0) --   (0:10);
+                \draw (0,0) --  (30:10);
+                \draw (0,0) --  (60:10);
+                \draw (0,0) --  (90:10);
+                \draw (0,0) -- (120:10);
+                \draw (0,0) -- (150:10);
+                \draw (0,0) -- (180:10);
+                \draw (0,0) -- (210:10);
+                \draw (0,0) -- (240:10);
+                \draw (0,0) -- (270:10);
+                \draw (0,0) -- (300:10);
+                \draw (0,0) -- (330:10);
+            \end{scope}        
+        }
+
         \miniathex{+1.5}{+2.25}{\draw node [rotate=60, anchor=south] {180{\deg} line};}
         \miniathex{-1.5}{-2.25}{\draw node [rotate=60, anchor=south] {0{\deg} line};}
         \miniathex{+2.5}{+0.75}{\draw node {\minitable{c}{Right\\150{\deg}}};}
