@@ -355,6 +355,11 @@ minus \fontdimen4\font}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\arc}[1]{\mbox{#1{\deg}}}
+\newcommand{\arcrange}[2]{\mbox{$#1{\deg}\!#2$}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % Figures
 
 \usepackage{tikz}
@@ -370,14 +375,15 @@ minus \fontdimen4\font}
     \end{fitwidth}%
 }
 
-\newcommand{\drawaircraftcounter}[5]{
+\newcommand{\drawaircraftcounter}[6]{
     \begin{athex}{#1}{#2}
         \begin{scope}[rotate=#3-45]
             \draw[fill=white] (-0.3,-0.3) rectangle (0.3,0.3);
             \node [anchor=center, transform shape] {
                 \includegraphics[angle=45,width=0.6cm]{plan-views/#4.png}
             };
-            \node [anchor=south east,rotate=#3-45] at (+0.3,-0.3) {\tiny #5};
+            \node [anchor=north west,rotate=#3-45] at (-0.32,+0.32) {\tiny #5};
+            \node [anchor=south east,rotate=#3-45] at (+0.32,-0.32) {\tiny #6};
         \end{scope}
     \end{athex}
 }
