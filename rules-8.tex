@@ -440,6 +440,7 @@ The 1/3-2/3 Chart is useful in calculating reduced thrust.
 
 \section{Flight Above Maximum Ceiling}
 
+\x{
 Each aircraft has a ceiling (maximum altitude) stated on the MMVC. An aircraft may temporarily ZC or VC above its ceiling (SC cannot carry an aircraft above its ceiling). While above its ceiling, an aircraft is subject to the following risks:
 
 \begin{itemize}
@@ -451,6 +452,21 @@ Each aircraft has a ceiling (maximum altitude) stated on the MMVC. An aircraft m
     \item If the aircraft starts the game turn above its ceiling and selects any power other than Idle, each engine will Flame-out on die roll of $4-$ (apply a modifier of $-1$ for each turn the aircraft starts above its ceiling). Check for Flame-out immediately upon selecting the power setting.
 
 \end{itemize}
+}{
+An aircraft's ceiling or maximum altitude is given in the MMVC of its ADC.
+
+An aircraft may use a ZC or VC to climb above its ceiling, but a SC cannot carry it above its ceiling. 
+
+While above its ceiling, an aircraft is subject to the following risks:
+
+\begin{itemize}
+
+    \item If the aircraft uses any turn rate other than EZ or performs a roll maneuver, it suffers a maneuvering departure (see rule~\ref{rule:maneuvering-departures}) on a die roll of $4-$.
+    
+    \item If the aircraft starts the game turn above its ceiling and uses any power other than idle, each engine will flame out (see rule~\ref{rule:engine-flame-outs}) on die roll of $4-$, with a modifier of $-1$ for each consecutive game turn it has started above its ceiling. Check immediately after selecting the power setting.
+
+\end{itemize}
+}
 
 \Dx{
 \section{Formation Restrictions on Climbs and Dives}
