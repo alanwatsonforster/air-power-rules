@@ -16,7 +16,7 @@ This rule details how aircraft conduct gun and rocket attacks against other airc
 \section{Air-to-Air Gun Combat}
 
 }
-\label{rule:air-to-air-gunnery}
+\label{rule:air-to-air-gun-combat}
 
 \x{
 An aircraft equipped with guns may conduct one or two gun attacks per game turn. It may attack at any point during its move, but at least one FP (HFP or VFP) must be expended before each shot. The Internal Gun Data section on the Combat Characteristics panel of the ADC provides basic information about internal guns on an aircraft. If the aircraft has been fitted with a gun pod, \changedin{1C}{1C-tables}{the Gun Pod Weapons Table}{Table~\ref{table:stores-GP}} shows the basic information.
@@ -117,7 +117,7 @@ The modifiers for the hit die roll are described here and summarized in Table~\r
     A climbing or diving aircraft firing at a target in the same map location may be subject to a vertical-attack modifier. If the attacker is climbing and the target is diving, or vice versa, the modifier is $+2$. If the attacker is climbing or diving and the target is in level flight, the modifier is $+1$.
     }}
 
-    \item\itemparagraph{Firer Damage.} 
+    \item\itemparagraph{Attacker Damage.} 
     \x{
     See chapter 10 for the effects of aircraft damage on firing aircraft.
     }{
@@ -131,10 +131,11 @@ The modifiers for the hit die roll are described here and summarized in Table~\r
     \itemparagraph{Gunsight and Turning Effects.} If the attacker is currently turning or recovering from a turn, apply the gunsight modifier from its ADC corresponding to the turn rate. If different turn rates are applicable, use the highest one.
     }
 
-    \item\itemparagraph{Steady State Gunsight Tracking.} 
     \x{
+    \item\itemparagraph{Steady State Gunsight Tracking.} 
     See the advanced SSGT rules below. Apply the appropriate modifier for tracking time on the target.
     }{
+    \item\itemparagraph{Steady-State Gunsight Tracking.} 
     See advanced rule~\ref{rule:steady-state-gunsight-tracking}. Apply the appropriate modifier from Table~\ref{table:air-to-air-gun-and-rocket-modifiers} corresponding to the tracking time on the target .
     }
 
@@ -234,11 +235,20 @@ If a gun attack is declared but then cannot possibly hit (for example, if radar 
 \section{Angle-Off}
 \label{rule:angle-off}
 
-\paragraph{Concept.} Angle-off (another term for deflection) is the angle “off” the target's tail. It is used to define eligibility for attack modifiers and other functions. \changedin{1C}{1C-figures}{The Angle Off Diagrams}{Figures~\ref{figure:angle-off-facing-hex-corner}, \ref{figure:angle-off-facing-hex-side}, and \ref{figure:angle-off-on-hex-side}} show the various angles of approach to an aircraft. \changedin{1C}{1C-figures}{Two diagrams are used: one for target aircraft in a hex; the other for target aircraft on a hex side.}{The appropriate figure is used according to whether the target aircraft is in a hex facing a hex side, in a hex facing a hex corner, or on a hex side.} In each case, the target aircraft defines the Line of Flight. \addedin{1B}{1B-apj-36-errata}{Though not formally arcs, the 0 and 180 degree lines are at times treated as such. }The Line of Flight extending ahead of the target aircraft is the 180{\deg} Line; the Line of Flight extending behind the target aircraft is the 0{deg} Line. \addedin{1B}{1B-apj-36-errata}{To qualify for 0 and 180 degree line modifiers, attackers have to be pointing straight down those lines.}
+\silentlyaddedin{1C}{1C-figures}{
+    \input{figures/figure-angle-off-facing-hex-corner}
+    \input{figures/figure-angle-off-facing-hex-side}
+    \input{figures/figure-angle-off-on-hex-side}
+}
 
-For example, an aircraft directly behind the target aircraft and facing in the same direction has a zero-deflection shot (0{deg} angle-off). An aircraft making a head-on attack is facing in the opposite direction to the target (180{deg} of angle-off).
+\x{
 
-\paragraph{Angle-Off Arcs.} Angle-off is described in 30{deg} arcs to the left or right of the target per the hex grid.  \changedin{1C}{1C-figures}{The Angle Off Diagrams}{Figures~\ref{figure:angle-off-facing-hex-corner}, \ref{figure:angle-off-facing-hex-side}, and \ref{figure:angle-off-on-hex-side}} illustrate the arcs relative to the target aircraft. An attacker will be clearly in an arc or directly on one of the lines defining the border of two arcs. If it is on one of the borderlines, it is in the arc it would fall into if the faster of the target or attacker were moved forward one hex. \addedin{1B}{1B-apj-36-errata}{If moving the faster aircraft forward one hex/hexside results in it completely leaving both bordering ares, consider it in the arc it moved through.} \addedin{1B}{1B-apj-36-errata}{Use aircraft speed, not FPs, to determine which one is faster. Use both aircraft's speeds from the start of the turn. If one has flown its full turn, do not use its new speed for next turn; that isn't formally computed until the Aircraft Administrative Phase.}\addedin{1B}{1B-apj-28-qa}{All aircraft are considered faster than ground units.} If the attacker would remain on the line (if moved forward), it is in the arc that benefits the attacker.\addedin{1B}{1B-apj-28-qa}{(In sighting attempts, the arc that benefits the aircraft being sighted. For initiative purposes, the arc that benefits the aircraft being considered for potential disadvantage.)} In the case of same hex \deletedin{1B}{1B-apj-36-errata}{(range 0/same altitude) }attacks, the aircraft is in the angle off arc that equates to its heading difference from the target at the instant it fires. \addedin{1B}{1B-apj-36-errata}{When determining angle-off for same hex attacks the 180 arc modifier is never used; a head-on shot uses the 180 line modifier and a shot 30 degrees off head-on uses the 150 arc modifier.} For diving and climbing same hex attacks against lower or higher targets respectively, both angle-off and \changedin{2Z}{AWF: implicit in TSOH Errata}{a $+2$ vertical attack modifier}{possibly a vertical attack modifier may} apply.
+\paragraph{Concept.} Angle-off (another term for deflection) is the angle “off” the target's tail. It is used to define eligibility for attack modifiers and other functions. \changedin{1C}{1C-figures}{The Angle Off Diagrams}{Figures~\ref{figure:angle-off-facing-hex-corner}, \ref{figure:angle-off-facing-hex-side}, and \ref{figure:angle-off-on-hex-side}} show the various angles of approach to an aircraft. \changedin{1C}{1C-figures}{Two diagrams are used: one for target aircraft in a hex; the other for target aircraft on a hex side.}{The appropriate figure is used according to whether the target aircraft is in a hex facing a hex side, in a hex facing a hex corner, or on a hex side.} In each case, the target aircraft defines the Line of Flight. \addedin{1B}{1B-apj-36-errata}{Though not formally arcs, the 0 and 180 degree lines are at times treated as such. }The Line of Flight extending ahead of the target aircraft is the 180{\deg} Line; the Line of Flight extending behind the target aircraft is the 0{\deg} Line. \addedin{1B}{1B-apj-36-errata}{To qualify for 0 and 180 degree line modifiers, attackers have to be pointing straight down those lines.}
+
+For example, an aircraft directly behind the target aircraft and facing in the same direction has a zero-deflection shot (0{\deg} angle-off). An aircraft making a head-on attack is facing in the opposite direction to the target (180{\deg} of angle-off).
+
+\paragraph{Angle-Off Arcs.} Angle-off is described in 30{\deg} arcs to the left or right of the target per the hex grid.  \changedin{1C}{1C-figures}{The Angle Off Diagrams}{Figures~\ref{figure:angle-off-facing-hex-corner}, \ref{figure:angle-off-facing-hex-side}, and \ref{figure:angle-off-on-hex-side}} illustrate the arcs relative to the target aircraft. An attacker will be clearly in an arc or directly on one of the lines defining the border of two arcs. If it is on one of the borderlines, it is in the arc it would fall into if the faster of the target or attacker were moved forward one hex. \addedin{1B}{1B-apj-36-errata}{If moving the faster aircraft forward one hex/hexside results in it completely leaving both bordering arcs, consider it in the arc it moved through.} \addedin{1B}{1B-apj-36-errata}{Use aircraft speed, not FPs, to determine which one is faster. Use both aircraft's speeds from the start of the turn. If one has flown its full turn, do not use its new speed for next turn; that isn't formally computed until the Aircraft Administrative Phase.}\addedin{1B}{1B-apj-28-qa}{All aircraft are considered faster than ground units.} If the attacker would remain on the line (if moved forward), it is in the arc that benefits the attacker.\addedin{1B}{1B-apj-28-qa}{(In sighting attempts, the arc that benefits the aircraft being sighted. For initiative purposes, the arc that benefits the aircraft being considered for potential disadvantage.)} In the case of same hex \deletedin{1B}{1B-apj-36-errata}{(range 0/same altitude) }attacks, the aircraft is in the angle off arc that equates to its heading difference from the target at the instant it fires. \addedin{1B}{1B-apj-36-errata}{When determining angle-off for same hex attacks the 180 arc modifier is never used; a head-on shot uses the 180 line modifier and a shot 30 degrees off head-on uses the 150 arc modifier.} For diving and climbing same hex attacks against lower or higher targets respectively, both angle-off and \changedin{2Z}{AWF: implicit in TSOH Errata}{a $+2$ vertical attack modifier}{possibly a vertical attack modifier may} apply.
+
 
 \paragraph{Other Angle-Off Arc Functions.}  \changedin{1C}{1C-figures}{The Angle Off Diagrams in the play aids}{Figures~\ref{figure:angle-off-facing-hex-corner}, \ref{figure:angle-off-facing-hex-side}, and \ref{figure:angle-off-on-hex-side}} are also used to define radar and visual spotting arcs, aircraft restricted and blind sighting arcs, jamming arcs, and for determining missile attack modifiers.
 
@@ -248,13 +258,61 @@ For example, an aircraft directly behind the target aircraft and facing in the s
 
 \changedin{1C}{1C-figures}{The following illustrations}{Figures~\ref{figure:angle-off-facing-hex-corner}, \ref{figure:angle-off-facing-hex-side}, and \ref{figure:angle-off-on-hex-side}} show examples of angle-off arc determinations\notein{1B}{AWF: JDW has comments on this in APJ 22 QA, but they are superseded by the following change.}\changedin{1B}{1B-apj-23-errata}{:}{. The \deletedin{1C}{1C-figures}{diagram }examples assume the target aircraft is co-speed or faster than the other aircraft. In the case that the other aircraft were faster, the two Phantoms in \changedin{1C}{1C-figures}{the earlier diagram}{Figure~\ref{figure:angle-off-facing-hex-side}} would still be in the arcs shown, \changedin{1C}{1C-figures}{Phantom B in the later diagram would be in the left 120 arc and Phantom C would be in the left 30 arc}{but in Figure~\ref{figure:angle-off-on-hex-side} Phantom B would be in the left 120 arc and Phantom C would be in the left 30 arc}.}
 
-\silentlyaddedin{1C}{1C-figures}{
-    \input{figures/figure-angle-off-facing-hex-corner}
-    \input{figures/figure-angle-off-facing-hex-side}
-    \input{figures/figure-angle-off-on-hex-side}
-}
-
 \notein{1B}{FH in APJ 36 has text about not returning fire to a head-on attack after an ET. I have added it above in the section on head-on attacks.}
+
+}{
+
+\paragraph{Concept.} Angle-off or deflection is the angle “off” the target's tail. That is, it is the horizontal angle between two imaginary lines, one extending behind the target and another extending from the target to the attacker. If the attacker is directly behind the target, the angle-off is 0{\deg}, and if the attacker is directly in front of the target, it is 180{\deg}. Angle-off is used to determine attack modifiers and for other functions. 
+
+\paragraph{Angle-Off Arcs.} Angle-off is described in 30{\deg} arcs to the left or right of the target. Figures~\ref{figure:angle-off-facing-hex-corner}, \ref{figure:angle-off-facing-hex-side}, and \ref{figure:angle-off-on-hex-side} show these arcs with respect to the target aircraft. The appropriate figure is used according to whether the target aircraft is in a hex facing a hex side, in a hex facing a hex corner, or on a hex side.
+
+\paragraph{0{\deg} and 180{\deg} Lines.} Though not formally arcs, the 0{\deg} and 180{\deg} lines are at times treated as such. The imaginary lines extending behind and ahead of the target aircraft are the 0{\deg} and 180{\deg} lines, respectively. To qualify for modifiers for one of these lines, the attacker must be both on the line and facing along it towards the target.
+
+\paragraph{Angle-Off Procedure for Attack Modifiers.}
+This procedure is used to determine the angle-off modifiers for gun (rule~\ref{rule:air-to-air-gun-combat}), rocket (rule~\ref{rule:air-to-air-rocket-combat}), and missile (rule~\ref{rule:air-to-air-missiles}) attacks on aircraft.
+
+Consult figures~\ref{figure:angle-off-facing-hex-corner}, \ref{figure:angle-off-facing-hex-side}, and \ref{figure:angle-off-on-hex-side} according to the map location of the target. Often the attacking aircraft or missile will unambiguously be in an angle-off arc. 
+
+However, sometimes the attacker will be located on the borderline between two arcs. To resolve these cases, consider the speeds of the attacker and target at the start of the game turn:
+\begin{itemize}
+\item If the target is slower, the attacker is in the arc it would move into if it moved forward.
+\item If the target is faster, the attacker is in the arc it would move into if the target moved forward.
+\item If neither is faster or if the attacker remains on the borderline after one of the previous two cases, the attacker is in the arc that gives it the more beneficial modifier.
+\end{itemize}
+
+For example, consider Figures~\ref{figure:angle-off-facing-hex-side}, \ref{figure:angle-off-facing-hex-corner}, \ref{figure:angle-off-on-hex-side} in which the aircraft A are targets and the aircraft B and C are attackers.
+Aircraft C in Figure~\ref{figure:angle-off-facing-hex-side} is unambiguously in the right 90{\deg} arc of its target, the other attackers are on borderlines between two arcs. If the target were slower than the attackers, then B would be in the right 150{\deg} arc and C on the right 0{\deg} line in Figure~\ref{figure:angle-off-facing-hex-corner}, B would be able to chose the more beneficial of either the right 60{\deg} or right 90{\deg} arc in Figure~\ref{figure:angle-off-facing-hex-side}, and B would be in the left 120{\deg} arc and C in the left 30{\deg} arc in Figure~\ref{figure:angle-off-on-hex-side}. On the other hand, if the target were faster than the attackers, then B would be in the right 60{\deg} arc in Figure~\ref{figure:angle-off-facing-hex-side}, B would be in the left 90{\deg} arc in Figure~\ref{figure:angle-off-on-hex-side}, and the other arcs would be unchanged.
+
+\paragraph{Other Uses of Angle-Off Arcs.}
+Angle-off arcs are used for other purposes, including determining:
+\begin{itemize}
+    \item The restricted and blind fields-of-view of an aircraft attempting to sight (rule~\ref{rule:sighting-aircraft-and-missiles}).
+    \item Whether an aircraft is advantaged over another (rule~\ref{rule:initiative}).
+    \item The fields of IRSTS (rule~\ref{rule:irsts}), VAS (rule~\ref{rule:irsts}), missile seekers (rule~\ref{rule:sighting-aircraft-and-missiles}), radar (rule~\ref{rule:air-to-air-radar}), jammers (rule~\ref{rule:electronic-warfare}), and laser designators (rule~\ref{rule:laser-guided-weapons}).
+\end{itemize}
+
+\paragraph{Ranges of Arcs.} Ranges of arcs are used for restricted or blind regions for sighting, sensor fields, and to determine advantage. If a range is given as an arc followed by a $+$, it means that the range is that arc and all more forward arcs. If a range is given as an arc followed by a $-$, it means that the range is that arc and all more rearward arcs. 
+
+For example, a radar search field given as $60{\deg}\!-$ comprises the 30{\deg} and 60{\deg} arcs and a blind arc given as $150{\deg}\!+$ comprises the 150{\deg} and 180{\deg} arcs.
+
+\paragraph{Angle-Off Procedure for Restricted and Blind Arcs.}
+In this case, the sighting aircraft takes the place of the target aircraft and the potentially sighted element takes the place of the attacker. 
+
+The procedure is the same as that for air-to-air gun attacks, in that borderline cases are resolved by considering moving the faster element forward, except that if the potentially sighted element is faster and would remains on the borderline if it moved forward, consider the sighting aircraft to be faster.
+
+When checking if a ground unit is in the restricted or blind arc of an aircraft, the ground unit is always considered to be slower than the aircraft.
+
+\paragraph{Angle-Off Procedure for Advantage.}
+In this case, the aircraft seeking advantage takes the place of the target aircraft and the potentially disadvantaged aircraft takes the place of the attacker. 
+
+The procedure is the same as that for air-to-air gun attacks, in that borderline cases are resolved by considering moving the faster element forward, except that if the potentially disadvantaged element is faster and would remains on the borderline if it moved forward, consider the aircraft seeking advantage to be faster.
+
+\paragraph{Angle-Off Procedure for Other Cases.}
+In other cases, the aircraft or missile sensing, jamming, or designating takes the role of the target aircraft and the potentially sensed, jammed, or designated element takes the role of the attacker. 
+
+The procedure is the same as that for air-to-air gun attacks, but if the potentially sensed, jammed, or designated element falls on the borderline that defines the outer edge of the field, it is considered to be within the field. The relative speed of the two elements is not considered.
+
+}
 
 \Ax{
 \section{Recovery Periods}
@@ -264,6 +322,7 @@ For example, an aircraft directly behind the target aircraft and facing in the s
 \begin{advancedrules}
 
 \section{Air to Air Rocketry}
+\label{rule:air-to-air-rocket-combat}
 
 \addedin{1C}{1C-tables}{
     \input{tables/table-rocket-attack}
@@ -341,7 +400,7 @@ To qualify for the CCA to hit modifier, the attacking aircraft must start a game
     \input{figures/figure-ssgt-lines}
 }
 
-\paragraph{Steady State Gunsight Tracking (SSGT).} Gunsights are optimized for rear quarter attacks. Any aircraft attacking from the 60{deg} or less angle-off arc may track its target and achieve improved probabilities for hits. \changedin{1B}{1B-apj-23-errata}{The firing aircraft must expend FPs while on a tracking line (see Tracking diagram).}{The firing aircraft must expend FPs while on a tracking line (see \changedin{1C}{1C-figures}{Tracking Diagram}{Figure~\ref{figure:ssgt-lines}})\addedin{1B}{1B-apj-36-errata}{ within six hexes of the target, and} with the target \addedin{1B}{1B-apj-37-qa}{in the field of fire of its guns or }in its limited arc.} \addedin{1B}{1B-apj-23-qa and 1B-apj-36-errata}{During the Recovery Period following an ET an aircraft may not accumulate FPs for SSGT, but it may do so during recovery from lesser turn rates.} \addedin{1B}{1B-apj-36-errata}{VFPs as well as HFPs may be used to obtain SSGT. An aircraft may be turning while accumulating SSGT, and SSGT is not lost merely if the aircraft turns.} \changedin{1B}{1B-apj-23-errata}{For each 1/3 (round down) of the aircraft's speed (in full FPs) expended on a tracking line, modify the Roll To Hit by $-1$.}{For each 1/3 of the aircraft's speed expended on the tracking line (use the 1/3-2/3 conversion table), modify the Roll to Hit by $-1$.}  A maximum modifier of $-2$ is allowed for SSGT; tracking may not begin until the firing aircraft is within six hexes range of the target.
+\paragraph{Steady State Gunsight Tracking (SSGT).} Gunsights are optimized for rear quarter attacks. Any aircraft attacking from the 60{\deg} or less angle-off arc may track its target and achieve improved probabilities for hits. \changedin{1B}{1B-apj-23-errata}{The firing aircraft must expend FPs while on a tracking line (see Tracking diagram).}{The firing aircraft must expend FPs while on a tracking line (see \changedin{1C}{1C-figures}{Tracking Diagram}{Figure~\ref{figure:ssgt-lines}})\addedin{1B}{1B-apj-36-errata}{ within six hexes of the target, and} with the target \addedin{1B}{1B-apj-37-qa}{in the field of fire of its guns or }in its limited arc.} \addedin{1B}{1B-apj-23-qa and 1B-apj-36-errata}{During the Recovery Period following an ET an aircraft may not accumulate FPs for SSGT, but it may do so during recovery from lesser turn rates.} \addedin{1B}{1B-apj-36-errata}{VFPs as well as HFPs may be used to obtain SSGT. An aircraft may be turning while accumulating SSGT, and SSGT is not lost merely if the aircraft turns.} \changedin{1B}{1B-apj-23-errata}{For each 1/3 (round down) of the aircraft's speed (in full FPs) expended on a tracking line, modify the Roll To Hit by $-1$.}{For each 1/3 of the aircraft's speed expended on the tracking line (use the 1/3-2/3 conversion table), modify the Roll to Hit by $-1$.}  A maximum modifier of $-2$ is allowed for SSGT; tracking may not begin until the firing aircraft is within six hexes range of the target.
 
 \addedin{1B}{1B-apj-23-errata}{SSGT must be started anew each game turn. Taking a shot during a move does not cancel or stop the aircraft from doing SSGT.}
 
@@ -358,7 +417,7 @@ To qualify for the CCA to hit modifier, the attacking aircraft must start a game
 
 \item RE (Regular). The attacker must \changedin{1B}{1B-apj-22-qa}{be in SSGT}{have accumulated at least 1 FP of SSGT} in order to get RR benefits.
 
-\item CA (Computer Assisted). The attacker may use CA Radar Ranging with or without SSGT when firing from the 90{deg} angle-off or less.
+\item CA (Computer Assisted). The attacker may use CA Radar Ranging with or without SSGT when firing from the 90{\deg} angle-off or less.
 
 \item IG (Integrated Gun Ballistics). The attacker may fire from any angle, with or without SSGT.
 
