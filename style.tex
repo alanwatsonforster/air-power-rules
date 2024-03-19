@@ -286,15 +286,14 @@ minus \fontdimen4\font}
 \newcommand{\tablecaption}[2]{
     \silentlychangedin{1C}{1C-tables}{
         #2
-        \par
     }{
         \ifaids
             \textaddedin{1C}{1C-tables}{Table~\ref{#1}: #2}
-            \par
         \else
             \textaddedin{1C}{1C-tables}{\caption{#2\label{#1}}}
         \fi
     }
+    \par
     \medskip
 }
 
