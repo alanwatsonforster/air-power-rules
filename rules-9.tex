@@ -70,9 +70,8 @@ Gun attacks are restricted as follows:
 \x{
 The Roll To Hit entry (in the Internal Gun Data section of the ADC) for the aircraft shows the basic die roll number required to hit the target at ranges 0, 1, and 2. Roll the die, and modify the result as required. Compare the final result to the hit numbers. A hit is achieved if the modified roll is less than or equal to the hit number.
 }{
-The hit die roll (from the ADC or Table~\ref{table:stores-GP}) shows the die roll required to hit the target at ranges of 0, 1, and 2 hexes. If only two hit die rolls are given, the gun's range is only one hex. Roll the die, modify the result as appropriate, and compare the modified result to the hit die roll. The attack hits if the modified result is less than or equal to the hit die roll.
+The attacking aircraft declares its target and whether it is using a normal or a snap shot. The ADC or Table~\ref{table:stores-GP} shows the hit die roll at ranges of 0, 1, and 2 hexes. If only two hit die rolls are given, the gun's range is only one hex. Roll the die, modify the result as appropriate, and compare the modified result to the hit die roll. The attack hits if the modified result is less than or equal to the hit die roll. A hit damages the target according to rule ~\ref{rule:aircraft-damage-resolution}. The attack rating is given on the ADC or Table~\ref{table:stores-GP}. The attack rating for a snap shot is reduced by one.
 }
-
     
 \paragraph{Die Roll Modifiers.} 
 \x{
@@ -376,24 +375,29 @@ For example, consider an aircraft with a speed of 5.0 that prepares for a lag ro
 
 \begin{advancedrules}
 
+\x{
 \section{Air to Air Rocketry}
+}{
+\section{Air-to-Air Rocket Combat}
+
+}
 \label{rule:air-to-air-rocket-combat}
 
-\addedin{1C}{1C-tables}{
-    \input{tables/table-rocket-attack}
+\x{
+Before the advent of guided missiles, aircraft designers worked to provide Interceptors with a weapon that out ranged the defensive guns of long ranged bombers and that had sufficient power to knock the bomber down. The solution most came up with was to utilize clusters of unguided rockets fired from retractable packs or pods attached to the wings. The rockets were to be fired in shotgun like blasts. The concept was never tested in battle and it never proved satisfactory in practice. Intercept geometry was difficult to attain and the rockets proved to be inaccurate. As soon as guided missiles became available, air to air rocketry faded from the scene. Nevertheless, they were, for a short time at least, the primary anti-bomber weapon of the early 1950's Cold War period.
+}{
+Before the advent of guided missiles, aircraft designers worked to provide interceptors with a weapon that out-ranged the defensive guns of long-range bombers and that had sufficient power to knock the bomber down. The solution most came up with was to utilize clusters of unguided rockets fired from retractable packs or pods attached to the wings. The rockets were to be fired in shotgun-like blasts. The concept was never tested in battle and never proved satisfactory in practice. Intercept geometry was difficult to attain, and the rockets proved to be inaccurate. As soon as guided missiles became available, air-to-air rocketry faded from the scene. Nevertheless, they were, for a short time at least, the primary anti-bomber weapon of the early 1950s Cold War period.
 }
 
-Before the advent of guided missiles, aircraft designers worked to provide Interceptors with a weapon that out ranged the defensive guns of long ranged bombers and that had sufficient power to knock the bomber down. The solution most came up with was to utilize clusters of unguided rockets fired from retractable packs or pods attached to the wings. The rockets were to be fired in shotgun like blasts. The concept was never tested in battle and it never proved satisfactory in practice. Intercept geometry was difficult to attain and the rockets proved to be inaccurate. As soon as guided missiles became available, air to air rocketry faded from the scene. Nevertheless, they were, for a short time at least, the primary anti-bomber weapon of the early 1950's Cold War period.
-
+\x{
 \paragraph{Air To Air Rocket Factors.} The ADC shows if an aircraft can carry rockets (and if so, how many). Each factor represents 10 to 15 rockets fired in volley.
 
 \paragraph{Range.} To declare a rocket attack, the firing aircraft must have a target in its limited radar arc and be within four hexes (count each two full altitude levels as one additional hex of range). Rocket attacks may not be done at range zero.
 
-Rocket attacks are distinct from air to air gun attacks. Rockets or guns may be fired, but not both in one game turn. Only one rocket attack is allowed per game turn; it may be fired at any point in the aircraft's move.
-
 \paragraph{Procedure.} The attacking aircraft declares its target and indicates the number of rocket factors being fired. \changedin{1C}{1C-tables}{The Air To Air Rocketry Table}{Table~\ref{table:air-to-air-rocketry}} is consulted. At the intersection of the range column and the rocket factors row is the base die roll to hit. Roll the ten-sided die and modify the result as appropriate; if the result is equal to or less than the base die roll to hit, the attack has produced a hit. The rocket factors entry also shows the Attack Rating for that number of rockets being fired. This Attack Rating is used on \changedin{1C}{1C-tables}{the Damage Tables}{Table~\ref{table:aircraft-damage}} if a hit occurs.
 
-\paragraph{Rocket Attack Modifiers.} The roll to hit is modified as for air to air gunnery, however only the following modifiers apply:
+\paragraph{Rocket Attack Modifiers.} 
+\changedin{2B}{2B-rocket-modifiers}{The roll to hit is modified as for air to air gunnery, however only the following modifiers apply:
 
 \begin{itemize}
     \item Target Size.
@@ -404,6 +408,9 @@ Rocket attacks are distinct from air to air gun attacks. Rockets or guns may be 
     \item Collision Course Attack (CCA) Technology.
     \itemaddedin{1B}{1B-apj-23-errata}{Pilot Quality}.
 \end{itemize}
+}{
+The roll to hit is modified as for air to air gunnery, except that the snap shot modifier obviously does not apply and the CCA modifier may apply.
+}
 
 \paragraph{Collision Course Attack (CCA) Technology.} Aircraft designers fitted some American and Canadian fighters with auto-pilot guidance systems which utilized an early computer linked to the interceptor's radar. The computer figured rocket ballistics and if the radar was tracking a target, it could guide the fighter to a release point and automatically launch the rockets. This concept freed the fighter from having to use pursuit curves to get in to gunnery parameters and was called “collision course” guidance as the interceptor could now theoretically attack from any angle.
 
@@ -423,13 +430,70 @@ To qualify for the CCA to hit modifier, the attacking aircraft must start a game
 
     \item An aircraft may not fire at a target at zero range.
 
-    \item An aircraft \addedin{2Z}{AWF: This follows the similar change in 1B to the rules for gun attacks.}{in level flight} may fire at a target in another hex only if it is at the same altitude level or at an adjacent altitude level.
+    \item An aircraft \addedin{2B}{2B-rocket-restrictions}{in level flight} may fire at a target in another hex only if it is at the same altitude level or at an adjacent altitude level.
 
     \item An aircraft may not fire while in, or just after having faced from, an HT, BT, or ET turn.
 
     \item An aircraft may not fire while prepping for or executing other than slide maneuvers.
 
 \end{itemize}
+
+}{
+Rocket attacks are distinct from air to air gun attacks. Rockets or guns may be fired, but not both in one game turn. Only one rocket attack is allowed per game turn; it may be fired at any point in the aircraft's move.
+
+\paragraph{Rocket Factors.} An aircraft's ADC shows if it can carry rockets and, if so, how many factors. Each factor represents 10 to 15 rockets fired in a volley.
+
+\paragraph{Field of Fire.} The field of fire of rockets is the aircraft's limited radar arc shown in Figure~\ref{figure:limited-arcs}.
+
+\paragraph{Range.} The range to the target is determined normally using rule~\ref{rule:range}. Rocket attacks may be carried out at ranges from 1 to 4 hexes. They may not be carried out at range 0.
+
+\paragraph{Rocket Attack Restrictions.} Rocket attacks are restricted as follows:
+
+\begin{itemize}
+
+    \item An aircraft may not fire on an unspotted aircraft.
+
+    \item A climbing aircraft may not fire on an aircraft at a lower altitude.
+
+    \item A diving aircraft may not fire on an aircraft at a higher altitude.
+
+    \item An aircraft may not fire at a target at zero range.
+
+    \item An aircraft in level flight may fire at a target in another hex only if it is at the same altitude level or at an adjacent altitude level.
+
+    \item An aircraft may not fire after an FP in which it turned at the HT, BT, or ET rate, an unloaded FP, or an FP ised to prepare for or execute a rolling maneuver.
+
+    \item An aircraft may not fire after an FP in the recovery period after an ET turn or an unloaded FP.
+
+\end{itemize}
+
+\paragraph{Rocket Attack Procedure.} The attacking aircraft declares its target and the number of rocket factors fired. Consult Table~\ref{table:air-to-air-rocket-attacks}. Cross-index the range and the number of the rocket factors to obtain the hit die roll. Roll the die and modify the result as appropriate. If the result is equal to or less than the hit die roll, the attack has produced a hit. If the rockets hit, they damage the target according to rule ~\ref{rule:aircraft-damage-resolution}. The attack rating depends on the number of factors fired and is given in Table~\ref{table:air-to-air-rocket-attacks}. Because of their large warheads, rockets receive $-2$ modifier to the damage roll, just like direct missile hits.
+
+\paragraph{Rocket Attack Modifiers.} 
+The die roll to hit is modified as for air to air gunnery, except that the snap shot modifier does not apply and the CC rocket attack modifier may apply:
+
+\begin{itemize}
+    \item \itemparagraph{CC Rocket Attack.} If the attacker satisfies the requirements for a CC rocket attack, apply a modifier of $-2$.
+\end{itemize}
+
+\paragraph{Collision-Course (CC) Rocket Attacks.} Some American and Canadian interceptors were fitted with auto-pilot guidance systems using an early computer linked to their radar. If the radar was tracking a target, the computer could guide the fighter and automatically launch the rockets at the target. This freed the fighter from the need to use pursuit curves to get into gunnery parameters and was called “collision-course guidance,” as the interceptor could now theoretically attack from any angle.
+
+The technology section of an aircraft’s ADC will mention if it is capable of CC rocket attacks.
+
+To qualify for the CC rocket attack hit modifier, the attacking aircraft must have an air-to-air lock-on to the target and, during its flight from the start of its move up to its attack, may not:
+\begin{itemize}
+    \item use HT or greater turns,
+    \item prepare for or perform any maneuvers except slides, or
+    \item climb or dive more than one altitude level.
+\end{itemize}
+If it meets these criteria, apply a $-2$ modifier to the hit die roll.
+}
+
+\addedin{1C}{1C-tables}{
+    \input{tables/table-rocket-attack}
+}
+
+\x{
 
 \paragraph{Air To Ground Rockets in The Air-To-Air Role.} Aircraft equipped with air to ground rockets or rocket pods may fire them in the air to air role. The conversion is as follows:
 
@@ -441,6 +505,20 @@ To qualify for the CCA to hit modifier, the attacking aircraft must start a game
 \end{itemize}
 
 \paragraph{Air to Air rockets in the Air to Ground Role.} Each point of aerial rockets equals 2 soft attack strength factors and one hard attack strength factor.
+
+}{
+
+\paragraph{Air-to-Ground Rockets in the Air-to-Air Role.} An aircraft equipped with air-to-ground rockets or rocket pods may fire them in the air-to-air role. The conversion is as follows:
+
+\begin{itemize}
+    \item Ten single rockets are equal to one factor of air-to-air rockets.	
+    \item A small rocket pod, with 7 or fewer rockets, is equal to one-half a factor of air-to-air rockets.
+    \item A medium rocket pod, with 8 to 19 rockets, is equal to one factor of air-to-air rockets.
+    \item A large rocket pod, with 20 or more rockets, is equal to two factors of air-to-air rockets.
+\end{itemize}
+
+\paragraph{Air-to-Air Rockets in the Air-to-Ground Role.} In the air-to-ground role, each factor of air-to-air rockets has a soft attack strength of two and a hard attack strength of one.
+}
 
 \Dx{
 \section{Additional Gun and Rocket Attack Modifiers}
