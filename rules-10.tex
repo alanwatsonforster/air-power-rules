@@ -1,9 +1,15 @@
 \rulechapter{Aircraft Damage}
 
+\x{
 This chapter details the procedures for determining the damage results of successful hits against aircraft.
+}{
+This rule describes the procedures for determining the damage inflicted by successful hits against aircraft and the effects of that damage.
+}
 
 \section{Aircraft Damage Resolution}
 \label{rule:aircraft-damage-resolution}
+
+\x{
 
 When a gun, rocket, or missile hit is achieved on an aircraft, determine the damage inflicted and apply it to the aircraft.
 
@@ -29,12 +35,12 @@ When a gun, rocket, or missile hit is achieved on an aircraft, determine the dam
 
 A result of no affect, or aircraft kill requires no further action. Light, Heavy, and Crippled damage produce the appropriate performance and combat restrictions \changedin{1C}{1C-tables}{listed on the Aircraft Damage Table}{Table~\ref{table:aircraft-damage-effects}}.
 
-\addedin{1C}{1C-tables}{
-    \input{tables/table-aircraft-damage}
-    \input{tables/table-systems-loss}
-}
 \paragraph{Procedure.} When a gun or missile hit is achieved on an aircraft, consult \changedin{1C}{1C-tables}{the Damage Table}{Table~\ref{table:aircraft-damage}}. Roll the die once and apply any required modifiers. Cross index the modified roll with the attacking gun or rocket's Air To Air rating or missile's listed Attack Rating for the type of hit achieved (Proximity or Direct). The result gives the level of damage achieved.
 
+\addedin{1C}{1C-tables}{
+    \input{tables/table-aircraft-damage}
+    \input{tables/table-system-loss}
+}
 \paragraph{Previous Damage Effect.} \changedin{1B}{1B-apj-36-errata}{If the aircraft was previously damage, the hitting weapon's attack rating is increased one.}{The damage column is shifted once to the right if the aircraft has sustained L or worse damage, regardless of the prior or current cause of damage.}
 
 \paragraph{Damage Table Modifiers.} The damage table die roll is modified for the following:
@@ -49,6 +55,7 @@ A result of no affect, or aircraft kill requires no further action. Light, Heavy
     
 \end{itemize}
 
+
 \section{Cumulative Damage Effects}
 
 \addedin{1C}{1C-tables}{
@@ -58,20 +65,92 @@ A result of no affect, or aircraft kill requires no further action. Light, Heavy
 \paragraph{Cumulative Damage.} At the end of a scenario, an aircraft's damage level for purposes of victory points equals the highest level of damage it has sustained. When an aircraft is repeatedly hit, it can accumulate several hits of one or more types. These multiple hits are cumulative and sufficient hits of a lesser type will equal a worse level of damage as follows\addedin{1C}{1C-tables}{\ and as shown in Table~\ref{table:cummulative-damage}}:
 
 \begin{itemize}
-
     \item 3L = H. Three cumulative L hits equal an H hit. The aircraft's level of damage is now at least H.
-
-    \item 2H = C. Two cumulative H hits equal a C hit. The aircraft's level of damage is now at least C.
-
-    \item C + H = K. Any H or C hit, or cumulative hits equating to an H or C hit, on an already Crippled aircraft destroys it.
-    
+    \item 2H = C. Two cumulative H hits equal an C hit. The aircraft's level of damage is now at least C.
+    \item C + H = K. Any H or C hit, or cumulative hits eqating to an H or C hit, on an already Cripped aircraft destroy it.
 \end{itemize}
 
 For example, if an aircraft was hit twice before and had H and L hits. Its damage level is considered H. On this turn, it is hit again and receives a 2L. Since 3L = H, the aircraft damage becomes 2H. And since 2H = C, the aircraft damage level becomes C. It is now Crippled.
 
+}{
+
+
+\paragraph{Damage Procedure.} When a gun, rocket, or missile attack hits an aircraft, determine the weapons attack rating and apply any required modifiers. For missiles, the attack rating will depend on whether a direct or proximity hit was achieved. Roll the die and apply any required modifiers. Consult Table~\ref{table:aircraft-damage} and cross-index the modified roll with the modified attack rating. If the result is a dash, no damage is inflicted. Otherwise, the result gives the damage level suffered by the target. Note this damage on the target's log sheet.
+
+\paragraph{Attack Rating Modifiers.}
+The weapon attack rating is modified as follows:
+\begin{itemize}
+\item If the target already has L or worse damage, apply a $+1$ modifier.
+\item If the hit was from a gun snap shot, apply a $-1$ modifier.
+\end{itemize}
+
+\paragraph{Damage Die Roll Modifiers.} The damage die roll is modified as follows:
+
+\begin{itemize}
+
+    \item Apply the target's vulnerability, shown on its ADC, as a modifier.
+    
+    \item For direct missile hits, apply a modifier of $-2$. Proximity hits do not receive this modifier.    
+    
+    \item For rocket hits, apply a modifier of $-2$ just as for direct missile hits.
+    
+\end{itemize}
+
+\paragraph{Levels of Damage.} A single hit can potentially produce one of five damage levels:
+
+\begin{itemize}
+
+    \item\itemparagraph{L or 2L} Light damage. The aircraft suffers minor performance loss.
+
+    \item\itemparagraph{H.} Heavy damage. The aircraft suffers major performance loss and possibly a system loss.
+
+    \item\itemparagraph{C.} Crippled. The aircraft suffers severe performance loss, possibly a system loss, and is likely ineffective for further combat.
+    
+    \item\itemparagraph{K.} Killed. The aircraft is destroyed. Remove the aircraft from play.
+
+\end{itemize}
+
+\input{tables/table-aircraft-damage}
+
+\paragraph{Cumulative Damage.} 
+If an aircraft has only been damaged once, that damage is used directly. However, when an aircraft is damaged more than once,
+damage from each hit can combine to create more severe damage. The rules for combining damage are given here and in Table~\ref{table:cummulative-damage}.
+\begin{eqnarray*}
+3\textrm{L}&=&\textrm{H}\\
+2\textrm{H}&=&\textrm{C}\\
+2\textrm{C}&=&\textrm{K}\\
+\textrm{C} + \textrm{H}&=&\textrm{K}
+\end{eqnarray*}
+If two hits do not combine according to these rules, both are noted, but only the more severe damage is considered for damage effects.
+
+\input{tables/table-cummulative-damage}
+
+For example, consider an aircraft that is hit once and suffers an H result. Its damage level is H. If it is hit a second time and suffers an L result, its damage becomes $\textrm{H}+\textrm{L}$ (since $\textrm{H}+\textrm{L}$ does not appear in the rules above), but for damage effects its damage level is still considered to be H (since H is the more severe than L). If it is hit a third time and suffers a 2L result, its damage becomes C (since by the rules above $2\textrm{L} + \textrm{L} = 3\textrm{L} = \textrm{H}$ and $\textrm{H} + \textrm{H} = 2\textrm{H} = \textrm{C}$).
+
+
+\paragraph{Damage Effects.}
+Damage degrades an aircraft's flight and combat performance. The precise effect depends on the highest damage level suffered, either directly or cumulatively, according to Table~\ref{table:aircraft-damage-effects}.
+
+\input{tables/table-aircraft-damage-effects}
+
+\paragraph{System Losses.}
+When an aircraft's damage level reaches H or C, it may suffer a system loss. Roll one die, consult Table~\ref{table:system-loss}, and apply the corresponding result. Check once when the damage level reaches H, once again if the damage level increases from H to C, and twice if the damage level reaches C directly.
+
+\input{tables/table-system-loss}
+
+}
+
 \trainingnote{
-You are now ready to play Training Scenario Three.\\
+\centering
+\x{
+You are now ready to play Training Scenario Three.
+
 The Sequence of play is still not required.
+}{
+You are now ready to play training scenario 3.
+
+The sequence of play is still not required, and you may ignore it.
+}
 }
 
 \begin{advancedrules}
