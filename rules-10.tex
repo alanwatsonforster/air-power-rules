@@ -136,6 +136,10 @@ Damage degrades an aircraft's flight and combat performance. The precise effect 
 \paragraph{System Losses.}
 When an aircraft's damage level reaches H or C, it may suffer a system loss. Roll one die, consult Table~\ref{table:system-loss}, and apply the corresponding result. Check once when the damage level reaches H, once again if the damage level increases from H to C, and twice if the damage level reaches C directly.
 
+\paragraph{Jettison of Stores.} Only results specifically calling the aircraft to jettison stores require it to do so. In these case, it must jettison enough stores to become CL.
+
+\paragraph{Combat Ability.} As long as an aircraft has functional combat systems, it may attack air and land targets regardless of its damage level. Disadvantageous modifiers may apply to attack die rolls.
+
 \input{tables/table-system-loss}
 
 }
@@ -223,6 +227,7 @@ An aircraft loses the benefits of previous damage control if it suffers damage a
     \input{tables/table-optional-advanced-aircraft-damage}
 }
 
+\x{
 The optional Damage Tables may be substituted for the generic damage level restrictions. These tables determine specific effects of L, H, and C level hits. For each hit consult \changedin{1C}{1C-tables}{the appropriate Damage Table}{Table~\ref{table:optional-damage}} and roll the die with no modifiers. \deletedin{1C}{1C-tables}{(Optional damage tables are in play aids sheets.)}
 
 \paragraph{Optional Damage Table Results.} Only the indicated results from the die roll are applied to a damaged aircraft. In some cases, an aircraft may lose systems and not performance, or lose performance and not systems, or it may lose both systems and performance. The specifics of the damage rolled are not revealed to the enemy; they are recorded on paper. Visible signs of damage such as smoke or fire indicated on the tables are told to the opponent.
@@ -234,6 +239,26 @@ The optional Damage Tables may be substituted for the generic damage level restr
 \paragraph{Jettison of Stores.} Only the results calling for jettison of ordnance require an aircraft to do so. It must jettison enough stores to become CL configured.
 
 \paragraph{Combat Ability.} As long as an aircraft has functional combat systems it may attack air and land targets regardless of damage level. The damage modifiers do apply to (and degrade) attack rolls.
+
+}{
+
+The optional damage tables in Table~\ref{table:optional-damage} may be substituted for the generic results in Table~\ref{table:aircraft-damage-effects}. The optional damage tables give specific and more varied effects for L, H, and C damage. 
+
+\paragraph{Optional Damage Table Procedure.}
+When an aircraft suffers damage, roll the die with no modifiers and consult Table~\ref{table:optional-damage}.
+
+\paragraph{Optional Damage Table Results.} Only the specific results from the table are applied to a damaged aircraft. In some cases, an aircraft may lose systems and not performance, or lose performance and not systems, or it may lose both systems and performance. The specifics of the damage are not revealed to the opponent, but they are recorded on paper. Visible signs of damage indicated on the tables --- emission of white vapor, smoke, and fire --- \emph{are} revealed to the opponent.
+
+\paragraph{Fuel Fires.} 
+An aircraft suffering a fuel fire must check for the consequences at the end of the flight phase. Roll one die. On a $2-$, the aircraft explodes, killing the crew. On an $8+$, the fire goes out permanently, but the aircraft continues to leak fuel.
+
+A fuel fire may be extinguished by shutting down all engines. Declare this when doing damage control, and treat the aircraft as if all engines were flamed out. Check for success at the end of the flight phase. Roll one die. On $4-$, the fire resumes permanently. Otherwise, it is extinguished. If the engines are subsequently restarted, the afterburner is disabled.
+
+\paragraph{Progressive Damage} The progressive damage is checked for normally. If it occurs, determine damage for increased damage level using the tables.
+
+\paragraph{Hollow Aircraft} If the table indicates damage to a system or performance capability the damaged aircraft does not have, roll the die again. If the second die roll also results in non-applicable damage, record the hit for progressive damage purposes and for die roll penalties for combat. The aircraft is otherwise not affected.
+
+}
 
 \section{Aircraft Crash Sites}
 
