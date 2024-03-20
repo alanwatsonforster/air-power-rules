@@ -100,13 +100,13 @@ The weapon attack rating is modified as follows:
 
 \begin{itemize}
 
-    \item\itemparagraph{L or 2L} Light damage. The aircraft suffers minor performance loss.
+    \item\itemparagraph{L or 2L.} Light damage. The aircraft suffers minor performance losses.
 
-    \item\itemparagraph{H.} Heavy damage. The aircraft suffers major performance loss and possibly a system loss.
+    \item\itemparagraph{H.} Heavy damage. The aircraft suffers major performance losses and possibly a system loss.
 
-    \item\itemparagraph{C.} Crippled. The aircraft suffers severe performance loss, possibly a system loss, and is likely ineffective for further combat.
+    \item\itemparagraph{C.} Crippled. The aircraft suffers severe performance losses, possibly a system loss, and is likely ineffective for further combat.
     
-    \item\itemparagraph{K.} Killed. The aircraft is destroyed. Remove the aircraft from play.
+    \item\itemparagraph{K.} Killed. The aircraft is destroyed and removed from play.
 
 \end{itemize}
 
@@ -162,6 +162,7 @@ The sequence of play is still not required, and you may ignore it.
     \input{tables/table-progressive-damage}
 }
 
+\x{
 An aircraft's damage can worsen or spread if not contained by Damage Control (for example, leaking hydraulic fluid could burst into flame, or a damaged engine could fall).
 
 \paragraph{Procedure.} Roll the die once for each damaged aircraft during the Aircraft Admin Phase of every game-turn following the one in which it was hit. Do not check for progressive damage on any game-turn in which a damaged aircraft is hit again if the hit resulted in a higher damage level.
@@ -185,7 +186,37 @@ Consult \changedin{1C}{1C-tables}{the progressive damage table}{Table~\ref{table
 \end{itemize}
 
 Once an aircraft completes its flight without violating the above restrictions, damage control is automatically completed. An aircraft damaged before moving may not perform damage control in the game-turn it was hit. It may perform damage control on any subsequent turn. Previous damage control is nullified when an aircraft is hit anew.
+}{
 
+An aircraft's damage can progressively worsen or spread unless the pilot contains it by performing damage control. For example, leaking hydraulic fluid could burst into flame, or a damaged engine could fall. Furthermore, aerodynamic loading of the damaged skin at supersonic speeds can cause severe structural damage to the airframe.
+
+\paragraph{Progressive Damage Procedure.} Roll the die once for each damaged aircraft during the aircraft administration phase of every game turn following the one in which it was damaged. Do not check for progressive damage on the game turn in which a damaged aircraft is hit again if the hit resulted in a higher damage level. Consult \changedin{1C}{1C-tables}{the progressive damage table}{Table~\ref{table:progressive-damage}}. If the die roll is less than or equal to the number corresponding to the aircraft's current damage level, then the damage increases to the next higher level.
+
+\paragraph{Damage Control.} Performing damage control involves the crew activating backup electrical, fuel transfer, and hydraulic systems, shutting down damaged ones, and fighting fires. Damage control stabilizes the aircraft's current damage level so it will not progress. An aircraft that performs damage control counters progressive damage and does not check for it until it suffers damage again.
+
+\paragraph{Damage Control Procedure.} Declare the intent to perform damage control at the start of an aircraft's move. Fly the aircraft normally within the following restrictions:
+
+\begin{itemize}
+    \item No turns above the EZ rate may be performed.
+    \item No maneuvers except slides may be performed.
+    \item The only climbing flight allowed is a sustained climb not using afterburner power.
+    \item The only diving flight allowed is a steep dive with no more than 2 VFPs and not using afterburner power.
+    \item Terrain-following flight is not allowed.
+    \item Free descent is allowed.
+    \item External stores may be jettisoned
+    \item No attacks or weapons launches are allowed.
+    \item No radar work may be performed.
+\end{itemize}
+
+If the aircraft completes its flight without violating these restrictions, it completes damage control. 
+
+An aircraft damaged before moving may not perform damage control until the following game turn. 
+
+An aircraft loses the benefits of previous damage control if it suffers damage again.
+
+\paragraph{Progressive Damage at Supersonic Speeds.} A damaged aircraft at supersonic speeds must additionally check twice for progressive damage in the aircraft administration phase, regardless of damage control.
+
+}
 \section{Optional Aircraft Damage Tables}
 
 \addedin{1C}{1C-tables}{
