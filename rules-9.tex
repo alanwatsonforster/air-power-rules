@@ -563,6 +563,7 @@ A target that defensively pre-empts an attacker cancels any SSGT modifiers and F
 \label{rule:radar-ranging}
 }
 
+\x{
 \paragraph{Radar Ranging (RR).} An aircraft with radar ranging uses its radar to compute precise range and modify gunsight position for best hit probabilities. The Radar line of the Internal Gun Data section of the ADC shows the type of RR available (if any). There are three types:
 
 \begin{itemize}
@@ -578,6 +579,30 @@ A target that defensively pre-empts an attacker cancels any SSGT modifiers and F
 \paragraph{RR Procedure.} Ranging is automatic if the firer already has a radar lock-on to the target and meets the arc/SSGT requirements. Otherwise, once the arc/SSGT requirements are met, roll the die. If the result is less than or equal to the radar lock-on number listed in the radar section of the data card, ranging is successful and the ranging modifier is applied.
 
 Having previous radar contact or lock-ons is not a prerequisite for ranging nor are previous contacts and locks lost when ranging. Radar ranging, once achieved is maintained for any second shots at the same target in that game-turn. If not achieved for the first shot, it may be rolled for again prior to the second shot at the same target. Radar ranging does not carry forward to the next game turn or to different targets in the same game turn.
+}{
+
+An aircraft with radar ranging can use its radar to compute the target's precise range and modify gunsight position for best hit probabilities. This can give advantageous modifiers for gun and rocket attacks. The radar line of the internal gun data section of an aircraft's ADC shows the type of radar ranging available (if any). There are three types: regular (RE), computer-assisted (CA), and integrated gun-ballistics (IG).
+
+\paragraph{Radar Ranging Prerequisites.} The prerequisites for using radar ranging depend on the type available:
+
+\begin{itemize}
+
+\item For RE, the attacker must have accumulated at least 1 FP of SSGT (see rule~\ref{rule:steady-state-gunsight-tracking}).
+
+\item For CA, the attacker must attack from the \arcrange{90}{-} arc.
+
+\item For IG, there are no prerequisites and the attacker can attack from any arc.
+
+\end{itemize}
+
+\paragraph{Radar Ranging Procedure.} After declaring a gun or rocket attack and meeting the prerequisites, an attacker may attempt to range. The attempt succeeds automatically if the attacker already has a radar lock-on to the target. Otherwise, roll the die. If the result is less than or equal to the radar lock-on number listed in the radar section of the ADC, the attempt succeeds. If ranging succeeds, apply the corresponding modifier.
+
+\paragraph{Radar Ranging and Subsequent Attacks.} If radar ranging is successful for the first attack on a target in a game turn, it is maintained for any second attack on the same target in that game turn. If it fails for the first attack, it may be attempted again during a second attack on the same target. Radar ranging does not carry forward to the next game turn or to different targets in the same game turn.
+
+\paragraph{Radar Ranging and Contacts and Lock-Ons.}
+Previous radar contact or lock-on to the target are not required for ranging, although having a lock-on guarantees success. Previous contacts and lock-ons are not lost when ranging. 
+
+}
 
 \Dx{
 \section{Formation Restrictions on Gun and Rocket Combat}
