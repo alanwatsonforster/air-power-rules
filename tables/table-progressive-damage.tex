@@ -1,4 +1,5 @@
-\begin{onecolumntable}
+\begin{onecolumntable}[t!]
+\x{
 \tablecaption{table:progressive-damage}{Progressive Damage}
 \begin{tabular}{ccc}
 \toprule
@@ -11,5 +12,30 @@ H&3&C\\
 C&4&K\\
 \bottomrule
 \end{tabular}
+}{
+\tablecaption{table:progressive-damage}{Progressive Damage}
+\begin{tabularx}{0.9\linewidth}{CCC}
+\toprule
+%\minitable{c}{Current\\Damage}&
+%\minitable{c}{Die Roll for\\Damage\\Progression}&
+%\minitable{c}{Increased\\Damage}\\
+Current Damage&
+Die Roll for Damage Progression&
+Increased Damage\\
+\midrule
+L or 2L&$2-$&H\\
+H&$3-$&C\\
+C&$4-$&K\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.9\linewidth}
+\begin{itemize}
+    \item Check each subsequent game turn until damage control is performed.
+    \item Do not check on game turns in which the aircraft suffered higher damage from a hit.
+    \item Check twice additionally if the aircraft is at supersonic speeds, regardless of damage control.
+\end{itemize}
+\end{tablenote}
+
+}
 
 \end{onecolumntable}
