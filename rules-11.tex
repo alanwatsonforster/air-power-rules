@@ -1,6 +1,10 @@
 \rulechapter{Visual Sighting}
 
+\x{
 This chapter details the procedures for visual detection and tracking of targets. \addedin{1C}{1C-tables}{The rules are summarized in Table~\ref{table:sighting-rules-summary}}
+}{
+This rule details the procedures for visual detection and identification of targets. The rules are summarized in Table~\ref{table:sighting-rules-summary}.
+}
 
 \addedin{1C}{1C-tables}{
     \input{tables/table-visual-sighting}
@@ -9,10 +13,29 @@ This chapter details the procedures for visual detection and tracking of targets
 \section{Sighting Aircraft and Missiles}
 \label{rule:sighting-aircraft-and-missiles}
 
+\x{
+
 \paragraph{When is Sighting Checked?}  Enemy aircraft and missiles in flight are determined to be sighted or not during the Visual Sighting Phase of every game-turn. Sighting probability is based on range and visibility numbers. Visually aimed weapons may only be fired at sighted aircraft targets.
+}{
+Aircraft and missiles can be visually sighted or unsighted by the opposing aircraft. This is important for many reasons. For example, aircraft may only fire visually aimed weapons, including guns and infrared-homing missiles, at sighted aircraft and may only defensively engage sighted missiles.
 
+\paragraph{Actions in the Visual Sighting Phase.} Each side first declares padlocks of currently sighted opposing aircraft and missiles. Any opposing aircraft or missile that is not padlocked is considered to become unsighted. Each side can then attempt to sight unsighted opposing aircraft and missiles. At the end of the visual sighting phase, the only opposing aircraft and missile that are sighted are those that were padlocked or for which the sighting attempt succeeded. All other opposing aircraft and missile are unsighted.
+
+\paragraph{Duration of Sighting.}
+An aircraft's or missile's status as sighted or unsighted is determined anew in each game turn's visual sighting phase. It then maintains that status until the following game turn's visual sighting phase. A sighted aircraft or missile that enters a blind arc does not immediately cease to be sighted; it remains sighted at least until the following game turn's visual sighting phase.
+
+\paragraph{Sighted or Unsighted by All.}
+If an opposing aircraft or missile is unsighted, it is unsighted by all friendly aircraft. If it is sighted, it is sighted by all of the friendly aircraft, even those that have it in their blind arcs. There are, however, additional restrictions on aircraft carrying out attacks, engaging missiles, and using defensive pre-emptions. These restrictions are given below.
+
+}
+
+\x{
 \paragraph{Visibility Number.} All aircraft, and all missiles in flight have visibility numbers (presented on the ADC for aircraft, and on the missile charts for missiles). The visibility number is used to determine the maximum range for sighting. The Maximum Visual sighting range for a target is 4 times its visibility number.
+}{
+\paragraph{Visibility Number.} An aircraft or a missile in flight has a visibility number, given by the aircraft's ADC and Table~\ref{table:missile-data}. The visibility number determines the maximum range for sighting. During daylight, the maximum visual sighting range to an aircraft or missile is four times its visibility number.
+}
 
+\x{
 \paragraph{Sighting Eligibility.} Any aircraft or missile which is not currently sighted, and is within visibility range, and is not in the blind arc of the searcher, is eligible to be sighted. Count each two levels of altitude as one hex of range.
 
 \paragraph{Visual Sighting Procedure.} In the Visual Sighting Procedure Phase, the friendly aircraft which is closest to\addedin{1B}{1B-apj-23-errata and 1B-apj-35-qa}{, and not blind to or blocked by clouds,} an unsighted or unpadlocked enemy aircraft or missile is used as the reference aircraft for sighting attempts against it. If more than one friendly aircraft is the same distance from an enemy, the searching player may designate which of the friendly aircraft will be the searcher. \addedin{1B}{1B-apj-23-errata and 1B-apj-35-qa}{All aircraft on a side within sighting range \addedin{1B}{1B-apj-25-qa}{of and not blind to an enemy }may participate in the sighting attempt of that enemy even if they were used to padlock other targets in the same sighting phase.}
@@ -29,6 +52,40 @@ Padlocking is an administrative procedure used only in the Visual Sighting Phase
 
 \addedin{1B}{1B-apj-23-qa}{A sighted or padlocked aircraft entering blind arcs is not considered to be unsighted until the start of the next game turn.}
 
+}{
+
+\paragraph{Sighting Range.} The range for sighting is determined normally (see rule~\ref{rule:range}) with one exception: when attempting to sight a higher aircraft in daylight, the vertical range is the difference in altitude levels divided by \emph{four} (rather than two) and rounded down. This is because it is easier to see an aircraft silhouetted against the sky.
+
+\paragraph{Blind and Restricted Arcs.} A pilot's view may be obstructed by their aircraft's rear fuselage and nose. Each aircraft's ADC indicates its blind and restricted arcs (if any). An L after the arc indicates that the aircraft is blinded or restricted only to lower altitude in that arc. An aircraft cannot padlock or attempt to sight targets in its blind arcs. 
+
+An aircraft also cannot attempt to sight targets at the same map location but lower altitude, but it can padlock them (as the padlocking aircraft can roll slightly to keep the target in view). An aircraft may sight or padlock targets at the same map location but higher altitude.
+
+\paragraph{Padlocking Procedure.}
+
+Padlocking allows aircraft to maintain sight of enemy aircraft and missiles.
+
+Normally, a pilot can padlock one target and an observer (or equivalent crewmember) of a multi-crew aircraft can padlock another. The crew quality and characteristics modify how many targets they can padlocks: novice and green crew cannot padlock any and veterans or tactics masters can padlock an additional one. Crewmembers who are disoriented or suffering from GLOC cannot padlock.
+
+For example, a multi-crew aircraft with two veteran crew would be able to declare four padlocks (two for the pilot and two for the observer), but a multi-crew aircraft with a veteran pilot and green observer would only be able to declare two (two for the pilot and none for the observer).
+
+To be eligible for padlocking, a target must have been sighted on the previous game turn and must be within visual sighting range of the padlocking aircraft and not in its blind arc. 
+
+While it is normally not possible to sight lower targets at the same map location, it is possible to padlock them.
+
+\paragraph{Visual Sighting Procedure.}
+
+After padlocking, each side attempts to sight first unsighted opposing missiles and then unsighted opposing aircraft.
+
+For each unsighted opposing target, determine which friendly aircraft can participate in the sighting attempt. To participate, the aircraft must have at least one crewmember who is not disoriented or suffering from GLOC, must be within sighting range, must not have the target in its blind arc, and must not have its line of sight blocked by terrain. 
+
+If no friendly aircraft satisfies these conditions, the unsighted target continues to be unsighted.
+
+Otherwise, of the participating aircraft, determine which is the searcher. This will normally be the participating friendly aircraft that is closest to the target, but if two or more are equally close, their players may designate which is the searcher. Roll a die and apply appropriate modifiers. If the modified result is less than or equal to the target's visibility number, it is sighted.
+
+
+}
+
+\x{
 \paragraph{Modifiers.} The die roll for sighting may be modified by a variety of circumstances. The modifiers available are shown on the \changedin{1C}{1C-tables}{Sighting Charts}{Tables~\ref{table:sighting-range-modifiers}, \ref{table:sighting-position-modifiers}, and \ref{table:sighting-additional-modifiers}} and include:
 
 \begin{itemize}
@@ -50,6 +107,33 @@ Padlocking is an administrative procedure used only in the Visual Sighting Phase
 \paragraph{Look-Up.} When visually searching for aircraft that are higher, count each four levels of altitude difference as one hex of range instead of two. (It is easier to see aircraft outlined against the sky.) 
 \paragraph{Smokers.} Some aircraft are noted on their power charts as being smokers at military power. When military power is used the smoker modifier for sighting attempts against them applies. Some results on the optional damage tables cause aircraft to become smokers regardless of power setting. The modifier applies to them as well.
 }
+}{
+
+\paragraph{Die Roll Modifiers.} The modifiers for the sighting die roll are described here and summarized in Tables~\ref{table:sighting-range-modifiers}, \ref{table:sighting-position-modifiers}, and \ref{table:sighting-additional-modifiers}:
+
+\begin{itemize}
+    \item \itemparagraph{Range.} Apply the modifiers from Table ~\ref{table:sighting-range-modifiers}.
+    \item \itemparagraph{Target Position.} Apply the from Table~\ref{table:sighting-position-modifiers} for altitude of the target relative to the searcher, whether it is in haze or stratus, and whether it is silhouetted by clouds as seen by the searcher. These modifiers depend on the paint scheme of the target.
+    \item \itemparagraph{Target is Smoker} If the target is a smoker, apply the modifiers from Table~\ref{table:sighting-position-modifiers} for altitude of the target relative to the searcher. Some aircraft are noted on their power charts as being smokers at military power. When they use military power, this modifier applies to them. Some results on the optional damage tables cause aircraft to become smokers regardless of power setting. The modifier applies to them too.
+    \item \itemparagraph{Number of Participants.} Apply the modifiers from \ref{table:sighting-additional-modifiers} for the number of aircraft participating in the sighting attempt. 
+    \item \itemparagraph{Restricted Arc.} If the target is in the restricted arcs of \emph{all} of the participants, apply a modifier of $+2$.
+    \item \itemparagraph{Missile Motor.} If the target is a missile whose motor is burning, apply a modifier of $-3$ for a normal motor and $-1$ for a smokeless motor.
+    \item \itemparagraph{Missile Launch.} If the target is a missile just launched from a sighted aircraft or an aircraft that just launched a sighted missile, apply a modifier of $-2$. (For this reason, it is important to attempt to sight missiles before aircraft.)
+    \item \itemparagraph{Target using DDS Flares.} If the target is was using a DDS program with flares in the previous game turn, apply the PPL as a modifier.
+    \item \itemparagraph{Searcher is Multi-Crew.} If the searcher is a multi-crew aircraft,    
+    apply a $-1$ modifier. A searcher with one crewmember who is disoriented or suffering from GLOC does not gain this modifier.
+    \item \itemparagraph{Searcher is in Stratus.} If the searcher is looking out of stratus, apply a modifier of $+2$.
+    \item \itemparagraph{Searcher is a Veteran.} If the searcher is a veteran, apply a modifier of $-1$.
+    \item \itemparagraph{Searcher is a Novice.} If the searcher is a veteran, apply a modifier of $+1$.
+    \item \itemparagraph{Searcher is Green.} If the searcher is a veteran, apply a modifier of $+2$.
+    \item \itemparagraph{Searcher is a Tactics Master.} If the searcher is a tactics master, apply a modifier of $-1$.
+    \item \itemparagraph{Searcher has IRSTS Lock-on and HUD.} If the searcher has an IRSTS lock-on to the target and HUD interface technology, apply a $-1$ modifier.
+    \item \itemparagraph{Searcher has Poor or Good Eyesight.} If the searcher has an poor eyesight, apply a $+1$ modifier, and if they have good eyesight, apply a $-1$ modifier.
+    \item \itemparagraph{Searcher has RWR Indications.} If the searcher has RWR indications, apply a modifier of $-1$.
+
+\end{itemize}
+
+}
 
 \paragraph{Gun and IR Missile Attack Restrictions.} A target aircraft may not be attacked by guns or fired on by IR missiles, unless the attacker has visual sight of the target at the start of his movement\addedin{1B}{1B-apj-36-errata}{, i.e., the target must be spotted by his side, and the target can be neither beyond the attacker's visual sighting range nor in the attacker's blind arc.}. However, if an enemy aircraft moved first and was lost from sight due to entering haze or passing through a stratus layer, it may be followed and attacked.
 
@@ -70,6 +154,7 @@ Padlocking is an administrative procedure used only in the Visual Sighting Phase
 \end{itemize}
 
 \addedin{1B}{1B-apj-36-errata}{\paragraph{Initial Spotting.} When a scenario provides information on initial spotting, this applies to 'game-turn 0'. The normal spotting rules should be followed starting with game-turn 1, taking into account possible padlocks due to previous spotting.}
+
 
 \section{Sighting Ground and Naval Units}
 \label{rule:sighting-ground-and-naval-units}
