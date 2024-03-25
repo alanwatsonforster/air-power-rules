@@ -21,7 +21,7 @@
 
     \miniathex{3.50}{4.25}{
 
-        \changedin{2B}{2B-angle-off-on-hex-side}{
+        \silentlydeletedin{2B}{2B-angle-off-on-hex-side}{
             \begin{scope}[dashed,very thick,->]
                 \miniathex{+0.167}{+0.250}{\draw (0,0) --   (0:10);}
                 \miniathex{+0.500}{+0.750}{\draw (0,0) --  (30:10);}
@@ -36,7 +36,8 @@
                 \miniathex{-0.167}{-0.250}{\draw (0,0) -- (300:10);}
                 \draw (0,0) -- (330:10);
             \end{scope}
-        }{
+        }
+        \silentlyaddedin{2B}{2B-angle-off-on-hex-side}{
             \begin{scope}[dashed,very thick,->]
                 \draw (0,0) --   (0:10);
                 \draw (0,0) --  (30:10);
@@ -77,6 +78,8 @@
     \drawaircraftcounter{3.00}{3.50}{90}{F-4}{C}{3}
 \fi
 \end{tikzfigure}
+
+\notein{2B}{New angle-off figure for 2B-angle-off-on-hex-side.}
 
 \ifaids\else
 
