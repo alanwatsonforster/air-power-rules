@@ -24,7 +24,7 @@
     \newcommand{\earlierversion}{2A}
     \newcommand{\earlierversions}{1A1B1C1D2A}
 }{}
-\IfStrEq{\thisversion}{2Z}{
+\IfStrEq{\thisversion}{2C}{
     \newcommand{\earlierversion}{2B}
     \newcommand{\earlierversions}{1A1B1C1D2A2B}
 }{}
@@ -134,9 +134,10 @@
     \ifearlierversion{#1}{#4}%
 }
 
-\newcommand{\x}[3][AWF]{\changedin{2Z}{#1}{#2}{#3}}
-\newcommand{\Ax}[2][AWF]{\addedin{2Z}{#1}{#2}}
-\newcommand{\Dx}[2][AWF]{\deletedin{2Z}{#1}{#2}}
-\newcommand{\SAx}[2][AWF]{\silentlyaddedin{2Z}{#1}{#2}}
+\newcommand{\x}[3][2C-editing]{\changedin{2C}{#1}{#2}{#3}}
+\newcommand{\Ax}[2][2C-editing]{\addedin{2C}{#1}{#2}}
+\newcommand{\Dx}[2][2C-editing]{\deletedin{2C}{#1}{#2}}
+\newcommand{\SAx}[2][2C-editing]{\silentlyaddedin{2C}{#1}{#2}}
+\newcommand{\IAx}[2][2C-editing]{\itemaddedin{2C}{#1}{#2}}
 
 \renewcommand{\chaptername}{Rule}
