@@ -81,9 +81,11 @@ Many rules depend on the range between two counters. Other than in the exception
 \paragraph{Range Procedure.}
 The range has two components, the horizontal and vertical ranges. They are determined and combined as follows:
 
+\input{figures/figure-range}
+
 \begin{itemize}
 \item
-The horizontal range is the length of the shortest route between the counters, measured in hexes. Moving between a hex side and one of the two adjacent hexes or four adjacent hex sides counts as one-half of a hex. After determining the number of hexes, including half hexes, round down.
+The horizontal range is the length of the shortest route between the map locations, measured in hexes. Moving between a hex side and one of the two adjacent hexes or four adjacent hex sides counts as one-half of a hex, as shown in Figure~\ref{figure:range}. After determining the number of hexes, including half hexes, round down. That is, half hexes can only contribute a full hex to the horizontal range if both the initial and final segments of the route are half hexes.
 \item
 The vertical range is the difference in altitude levels divided by two and rounded down. That is, each two full altitudes levels of difference counts as one hex of vertical range.
 \item
@@ -91,7 +93,7 @@ The range is the sum of the horizontal and the vertical ranges.
 \end{itemize}
 
 \paragraph{Range Exceptions.}
-The normal range procedure is not used in the following cases:
+The normal range procedure is \emph{not} used in the following cases:
 \begin{itemize}
 
 \item
