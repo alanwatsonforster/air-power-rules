@@ -19,7 +19,8 @@ This rule details the procedures for visual detection and identification of targ
 }{
 Aircraft and missiles can be visually sighted or unsighted by the opposing aircraft. This is important for many reasons. For example, aircraft may only fire visually aimed weapons, including guns and infrared-homing missiles, at sighted aircraft and may only defensively engage sighted missiles.
 
-\paragraph{Actions in the Visual Sighting Phase.} Each side first declares padlocks of currently sighted opposing aircraft and missiles. Any opposing aircraft or missile that is not padlocked is considered to become unsighted. Each side can then attempt to sight unsighted opposing aircraft and missiles. At the end of the visual sighting phase, the only opposing aircraft and missile that are sighted are those that were padlocked or for which the sighting attempt succeeded. All other opposing aircraft and missile are unsighted.
+\paragraph{Actions in the Visual Sighting Phase.} 
+Each side first declares padlocks of currently sighted opposing aircraft and missiles. Any opposing aircraft or missile that is not padlocked is considered to become unsighted. Each side can then attempt to sight unsighted opposing aircraft and missiles. At the end of the visual sighting phase, the only opposing aircraft and missiles that are sighted are those that were padlocked or for which the sighting attempt succeeded. All other opposing aircraft and missiles are unsighted.
 
 \paragraph{Duration of Sighting.}
 An aircraft's or missile's status as sighted or unsighted is determined anew in each game turn's visual sighting phase. It then maintains that status until the following game turn's visual sighting phase. A sighted aircraft or missile that enters a blind arc does not immediately cease to be sighted; it remains sighted at least until the following game turn's visual sighting phase.
@@ -64,11 +65,11 @@ An aircraft also cannot attempt to sight targets at the same map location but lo
 
 Padlocking allows aircraft to maintain sight of enemy aircraft and missiles.
 
-Normally, a pilot can padlock one target and an observer (or equivalent crewmember) of a multi-crew aircraft can padlock another. The crew quality and characteristics modify how many targets they can padlocks: novice and green crew cannot padlock any and veterans or tactics masters can padlock an additional one. Crewmembers who are disoriented or suffering from GLOC cannot padlock.
+Normally, a pilot can padlock one target, and an observer (or equivalent crewmember) of a multi-crew aircraft can padlock another. The crew quality and characteristics modify how many targets they can padlock: novice and green crew cannot padlock any, and veterans or tactics masters can padlock an additional one. Crewmembers who are disoriented or suffering from GLOC cannot padlock.
 
 For example, a multi-crew aircraft with two veteran crew would be able to declare four padlocks (two for the pilot and two for the observer), but a multi-crew aircraft with a veteran pilot and green observer would only be able to declare two (two for the pilot and none for the observer).
 
-To be eligible for padlocking, a target must have been sighted on the previous game turn and must be within visual sighting range of the padlocking aircraft and not in its blind arc. 
+To be eligible for padlocking, a target must have been sighted on the previous game turn, must be within visual sighting range of the padlocking aircraft, and must not be in its blind arc. 
 
 While it is normally not possible to sight lower targets at the same map location, it is possible to padlock them.
 
@@ -76,11 +77,11 @@ While it is normally not possible to sight lower targets at the same map locatio
 
 After padlocking, each side attempts to sight first unsighted opposing missiles and then unsighted opposing aircraft.
 
-For each unsighted opposing target, determine which friendly aircraft can participate in the sighting attempt. To participate, the aircraft must have at least one crewmember who is not disoriented or suffering from GLOC, must be within sighting range, must not have the target in its blind arc, and must not have its line of sight blocked by terrain. 
+For each unsighted opposing target, determine which friendly aircraft can participate in the sighting attempt. To participate, the aircraft must have at least one crew member who is not disoriented or suffering from GLOC, must be within sighting range, must not have the target in its blind arc, and must not have its line of sight blocked by terrain. 
 
-If no friendly aircraft satisfies these conditions, the unsighted target continues to be unsighted.
+If no friendly aircraft satisfies these conditions, the unsighted target remains unsighted.
 
-Otherwise, of the participating aircraft, determine which is the searcher. This will normally be the participating friendly aircraft that is closest to the target, but if two or more are equally close, their players may designate which is the searcher. Roll a die and apply appropriate modifiers. If the modified result is less than or equal to the target's visibility number, it is sighted.
+Otherwise, determine which of the participating aircraft is the searcher. This will normally be the participating friendly aircraft closest to the target, but if two or more are equally close, their players may designate which is the searcher. Roll a die and apply appropriate modifiers. The target is sighted if the modified result is less than or equal to the target's visibility number.
 
 
 }
@@ -114,12 +115,12 @@ Otherwise, of the participating aircraft, determine which is the searcher. This 
 \begin{itemize}
     \item \itemparagraph{Range.} Apply the modifiers from Table ~\ref{table:sighting-range-modifiers}.
     \item \itemparagraph{Target Position.} Apply the from Table~\ref{table:sighting-position-modifiers} for altitude of the target relative to the searcher, whether it is in haze or stratus, and whether it is silhouetted by clouds as seen by the searcher. These modifiers depend on the paint scheme of the target.
-    \item \itemparagraph{Target is Smoker} If the target is a smoker, apply the modifiers from Table~\ref{table:sighting-position-modifiers} for altitude of the target relative to the searcher. Some aircraft are noted on their power charts as being smokers at military power. When they use military power, this modifier applies to them. Some results on the optional damage tables cause aircraft to become smokers regardless of power setting. The modifier applies to them too.
+    \item \itemparagraph{Target is Smoker} If the target is a smoker, apply the modifiers from Table~\ref{table:sighting-position-modifiers} for altitude of the target relative to the searcher. Some aircraft are noted on their power charts as being smokers at military power. When they use military power, this modifier applies to them. Some results on the optional damage tables cause aircraft to become smokers regardless of their power setting. The modifier applies to them, too.
     \item \itemparagraph{Number of Participants.} Apply the modifiers from \ref{table:sighting-additional-modifiers} for the number of aircraft participating in the sighting attempt. 
     \item \itemparagraph{Restricted Arc.} If the target is in the restricted arcs of \emph{all} of the participants, apply a modifier of $+2$.
     \item \itemparagraph{Missile Motor.} If the target is a missile whose motor is burning, apply a modifier of $-3$ for a normal motor and $-1$ for a smokeless motor.
     \item \itemparagraph{Missile Launch.} If the target is a missile just launched from a sighted aircraft or an aircraft that just launched a sighted missile, apply a modifier of $-2$. (For this reason, it is important to attempt to sight missiles before aircraft.)
-    \item \itemparagraph{Target using DDS Flares.} If the target is was using a DDS program with flares in the previous game turn, apply the PPL as a modifier.
+    \item \itemparagraph{Target using DDS Flares.} If the target used a DDS program with flares in the previous game turn, apply the PPL as a modifier.
     \item \itemparagraph{Searcher is Multi-Crew.} If the searcher is a multi-crew aircraft,    
     apply a $-1$ modifier. A searcher with one crewmember who is disoriented or suffering from GLOC does not gain this modifier.
     \item \itemparagraph{Searcher is in Stratus.} If the searcher is looking out of stratus, apply a modifier of $+2$.
@@ -128,7 +129,7 @@ Otherwise, of the participating aircraft, determine which is the searcher. This 
     \item \itemparagraph{Searcher is Green.} If the searcher is a veteran, apply a modifier of $+2$.
     \item \itemparagraph{Searcher is a Tactics Master.} If the searcher is a tactics master, apply a modifier of $-1$.
     \item \itemparagraph{Searcher has IRSTS Lock-on and HUD.} If the searcher has an IRSTS lock-on to the target and HUD interface technology, apply a $-1$ modifier.
-    \item \itemparagraph{Searcher has Poor or Good Eyesight.} If the searcher has an poor eyesight, apply a $+1$ modifier, and if they have good eyesight, apply a $-1$ modifier.
+    \item \itemparagraph{Searcher has Poor or Good Eyesight.} If the searcher has poor eyesight, apply a $+1$ modifier, and if they have good eyesight, apply a $-1$ modifier.
     \item \itemparagraph{Searcher has RWR Indications.} If the searcher has RWR indications, apply a modifier of $-1$.
 
 \end{itemize}
