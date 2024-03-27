@@ -136,16 +136,32 @@ Otherwise, determine which of the participating aircraft is the searcher. This w
 
 }
 
+\x{
 \paragraph{Gun and IR Missile Attack Restrictions.} A target aircraft may not be attacked by guns or fired on by IR missiles, unless the attacker has visual sight of the target at the start of his movement\addedin{1B}{1B-apj-36-errata}{, i.e., the target must be spotted by his side, and the target can be neither beyond the attacker's visual sighting range nor in the attacker's blind arc.}. However, if an enemy aircraft moved first and was lost from sight due to entering haze or passing through a stratus layer, it may be followed and attacked.
+}{
+\paragraph{Sighting Restrictions on Gun and IRM Attacks.} 
+A target aircraft may not be attacked by guns (see rule~\ref{rule:air-to-air-gun-combat}) or fired on by IRMs (see rule~\ref{rule:infra-red-heat-seeking-missiles}), unless the target is sighted, not beyond the attacker's visual sighting range, and not in the attacker's blind arc. However, if the target moved first and was lost from sight due to entering haze or passing through a stratus layer, it may be followed and attacked.
+}
 
+\x{
 \paragraph{Sighting and Defensive Preemption (see Chapter 12).} A moving enemy aircraft may not be defensively preempted against unless:
 
 \begin{itemize}
     \item it is sighted and not in the blind arc of the defender when the attacker begins moving, or
     \item the defender has just been fired on by its guns, or
-    \item the attacker is sighted, and both attacker and defender are within spotting range of (and not in the blind or restricted arc of) another friendly aircraft at the start of the defender's movement.
+    \item the attacker is sighted, and both attacker and defender are within spotting range of (and not in the blind or restricted arc of) another friendly aircraft at the start of the \changedin{2B}{2B-pre-emption}{defender's}{attacker's} movement.
 \end{itemize}
+}{
+\paragraph{Sighting Restrictions on Defensive Preemption.}
+A defender may not pre-empt (see rule~\ref{rule:defendive-preemptions}) a moving enemy attacker unless:
+\begin{itemize}
+    \item at the start of the attacker's move, it is sighted, within sighting range of the defender, and not in the blind arc of the defender, or
+    \item at the start of the attacker's move, it is sighted, and both it and the defender are within sighting range of an aircraft friendly to the defender and not in the blind arc of that aircraft, or
+    \item the attacker has just carried out a gun attack on the defender.
+\end{itemize}
+}
 
+\x{
 \paragraph{Sighting \& Defensively Engaging Missiles (see Chapter 14).} An enemy missile may not be defensively engaged unless;
 
 \begin{itemize}
@@ -153,9 +169,21 @@ Otherwise, determine which of the participating aircraft is the searcher. This w
     \item it is sighted, and both defender and missile are within spotting range of (and not in the blind or restricted arc of) another friendly aircraft at the start of the defender's movement.
     \item RWR indications allow the engagement of an unsighted missile.
 \end{itemize}
+}{
+\paragraph{Sighting Restrictions on Defensively Engaging Missiles.} 
+An aircraft may not defensively engage (see rule~\ref{rule:engaging-missiles}) a missile may unless;
+\begin{itemize}
+    \item at the start of the missile's move, it is sighted, within sighting range of the defender, and not in the blind arc of the defender, or
+    \item at the start of the missile's move, it is sighted, and both it and the defender are within sighting range of an aircraft friendly to the defender and not in the blind arc of that aircraft, or
+    \item the target has RWR indications of a missile attack (see rule~\ref{rule:rwr}).
+\end{itemize}
+}
 
+\x{
 \addedin{1B}{1B-apj-36-errata}{\paragraph{Initial Spotting.} When a scenario provides information on initial spotting, this applies to 'game-turn 0'. The normal spotting rules should be followed starting with game-turn 1, taking into account possible padlocks due to previous spotting.}
-
+}{
+\paragraph{Initial Sighting.} If a scenario notes that an aircraft is initially sighted, the aircraft can be padlocked on the first game turn. Other than this, the normal visual sighting rules should be followed.
+}
 
 \section{Sighting Ground and Naval Units}
 \label{rule:sighting-ground-and-naval-units}
