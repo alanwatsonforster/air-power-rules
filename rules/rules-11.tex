@@ -253,6 +253,7 @@ When a camouflaged AAA or SAM unit fires or launches a missile, it becomes “de
 
 \begin{advancedrules}
 
+\x{
 \section{Visual Augmentation Systems (VAS)}
 \label{rule:vas}
 
@@ -262,7 +263,7 @@ Aircraft can be augmented by television and optical equipment to enhance the air
 
 \begin{itemize}
 
-    \item attempt to sight one eligible target already detected by radar (but not locked on) in the searcher's 180{deg} angle off arcs and within 10 times the target's visibility number, or
+    \item attempt to sight one eligible target already detected by radar (but not locked on) in the searcher's 180{\deg} angle off arcs and within 10 times the target's visibility number, or
 
     \item visually search in the limited radar arc within 6 times the target's visibility number for one eligible target (whether previously detected or not).
 
@@ -275,11 +276,36 @@ Ignore multi-crew and HUD interface modifiers. The VAS range modifiers are used 
 \paragraph{Radar/VAS Interface.} An aircraft equipped with VAS may (upon establishing a radar lock) automatically sight one of the locked targets in the next Visual Sighting Phase if it is:
 
 \begin{itemize}
-    \item in the searcher's 180{deg} angle off arc and,
+    \item in the searcher's 180{\deg} angle off arc and,
     \item within 10 times the target's visibility number.
 \end{itemize}
 
 \paragraph{VAS Considerations.} Enemy aircraft sighted by VAS systems are sighted only to the VAS equipped aircraft that specifically saw them and may not be attacked by other aircraft unless also visually sighted by the regular procedure. VAS systems may be used to accomplish target identification. An aircraft that elects to use VAS during the Visual Sighting Phase may not padlock.
+
+}{
+
+\section{VAS}
+\label{rule:vas}
+
+A visual augmentation system (VAS) uses television and optical equipment to enhance the aircraft crew’s ability to sight targets at longer than normal ranges.
+
+\paragraph{VAS Sighting Procedure.} An aircraft with a VAS may conduct a visual search independent of the sighting process or its radar use. It is allowed to do one of the following:
+
+\begin{itemize}
+
+    \item attempt to sight a target already detected by radar in the searcher’s 180{\deg} angle-off arcs and within 10 times the target’s visibility number, or
+
+    \item attempt to sight a target in the searcher’s limited arc and within 6 times the target’s visibility number (whether previously detected or not).
+
+\end{itemize}
+
+In the first case, sighting automatically succeeds if the searcher has a radar lock on the target. Otherwise, roll a die and apply appropriate modifiers. The VAS range modifiers are used instead of the eyesight modifiers, and the multi-crew and HUD modifiers are ignored. The target is sighted if the modified result is less than or equal to the target’s visibility number.
+
+\paragraph{VAS Restrictions.}
+An aircraft that elects to use VAS during the visual sighting phase may not padlock. An aircraft sighted by a VAS system is sighted only to the VAS-equipped aircraft that sighted it and may only be attacked by other aircraft if it is also visually sighted normally.
+
+\paragraph{VAS Considerations.}   VAS systems may be used to accomplish target identification. 
+}
 
 \section{Infra-Red Search and Track Systems (IRSTS)}
 \label{rule:irsts}
@@ -288,14 +314,14 @@ An Infra-Red Search and Track System is capable of passively detecting and track
 
 \paragraph{IRSTS Types.} Two types of IRSTS systems exist: A (Early) and B (Advanced). IRSTS is used in the Radar Search and Lock-On Phase. A single pilot aircraft may use radar or IRSTS in this phase, a multi-crew aircraft may do both. \addedin{1B}{1B-apj-25-qa}{Unlike radar, there are no maneuver-related restrictions on the use of IRSTS.}
 
-\paragraph{Detection.} IRSTS detects heat based on fuel consumption: Detection range equals four times the fuel used number (based on the Fuel column of the Power Chart for the current power setting). The range is doubled if the IRSTS is in the target's 30{deg} arc or less. The target is detected if it is in detection range.
+\paragraph{Detection.} IRSTS detects heat based on fuel consumption: Detection range equals four times the fuel used number (based on the Fuel column of the Power Chart for the current power setting). The range is doubled if the IRSTS is in the target's 30{\deg} arc or less. The target is detected if it is in detection range.
 
 \begin{itemize}
     \item IRSTS-A operates in the limited radar arc of an aircraft.
-    \item IRSTS-B operates in the 180{deg} arc of an aircraft.
+    \item IRSTS-B operates in the 180{\deg} arc of an aircraft.
 \end{itemize}
 
-\paragraph{IRSTS Lock-on.} One lock-on attempt is allowed against the nearest detected target or the target with the highest fuel point use (and consequently the largest IR signature); double the value as seen from 30{deg} arc or less. Roll the die. On a 6 or less for type A or 8 or less for type B, the target is locked-up.
+\paragraph{IRSTS Lock-on.} One lock-on attempt is allowed against the nearest detected target or the target with the highest fuel point use (and consequently the largest IR signature); double the value as seen from 30{\deg} arc or less. Roll the die. On a 6 or less for type A or 8 or less for type B, the target is locked-up.
 
 \paragraph{Lock-on Sighting Benefits.} In the visual sighting phase, an aircraft with an IRSTS lock-on and having HUD interface receives the HUD modifier. Visual Sighting at night is permitted against a locked-on target out to twice the normal range.
 
