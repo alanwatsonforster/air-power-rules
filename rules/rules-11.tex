@@ -293,7 +293,7 @@ A visual augmentation system (VAS) uses television and optical equipment to enha
 
 \begin{itemize}
 
-    \item attempt to sight a target already detected by radar in the searcher’s 180{\deg} angle-off arcs and within 10 times the target’s visibility number, or
+    \item attempt to sight a target already detected by radar in the searcher’s \arcrange{180}{+} angle-off arcs and within 10 times the target’s visibility number, or
 
     \item attempt to sight a target in the searcher’s limited arc and within 6 times the target’s visibility number (whether previously detected or not).
 
@@ -304,9 +304,11 @@ In the first case, sighting automatically succeeds if the searcher has a radar l
 \paragraph{VAS Restrictions.}
 An aircraft that elects to use VAS during the visual sighting phase may not padlock. An aircraft sighted by a VAS system is sighted only to the VAS-equipped aircraft that sighted it and may only be attacked by other aircraft if it is also visually sighted normally.
 
-\paragraph{VAS Considerations.}   VAS systems may be used to accomplish target identification. 
+\paragraph{VAS Considerations.}   VAS systems may be used to accomplish target identification (see rule~\ref{rule:limited-intelligence}).
+
 }
 
+\x{
 \section{Infra-Red Search and Track Systems (IRSTS)}
 \label{rule:irsts}
 
@@ -326,7 +328,30 @@ An Infra-Red Search and Track System is capable of passively detecting and track
 \paragraph{Lock-on Sighting Benefits.} In the visual sighting phase, an aircraft with an IRSTS lock-on and having HUD interface receives the HUD modifier. Visual Sighting at night is permitted against a locked-on target out to twice the normal range.
 
 \paragraph{IR Missile Targeting.} An IRM equipped-fighter with an IRSTS lock-on may launch missiles at the target even if they are not visually spotted (handy at night and in haze).  A Type-B system lock-on allows IRMs to be launched as if IR uncage technology were available even if the fighter does not normally have that technology.
+}{
 
+\section{IRSTS}
+\label{rule:irsts}
+
+An infra-red search and track system (IRSTS) uses infra-red television and optical equipment to enhance the aircraft crew’s ability to sight and track targets using their infra-red emissions. IRSTS operation is not detectable by any aircraft’s ECM or RWR gear. IRSTS can be used to sight aircraft at night and to target IR missiles in a manner similar to IRM uncage technology.
+
+\paragraph{IRSTS Types.} Two types of IRSTS systems exist: 
+\begin{itemize}
+    \item IRSTS-A (early) covers the limited arc and successfully locks-on on a roll of $6-$.
+    \item IRSTS-B (advanced) covers the \arcrange{180}{+} arc and successfully locks-on on a roll of $8-$.
+\end{itemize}
+
+\paragraph{IRSTS Requirements.}  IRSTS is used in the Radar Search and Lock-On Phase. A pilot-only aircraft may use radar or IRSTS in this phase, and a multi-crew aircraft may do both. Unlike radar, there are no maneuver-related restrictions on the use of IRSTS.
+
+\paragraph{IRSTS Detection.} IRSTS detects heat based on fuel consumption: the detection range is four times the number of fuel points used by the target at its current power setting (according to the fuel column in the power chart of the target’s ADC). The range is doubled if the IRSTS is used in the target’s \arcrange{30}{-} arc. The target is automatically detected if it is within the detection range.
+
+\paragraph{IRSTS Lock-on.} One lock-on attempt is allowed against either the nearest detected target or the target with the highest fuel point use. For this purpose, the fuel use is doubled if the IRSTS is used in the target’s \arcrange{30}{-} arc. Roll the die and compare to the lock-on success requirements.
+
+\paragraph{IRSTS Lock-on Sighting Benefits.} When searching for a locked-on target, an aircraft with a HUD interface receives the HUD modifier and can attempt visual sighting at night to twice the normal range.
+
+\paragraph{IRSTS Assist for IRMs.} An aircraft may launch IRMs at a locked-on target even if it is not sighted. (This is handy at night and in haze.) An IRSTS-B allows IRMs to be launched at locked-on targets as if IRM uncage technology were available, even if the fighter does not have that technology.
+
+}
 \section{Limited Intelligence}
 \label{rule:limited-intelligence}
 
