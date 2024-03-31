@@ -1,4 +1,6 @@
 \begin{onecolumntable}
+\x{
+\begin{onecolumntable}
 \tablecaption{table:initiative-modifiers}{Initiative Modifiers}
 \begin{tabular}{ll}
 \toprule
@@ -28,4 +30,44 @@ Side with first kill    &$+1$\\
 Side with most kills    &$+1$\\
 \bottomrule
 \end{tabular}
+\end{onecolumntable}
+}{
+\tablecaption{table:initiative-modifiers}{Initiative Modifiers}
+\begin{tabularx}{0.8\linewidth}{Ll}
+\toprule
+\multicolumn{2}{c}{Kills}\\
+\midrule
+Side with first kill    &$+1$\\
+Side with most kills    &$+1$\\
+\midrule
+\multicolumn{2}{c}{Training Standard}\\
+\midrule
+Excellent               &$+2$\\
+Good                    &$+1$\\
+Average                 &$+0$\\
+Limited                 &$-1$\\
+Poor                    &$-2$\\
+\midrule
+\multicolumn{2}{c}{Pilot$^*$}\\
+\midrule
+Veteran                 &$+1$\\
+Regular                 &$+0$\\
+Novice                  &$-1$\\
+Green                   &$-2$\\
+Excellent confidence    &$+1$\\
+Poor confidence         &$-1$\\
+Sierra Hotel            &$+1$\\
+Tactics master          &$+1$\\
+Combat hero             &$+1$\\
+\midrule
+\multicolumn{2}{c}{Formations$^*$}\\
+\midrule
+Non-veteran not in formation&$-1$\\
+Winger with initiative less than leader&$+1$\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.8\linewidth}
+$^*$ Advanced rule.
+\end{tablenote}
+}
 \end{onecolumntable}
