@@ -3,11 +3,7 @@
 \x{
 This chapter details the procedures for visual detection and tracking of targets. \addedin{1C}{1C-tables}{The rules are summarized in Table~\ref{table:sighting-rules-summary}}
 }{
-This rule details the procedures for visual detection and identification of targets. The rules are summarized in Table~\ref{table:sighting-rules-summary}.
-}
-
-\addedin{1C}{1C-tables}{
-    \input{tables/table-visual-sighting}
+This rule details the procedures for visual detection and identification of targets.
 }
 
 \section{Sighting Aircraft and Missiles}
@@ -33,7 +29,7 @@ If an opposing aircraft or missile is unsighted, it is unsighted by all friendly
 \x{
 \paragraph{Visibility Number.} All aircraft, and all missiles in flight have visibility numbers (presented on the ADC for aircraft, and on the missile charts for missiles). The visibility number is used to determine the maximum range for sighting. The Maximum Visual sighting range for a target is 4 times its visibility number.
 }{
-\paragraph{Visibility Number.} An aircraft or a missile in flight has a visibility number, given by the aircraft's ADC and Table~\ref{table:missile-data}. The visibility number determines the maximum range for sighting. During daylight, the maximum visual sighting range to an aircraft or missile is four times its visibility number.
+\paragraph{Visibility Number.} An aircraft or a missile in flight has a visibility number, given for aircraft by the ADC and for missiles by Table~\ref{table:missile-data}. The visibility number determines the maximum range for sighting. During daylight, the maximum visual sighting range to an aircraft or missile is four times its visibility number.
 }
 
 \x{
@@ -65,13 +61,19 @@ An aircraft also cannot attempt to sight targets at the same map location but lo
 
 Padlocking allows aircraft to maintain sight of enemy aircraft and missiles.
 
-Normally, a pilot can padlock one target, and an observer (or equivalent crewmember) of a multi-crew aircraft can padlock another. The crew quality and characteristics modify how many targets they can padlock: novice and green crew cannot padlock any, and veterans or tactics masters can padlock an additional one. Crewmembers who are disoriented or suffering from GLOC cannot padlock.
+If advanced rule~\ref{rule:crew-quality} on crew quality is not being used, a pilot can padlock one target, and an observer (or equivalent crewmember) of a multi-crew aircraft can padlock another. If it is being used, the crew quality and characteristics determine how many targets they can padlock: a novice or green crewmember cannot padlock any, a regular can padlock one, and a veteran or tactics master can padlock two (see Table~\ref{table:padlocks}). 
 
-For example, a multi-crew aircraft with two veteran crew would be able to declare four padlocks (two for the pilot and two for the observer), but a multi-crew aircraft with a veteran pilot and green observer would only be able to declare two (two for the pilot and none for the observer).
+Crewmembers who are disoriented or suffering from GLOC cannot padlock.
+
+For example, a multi-crew aircraft with two veteran crewmembers would be able to declare four padlocks (two for the pilot and two for the observer), but a multi-crew aircraft with a veteran pilot and green observer would only be able to declare two (two for the pilot and none for the observer).
 
 To be eligible for padlocking, a target must have been sighted on the previous game turn, must be within visual sighting range of the padlocking aircraft, and must not be in its blind arc. 
 
 While it is normally not possible to sight lower targets at the same map location, it is possible to padlock them.
+
+\addedin{1C}{1C-tables}{
+    \input{tables/table-visual-sighting}
+}
 
 \paragraph{Visual Sighting Procedure.}
 
@@ -85,6 +87,8 @@ Otherwise, determine which of the participating aircraft is the searcher. This w
 
 
 }
+
+\input{tables/table-visual-sighting-modifiers}
 
 \x{
 \paragraph{Modifiers.} The die roll for sighting may be modified by a variety of circumstances. The modifiers available are shown on the \changedin{1C}{1C-tables}{Sighting Charts}{Tables~\ref{table:sighting-range-modifiers}, \ref{table:sighting-position-modifiers}, and \ref{table:sighting-additional-modifiers}} and include:
@@ -114,22 +118,22 @@ Otherwise, determine which of the participating aircraft is the searcher. This w
 
 \begin{itemize}
     \item \itemparagraph{Range.} Apply the modifiers from Table ~\ref{table:sighting-range-modifiers}.
-    \item \itemparagraph{Target Position.} Apply the from Table~\ref{table:sighting-position-modifiers} for altitude of the target relative to the searcher, whether it is in haze or stratus, and whether it is silhouetted by clouds as seen by the searcher. These modifiers depend on the paint scheme of the target.
+    \item \itemparagraph{Target Position.} Apply the from Table~\ref{table:sighting-position-modifiers} for altitude of the target relative to the searcher, whether it is in haze or stratus, and whether it is silhouetted against clouds as seen by the searcher. These modifiers depend on the paint scheme of the target.
     \item \itemparagraph{Target is Smoker} If the target is a smoker, apply the modifiers from Table~\ref{table:sighting-position-modifiers} for altitude of the target relative to the searcher. Some aircraft are noted on their power charts as being smokers at military power. When they use military power, this modifier applies to them. Some results on the optional damage tables cause aircraft to become smokers regardless of their power setting. The modifier applies to them, too.
     \item \itemparagraph{Number of Participants.} Apply the modifiers from \ref{table:sighting-additional-modifiers} for the number of aircraft participating in the sighting attempt. 
     \item \itemparagraph{Restricted Arc.} If the target is in the restricted arcs of \emph{all} of the participants, apply a modifier of $+2$.
-    \item \itemparagraph{Missile Motor.} If the target is a missile whose motor is burning, apply a modifier of $-3$ for a normal motor and $-1$ for a smokeless motor.
-    \item \itemparagraph{Missile Launch.} If the target is a missile just launched from a sighted aircraft or an aircraft that just launched a sighted missile, apply a modifier of $-2$. (For this reason, it is important to attempt to sight missiles before aircraft.)
-    \item \itemparagraph{Target using DDS Flares.} If the target used a DDS program with flares in the previous game turn, apply the PPL as a modifier.
+    \item \itemparagraph{Missile Motor.} If the target is a missile whose boost or sustainer motor burned in the previous game turn, apply a modifier of $-3$ for a normal motor and $-1$ for a smokeless motor.
+    \item \itemparagraph{Missile Launch.} If the target is a missile launched from a sighted aircraft in the previous game turn or an aircraft that launched a sighted missile in the previous game turn, apply a modifier of $-2$. (For these modifiers, it is important to attempt to sight missiles before aircraft.)
+    \item \itemparagraph{Target using DDS Flares.} If the target used a DDS program with flares in the previous game turn (see rule~\ref{rule:dds}), apply the PPL as a modifier.
     \item \itemparagraph{Searcher is Multi-Crew.} If the searcher is a multi-crew aircraft,    
     apply a $-1$ modifier. A searcher with one crewmember who is disoriented or suffering from GLOC does not gain this modifier.
     \item \itemparagraph{Searcher is in Stratus.} If the searcher is looking out of stratus, apply a modifier of $+2$.
     \item \itemparagraph{Searcher is a Veteran.} If the searcher is a veteran, apply a modifier of $-1$.
     \item \itemparagraph{Searcher is a Novice.} If the searcher is a veteran, apply a modifier of $+1$.
     \item \itemparagraph{Searcher is Green.} If the searcher is a veteran, apply a modifier of $+2$.
+    \item \itemparagraph{Searcher has Poor or Good Eyesight.} If the searcher has poor eyesight, apply a $+1$ modifier, and if they have good eyesight, apply a $-1$ modifier.
     \item \itemparagraph{Searcher is a Tactics Master.} If the searcher is a tactics master, apply a modifier of $-1$.
     \item \itemparagraph{Searcher has IRSTS Lock-on and HUD.} If the searcher has an IRSTS lock-on to the target and HUD interface technology, apply a $-1$ modifier.
-    \item \itemparagraph{Searcher has Poor or Good Eyesight.} If the searcher has poor eyesight, apply a $+1$ modifier, and if they have good eyesight, apply a $-1$ modifier.
     \item \itemparagraph{Searcher has RWR Indications.} If the searcher has RWR indications, apply a modifier of $-1$.
 
 \end{itemize}
