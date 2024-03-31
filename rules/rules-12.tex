@@ -1,10 +1,15 @@
 \rulechapter{Order of Flight}
 
+\x{
 This chapter covers the procedures which determine the order in which aircraft move during the flight phase. In play, aircraft are moved one at a time based on which has a higher initiative and/or position of advantage.
+}{
+This rule covers the procedures which determine the order in which aircraft move during the flight phase. Aircraft are moved one at a time based on their advantage category and initiative score.
+}
 
 \section{Initiative}
 \label{rule:initiative}
 
+\x{
 At the start of each game-turn, each side rolls the die to establish a base Initiative number of from 1 to 10. Each aircraft takes this base number and modifies it for any of the applicable reasons given below. The modified number becomes the individual aircraft's initiative and is noted on the initiative line of the aircraft log.
 
 Within a given category of advantage (as explained below) the aircraft with the lowest initiative number will move first followed by the next lowest numbered aircraft and so on. Whenever multiple aircraft have the same initiative number after modification, each again rolls a die. No modifiers apply and the lower roll moves first.
@@ -25,7 +30,34 @@ Within a given category of advantage (as explained below) the aircraft with the 
 
     \item\itemparagraph{Crew Quality.} See Chapter 18 for the crew quality effects on Initiative.
 \end{itemize}
+}{
+\paragraph{Initiative Procedure.} In the order of flight determination phase of every game turn, each side rolls the die to establish its base initiative. Each aircraft takes its side’s base initiative and modifies it for the reasons given below. The modified number becomes the individual aircraft’s initiative and is noted on the initiative line of the aircraft log.
 
+Within a given advantage category (as explained below), the aircraft with the lowest initiative moves first, followed by the one with the next lowest, and so on. 
+
+Within a given advantage category, if two or more aircraft have the same initiative, each rolls a die again. No modifiers apply. The aircraft with the lowest roll moves first, followed by the one with the next lowest, and so on.
+
+\paragraph{Initiative Modifiers.} Initiative die rolls are modified by the factors listed below and in Table~\ref{table:initiative-modifiers}. All modifiers are cumulative.
+
+\addedin{1C}{1C-tables}{
+    \input{tables/table-initiative}
+}
+
+\begin{itemize}
+
+   \item\itemparagraph{First Kill.} The side which achieves the first aircraft kill in the scenario receives a modifier of $+1$.
+
+    \item\itemparagraph{Most Kills.} The side having the most kills at any point in the scenario receives a modifier of $+1$.
+
+    \item\itemparagraph{Training Standard.} The level of training for the pilot provides a modifier to the initiative roll. The scenario will indicate the training standard.
+
+    \item\itemparagraph{Crew Quality.} If advanced rule~\ref{rule:crew-quality} on crew quality is being used, the quality, attributes, and characteristics of the pilot modify the initiative according to Table~\ref{table:initiative-modifiers}.
+
+	\item\itemparagraph{Formations.} If advanced rule~\ref{rule:formations} on formations is being used, a winger in a tactical formation with an initiative that is less than that of the formation’s leader may add one to its initiative (reflecting teamwork and radio calls) and an aircraft not in a close or tactical formation subtracts one from its initiative unless at least one of its crewmembers is a veteran.
+
+\end{itemize}
+
+}
 \section{Positions of Advantage}
 \label{rule:positions-of-advantage}
 
