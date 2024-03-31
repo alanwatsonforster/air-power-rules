@@ -289,6 +289,8 @@ Ignore multi-crew and HUD interface modifiers. The VAS range modifiers are used 
 
 A visual augmentation system (VAS) uses television and optical equipment to enhance the aircraft crew’s ability to sight targets at longer than normal ranges.
 
+% ISSUE: If an aircraft conducts a VAS search, can it also conduct a normal search? It cannot padlock. Does "independent" here mean "in additon to participating in normal searches" or "instead of participating in normal searches"?
+
 \paragraph{VAS Sighting Procedure.} An aircraft with a VAS may conduct a visual search independent of the sighting process or its radar use. It is allowed to do one of the following:
 
 \begin{itemize}
@@ -356,6 +358,8 @@ An infra-red search and track system (IRSTS) uses infra-red television and optic
 \section{Limited Intelligence}
 \label{rule:limited-intelligence}
 
+\x{
+
 Some scenarios allow players to start with aircraft types unknown to their opponent or they restrict one side (or both sides) from firing until an unknown aircraft is identified.
 
 \paragraph{Aircraft Identification.} A sighted aircraft is identified:
@@ -375,6 +379,43 @@ Some scenarios allow players to start with aircraft types unknown to their oppon
 Note: IFF ECM gear may help determine if an aircraft is friendly but it does not identify them.
 
 \paragraph{Missile Identification.} A missile's type is not revealed until it has been defeated by decoys or until it attacks a target. If a missile misses, the type need not be revealed until the end of the game. At missile launch, the target aircraft's player should be told only that he is the target of a missile. If the missile is AHM and the target aircraft has an RWR capable of detecting an AHM in active mode, he must be told that the missile is an AHM when it goes active. A player's aircraft may use radar lock-ons and target illumination procedures to confuse the enemy player even if he launches only IR missiles.
+
+}{
+
+Some scenarios allow players to employ aircraft types unknown to their opponent or restrict them from firing until an opposing aircraft is identified.
+
+\paragraph{Aircraft Identification.} A sighted enemy aircraft is identified:
+
+\begin{itemize}
+
+    \item Automatically, when its range to a friendly aircraft is within twice its visibility number.
+
+    \item Automatically, when its range to a friendly aircraft is within 4 times its visibility number, and it is in the \arcrange{180}{+} arc of that aircraft.
+
+    \item On a roll of $7-$, when its range to a friendly aircraft is within 10 times its visibility number and it is in the \arcrange{180}{+} arc of that aircraft.
+
+    \item Automatically, when it begins its second turn with a radar lock-on from an aircraft with Target ID technology.
+
+\end{itemize}
+
+IFF may help determine if an aircraft is friendly, but it does not identify them.
+
+\paragraph{Missile Identification.} 
+When an aircraft is the target of a missile, the target's player is given only the following information:
+
+% ISSUE: Is a "type" the specific missile model (e.g., AIM-9L) or the generic seeker type (e.g, IRM)?
+
+\begin{itemize}
+    \item Which aircraft is the target, when the missile is launched.
+    \item The missile is an active AHM, when an AHM goes active and if the target has a RWR capable of detecting this.
+    \item The missile type, if decoys defeat it.
+    \item The missile type, if it hits.
+\end{itemize}
+
+If the missile attacks and misses, its type need not be revealed until the end of the game.
+
+Aircraft may use radar lock-ons and target illumination to confuse the enemy even if they launch only IRMs.
+}
 
 [Text on air-to-ground combat not yet incorporated.]
 
