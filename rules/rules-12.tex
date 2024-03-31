@@ -169,7 +169,9 @@ This list appears in order from the lowest advantage category to highest. When d
     \item If the enemy aircraft is higher, the aircraft must not be in a vertical dive.
 \end{itemize}
 
-Additionally, an aircraft in a vertical dive may not have a position of advantage over a higher aircraft but may have a position of advantage over an aircraft at the same or lower altitude. An aircraft in a vertical climb may have a position of advantage over an aircraft at lower, the same, or higher altitude.
+Additionally, an aircraft in a vertical dive may not hold a position of advantage over a higher aircraft but may hold a position of advantage over an aircraft at the same or lower altitude. An aircraft in a vertical climb may hold a position of advantage over an aircraft at lower, the same, or higher altitude.
+
+A tailing aircraft (see rule~\ref{rule:tailing-enemy-aircraft}) is considered to hold a position of advantage over the aircraft it is tailing but cannot hold a position of advantage over other aircraft. Other aircraft may consider or not the tailing aircraft, as they so desire.
 
 \section{Order Of Flight} 
 
@@ -193,6 +195,7 @@ The following three exceptions apply to the order of flight:
 \section{Tailing Enemy Aircraft}
 \label{rule:tailing-enemy-aircraft}
 
+\x{
 A Free aircraft ending its flight stacked in the same position as an enemy aircraft which has already moved that turn may declare that it is tailing the enemy provided:
 
 \begin{itemize}
@@ -205,9 +208,26 @@ A Free aircraft ending its flight stacked in the same position as an enemy aircr
 
 \paragraph{Advantages of Tailing.} An aircraft electing to “tail” an enemy will not collide with it. Tailing negates collisions. An aircraft tailing another will always move after the tailee thus avoiding an overshoot, which could occur otherwise if it were not tailing and ended up with a lower initiative number on the following turn.
 
-\paragraph{Limits on Tailing.} No more than one friendly aircraft may ever tall a given enemy, but the friendly aircraft could in turn be tailed by another enemy which moves later that turn. No more than three aircraft\addedin{2A}{MP in v2.4}{ may be part of a multi-aircraft tailing}.  Multiple tailings in a hex/hexside may occur as long as each pursuer meets this criteria.
+\paragraph{Limits on Tailing.} No more than one friendly aircraft may ever tail a given enemy, but the friendly aircraft could in turn be tailed by another enemy which moves later that turn. No more than three aircraft\addedin{2A}{MP in v2.4}{ may be part of a multi-aircraft tailing}.  Multiple tailings in a hex/hexside may occur as long as each pursuer meets this criteria.
 
 \paragraph{Effects On Positions Of Advantage.} The tailing aircraft is considered advantaged over the tailee but is not allowed to disadvantage any other enemy aircraft since it is concentrating on the pursuit. The tailing aircraft moves immediately after the pursued aircraft does regardless of normal initiative numbers. Other aircraft may consider or ignore a tailing aircraft for purposes of determining order of flight depending on what would be more advantageous to them.
+}{
+A free aircraft ending its flight stacked in the same position as an enemy aircraft that has already moved that turn may declare that it is tailing the enemy provided:
+
+\begin{itemize}
+
+    \item Its facing is within 60{\deg} of the enemy's, and
+    
+    \item Its start speed \addedin{1B}{1B-tailing}{for the next game turn }is not more than 1.0 greater than the enemy's.
+
+\end{itemize}
+
+\paragraph{Advantages of Tailing.} An aircraft tailing an enemy will not collide with it. It also moves after the enemy (which can help to avoid an overshoot).
+
+\paragraph{Limits on Tailing.} No more than one friendly aircraft may tail a given enemy, but a tailing friendly aircraft can, in turn, be tailed by another enemy aircraft. At most three aircraft may be in such a tailing chain. However, multiple tailings may occur at the same position.
+
+\paragraph{Effects On Positions Of Advantage.} The tailing aircraft is considered to have a position of advantage over the aircraft it is tailing but cannot hold a position of advantage over other enemy aircraft since it is concentrating on the pursuit. Other aircraft may consider or ignore a tailing aircraft when determining positions of advantage, as they so desire.
+}
 
 \section{Defensive Preemptions}
 \label{rule:defensive-preemptions}
