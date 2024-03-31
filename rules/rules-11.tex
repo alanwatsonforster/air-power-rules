@@ -284,7 +284,7 @@ Ignore multi-crew and HUD interface modifiers. The VAS range modifiers are used 
 
 }{
 
-\section{VAS}
+\section{Visual Augmentation Systems}
 \label{rule:vas}
 
 A visual augmentation system (VAS) uses television and optical equipment to enhance the aircraft crew’s ability to sight targets at longer than normal ranges.
@@ -332,18 +332,18 @@ An Infra-Red Search and Track System is capable of passively detecting and track
 \paragraph{IR Missile Targeting.} An IRM equipped-fighter with an IRSTS lock-on may launch missiles at the target even if they are not visually spotted (handy at night and in haze).  A Type-B system lock-on allows IRMs to be launched as if IR uncage technology were available even if the fighter does not normally have that technology.
 }{
 
-\section{IRSTS}
+\section{Infra-Red Search and Track Systems}
 \label{rule:irsts}
 
 An infra-red search and track system (IRSTS) uses infra-red television and optical equipment to enhance the aircraft crew’s ability to sight and track targets using their infra-red emissions. IRSTS operation is not detectable by any aircraft’s ECM or RWR gear. IRSTS can be used to sight aircraft at night and to target IR missiles in a manner similar to IRM uncage technology.
 
-\paragraph{IRSTS Types.} Two types of IRSTS systems exist: 
+\paragraph{IRSTS Types.} Two types of IRSTS exist: 
 \begin{itemize}
     \item IRSTS-A (early) covers the limited arc and successfully locks-on on a roll of $6-$.
     \item IRSTS-B (advanced) covers the \arcrange{180}{+} arc and successfully locks-on on a roll of $8-$.
 \end{itemize}
 
-\paragraph{IRSTS Requirements.}  IRSTS is used in the Radar Search and Lock-On Phase. A pilot-only aircraft may use radar or IRSTS in this phase, and a multi-crew aircraft may do both. Unlike radar, there are no maneuver-related restrictions on the use of IRSTS.
+\paragraph{IRSTS Requirements.}  IRSTS is used in the Radar Search and Lock-On Phase. A pilot-only aircraft may use either radar or IRSTS in this phase, and a multi-crew aircraft may do both. Unlike radar, there are no maneuver-related restrictions on the use of IRSTS.
 
 \paragraph{IRSTS Detection.} IRSTS detects heat based on fuel consumption: the detection range is four times the number of fuel points used by the target at its current power setting (according to the fuel column in the power chart of the target’s ADC). The range is doubled if the IRSTS is used in the target’s \arcrange{30}{-} arc. The target is automatically detected if it is within the detection range.
 
@@ -382,7 +382,7 @@ Note: IFF ECM gear may help determine if an aircraft is friendly but it does not
 
 }{
 
-Some scenarios allow players to employ aircraft types unknown to their opponent or restrict them from firing until an opposing aircraft is identified.
+Some scenarios allow players to employ aircraft types unknown to their opponent or restrict them from firing until an aircraft is identified.
 
 \paragraph{Aircraft Identification.} A sighted enemy aircraft is identified:
 
@@ -390,15 +390,15 @@ Some scenarios allow players to employ aircraft types unknown to their opponent 
 
     \item Automatically, when its range to a friendly aircraft is within twice its visibility number.
 
-    \item Automatically, when its range to a friendly aircraft is within 4 times its visibility number, and it is in the \arcrange{180}{+} arc of that aircraft.
+    \item Automatically, when its range to a VAS-equipped friendly aircraft is within 4 times its visibility number, and it is in the \arcrange{180}{+} arc of that aircraft.
 
-    \item On a roll of $7-$, when its range to a friendly aircraft is within 10 times its visibility number and it is in the \arcrange{180}{+} arc of that aircraft.
+    \item On a roll of $7-$, when its range to a VAS-equipped friendly aircraft is within 10 times its visibility number, and it is in the \arcrange{180}{+} arc of that aircraft.
 
     \item Automatically, when it begins its second turn with a radar lock-on from an aircraft with Target ID technology.
 
 \end{itemize}
 
-IFF may help determine if an aircraft is friendly, but it does not identify them.
+IFF may help determine if an aircraft is friendly, but does not identify it (see rule~\ref{rule:iff}).
 
 \paragraph{Missile Identification.} 
 When an aircraft is the target of a missile, the target's player is given only the following information:
