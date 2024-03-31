@@ -58,6 +58,10 @@ Within a given advantage category, if two or more aircraft have the same initiat
 \end{itemize}
 
 }
+
+
+\x{
+
 \section{Positions of Advantage}
 \label{rule:positions-of-advantage}
 
@@ -73,11 +77,11 @@ An aircraft with an “advantage” over an enemy aircraft is better positioned 
 
     \item\itemparagraph{Engaged.} An aircraft (not installed or departed flight) which is actively defending itself against missiles.
 
-    \item\itemparagraph{Disadvantaged.} A spotted aircraft in the 150{deg} or 180{deg} angle-off arc of an enemy that is advantaged over it.
+    \item\itemparagraph{Disadvantaged.} A spotted aircraft in the 150{\deg} or 180{\deg} angle-off arc of an enemy that is advantaged over it.
 
     \item\itemparagraph{Nonadvantaged.} A spotted aircraft that is neither advantaged nor disadvantaged. This category includes an aircraft which has an advantage over another aircraft but is also disadvantaged by the same or a different aircraft.
 
-    \item\itemparagraph{Advantaged.} An aircraft which has a spotted enemy aircraft in its 150{deg} or 180{deg} angle off arc within 9 hexes and not more than 6 altitude levels above or 9 altitude levels below it. \addedin{1B}{1B-apj-36-errata}{An aircraft may be more than 9 hexes range away from an aircraft it is advantaged over, the 9 hex limit applies only to horizontal range.}
+    \item\itemparagraph{Advantaged.} An aircraft which has a spotted enemy aircraft in its 150{\deg} or 180{\deg} angle off arc within 9 hexes and not more than 6 altitude levels above or 9 altitude levels below it. \addedin{1B}{1B-apj-36-errata}{An aircraft may be more than 9 hexes range away from an aircraft it is advantaged over, the 9 hex limit applies only to horizontal range.}
 
     \item\itemparagraph{Unspotted.} An aircraft not visually spotted by any enemy aircraft.
 
@@ -94,7 +98,7 @@ This list is read in order, and an aircraft is categorized by the first situatio
 \changedin{2A}{2A-advantage}{\addedin{1B}{1B-apj-23-errata}{Aircraft in vertical climbs or vertical dives may not disadvantage aircraft that are lower or higher than them, respectively.}}{An aircraft in a vertical dive may not disadvantage higher aircraft, but may disadvantage aircraft at the same or lower altitude. An aircraft in a vertical climb may disadvantage aircraft at lower, the same, or higher altitude.
 }
 
-\addedin{1B}{1B-apj-23-errata}{Aircraft in the same hex, regardless of relative altitudes, have no effect on each other advantage-wise unless one is tailing another.}
+\addedin{1B}{1B-apj-23-errata}{Aircraft in the same \changedin{2B}{2B-same-location-advantage}{hex}{map location}, regardless of relative altitudes, have no effect on each other advantage-wise unless one is tailing another.}
 
 \paragraph{Order Of Flight.} Each turn, aircraft will move sequentially during the Flight Phase by category. Categories are executed in the order shown above in the categories list (for example, all departed aircraft move first, then all stalled aircraft, etc.). Initiative is used to determine the order of movement of aircraft within each category. Missiles move when their target moves.
 
@@ -110,6 +114,82 @@ This list is read in order, and an aircraft is categorized by the first situatio
     
 \end{enumerate}
 
+}{
+
+\section{Advantage Categories}
+\label{rule:positions-of-advantage}
+
+An aircraft positioned to the rear of an enemy is often more able to maneuver against, react to, and attack that enemy. The game reflects this ability by the concept of advantage categories, which depend largely on whether an aircraft is controlled and its position relative to opposing aircraft. An aircraft normally moves after those with lower advantage categories, so it benefits from seeing its enemy’s moves before it moves.
+
+\paragraph{Advantage Categories.} Each turn, an aircraft will fall into one of the following advantage categories:
+
+\begin{itemize}
+
+    \item\itemparagraph{Departed.} The aircraft is in departed flight.
+
+    \item\itemparagraph{Stalled.} The aircraft is in stalled flight.
+
+    \item\itemparagraph{Engaged.} The aircraft is actively defending itself against missiles.
+
+    \item\itemparagraph{Disadvantaged.} 
+    The aircraft is sighted and does not hold a position of advantage over any enemy aircraft, and at least one enemy aircraft holds a position of advantage over it.
+    
+    \item\itemparagraph{Nonadvantaged.} This category includes two types of aircraft. 
+    \begin{itemize}
+        \item The aircraft is sighted and does not hold a position of advantage over any enemy aircraft, and no enemy aircraft holds a position of advantage over it.
+        \item The aircraft is sighted and holds a position of advantage over at least one enemy aircraft, and at least one enemy aircraft holds a position of advantage over it.
+    \end{itemize}
+
+    \item\itemparagraph{Advantaged.} 
+    The aircraft is sighted and holds a position of advantage over at least one enemy aircraft, and no enemy aircraft holds a position of advantage over it.
+
+    \item\itemparagraph{Unsighted.} The aircraft is not sighted by any enemy aircraft.
+
+    \item\itemparagraph{Undetected.} The aircraft is neither detected by radar nor sighted.
+
+\end{itemize}
+
+\Ax{
+    \input{tables/table-advantage}
+}
+
+This list appears in order from the lowest advantage category to highest. When determining an aircraft’s advantage category, it is read in order, and the aircraft is categorized by the first situation that applies. 
+
+\paragraph{Free Aircraft.} Any aircraft not departed, stalled, or engaged is termed a “free” aircraft. Only a free aircraft can hold a position of advantage over non-free aircraft. Non-free aircraft cannot hold a position of advantage over any aircraft.
+
+% ISSUE: Should non-free aircraft enter into the determination of advantage? They are going to move first anyway. At the moment, a free aircraft can gain a position of advantage over a non-free aircraft and thereby elevate its advantage category. Perhaps position of advantage should only be determined among the free aircraft.
+
+\paragraph{Position of Advantage.} An aircraft has a position of advantage over an enemy aircraft if:
+\begin{itemize}
+    \item It is free.
+    \item The enemy aircraft is in its \arcrange{150}{+} arc.
+    \item The enemy aircraft does not have the same map location.
+    \item The horizontal range to the enemy aircraft is no more than 9 hexes.
+    \item The enemy aircraft is no more than 6 altitude levels higher or 9 altitude levels lower.
+    \item If the enemy aircraft is higher, the aircraft must not be in a vertical dive.
+\end{itemize}
+
+Additionally, an aircraft in a vertical dive may not have a position of advantage over a higher aircraft but may have a position of advantage over an aircraft at the same or lower altitude. An aircraft in a vertical climb may have a position of advantage over an aircraft at lower, the same, or higher altitude.
+
+\section{Order Of Flight} 
+
+Aircraft normally move sequentially during the flight phase, and are ordered first by their advantage category and then by their initiative. Advantage categories are considered in the order shown above. For example, all departed aircraft move first, then all stalled aircraft, and so on. Within each advantage category, initiative is used to determine the order of movement of aircraft. Missiles move when their target moves.
+
+The following three exceptions apply to the order of flight:
+
+\begin{enumerate}
+
+    \item\itemparagraph{Illuminating Aircraft.} An aircraft performing radar illumination for a radar-guided missile moves at the same time as the missile’s target regardless of its original category (see rule~\ref{rule:target-illumination}). This may cause a rearrangement of the order of flight to resolve missile shoot-outs when opposing aircraft target and illuminate each other.
+
+    \item\itemparagraph{Tailing Aircraft.} An aircraft tailing another moves immediately after the aircraft it is tailing (see rule~\ref{rule:tailing-enemy-aircraft}).
+
+    \item\itemparagraph{Preempting Aircraft.} Aircraft that have not yet moved in a game turn and which are threatened by an aircraft currently moving may attempt to evade the attacker by defensively preempting (see rule~\ref{rule:defensive-preemptions}).
+    
+\end{enumerate}
+
+
+}
+
 \section{Tailing Enemy Aircraft}
 \label{rule:tailing-enemy-aircraft}
 
@@ -117,7 +197,7 @@ A Free aircraft ending its flight stacked in the same position as an enemy aircr
 
 \begin{itemize}
 
-    \item The tailing aircraft's facing is within 60{deg} of the tailee's, and
+    \item The tailing aircraft's facing is within 60{\deg} of the tailee's, and
     
     \item The tailing aircraft's start speed \addedin{1B}{1B-tailing}{for the next game turn }is not more than 1.0 greater than the tailee's.
 
@@ -130,13 +210,13 @@ A Free aircraft ending its flight stacked in the same position as an enemy aircr
 \paragraph{Effects On Positions Of Advantage.} The tailing aircraft is considered advantaged over the tailee but is not allowed to disadvantage any other enemy aircraft since it is concentrating on the pursuit. The tailing aircraft moves immediately after the pursued aircraft does regardless of normal initiative numbers. Other aircraft may consider or ignore a tailing aircraft for purposes of determining order of flight depending on what would be more advantageous to them.
 
 \section{Defensive Preemptions}
-\label{rule:defendive-preemptions}
+\label{rule:defensive-preemptions}
 
 Due to the rule that allows gunfire during movement, it often happens that aircraft with a higher Initiative, which are waiting to move, get attacked by those supposedly at a disadvantage which are moving first. This rule allows aircraft with the higher Initiative, to react to such threats by preempting the movement of those enemy aircraft.
 
 \paragraph{When Can You Preempt?} An aircraft may pre-empt the normal order of flight once per game-turn by moving before it normally would. This is allowed only when a sighted enemy aircraft, which has a lower Initiative or which is in a lower position of advantage category, is moving or about to move, and is threatening it with gunfire.
 
-To be considered threatening, the moving or about to move enemy aircraft must have the friendly aircraft in its 150{deg} to 180{deg} angle off arc and be within six hexes of range (2 altitude levels = 1 hex of range).
+To be considered threatening, the moving or about to move enemy aircraft must have the friendly aircraft in its 150{\deg} to 180{\deg} angle off arc and be within six hexes of range (2 altitude levels = 1 hex of range).
 
 \paragraph{Procedure.} If you think you will be preempting an enemy, you should alert the player controlling that aircraft so that he can pause momentarily between FP expenditures to allow you time to announce a preemption. The option to preempt may be taken before the enemy aircraft expends its first FP, or between the each of its FPs if the enemy is already moving.
 
