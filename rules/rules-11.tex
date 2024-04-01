@@ -22,7 +22,7 @@ Each side first declares padlocks of currently sighted opposing aircraft and mis
 An aircraft's or missile's status as sighted or unsighted is determined anew in each game turn's visual sighting phase. It then maintains that status until the following game turn's visual sighting phase. A sighted aircraft or missile that enters a blind arc does not immediately cease to be sighted; it remains sighted at least until the following game turn's visual sighting phase.
 
 \paragraph{Sighted or Unsighted by All.}
-If an opposing aircraft or missile is unsighted, it is unsighted by all friendly aircraft. If it is sighted, it is sighted by all of the friendly aircraft, even those that have it in their blind arcs. There are, however, additional restrictions on aircraft carrying out attacks, engaging missiles, and using defensive pre-emptions. These restrictions are given below.
+If an opposing aircraft or missile is unsighted, it is unsighted by all friendly aircraft. If it is sighted, it is sighted by all of the friendly aircraft, even those that have it in their blind arcs. For most purposes, this is sufficient. However, for aircraft carrying out attacks with visually aimed weapons, using defensive preemptions, and defensively engaging missiles, there are additional requirements on individual sighting described below.
 
 }
 
@@ -143,10 +143,20 @@ Otherwise, determine which of the participating aircraft is the searcher. This w
 \x{
 \paragraph{Gun and IR Missile Attack Restrictions.} A target aircraft may not be attacked by guns or fired on by IR missiles, unless the attacker has visual sight of the target at the start of his movement\addedin{1B}{1B-apj-36-errata}{, i.e., the target must be spotted by his side, and the target can be neither beyond the attacker's visual sighting range nor in the attacker's blind arc.}. However, if an enemy aircraft moved first and was lost from sight due to entering haze or passing through a stratus layer, it may be followed and attacked.
 }{
-\paragraph{Sighting Restrictions on Gun and IRM Attacks.} 
-A target aircraft may not be attacked by guns (see rule~\ref{rule:air-to-air-gun-combat}) or fired on by IRMs (see rule~\ref{rule:infra-red-heat-seeking-missiles}), unless the target is sighted, not beyond the attacker's visual sighting range, and not in the attacker's blind arc. However, if the target moved first and was lost from sight due to entering haze or passing through a stratus layer, it may be followed and attacked.
 
-One exception to this restriction is that IRMs may be fired upon targets that have been locked-on with radar or an IRSTS or sighted with a VAS (see advanced rule~\ref{rule:irm-seeker-lock-up-assistance-methods} for the full requirements). 
+\paragraph{Individual Sighting.} 
+\label{rule:individual-sighting}
+For certain purposes, a target must be individually sighted by an aircraft. This requires that:
+\begin{itemize}
+    \item The target is sighted or is a friendly aircraft,
+    \item The target is within visual sighting range of the aircraft checking for individual sighting, and
+    \item The target is not in the blind arc of the aircraft checking for individual sighting.
+\end{itemize}
+
+\paragraph{Sighting and Visually Aimed Weapons.} 
+A target aircraft may not be attacked with guns (see rule~\ref{rule:air-to-air-gun-combat}) or fired on by IRMs (see rule~\ref{rule:infra-red-heat-seeking-missiles}) unless it is individually sighted by the attacker at the start of the attacker's movement. However, if the target moved first and was lost from sight due to entering haze or passing through a stratus layer, it may be followed and attacked.
+
+One exception to this restriction is that IRMs may be fired upon targets that have been locked-on with radar or an IRSTS or sighted with a VAS (see advanced rule~\ref{rule:irm-seeker-lock-up-assistance-methods} for the complete requirements). 
 }
 
 \x{
@@ -159,11 +169,11 @@ One exception to this restriction is that IRMs may be fired upon targets that ha
 \end{itemize}
 }{
 \paragraph{Sighting Restrictions on Defensive Preemption.}
-A defender may not pre-empt (see rule~\ref{rule:defensive-preemptions}) a moving enemy attacker unless:
+A threatened aircraft may not preempt (see rule~\ref{rule:defensive-preemptions}) a threatening aircraft unless:
 \begin{itemize}
-    \item at the start of the attacker's move, it is sighted, within sighting range of the defender, and not in the blind arc of the defender, or
-    \item at the start of the attacker's move, it is sighted, and both it and the defender are within sighting range of an aircraft friendly to the defender and not in the blind arc of that aircraft, or
-    \item the attacker has just carried out a gun attack on the defender.
+     \item At the start of the threatening aircraft’s move, it is individually sighted by the threatened aircraft,
+     \item At the start of the threatening aircraft’s move, it and the threatened aircraft are individually sighted by an aircraft friendly to the threatened aircraft, or
+     \item The threatening aircraft has just carried out a gun attack on the threatened aircraft.
 \end{itemize}
 }
 
@@ -177,11 +187,11 @@ A defender may not pre-empt (see rule~\ref{rule:defensive-preemptions}) a moving
 \end{itemize}
 }{
 \paragraph{Sighting Restrictions on Defensively Engaging Missiles.} 
-An aircraft may not defensively engage (see rule~\ref{rule:engaging-missiles}) a missile may unless:
+A target aircraft may not defensively engage (see rule~\ref{rule:engaging-missiles}) a missile  unless:
 \begin{itemize}
-    \item in the aircraft decisions phase, the missile is sighted, within sighting range of the defender, and not in the blind arc of the defender, or
-    \item in the aircraft decisions phase, the missile is sighted, and both it and the defender are within sighting range of an aircraft friendly to the defender and not in the blind arc of that aircraft, or
-    \item the target has RWR indications of a missile attack (see rule~\ref{rule:rwr}).
+    \item In the aircraft decisions phase, the missile is individually by the target aircraft, 
+    \item In the aircraft decisions phase, the missile and the target aircraft are individually sighted by an aircraft friendly to the target aircraft, or
+    \item the target aircraft has RWR indications of a missile attack (see rule~\ref{rule:rwr}).
 \end{itemize}
 }
 
