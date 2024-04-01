@@ -232,6 +232,7 @@ A free aircraft ending its flight stacked in the same position as an enemy aircr
 \section{Defensive Preemptions}
 \label{rule:defensive-preemptions}
 
+\x{
 Due to the rule that allows gunfire during movement, it often happens that aircraft with a higher Initiative, which are waiting to move, get attacked by those supposedly at a disadvantage which are moving first. This rule allows aircraft with the higher Initiative, to react to such threats by preempting the movement of those enemy aircraft.
 
 \paragraph{When Can You Preempt?} An aircraft may pre-empt the normal order of flight once per game-turn by moving before it normally would. This is allowed only when a sighted enemy aircraft, which has a lower Initiative or which is in a lower position of advantage category, is moving or about to move, and is threatening it with gunfire.
@@ -250,7 +251,51 @@ To avoid confusion, the threatening aircraft should first expend an FP and then 
     \item make any attacks or launch weapons and,
     \item may not do any radar work except to use the "Boresight" or "Auto-Track" modes.
 \end{itemize}	
+}{
 
+As gun attacks are allowed during movement, it sometimes happens that an aircraft with a higher advantage category or initiative, while waiting to move, is attacked or threatened by another that has the supposed disadvantage of moving first. The waiting aircraft can react to such attacks or threats by preempting the movement of an aircraft that is moving or about to move.
+
+\paragraph{Threatening and Threatened Aircraft.} An enemy aircraft is threatening if it satisfies all of the following:
+
+\begin{itemize}
+\item It is moving or is about to move,
+\item It has one or more friendly aircraft that have not yet moved in its \arcrange{150}{+} arc and within six hexes of range and
+\item It has not declared a defensive preemption in the current game turn.
+\end{itemize}
+The friendly aircraft involved are threatened.
+
+\paragraph{Preemption Requirements} A threatened aircraft may preempt the normal order of flight once per game turn provided one of the following conditions is satisfied:
+\begin{itemize}
+     \item At the start of the threatening aircraft’s move, it is individually sighted by the threatened aircraft,
+     \item At the start of the threatening aircraft’s move, it and the threatened aircraft are individually sighted by an aircraft friendly to the threatened aircraft, or
+     \item The threatening aircraft has just carried out a gun attack on the threatened aircraft.
+\end{itemize}
+
+\paragraph{Preemption Declarations.}
+If the threatened player thinks they might preempt a threatening aircraft, they should alert the threatening player. A threatened player may declare a preemption in these moments:
+\begin{itemize}
+    \item Before the threatening aircraft has begun moving or
+    \item After each FP used by the threatening aircraft but before a possible gun attack immediately after that FP.
+\end{itemize}
+The threatening player should pause briefly at these moments. In these pauses, the threatened player should simply declare “yes” or “no.” If they declare “yes,” the preemption is executed immediately. Otherwise, the threatening aircraft may use its first FP (in the first case) or carry out a possible gun attack and use its next FP (in the second). This process is repeated until a preemption occurs or the threatening aircraft completes its move.
+
+\paragraph{Preemption Procedure.} To execute a preemption:
+\begin{itemize}
+    \item The threatening aircraft halts its move.
+    \item The threatened aircraft uses half its FPs (rounded up). 
+    \item The threatening aircraft completes its move, making any possible attacks. 
+    \item The threatened aircraft completes its move.
+\end{itemize}
+When both aircraft have finished their moves, the preemption is over.
+
+\paragraph{Preemption Restrictions.} An aircraft that does a defensive preemption is restricted for the remainder of the current game turn as follows:
+
+\begin{itemize}
+    \item It may not make attacks or launch weapons, and
+    \item It may not use its radar except in boresight or auto-track modes.
+\end{itemize}	
+
+}
 \trainingnote{
 You are now ready to play all guns only Air Combat Scenarios. For more fun, also read the Special Maneuvers of Chapter 13 which allow you more options in how to maneuver your fighters. Use the Sequence of Play but Ignore the AAA, SAM, and Ground Unit Interaction Phases.
 }
