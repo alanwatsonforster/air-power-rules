@@ -1,4 +1,5 @@
 \begin{onecolumntable}
+\x{
 \tablecaption{table:advantage}{Advantage Summary}
 
 \begin{tabularx}{\linewidth}{L}
@@ -18,4 +19,30 @@ An aircraft may not be advantaged over another at the same map position.
 \end{itemize}\\[-1ex]
 \bottomrule
 \end{tabularx}
+}{
+\tablecaption{table:advantage}{Superior and Inferior Aircraft}
+
+\begin{tabularx}{\linewidth}{L}
+\toprule
+\setlength{\parskip}{\smallskipamount}
+\begin{itemize}
+\item An aircraft is superior to an enemy aircraft if:
+\begin{itemize}
+    \item It is free.
+    \item The enemy aircraft is in its \arcrange{150}{+} arc.
+    \item The enemy aircraft does not have the same map location.
+    \item The horizontal range to the enemy aircraft is no more than 9 hexes.
+    \item The enemy aircraft is no more than 6 altitude levels higher or 9 altitude levels lower.
+\end{itemize}
+
+\item An aircraft in a vertical dive may not be superior to a higher aircraft.
+
+\item A tailing aircraft is superior to the aircraft it is tailing but cannot be superior to any other aircraft. Other aircraft may consider or not the tailing aircraft, as they so desire.
+
+\item An aircraft is inferior to an enemy aircraft if the enemy is superior to it.
+\end{itemize}\\
+\bottomrule
+\end{tabularx}
+
+}
 \end{onecolumntable}

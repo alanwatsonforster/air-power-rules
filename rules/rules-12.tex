@@ -132,20 +132,20 @@ An aircraft positioned to the rear of an enemy is often more able to maneuver ag
     \item\itemparagraph{Engaged.} The aircraft is actively defending itself against missiles.
 
     \item\itemparagraph{Disadvantaged.} 
-    The aircraft is sighted and does not hold a position of advantage over any enemy aircraft, and at least one enemy aircraft holds a position of advantage over it.
+    The aircraft is sighted, is inferior to at least one enemy aircraft, and is not superior to any enemy aircraft.
     
-    \item\itemparagraph{Nonadvantaged.} This category includes two types of aircraft. 
+    \item\itemparagraph{Neutral.} This category includes two types of aircraft. 
     \begin{itemize}
-        \item The aircraft is sighted and does not hold a position of advantage over any enemy aircraft, and no enemy aircraft holds a position of advantage over it.
-        \item The aircraft is sighted and holds a position of advantage over at least one enemy aircraft, and at least one enemy aircraft holds a position of advantage over it.
+        \item The aircraft is sighted, it not superior to any enemy aircraft, and is not inferior to any enemy aircraft.
+        \item The aircraft is sighted, is superior to at least one enemy aircraft, and is inferior to at least one enemy aircraft.
     \end{itemize}
 
     \item\itemparagraph{Advantaged.} 
-    The aircraft is sighted and holds a position of advantage over at least one enemy aircraft, and no enemy aircraft holds a position of advantage over it.
+    The aircraft is sighted, is superior to at least one enemy aircraft, and is not inferior to any enemy aircraft.
 
-    \item\itemparagraph{Unsighted.} The aircraft is not sighted by any enemy aircraft.
+    \item\itemparagraph{Unsighted but Detected.} The aircraft is not sighted by any enemy aircraft, but is detected by an enemy air-to-air radar.
 
-    \item\itemparagraph{Undetected.} The aircraft is neither detected by radar nor sighted.
+    \item\itemparagraph{Unsighed and Undetected.} The aircraft is neither sighted nor detected by enemy air-to-air radar.
 
 \end{itemize}
 
@@ -159,19 +159,20 @@ This list appears in order from the lowest advantage category to highest. When d
 
 % ISSUE: Should non-free aircraft enter into the determination of advantage? They are going to move first anyway. At the moment, a free aircraft can gain a position of advantage over a non-free aircraft and thereby elevate its advantage category. Perhaps position of advantage should only be determined among the free aircraft.
 
-\paragraph{Position of Advantage.} An aircraft has a position of advantage over an enemy aircraft if:
+\paragraph{Superior and Inferior Aircraft.} An aircraft is superior to an enemy aircraft if:
 \begin{itemize}
     \item It is free.
     \item The enemy aircraft is in its \arcrange{150}{+} arc.
     \item The enemy aircraft does not have the same map location.
     \item The horizontal range to the enemy aircraft is no more than 9 hexes.
     \item The enemy aircraft is no more than 6 altitude levels higher or 9 altitude levels lower.
-    \item If the enemy aircraft is higher, the aircraft must not be in a vertical dive.
 \end{itemize}
 
-Additionally, an aircraft in a vertical dive may not hold a position of advantage over a higher aircraft but may hold a position of advantage over an aircraft at the same or lower altitude. An aircraft in a vertical climb may hold a position of advantage over an aircraft at lower, the same, or higher altitude.
+Additionally, an aircraft in a vertical dive may not be superior to a higher aircraft but may be superior to an aircraft at the same or lower altitude. An aircraft in a vertical climb may be superior to an aircraft at lower, the same, or higher altitude.
 
-A tailing aircraft (see rule~\ref{rule:tailing-enemy-aircraft}) is considered to hold a position of advantage over the aircraft it is tailing but cannot hold a position of advantage over other aircraft. Other aircraft may consider or not the tailing aircraft, as they so desire.
+A tailing aircraft (see rule~\ref{rule:tailing-enemy-aircraft}) is considered to be superior to the aircraft it is tailing but cannot be superior to any other aircraft. Other aircraft may consider or not the tailing aircraft, as they so desire.
+
+An aircraft is inferior to an enemy aircraft if the enemy is superior to it.
 
 \section{Order Of Flight} 
 
