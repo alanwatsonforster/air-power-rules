@@ -53,8 +53,13 @@ Within a given advantage category, if two or more aircraft have the same initiat
 
     \item\itemparagraph{Crew Quality.} If advanced rule~\ref{rule:crew-quality} on crew quality is being used, the quality, attributes, and characteristics of the pilot modify the initiative according to Table~\ref{table:initiative-modifiers}.
 
-	\item\itemparagraph{Formations.} If advanced rule~\ref{rule:formations} on formations is being used, a winger in a tactical formation with an initiative that is less than that of the formation’s leader may add one to its initiative (reflecting teamwork and radio calls) and an aircraft not in a close or tactical formation subtracts one from its initiative unless at least one of its crewmembers is a veteran.
-
+	\item\itemparagraph{Formations.} If advanced rules~\ref{rule:crew-quality} on crew quality and \ref{rule:formations} on formations are being used:
+    \begin{itemize}
+        \item An aircraft not in a close or tactical formation receives a $-1$ modifier, unless at least one of its crewmembers is a veteran.
+        \item A winger in a tactical formation with an initiative modifer that is less than that of the formation’s leader may  receives a $+1$ modifier. (reflecting teamwork and radio calls).
+        \item A winger in a tactical formation lead by a combat hero receives a $+1$ modifier.
+    \end{itemize}
+    All wingers in close formations move at the same time as their leader.
 \end{itemize}
 
 }
