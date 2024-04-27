@@ -12,7 +12,7 @@ A maneuver is a distinct flight action. An aircraft may not simultaneously turn 
 
 }
 
-\changedin{2A}{2A-roll-preparatopry-fps}{
+\changedin{2A}{2A-roll-preparatory-fps}{
 \section{Preparatory HFPs}
 }{
 \section{Preparatory FPs}
@@ -50,7 +50,7 @@ Sometimes a maneuver will not or cannot be completed in one game turn. In this c
 
     \item the number of preparatory FPs expended for the maneuver so far,
 
-    \item the maneuver type (SL, DR, VR, or VS), and
+    \item the maneuver type (SL, DR, LR, VR, or VS), and
 
     \item the direction (L or R).
 
@@ -80,7 +80,7 @@ A slide is a turn of less than 30{\deg}. It requires a small angle of bank and (
 \begin{itemize}
 \item \itemparagraph{SL Requirements.} If an aircraft's start speed is 9.0 or less, it may perform one slide per game turn. If its start speed is 9.5 or greater, it may perform two slides per game turn but must additionally use at least 4 FPs between the end of the first slide and the first preparatory HFP of the second.
 
-\item \itemparagraph{SL Procedure.} Declare the start of a slide and its direction. Use 2.0 or more preparatory HFPs and then 1.0 HFP to move the aircraft forward and to the left or right as declared.
+\item \itemparagraph{SL Procedure.} Declare the start of a slide and its direction. Use 2 or more preparatory HFPs, plus any additional HFPs from Table~\ref{table:preparatory-fps}, and then 1 HFP to execute the slide and move the aircraft forward and to the left or right as declared, as shown in Figure~\ref{figure:slide-maneuvers}.
 
 \item \itemparagraph{SL DPs.} If an aircraft only performs one slide in a game turn, it receives no DPs. If it performs two, it receives 1 DP.
 
@@ -94,20 +94,40 @@ Rolling maneuvers use the outcome of a roll to change position and possibly faci
 
 \subsection{Displacement Rolls}
 
+\x{
 A displacement roll is a rapid snap-roll that allows an aircraft to shift left or right exactly as in a slide.
+}{
+A displacement roll (DR) is a rapid snap-roll that allows an aircraft to shift left or right exactly as in a slide.
+}
 
+\x{
 \begin{itemize}
     \item\itemparagraph{DR Procedure.} Announce the start of a displacement roll and its direction. Spend \changedin{2A}{2A-roll-preparatopry-fps}{1.0 or more in preparatory FPs}{preparatory FPs equal to {\onethird} of the aircraft's speed (rounded down), plus additional FPs because of speed or altitude,} and spend 1.0 HFPs to execute the displacement roll, shift the aircraft forward and to the left or right as announced.\addedin{2A}{2A-roll-preparatopry-fps}{ The preparatory FPs may be HFPs or VFPs, but the FP used to execute the roll must be an HFP.}  The aircraft receives decel points as shown on the ADC. \changedin{1C}{1C-figures}{The displacement roll diagram}{Figure~\ref{figure:displacement-roll-maneuvers}} shows the resulting position shift.
 
 \end{itemize}
+}{
+\paragraph{DR Procedure.} Declare the start of a displacement roll and its direction. Expend preparatory VFPs or HFPs equal to {\onethird} of the aircraft's speed (rounded down), plus additional VFPs or HFPs from Table~\ref{table:preparatory-fps}, and then spend 1 HFP to execute the displacement roll and move the aircraft forward and to the left or right as declared, as shown in Figure~\ref{figure:displacement-roll-maneuvers}.
+
+\paragraph{DR DPs.} The aircraft receives DPs according to the ADC. For the second or subsequent displacement, lag, or vertical roll maneuver in a game turn, it receives one additional DP.
+}
 
 \subsection{Lag Rolls}
 
+\x{
 A lag roll is a modified displacement roll in which the pilot uses a combination of rudder and pitch control to pull the aircraft's nose to the inside of the roll effecting a facing change in the direction opposite the roll.
+}{
+A lag roll (LR) is a modified displacement roll in which the pilot uses a combination of rudder and pitch control to pull the aircraft's nose to the inside of the roll effecting a facing change in the direction opposite the roll.
+}
 
+\x{
 \begin{itemize}
     \item\itemparagraph{LR Procedure.} Announce the start of a lag roll and its direction. Spend \changedin{2A}{2A-roll-preparatopry-fps}{1.0 or more in preparatory FPs}{preparatory FPs equal to {\onethird} of the aircraft's speed (rounded down), plus additional FPs because of speed or altitude,} and spend 1.0 in HFPs to execute the lag roll. Shift the aircraft forward and to the left or right as announced then change the facing by 30 degrees as depicted in  \changedin{1C}{1C-figures}{the lag roll diagram}{Figure~\ref{figure:lag-roll-maneuvers}}.\addedin{2A}{2A-roll-preparatopry-fps}{ The preparatory FPs may be HFPs or VFPs, but the FP used to execute the roll must be an HFP.} The aircraft receives decel points as shown on the ADC.
 \end{itemize}
+}{
+\paragraph{LR Procedure.} Declare the start of a lag roll and its direction. Expend preparatory VFPs or HFPs equal to {\onethird} of the aircraft's speed (rounded down), plus additional VFPs or HFPs from Table~\ref{table:preparatory-fps}, and then spend 1 HFP to execute the displacement roll and move the aircraft forward and to the left or right as declared, as shown in Figure~\ref{figure:lag-roll-maneuvers}.
+
+\paragraph{LR DPs.} The aircraft receives DPs according to the ADC. For the second or subsequent displacement, lag, or vertical roll maneuver in a game turn, it receives one additional DP.
+}
 
 \subsection{Barrel Rolls}
 
@@ -115,20 +135,38 @@ A lag roll is a modified displacement roll in which the pilot uses a combination
     \input{figures/figure-barrel-roll-maneuvers}
 }
 
-A barrel roll ls a large version of a lag roll or displacement roll. The barrel roll is performed gamewise as a series of two or more connected lag or displacement rolls in the same direction (in actual flight, the pilot would be doing one big roll instead of several small ones).
+\x{
+A barrel roll is a large version of a lag roll or displacement roll. The barrel roll is performed gamewise as a series of two or more connected lag or displacement rolls in the same direction (in actual flight, the pilot would be doing one big roll instead of several small ones).
 
 Multiple lag rolls or displacement rolls in the same game turn, but with FPs expended between one roll and the preparatory move of the next, or rolls done in opposite directions, are not a considered a barrel roll.
+}{
+A barrel roll (BR) is a larger version of a lag roll or displacement roll. In the game, it is performed as a series of two or more consecutive lag or displacement rolls in the same direction. In actual flight, the pilot would execute one longer and larger roll instead of several small ones. Figure~\ref{figure:barrel-roll-maneuvers} shows the resulting position shifts of a barrel roll done as two lag rolls and one displacement roll performed consecutively.
 
+Multiple lag or displacement rolls that are not consecutive or that are consecutive but are not in the same sense are not considered to be a barrel roll.
+}
+
+\x{
 \begin{itemize}
     \item\itemparagraph{BR Procedure.} Announce the start of a barrel roll and execute it as a series of two or more lag rolls and/or displacement rolls. \changedin{1C}{1C-figures}{The barrel roll diagram}{Figure~\ref{figure:barrel-roll-maneuvers}} shows the resulting position shifts of a barrel roll done as three connected lag rolls.
 \end{itemize}
+}{
+\paragraph{BR Procedure.} Declare the start of a barrel roll and execute it as a series of two or more lag or displacement rolls.
+
+\paragraph{BR DPs.} The aircraft receives DPs normally for each displacement or lag roll in the barrel roll.
+
+}
 
 \deletedin{1C}{1C-figures}{Note: All of the Maneuver Diagrams are in the play aids.}
 
 \subsection{Vertical Rolls}
 
+\x{
 When flying straight up or down, an aircraft can easily roll about its longitudinal axis changing facing in the process. In reality, facing has no meaning going straight up or down but upon recovery from a vertical climb or dive any amount of roll would manifest itself as a heading change.
+}{
+In vertical flight, aircraft can roll easily. Such a vertical roll (VR) results in a change in direction after recovery from the climb or dive into horizontal flight.
+}
 
+\x{
 \begin{itemize}
 
     \item\itemparagraph{VR Limits.} A vertical roll may only be performed by an aircraft in a vertical climb or vertical dive. It may only be performed from a hex or hexside in which the aircraft just expended a VFP. Multiple vertical rolls are allowed in a game turn, but only once per VFP expended.
@@ -140,11 +178,32 @@ When flying straight up or down, an aircraft can easily roll about its longitudi
 \paragraph{Low Roll Rate Restriction.} A low Roll Rate aircraft is limited to three 30{deg} facing changes per Vertical roll executed.
 
 \paragraph{High Pitch Rate Restriction.} If a High Pitch Rate aircraft uses its HPR ability to enter a vertical climb from level flight, then it may only do a vertical roll at the end of its flight, and only if the last FP expended was a VFP.
+}{
 
+\paragraph{VR Requirements.} A vertical roll may only be performed by an aircraft in a vertical climb or vertical dive (see rule\ref{rule:vertical-climbs} and \ref{rule:vertical-dives}). It may only be performed when the aircraft has just expended a VFP. Multiple vertical rolls are allowed in a game turn, but only one per VFP expended.
+
+\paragraph{VR Procedure.} Declare the vertical roll and its direction at the moment of execution. No preparatory FPs are required. Expend 1 VFP to execute the roll and change facing by 30{\deg} up to 6 times in the chosen direction. 
+
+If an aircraft executes a vertical roll on a hex side and it changes facing by less than 180{\deg}, it must shift to the adjacent hex in the sense of the roll. Otherwise, it may stay on the hex side or shift to the adjacent hex as desired.
+
+\paragraph{VR DPs.} The aircraft receives DPs according to the ADC. For the second or subsequent displacement, lag, or vertical roll maneuver in a game turn, it receives one additional DP.
+
+\paragraph{Low Roll Rate Restriction.} If an ADC notes that an aircraft has a
+a low roll rate (LRR), it is limited to three 30{\deg} facing changes per vertical roll executed.
+
+\paragraph{High Pitch Rate Restriction.} If an ADC notes that an aircraft has a high pitch rate (HPR) and it uses this capacity to enter a vertical climb from level flight (see rule\ref{rule:vertical-climbs}), then it may only perform a vertical roll at the end of its flight and only if the last FP expended is a VFP.
+}
 \subsection{Half-Rolls and Dives}
 \label{rule:half-rolls-and-dives}
 
-Aircraft often invert in order to enter dives quickly as they have better positive G pitch rates than negative G ones; meaning, it is easier to pull toward the top of the aircraft than push toward the bottom. An aircraft that executes a half-roll and dive may do one of the following:
+\x{
+Aircraft often invert in order to enter dives quickly as they have better positive G pitch rates than negative G ones; meaning, it is easier to pull toward the top of the aircraft than push toward the bottom. 
+}{
+To enter a dive quickly, an aircraft can use a half-roll and dive (HRD) maneuver, in which it rolls inverted, then pitches positively, and finally rolls upright again. This maneuver is often quicker than simply pitching negatively since positive pitch rates are often better than negative ones.
+}
+
+\x{
+An aircraft that executes a half-roll and dive may do one of the following:
 
 \begin{itemize}
 
@@ -156,12 +215,31 @@ Aircraft often invert in order to enter dives quickly as they have better positi
 
 \end{itemize}
 
-Note: Use of the half-roll and dive avoids the restrictions against diving flight imposed by vertically climbing, and avoids the restrictions against entering vertical dives without previously using diving flight.                                         
+Note: Use of the half-roll and dive avoids the restrictions against diving flight imposed by vertically climbing, and avoids the restrictions against entering vertical dives without previously using diving flight.    
+}{
+
+A half-roll and dive allows an aircraft to avoid the normal requirement of diving flight before a vertical dive (see rule~\ref{rule:vertical-dives}) and the normal prohibition of diving flight after a vertical climb (see rule~\ref{rule:vertical-climbs}). Specifically, an aircraft that executes a half-roll and dive may:
 
 \begin{itemize}
-    \item\itemparagraph{HRD Procedure.} Announce the half-roll and dive at the beginning of the aircraft's flight. The aircraft immediately inverts at no cost (in FPs or decel points) and may now conduct normal diving flight, Steep or Vertical dive as appropriate. The aircraft is considered upright (not inverted) again at the end of its flight.
+
+    \item Enter a vertical dive directly from level flight.
+
+    \item Enter a vertical dive directly from a zoom or sustained climb, provided its speed is 4.0 or less.
+
+    \item Enter a steep dive directly from a vertical climb.
+
 \end{itemize}
 
+\paragraph{HRD Requirements.} The aircraft must have used level or climbing flight in the previous game turn. If it used a zoom or sustained climb, its speed must be 4.0 or less.
+
+\paragraph{HRD Procedure.} At the beginning of the aircraft's flight, declare a half-roll and dive and the appropriate diving flight type according to the flight type used in the previous game turn: a steep dive after a vertical climb and a vertical dive otherwise. A half-roll and dive requires no preparatory FPs and does not require an FP to execute.
+
+\paragraph{HRD DPs.} An aircraft does not receive DPs for executing a half-roll and dive.
+    
+%Announce the half-roll and dive at the beginning of the aircraft's flight. The aircraft immediately inverts at no cost (in FPs or decel points) and may now conduct normal diving flight, Steep or Vertical dive as appropriate. The aircraft is considered upright (not inverted) again at the end of its flight.
+}
+
+\x{
 \paragraph{Restrictions.} A half-roll and dive restricts aircraft as follows:
 
 \begin{itemize}
@@ -175,9 +253,30 @@ Note: Use of the half-roll and dive avoids the restrictions against diving fligh
     \item No attacks, weapon launches, or radar work (except boresight, auto-track) are permitted in the game-turn.
     
 \end{itemize}
+}{
+\paragraph{HRD Restrictions.} An aircraft executing a half-roll and dive is restricted as follows:
 
-\subsection{Penalties and Restrictions on Rolling Maneuvers}
+\begin{itemize}
+
+    \item When an HRD is used to enter a vertical dive from level flight, advanced rule~\ref{rule:changing-flight-type} applies, and the first FP must be an HFP.
+
+    \item When a HRD is used to enter a vertical dive from a zoom or sustained climb, all of the available HFPs (that is, 1/3 of the FPs) must be used before any VFPs is used, regardless of whether the aircraft is noted as having a high pitch rate or not. This restriction supersedes advanced rule~\ref{rule:changing-flight-type} on the transition from climbing to diving flight,
+    
+    \item When an HRD is used to enter a steep dive from a vertical climb, advanced rule~\ref{rule:changing-flight-type} applies, and a normal aircraft must expend 1/2 of its FPs as HFPs before expending any VFPs. If an aircraft's ADC notes that it has a high pitch rate, it must expend only 1/3 of its FPs as HFPs before expending any VFPs.
+    
+    \item When an HRD is used to enter a steep dive, an aircraft may turn normally, but no other maneuvers are permitted during the game turn.
+
+    \item When an HRD is used to enter a vertical dive, only one vertical roll is permitted during the game turn, and this can only be after the last FP, provided this FP is a VFP.
+
+    \item No attacks, weapon launches, or radar work (except using boresight or auto-track modes) are permitted in the game turn.
+    
+\end{itemize}
+
+}
 \label{rule:sustained-rolling-maneuvers}
+
+\x{
+\subsection{Penalties and Restrictions on Rolling Maneuvers}
 
 All rolling maneuvers produce the following penalties and restrictions on aircraft:
 
@@ -192,6 +291,24 @@ Each lag roll or displacement roll in a barrel roll is counted as an individual 
 \paragraph{Turn Rates.} For purposes of gunsight tracking, or missile launch G modifiers, a roll maneuver counts as turning at the BT turn rate.
 
 \paragraph{High Altitude Maneuvering Departures.} An aircraft attempting rolling maneuvers in the EH altitude or UH bands risks a maneuvering departure. Upon executing any roll at EH or higher, roll one die. On a result of 4 or less, the aircraft suffers a maneuvering departure.
+}{
+\subsection{Additional Penalties and Restrictions}
+
+Aircraft executing rolling maneuvers suffer the following penalties and restrictions:
+
+\paragraph{Additional DPs.} 
+For the second or subsequent lag, displacement, or vertical roll executed in a game turn, an aircraft receives 1 additional DP beyond the DPs noted in the ADC. Even rolls for which an aircraft normally receives 0 DPs are counted for this penalty. For these purposes, each lag roll or displacement roll in a barrel roll is counted as one roll.
+
+For example, if an aircraft executed a lag, displacement, and vertical roll in a game turn, it would receive 2 DPs beyond those noted in the ADC.
+
+\paragraph{Weapons Restrictions.} An aircraft may not attack with guns or rockets or launch weapons immediately after an FP used to prepare for or execute a rolling maneuver.
+
+\paragraph{Turn Rate Modifiers.} During the recovery period after a rolling maneuver (see rule~\ref{rule:recovery-periods}), an aircraft suffers gun and rocket attack modifiers and missile launch G modifiers as if it were recovering from a turn at the BT rate.
+
+\paragraph{Radar Tracking.} Radar lock-ons held by the aircraft are lost when it uses an FP to prepare for or execute a displacement, lag, or barrel roll, declares a half-roll and dive, or executes more than one vertical roll in a game turn.
+
+\paragraph{High-Altitude Maneuvering Departures.} An aircraft attempting a rolling maneuver in the EH or UH altitude bands risks a maneuvering departure (see advanced rule~\ref{rule:maneuvering-departures}). Upon executing any roll in these altitude bands,  roll one die. On a result of $4-$, the aircraft suffers a maneuvering departure.
+}
 
 \begin{advancedrules}
 
