@@ -326,9 +326,14 @@ The barrel roll altitude change may be done in place of, or in conjunction with,
 
 \paragraph{Decel Points.} An aircraft which changes altitude in a barrel roll receives 2.0 decel points per altitude level gained, and 0.5 accel points per altitude level lost.
 
+\x{
 \section{Vertical Reverse Maneuver}
+}{
+\section{Vertical Reverse Maneuvers}
+}
 \label{rule:vertical-reverses}
 
+\x{
 A vertical reverse (sometimes called a hammer-head stall or pitch-over) is a maneuver in which an aircraft enters a vertical climb and just prior to stalling, the pilot kicks the rudder and coordinates the controls to cause the aircraft to reverse its direction in the stall. It is difficult to perform.
 
 \paragraph{Procedure.} An aircraft in a vertical climb may, if it ends its move at or no more than 1.0 below minimum speed, attempt a vertical reverse in the next stalled aircraft phase,
@@ -336,6 +341,26 @@ A vertical reverse (sometimes called a hammer-head stall or pitch-over) is a man
 \paragraph{Announce Vertical Reverse in the Stalled Aircraft Phase.} Roll for stall/departure normally even if at minimum speed. If the aircraft departs, it must do departed flight. If it does not depart, it rolls again immediately to see if it successfully reverses. The roll required to vertical reverse is the same as the roll for recovering from a departure. (The same modifiers apply as well). 
 
 If successful, the aircraft enters a vertical dive and is exempted from the requirement to first spend HFPs (when switching between climbs and dives). The aircraft's start speed is changed to its minimum speed (lose any \changedin{1E}{AWF}{.5}{0.5} carry if it started below minimum speed). It moves in normal order and may affect order of flight. If unsuccessful, it enters stalled flight.
+}{
+A vertical reverse (sometimes called a hammer-head stall or pitch-over) is a maneuver in which an aircraft enters a vertical climb and just prior to stalling, the pilot kicks the rudder and coordinates the controls to cause the aircraft to reverse its direction in the stall. It is difficult to perform.
+
+\paragraph{VR Requirements.} The aircraft must have used a vertical climb in the previous game turn and have a speed no more its minimum speed and no less than its minimum speed minus 1.0 (i.e., its speed must be minimum speed, minimum speed minus 0.5, and minimum speed minus 1.0).
+
+\paragraph{VR Procedure.} Announce the vertical reversal in the stalled aircraft phase. 
+
+\begin{itemize}
+
+\item Check for avoiding departed flight (see rule~\ref{rule:abnormal-flight}), even if the aircraft is at its minimum speed. If unsuccessful, it enters departed flight. 
+
+\item If it does not depart, roll again immediately to see if it successfully reverses. The roll required for success is the same as that required to recover from departured flight and the same modifiers apply. If unsuccessful, it enters stalled flight.
+
+\item If successful, the aircraft enters a vertical dive and is exempted from the requirement to first expend HFPs when switching between climbing and diving flight (see advanced rule~\ref{rule:changing-flight-type}). The aircraft's speed is immediately changed to its minimum speed and it loses any 0.5 FP it may have carried in. It then moves normally and may affect the order of flight.
+
+\end{itemize}
+
+\paragraph{VR DPs.} An aircraft does not receive DPs for executing a vertical reverse.
+
+}
 
 \section{VIFF Maneuvers}
 \label{rule:viff-maneuvers}
