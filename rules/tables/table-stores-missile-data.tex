@@ -1,6 +1,6 @@
 \onecolumn
 \begin{landscape}
-
+\x{
 \newenvironment{missiletable}{
     \small
     \setlength{\tabcolsep}{0.6em}
@@ -140,4 +140,123 @@ NOTES:
 \end{tablenote}
 \end{fullwidthtable}
 \clearpage
+}{
+\newenvironment{missiletable}{
+    \small
+    \setlength{\tabcolsep}{0.6em}
+    \tabularx{\linewidth}{llXccccccccccccccccccccp{5em}}
+    \toprule
+
+    &&&
+    \multirow[b]{6}{*}{\vertical{Weight}}&
+    \multirow[b]{6}{*}{\vertical{Load}}&
+    \multirow[b]{6}{*}{\vertical{Seeker}}&
+    \multirow[b]{6}{*}{\vertical{Launch G}}&
+    \multirow[b]{6}{*}{\vertical{Launch Roll}}&
+    \multirow[b]{6}{*}{\vertical{\minitable{l}{Turn Rate}}}&
+    \multirow[b]{6}{*}{\vertical{\minitable{l}{Flight Time}}}&
+    \multirow[b]{6}{*}{\vertical{\minitable{l}{Visibility}}}&
+    \multirow[b]{6}{*}{\vertical{\minitable{l}{ECCM \#}}}&
+    \multirow[b]{6}{*}{\vertical{\minitable{l}{Chaff \#}}}&
+    \multirow[b]{6}{*}{\vertical{\minitable{l}{Flare \#}}}&
+    \multicolumn{3}{c}{Launch Envelopes}&
+    \multirow[b]{6}{*}{\vertical{\minitable{l}{Base Speed\\\& Sustainer}}}&
+    \multirow[b]{6}{*}{\vertical{\minitable{l}{AH Range}}}&
+    \multicolumn{2}{c}{\multirow{2}{*}{\minitable{c}{Die Roll\\to Hit}}}&
+    \multicolumn{2}{c}{\multirow{2}{*}{\minitable{c}{Attack\\Rating}}}&
+    Notes\\[3ex]
+
+    &&&&&&&&&&&&&&
+    \multirow[b]{4}{*}{\vertical{\minitable{l}{Front\\150--180}}}&
+    \multirow[b]{4}{*}{\vertical{\minitable{l}{Side\\90--120}}}&
+    \multirow[b]{4}{*}{\vertical{\minitable{l}{Rear\\0--60}}}&
+    &&
+    \multirow[b]{4}{*}{\vertical{Direct}}&
+    \multirow[b]{4}{*}{\vertical{Prox.}}&
+    \multirow[b]{4}{*}{\vertical{Direct}}&
+    \multirow[b]{4}{*}{\vertical{Prox.}}\\
+    \\
+
+    Year&
+    Type&
+    Name&&&&&&&&&&&&&
+    \\
+
+    &&&
+    &&&\phantom{HT}&&&&&&&&
+    &&&&&
+    \\
+    \midrule
+}{
+    \bottomrule
+    \endtabularx
+}
+
+\begin{fullwidthtable}
+\tablecaption{table:missile-data}{Missile Data}
+\begin{missiletable}
+\addlinespace
+1956&AIM-4A&Falcon&130&1.0&RH&EZ&7&HT/2&1&7&--&5 &--&18--9&15--6&15--4&16--0&--&5&--&6&--\\
+1956&AIM-4B&Falcon&130&1.0&E &TT&7&HT/2&1&7&--&--&6 &--   &--   &12--2&16--0&--&5&--&6&--\\
+1957&AIM-4C&Falcon&130&1.0&I &TT&7&BT/2&1&7&--&--&5 &--   &--   &12--2&16--0&--&6&--&6&--\\
+1963&AIM-4D&Falcon&140&1.0&M &TT&7&BT/2&1&7&--&--&5 &--   &15--4&18--2&18--0&--&6&--&6&--\\
+\addlinespace
+1958&AIM-4E&Super Falcon&150&1.0&RH&TT&7&BT/2&1&7&--&4 &--&24--6&18--6&18--4&18--0&--&6&--&7&--\\
+1959&AIM-4F&Super Falcon&150&1.0&RH&TT&8&BT/2&1&7&1 &4 &--&24--6&18--6&18--4&18--0&--&6&--&7&--\\
+1959&AIM-4G&Super Falcon&150&1.0&M &TT&8&BT/2&1&7&--&--&5 &--   &15--4&18--2&18--0&--&6&--&7&--\\
+\addlinespace
+1960&AIM-26A&Nuclear Falcon&200&1.0&RH&TT&8&BT/2&2&8&--&--&--&24--9&18--9&18--6&16--0&--&--&--&--&--&NW\\
+1960&AIM-26B&Super\ Falcon&260&1.0&RH&TT&8&BT/2&2&8&--&4 &--&24--9&18--9&18--6&16--0&--&4&8&6&4\\
+\addlinespace
+1956&AIR-2A&Genie&825&2.0&--&--&8&--&1&9&--&--&--&\multicolumn{3}{c}{(See rule \ref{rule:genie})}&15--0&--&--&--&--&--&NW\\
+\addlinespace
+1956&AIM-9B &Sidewinder&160&1.0&E &TT&7&HT/2&2&7&--&--&6 &--   &--             &\phantom{0}9--2&10--0&--&3&7&5&2\\
+1962&AIM-9C &Sidewinder&190&1.0&RH&TT&6&HT/2&5&7&--&5 &--&24--6&\phantom{}12--6&\phantom{}18--4&18--0&--&2&7&5&2\\
+1965&AIM-9D &Sidewinder&200&1.0&I &TT&7&HT/2&5&7&--&--&5 &--   &--             &\phantom{}12--2&18--0&--&7&--&7&--\\
+1967&AIM-9E &Sidewinder&170&1.0&I &TT&7&BT/2&2&7&--&--&5 &--   &--             &\phantom{}12--2&10--0&--&4&7&5&3\\
+1968&AIM-9E2&Sidewinder&170&1.0&I &TT&7&BT/2&2&5&--&--&5 &--   &--             &\phantom{}12--2&12--0&--&4&7&5&3\\
+1967&AIM-9G &Sidewinder&190&1.0&M &HT&7&BT/2&5&7&--&--&5 &--   &\phantom{0}9--4&\phantom{}12--2&18--0&--&7&--&7&--&UNC\\
+1970&AIM-9H &Sidewinder&185&1.0&M &HT&8&ET/2&5&7&--&--&5 &--   &\phantom{0}9--4&\phantom{}12--2&18--0&--&7&--&7&--&UNC\\
+1972&AIM-9J &Sidewinder&175&1.0&I &HT&8&ET/2&3&7&--&--&5 &--   &--             &\phantom{}12--1&18--0&--&5&8&5&3\\
+\addlinespace
+1956&AIM-7A &Sparrow-I  &300&1.0&BR&EZ&7&HT/2&5&8&--&5 &--&--&--&15--4&\phantom{0}8--0&--&2&7&6&4\\
+1958&AIM-7C &Sparrow-III&400&1.0&RH&TT&7&HT/2&5&8&--&4 &--&45--9&30--9&20--4&\phantom{0}8--0&--&3&6&7&4\\
+1960&AIM-7D &Sparrow-III&450&1.0&RH&TT&7&HT/2&5&9&--&4 &--&45--9&30--9&20--4&\phantom{}10--0&--&4&7&8&4\\
+1962&AIM-7E &Sparrow-III&450&1.0&RH&TT&7&HT/2&5&9&--&4 &--&60--9&40--6&24--3&\phantom{}12--0&--&4&7&8&4\\
+1970&AIM-7E2&Sparrow-III&450&1.0&RH&HT&8&BT/2&5&9&--&4 &--&60--9&40--6&24--2&\phantom{}12--0&--&4&7&8&4\\
+\addlinespace
+\end{missiletable}
+\end{fullwidthtable}
+
+\begin{fullwidthtable}
+\tablecaptioncontinued{table:missile-data}{Missile Data}
+\begin{missiletable}
+\addlinespace
+1958&AA-1A &Alkali  &200&1.0&BR&EZ&6&HT&2&7&--&5 &--&--   &--             &\phantom{}12--3&\phantom{0}6--0&--&2&6&6&4\\
+1965&AA-1B &Alkali  &200&1.0&RH&TT&7&BT&2&7&--&5 &--&15--9&\phantom{0}9--6&\phantom{}12--2&\phantom{0}6--0&--&3&7&6&4\\
+1960&AA-1C &Alkali  &200&1.0&E &EZ&7&BT&2&7&--&--&6 &--   &--             &\phantom{0}9--2&\phantom{0}6--0&--&2&6&6&4\\
+\addlinespace
+1959&AA-2  &Atoll      &160&1.0&E &TT&7&HT/2&2&7&--&--&6 &--   &--   &\phantom{0}9--2&10--0&--&3&7&5&3\\
+1966&AA-2B &Atoll      &180&1.0&I &HT&7&ET/2&2&7&--&--&5 &--   &--   &\phantom{}12--2&14--0&--&4&8&5&3\\
+1967&AA-2-2&Advanced Atoll&200&1.0&RH&TT&7&BT  &2&7&--&4 &--&24--6&12--6&\phantom{}15--4&14--0&--&2&7&5&3\\
+\addlinespace
+1962&AA-3A &Anab      &600&1.5&I &TT&7&BT/2&4&9&--&--&5 &--   &--   &\phantom{}18--4&10--0&--&3&7&9&4\\
+1962&AA-3B &Anab      &600&1.5&RH&TT&7&BT/2&4&9&--&5 &--&36--9&24--6&\phantom{}21--4&10--0&--&3&7&9&4\\
+1972&AA-3-2&Anab      &600&1.5&RH&HT&8&ET/2&4&9&--&4 &--&45--9&30--9&\phantom{}24--3&12--0&--&4&8&9&4&HOJ\\
+\addlinespace
+\end{missiletable}
+\begin{tablenote}{\linewidth}
+Notes:
+\smallskip
+\begin{itemize}[nosep]
+    \item NW: nuclear warhead (see advanced rule~\ref{rule:air-to-air-nuclear-rockets}).
+    \item UNC: compatible with IR uncage technology (see rule~\ref{rule:ir-uncage}).
+    \item HOJ: home-on-jam seeker (see rule~\ref{rule:home-on-jam-seeker}).
+    \item IA: instant-arming missile (see rule~\ref{rule:instant-arming-missiles}).
+    \item LD: look-down missile (see rule~\ref{rule:look-down-missiles}).
+\end{itemize}
+\end{tablenote}
+\end{fullwidthtable}
+\clearpage
+}
 \end{landscape}
