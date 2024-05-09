@@ -1,5 +1,6 @@
 \begin{onecolumntable}
 
+\x{
 \tablecaption{table:missile-launch-modifiers}{Air to Air Missile Launch Modifiers}
 
 \begin{tabularx}{\linewidth}{Xl}
@@ -22,8 +23,9 @@ Fired out-of-envelope&$+3$\\
 \multicolumn{2}{c}{Crew}\\
 \midrule
 Veteran&$-1$\\
-Combat Hero, 
-Tactics Master or both&$-1$\\
+\changedin{2A}{2A-missile-launch-modifiers}{Combat Hero, 
+Tactics Master or both}{Combat hero}&$-1$\\
+\tablerowaddedin{2A}{2A-missile-launch-modifiers}{Tactics master&$-1$}
 Green&$+1$\\
 \midrule
 \multicolumn{2}{c}{Damage}\\
@@ -33,5 +35,41 @@ H&$+2$\\
 C&$+2$\\
 \bottomrule
 \end{tabularx}
+}{
+\tablecaption{table:missile-launch-modifiers}{Air-to-Air Missile Launch Modifiers}
+
+\begin{tabularx}{\linewidth}{Xl}
+\toprule
+\multicolumn{2}{c}{All Missiles}\\
+\midrule
+Each turn rate over the launch turn rate&$+2$\\
+Launched out-of-envelope&$+3$\\
+\midrule
+\multicolumn{2}{c}{IR Missiles}\\
+\midrule
+Launched in the  LO or ML altitude bands at a lower target&$+2$\\
+Launched above the highest cloud layer at a lower target&$+3$\\
+Launched into the Sun clutter&$+3$\\
+Target is using flare DDS (up to missile flare vulnerability)&$+$PPL\\
+\midrule
+\multicolumn{2}{c}{BR, RH, and AH Missiles}\\
+\midrule
+Snap-fired&$+3$\\
+\midrule
+\multicolumn{2}{c}{Crew}\\
+\midrule
+Veteran&$-1$\\
+Combat hero, 
+tactics master, or both&$-1$\\
+Green&$+1$\\
+\midrule
+\multicolumn{2}{c}{Damage}\\
+\midrule
+L or 2L&$+1$\\
+H&$+2$\\
+C&$+2$\\
+\bottomrule
+\end{tabularx}
+}
 
 \end{onecolumntable}
