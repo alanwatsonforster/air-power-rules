@@ -1,5 +1,6 @@
-\begin{onecolumntable}
 
+\x{
+\begin{onecolumntable}
 \tablecaption{table:missile-attack-modifiers}{Air to Air Missile and SAM Attack Modifiers}
 
 \begin{tabularx}{\linewidth}{Pl}
@@ -7,7 +8,7 @@
 \multicolumn{2}{c}{IRMs and IR SAMs}\\
 \midrule
 Target in Afterburner Power&$-3$\\
-Target in Military Power&$-2$\\
+Target in Military Power&$-1$\\
 Target in Idle Power&$+1$\\
 Missile must lose 2 or more levels during proportional move of attack against tgt.\ in LO alt.\ band (ground clutter)&$+2$\\
 Target in Terrain Following Flight&$+1$\\
@@ -37,8 +38,44 @@ Target did not engage the missile&$-1$\\
 \begin{tablenote}{\linewidth}
 Reminder: $\mbox{Max launch range for \changedin{1B}{1B-apj-23-errata and 1B-apj-24-play-aids}{RHM/AHM}{RHM}} = 3 \times \mbox{radar Track Str.\ \#}$.
 \end{tablenote}
-
 \end{onecolumntable}
+
+}{
+
+\begin{twocolumntable}
+\tablecaption{table:missile-attack-modifiers}{AAM and SAM Attack Modifiers}
+
+\begin{tabularx}{\linewidth}{Pl}
+\toprule
+\multicolumn{2}{c}{IRMs and IR SAMs}\\
+\midrule
+Target using afterburner power.&$-3$\\
+Target using military power.&$-1$\\
+Target using idle power.&$+1$\\
+Ground clutter: missile loses 2 or more levels in the proportional move in which it attacks a target in the LO altitude band (0--7).&$+2$\\
+Target in terrain following flight&$+1$\\
+Target using flare DDS (up to missile flare vulnerability)&$+$PPL\\
+\midrule
+\multicolumn{2}{c}{BRMs, RHMs, AHMs, and BR/CG/CW/TVM SAMs}\\
+\midrule
+DJM rating $-$ missile ECCM&$+$\\
+Lesser of Chaff PPL or missile Chaff Vulnerability&$+$\\
+Lesser of Mini-jammer PPL or Chaff Vulnerability $+$ 1&$+$\\
+Ground clutter (air to air missiles only) = $6 - \mbox{target Altitude above terrain} - \mbox{missile ECCM}$.&$+$\\
+Listed “T” level modifier (SAMs only, if applicable)&$+$\\
+\midrule
+\multicolumn{2}{c}{OG/LG SAMs}\\
+\midrule
+\multicolumn{2}{l}{No modifiers apply except angle-off and aircraft size.}\\
+\midrule
+\multicolumn{2}{c}{All Missiles}\\
+\midrule
+Target aircraft size modifier&ADC\\
+Target did not engage the missile&$-1$\\
+\bottomrule
+\end{tabularx}
+\end{twocolumntable}
+}
 
 \begin{twocolumntable}
 
