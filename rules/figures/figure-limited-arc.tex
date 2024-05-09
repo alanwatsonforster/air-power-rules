@@ -149,31 +149,52 @@
         (+1.625,10);
 }
 
-\begin{tikzfigure}{\linewidth}
-\begin{scope}[rotate=90]
+\begin{tikzfigure}{16.333\standardhexwidth}
+\begin{scope}[rotate=0]
 
-    \drawhexgrid{1}{1}{15}{16}
-    \drawpositiongrid{1}{1}{15}{16}
+    \drawhexgrid{1}{0}{15}{4}
+    \drawpositiongrid{1}{0}{15}{4}
     
-    \begin{athex}{2.00}{13.50}
+    \begin{athex}{1.00}{2.00}
         \begin{scope}[rotate=-90,thick]
             \drawlimitedarc[solid]
         \end{scope}
         \drawaircraftcounter{0.00}{0.00}{0}{F-4}{}{}
     \end{athex}
+\end{scope}
+\end{tikzfigure}
 
-    \begin{athex}{2.00}{9.00}
+\medskip
+
+\begin{tikzfigure}{16.333\standardhexwidth}
+\begin{scope}[rotate=0]
+
+    \drawhexgrid{0}{0}{14}{4}
+    \drawpositiongrid{0}{0}{14}{4}
+    
+    \begin{athex}{0.00}{2.0}
         \begin{scope}[rotate=-90,thick,]
             \drawlimitedarc[solid]
         \end{scope}
         \drawaircraftcounter{0.00}{0.00}{0}{F-4}{}{}
     \end{athex}
 
-    \begin{athex}{2.00}{8.00}
-        \begin{scope}[rotate=-120,thick]
+\end{scope}
+\end{tikzfigure}
+
+\medskip
+
+\begin{tikzfigure}{16.0\standardhexwidth}
+\begin{scope}[rotate=-90]
+
+    \drawhexgrid{0}{0}{4}{12}
+    \drawpositiongrid{0}{0}{4}{12}
+    
+    \begin{athex}{2.00}{0.0}
+        \begin{scope}[rotate=0,thick]
             \drawlimitedarc[solid]
         \end{scope}
-        \drawaircraftcounter{0.00}{0.00}{-30}{F-4}{}{}
+        \drawaircraftcounter{0.00}{0.00}{90}{F-4}{}{}
     \end{athex}
     
 \end{scope}

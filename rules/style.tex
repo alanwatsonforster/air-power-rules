@@ -508,7 +508,11 @@ minus \fontdimen4\font}
     \foreach \x in {0,2,...,#3} {
         \foreach \y in {0,1,...,#4} {
             \miniathex{0.0}{0.0}{\drawpositions{\x}{\y}}
-            \miniathex{1.0}{0.5}{\drawpositions{\x}{\y}}
+        }
+    }
+    \foreach \x in {1,3,...,#3} {
+        \foreach \y in {1,2,...,#4} {
+            \miniathex{0.0}{-0.5}{\drawpositions{\x}{\y}}
         }
     }
 }
