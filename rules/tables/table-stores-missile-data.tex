@@ -144,26 +144,26 @@ NOTES:
 \newenvironment{missiletable}{
     \small
     \setlength{\tabcolsep}{0.5em}
-    \tabularx{\linewidth}{llXccccccccccccccccccccp{5em}}
+    \tabularx{\linewidth}{lp{9em}Xccccccccccccccccccccp{4em}}
     \toprule
 
     &&&
     \multirow[b]{6}{*}{\vertical{Weight}}&
     \multirow[b]{6}{*}{\vertical{Load}}&
     \multirow[b]{6}{*}{\vertical{Seeker}}&
-    \multirow[b]{6}{*}{\vertical{Launch G}}&
+    \multirow[b]{6}{*}{\vertical{\minitable{l}{Launch \\Turn Rate}}}&
     \multirow[b]{6}{*}{\vertical{Launch Roll}}&
     \multirow[b]{6}{*}{\vertical{\minitable{l}{Turn Rate}}}&
     \multirow[b]{6}{*}{\vertical{\minitable{l}{Flight Time}}}&
     \multirow[b]{6}{*}{\vertical{\minitable{l}{Visibility}}}&
-    \multirow[b]{6}{*}{\vertical{\minitable{l}{ECCM \#}}}&
-    \multirow[b]{6}{*}{\vertical{\minitable{l}{Chaff \#}}}&
-    \multirow[b]{6}{*}{\vertical{\minitable{l}{Flare \#}}}&
+    \multirow[b]{6}{*}{\vertical{\minitable{l}{ECCM Rating}}}&
+    \multirow[b]{6}{*}{\vertical{\minitable{l}{Chaff Rating}}}&
+    \multirow[b]{6}{*}{\vertical{\minitable{l}{Flare Rating}}}&
     \multicolumn{3}{c}{Launch Envelopes}&
     \multirow[b]{6}{*}{\vertical{\minitable{l}{Base Speed\\\& Sustainer}}}&
     \multirow[b]{6}{*}{\vertical{\minitable{l}{AH Range}}}&
-    \multicolumn{2}{c}{\multirow{2}{*}{\vertical{\minitable{l}{Die Roll\\to Hit}}}}&
-    \multicolumn{2}{c}{\multirow{2}{*}{\vertical{\minitable{l}{Attack\\Rating}}}}&
+    \multicolumn{2}{c}{\multirow{2}{*}{{\minitable{c}{Hit\\ Roll}}}}&
+    \multicolumn{2}{c}{\multirow{2}{*}{{\minitable{c}{Attack\\Rating}}}}&
     Notes\\[3ex]
 
     &&&&&&&&&&&&&&
@@ -172,9 +172,9 @@ NOTES:
     \multirow[b]{4}{*}{\vertical{\minitable{l}{Rear\\0--60}}}&
     &&
     \multirow[b]{4}{*}{\vertical{Direct}}&
-    \multirow[b]{4}{*}{\vertical{Prox.}}&
+    \multirow[b]{4}{*}{\vertical{Proximity}}&
     \multirow[b]{4}{*}{\vertical{Direct}}&
-    \multirow[b]{4}{*}{\vertical{Prox.}}\\
+    \multirow[b]{4}{*}{\vertical{Proximity}}\\
     \\
 
     Year&
