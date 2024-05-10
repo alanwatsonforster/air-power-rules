@@ -127,19 +127,79 @@ Table~\ref{table:missile-data} gives information for carrying, launching, flying
 \x{
 An aircraft may launch up to two missiles at a targeted enemy aircraft during the Air to Air Missile Launch Phase.
 }{
-An aircraft may launch up to two missiles at a targeted enemy aircraft during the Air to Air Missile Launch Phase.
+An aircraft may launch up to two missiles at an enemy aircraft during the air-to-air missile launch phase.
 }
 
 \addedin{1C}{1C-tables}{
     \input{tables/table-missile-launch-modifiers}
 }
 
-\paragraph{Procedure.} Announce the number of missiles that each aircraft will attempt to fire (one or two) and their intended target during the Air to Air Missile Launch Phase.
+\Ax{
+\paragraph{Missile Launch Restrictions.} 
+The following restrictions apply to all types of missile:
+\begin{itemize}
+
+    \item All missiles launched by an aircraft in a single phase must be of the same type (for example, AIM-9 or AA-7). An aircraft may launch IR and RH versions of a single type in the same phase if the targeting requirements of each seeker type are met.
+    \item An aircraft that engaged a missile (see rule \ref{rule:engaging-missiles}) may not launch missiles.
+    \item An aircraft that turned at the ET rate may not launch a missile until after a recovery period (see rule~\ref{rule:recovery-periods}).
+
+    \item An aircraft that fired its guns or rockets at after its last FP that game turn may not launch missiles.
+
+    \item An aircraft that prepared for or executed a roll maneuver during its last FP that game turn may not launch missiles.
+    \end{itemize}
+
+The following restrictions apply to IR missiles:
+ 
+\begin{itemize}
+
+    \item If an aircraft used climbing flight during the game turn of launch, it may not fire at a lower target.
+
+    \item If an aircraft used diving flight during the game turn of launch, it may not fire at a higher target .
+
+    \item If the launching aircraft used level flight during the game turn of launch, the difference in altitude between the firer and target may not be more than one level for each two full hexes of horizontal range.
+
+\end{itemize}
+
+The following restrictions apply to BR, RH, and AH missiles:
+
+\begin{itemize}
+
+    \item An aircraft may not fire on a the target that is not within its radar arc limits.
+
+\end{itemize}
+}
+
+\x{
+\paragraph{Procedure.} 
+Announce the number of missiles that each aircraft will attempt to fire (one or two) and their intended target during the Air to Air Missile Launch Phase.
 
 Roll the die for each missile.\addedin{1C}{1C-tables}{\ Table~\ref{table:missile-launch-modifiers} shows the modifiers to the launch roll.} If the result is equal to or less than the missile launch roll number given for that type of missile \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}}, the launch is successful, place a missile counter in the launch aircraft's position with the exact same facing and altitude as the aircraft. On the next game turn, the missile will fly in pursuit of its target. \changedin{2A}{2A-missile-launch}{If the launch roll is greater than the launch number}{If the launch roll fails by more than one or is an unmodified 10}, the missile has malfunctioned (through faulty guidance, or because of a dud motor). The malfunctioned missile is removed from play. In either case, the missile and its load points are considered expended. \addedin{2A}{2A-missile-launches}{If the launch roll fails by exactly one and is not an unmodified 10, the launch fails, but the missile remains on the rail and can be used in the future.}
 
 If all declared launch attempts from an aircraft fail, the player may attempt one additional launch that phase. If at least one missile fired previously, this last attempt is not allowed. A missile's target is noted when it is launched.
+}{
+\paragraph{Missile Launch Procedure.} 
+Announce the type and number of missiles each aircraft will attempt to fire (one or two) and their intended target during the air-to-air missile launch phase.
 
+Roll the die for each missile.\addedin{1C}{1C-tables}{\ Table~\ref{table:missile-launch-modifiers} shows the modifiers to the launch roll.} 
+
+\begin{itemize}
+    \item If the modified result is equal to or less than the missile launch roll number given in Table~\ref{table:missile-data} \emph{and is not an unmodified 10}, the launch succeeds. Place a missile counter at the launch aircraft's position with the same facing and altitude as the aircraft. On the next game turn, the missile will fly in pursuit of its target. 
+
+    \item If the modified result is only one greater than the missile launch roll number given in Table~\ref{table:missile-data} \emph{and is not an unmodified 10}, the launch fails.
+    In this case, the missile is not launched but remains on the rail and can be used in a subsequent game turn.
+
+    \item If the modified result is more than one greater than the missile launch roll number given in Table~\ref{table:missile-data} \emph{or is an unmodified 10}, the missile fails (perhaps because of faulty guidance or a dud motor). The failed missile is removed from play.  
+
+
+\end{itemize}
+
+In the first and third cases, the missile is considered to have been expended, and its load points are no longer counted for the aircraft's load.
+
+If all declared launch attempts result in launch failures or missile failures, the player may attempt one additional launch in that phase. This last attempt is not allowed if at least one launch attempt was successful. 
+
+A missile's target is noted when it is launched.
+}
+\Dx{
 \paragraph{Missile Launch Restrictions.} Only “free” aircraft may launch missiles. All missiles launched by one aircraft in a single phase must be of the same type (for example, AIM-9 or AA-7). IR and RH versions of a single type may be launched in the same phase by the one aircraft if the targeting requirements of each seeker type are met.
 
 Aircraft attempting to launch Visually aimed (IR) missiles are restricted as follows:
@@ -168,12 +228,12 @@ Aircraft attempting to launch any type of missile are restricted as follows:
 
     \item An aircraft that turned at ET may not launch a missile unless the recovery period described in chapter 9 has been met.
 
-    \item An aircraft that fired its guns during its last FP that turn may not launch missiles.
+    \item An aircraft that fired its \changedin{2B}{2B-launch-restrictions}{guns during}{guns or rockets after} its last FP that turn may not launch missiles.
 
     \item An aircraft that executed a roll maneuver, or prepped for a roll during its last FP that turn, may not launch missiles.
     
 \end{itemize}
-
+}
 \paragraph{Missile Launch Modifiers.} High aircraft turn rates during the turn of launch can adversely affect a missile's ability to stay locked on to a target during its separation from the launch aircraft and motor ignition. Each missile has a Launch G (turn rate) listed for it \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}}. This is the highest turn rate the launching aircraft may use in the game turn and still be able to launch those missiles without penalty. If a higher turn rate was used in the turn, a $+2$ modifier is applied to the launch roll for each turn rate above the listed Launch G.
 
 For example, if a missile has a Launch G of “TT”, and the aircraft used a BT turn rate during the game turn, a $+4$ modifier to the launch roll would apply.
