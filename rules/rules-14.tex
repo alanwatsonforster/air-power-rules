@@ -31,9 +31,9 @@ The information required to launch and fly each type of air-to-air missile is pr
 
     \item \itemparagraph{Launch G.} This is the maximum turn rate an aircraft may use during flight to launch the missile without penalty. If a higher rate was used, a cumulative $+2$ modifier must be applied to the roll for each step of higher turn rate.
 
-    \item \itemparagraph{Launch Roll.} The die roll or less needed to successfully launch missile. The missile combat charts indicate the various modifiers to the roll.
+    \item \itemparagraph{Launch Roll.} The die roll or less needed to successfully launch missile. \changedin{1C}{1C-tables}{The missile combat charts indicate}{Table~\ref{table:missile-launch-modifiers} indicates} the various modifiers to the roll.
 
-    \item \itemparagraph{Turn Ability.} Missiles use the Turn Charts just as aircraft do. Their maximum allowed turn rates are listed here.
+    \item \itemparagraph{Turn Ability.} Missiles use \changedin{1C}{1C-tables}{the Turn Charts}{Table~\ref{table:turn} to determined their turn requirements} just as aircraft do. Their maximum allowed turn rates are listed here.
 
     \item \itemparagraph{Flight Time.} This is the maximum number of game turns the missile may be in play.
 
@@ -66,61 +66,69 @@ The information required to launch and fly each type of air-to-air missile is pr
 Notes: Any special characteristics or missile notes are indicated in the notes section and the note text can be found at the bottom of the MDCs.
 
 }{
-The information required to launch and fly each type of air-to-air missile is provided in \changedin{1C}{1C-tables}{the Missile Data Table (MDT) included in the play aid charts}{Table~\ref{table:missile-data}}. The data included in the table is as follows:
+Table~\ref{table:missile-data} gives information for carrying, launching, flying, and attacking with air-to-air missiles. The data included in the table is as follows:
 
 \begin{itemize}
 
-    \item \itemparagraph{Type.} The name and/or model number of the missile.
+    \item \itemparagraph{Year.} The operational service entry date.
+    
+    \item \itemparagraph{Type and Name.} These give the designation or model of the missile and its name.
 
-    \item \itemparagraph{Year.} The operational service entry date, if known.
+    \item \itemparagraph{Weight.} This gives the missile weight in pounds (for load limits).
 
-    \item \itemparagraph{Weight.} Weight in pounds of missile (for load limits).
+    \item \itemparagraph{Load.} This gives load points of the missile (for configuration limits).
 
-    \item \itemparagraph{Load.} The load points of missile (for conf.\ limits).
+    \item \itemparagraph{Seeker.} A letter code indicating the type of seeker the missile has: E, I, M, and A are early, improved, modern, and advanced infra-red seekers; BR, RH, and AH are beam-rider, radar-homing, and active-homing seekers; and a dash means that the missile is unguided and has no seeker.
 
-    \item \itemparagraph{Seeker.} A letter code indicating the type of seeker the missile has. E, I, M, A, are infra-red seekers (Early, Improved, Modern, Advanced).  BR, RH, AH are radar seekers (Beam-Rider, Radar-Homer, Active-Homer). A dash means it is unguided and has no seeker.
+    \item \itemparagraph{Launch Turn Rate.} This is the maximum turn rate an aircraft may use during flight to launch the missile without penalty. The aircraft used a higher rate, a cumulative $+2$ modifier applies to the launch roll for each level of higher turn rate.
 
-    \item \itemparagraph{Launch G.} This is the maximum turn rate an aircraft may use during flight to launch the missile without penalty. If a higher rate was used, a cumulative $+2$ modifier must be applied to the roll for each step of higher turn rate.
+    \item \itemparagraph{Launch Roll.} The die roll or less needed to successfully launch a missile. Table~\ref{table:missile-launch-modifiers} gives the various modifiers to the roll.
 
-    \item \itemparagraph{Launch Roll.} The die roll or less needed to successfully launch missile. The missile combat charts indicate the various modifiers to the roll.
-
-    \item \itemparagraph{Turn Ability.} Missiles use the Turn Charts just as aircraft do. Their maximum allowed turn rates are listed here.
+    \item \itemparagraph{Turn Rate.} Missiles use Table~\ref{table:turn} to determine their turn requirements, just as aircraft do. This gives their maximum turn rate.
 
     \item \itemparagraph{Flight Time.} This is the maximum number of game turns the missile may be in play.
 
-    \item \itemparagraph{Visibility.} This is the missile's visibility number used for sighting purposes.
+    \item \itemparagraph{Visibility.} This is the missile's visibility number for sighting purposes.
 
-    \item \itemparagraph{ECCM \#.} The missile's resistance rating to jamming and ground clutter. It is used as a die roll modifier in certain situations explained later, see ECM rules.
+    \item \itemparagraph{ECCM Rating.} This is the missile's resistance rating to jamming and ground clutter (see rule~\ref{rule:electronic-warfare} and \ref{rule:radar-ground-clutter}).
 
-    \item \itemparagraph{Chaff \#.} This is the missile's vulnerability rating to chaff and mini-jammer decoys. See ECM rules.
+    \item \itemparagraph{Chaff Rating.} This is the missile's vulnerability rating to chaff and mini-jammer decoys (see rule~\ref{rule:electronic-warfare}).
 
-    \item \itemparagraph{Flare \#.} This is the missile's vulnerability rating to flare decoys. See ECM rules.
+    \item \itemparagraph{Flare Rating.} This is the missile's vulnerability rating to flare decoys (see rule~\ref{rule:electronic-warfare}).
 
-    \item \itemparagraph{Launch Envelope.} The missile's minimum and maximum ranges in terms of hexes that a missile may be fired at a target are listed here for front, side and rear shots (note, for radar missiles the maximum range is a function of the aircraft's radar tracking strength).
+    \item \itemparagraph{Launch Envelopes.} These are the minimum and maximum ranges at which a missile may be launched at a target. (For BRMs and RHMs, the maximum range also depends on the aircraft's radar tracking strength.)
 
-    Note: Front shots are those taken from the target's 150 and 180 arcs; side shots are those from the 120 and 90 arcs; rear shots are those from the 60 or less arcs. NA indicates the shot is not allowed. Each two altitude levels difference in altitude between firer and target equal one hex in range.
+    Front shots are those taken from the target's 150{\deg} and 180{\deg} arcs; side shots are those from the 120{\deg} and 90{\deg} arcs; rear shots are those from the 60{\deg} or 30{\deg} arcs. A dash indicates the shot is not allowed.
 
-    \item \itemparagraph{Speed.} This is the missile's BASE speed which is used as described below to determine a missile's actual speed on its first turn of flight. After the first game turn, the missile's speed will be vary based on numerous factors explained below. A slash with a second number indicates the missile has a sustainer motor which lasts a number of game turns equal to the second number.
+    \item \itemparagraph{Speed.} This is the missile's base speed, which is used as described below to determine a missile's actual speed on its first turn of flight. After the first game turn, the missile's speed will vary based on numerous factors explained below. A dash with a second number indicates the missile has a sustainer motor, which lasts a number of game turns equal to the second number.
 
-    \item \itemparagraph{Active Homing.} This is the range in hexes at which an AH missile's own radar seeker becomes active allowing it to track its target.
+    \item \itemparagraph{Active Homing.} This is the range in hexes at which an AH missile's radar seeker becomes active, allowing it to track its target.
 
-    \item \itemparagraph{Home-On-Jam.} A “Y” indicates the missile has a home on jam ability which allows it to guide against aircraft using barrage jamming, see ECM rules.
+    \item \itemparagraph{Hit Roll.} The two columns list the number or less for the missile's attack hit roll that will result in a direct (first column) or proximity (second column) hit. A direct hit gives a $-2$ damage roll modifier.
 
-    \item \itemparagraph{Look Down.} A “Y” indicates the missile has the ability to be used in look down parameters in conjunction with a look down capable radar.
+    \item \itemparagraph{Attack Rating.} The two columns list the attack ratings for a direct (first column) or proximity (second column) hit for use with the aircraft damage tables.
 
-    \item \itemparagraph{Roll To Hit.} The two columns list the number or less from the missile's attack die roll that will result in a direct (first column) or proximity (second column) hit. A direct hit gives a minus 2 damage roll modifier for blast effects.
-
-    \item \itemparagraph{Attack Rating.} The two columns list the attack ratings for a direct (first column) or  proximity (2d column) hit for use with the Aircraft damage tables.
+    \item \itemparagraph{Notes.} The notes indicate whether the missile has special characteristics such as:
+    \begin{itemize}
+        \item NW: nuclear warhead (see advanced rule~\ref{rule:air-to-air-nuclear-rockets}).
+    \item UNC: compatible with IR uncage technology (see rule~\ref{rule:ir-uncage}).
+    \item HOJ: home-on-jam seeker (see rule~\ref{rule:home-on-jam-seeker}).
+    \item IA: instant-arming missile (see rule~\ref{rule:instant-arming-missiles}).
+    \item LD: look-down missile (see rule~\ref{rule:look-down-missiles}).
+    
+    \end{itemize}
 
 \end{itemize}
-
-Notes: Any special characteristics or missile notes are indicated in the notes section and the note text can be found at the bottom of the MDCs.
 }
 
 \section{Missile Launches}
 \label{rule:missile-launches}
 
+\x{
 An aircraft may launch up to two missiles at a targeted enemy aircraft during the Air to Air Missile Launch Phase.
+}{
+An aircraft may launch up to two missiles at a targeted enemy aircraft during the Air to Air Missile Launch Phase.
+}
 
 \addedin{1C}{1C-tables}{
     \input{tables/table-missile-launch-modifiers}
