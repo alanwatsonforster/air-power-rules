@@ -178,7 +178,7 @@ Roll the die for each missile.\addedin{1C}{1C-tables}{\ Table~\ref{table:missile
 If all declared launch attempts from an aircraft fail, the player may attempt one additional launch that phase. If at least one missile fired previously, this last attempt is not allowed. A missile's target is noted when it is launched.
 }{
 \paragraph{Missile Launch Procedure.} 
-Announce the type and number of missiles each aircraft will attempt to fire (one or two) and their intended target during the air-to-air missile launch phase.
+Announce the type and number of missiles each aircraft will attempt to fire (one or two) and their target.
 
 Roll the die for each missile.\addedin{1C}{1C-tables}{\ Table~\ref{table:missile-launch-modifiers} shows the modifiers to the launch roll.} 
 
@@ -234,12 +234,43 @@ Aircraft attempting to launch any type of missile are restricted as follows:
     
 \end{itemize}
 }
-\paragraph{Missile Launch Modifiers.} High aircraft turn rates during the turn of launch can adversely affect a missile's ability to stay locked on to a target during its separation from the launch aircraft and motor ignition. Each missile has a Launch G (turn rate) listed for it \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}}. This is the highest turn rate the launching aircraft may use in the game turn and still be able to launch those missiles without penalty. If a higher turn rate was used in the turn, a $+2$ modifier is applied to the launch roll for each turn rate above the listed Launch G.
+
+\paragraph{Missile Launch Modifiers.} 
+\x{
+High aircraft turn rates during the turn of launch can adversely affect a missile's ability to stay locked on to a target during its separation from the launch aircraft and motor ignition. Each missile has a Launch G (turn rate) listed for it \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}}. This is the highest turn rate the launching aircraft may use in the game turn and still be able to launch those missiles without penalty. If a higher turn rate was used in the turn, a $+2$ modifier is applied to the launch roll for each turn rate above the listed Launch G.
 
 For example, if a missile has a Launch G of “TT”, and the aircraft used a BT turn rate during the game turn, a $+4$ modifier to the launch roll would apply.
 
 Additional launch roll modifiers may exist for weather, terrain clutter, crew quality, and the presence of missile countermeasures in the form of decoys (expendable chaff, flares, and mini-jammers), or electronic jamming. These modifiers are explained in later rules.
+}{
+Table~\ref{table:missile-launch-modifiers} gives modifiers for  missile launch rolls:
+\begin{itemize}
+    \item Aircraft turn rates during launch can adversely affect a missile's ability to stay locked-on to a target during its separation from the aircraft and motor ignition. 
+    
+    Each missile has a maximum launch turn rate given in Table~\ref{table:missile-data}. If the launching aircraft has used a higher turn rate and has not yet completed the corresponding recovery period (see rule~\ref{rule:recovery-periods}), it suffers a $+2$ modifier for each turn rate above the maximum.
 
+    For example, if a missile has a maximum launch turn rate of TT and the launching aircraft used a BT turn rate and has not yet completed the recovery period, a $+4$ modifier would apply to the launch roll.
+
+    \item If a missile is launched out-of-envelope, it receives a $+3$ modifier (see advanced rules \ref{rule:irm-out-of-envelope-launches} and \ref{rule:radar-out-of-envelope-launches}).
+    
+    \item If an IRM is at a target in ground clutter, it suffers a $+2$ modifier (see rule \ref{rule:irm-ground-clutter}).
+
+    \item If an IRM is launched above the highest cloud layer at a lower target during daylight, it suffers a $+3$ launch modifier (see advanced rule \ref{rule:clouds}).
+
+    \item If an IRM is launched into Sun clutter, it suffers a $+3$ launch modifier (see advanced rule~\ref{rule:sun}).
+
+    \item If an IRM is launched at a target with an active DDS program, it suffers a launch modifier equal to the smaller of the DDS flare PPL and the missile flare vulnerability rating (see advanced rule~\ref{rule:dds}).
+
+    \item If a BRM, RHM, or ARM is snap-fired, it suffers a $+2$ launch modifier (see advanced rule~\ref{rule:snap-firing-missiles}).
+    
+    \item The quality and characteristics of the crew give launch modifiers (see advanced rule~\ref{rule:crew-quality} and \ref{rule:crew-characteristics}). 
+    
+    In multi-crew aircraft, the pilot is the relevant crew member for IRM launches and the radar operator (RIO, WSO, or equivalent) is the relevant crew member for BRM, RHM, and ARM launches.
+
+    \item If the launch aircraft is damaged, it suffers a launch modifier.
+    
+\end{itemize}
+}
 \section{Missile Flight}
 \label{rule:missile-flight}
 
