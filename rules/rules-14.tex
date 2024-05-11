@@ -274,8 +274,13 @@ Table~\ref{table:missile-launch-modifiers} gives modifiers for  missile launch r
 \section{Missile Flight}
 \label{rule:missile-flight}
 
+\x{
 Missile flight has been simplified for ease of play. A missile must expend all of its FPs each turn. It does not differentiate between HFPs and VFPs as aircraft do. The missile's start speed and altitude is recorded on the aircraft log each game turn. Unlike aircraft, missiles may both climb and dive (within restrictions) in the same turn in order to pursue their target. Missiles never have or carry half FPs or partial altitude gains.
+}{
+Missile flight is a simplified version of aircraft flight. The missile's start speed and altitude are recorded on the aircraft log each game turn. A missile must expend all of its FPs each turn. It does not differentiate between HFPs and VFPs, as aircraft do. Unlike aircraft, missiles may both climb and dive (within restrictions) in the same turn to pursue their target. Missiles never have or carry half FPs or partial altitude gains.
+}
 
+\x{
 \paragraph{Start Speeds And Altitudes}. On its first turn of flight (the game turn after the one in which it was launched) a missile's start altitude is the same as the launch aircraft's start altitude the turn after launch. Its start speed is its base speed listed \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}} adjusted as follows:
 
 \begin{itemize}
@@ -298,8 +303,39 @@ On subsequent turns, the missile's start altitude will be the altitude it ended 
 \end{itemize}
 
 Example: A missile with a start speed of 14 gained 8 levels during its flight. Its new start speed would be 8 (2/3d's of 14 = 9; minus 1 for altitude gain).
+}{
+\paragraph{Missile Start Speeds And Altitudes}. In its first game turn of flight (the game turn after the one in which it was launched) a missile's start altitude is the same as the launch aircraft's start altitude the turn after launch. Its start speed is its base speed listed in Table~\ref{table:missile-data} adjusted as follows:
 
-\paragraph{Sustainer Motors.} Missiles equipped with sustainer motors (indicated \changedin{1C}{1C-tables}{on the MDT}{Table~\ref{table:missile-data}}) determine their start speed differently. If a missile has a sustainer, its first turn of flight speed is equal to its base speed as indicated \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}} plus the full speed of the aircraft (rounding fractions up). For every turn the sustainer lasts, the missile's speed is not reduced to two thirds as above but only adjusted for climbs and dives. After the sustainer burns out, the missile's speed is reduced as above. A missile with a sustainer will have a number after a slash in the Speed column \changedin{1C}{1C-tables}{of the MDT}{in Table~\ref{table:missile-data}}. The number indicates how many turns the sustainer motor lasts.  A “1” indicates the sustainer is only good for the first turn of flight.
+\begin{itemize}
+
+    \item $-1$ if the speed of the launch aircraft on the turn after launch is 3.0 or less,
+
+    \item $+1$ if the speed is 6.0 or more, and
+
+    \item $+2$ if the speed is 9.0 or more.
+\end{itemize}
+
+In subsequent game turns, the missile's start altitude will be its altitude after its flight in the previous turn and its start speed will be {\twothirds} its previous speed, rounding fractions up, and then adjusted as follows:
+
+\begin{itemize}
+
+    \item $-1$ if the missile's altitude gain for the game turn in levels is half or more of its speed or $-2$ if it is its speed or more.
+
+    \item $+1$ if the missile's altitude loss for the game turn in levels is half or more of its speed or $+2$ if it is its speed or more.
+
+\end{itemize}
+
+For example, if a missile with a start speed of 14 gains 8 levels during its flight, its new start speed would be 8 (as { \twothirds} of 14 is 9 and this is then reduced by 1 for an altitude gain in levels of half or more of its speed).
+}
+
+\x{
+\paragraph{Sustainer Motors.} Missiles equipped with sustainer motors determine their start speed differently. If a missile has a sustainer, its first turn of flight speed is equal to its base speed as indicated \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}} plus the full speed of the aircraft (rounding fractions up). For every turn the sustainer lasts, the missile's speed is not reduced to two thirds as above but only adjusted for climbs and dives. After the sustainer burns out, the missile's speed is reduced as above. A missile with a sustainer will have a number after a slash in the Speed column \changedin{1C}{1C-tables}{of the MDT}{in Table~\ref{table:missile-data}}. The number indicates how many turns the sustainer motor lasts.  A “1” indicates the sustainer is only good for the first turn of flight.
+}{
+\paragraph{Missile Sustainer Motors.} 
+Table~\ref{table:missile-data} indicates whether a missile has a sustainer motor. If the number after the dash following the base speed is zero, the missile does not have a sustainer motor, and its speed is determined as described above. Otherwise, the missile has a sustainer motor and the number indicates during how many game turns it burns. For example, “1” indicates the sustainer only burns during the first turn of flight.
+
+If a missile has a sustainer motor, in its first game turn of flight its speed is equal to its base speed given in Table~\ref{table:missile-data} plus the speed of the aircraft, rounding fractions up. In subsequent game turns while the sustainer continues to burn, the missile’s speed is not reduced by {\twothirds} as above but only adjusted for climbs and dives. In game turns after the sustainer burns out, the missile’s speed is reduced as above. 
+}
 
 \paragraph{Missile Order of Flight.} A missile always flies at the same time as its target.
 
