@@ -339,6 +339,7 @@ If a missile has a sustainer motor, in its first game turn of flight its speed i
 
 \paragraph{Missile Order of Flight.} A missile always flies at the same time as its target.
 
+\x{
 \paragraph{Missile Proportional Flight.} Missiles and their targets move simultaneously. To simulate this, the missile and its target always alternate their expenditure of FPs in proportion to their relative speeds\addedin{2A}{2A-missile-flight}{, with the missile moving first}. Proportional speed is determined by dividing the faster speed by the slower speed. The result (ignoring fractions) is the number of FPs expended by the faster missile per FP expended by the slower aircraft.  Leftover missile FPs are tacked on as extra FPs in the first few segments of the proportional flight.
 
 For example, if the aircraft speed is 5.0 and the missile speed is 15.0. Five goes into fifteen three times. Thus, the missile will move 3 FP for each 1 FP moved by the aircraft.  In this case, \changedin{2A}{2A-missile-flight}{the aircraft would move one FP and then the missile would move three}{the missile would move three FPs and then the aircraft would move one}.  This continues until both are out of FPs for the turn or the missile reaches a position from which an attack can occur.
@@ -346,6 +347,26 @@ For example, if the aircraft speed is 5.0 and the missile speed is 15.0. Five go
 If the proportion includes leftover FPs, for example, say the missile's speed was 17.0 instead of 15.0. In this case five goes into seventeen three times with two left over. The missile would still move three for one except the two extra points are added on one at a time in the first two segments of movement that turn. That is, \changedin{2A}{2A-missile-flight}{the aircraft would move one, then the missile four ($3+1$), then the aircraft one and missile four again}{the missile would move four FPs, then the aircraft one, then the missile four, and the the aircraft one again}. After that, the missile reverts to its three to one proportion.
 
 If an aircraft's speed includes a fraction; say it is 4.5 instead of 5.0, round it up to simplify determining proportions but use its actual speed when moving. This would give the same result as in the above paragraph (5 into 17). The difference comes in the execution of the segments. The moves would be 4 for 1, 4 for 1, 3 for 1, 3 for 1, and then 3 for the aircraft's half FP.
+}{
+\paragraph{Missile Proportional Flight.} Real missiles and their targets move simultaneously. To simulate this, the missile and its target always alternate their expenditure of FPs proportionally, with the missile moving first. 
+
+\begin{itemize}
+\item If the missile and aircraft have the same number of FPs available, they alternate FPs one by one, with the missile moving first.
+
+\item The missile will typically have more FPs than the aircraft. In this case, divide the missile's number of FPs by the aircraft's number of FPs. If the result is exact, the missile and aircraft alternative proportional moves, with the missile moving the result in FPs and then the aircraft moving one FP. If the result is not exact, this procedure is modified with the remaining FPs being added one each to the first proportional moves of the missile.
+
+\item If the aircraft has more FPs than the missile, use the preceding procedure with the roles reversed to determine the number of FPs in the aircraft's proportional moves. The missile still moves first.
+
+\end{itemize}
+
+For example:
+\begin{itemize}
+    \item If the missile has 15 FPs and the aircraft has 5 FPs, the missile will move 3 FPs in each of the five proportional moves, and the aircraft will move 1 FP in each of the five proportional moves.
+    \item If the missile has 17 FPs and the aircraft has 5 FPs, the missile will move 4 FPs in the first two proportional moves, and 3 FPs in the last three proportional moves, and the aircraft will move 1 FP in each of the five proportional moves.
+    \item If the missile has 7 FPs and the aircraft has 10 FPs, the missile will move 1 FP in each of the seven proportional moves, and the aircraft will move 2 FPs in the first three proportional moves and 1 FP in the last four proportional moves.
+\end{itemize}
+
+}
 
 \deletedin{2A}{2A-spbr}{
 \paragraph{Speedbrake Effects on Proportional Moves (adv. rule 6.5)} When engaged in proportional movement with attacking missiles, speedbrakes (when applied) can only use up the last available FP to be expended. Or, stated another way, when engaged in proportional flight with attacking missiles, if the aircraft still has at least one full FP to expend it must do so each on every proportional move whether speedbrakes have been used yet or not.
