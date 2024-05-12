@@ -372,6 +372,21 @@ For example:
 \paragraph{Speedbrake Effects on Proportional Moves (adv. rule 6.5)} When engaged in proportional movement with attacking missiles, speedbrakes (when applied) can only use up the last available FP to be expended. Or, stated another way, when engaged in proportional flight with attacking missiles, if the aircraft still has at least one full FP to expend it must do so each on every proportional move whether speedbrakes have been used yet or not.
 }
 
+\Ax{
+\paragraph{Follow-On Missiles.} When two missiles are launched in the same game turn, the first one is termed the “lead” missile, and the second one is termed a “follow-on” missile. The follow-on missile may not move until the lead missile has moved at least two FPs. This launch delay simulates the time delay between the launches of the two missiles. The launch delay may be longer, but not more than {\onethird} the missile’s speed.  
+
+When the follow-on missile first begins moving, it is not allowed to move more FPs than the lead missile has left to it in that segment of the proportional move. For example, if the proportional moves are 5 FPs for the missiles and 1 FP for the aircraft, and the follow-on missile starts moving after the lead missile has moved three FPs, the follow-on missile would only be able to move 2 FPs. Both missiles could move 5 FPs in the next segment, but the follow-on missile would still trail by the equivalent of 3 FPs.
+
+On the follow-on missile’s first game turn of flight, it effectively loses FPs equal to the launch delay. On its last turn of flight, it regains these.
+
+If the missile has a flight time of only one game turn, the first game turn of flight is also the last game of flight. In this case, the FPs corresponding to the launch delay are added one each to the initial complete proportional moves, after any that have also received an additional FP from the remainder.
+
+If the missile has a flight time of more than one game turn, on the first game turn it moves FPs equal to its speed minus the launch delay. On subsequent game turns before its last game turn of flight, it moves FPs equal to its speed. On its last game turn of flight, the FPs corresponding to the launch delay are added one each to the initial complete proportional moves (and not to the incomplete proportional moves containing the launch delay).
+
+For example, consider two missiles with 17 FPs launched at an aircraft with 5 FPs. In the first game turn of flight, the proportional moves for the lead missile are 4, 4, 3, 3, and 3 FPs. The follow-on missile can have a launch delay between 2 and 6 FPs. If the launch delay is 2 FPs and the missile flight time is more than one game turn, the proportional moves for the follow-on missile in the first game turn of flight are 2, 4, 3, 3, and 3 FPs, and the missile gains the two FPs corresponding to the launch delay in its last game turn of flight. If the launch delay is 2 FPs and the missile flight time is only one game turn, the proportional moves for the follow-on missile in the first game turn of flight are 2, 5, 4, 3, and 3 FPs. That is, the missile regains the two FPs corresponding to the launch delay in its first two complete proportional moves.
+
+}
+
 \paragraph{Missile Types Of Flight.} A missile may fly level, climb and dive all in the same game turn as necessary to pursue its target. The following \changedin{1C}{1C-tables}{is}{and Table~\ref{table:missile-flight-rules} are} a summary of missile types of flight.
 
 \addedin{1C}{1C-tables}{
@@ -420,11 +435,13 @@ Non-instant arming missiles may also snap-turn as their first maneuvering action
 Instant arming missiles, (indicated by an asterisk \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}}) may begin maneuvering and attack immediately after launch.
 }
 
+\Dx{
 \paragraph{Follow On Missiles.} Whenever two missiles are launched at a time, the second one is termed a “follow-on” missile. This missile may not begin moving until the first missile has moved at least two FPs. This simulates the time delay between the firing of the two missiles. The time delay may be longer, but not more than 1/3 the first missile's speed.
 
 When the follow-on missile first begins moving, it is not allowed to move more FPs than the lead missile has left to it in that segment of the proportional move. For example, if the proportions are 5 to 1 and the follow on starts moving after the lead missile moves three points, the follow on would only be able to move 2 points (the same as was left to the lead). In the next segment, both could move 5 hexes but the follow-on missile would still trail by a distance of 3 (the original delay).
 
-On the first and subsequent turns of flight, the follow-on must cease moving when the first missile does. Thus, on the first turn, it will be cheated out of FPs equal to the delay between it and the first missile. To compensate, the follow-on missile is allowed to use those FPs on the last turn of its flight, they are added as bonus FPs one per proportional segment starting with the first until used up.
+On the first and subsequent turns of flight, the follow-on must cease moving when the first missile does. Thus, on the first turn, it will be cheated out of FPs equal to the delay between it and the first missile. To compensate, the follow-on missile is allowed to use those FPs on the last turn of its flight, they are added as bonus FPs one per proportional segment starting with the first \addedin{2B}{2B-follow-up-missiles}{complete proportional moves} until used up.
+}
 
 \section{Missile Attacks}
 
