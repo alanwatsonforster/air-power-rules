@@ -1,10 +1,17 @@
 \begin{onecolumnfigure}[tb]
 
-\begin{tikzfigure}{9.333\standardhexwidth}
-
-    \drawhexgrid{0}{0}{8}{2}  
-
-    \begin{athex}{7.00}{0.50}
+\begin{centering}
+\begin{fitheight}{3\standardhexwidth}
+\begin{tikzpicture}
+\begin{tikzdefaults}
+    \drawhex{0}{0}
+    \drawhex{0}{1}
+    \drawhex{0}{2}
+    \drawhex{-1}{0.5}
+    \drawhex{-1}{1.5}
+    \drawhex{+1}{0.5}
+    \drawhex{+1}{1.5}
+        \begin{athex}{0.00}{0.00}
         \drawdotathex{+0.00}{0.50}
         \drawdotathex{-0.50}{0.75}
         \drawdotathex{+0.50}{0.75}
@@ -14,30 +21,62 @@
         \drawdotathex{+0.00}{1.50}
         \drawarrowcounter{0.00}{0.00}{90}
     \end{athex}
-
-    \begin{athex}{1.00}{0.50}
-        \drawdotathex{+0.00}{0.50}
-        \drawdotathex{+0.00}{1.00}
-        \drawdotathex{+0.50}{0.25}
-        \drawdotathex{+0.50}{0.75}
-        \drawdotathex{+0.50}{1.25}
-        \drawdotathex{+1.00}{0.50}
-        \drawdotathex{+1.00}{1.00}
-        \drawarrowcounter{0.00}{0.00}{60}
+\end{tikzdefaults}
+\end{tikzpicture}
+\end{fitheight}
+\hfil
+\begin{fitwidth}{3\standardhexwidth}
+\begin{tikzpicture}
+\begin{tikzdefaults}
+\begin{scope}[rotate=90]
+    \drawhex{0}{-1}
+    \drawhex{0}{0}
+    \drawhex{0}{+1}
+    \drawhex{1}{+0.5}
+    \drawhex{1}{-0.5}
+    \drawhex{2}{-1}
+    \drawhex{2}{0}
+    \drawhex{2}{+1}
+    \begin{athex}{0.00}{0.00}
+        \drawdotathex{+0.50}{+0.25}
+        \drawdotathex{+0.50}{-0.25}
+        \drawdotathex{+1.00}{+0.50}
+        \drawdotathex{+1.00}{+0.00}
+        \drawdotathex{+1.00}{-0.50}
+        \drawdotathex{+1.50}{+0.25}
+        \drawdotathex{+1.50}{-0.25}
+        \drawarrowcounter{0.00}{0.00}{0}
     \end{athex}
-
-    \begin{athex}{3.50}{0.25}
-        \drawdotathex{+0.00}{0.50}
-        \drawdotathex{+0.00}{1.00}
-        \drawdotathex{+0.50}{0.25}
-        \drawdotathex{+0.50}{0.75}
-        \drawdotathex{+0.50}{1.25}
-        \drawdotathex{+1.00}{0.50}
-        \drawdotathex{+1.00}{1.00}
-        \drawarrowcounter{0.00}{0.00}{60}
+\end{scope}
+\end{tikzdefaults}
+\end{tikzpicture}
+\end{fitwidth}
+\hfil
+\begin{fitwidth}{3\standardhexwidth}
+\begin{tikzpicture}
+\begin{tikzdefaults}\begin{scope}[rotate=90]
+    \drawhex{0}{-0.5}
+    \drawhex{0}{+0.5}
+    \drawhex{1}{-1}
+    \drawhex{1}{0}
+    \drawhex{1}{+1}
+    \drawhex{2}{-0.5}
+    \drawhex{2}{+0.5}
+    \begin{athex}{0.00}{0.00}
+        \drawdotathex{+0.50}{+0.25}
+        \drawdotathex{+0.50}{-0.25}
+        \drawdotathex{+1.00}{+0.50}
+        \drawdotathex{+1.00}{+0.00}
+        \drawdotathex{+1.00}{-0.50}
+        \drawdotathex{+1.50}{+0.25}
+        \drawdotathex{+1.50}{-0.25}
+        \drawarrowcounter{0.00}{0.00}{0}
     \end{athex}
-    
-\end{tikzfigure}
+\end{scope}
+\end{tikzdefaults}
+\end{tikzpicture}
+\end{fitwidth}
+\end{centering}
 
 \figurecaption{figure:missile-attacks}{\protect\x{Air-to-Air Missile Attacks}{A missile attacks when it passes through the target hex at its altitude or when is co-altitude with the target, has at least one FP remaining in the proportional move, and the target occupies one of the positions show above.}}
 

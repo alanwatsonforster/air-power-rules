@@ -50,6 +50,15 @@
     \resizebox{\fitwidth}{!}{\usebox{\fitwidthbox}}%
 }
 
+\newsavebox{\fitheightbox}
+\newenvironment{fitheight}[1]{%
+    \def\fitheight{#1}%
+    \begin{lrbox}{\fitheightbox}%
+}{%
+    \end{lrbox}%
+    \resizebox{!}{\fitheight}{\usebox{\fitheightbox}}%
+}
+
 % Headers
 
 \newcommand{\therunningtitle}{}
@@ -388,11 +397,19 @@ minus \fontdimen4\font}
 \usetikzlibrary{calc}
 \usetikzlibrary{arrows.meta}
 
-\newenvironment{tikzfigure}[1]{%
-    \begin{fitwidth}{#1}%
-    \begin{tikzpicture}[>={Stealth[length=1.5mm,inset=0pt]}]%
+\newenvironment{tikzdefaults}{%
+    \begin{scope}[>={Stealth[length=1.5mm,inset=0pt]}]%
     \scriptsize%
 }{%
+    \end{scope}%
+}
+
+\newenvironment{tikzfigure}[1]{%
+    \begin{fitwidth}{#1}%
+    \begin{tikzpicture}%
+    \begin{tikzdefaults}%
+}{%
+    \end{tikzdefaults}%
     \end{tikzpicture}%
     \end{fitwidth}%
 }
