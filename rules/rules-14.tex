@@ -387,6 +387,7 @@ For example, consider two missiles with 17 FPs launched at an aircraft with 5 FP
 
 }
 
+\x{
 \paragraph{Missile Types Of Flight.} A missile may fly level, climb and dive all in the same game turn as necessary to pursue its target. The following \changedin{1C}{1C-tables}{is}{and Table~\ref{table:missile-flight-rules} are} a summary of missile types of flight.
 
 \addedin{1C}{1C-tables}{
@@ -420,10 +421,72 @@ For example, consider two missiles with 17 FPs launched at an aircraft with 5 FP
     The normal prep-move requirements for all maneuvers must be met just as for aircraft and all maneuvers cost 1 FP to execute except for vertical rolls which cost 0. \addedin{1B}{1B-apj-23-errata}{Missile\deletedin{2A}{2A-snap}{ snap turns (except those performed as Instant Snap Turns) and missile} slides are subject to a $+1$ prep requirement if the missiles are supersonic.}
 
 \end{itemize}
+}{
+\paragraph{Missile Types Of Flight.} A missile may fly level, climb, and dive all in the same game turn as necessary to pursue its target. Missile types of flight are described below and summarized in Table~\ref{table:missile-flight-rules}.
 
+\addedin{1C}{1C-tables}{
+    \input{tables/table-missile-flight-rules}
+}
+
+\begin{itemize}
+
+    \item \itemparagraph{Level Flight.} A missile may expend one FP to move one hex or hex side forward. A missile may only fly onto a hex side if it faces parallel to that hex side (see rule~\ref{rule:position}). During the FP, a missile may also freely lose one altitude level (at no additional FP cost).
+
+    \item \itemparagraph{Climbing Flight.} A missile may expend one FP to climb one or two altitude levels. 
+    
+    A missile may not climb if its target is at the same or a lower altitude level unless it has a TVM (track-via-missile) seeker or is capable of MCG (mid-course guidance). Such missiles may climb above their target to a maximum altitude level of 100.
+
+    \item \itemparagraph{Diving Flight.} A missile may expend one FP to dive two or three altitude levels. Once per game turn, one FP may be expended to dive to just one altitude level. (Missiles may also lose altitude freely by one level per FP in level flight.)
+
+    A missile may not dive if its target is at the same or a higher altitude level.
+
+    \item \itemparagraph{Combined Flight.} FPs may be expended in level and climbing flight and level and diving flight in any order. Any number of FPs may be expended in climbing flight or diving flight at the same location, but a missile may not expend FPs in both climbing and diving flight at the same location. Furthermore, the following requirements apply to changing between climbing flight and diving flight or vice versa:
+
+
+    \begin{itemize}
+
+        \item If the missile's turn rate is not BT/2, ET/2, or ET/3, it must expend FPs in level flight equal to {\onethird} its speed (round up) between FPs used in climbing flight and diving flight or vice versa. In these FPs it may not lose altitude freely.
+        
+        \item If the missile's turn rate is BT/2, ET/2, or ET/3, it must expend FPs in level flight equal to $1/10$ its speed (round up)  between FPs used in climbing and diving flight or vice versa. In these FPs, it may lose altitude freely.
+
+    \end{itemize}
+
+    \item \itemparagraph{Turning.} Missiles may declare turns and change facing like aircraft but do not specify a turn rate when they declare a turn. Instead, missiles are always considered to be turning at the rate given in Table~\ref{table:missile-data}, which is given as a conventional turn rate and a divisor. The turn requirements of a missile correspond to those of the given conventional turn rate divided by the divisor and rounded up.
+    
+    For example, the turn requirement for an ET turn at speed 16.0 in the LO altitude band is 6 FPs. The corresponding turn requirement for a missile with a turn rate of ET/2 is 6/2 FPs or 3 FPs, and a missile with a turn rate of ET/3 is 6/3 FPs or 2 FPs. In these calculations, always round up, so, for example, half of 7 is 4 and {\onethird} of 7 is 3.
+    
+    Missiles may stop turns at any point. They are considered to have a high roll rate (HRR) and may reverse turns instantly. Missiles do not receive DPs for turning or changing facing. 
+
+    \item \itemparagraph{Maneuvers.} Missiles are allowed to execute slide maneuvers and vertical rolls. They may not execute other maneuvers. Missiles do not receive DPs for maneuvers. 
+
+    The missile must meet the normal preparatory FP requirements for slide maneuvers, including penalties for altitude and supersonic speed if applicable. A slide maneuver costs 1 FP to execute. All FPs used to prepare for and execute a slide maneuver must be in level flight.
+        
+    Any missile that expends more than one FP from the same location while climbing or diving may execute a vertical roll at no cost in FPs. Missiles are normally limited to one vertical roll in their entire flight. However, every time their target performs a vertical roll, a missile is allowed to perform one additional vertical roll in the same game turn.
+
+\end{itemize}
+}
+
+\x{
 \paragraph{Missile Arming.} Missiles must complete arming before they can turn or maneuver in pursuit of a target. Arming occurs automatically after the missile has flown a certain distance, usually one hex.
 
-To become armed, missiles must expend their first FP moving forward in level flight unless on the turn of launch the firing aircraft was in a climb or dive where more than half the aircraft's flight was spent as VFPs. In this case, the missile could use an FP to gain or lose altitude as appropriate instead. This one FP in which missiles are becoming armed may not be counted toward prep-moves, or turning requirements, nor can the missile attack targets it reaches (they are missed). They may commence maneuvering normally on second and subsequent FPs.                                                          
+To become armed, missiles must expend their first FP moving forward in level flight unless on the turn of launch the firing aircraft was in a climb or dive where more than half the aircraft's flight was spent as VFPs. In this case, the missile could use an FP to gain or lose altitude as appropriate instead. This one FP in which missiles are becoming armed may not be counted toward prep-moves, or turning requirements, nor can the missile attack targets it reaches (they are missed). They may commence maneuvering normally on second and subsequent FPs. 
+}{
+
+\paragraph{Missile Arming.} \label{rule:instant-arming-missiles}
+Missiles must complete arming before they can declare turns, declare maneuvers, or attack a target. The arming requirements are different for normal missiles and instant-arming missiles. Instant-arming missiles are noted as such in Table~\ref{table:missile-data}.
+
+Normal missiles complete arming after expending their first FP. They cannot declare turns or maneuvers before their first FP, and so cannot use it for turn requirements or in preparation for a maneuver. They can only declare attacks after expending their first FP. If they reach the location and altitude of their target in their first FP, they miss and are removed from play.
+
+Instant-arming missiles are armed as soon as they are launched. They can declare turns and maneuvers before their first FP and use it for turn requirements or in preparation for a maneuver. They can also declare attacks before expending their first FP. 
+
+A missile's first FP must be spent in level flight unless, in the game turn in which it was launched, the launching aircraft used climbing or diving flight and spent more than half of its FPs as VFPs. In this case, the missile could either spend its first FP in level flight or in climbing or diving flight, respectively.
+
+\Dx{
+\label{rule:instant-arming-missiles}
+Instant arming missiles, (indicated by an asterisk \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}}) may begin maneuvering and attack immediately after launch.
+}
+}
+
 \paragraph{Missile Tracking.} At the end of each game turn, and at the end of each segment of proportional movement, a missile must have the target within the tracking parameters of its seeker head (in terms of angle-off) or it will lose contact and either self-destruct or enter ballistic unguided flight. In either case, it is removed from play. The exact tracking requirements are described for each missile kind of missile later in the rules.
 
 \changedin{2A}{2A-snap}{
@@ -431,8 +494,10 @@ To become armed, missiles must expend their first FP moving forward in level fli
 
 Non-instant arming missiles may also snap-turn as their first maneuvering actions, but only after becoming armed. This is allowed as above, with their first FP following becoming armed, or later as long as no turns, maneuvers, or switches between climbs and dives have yet occurred or commenced. As above, if they elect to snap turn later in their flight they must prep-turn normally.
 }{
+\Dx{
 \label{rule:instant-arming-missiles}
 Instant arming missiles, (indicated by an asterisk \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}}) may begin maneuvering and attack immediately after launch.
+}
 }
 
 \Dx{
