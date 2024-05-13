@@ -166,7 +166,7 @@ Version 2A incorporates the following changes. There are changes to the sense of
 
     \itemtag{2A-roll-preparatory-fps} Lag and displacement rolls now require preparatory FPs equal to {\onethird} of the aircraft's speed (rounded down). The preparatory FPs may be HFPs or VFPs. These change appeared in the 1995 GEnie post by JD Webster and the v2.4 rules.
 
-    \itemtag{2A-missile-launch-modifiers} The modifiers for being a combat hero and tactics master are now cummulative (i.e., a pilot who is both gets a $-2$ modifier).
+    \itemtag{2A-missile-launch-modifiers} The modifiers for being a combat hero and tactics master are now cummulative (i.e., a pilot who is both gets a $-2$ modifier). This change appeared in the tables for the v2.4 rules.
     
     \itemtag{2A-missile-launches} The missile launch rules are changed so that if the launch roll fails by exactly one and is not an unmodified ten, the missile fails to launch but remains on the rail and can be used in the future. This change appeared in the Origins rules in \APJ~39, 31, 44 and 53.
 
@@ -174,7 +174,7 @@ Version 2A incorporates the following changes. There are changes to the sense of
 
     \itemtag{2A-missile-attacks} Missile attacks occur when the missile has the same position and altitude as the target or when it has the same altitude, at least one FP left in its proportional move, and the target is one of the seven positions immediately in front of the missile. This change appeared in the Origins rules in \APJ~44 and 53.
 
-    \itemtag{2A-missile-speed} The missile speed attenuation factors are changed. These changes appeared in the v2.4 tables.
+    \itemtag{2A-missile-speed} The missile speed attenuation factors are changed. In all cases, they now increase or stay the same with time, which makes physical sense. These changes appeared in the v2.4 tables.
 
     \itemtag{2A-ew-coverage} RWR-A now detects air-to-air target illumination, not air-to-air locks. RWR-B can no longer detect VF FCR. These changes appear in the v2.4 tables.
 
@@ -363,9 +363,28 @@ This section collects my ideas for rewriting and reorganization.
 
 \item Can an aircraft add additional preparatory FPs to a maneuver, stretching it out like it can a turn?
 
-\item If a free aircraft under attack by an IRM selects idle power and fails the roll, what modifier does it use? The one for the previous power setting or the one for normal power?
+\item If a free aircraft under attack by an IRM selects idle power and fails the roll, what modifier does it use? The one for the previous power setting or the one for normal power? The consensus in the group is that it uses the modifier for normal power.
 
-\item If a free aircraft under attack by an IRM selects normal power, does it automatically gain the corresponding modifier?
+\item If a free aircraft under attack by an IRM selects normal power, does it automatically gain the corresponding modifier? The consensus in the group is that it can.
+
+\item “If an aircraft's speed includes a fraction; say it is 4.5 instead of 5.0, round it up to simplify determining proportions but use its actual speed when moving. This would give the same result as in the above paragraph (5 into 17). The difference comes in the execution of the segments. The moves would be 4 for 1, 4 for 1, 3 for 1, 3 for 1, and then 3 for the aircraft's half FP.”
+
+What the heck does “3 for the aircraft's half FP” mean?
+
+If the aircraft has a speed of 4.5, then it has either 4 or 5 FPs, depending on whether it has 0.5 FP carry. If the aircraft has 5 FPs, than I can understand the above as meaning the missile moves 4, 4, 3, 3, and 3 FPs before each aircraft FP. If the aircraft has 4 FPs, then does it mean the missile moves 4, 4, 3, and 3 FPs before each aircraft FP and then 3 FPs after the last aircraft FP?
+
+This issue would not occur if the proportional moves were calculated in terms of available FPs instead of speed. If the aircraft has 4 FPs and the missile 17 FPs, then the proportional moves would be 5, 4, 4, and 4 FPs. If the aircraft has 5 FPs and the missile 17 FPs, then the proportional moves would be 4, 4, 3, 3, and 3 FPs.
+
+\item It seems to be an anomaly in that the missile has to be at the same altitude and one of the positions shown in the diagrams in order to attack, since in most circumstances a missile can use free descent. However, a missile with a turn rate of less than BT/2 cannot use free descent when it is transitioning from climbing to diving flight. 
+
+It might make sense to say a missile attacks in one of four cases:
+\begin{enumerate}
+    \item The target moves to the same position (location and altitude) as the missile.
+    \item The missile moves to the same position (location and altitude) as the target.
+    \item The missile moves to one of the locations shown in the diagrams, has the same altitude as the target, and has at least one FP left in its proportional movement.
+    \item The missile moves to one of the locations shown in the diagrams, is one altitude level above the target, has at least one FP left in its proportional movement, and can use free descent.
+\end{enumerate}
+The last case can be generalized to: can use the remaining FPs in its proportional move to move forward one hex and reach the same altitude as the target (using any allowed combination of climbs, dives, and free descents).
 
 \end{itemize}
 
