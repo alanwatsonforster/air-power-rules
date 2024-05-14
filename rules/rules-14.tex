@@ -92,9 +92,9 @@ Table~\ref{table:missile-data} gives information for carrying, launching, flying
 
     \item \itemparagraph{ECCM Rating.} This is the missile's resistance rating to jamming and ground clutter (see rule~\ref{rule:electronic-warfare} and \ref{rule:radar-ground-clutter}).
 
-    \item \itemparagraph{Chaff Rating.} This is the missile's vulnerability rating to chaff and mini-jammer decoys (see rule~\ref{rule:electronic-warfare}).
+    \item \itemparagraph{Chaff Vulnerability Rating.} This is the missile's vulnerability rating to chaff (see rule~\ref{rule:electronic-warfare}). The missile’s mini-jammer vulnerability rating is not given explicitly, but is the chaff vulnerability rating plus one.
 
-    \item \itemparagraph{Flare Rating.} This is the missile's vulnerability rating to flare decoys (see rule~\ref{rule:electronic-warfare}).
+    \item \itemparagraph{Flare Vulnerability Rating.} This is the missile's vulnerability rating to flare decoys (see rule~\ref{rule:electronic-warfare}).
 
     \item \itemparagraph{Launch Envelopes.} These are the minimum and maximum ranges at which a missile may be launched at a target. (For BRMs and RHMs, the maximum range also depends on the aircraft's radar tracking strength.)
 
@@ -533,10 +533,24 @@ A missile attacks its target the instant one of the following conditions are ful
 \end{enumerate}
 }
 
+\Ax{
+\paragraph{Manually Decoy Procedure.} Some aircraft are equipped with an integrated or pod-mounted defensive decoy system (DDS) that can dispense flares, chaff, or mini-jammers in an attempt to confuse missile seekers \ref{rule:dds}).
+
+An engaged aircraft (see rule~\ref{rule:engaging-missiles}) equipped with a DDS (\ref{rule:dds}) may manually despense decoys to attempt to defeat an attack by a sighted missile. Manual decoys may be dispensed even if an automatic decoy program is in effect (see rule~\ref{rule:dds} and below).
+
+When a sighted missile attacks an engaged aircraft, the aircraft may immediately attempt to dispense 1 or 2 decoy clusters of each type of decoy available. If sufficient decoys of a given type remain, the requested number of decoys are dispensed. If fewer decoys of a given type remain, all remaining decoys of that type are dispensed. For example, a DDS has 5 flare clusters and 1 chaff cluster remaining. If the aircraft attempts to manually dispense 2 clusters, then 2 flare clusters and 1 chaff cluster will be dispensed, leaving the DDS with 3 flare clusters and 0 chaff clusters.
+
+Roll the die once for each decoy dispensed. If the result is less than or equal to the missile's vulnerability rating for that type of decoy, the missile is successfully decoyed, is immediately removed from play, and cannot attempt to hit the target. 
+
+Table~\ref{table:missile-data} gives the flare and chaff vulnerability ratings for missiles. The mini-jammer vulnerability rating is the chaff vulnerability rating plus one.
+
+If the missile is not successfully defeated by manual decoys or if no manual decoys are deployed, the missile continues with its attack.
+}
+
 \x{
 \paragraph{Procedure.} Roll the die and apply any modifiers. Compare the modified result to the missile's to hit numbers to determine if a hit was achieved, and if so, what kind of hit. If a hit is achieved, roll on \changedin{1C}{1C-tables}{the Damage Tables}{Table~\ref{table:aircraft-damage}} using the appropriate attack rating.
 }{
-\paragraph{Missile Attack Procedure.} [TODO: manually-deployed decoys.] Roll the die and apply any modifiers. Compare the modified result to the hit die rolls for the missile from Table~\ref{table:missile-data} to determine whether the result is a direct hit, a proximity hit, or a miss. A direct hit occurs if the modified roll is equal to or less than the direct hit die roll. If a direct hit does not occur, a proximity hit occurs if the modified roll is equal to or less than the proximity hit die roll. Otherwise, the missile misses. If the missile hits, determine the damage using the procedure described below.
+\paragraph{Missile Attack Procedure.} For each attacking missile that is not defeated by manually deployed decoys, roll the die and apply any modifiers. Compare the modified result to the hit die rolls for the missile from Table~\ref{table:missile-data} to determine whether the result is a direct hit, a proximity hit, or a miss. A direct hit occurs if the modified roll is equal to or less than the direct hit die roll. If a direct hit does not occur, a proximity hit occurs if the modified roll is equal to or less than the proximity hit die roll. Otherwise, the missile misses. If the missile hits, determine the damage using the procedure described below.
 
 For example, consider an attack by an AIM-9B Sidewinder missile. Table~\ref{table:missile-data} gives hit die rolls of $3-$ for a direct hit and $7-$ for a proximity hit. The missile achieves a direct hit if the modified hit die roll is 3 or less. The missile achieves a proximity hit if the modified hit die roll is 4 to 7. The missile misses if the modified hit die roll is 8 or more.
 }
