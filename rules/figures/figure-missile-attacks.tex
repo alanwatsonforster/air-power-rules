@@ -1,9 +1,14 @@
 \begin{onecolumnfigure}[tb]
 
+%\begin{tikzpicture}
+%\draw (0,0) -- (1,1);
+%\end{tikzpicture}
+
+
+\iftrue
 \begin{centering}
 \begin{fitheight}{3\standardhexwidth}
 \begin{tikzpicture}
-\begin{tikzdefaults}
     \drawhex{0}{0}
     \drawhex{0}{1}
     \drawhex{0}{2}
@@ -21,13 +26,11 @@
         \drawdotathex{+0.00}{1.50}
         \drawarrowcounter{0.00}{0.00}{90}
     \end{athex}
-\end{tikzdefaults}
 \end{tikzpicture}
 \end{fitheight}
 \hfil
 \begin{fitwidth}{3\standardhexwidth}
 \begin{tikzpicture}
-\begin{tikzdefaults}
 \begin{scope}[rotate=90]
     \drawhex{0}{-1}
     \drawhex{0}{0}
@@ -48,13 +51,12 @@
         \drawarrowcounter{0.00}{0.00}{0}
     \end{athex}
 \end{scope}
-\end{tikzdefaults}
 \end{tikzpicture}
 \end{fitwidth}
 \hfil
 \begin{fitwidth}{3\standardhexwidth}
 \begin{tikzpicture}
-\begin{tikzdefaults}\begin{scope}[rotate=90]
+\begin{scope}[rotate=90]
     \drawhex{0}{-0.5}
     \drawhex{0}{+0.5}
     \drawhex{1}{-1}
@@ -73,11 +75,12 @@
         \drawarrowcounter{0.00}{0.00}{0}
     \end{athex}
 \end{scope}
-\end{tikzdefaults}
 \end{tikzpicture}
 \end{fitwidth}
 \end{centering}
+\fi
 
-\figurecaption{figure:missile-attacks}{\protect\x{Air-to-Air Missile Attacks}{A missile attacks when it passes through the target hex at its altitude or when is co-altitude with the target, has at least one FP remaining in the proportional move, and the target occupies one of the positions show above.}}
+\figurecaption{figure:missile-attacks}{\protect\x{Air-to-Air Missile Attacks}{
+A missile attacks when it has the same location and altitude as its target or when, at the start of or during the missile’s proportional move, the target occupies one of locations shown iabove relative to the missile, the missile has the same altitude as the target, and the missile has at least one FP remaining in its proportional move.}}
 
 \end{onecolumnfigure}

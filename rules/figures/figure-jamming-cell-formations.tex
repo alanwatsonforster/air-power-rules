@@ -24,7 +24,8 @@
     \drawjammingcellaircraft{#1}{#2}{#3}
 }
 
-\begin{tikzfigure}{\linewidth}
+\begin{fitwidth}{\linewidth}
+\begin{tikzpicture}
 
     \drawhexgrid{0}{0}{12}{10}
 
@@ -73,7 +74,8 @@
     \draw (0.5,6.10) node [anchor=south west] {Three-Aircraft Cells};
     \draw (0.5,8.60) node [anchor=south west] {Two-Aircraft Cells};
 
-\end{tikzfigure}
+\end{tikzpicture}
+\end{fitwidth}
 
 \figurecaption{figure:jamming-cell-formations}{Jamming Cell Formations}
 

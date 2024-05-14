@@ -8,7 +8,8 @@
 
 \begin{onecolumnfigure}[t]
 
-\begin{tikzfigure}{5.333\standardhexwidth}
+\begin{fitwidth}{5.333\standardhexwidth}
+\begin{tikzpicture}
     \scriptsize
     \drawhex[color=white]{-2}{0}  
     \drawhex[color=white]{+2}{0}  
@@ -34,7 +35,8 @@
         \draw (330:1.3) -- (330:1.8) node [anchor=150] {\changedin{2B}{2B-directions}{SE}{ESE}};
     \end{scope}
     \drawaircraftcounter{0}{0}{60}{F-4}{}{}
-\end{tikzfigure}
+\end{tikzpicture}
+\end{fitwidth}
 
 \figurecaption{figure:facing}{\protect\x{Facing.}{The direction of an aircraft or missile's nose on the game counter indicates its facing. The aircraft shown here faces NNE.}}
 

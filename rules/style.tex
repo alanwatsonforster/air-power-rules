@@ -397,22 +397,7 @@ minus \fontdimen4\font}
 \usetikzlibrary{calc}
 \usetikzlibrary{arrows.meta}
 
-\newenvironment{tikzdefaults}{%
-    \begin{scope}[>={Stealth[length=1.5mm,inset=0pt]}]%
-    \scriptsize%
-}{%
-    \end{scope}%
-}
-
-\newenvironment{tikzfigure}[1]{%
-    \begin{fitwidth}{#1}%
-    \begin{tikzpicture}%
-    \begin{tikzdefaults}%
-}{%
-    \end{tikzdefaults}%
-    \end{tikzpicture}%
-    \end{fitwidth}%
-}
+\tikzset{every picture/.append style={font=\scriptsize,>={Stealth[length=1.5mm,inset=0pt]}}}
 
 \newcommand{\drawaircraftcounter}[6]{
     \begin{athex}{#1}{#2}
