@@ -45,35 +45,34 @@ Reminder: $\mbox{Max launch range for \changedin{1B}{1B-apj-23-errata and 1B-apj
 \begin{twocolumntable}
 \tablecaption{table:missile-attack-modifiers}{AAM and SAM Attack Modifiers}
 
-\begin{tabularx}{\linewidth}{Pl}
+\begin{tabularx}{0.8\linewidth}{Pll}
 \toprule
+\multicolumn{2}{c}{All Missiles}\\
+\midrule
+Target size modifier&ADC&\ref{rule:aircraft-data-cards}\\
+Target did not engage the missile&$-1$&\ref{rule:engaging-missiles}\\
+\midrule
 \multicolumn{2}{c}{IRMs and IR SAMs}\\
 \midrule
-Target using afterburner power.&$-3$\\
-Target using military power.&$-1$\\
-Target using idle power.&$+1$\\
-Ground clutter: missile loses 2 or more levels in the proportional move in which it attacks a target in the LO altitude band (0--7).&$+2$\\
-Target in terrain following flight&$+1$\\
-Target using flare DDS (up to missile flare vulnerability)&$+$PPL\\
+Target using afterburner power.&$-3$&\ref{rule:engine-thrust}\\
+Target using military power.&$-1$&\ref{rule:engine-thrust}\\
+Target using idle power.&$+1$&\ref{rule:engine-thrust}\\
+Target in infrared ground clutter&$+2$&\ref{rule:missile-attacks}\\
+Target in terrain-following flight&$+1$&\ref{rule:terrain-following-flight}\\
+Target using flare DDS (up to missile flare vulnerability)&$+$PPL&\ref{rule:dds}$^*$\\
 \midrule
 \multicolumn{2}{c}{BRMs, RHMs, AHMs, and BR/CG/CW/TVM SAMs}\\
 \midrule
-DJM rating $-$ missile ECCM&$+$\\
-Lesser of Chaff PPL or missile Chaff Vulnerability&$+$\\
-Lesser of Mini-jammer PPL or Chaff Vulnerability $+$ 1&$+$\\
-Ground clutter (air to air missiles only) = $6 - \mbox{target Altitude above terrain} - \mbox{missile ECCM}$.&$+$\\
-Listed “T” level modifier (SAMs only, if applicable)&$+$\\
-\midrule
-\multicolumn{2}{c}{OG/LG SAMs}\\
-\midrule
-\multicolumn{2}{l}{No modifiers apply except angle-off and aircraft size.}\\
-\midrule
-\multicolumn{2}{c}{All Missiles}\\
-\midrule
-Target aircraft size modifier&ADC\\
-Target did not engage the missile&$-1$\\
+DJM rating in excess of missile ECCM rating&$+$&\ref{rule:deceptive-jammers}$^*$\\
+Target using chaff DDS (up to missile chaff vulnerability)&$+$PPL&\ref{rule:dds}$^*$\\
+Target using mini-jammer DDS (up to missile chaff vulnerability plus one)&$+$PPL&\ref{rule:dds}$^*$\\
+Target in radar ground clutter (BRM/RHM/AHM only)&$+$&\ref{rule:missile-attacks}\\
+Target in terrain-following flight (SAMs only)&$+$&\ref{rule:terrain-following-flight} \& \ref{rule:sams}\\
 \bottomrule
 \end{tabularx}
+\begin{tablenote}{0.8\linewidth}
+$^*$ Advanced rule.
+\end{tablenote}
 \end{twocolumntable}
 }
 
@@ -83,9 +82,8 @@ Target did not engage the missile&$-1$\\
 
 \begin{tabularx}{0.9\linewidth}{l*{12}{C}}
 \toprule
-\multirow{2}{*}{\minitable{c}{Angle-Off\\Arc}}&\multicolumn{7}{c}{Missile Seeker Type}&\multicolumn{5}{c}{SAM Guidance Type}\\
-\cmidrule(lr){2-8}
-\cmidrule(lr){9-13}
+\multirow{2}{*}{\minitable{c}{Angle-Off\\Arc}}&\multicolumn{12}{c}{Missile Seeker or Guidance Type}\\
+\cmidrule(lr){2-13}
 &E&I&M&A&BR&RH&AH&CG&CW&TVM&OG&LG\\
 \midrule
 0 line        &$-1$&$-1$&$-1$&$-2$&$+0$&$-1$&$-2$&$-1$&$-1$&$-1$&$+0$&$-1$\\

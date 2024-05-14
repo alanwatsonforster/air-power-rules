@@ -72,7 +72,7 @@ Table~\ref{table:missile-data} gives information for carrying, launching, flying
 
     \item \itemparagraph{Year.} The operational service entry date.
     
-    \item \itemparagraph{Type and Name.} These give the designation or model of the missile and its name.
+    \item \itemparagraph{Type and Name.} These give the designation or model of the missile and its name. Sometimes the table gives more than one designation. For example, for early USAF missiles it gives both the post-1963 AIM designations and the pre-1963 GAR/MB designations.
 
     \item \itemparagraph{Weight.} This gives the missile weight in pounds (for load limits).
 
@@ -513,6 +513,7 @@ On the first and subsequent turns of flight, the follow-on must cease moving whe
 }
 
 \section{Missile Attacks}
+\label{rule:missile-attacks}
 
 \addedin{2A}{2A-missile-attacks}{
     \input{figures/figure-missile-attacks}
@@ -520,20 +521,93 @@ On the first and subsequent turns of flight, the follow-on must cease moving whe
 
 \notein{1B}{AWF: FH in the APJ 36 errata has text about a missile attacking if the target enters the missile's position, but this is included in the TSOH errata and incorporated in 1B.}
 
+\x{
 \paragraph{When Does A Missile Attack?} \changedin{1B}{1B-apj-23-errata and 1B-apj-26-qa}{At the instant a missile starts a proportional move with its target in its 180+ arc and the range (in hexes; 2 levels of altitude equals one hex) is equal to or less than the number of FPs the missile has available in that proportional move, a missile attack is declared.}{\changedin{2A}{2A-missile-attacks}{At the beginning of or during a missile's proportional move, the instant the missile has its target in its 180+ arc and the range (in hexes; 2 altitude levels = 1 hex) is equal to or less than the number of FPs the missile has remaining in that proportional move, a missile attack \emph{must} be declared.}{A missile attacks when it passes through the target hex at its altitude or when is co-altitude with the target, has at least one FP remaining in the proportional move, and the target occupies one of the positions show in Figure~\ref{figure:missile-attacks}.} \addedin{1B}{1B-apj-36-errata}{If the missile finishes arming in the target's location, it attacks.} Should a target aircraft enter the missile's position during its move, it is also immediately attacked.} 
+}{
+\paragraph{When Does A Missile Attack?} 
+A missile attacks its target the instant one of the following conditions are fulfilled:
+\begin{enumerate}
+\item The missile moves to the same location and altitude as the target.
+\item The target moves to the same location and altitude as the missile.
+\item At the start of or during the missile’s proportional move, the target occupies one of locations shown in Figure~\ref{figure:missile-attacks} relative to the missile, the missile has the same altitude as the target, and the missile has at least one FP remaining in its proportional move.
+\end{enumerate}
+}
 
-
+\x{
 \paragraph{Procedure.} Roll the die and apply any modifiers. Compare the modified result to the missile's to hit numbers to determine if a hit was achieved, and if so, what kind of hit. If a hit is achieved, roll on \changedin{1C}{1C-tables}{the Damage Tables}{Table~\ref{table:aircraft-damage}} using the appropriate attack rating.
+}{
+\paragraph{Missile Attack Procedure.} [TODO: manually-deployed decoys.] Roll the die and apply any modifiers. Compare the modified result to the hit die rolls for the missile from Table~\ref{table:missile-data} to determine whether the result is a direct hit, a proximity hit, or a miss. A direct hit occurs if the modified roll is equal to or less than the direct hit die roll. If a direct hit does not occur, a proximity hit occurs if the modified roll is equal to or less than the proximity hit die roll. Otherwise, the missile misses. If the missile hits, determine the damage using the procedure described below.
+
+For example, consider an attack by an AIM-9B Sidewinder missile. Table~\ref{table:missile-data} gives hit die rolls of $3-$ for a direct hit and $7-$ for a proximity hit. The missile achieves a direct hit if the modified hit die roll is 3 or less. The missile achieves a proximity hit if the modified hit die roll is 4 to 7. The missile misses if the modified hit die roll is 8 or more.
+}
 
 \addedin{1C}{1C-tables}{
     \input{tables/table-missile-attack-modifiers}
 }
 
-The two “Roll to Hit” columns \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}} indicate the Die Roll or less result that will give a direct or proximity hit. A direct hit occurs if the roll was equal to or less than the indicated number. A proximity hit (which has a lesser attack rating) occurs if the roll was greater than that for a direct hit but less than or equal to that given for a proximity hit. If the roll was higher than the proximity number, the missile misses.
+\x{
+\paragraph{Roll To Hit Modifiers.} \changedin{1C}{1C-tables}{The Missile Attack Modifiers Table}{Table~\ref{table:missile-attack-modifiers}} lists the modifiers for missile angle off, terrain clutter effects, target considerations, and ECM. For the angle-off to hit modifiers, the missile is always considered to be in the angle-off arc it was in during the proportional move in which the attack was declared. If it is on a line between two arcs, it is considered to be in the arc which favors the defender.
+}{
+\paragraph{Missile Attack Modifiers.} Tables~\ref{table:missile-attack-modifiers} and \ref{table:missile-attack-angle-off-modifiers} give the modifiers for missile attacks.
 
-\paragraph{Roll To Hit Modifiers.} The Missile Attack Modifiers Table lists the modifiers for missile angle off, terrain clutter effects, target considerations, and ECM. For purposes of the angle-off to hit modifiers, the missile is always considered to be in the angle-off arc it was in during the proportional move in which the missile attack was declared. If it is on a line between two arcs, it is considered to be in the arc which favors the defender.
+For all missiles:
+\begin{itemize}
+    \item Use the size number from the target’s ADC as a modifier.
+    \item If the target did not engage the missile, apply a modifier of $-1$.
+    \item Apply the modifier from Table \ref{table:missile-attack-angle-off-modifiers} for the missile’s angle-off the target according to its seeker type. A missile is considered to attack from the angle-off arc it was in when it fulfilled the condition to attack. If the missile is on the borderline between two arcs, it is considered to be in the arc that favors the defender.
+\end{itemize}
 
+There are no other modifiers for optically-guided and laser-guided missiles (OG and LG SAMs).
+
+For infrared-guided missiles (IRMs and IR SAMs):
+\begin{itemize}
+    \item If the target is using afterburner, military, or idle power (see rule~\ref{rule:engine-thrust}), apply a modifier of $-3$, $-1$, or $+1$ respectively. 
+    
+    If the target does not engage the missile but does select idle power, the modifier is $-1$ on a die roll of $4-$ and $+0$ otherwise.
+
+    \item If the target is in infrared ground clutter, apply a modifier of $+2$. 
+    
+    A target is in infrared ground clutter if it is in the LO altitude band (altitude levels 0 to 7) and two or more levels below the missile’s altitude at the start of the proportional move in which the missile attacks.
+
+    \item If the target is in terrain-following flight (see rule~\ref{rule:terrain-following-flight}), apply a modifier of $+1$.
+
+    \item If the target has an active DDS dispensing flares (see advanced rule~\ref{rule:dds}), apply the lesser of the flare PPL and the missile flare vulnerability rating given in Table~\ref{table:missile-data} as a modifier. 
+    
+    For example, consider an AIM-9D missile attacking an aircraft using an active DDS. \ref{table:missile-data} gives a flare vulnerability rating of 5. If the target’s flare PPL is 3, the modifier is $+3$ (limited by the PPL), but if the target’s flare PPL is 6, the modifier is $+5$ (limited by the flare vulnerability rating).
+\end{itemize}
+
+For radar-guided missiles (BRMs, RHMs, AHMs, and BR, CG, CW, and TVM SAMs):
+\begin{itemize}
+    \item If the target is using a defensive jammer (see advanced rule~\ref{rule:deceptive-jammers}) with a DJM rating that is higher than the missile’s ECCM rating from \ref{table:missile-data}, apply the excess DJM rating above the ECCM rating as a positive modifier.
+
+    \item If the target is using a chaff DDS (see advanced rule~\ref{rule:dds}), apply the lesser of the chaff PPL and the missile chaff vulnerability rating given in Table~\ref{table:missile-data} as a modifier.
+
+    For example, consider an AIM-7E missile attacking an aircraft using an active DDS. \ref{table:missile-data} gives a chaff vulnerability rating of 4. If the target’s chaff PPL is 3, the modifier is $+3$ (limited by the PPL), but if the target’s chaff PPL is 6, the modifier is $+4$ (limited by the chaff vulnerability rating).
+
+    \item If the target is using a mini-jammer DDS (see advanced rule~\ref{rule:dds}), apply the lesser of the mini-jammer PPL and the missile mini-jammer vulnerability rating as a modifier. The mini-jammer vulnerability rating of a missile is its chaff vulnerability rating, given in Table~\ref{table:missile-data}, plus one.
+
+    For example, consider an AA-3-2 missile attacking an aircraft using an active DDS. \ref{table:missile-data} gives a chaff vulnerability rating of 4, so the corresponding mini-jammer vulnerability rating is 5 (one more). If the target’s mini-jammer PPL is 3, the modifier is $+3$ (limited by the PPL), but if the target’s mini-jammer PPL is 6, the modifier is $+5$ (limited by the mini-jammer vulnerability rating).
+    
+    \item For BRMs, RHMs, and AHMs, if the target is in radar ground clutter, apply the modifier described here.
+
+    A target is in radar ground cluster if it is in the LO altitude band (altitude levels 0 to 7), within five altitude levels of the ground, and either the illuminating aircraft is higher than the target (for BRMs and RHMs) or the target is two or more levels below the missile’s altitude at the start of the proportional move in which it attacks (for AHMs).
+
+    To determine the modifier, start with six, add the ground altitude level (rule \ref{rule:ground-terrain}), subtract the target’s altitude level, and then subtract the missile’s ECCM rating given in Table~\ref{table:missile-data}. If the result is positive, use it as a modifier. Otherwise, the modifier is zero.
+
+    For example, consider an attack by an AIM-4F Super Falcon on a target at altitude level 4 flying above ground with an altitude level of 1. Table~\ref{table:missile-data} gives an ECCM rating of 1. The result of the calculation is $6 + 1 - 4 - 1 = +2$. Since this is positive, it would be applied as a die roll modifier.
+
+    \item For radar-guided SAMs, if the target is in terrain-following flight (see rule~\ref{rule:terrain-following-flight}), apply the T-level modifier given for the missile.
+    
+    \end{itemize}
+}
+
+\x{
 \paragraph{Missile Damage.} The two Attack Rating columns \changedin{1C}{1C-tables}{of the MDT}{in Table~\ref{table:missile-data}} list the attack rating of the missiles for direct and proximity hits respectively. The ratings are used to determine aircraft damage as described in chapter 10. However, a direct hit always gets a minus 2 modifier to the damage roll (warhead blast effects as opposed to just shrapnel from a proximity hit).
+}{
+\paragraph{Missile Damage.} Table~\ref{table:missile-data} gives the attack rating of the missile for direct and proximity hits. The ratings are used to determine aircraft damage according to rule~\ref{rule:aircraft-damage-resolution}. However, a direct hit always gets a $-2$ modifier to the damage die roll to account for the additional effects of the warhead blast above the shrapnel from a proximity hit.
+
+For example, consider an attack by an AIM-9B Sidewinder missile. Table~\ref{table:missile-data} gives attack ratings of 5 for a direct hit and 2 for a proximity hot. If the missile achieves a direct hit, damage is determined with an attack rating of 5 and an additional die roll modifier of $-2$. If the missile achieves a proximity hit, damage is determined with an attack rating of 2 without the additional die roll modifier.
+}
 
 \x{
 \section{Defensively Engaging Missiles}
