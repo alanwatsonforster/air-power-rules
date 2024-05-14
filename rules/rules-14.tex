@@ -534,17 +534,25 @@ A missile attacks its target the instant one of the following conditions are ful
 }
 
 \Ax{
-\paragraph{Manually Decoy Procedure.} Some aircraft are equipped with an integrated or pod-mounted defensive decoy system (DDS) that can dispense flares, chaff, or mini-jammers in an attempt to confuse missile seekers \ref{rule:dds}).
+\paragraph{Manually Decoy Procedure.} Some aircraft are equipped with an integrated or pod-mounted defensive decoy system (DDS) that can dispense flares, chaff, or mini-jammers in an attempt to confuse missile seekers (see advanced rule \ref{rule:dds}).
 
-An engaged aircraft (see rule~\ref{rule:engaging-missiles}) equipped with a DDS (\ref{rule:dds}) may manually despense decoys to attempt to defeat an attack by a sighted missile. Manual decoys may be dispensed even if an automatic decoy program is in effect (see rule~\ref{rule:dds} and below).
+An engaged aircraft (see rule~\ref{rule:engaging-missiles}) equipped with a DDS may manually despense decoys to attempt to defeat an attack by a sighted missile. Manual decoys may be dispensed even if an automatic decoy program is in effect (see advanced rule~\ref{rule:dds} and below).
 
-When a sighted missile attacks an engaged aircraft, the aircraft may immediately attempt to dispense 1 or 2 decoy clusters of each type of decoy available. If sufficient decoys of a given type remain, the requested number of decoys are dispensed. If fewer decoys of a given type remain, all remaining decoys of that type are dispensed. For example, a DDS has 5 flare clusters and 1 chaff cluster remaining. If the aircraft attempts to manually dispense 2 clusters, then 2 flare clusters and 1 chaff cluster will be dispensed, leaving the DDS with 3 flare clusters and 0 chaff clusters.
+% TODO: Also can use decoys with RWR
+% TODO: sighted or individually sighted?
 
-Roll the die once for each decoy dispensed. If the result is less than or equal to the missile's vulnerability rating for that type of decoy, the missile is successfully decoyed, is immediately removed from play, and cannot attempt to hit the target. 
+When a sighted missile attacks an engaged aircraft, the aircraft may immediately attempt to dispense one or two decoy clusters of each type of decoy available. If sufficient decoys of a given type remain, the requested number of decoys are dispensed. If fewer decoys of a given type remain, all remaining decoys of that type are dispensed. 
+
+For example, a DDS has 5 flare clusters and 1 chaff cluster remaining. If the aircraft attempts to manually dispense 2 clusters, then 2 flare clusters and 1 chaff cluster will be dispensed, leaving the DDS with 3 flare clusters and 0 chaff clusters. 
+
+The decision on how many decoy clusters are dispensed is taken before rolling for their success in defending the target.
+
+Roll the die once for each decoy dispensed. If the result is less than or equal to the missile's vulnerability rating for that type of decoy, the missile is successfully decoyed and cannot attempt to hit the target. It is immediately removed from play. If the missile is not successfully defeated by the manual decoys or if no manual decoys are deployed, the missile continues with its attack.
 
 Table~\ref{table:missile-data} gives the flare and chaff vulnerability ratings for missiles. The mini-jammer vulnerability rating is the chaff vulnerability rating plus one.
 
-If the missile is not successfully defeated by manual decoys or if no manual decoys are deployed, the missile continues with its attack.
+An aircraft attacked by multiple missiles may manually dispense one or two decoy clusters against each eligible attack. However, those manually dispensed to defend against one missile are ineffective against others.
+
 }
 
 \x{
