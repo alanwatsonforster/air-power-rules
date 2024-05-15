@@ -4,7 +4,11 @@
 \x{
 This chapter describes the procedures for launching and moving missiles in flight, and for conducting missile attacks when a target aircraft is reached. Aircraft may launch missiles against a properly detected and tracked target. The precise requirements for detection and tracking are specific to each type of missile and are described later.
 }{
-This rule describes the procedures for launching and flying air-to-air missiles and conducting missile attacks on a target aircraft. Aircraft may launch missiles against an appropriately detected and tracked target. The precise requirements for detection and tracking are specific to each type of missile and are described in rules~\ref{rule:infra-red-heat-seeking-missiles} and \ref{rule:radar-guided-missiles}
+This rule describes the procedures for launching and flying air-to-air missiles and conducting missile attacks on a target aircraft. 
+
+Aircraft may launch missiles against an appropriately detected and tracked target. The precise requirements for detection and tracking are specific to each type of missile and are described in rules~\ref{rule:infra-red-heat-seeking-missiles} for infrared-guided missiles and \ref{rule:radar-guided-missiles} for radar-guided missiles. After a successful launch, the missile flies toward the target and attacks when it gets sufficiently close.
+
+Targets may defend themselves by maneuvering so that they can no longer be tracked by the missile (see rules~\ref{rule:infra-red-heat-seeking-missiles}and \ref{rule:radar-guided-missiles}), by dispensing decoys such as flares, chaff, and mini-jammers (see advanced rule~\ref{rule:dds}), and by using jammers against radar-guided missiles (see advanced rule~\ref{rule:radar-jamming}).
 }
 
 \x{
@@ -632,10 +636,8 @@ For example, consider an attack by an AIM-9B Sidewinder missile. Table~\ref{tabl
 }
 
 \x{
+
 \section{Defensively Engaging Missiles}
-}{
-\section{Engaging Missiles}
-}
 \label{rule:engaging-missiles}
 
 An aircraft under attack by one or more missiles may declare itself defensively engaged against any of the missiles which are sighted or to which it has been alerted to by ECM. This declaration is made during the aircraft decisions phase.
@@ -672,6 +674,50 @@ Note: Free aircraft are not restricted like engaged aircraft.
 
 \paragraph{Multiple Missile Attacks.} An aircraft that engages one missile, is considered engaged against all missiles currently pursuing it. However, manual decoys may only be employed against missiles which are sighted or to which it is specifically alerted by ECM. Against engaged aircraft, missiles which were not sighted or alerted to are still affected by Idle power and do not get the $-1$ to hit modifier\deletedin{2A}{2A-missile-flight}{ but still move first as if the target were a free aircraft}.
 
+
+}{
+
+\section{Engaging Missiles}
+\label{rule:engaging-missiles}
+
+An aircraft may declare itself defensively engaged against any missiles that are sighted or to which it has been alerted by ECM. This declaration is made during the aircraft decisions phase. An aircraft that engages one missile is considered engaged against all missiles that attack in the same game turn. 
+
+% ISSUE: GLOC? Disorientation? Individually sighted?
+
+\paragraph{Missile Attacks on Engaged Aircraft.} An engaged aircraft is considered to be actively defending itself against attacking missiles. As such, it is allowed the following benefits during its move:
+
+\begin{itemize}
+
+    \item If it selects idle power, it automatically gains the $+1$ hit modifier against attacks by IR missiles. This benefit applies to all IR missile attacks, even those by unsighted missiles or missiles for which it has not been alerted by ECM.
+    
+    \item It may manually deploy decoys to attempt to defeat sighted missiles or missiles to which it has been alerted by ECM.
+    
+\end{itemize}
+
+
+However, manual decoys may only be employed against missiles that are sighted or to which ECM specifically alerts them. 
+
+Against engaged aircraft, missiles that were not sighted or alerted to are still affected by Idle power and do not get the $-1$ to hit modifier\deletedin{2A}{2A-missile-flight}{ but still move first as if the target were a free aircraft}.
+
+\paragraph{Missile Attacks on Non-Engaged Aircraft.} If a missile attacks a non-engaged aircraft, the aircraft suffers the following disadvantages:
+
+\begin{itemize}
+
+    \item It suffers a $-1$ hit modifier in missile attacks.
+
+    % ISSUE: roll for each missile or roll once per turn?
+    \item If it selects idle power, it only gains the $+1$ hit modifier on a roll of $4-$. 
+    
+    \item It may not manually deploy decoys (although it may select a DDS program).
+    
+\end{itemize}
+
+
+\paragraph{Engagement Restrictions.} An engaged aircraft is not allowed to make attacks of any sort, may not launch weapons, may not use terrain-following flight, and may not perform damage control.
+
+}
+
+\Dx{
 \section{Missile Countermeasures}
 
 Aircraft defend against missiles by trying to outmaneuver them (not likely) and by using expendable decoys such as chaff, flares and mini-jammers, and through electronic warfare. A “decoy” in the game, represents a cluster of two to four actual expendables.
@@ -687,6 +733,7 @@ The defender rolls the die once for each decoy dispensed. For Chaff or Flares, i
 \paragraph{Automatic Decoy Dispensing.} Decoy dispensers may be used to continuously emit decoys over the course of a game-turn via automatic programs as described in rule 19. A decoy program provides a “Protection Level” number which is used as an attack die roll modifier if it is dispensing decoys to which a missile is vulnerable.
 
 \paragraph{Electronic Warfare.} Radar guided missiles and aircraft radars may be vulnerable to electronic jamming which affects their ability to launch and track, and their attack die rolls. Rule 19 covers electronic warfare in detail.
+}
 
 \begin{advancedrules}
 
