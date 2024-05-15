@@ -743,6 +743,8 @@ The defender rolls the die once for each decoy dispensed. For Chaff or Flares, i
     \input{tables/table-missile-speed-attenuation-factor}
 }
 
+\x{
+
 Missiles use powerful boost motors which accelerate them to top speed within a matter of two to three seconds. After that, most missiles simply glide to their targets rapidly losing speed along the way.  Some have sustainer motors which burn for a short period of time after the booster goes out and these lose speed at a lesser rate. Nevertheless, the speed loss can be dramatic, up to a third of the missile's top speed within the span of a single turn depending on its actions. This rule replaces the generic method for determining missile speeds given in 14.3.
 
 \paragraph{Missile Speed Attenuation Factor.} To realistically account for the high-speed loss that can occur each turn, a Speed Attenuation Factor is applied to the missile's base start speed to get an average speed for the turn. The average speed indicates the number of FPs that the missile has. The average speed is therefore the speed that is listed on the aircraft log and used for the missile's flight.
@@ -773,6 +775,51 @@ On the first game turn sustainer powered flight, use the missile speed attenuati
 
 \paragraph{Minimum, Maneuver, and Maximum Missile Speeds.} \changedin{1C}{1C-tables}{Listed Next to the Missile Speed Attenuation Table is}{Table~\ref{table:missile-speed-limits} gives} the minimum, maneuver and maximum speeds allowed to any missile in a given altitude band. Speed gain above the maximum speed is not allowed, excess speed gain is lost. Any missile with a start speed of less than the minimum listed is considered to stall out and is removed from play. Any missile with a start speed of less than maneuver speed may not turn or perform maneuvers of any sort. It may only fly forward and climb or dive.
 
+}{
+
+Missiles use powerful boost motors to accelerate to top speed within two to three seconds. After that, most missiles glide to their targets and rapidly lose speed. Some have sustainer motors that burn for a short period after the booster goes out and lose speed at a lesser rate. Nevertheless, the speed loss can be dramatic, up to a third of the missile’s top speed within a single turn, depending on its actions. This procedure replaces the simpler method for determining missile speeds given by rule \ref{rule:missile-flight}.
+
+\paragraph{Missile Speed Attenuation Procedure.}
+Each turn, the average speed of the missile is determined based on its start speed, altitude, and flight time. The average speed is noted in the log. The average speed gives the number of FPs available to a missile and is used for all other purposes, including turn requirements. It is calculated as follows:
+\begin{itemize}
+\item 
+On the first game turn of flight, the missiles’s start speed is its base speed from Table~\ref{table:missile-data} plus the start speed of the launching aircraft in the game turn after launch.
+
+\item
+On the second and subsequent game turns of flight, the missile’s start speed is its average speed from the previous turn decreased according to \ref{rule:missile-flight} for climbing, diving, and turning in the previous game turn.
+
+\item 
+The average speed of a missile during a game turn, including the first game turn, is obtained by multiplying the missile’s start speed by the attenuation factor from Table~\ref{table:missile-speed-attenuation-factor} appropriate for the altitude band of the missile and its game turn of flight. Round any resulting fractions to the nearest whole number, with 0.5 rounding up. Table~\ref{table:missile-speed-math-saver} gives the result of this calculation for all valid start speeds and attenuation factors.
+\end{itemize}
+
+\paragraph{Missile Sustainer Procedure.} Some missiles have sustainer motors that provide extra thrust after the missile’s booster gives out. This procedure replaces the simpler method by rule \ref{rule:missile-flight}.
+
+\begin{itemize}
+    \item On the first game turn of sustainer-powered flight, determine the average speed using the attenuation factor for the altitude band two above the actual band (up to the UH altitude band).
+    
+    \item For each game turn of sustainer-powered flight after the first, determine the average speed using an attenuation factor of 1.0. This means no speed is lost to attenuation, although speed changes from climbing, diving, and turning still apply.
+
+    % ISSUE: Count the first turn after the sustainer burns out turn 1 for attenuation purposes?
+    \item Once the sustainer gives out, the normal speed attenuation procedure is used.
+\end{itemize}
+
+}
+
+\x{
+\paragraph{Minimum, Maneuver, and Maximum Missile Speeds.} \changedin{1C}{1C-tables}{Listed Next to the Missile Speed Attenuation Table is}{Table~\ref{table:missile-speed-limits} gives} the minimum, maneuver and maximum speeds allowed to any missile in a given altitude band. Speed gain above the maximum speed is not allowed, excess speed gain is lost. Any missile with a start speed of less than the minimum listed is considered to stall out and is removed from play. Any missile with a start speed of less than maneuver speed may not turn or perform maneuvers of any sort. It may only fly forward and climb or dive.
+
+}{
+\section{Missile Speed Limits.} 
+
+Table~\ref{table:missile-speed-limits} gives the minimum, maneuver, and maximum speeds for missiles in a given altitude band. 
+
+If a missile's start speed exceeds the maximum speed for its altitude band, it is immediately reduced to the maximum speed.
+
+If a missile's start speed is less than the minimum speed for its altitude band, it is considered to stall and is removed from play. 
+
+If a missile's start speed is less than the maneuver speed for its altitude band, it may not turn or perform maneuvers. It may only fly forward and climb or dive.
+
+}
 \section{Formation Effects on Missile Attacks}
 
 \paragraph{Missiles Versus Close Formations.} Heat seeking missiles launched at a close formation, randomly determine which aircraft is the actual target. Radar, laser, or optically guided missiles target aircraft normally (See following missile rules).
