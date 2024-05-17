@@ -1,3 +1,4 @@
+\x{
 \begin{onecolumntable}
 \tablecaption{table:irm-seeker-limits}{IRM Seeker Limits}
 \begin{tabularx}{\linewidth}{clP}
@@ -11,3 +12,21 @@ A       &Advanced   &Any of target's angle-off arcs at any target power setting.
 \bottomrule
 \end{tabularx}
 \end{onecolumntable}
+}{
+\begin{twocolumntable}
+\tablecaption{table:irm-seeker-limits}{IRM Angle-Off Requirements for Launch}
+\begin{tabularx}{0.6\linewidth}{lCCC}
+\toprule
+Seeker  &\multirow{2}{*}{\minitable{c}{Propeller or\\ Helicopter}}&\multicolumn{2}{c}{Jet Power Setting}\\
+\cmidrule{3-4}
+&&Afterburner&Other\\
+\midrule
+E       &\arcrange{180}{-}&\phantom{0}\arcrange{60}{-}&\phantom{0}\arcrange{30}{-}\\
+I       &\arcrange{180}{-}&\phantom{0}\arcrange{60}{-}&\phantom{0}\arcrange{60}{-}\\
+M       &\arcrange{180}{-}&\arcrange{120}{-}&\phantom{0}\arcrange{90}{-}\\
+A       &\arcrange{180}{-}&\arcrange{180}{-}&\arcrange{180}{-}\\
+\bottomrule
+\end{tabularx}
+\end{twocolumntable}
+
+}
