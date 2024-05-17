@@ -1,3 +1,4 @@
+\x{
 \begin{onecolumntable}
 \tablecaption{table:irm-seeker-field-of-view}{IR Seeker Field of View Limits for Launch}
 \medskip
@@ -17,3 +18,25 @@
 \bottomrule
 \end{tabularx}
 \end{onecolumntable}
+}{
+\begin{twocolumntable}
+\tablecaption{table:irm-seeker-field-of-view}{IRM Field-of-View Requirements for Launch}
+\medskip
+\begin{tabularx}{0.6\linewidth}{lccXl}
+\toprule
+Seeker&Limits&Assist&Field-of-View&Rule\\
+\midrule
+A/M/I/E&Caged&---&Limited&\ref{rule:irm-launch-requirements}\\
+A/M/I&Uncaged&---&\arcrange{180}{+}&\ref{rule:irm-launch-requirements}\\
+A/M/I&Uncaged&HMS&\arcrange{150}{+}&\ref{rule:irm-hms}$^*$\\
+A/M/I&Uncaged&Radar&Lesser of \arcrange{150}{+} and radar&\ref{rule:irm-radar}$^*$\\
+A/M&Uncaged&VAS&\arcrange{180}{+}&\ref{rule:irm-vas}$^*$\\
+A/M/I/E&Any&IRSTS-A&Limited&\ref{rule:irm-irsts}$^*$\\
+A/M/I/E&Any&IRSTS-B&\arcrange{180}{+}&\ref{rule:irm-irsts}$^*$\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.6\linewidth}
+$^*$ Advanced rule.
+\end{tablenote}
+\end{twocolumntable}
+}
