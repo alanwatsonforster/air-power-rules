@@ -1,14 +1,30 @@
+\x{
 \rulechapter{Radar Guided Missiles}
+}{
+\rulechapter{Radar-Guided Missiles}
+}
 \label{rule:radar-guided-missiles}
 
+\x{
 There are three kinds of radar guided missiles in the game: BEAM-RIDERs (BRMs), RADAR-HOMERs (RHMs), and ACTIVE-HOMERS (AHMs). Each will be discussed separately in the following sections.
+}{
+This rule describes the use of radar-guided air-to-air missiles (RGMs). RGMs are classified according to their guidance method into beam-riding missile (BRMs), radar-homing missiles (RHMs), and active-homing missiles (AHM).
 
+Beam-riding (BR) guidance was the earliest method adopted for air warfare. The firer simply pointed a compact radar beam at the target, then fired a missile which flew along the beam until it hit something. While more effective than shot-gunning clusters of unguided rockets, beam-riding missiles had serious limitations. Fighters could easily evade them by maneuvering out of the firer's radar beam. A sudden course change by the firer could even yank the beam away from the missile causing it to become unguided. The early radars used for BR guidance were susceptible to ECM jamming. Nevertheless, BRMs provided aircraft with the first all-weather guided weapons and certainly increased the odds against a heavy bomber.
+
+Semi-active radar-homing (SARH) or simply radar-homing (RH) guidance was the next method developed for guiding missiles. Engineers soon figured out that by putting a radar receiver in the missile's nose, it could detect radar energy bounced off the target by an illuminating radar beam. This allowed the missile to guide itself to the target giving it greater maneuverability as it was no longer constrained to staying within a guidance beam.
+
+Active-homing (AH) guidance came with the development of miniaturized electronics and radars small enough to fit inside a missile. With its own radar, a missile can guide itself to a target without any help from the firing aircraft. In reality, active homing is only possible at short ranges due to the small radar antenna in the missile. To utilize longer ranges, an AH missile must be guided like a RH one, or through mid-course guidance updates, until it reaches active homing range.
+
+}
+
+\Dx{
 \section{Beam Riding Missiles}
 \label{rule:beam-riding-missiles}
 
 Beam riding was the earliest missile guidance method adopted for air warfare. The firer simply pointed a compact radar beam at the target, then fired a missile which flew along the beam until it hit something. While more effective than shot-gunning clusters of unguided rockets at lumbering bombers, beam riding missiles had serious limitations. Fighters could easily evade them by maneuvering out of the firer's radar beam. A sudden course change by the firer could even yank the beam away from the missile causing it to become unguided. The early radars used for BR guidance were susceptible to ECM jamming. Nevertheless, BRMs provided aircraft with the first all-weather guided weapons and certainly increased the odds against a heavy bomber.
 
-\paragraph{BRM Launch Prerequisites.} In order to launch a BR type missile, the firer must:
+\paragraph{BRM Launch Prerequisites.}\label{rule:brm-launch-requirements} In order to launch a BR type missile, the firer must:
 
 \begin{itemize}
 
@@ -103,6 +119,86 @@ With the advent of miniaturized electronics, it became possible to build radars 
     \item launch MCG missiles at different targets in the same game-turn. Still, no more than two missiles per turn may be launched as per normal rules.
 
 \end{itemize}
+}
+
+\Ax{
+\section{RGM Launch Requirements}
+\label{rule:rgm-launch-requirements}
+
+\paragraph{BRM Launch Requirements.}\label{rule:brm-launch-requirements} In addition to the general missile launch requirements in rule~\ref{rule:missile-launches}, launching a BRM requires:
+
+\begin{itemize}
+
+    \item The launching aircraft have the target in their limited radar arc (even if their normal radar arc is wider).
+
+    \item The launching aircraft must have a lock-on to the target (unless the missile is being snap-fired according to advanced rule~\ref{rule:snap-firing-missiles}).
+
+\end{itemize}
+
+\paragraph{RHM Launch Requirements.}\label{rule:rhm-launch-requirements} In addition to the general missile launch requirements in rule~\ref{rule:missile-launches}, launching an RHM requires:
+
+\begin{itemize}
+
+    \item The launching aircraft have a target inside the narrower of their radar arc and the \arcrange{150}{+} arc.
+
+    \item The launching aircraft must have a lock-on to the target (unless the missile is being snap-fired according to advanced rule~\ref{rule:snap-firing-missiles}).
+
+    \item The range to the target must be between the missile's minimum firing range and no more than than three times the launching aircraft's tracking strength.
+
+\end{itemize}
+
+
+\paragraph{AHM Launch Requirements.}\label{rule:ahm-launch-requirements} In addition to the general missile launch requirements in rule~\ref{rule:missile-launches}, launching an AHM requires:
+
+\begin{itemize}
+
+    \item The launching aircraft have a target inside the narrower of their radar arc and the \arcrange{150}{+} arc.
+
+    \item The launching aircraft must have a lock-on to the target (unless the missile is being snap-fired according to advanced rule~\ref{rule:snap-firing-missiles}).
+
+\end{itemize}
+
+\section{RGM Launch Modifiers}
+\label{rule:rgm-launch-modifiers}
+
+In addition to the general missile launch modifiers given in rule~\ref{rule:missile-launch-modifiers}, the following modifiers apply to BRMs, RHMs, and AHMs:
+
+\begin{itemize}
+    \item If a BRM, RHM, or AHM is snap-fired, it suffers a $+2$ launch modifier (see advanced rule~\ref{rule:snap-firing-missiles}).
+\end{itemize}
+
+\section{RGM Tracking Requirements}
+\label{rule:rgm-tracking-requirements}
+
+\section{RGM Attack Modifiers}
+\label{rule:rgm-attack-modifiers}
+
+In addition to the general missile attack modifiers given in rule~\ref{rule:missile-attacks}, the following modifiers apply to radar-guided AAMs and SAMs:
+
+\begin{itemize}
+    \item If the target is using a defensive jammer (see advanced rule~\ref{rule:deceptive-jammers}) with a DJM rating that is higher than the missile’s ECCM rating from \ref{table:missile-data}, apply the excess DJM rating above the ECCM rating as a positive modifier.
+
+    \item If the target is using a chaff DDS (see advanced rule~\ref{rule:dds}), apply the lesser of the chaff PPL and the missile chaff vulnerability rating given in Table~\ref{table:missile-data} as a modifier.
+
+    For example, consider an AIM-7E missile attacking an aircraft using an active DDS. \ref{table:missile-data} gives a chaff vulnerability rating of 4. If the target’s chaff PPL is 3, the modifier is $+3$ (limited by the PPL), but if the target’s chaff PPL is 6, the modifier is $+4$ (limited by the chaff vulnerability rating).
+
+    \item If the target is using a mini-jammer DDS (see advanced rule~\ref{rule:dds}), apply the lesser of the mini-jammer PPL and the missile mini-jammer vulnerability rating as a modifier. The mini-jammer vulnerability rating of a missile is its chaff vulnerability rating, given in Table~\ref{table:missile-data}, plus one.
+
+    For example, consider an AA-3-2 missile attacking an aircraft using an active DDS. \ref{table:missile-data} gives a chaff vulnerability rating of 4, so the corresponding mini-jammer vulnerability rating is 5 (one more). If the target’s mini-jammer PPL is 3, the modifier is $+3$ (limited by the PPL), but if the target’s mini-jammer PPL is 6, the modifier is $+5$ (limited by the mini-jammer vulnerability rating).
+    
+    \item For radar-guided AAMs, if the target is in radar ground clutter, apply the modifier described here.
+
+    A target is in radar ground cluster if it is in the LO altitude band (altitude levels 0 to 7), within five altitude levels of the ground, and either the illuminating aircraft is higher than the target (for BRMs and RHMs) or the target is two or more levels below the missile’s altitude at the start of the proportional move in which it attacks (for AHMs).
+
+    To determine the modifier, start with six, add the ground altitude level (rule \ref{rule:ground-terrain}), subtract the target’s altitude level, and then subtract the missile’s ECCM rating given in Table~\ref{table:missile-data}. If the result is positive, use it as a modifier. Otherwise, the modifier is zero.
+
+    For example, consider an attack by an AIM-4F Super Falcon on a target at altitude level 4 flying above ground with an altitude level of 1. Table~\ref{table:missile-data} gives an ECCM rating of 1. The result of the calculation is $6 + 1 - 4 - 1 = +2$. Since this is positive, it would be applied as a die roll modifier.
+
+    \item For radar-guided SAMs, if the target is in terrain-following flight (see rule~\ref{rule:terrain-following-flight}), apply the T-level modifier given for the missile.
+    
+    \end{itemize}
+
+}
 
 \section{Target Illumination}
 \label{rule:target-illumination}
