@@ -255,7 +255,9 @@ Table~\ref{table:missile-launch-modifiers} summarizes the modifiers for missile 
     
     \item IRMs are also subject to the modifiers in  rule~\ref{rule:irm-launch-modifiers}.
 
-    \item If a BRM, RHM, or ARM is snap-fired, it suffers a $+2$ launch modifier (see advanced rule~\ref{rule:snap-firing-missiles}).
+    \item BRMs, RHMs, and AHMs are also subject to the modifiers in  rule~\ref{rule:rgm-launch-modifiers}.
+
+
     
     \item The quality and characteristics of the crew give launch modifiers (see advanced rule~\ref{rule:crew-quality} and \ref{rule:crew-characteristics}). 
     
@@ -465,9 +467,6 @@ For example, consider two missiles with 17 FPs launched at an aircraft with 5 FP
 
 To become armed, missiles must expend their first FP moving forward in level flight unless on the turn of launch the firing aircraft was in a climb or dive where more than half the aircraft's flight was spent as VFPs. In this case, the missile could use an FP to gain or lose altitude as appropriate instead. This one FP in which missiles are becoming armed may not be counted toward prep-moves, or turning requirements, nor can the missile attack targets it reaches (they are missed). They may commence maneuvering normally on second and subsequent FPs. 
 
-\label{rule:instant-arming-missiles}
-Instant arming missiles, (indicated by an asterisk \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}}) may begin maneuvering and attack immediately after launch.
-
 }{
 
 \paragraph{Missile Arming.} \label{rule:instant-arming-missiles}
@@ -496,13 +495,15 @@ The tracking requirements for IRMs are given by rule~\ref{rule:irm-tracking-requ
 
 }
 
-\changedin{2A}{2A-snap}{
+\deletedin{2A}{2A-snap}{
 \paragraph{Instant Snap Turning (adv. rule 7.3).} Instant arming missiles, (indicated by an asterisk \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}}) may begin maneuvering and attack immediately after launch. They are also allowed to immediately snap turn without prep-moving with their first FP or any FP later in their flight so long as no turns, maneuvers, or switches between climbs and dives have yet commenced. If they elect to snap-turn later in their flight, after any turns, maneuvers, or switches have occurred, they must prep-move for the snap-turn normally.
 
 Non-instant arming missiles may also snap-turn as their first maneuvering actions, but only after becoming armed. This is allowed as above, with their first FP following becoming armed, or later as long as no turns, maneuvers, or switches between climbs and dives have yet occurred or commenced. As above, if they elect to snap turn later in their flight they must prep-turn normally.
-}{
+}
+
 \Dx{
-\label{rule:instant-arming-missiles}
+\addedin{2A}{2A-snap}{
+\paragraph{Instant Arming Missile.}\label{rule:instant-arming-missiles}
 Instant arming missiles, (indicated by an asterisk \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}}) may begin maneuvering and attack immediately after launch.
 }
 }
@@ -581,33 +582,11 @@ For all missiles:
     \item If the target did not engage the missile, apply a modifier of $-1$.
     \item Apply the modifier from Table \ref{table:missile-attack-angle-off-modifiers} for the missile’s angle-off the target according to its seeker type. A missile is considered to attack from the angle-off arc it was in when it fulfilled the condition to attack. If the missile is on the borderline between two arcs, it is considered to be in the arc that favors the defender.
     \item Additional modifiers for IRMs are given by rule~\ref{rule:irm-attack-modifiers}.
+    \item Additional modifiers for BRMs, RHMs, and AHMs are given by rule~\ref{rule:rgm-attack-modifiers}.
     \item There are no other modifiers for optically-guided and laser-guided missiles (OG and LG SAMs).
 
 \end{itemize}
 
-For radar-guided missiles (BRMs, RHMs, AHMs, and BR, CG, CW, and TVM SAMs):
-\begin{itemize}
-    \item If the target is using a defensive jammer (see advanced rule~\ref{rule:deceptive-jammers}) with a DJM rating that is higher than the missile’s ECCM rating from \ref{table:missile-data}, apply the excess DJM rating above the ECCM rating as a positive modifier.
-
-    \item If the target is using a chaff DDS (see advanced rule~\ref{rule:dds}), apply the lesser of the chaff PPL and the missile chaff vulnerability rating given in Table~\ref{table:missile-data} as a modifier.
-
-    For example, consider an AIM-7E missile attacking an aircraft using an active DDS. \ref{table:missile-data} gives a chaff vulnerability rating of 4. If the target’s chaff PPL is 3, the modifier is $+3$ (limited by the PPL), but if the target’s chaff PPL is 6, the modifier is $+4$ (limited by the chaff vulnerability rating).
-
-    \item If the target is using a mini-jammer DDS (see advanced rule~\ref{rule:dds}), apply the lesser of the mini-jammer PPL and the missile mini-jammer vulnerability rating as a modifier. The mini-jammer vulnerability rating of a missile is its chaff vulnerability rating, given in Table~\ref{table:missile-data}, plus one.
-
-    For example, consider an AA-3-2 missile attacking an aircraft using an active DDS. \ref{table:missile-data} gives a chaff vulnerability rating of 4, so the corresponding mini-jammer vulnerability rating is 5 (one more). If the target’s mini-jammer PPL is 3, the modifier is $+3$ (limited by the PPL), but if the target’s mini-jammer PPL is 6, the modifier is $+5$ (limited by the mini-jammer vulnerability rating).
-    
-    \item For BRMs, RHMs, and AHMs, if the target is in radar ground clutter, apply the modifier described here.
-
-    A target is in radar ground cluster if it is in the LO altitude band (altitude levels 0 to 7), within five altitude levels of the ground, and either the illuminating aircraft is higher than the target (for BRMs and RHMs) or the target is two or more levels below the missile’s altitude at the start of the proportional move in which it attacks (for AHMs).
-
-    To determine the modifier, start with six, add the ground altitude level (rule \ref{rule:ground-terrain}), subtract the target’s altitude level, and then subtract the missile’s ECCM rating given in Table~\ref{table:missile-data}. If the result is positive, use it as a modifier. Otherwise, the modifier is zero.
-
-    For example, consider an attack by an AIM-4F Super Falcon on a target at altitude level 4 flying above ground with an altitude level of 1. Table~\ref{table:missile-data} gives an ECCM rating of 1. The result of the calculation is $6 + 1 - 4 - 1 = +2$. Since this is positive, it would be applied as a die roll modifier.
-
-    \item For radar-guided SAMs, if the target is in terrain-following flight (see rule~\ref{rule:terrain-following-flight}), apply the T-level modifier given for the missile.
-    
-    \end{itemize}
 }
 
 \x{
