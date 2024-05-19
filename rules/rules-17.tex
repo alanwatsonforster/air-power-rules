@@ -8,17 +8,10 @@
 \x{
 There are three kinds of radar guided missiles in the game: BEAM-RIDERs (BRMs), RADAR-HOMERs (RHMs), and ACTIVE-HOMERS (AHMs). Each will be discussed separately in the following sections.
 }{
-This rule describes the use of radar-guided air-to-air missiles (RGMs). RGMs are classified according to their guidance method into beam-riding missile (BRMs), radar-homing missiles (RHMs), and active-homing missiles (AHM).
-
-Beam-riding (BR) guidance was the earliest method adopted for air warfare. The firer simply pointed a compact radar beam at the target, then fired a missile which flew along the beam until it hit something. While more effective than shot-gunning clusters of unguided rockets, beam-riding missiles had serious limitations. Fighters could easily evade them by maneuvering out of the firer's radar beam. A sudden course change by the firer could even yank the beam away from the missile causing it to become unguided. The early radars used for BR guidance were susceptible to ECM jamming. Nevertheless, BRMs provided aircraft with the first all-weather guided weapons and certainly increased the odds against a heavy bomber.
-
-Semi-active radar-homing (SARH) or simply radar-homing (RH) guidance was the next method developed for guiding missiles. Engineers soon figured out that by putting a radar receiver in the missile's nose, it could detect radar energy bounced off the target by an illuminating radar beam. This allowed the missile to guide itself to the target giving it greater maneuverability as it was no longer constrained to staying within a guidance beam.
-
-Active-homing (AH) guidance came with the development of miniaturized electronics and radars small enough to fit inside a missile. With its own radar, a missile can guide itself to a target without any help from the firing aircraft. In reality, active homing is only possible at short ranges due to the small radar antenna in the missile. To utilize longer ranges, an AH missile must be guided like a RH one, or through mid-course guidance updates, until it reaches active homing range.
-
+This rule describes the use of radar-guided air-to-air missiles (RGMs). RGMs are classified according to their guidance method into beam-riding missiles (BRMs), radar-homing missiles (RHMs), and active-homing missiles (AHM).
 }
 
-\Dx{
+\x{
 \section{Beam Riding Missiles}
 \label{rule:beam-riding-missiles}
 
@@ -50,6 +43,57 @@ Beam riding was the earliest missile guidance method adopted for air warfare. Th
 
 \end{itemize}
 
+}{
+
+\section{Beam-Riding Missiles}
+\label{rule:beam-riding-missiles}
+
+Beam-riding (BR) guidance was the earliest method adopted for air warfare. The firer simply pointed a compact radar beam at the target, then fired a missile which flew along the beam until it hit something. While more effective than shot-gunning clusters of unguided rockets, beam-riding missiles had serious limitations. Fighters could easily evade them by maneuvering out of the firer's radar beam. A sudden course change by the firer could even yank the beam away from the missile, causing it to become unguided. The early radars used for BR guidance were susceptible to ECM jamming. Nevertheless, BRMs provided aircraft with the first all-weather guided weapons, increasing the odds against a heavy bomber.
+
+\paragraph{BRM Launch Requirements.}
+\label{rule:brm-launch-requirements}
+
+In addition to the general missile launch requirements in rule~\ref{rule:missile-launches}, launching a BRM requires:
+
+\begin{itemize}
+
+    \item The launching aircraft have the target in their limited radar arc (even if their normal radar arc is wider).
+
+    \item The launching aircraft must have a lock-on to the target (unless the missile is being snap-fired according to advanced rule~\ref{rule:snap-firing-missiles}).
+
+\end{itemize}
+
+\paragraph{BRM Launch Modifiers.}
+\label{rule:brm-launch-modifiers}
+
+In addition to the general missile launch modifiers given in rule~\ref{rule:missile-launch-modifiers}, the following modifiers apply to BRMs:
+
+\begin{itemize}
+    \item If a BRM is snap-fired, it suffers a $+2$ launch modifier (see advanced rule~\ref{rule:snap-firing-missiles}).
+\end{itemize}
+
+\paragraph{BRM Tracking Requirements.} 
+\label{rule:brm-tracking-requirements}
+
+The tracking requirements for a BRM are:
+
+\begin{itemize}
+
+    \item The guiding aircraft must maintain maintain lock-on and illumination (see rule \ref{rule:target-illumination}).
+
+    \item The missile must end its proportional move with the range to the target no greater than at the start of the proportional move.
+
+    \item The missile must end its proportional move within the guiding aircraft's limited arc.
+
+    \item The missile must end its proportional move with the target within the missile's \arcrange{180}{+} arc.
+
+\end{itemize}
+
+
+
+}
+
+\x{
 \section{Semi-Active Radar Homing Missiles}
 \label{rule:semi-active-radar-homing-missiles}
 
@@ -81,6 +125,55 @@ Radar Homing (RH) was the next method developed for guiding missiles. Engineers 
 
 \end{itemize}
 
+}{
+
+\section{Semi-Active Radar-Homing Missiles}
+\label{rule:semi-active-radar-homing-missiles}
+
+Semi-active radar-homing (SARH) or simply radar-homing (RH) guidance was the next method developed for guiding missiles. RH missiles have a radar receiver in their noses to detect radar energy bounced off the target by an illuminating radar beam. This allows the missile to guide itself to the target, giving it greater maneuverability as it is no longer constrained to staying within a guidance beam.
+
+\paragraph{RHM Launch Requirements.}
+\label{rule:rhm-launch-requirements} 
+
+In addition to the general missile launch requirements in rule~\ref{rule:missile-launches}, launching an RHM requires:
+
+\begin{itemize}
+
+    \item The launching aircraft have a target inside the narrower of their radar arc and the \arcrange{150}{+} arc.
+
+    \item The launching aircraft must have a lock-on to the target (unless the missile is being snap-fired according to advanced rule~\ref{rule:snap-firing-missiles}).
+
+    \item The range to the target must be between the missile's minimum firing range and no more than three times the launching aircraft's tracking strength.
+
+\end{itemize}
+
+\paragraph{RHM Launch Modifiers.}
+\label{rule:rhm-launch-modifiers}
+
+In addition to the general missile launch modifiers given in rule~\ref{rule:missile-launch-modifiers}, the following modifiers apply to RHMs:
+
+\begin{itemize}
+    \item If an RHM is snap-fired, it suffers a $+2$ launch modifier (see advanced rule~\ref{rule:snap-firing-missiles}).
+\end{itemize}
+
+\paragraph{RHM Tracking Requirements.} 
+\label{rule:rhm-tracking-requirements}
+
+The tracking requirements for a RHM are:
+
+\begin{itemize}
+
+    \item The guiding aircraft must maintain maintain lock-on and illumination (see rule \ref{rule:target-illumination}).
+
+    \item The missile must end its proportional move with the range to the target no greater than at the start of the proportional move.
+
+    \item The missile must end its proportional move with the target within the missile's \arcrange{150}{+} arc.
+
+\end{itemize}
+
+}
+
+\x{
 \section{Active Homing Missiles}
 \label{rule:active-radar-homing-missiles}
 
@@ -119,34 +212,12 @@ With the advent of miniaturized electronics, it became possible to build radars 
     \item launch MCG missiles at different targets in the same game-turn. Still, no more than two missiles per turn may be launched as per normal rules.
 
 \end{itemize}
-}
+}{
 
-\Ax{
-\section{RGM Launch Requirements}
-\label{rule:rgm-launch-requirements}
+\section{Active-Homing Missiles}
+\label{rule:active-radar-homing-missiles}
 
-\paragraph{BRM Launch Requirements.}\label{rule:brm-launch-requirements} In addition to the general missile launch requirements in rule~\ref{rule:missile-launches}, launching a BRM requires:
-
-\begin{itemize}
-
-    \item The launching aircraft have the target in their limited radar arc (even if their normal radar arc is wider).
-
-    \item The launching aircraft must have a lock-on to the target (unless the missile is being snap-fired according to advanced rule~\ref{rule:snap-firing-missiles}).
-
-\end{itemize}
-
-\paragraph{RHM Launch Requirements.}\label{rule:rhm-launch-requirements} In addition to the general missile launch requirements in rule~\ref{rule:missile-launches}, launching an RHM requires:
-
-\begin{itemize}
-
-    \item The launching aircraft have a target inside the narrower of their radar arc and the \arcrange{150}{+} arc.
-
-    \item The launching aircraft must have a lock-on to the target (unless the missile is being snap-fired according to advanced rule~\ref{rule:snap-firing-missiles}).
-
-    \item The range to the target must be between the missile's minimum firing range and no more than than three times the launching aircraft's tracking strength.
-
-\end{itemize}
-
+Active-homing (AH) missiles have both radar transmitters and receivers. With its own radar, an AH missile can guide itself to a target independently of the launching aircraft. However, active homing is only possible at short ranges due to the small radar antenna in the missile. To achieve longer ranges, an AH missile must be guided like an RH one or through mid-course guidance (MCG) updates until it gets close enough to the target to guide itself.
 
 \paragraph{AHM Launch Requirements.}\label{rule:ahm-launch-requirements} In addition to the general missile launch requirements in rule~\ref{rule:missile-launches}, launching an AHM requires:
 
@@ -158,17 +229,51 @@ With the advent of miniaturized electronics, it became possible to build radars 
 
 \end{itemize}
 
-\section{RGM Launch Modifiers}
-\label{rule:rgm-launch-modifiers}
+\paragraph{AHM Launch Modifiers.}
+\label{rule:ahm-launch-modifiers}
 
-In addition to the general missile launch modifiers given in rule~\ref{rule:missile-launch-modifiers}, the following modifiers apply to BRMs, RHMs, and AHMs:
+In addition to the general missile launch modifiers given in rule~\ref{rule:missile-launch-modifiers}, the following modifiers apply to AHMs:
 
 \begin{itemize}
     \item If a BRM, RHM, or AHM is snap-fired, it suffers a $+2$ launch modifier (see advanced rule~\ref{rule:snap-firing-missiles}).
 \end{itemize}
 
-\section{RGM Tracking Requirements}
-\label{rule:rgm-tracking-requirements}
+\paragraph{AHM Tracking Requirements.} The tracking requirements for an AHM depend on whether it has mid-course guidance (MGC) capability and whether it is in its terminal phase.
+
+If the missile does not have MCG before the terminal phase, the requirements are the same as for RHM (see above) until the active homing range is reached.
+
+% ISSUE: For AHM with MGC, does the guiding aircraft have to maintain lock-on?
+
+If the missile does have MCG before the terminal phase, the requirements are:
+\begin{itemize}
+    \item The missile must keep the guiding aircraft in its \arcrange{90}{-} arc (to receive guidance signals in its rear antenna). The radar vertical limits table does not apply in this case. In particular, it does not have to keep the target in its \arcrange{150}{+} arc.
+\end{itemize}
+
+\paragraph{AHM Active Terminal Phase.} The instant an AHM moves into active homing range and the target is in its \arcrange{150}{+} arc, the missile enters its active terminal phase, and its own radar takes over guidance. The guiding aircraft is freed from the requirement to maintain lock-on and illuminate the target.
+
+The tracking requirements for an AHM in its active terminal phase are:
+
+\begin{itemize}
+
+    \item The missile must end its proportional move with the range to the target no greater than at the start of the proportional move.
+
+    \item The missile must end its proportional move with the target within the missile's \arcrange{150}{+} arc.
+
+\end{itemize}
+
+\paragraph{Multi-Target Track Technology.} An aircraft with multi-target track capability using MCG-capable AH missiles is not limited to a single target.
+
+\begin{itemize}
+
+    \item It may launch MCG missiles at different targets in the same game turn. Still, no more than two missiles per turn may be launched.
+
+    \item It may simultaneously guide MCG missiles at as many targets as it has lock-ons.
+
+\end{itemize}
+
+}
+
+\Ax{
 
 \section{RGM Attack Modifiers}
 \label{rule:rgm-attack-modifiers}
@@ -186,7 +291,7 @@ In addition to the general missile attack modifiers given in rule~\ref{rule:miss
 
     For example, consider an AA-3-2 missile attacking an aircraft using an active DDS. \ref{table:missile-data} gives a chaff vulnerability rating of 4, so the corresponding mini-jammer vulnerability rating is 5 (one more). If the target’s mini-jammer PPL is 3, the modifier is $+3$ (limited by the PPL), but if the target’s mini-jammer PPL is 6, the modifier is $+5$ (limited by the mini-jammer vulnerability rating).
     
-    \item For radar-guided AAMs, if the target is in radar ground clutter, apply the modifier described here.
+    \item For radar-guided AAMs, if the target is in radar ground clutter, apply the modifier described here.\label{rule:radar-ground-clutter}
 
     A target is in radar ground cluster if it is in the LO altitude band (altitude levels 0 to 7), within five altitude levels of the ground, and either the illuminating aircraft is higher than the target (for BRMs and RHMs) or the target is two or more levels below the missile’s altitude at the start of the proportional move in which it attacks (for AHMs).
 
@@ -200,6 +305,7 @@ In addition to the general missile attack modifiers given in rule~\ref{rule:miss
 
 }
 
+\x{
 \section{Target Illumination}
 \label{rule:target-illumination}
 
@@ -213,13 +319,48 @@ Illuminating (or “painting”) refers to directing a high-power radar beam at 
 
 Note: Illuminating may be used to confuse or mislead an enemy. Anytime a missile is fired, even if a heat seeking type, you may declare illumination and act as if you are guiding a radar missile.
 
+}{
+
+\section{Target Illumination}
+\label{rule:target-illumination}
+
+Illumination or “painting” refers to directing a high-power radar beam at a target to allow BRMs, RHMs, and non-MGC AHMs in their non-terminal phases home on the reflected radar energy.
+
+% ISSUE: Must the illuminating aircraft maintain a lock-on to continue illuminating? One would presume so, but all tracking requirements state this separately.
+
+\paragraph{Illumination Procedure.} To illuminate, an aircraft must have a locked-on target in its radar arc. In the aircraft decisions phase, it declares that it is illuminating. Once declared, illumination is automatic and is maintained as long as the illuminator keeps the target in its regular radar arc.
+
+Illuminating may be used to confuse or mislead an enemy. Anytime a missile is fired, even if a heat-seeking type, an aircraft may declare illumination and act as if it were guiding a radar-guided missile.
+
+\paragraph{Illumination Restrictions.} An aircraft may only illuminate one target at a time. Only the aircraft that launched the missiles can illuminate a target for those same missiles. Even though only two missiles may be launched per turn, any number may be guided by an illuminating aircraft. Thus, additional missiles may be launched in later turns even if the first two have not yet reached the target.
+
+\paragraph{Illumination and Order Of Flight.} An illuminating aircraft has its order of flight modified so that it flies immediately after its target, even if it would have normally moved at another point in time, alternating proportional segments of flight with the target and guided missiles. The missiles and target move first, then the illuminator. This simulates the disadvantage of flying predictably while illuminating a target.
+
+}
+
 \section{Missile Shoot-Outs}
 \label{rule:missile-shoot-outs}
 
+\x{
 It often happens that opposing aircraft will fire and guide radar missiles at each other in the same game turn. In this case, a shoot-out occurs with both aircraft moving proportionally along with their missiles. Whoever’s missile arrives first, attacks first unless some of each side's missiles can arrive in the same proportional move; in this case they all attack simultaneously.
 
 \paragraph{Shoot-out Procedure.} When a shoot-out situation occurs, each player secretly notes on paper whether he will engage his opponent's missiles or not; both reveal their choice in the Aircraft Decisions Phase. Whoever engages loses his lock-on and cannot illuminate and thus has his missiles removed from play. The other resolves missile guidance and attack normally. If both engage, all missiles are removed, however both aircraft will still have to move in the engaged phase. If neither engaged, then a shoot-out occurs normally with both aircraft moving proportionally along with their missiles as above.
 
+}{
+
+It can happen that opposing aircraft have radar-guided missiles simultaneously in flight and targeting each other. In this case, a missile shoot-out occurs.
+
+\paragraph{Missile Shoot-out Procedure.} When an opposing aircraft is simultaneously guiding radar-guided missiles at each other, each player secretly notes on paper whether they will engage their opponent's missiles or not. Both reveal their choice in the aircraft decisions phase. 
+
+If one aircraft engages and the other does not, the engaging aircraft loses lock-on, cannot illuminate, and thus has its missiles removed from play, while the other aircraft resolves missile guidance and attacks normally. 
+
+If both engage, all missiles are removed. However, both aircraft will still have to move in the engaged phase.
+
+If neither engages, then a shoot-out occurs with both aircraft moving proportionally along with their missiles. Whichever missile satisfies the attack requirements attacks first unless some of each side's missiles can arrive in the same proportional move; in this case, they all attack simultaneously.
+
+}
+
+\Dx{
 \section{BRM, RHM, AHM Countermeasures}
 
 \paragraph{Chaff Decoys.} Radar guided missiles are vulnerable to chaff just like IRMs are vulnerable to flares. Chaff may be dispensed manually or through a DDS program as described in Chapter 15 under IRM Countermeasures. Also see Chapter 19: Electronic Warfare.
@@ -229,14 +370,20 @@ Note: Expendable mini-jammers (introduced in the 1980s), function like chaff in 
 \paragraph{Ground Clutter.}\label{rule:radar-ground-clutter} Ground clutter affects radar guided missiles that attack targets close to the ground. If the target aircraft is within five altitude levels of the ground or less, and the illuminating or tracking aircraft which is guiding the missile is higher than the target, or if an active AH missile dives to attack a target (loses 2 or more levels in its move), a ground clutter modifier is applied to the to hit die roll.
 
 The modifier is determined first, by subtracting the target's altitude above the ground from six. Then subtract the missile's ECCM rating from the remainder. If the result is still positive, that is the die roll modifier.
+}
 
+\x{
 \trainingnote{You are now ready to play Training Scenario Four and all air combat only scenarios.}
+}{
+\trainingnote{You are now ready to play training scenario 4 and any scenarios featuring only air combat.}
+}
 
 \begin{advancedrules}
 
 \section{Snap-Firing Missiles}
 \label{rule:snap-firing-missiles}
 
+\x{
 Snap-Firing allows BR, RH, and AH missiles to be launched even when a lock-on is not held against the target. Snap-firing is allowed if:
 
 \begin{itemize}
@@ -245,6 +392,19 @@ Snap-Firing allows BR, RH, and AH missiles to be launched even when a lock-on is
 \end{itemize}
 
 Snap-fired missiles roll for launch with a $+3$ modifier as there is a possibility that they will be out of position to receive guidance signals when, and if, a lock-on is achieved to the target. If, in the immediately ensuing Air Radar phase, a lock-on is not achieved, the missiles are removed from play.
+}{
+
+Snap-firing allows BRMs, RHMs, and AHMs missiles to be launched before the launching aircraft has a lock-on.
+
+\paragraph{Snap-Firing Requirements.} 
+Snap-firing is allowed if the launching aircraft is using boresight or auto-track radar modes and the target is in its limited arc (regardless of its normal radar arc).
+
+\paragraph{Snap-Firing Procedure.} 
+Launch as normal, but with a $+3$ modifier, as the missile may be out of position to receive guidance signals when and if a lock-on is achieved to the target. If a lock-on is not achieved in the immediately ensuing air radar phase, the missiles are removed from play.
+
+}
+
+\x{
 
 \section{Radar Missile Out of Envelope Shots}
 \label{rule:radar-out-of-envelope-launches}
@@ -253,7 +413,22 @@ You may reduce the listed minimum range envelope of radar guided missiles by hal
 
 You may extend the maximum range envelope of RHM missiles to 4 times the radar's tracking strength by accepting a $+3$ modifier to the launch roll.
 
+}{
+
+\section{Out-of-Envelope RGM Launches}
+\label{rule:radar-out-of-envelope-launches}
+
+An RGM may be launched at targets outside of the normal launch envelope.
+
+\paragraph{RGM Launched Inside Minimum Envelop Range.} An RGM may be launched at a target inside its minimum envelope range. It may be launched at targets as close as half the minimum envelope range (round up) but with a $+3$ modifier to the launch die roll.
+
+\paragraph{RHM Launched Inside Minimum Envelope Range.} An RHM (but not a BRM or AHM) may be launched at a target beyond its maximum envelope range. It may be launched at targets up to 4 times the radar's tracking strength, but again with a $+3$ modifier to the launch die roll.
+
+}
+
 \section{AIM-26A Nuclear Falcon}
+
+\x{
 
 The AIM-26A is a radar guided missile which incorporated a nuclear warhead.
 
@@ -261,4 +436,13 @@ The AIM-26A is a radar guided missile which incorporated a nuclear warhead.
 
 \paragraph{Nuclear Attack.} The AIM-26A has a nuclear blast zone exactly like the AIR-2 Genie. The AIM-26A detonates upon entering the target's position or upon the guiding player's command when within 3 hexes of the target. The blast zone affects the target aircraft and any others that have already moved in the turn of attack immediately. Other aircraft moving later in the turn, are attacked if they remain within the blast zone.
 
+}{
+
+The AIM-26A is a radar-guided missile with a nuclear warhead.
+
+\paragraph{Launch and Flight.} In all respects, treat the AIM-26A as a regular RHM for launch and flight purposes.
+
+\paragraph{Nuclear Attack.} The AIM-26A has a nuclear blast zone exactly like the AIR-2 Genie (see rule~\ref{rule:genie}). The AIM-26A detonates upon entering the target's position or upon the guiding player's command when within 3 hexes of the target. The blast zone immediately affects the target aircraft and any others that have already moved in the turn of attack. If other aircraft have remained within the blast zone at the end of the game turn, they too are attacked.
+
+}
 \end{advancedrules}
