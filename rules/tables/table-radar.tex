@@ -1,5 +1,45 @@
-\begin{twocolumntable}
+\Ax{
+\begin{onecolumntable}
+\tablecaption{table:radar-search-limitations}{Radar Search Limitations}
+\begin{tabularx}{\linewidth}{X}
+\toprule
+\smallskip
+Aircraft may not search if they:
+\medskip
+\begin{itemize}
+ \item Turned at BT or greater.$^\dagger$
+ \item Turned at HT if pilot is radar operator.$^\dagger$
+ \item Used more than one VR.$^\dagger$
+ \item Used any other special maneuver except a slide.$^\dagger$
+ \item Unloaded and have not yet recovered.$^\dagger$
+ \item Were stalled, departed, or engaged
+ \item Received H or C damage or performed damage control.
+ \item Made an air-to-air gun or rocket attack.
+ \item Made an air-to-ground attack.
+ \item Has their radar operator in GLOC
+ \item Has their radar operator suffering disorientation.
+\end{itemize}
+\medskip
+$\dagger$ Does not apply to boresight or auto-track modes.
+\medskip
 
+Targets of searches must be:
+\medskip
+\begin{itemize}
+    \item Within radar arc.
+    \item Within radar vertical limits.
+    \item Within search range.
+    \item Not in ground clutter (unless look-down or limited look-down radar).
+\end{itemize}
+\\
+\addlinespace
+\bottomrule
+\end{tabularx}
+\end{onecolumntable}
+}
+
+\x{
+\begin{twocolumntable}
 \tablecaption{table:radar-contact}{Radar Contact}
 
 \begin{tabularx}{0.7\linewidth}{c*{11}{R}}
@@ -47,8 +87,48 @@ Above = Maximum Range in Hexes for Each Column
     \item Lookdown radar may ignore cases 2 \& 3.  Boresight radar may ignore case 3 against visually sighted targets.
 \end{enumerate}
 \end{tablenote}
-
 \end{twocolumntable}
+}{
+\begin{twocolumntable}
+\tablecaption{table:radar-searches}{Radar Search Ranges}
+
+\begin{tabularx}{0.9\linewidth}{*{12}{C}}
+\toprule
+\multicolumn{1}{c}{\multirow[b]{2}{*}{\minitable{c}{Search\\Strength}}}&
+\multicolumn{11}{c}{Detection Die Roll}\\
+\cmidrule{2-12}
+&
+\multicolumn{1}{c}{$10-$}&
+\multicolumn{1}{c}{$9-$}&
+\multicolumn{1}{c}{$8-$}&
+\multicolumn{1}{c}{$7-$}&
+\multicolumn{1}{c}{$6-$}&
+\multicolumn{1}{c}{$5-$}&
+\multicolumn{1}{c}{$4-$}&
+\multicolumn{1}{c}{$3-$}&
+\multicolumn{1}{c}{$2-$}&
+\multicolumn{1}{c}{$1-$}&
+\multicolumn{1}{c}{$0-$}\\
+\midrule
+\phantom{0}3& 6& 8& 9&10&11&12&13&---&14&---&\phantom{0}15+\\
+\phantom{0}6&12&15&18&20&22&24&26&28&29&30&\phantom{0}31+\\
+\phantom{0}8&16&20&24&28&30&32&34&36&28&40&\phantom{0}41+\\
+10&20&25&30&35&38&40&42&45&48&50&\phantom{0}51+\\
+12&24&30&36&42&45&48&51&54&57&60&\phantom{0}61+\\
+15&30&38&45&52&56&60&64&68&72&75&\phantom{0}76+\\
+18&36&45&54&63&68&72&76&81&86&90&\phantom{0}91+\\
+20&40&50&60&70&75&80&85&90&95&100&101+\\
+25&50&63&75&87&94&100&106&113&119&125&126+\\
+30&60&75&90&105&113&120&128&135&143&150&151+\\
+40&80&100&120&140&150&160&170&180&190&200&201+\\
+50&100&125&150&175&188&200&213&225&238&250&251+\\
+EWR&150&188&225&263&280&300&319&338&356&375&376+\\
+\bottomrule
+\end{tabularx}
+\end{twocolumntable}
+}
+
+\x{
 
 \begin{onecolumntable}
 \tablecaption{table:radar-search-modifiers}{Radar Search Modifiers}
@@ -57,7 +137,7 @@ Above = Maximum Range in Hexes for Each Column
 \begin{enumerate}
     \item AJM \# $-$ Air Radar or EWR ECCM.
     \item BJM \# $-$ Air Radar or EWR ECCM.
-    \item \changedin{1B}{1B-apj-23-errata and 1B-apj-24-play-aids}{CHAFF PPL Effectiveness No.}{Chaff PPL Eff.\ No.\ $-$ $1/2$ radar ECCM (round up).}
+    \item \changedin{1B}{1B-apj-23-errata and 1B-apj-24-play-aids}{CHAFF PPL Effectiveness No.}{Chaff PPL Eff.\ No.\ $-$ $1/2$ radar ECCM (round \addedin{1B}{1B-apj-36-errata}{product }up).}
     \item Mini-Jammer PPL Effectiveness No.
     \item Aircraft Size Modifier from ADC.
     \itemdeletedin{1B}{1B-apj-23-errata and 1B-apj-24-play-aids}{$+4$ if aircraft has Stealth Technology.}
@@ -70,6 +150,46 @@ Above = Maximum Range in Hexes for Each Column
 \end{tabularx}
 \end{onecolumntable}
 
+}{
+
+\begin{twocolumntable}
+\tablecaption{table:radar-search-and-lock-on-modifiers}{Radar Search and Lock-On Modifiers}
+\begin{tabularx}{0.9\linewidth}{lLccl}
+\toprule
+Description&Modifier&Search\tablenotemark{1}&Lock-On\tablenotemark{2}&Rule\\
+\midrule
+\multicolumn{5}{c}{Target}\\
+\midrule
+Target size modifier&See ADC&Y&N&\ref{rule:aircraft-data-cards}\\
+\midrule
+\multicolumn{5}{c}{ECM}\\
+\midrule
+Target using IFF&$-2$&Y&Y&\ref{rule:iff}\advancedrulemark\\
+Target using chaff DDS&+PPL modifier\tablenotemark{3} $-$ half ECCM rating\tablenotemark{4}&Y&Y&\ref{rule:dds}\advancedrulemark\\
+Target using mini-jammer DDS&+PPL modifier\tablenotemark{3}&Y&Y&\ref{rule:dds}\advancedrulemark\\
+Target and searcher in BJM arc&+BJM rating $-$ ECCM rating&Y&N&\ref{rule:radar-jamming}\advancedrulemark\\
+Searcher in AJM-C/D arc&+AJM rating $-$ ECCM rating&Y&N&\ref{rule:radar-jamming}\advancedrulemark\\
+\midrule
+\multicolumn{5}{c}{Radar Operator}\\
+\midrule
+Veteran&$-1$&Y&N&\ref{rule:crew-quality}\advancedrulemark\\
+Novice&$+1$&Y&N&\ref{rule:crew-quality}\advancedrulemark\\
+Green&$+2$&Y&N&\ref{rule:crew-quality}\advancedrulemark\\
+Tactics master&$-1$&Y&N&\ref{rule:crew-characteristics}\advancedrulemark\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.9\linewidth}
+\advancedruletext
+\tablenotetext{1}{The modifier applies to search attempts if Y appears in this column.}
+\tablenotetext{2}{The modifier applies to lock-on attempts if Y appears in this column.}
+\tablenotetext{3}{Table~\ref{table:ew-decoy-ppl-effectiveness} gives the modifier.}
+\tablenotetext{4}{Round up one half of the ECCM rating before subtracting it from the PPL modifier.}
+\end{tablenote}
+\end{twocolumntable}
+
+}
+
+\Dx{
 \begin{onecolumntable}
 \addedin{1B}{1B-apj-23-errata, 1B-apj-24-play-aids, and 1B-apj-25-qa}{
 \tablecaption{table:radar-lock-on-modifiers}{Radar Lock-On Modifiers}
@@ -85,7 +205,9 @@ Above = Maximum Range in Hexes for Each Column
 \end{tabularx}
 }
 \end{onecolumntable}
+}
 
+\Dx{
 \begin{onecolumntable}
 \tablecaption{table:ew-radar-modifiers}{Air Radar Search and Lock-On Modifiers}
 \begin{tabularx}{\linewidth}{lP}
@@ -100,6 +222,7 @@ BJM Noise&BJM No. $-$ Air Radar ECCM\\
 \bottomrule
 \end{tabularx}
 \end{onecolumntable}
+}
 
 \begin{onecolumntable}
 \tablecaption{table:radar-breaking-lock-on}{Breaking Radar Lock-On}
@@ -134,6 +257,7 @@ DJM&DJM $-$ Air Radar ECCM\\
 \end{tabular}
 \end{onecolumntable}
 
+\Dx{
 \begin{onecolumntable}
 \tablecaption{table:radar-search-limitations}{Radar Search Limitations}
 \begin{tabularx}{\linewidth}{X}
@@ -165,6 +289,7 @@ Note: Boresight and Auto-Track Modes allow maneuver restrictions to be ignored b
 \bottomrule
 \end{tabularx}
 \end{onecolumntable}
+}
 
 \begin{twocolumntable}
 \tablecaption{table:radar-vertical-limits}{Radar Vertical Limits}
