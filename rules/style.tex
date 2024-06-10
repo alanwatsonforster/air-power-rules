@@ -384,6 +384,12 @@ minus \fontdimen4\font}
     \endtabularx%
 }
 
+\newcommand{\tablenotemark}[1]{\mbox{$^{#1}$}}
+\newcommand{\tablenotetext}[2]{\tablenotemark{#1}~#2}
+
+\newcommand{\advancedrulemark}{\tablenotemark{*}}
+\newcommand{\advancedruletext}{\tablenotetext{*}{Advanced rule.\space}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\arc}[1]{\mbox{#1{\deg}}}
