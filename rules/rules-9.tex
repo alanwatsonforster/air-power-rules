@@ -193,6 +193,8 @@ A snap shot is a short burst of fire. It uses half the normal ammunition but has
 \x{
 \paragraph{Head On Gun Attacks.} If both the attacker and target directly face each other with the attacker on the 180 degree line shown in \changedin{1C}{1C-figures}{the Angle-Off Diagram}{Figures~\ref{figure:angle-off-facing-hex-corner}, \ref{figure:angle-off-facing-hex-side}, or \ref{figure:angle-off-on-hex-side}}, the attack is a Head-on Attack. A target aircraft waiting to move (or having already finished its move) may return fire in response to head-on attacks provided it does not exceed the 2 shot per game turn limit\changedin{2B}{2B-head-on-attacks}{, the higher/lower target restrictions, and the ET turn rate prohibition}{\ and satisfies all of the normal prerequisites except the sighting requirement}. \addedin{1B}{1B-apj-36-errata}{An aircraft that has not flown yet may \emph{not} respond to a head-on attack if it performed an ET or roll at the end of the previous game-turn or it is carrying an ET turn or roll. Gunsight modifiers apply if it is carrying a turn or performed a turn at the end of the previous game-turn.}
 }{
+% ISSUE: Clarify that head-on attacks are simultaneous (so damage or kills take effect after both attacks).
+% ISSUE: What happens if a head-on attack that is declared and then aborted? Can the defender return fire? Is there still a risk of collision? Carl and I think the answer is yes in both cases.
 \paragraph{Head-On Gun Attacks.} If both the attacker and target directly face each other with the attacker on the \arc{180} line shown in Figures~\ref{figure:angle-off-facing-hex-corner}, \ref{figure:angle-off-facing-hex-side}, or \ref{figure:angle-off-on-hex-side}, the attack is a head-on attack. A target aircraft waiting to move (or that has already finished its move) may return fire in response to head-on attacks provided it does not exceed the two-shot limit per game turn and satisfies all of the normal requirements except the sighting requirement. An aircraft that has not flown yet may \emph{not} respond to a head-on attack if it is carrying or recovering from an ET turn or prepared for or executed a rolling maneuver on the last FP of the previous game turn. Gunsight modifiers apply if it is carrying a turn or recovering from a turn.
 }
 
@@ -223,6 +225,9 @@ The same hex $+2$ Vertical Attack Modifier only applies if the target uses climb
 }{
 \paragraph{Same-Location Vertical Attacks.}
 A climbing or diving aircraft firing at a target in the same map location (i.e., the same hex or hex side) may be subject to a vertical-attack modifier. If the attacker is climbing and the target is diving, or vice versa, the modifier is $+2$. If the attacker is climbing or diving and the target is in level flight, the modifier is $+1$. If both the attacker and target are climbing or both are diving, there is no modifier.
+
+% ISSUE: Use flight type from previous turn if the defender has not yet moved.
+% ISSUE: Attackers in level flight should get +1 agains defenders in climbing or diving flight.
 }
 
 \addedin{1B}{1B-apj-23-errata}{\paragraph{Aborting Gun Shots.} 
@@ -303,7 +308,9 @@ Angle-off arcs are used for other purposes, including determining:
     \item The fields of IRSTS (rule~\ref{rule:irsts}), VAS (rule~\ref{rule:irsts}), missile seekers (rule~\ref{rule:air-to-air-missiles}), radar (rule~\ref{rule:air-to-air-radar}), jammers (rule~\ref{rule:electronic-warfare}), and laser designators (rule~\ref{rule:laser-guided-weapons}).
 \end{itemize}
 
-\paragraph{Ranges of Angle-Off Arcs.} Ranges of angle-off arcs are used for restricted or blind regions for sighting, sensor fields, and determining advantage. If a range is given as an arc followed by a plus sign, it consists of those arcs and all more forward arcs. If a range is given as an arc followed by a minus sign, it consists of those arcs and all more rearward arcs. Ranges specified in this way consist of both the left and right arcs.
+\paragraph{Ranges of Angle-Off Arcs.}
+\label{rule:ranges-of-angle-off-arcs}
+Ranges of angle-off arcs are used for restricted or blind regions for sighting, sensor fields, and determining advantage. If a range is given as an arc followed by a plus sign, it consists of those arcs and all more forward arcs. If a range is given as an arc followed by a minus sign, it consists of those arcs and all more rearward arcs. Ranges specified in this way consist of both the left and right arcs.
 
 For example, a blind arc given as $\arcrange{60}{-}$ consists the \arc{30} and \arc{60} arcs and a radar search field given as $\arcrange{150}{+}$ consists of the \arc{150} and \arc{180} arcs. 
 
