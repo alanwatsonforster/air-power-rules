@@ -247,6 +247,8 @@ Version 2B contains unauthoritaive minor changes.
 
     \itemtag{2B-viff-vertical-pitch} I have added that when a VIFF vertical pitch is used to enter a vertical dive from a vertical climb, all of the HFPs must be used before any VFPs. This parallels the requirement for using a HRD to enter a vertical dive from a zoom or sustained climb.
 
+    \itemtag{2B-missile-launch-modifiers} In the missile launch modifier table, I have changed the launch modifier for a critically damaged aiircraft from $+2$ to $+3$ to match the damage tables.
+    
     \itemtag{2B-launch-restrictions} I have changed the restriction on missile launches from “firing guns during its last FP” to “firing guns or rockets after its last FP.”
 
     \itemtag{2B-follow-up-missiles} I have slightly changed how the FPs regained by a follow-on missile are assigned. I have stated that they are added to the initial complete proportional segments rather than the initial proportional segments. This is relevant when the missile has a life of only one game turn; we do not want an additional FP added to the incomplete proportional moves with the launch delay.
@@ -254,6 +256,8 @@ Version 2B contains unauthoritaive minor changes.
     \itemtag{2B-irm-vertical-fov} I have added that the vertical limits for the limited, \arcrange{180}{+}, and \arcrange{150}{+} arcs are used according to the horizontal field-of-view.
 
     \itemtag{2B-irm-envelopes} The rules on out-of-envelope IRM launches state that type A seekers may be launched at “large” targets, but I have changed this to “not large” targets (those with a visibility of less than 10), as this makes more sense from the context.
+
+    \item{2B-radar-requirements} I have changed the requirement for radar work from “made an air to air gun attack” to “made an air to air gun or rocket attack”.
 
 \end{itemize}
 
@@ -334,11 +338,15 @@ I will use custom LaTeX commands to introduce changes into the source text. Thes
 
 \section{Design}
 
-The {\AirSup} rules were published in GDW’s house style. This used a san serif font, which favors compactness over readability. The first-edition rules followed this style to a large degree.
+{\AirSup} and {\AirStr} were published in GDW’s house style, with the main text is set in \href{https://en.wikipedia.org/wiki/Univers}{Univers} and the page having two columns with a rule between the columns and below the header. {\TSOH} followed this style to a large degree, but appears to have been set in \href{https://en.wikipedia.org/wiki/Helvetica}{Helvetica}
 
-I want the rules to be readable and beautiful, but I also wish to preserve some of the design heritage of the earlier rules. Therefore, I have maintained a layout with a two-column design, with a line separating the columns, and adapted the header from the GDW editions and the section format from the first-edition rules. However, I have replaced the san serif font with a serif font designed for readability.
+I want the rules to be readable and beautiful, but I also wish to preserve some of the design heritage of the earlier rules.
 
-After considering several options, I have chosen the \href{https://www.gust.org.pl/projects/e-foundry/tex-gyre/schola}{Schola} font, based on the URW Century Schoolbook font and adapted for LaTeX by the GUST foundry as part of the TeX Gyre project. Schola has a version for math, which is useful for text like “$1 ≤ \CC ≤ 2$”. Of the other TeX Gyre fonts, the Palatino version would also be suitable, but Palatino is heavily used in {\itshape Birds of Prey}, and I wish to maintain a clear distinction.
+Therefore, I have maintained a layout with a two-column design, with a rule separating the columns and under the header, adapted the header from the GDW editions, and adapted the section format from the first-edition rules. 
+
+However, I have replaced the san serif font with a serif font designed for readability. After considering several options, I have chosen the \href{https://www.gust.org.pl/projects/e-foundry/tex-gyre/schola}{Schola} font, based on the URW Century Schoolbook font and adapted for LaTeX by the GUST foundry as part of the TeX Gyre project. Schola has a version for math, which is useful for text like “$1 ≤ \CC ≤ 2$”. 
+
+Of the other TeX Gyre fonts, the Palatino version would also be suitable, but Palatino is heavily used in {\itshape Birds of Prey}, and I wish to maintain a clear distinction.
 
 \section{Rewriting and Reorganization}
 
