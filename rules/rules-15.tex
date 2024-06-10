@@ -3,10 +3,10 @@
 }{
 \rulechapter{Infrared-Guided Missiles}
 }
-\label{rule:infra-red-heat-seeking-missiles}
+\label{rule:infeared-heat-seeking-missiles}
 
 \x{
-This chapter details the operations of infra-red heat-seeking missiles (weapon code IRM). A heat-seeking missile homes on the infra-red heat emissions of a target aircraft.
+This chapter details the operations of infeared heat-seeking missiles (weapon code IRM). A heat-seeking missile homes on the infeared heat emissions of a target aircraft.
 }{
 This rule describes the use of infrared-guided or heat-seeking air-to-air missiles (IRMs), which passively target the target aircraft's infrared emissions.
 
@@ -67,10 +67,10 @@ In addition to the general missile launch requirements in rule~\ref{rule:missile
 
     \item If the launching aircraft used diving flight during the game turn of launch, it may not fire at a higher target.
 
-    \item If the launching aircraft used level flight during the game turn of launch, the difference in altitude between the firer and target may not be more than one level for every two full hexes of horizontal range.
+    \item If the launching aircraft used level flight during the game turn of launch, the difference in altitude between the firer and target may be at most one level for every two full hexes of horizontal range.
 
     \end{itemize}
-    Advanced rule~\ref{rule:irm-realistic-vertical-limits} can replace these simple vertical limits.
+    If advanced rule~\ref{rule:irm-realistic-vertical-limits} is being used, it supersedes these simple vertical limits.
     
     \item The launching aircraft must be within the launch angle-off arc of the missile’s seeker according to Table~\ref{table:irm-seeker-limits}.
     
@@ -169,7 +169,7 @@ If a missile dives in its proportional move (meaning it loses 2 or more altitude
 \paragraph{Flare Decoys.} 
 If an aircraft is equipped with an internal DDS (see advanced rule~\ref{rule:dds}) or carries a DDS pod, it can be equipped with flare decoys to defend against IRMs. Decoys may be used in two ways. Any aircraft may elect to dispense them automatically using a DDS protective program (advanced rule~\ref{rule:dds}), and an engaged aircraft (see rule~\ref{rule:engaging-missiles}) may manually dispense decoy clusters against sighted IRMs (see \ref{rule:missile-attacks}). Decoys may be dispensed manually even if an automatic protective program is in effect (see advanced rule~\ref{rule:dds}).
 
-\paragraph{Manual Flare Decoy Procedure.} This procedure is used if an engaged aircraft manually dispenses flare decoy clusters to defend against an IRM (see rule~\ref{rule:missile-attacks}). Roll the die once for each flare decoy cluster dispensed. If the result is less than or equal to the missile's flare vulnerability rating, the missile is successfully decoyed and cannot attempt to hit the target. It is immediately removed from play. Table~\ref{table:missile-data} gives the flare vulnerability ratings for missiles. If the missile is not successfully defeated by the decoys, it continues with its attack.
+\paragraph{Manual Flare Decoy Procedure.} This procedure is used if an engaged aircraft manually dispenses flare decoy clusters to defend against an attack by an IRM (see rule~\ref{rule:missile-attacks}). Roll the die once for each flare decoy cluster dispensed. If the result is less than or equal to the missile's flare vulnerability rating, the missile is successfully decoyed and cannot attempt to hit the target. It is immediately removed from play. Table~\ref{table:missile-data} gives the flare vulnerability ratings for missiles. If the missile is not successfully defeated by the decoys, it continues with its attack.
 
 For example, consider an AA-2 Atoll attacking an aircraft with a DDS that contains 8 flare clusters. If the aircraft engages the missile, it can manually dispense 2 flare clusters (plus 2 of any other type of decoy in the DDS). The flare vulnerability of the AA-2 is 6, so each flare cluster defeats the missile on a die roll of $6-$.
 
@@ -196,6 +196,8 @@ In addition to the general missile attack modifiers given by rule~\ref{rule:miss
     \item If the target has an active DDS dispensing flares (see advanced rule~\ref{rule:dds}), apply the lesser of the flare PPL and the missile flare vulnerability rating given in Table~\ref{table:missile-data} as a modifier. 
     
     For example, consider an AIM-9D missile attacking an aircraft using an active DDS. \ref{table:missile-data} gives a flare vulnerability rating of 5. If the target’s flare PPL is 3, the modifier is $+3$ (limited by the PPL), but if the target’s flare PPL is 6, the modifier is $+5$ (limited by the flare vulnerability rating).
+
+    \item If the target has an IRM jamming pod (see advanced rule~\ref{rule:infrared-jamming}), apply the modifier that is appropriate for the arc of the missile attack.
 \end{itemize}
 
 }
