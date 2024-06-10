@@ -6,9 +6,9 @@ This chapter describes the procedures for launching and moving missiles in fligh
 }{
 This rule describes the procedures for launching and flying air-to-air missiles (AAMs) and conducting missile attacks on a target aircraft. 
 
-Air-to-air missiles can be divided according to their seeker into infrared- and radar-guided missiles. This rule describes the common characteristics of both types of missiles. The specific rules relating to the seekers are given in rule~\ref{rule:infra-red-heat-seeking-missiles} for infrared-guided missiles and rule~\ref{rule:radar-guided-missiles} for radar-guided missiles. 
+Air-to-air missiles can be divided according to their seeker into infrared- and radar-guided missiles. This rule describes the common characteristics of both types of missiles. The specific rules relating to the seekers are given in rule~\ref{rule:infeared-heat-seeking-missiles} for infrared-guided missiles and rule~\ref{rule:radar-guided-missiles} for radar-guided missiles. 
 
-Targets may defend themselves against air-to-air missiles by maneuvering so that they can no longer be tracked by the seeker (see rules~\ref{rule:infra-red-heat-seeking-missiles} and \ref{rule:radar-guided-missiles}) by dispensing decoys such as flares, chaff, and mini-jammers (see advanced rule~\ref{rule:dds}), and by using jammers against radar-guided missiles (see advanced rule~\ref{rule:radar-jamming}).
+Targets may defend themselves against air-to-air missiles by maneuvering so that they can no longer be tracked by the seeker (see rules~\ref{rule:infeared-heat-seeking-missiles} and \ref{rule:radar-guided-missiles}) by dispensing decoys such as flares, chaff, and mini-jammers (see advanced rule~\ref{rule:dds}), by using radar or infrared jammers (see advanced rules~\ref{rule:radar-jamming} and \ref{rule:infrared-jamming}).
 }
 
 \x{
@@ -31,7 +31,7 @@ The information required to launch and fly each type of air-to-air missile is pr
 
     \item \itemparagraph{Load.} The load points of missile (for conf.\ limits).
 
-    \item \itemparagraph{Seeker.} A letter code indicating the type of seeker the missile has. E, I, M, A, are infra-red seekers (Early, Improved, Modern, Advanced).  BR, RH, AH are radar seekers (Beam-Rider, Radar-Homer, Active-Homer). A dash means it is unguided and has no seeker.
+    \item \itemparagraph{Seeker.} A letter code indicating the type of seeker the missile has. E, I, M, A, are infeared seekers (Early, Improved, Modern, Advanced).  BR, RH, AH are radar seekers (Beam-Rider, Radar-Homer, Active-Homer). A dash means it is unguided and has no seeker.
 
     \item \itemparagraph{Launch G.} This is the maximum turn rate an aircraft may use during flight to launch the missile without penalty. If a higher rate was used, a cumulative $+2$ modifier must be applied to the roll for each step of higher turn rate.
 
@@ -82,7 +82,7 @@ Table~\ref{table:missile-data} gives information for carrying, launching, flying
 
     \item \itemparagraph{Load.} This gives load points of the missile (for configuration limits).
 
-    \item \itemparagraph{Seeker.} A letter code indicating the type of seeker the missile has: E, I, M, and A are early, improved, modern, and advanced infra-red seekers; BR, RH, and AH are beam-rider, radar-homing, and active-homing seekers; and a dash means that the missile is unguided and has no seeker.
+    \item \itemparagraph{Seeker.} A letter code indicating the type of seeker the missile has: E, I, M, and A are early, improved, modern, and advanced infeared seekers; BR, RH, and AH are beam-rider, radar-homing, and active-homing seekers; and a dash means that the missile is unguided and has no seeker.
 
     \item \itemparagraph{Launch Turn Rate.} This is the maximum turn rate an aircraft may use during flight to launch the missile without penalty. If the aircraft used a higher rate, a cumulative $+2$ modifier applies to the launch roll for each level of higher turn rate.
 
@@ -102,7 +102,7 @@ Table~\ref{table:missile-data} gives information for carrying, launching, flying
 
     \item \itemparagraph{Launch Envelopes.} These are the minimum and maximum ranges at which a missile may be launched at a target. (For BRMs and RHMs, the maximum range also depends on the aircraft’s radar tracking strength.)
 
-    Front shots are those taken from the target’s 150{\deg} and 180{\deg} arcs; side shots are those from the 120{\deg} and 90{\deg} arcs; rear shots are those from the 60{\deg} or 30{\deg} arcs. A dash indicates the shot is not allowed.
+    Front launches are those taken from the target’s \arc{150} and \arc{180} arcs; side launches are those from the \arc{120} and \arc{90} arcs; rear launches are those from the \arc{60} or \arc{30} arcs. A dash indicates the shot is not allowed.
 
     \item \itemparagraph{Speed.} This is the missile’s base speed, which is used as described below to determine a missile’s actual speed on its first turn of flight. After the first game turn, the missile’s speed will vary according to the procedure given below. A dash with a second number indicates the missile has a sustainer motor, which lasts a number of game turns equal to the second number.
 
@@ -232,16 +232,16 @@ Aircraft attempting to launch any type of missile are restricted as follows:
 \end{itemize}
 }
 
-\x{
 \paragraph{Missile Launch Modifiers.} 
+\label{rule:missile-launch-modifiers}
+
+\x{
 High aircraft turn rates during the turn of launch can adversely affect a missile's ability to stay locked on to a target during its separation from the launch aircraft and motor ignition. Each missile has a Launch G (turn rate) listed for it \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}}. This is the highest turn rate the launching aircraft may use in the game turn and still be able to launch those missiles without penalty. If a higher turn rate was used in the turn, a $+2$ modifier is applied to the launch roll for each turn rate above the listed Launch G.
 
 For example, if a missile has a Launch G of “TT”, and the aircraft used a BT turn rate during the game turn, a $+4$ modifier to the launch roll would apply.
 
 Additional launch roll modifiers may exist for weather, terrain clutter, crew quality, and the presence of missile countermeasures in the form of decoys (expendable chaff, flares, and mini-jammers), or electronic jamming. These modifiers are explained in later rules.
 }{
-\section{Missile Launch Modifiers.} 
-\label{rule:missile-launch-modifiers}
 
 Table~\ref{table:missile-launch-modifiers} summarizes the modifiers for missile launch rolls. In more detail, they are:
 \begin{itemize}
@@ -576,9 +576,7 @@ For example, consider an attack by an AIM-9B Sidewinder missile. Table~\ref{tabl
 \x{
 \paragraph{Roll To Hit Modifiers.} \changedin{1C}{1C-tables}{The Missile Attack Modifiers Table}{Table~\ref{table:missile-attack-modifiers}} lists the modifiers for missile angle off, terrain clutter effects, target considerations, and ECM. For the angle-off to hit modifiers, the missile is always considered to be in the angle-off arc it was in during the proportional move in which the attack was declared. If it is on a line between two arcs, it is considered to be in the arc which favors the defender.
 }{
-\paragraph{Missile Attack Modifiers.} Tables~\ref{table:missile-attack-modifiers} and \ref{table:missile-attack-angle-off-modifiers} give the modifiers for missile attacks.
-
-For all missiles:
+\paragraph{Missile Attack Modifiers.} Tables~\ref{table:missile-attack-modifiers} and \ref{table:missile-attack-angle-off-modifiers} summarize the modifiers for missile attacks. In detail, they are:
 \begin{itemize}
     \item Use the size number from the target’s ADC as a modifier.
     \item If the target did not engage the missile, apply a modifier of $-1$.
@@ -586,7 +584,6 @@ For all missiles:
     \item Additional modifiers for IRMs are given by rule~\ref{rule:irm-attack-modifiers}.
     \item Additional modifiers for BRMs, RHMs, and AHMs are given by rule~\ref{rule:rgm-attack-modifiers}.
     \item There are no other modifiers for optically-guided and laser-guided missiles (OG and LG SAMs).
-
 \end{itemize}
 
 }
