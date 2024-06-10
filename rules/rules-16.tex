@@ -1,21 +1,107 @@
+\x{
 \rulechapter{Air to Air Radar}
+}{
+\rulechapter{Air-to-Air Radar}
+}
 \label{rule:air-to-air-radar}
 
+\x{
 This chapter details the procedures for the use of radar for detection and tracking of other aircraft.
+}{
+This rule describes how aircraft use their radars to search for and track other aircraft. 
+}
 
+\Dx{
 \paragraph{Detection and Lock-On Eligibility.} Any aircraft not currently detected, within radar range, and in the radar arc of the searcher, is eligible to be detected. Count each two levels of altitude as one hex of range. An aircraft that is, or becomes, radar detected is eligible to be locked-on to. Radar guided missiles may only be launched at locked-on targets.
+}
+
+\Ax{
+\section{Radar Arcs} 
+
+The arcs line of the radar data section of the ADC shows the arc in which the aircraft’s radar operates when used normally. (The arc may differ in special radar modes, such as boresight mode and auto-track mode, described in advanced rule~\ref{rule:special-radar-modes}.)
+
+The arc may be the word “limited” or an arc range (see rule~\ref{rule:ranges-of-angle-off-arcs}). Figure~\ref{figure:limited-arcs} shows the limited arc. In this figure, only the locations within the limited arc line are within the limited arc. The arc ranges \arcrange{180}{+}, \arcrange{150}{+}, \arcrange{120}{+} include the specified arc and all more forward arcs (see rule~\ref{rule:ranges-of-angle-off-arcs}). For example, \arcrange{150}{+} includes the \arc{150} and \arc{180} arcs.
+
+Targets on the borderline of a radar arc are considered to be within the arc.
+
+}
 
 \section{Radar Searches}
 \label{rule:radar-searches}
 
+\x{
 \paragraph{Radar Search Data.} The Radar Data section of the ADC shows two numbers on the search line. The first number is the maximum detection range in hexes; the second number is the radar search strength rating. If a dash exists there, the aircraft has no search capability.
+}{
+\paragraph{Radar Search Data.} The search line of the radar data section of the ADC shows the aircraft's radar search capability. If the line has no numbers, only a dash, the aircraft cannot search. Otherwise, it will show two numbers separated by a dash. The first number is the maximum detection range in hexes. The second number is the radar search strength rating. 
+}
 
 \silentlyaddedin{1C}{1C-figures}{
     \input{figures/figure-limited-arc}
 }
 
-\paragraph{Radar Arcs.} The Radar Data section of the ADC shows a number on the Arcs line. This is aircraft's radar arc. The radar arc for an aircraft is expressed in terms of its angle-off arcs and followed by a plus. Because angle off arcs begin from the tail of the aircraft, the forward direction for an aircraft is 180{deg}.  Radar arcs include all angle-off arcs higher than the number stated. Thus, the 150+ radar arc includes the right and left 150{deg} angle-off arcs, and the right and left 180{deg} angle-off arcs (because they are higher than 150{deg}). Some aircraft have a “Limited” radar arc. This arc is less than the 180+ radar arc, and is shown in \changedin{1C}{1C-figures}{the Limited Radar Arc diagram of the play aids}{Figure~\ref{figure:limited-arcs}}. \addedin{1B}{1B-apj-28-qa}{In the \changedin{1C}{1C-figures}{diagram}{figure}, only the center point of hexes and hexsides within the limited arc line, as drawn, are within the limited arc.}
+\Dx{
+\paragraph{Radar Arcs.} The Radar Data section of the ADC shows a number on the Arcs line. This is aircraft's radar arc. The radar arc for an aircraft is expressed in terms of its angle-off arcs and followed by a plus. Because angle off arcs begin from the tail of the aircraft, the forward direction for an aircraft is 180{\deg}.  Radar arcs include all angle-off arcs higher than the number stated. Thus, the 150+ radar arc includes the right and left 150{\deg} angle-off arcs, and the right and left 180{\deg} angle-off arcs (because they are higher than 150{\deg}). Some aircraft have a “Limited” radar arc. This arc is less than the 180+ radar arc, and is shown in \changedin{1C}{1C-figures}{the Limited Radar Arc diagram of the play aids}{Figure~\ref{figure:limited-arcs}}. \addedin{1B}{1B-apj-28-qa}{In the \changedin{1C}{1C-figures}{diagram}{figure}, only the center point of hexes and hexsides within the limited arc line, as drawn, are within the limited arc.}
+}
 
+\Ax{
+\paragraph{Radar Operator.} In a single-crewed aircraft, the radar operator is always the pilot. In a multi-crewed aircraft, the radar operator is the pilot for boresight and auto-track modes (see advanced rule~\ref{rule:special-radar-modes}) and the radar officer (RIO, WSO, observer, navigator, or equivalent) for other modes.
+
+
+\paragraph{Radar Operator.} In a single-crewed aircraft, the radar operator is always the pilot. In a multi-crewed aircraft, the radar operator is the pilot for boresight and auto-track modes (see advanced rule~\ref{rule:special-radar-modes}) and the radar officer (RIO, WSO, observer, navigator, or equivalent) for other modes.
+
+\paragraph{Radar Search Requirements.}
+\label{rule:radar-search-requirements}
+
+An aircraft can perform a radar search if, in the current game turn, it satisfies these requirements:
+
+    \begin{itemize}
+        \item It did not turn at the BT or tighter turn rate.
+        \item If the radar operator is the pilot, it did not turn at the HT or tighter turn rate.
+        \item It performed at most one vertical roll.
+	\item It did not prepare for or execute any rolling maneuver other than a vertical roll, any VIFF maneuver, or a vertical reverse maneuver.
+        \item It has completed a recovery period after any unloaded FPs.
+        \item It did not make an air-to-air gun, air-to-air rocket, or air-to-ground attack.
+        \item It was not stalled or departed.
+        \item It did not engage a missile.
+        \item It did not receive H or C damage or perform damage control.
+        \item Its radar operator is not suffering from GLOC.
+    \end{itemize}
+
+The target of a radar search must satisfy these requirements:
+
+    \begin{itemize}
+
+    \item It must be within the radar arc of the searching aircraft.
+
+    \item Its range from the searching aircraft must not exceed the search range of the radar.
+
+    \item It must satisfy these vertical limits:
+    \begin{itemize}
+        \item If the searching aircraft used climbing flight during the current game turn, the target must not be lower.
+        \item If the searching aircraft used diving flight during the current game turn, the target must not be higher.
+        \item If searching aircraft used level flight during the current game turn, the difference in altitude between it and the target may be at most one level for every two full hexes of horizontal range.
+    \end{itemize}
+
+    If advanced rule~\ref{rule:radar-vertical-limits} is being used, it supersedes these simple vertical limits.
+
+    \item It must not be in ground clutter, which occurs in these three situations:
+
+    \begin{itemize}
+        \item The target is within four altitude levels of the ground, and the searching aircraft is at the same altitude or higher.
+        \item The target is five to ten altitude levels above the ground, the searching aircraft is higher than the target, and the difference in altitude level between the searching aircraft and the target is greater than or equal to the difference in altitude levels between the target and the ground.
+        \item The target is five to ten altitude levels above the ground, the searching aircraft is higher than the target, and the horizontal range in hexes from the searching aircraft to the target is greater than or equal to the difference in altitude levels between the target and the ground.
+        
+    \end{itemize}
+
+    For example, if the ground is at level 0, and a target aircraft is at level 6. The difference in altitude between the target and the ground is 6 levels. A higher searcher would have to be at most 5 levels above the target (i.e., at altitude levels 7 to 11) and at a horizontal range of at most 5 hexes.
+
+    Aircraft with limited look-down technology may ignore the last restriction. Aircraft with (full) look-down technology may ignore all three restrictions.
+
+    \end{itemize}
+    
+}
+
+\x{
 \paragraph{Radar Search Procedure.} Aircraft may attempt to detect targets which are in the search aircraft's radar arc and within its maximum detection range. To detect a target, a successful die roll must be made. The actual detection probability depends on the aircraft's search strength rating and the range. Use the following procedure to determine the die roll required:
 
 \addedin{1C}{1C-tables}{
@@ -30,16 +116,56 @@ This chapter details the procedures for the use of radar for detection and track
 
 \paragraph{Die Roll Modifiers.} Detection die roll modifiers exist for electronic jamming, the presence of chaff and mini-jammer programs, stealth technology, crew quality, and/or aircraft size. These are summarized \changedin{1D}{1D-table}{on the Search Modifiers Table}{in Tables~\ref{table:radar-search-modifiers} and \ref{table:ew-radar-modifiers}}.
 
+}{
+
+\paragraph{Radar Search Procedure.}
+An aircraft may search for up to four separate targets each game turn, provided it and each target comply with the preceding requirements. For each target, determine the detection die roll on Table~\ref{table:radar-searches}, roll the die, and apply appropriate modifiers. The target is detected if the modified die roll is equal to or less than the detection die roll. Otherwise, it is not.
+
+To determine the detection die roll using Table~\ref{table:radar-searches}, in the row corresponding to the radar search strength, move right to the column that is equal to or more than the range and then move up to determine the detection die roll.
+
+For example, an aircraft with a search strength of 12 and a maximum detection range of 48 is searching for two aircraft, one at a range of 27 hexes (9 miles) and the other at a range of 40 hexes (13.3 miles). In Table~\ref{table:radar-searches}, we see that the detection die roll for the first is $9-$ and for the second is $7-$.
+
+\addedin{1C}{1C-tables}{
+    \input{tables/table-radar}
+}
+
+\paragraph{Radar Search Modifiers.} Tables~\ref{table:radar-search-and-lock-on-modifiers} and \ref{table:ew-decoy-ppl-effectiveness} summarize the die-roll modifiers for radar searches. In detail, they are:
+\begin{itemize}
+    \item Apply the size modifier from the target’s ADC.
+    \item If the target is using IFF, apply a $-2$ modifier.
+    \item If the target is using a chaff DDS, determine the base modifier from Table~\ref{table:ew-decoy-ppl-effectiveness} (using the PPL level to determine the row and the radar arc to determine the column), multiply the radar ECCM value by one half and round this product up, and then subtract the product from the base modifier. If the result is positive, apply it as a modifier.
+    \item If the target is using a mini-jammer DDS, determine and apply the modifier from Table~\ref{table:ew-decoy-ppl-effectiveness}.
+    \item If the target is using a BJM in noise mode and the radar is in a jammed arc or if another aircraft is using a BJM in noise mode and both the target and the radar are in a jammed arc, use the BJM rating as a base modifier. From this base modifier, subtract the radar ECCM value. If the result is positive, apply it as a modifier.
+    \item If the target is using an AJM-C or AJM-D (not at AJM-A or AJM-B) and the radar is in a jammed arc, use the AJM rating as a base modifier. From this base modifier, subtract the radar ECCM value. If the result is positive, apply it as a modifier.
+    \item Apply modifiers for the quality and characteristics of the radar operator (see advanced rule~\ref{rule:crew-quality} and \ref{rule:crew-characteristics}). 
+\end{itemize}
+
+
+
+}
+
+\x{
 \paragraph{Duration of Detection.} Once an aircraft is detected, it remains detected as long as it remains in the search aircraft's radar arc and the searcher remains a “free” aircraft and does not violate the limitations given below in 16.3
 
 \paragraph{Search Limits.} There is no limit to the number of detected targets an aircraft can maintain, however, no more than four die roll attempts for radar detection are allowed per searching aircraft each game turn, and no more than one die roll per eligible target is allowed.
 
 Once an aircraft switches to tracking mode it loses contact with all detected aircraft except the one being tracked through a lock-on (Exception: see Track-While-Scan radars). It may not search again until the lock-on is broken or dropped. \addedin{1B}{1B-apj-35-qa}{If a lock-on attempt fails, the radar stays in search mode and maintains contact with all detected aircraft.}
 
+}{
+
+\paragraph{Maintaining Radar Detections.} An aircraft maintains detection of a target as long as it and the target continue to satisfy the search requirements above. There is no limit to the number of detected targets an aircraft can maintain.
+}
+
+
+\Dx{
 \paragraph{Search Example:} An aircraft with a search strength of 12 and a maximum detection range of 48 is looking for two aircraft, one 27 hexes away (9 miles) and another 40 hexes (13.3 miles) away. Entering at the strength line we move right stopping at the second column. This column's range equals 30 which is higher than 27. Looking at the top of the column, we see that we need to roll 9 or less to make contact. Continuing further right two columns, we find the range listing of 42 which is higher than 40 and the die roll required is 7 or less.
+}
 
+\Dx{
 \paragraph{Electronic Warfare and ECCM.} The effects of jamming are fully described in rule 19, but generally, the presence of jamming will cause modifiers to the detection die roll. Aircraft radars may have an ECCM (electronic counter-countermeasures) rating on the ADC which is used to counter jamming modifiers.
+}
 
+\x{
 \section{Radar Tracking and Lock-Ons}
 \label{rule:radar-tracking-and-lock-ons}
 
@@ -74,7 +200,64 @@ For weapons guidance, an aircraft must refine and concentrate its radar beam on 
 \end{itemize}
 
 \addedin{1C}{1C-tables}{These rules are summarized in Table~\ref{table:radar-breaking-lock-on} and \ref{table:ew-radar-break-lock-rolls}.}
+}{
+\section{Radar Tracking}
+\label{rule:radar-tracking-and-lock-ons}
 
+To employ radar-guided missiles, an aircraft must refine and concentrate its radar beam on a target to determine the position more accurately and increase the reflected energy for semi-active radar-homing missiles. This is accomplished by switching the radar to a tracking mode and achieving a lock-on.
+
+\paragraph{Radar Tracking Data.} The tracking line of the radar data section of the ADC shows the aircraft's tracking capability. If the line has no numbers, only a dash, the aircraft cannot track. Otherwise, it will show two numbers separated by a dash. The first number is the maximum tracking range in hexes. The second number is the radar tracking strength rating. 
+
+\paragraph{Radar Lock-On Number.} The lock-on line of the radar data section of the ADC shows the lock-on number. The unmodified die roll for a successful lock-on against a detected radar target is this number of less. The lock-on number is also used to determine the success of radar-ranging for gun and rocket attacks (see rule~\ref{rule:radar-ranging}).
+
+\paragraph{Radar Lock-On Requirements.} To attempt to lock on to a target, the following requirements must be satisfied:
+\begin{itemize}
+\item The aircraft attempting to lock on must have a radar detection of the target.
+\item The range to the target must be no greater than the tracking range.
+\end{itemize}
+
+\paragraph{Radar Lock-On Procedure.} An aircraft may make one lock-on attempt against one detected target per game turn (unless it has multi-target track technology, described in advanced rule~\ref{rule:multi-target-track-technology}). Roll the die. If the result after applying any modifiers is less than or equal to the lock-on number listed in the radar section of the ADC, the lock-on succeeds. If a lock-on attempt fails, the radar stays in search mode and maintains all previous radar detections.
+
+Once a target is locked on, it remains locked on from game turn to game turn unless the lock-on is broken or voluntarily dropped. An aircraft may only have one lock-on at a time unless it has Multi-Target Track Technology.
+
+\paragraph{Radar Lock-On Modifiers.} Table~\ref{table:radar-search-and-lock-on-modifiers} summarizes the die-roll modifiers for radar lock-on attempts. The modifiers for lock-ons are a subset of those for searches. In detail, they are:
+
+\begin{itemize}
+    \item If the target is using IFF, apply a $-2$ modifier.
+
+    \item If the target is using a chaff DDS, determine the base modifier from Table~\ref{table:ew-decoy-ppl-effectiveness} (using the PPL level to determine the row and the radar arc to determine the column), multiply the radar ECCM value by one half and round this product up, and then subtract the product from the base modifier. If the result is positive, apply it as a modifier.
+
+    \item If the target is using a mini-jammer DDS, determine and apply the modifier from Table~\ref{table:ew-decoy-ppl-effectiveness}.
+
+\end{itemize}
+
+% ISSUE: If lock is broken voluntarily, maintain detection?
+% ISSUE: Disorientation too
+% ISSUE: Tracking range.
+% ISSUE: Air-to-ground attack
+\paragraph{Maintaining Radar Lock-Ons.} An aircraft may voluntarily break a lock-on at any time.
+It may maintain a lock-on as long as it and the target satisfy these requirements:
+
+\begin{itemize}
+
+    \item The aircraft is not stalled or departed.
+    \item The aircraft does not engage a missile.
+    \item The aircraft does not use the ET turn rate.
+    \item The aircraft does not perform a lag or displacement roll (individually or as part of a barrel roll) or perform a VIFF maneuver.
+    \item The aircraft does not suffer H or C damage.
+    \item The radar operator does not suffer GLOC.
+    \item The target remains within the radar arc.
+    \item The target remains within the radar vertical limits.
+    \item The range to the target remains no greater than the tracking range.
+    \item The target does not break the lock using decoys or ECM (see advanced rule~\ref{rule:electronic-warfare}).
+
+\end{itemize}
+
+These rules are summarized in Table~\ref{table:radar-breaking-lock-on} and \ref{table:ew-radar-break-lock-rolls}.
+
+}
+
+\Dx{
 \section{Radar Use Limitations}
 
 \paragraph{Radar Limitations.} An aircraft is limited to four detection attempts against eligible radar targets per game turn. An aircraft is limited to one lock-on attempt per game turn unless it has multi-target track technology. An existing radar lock-on must be broken before a new lock-on is attempted unless multi-target track technology exists.
@@ -87,9 +270,9 @@ For weapons guidance, an aircraft must refine and concentrate its radar beam on 
 
     \item it performed \changedin{1B}{1B-apj-39-qa}{any rolling maneuvers}{more than one vertical roll, any other rolling maneuver}, VIFF Maneuvers, or a Vertical Reverse.
 
-    \item it\deletedin{1B}{1B-apj-35-qa and 1B-apj-39-qa}{ vertical climbed, it vertical dived, or} used an unloaded dive.
+    \item it\deletedin{1B}{1B-apj-35-qa and 1B-apj-39-qa}{ vertical climbed, it vertical dived, or} used an unloaded dive\addedin{1B}{1B-apj-36}{ and has not recovered by the end of its move}.
 
-    \item it made an air to air gun attack or an air to ground attack.
+    \item it made an air to air gun \addedin{2B}{2B-radar-requirements}{or rocket} attack or an air to ground attack.
 
     \item it stalled, departed, or engaged missiles.
 
@@ -134,12 +317,14 @@ For example, if the ground is at level 0, and a target aircraft is at level 6, a
 Note: Aircraft with Look-Down Technology ignore this limit. Aircraft with Limited Look-Down Technology ignore the horizontal range aspect of this limit.
 
 \paragraph{Nose Attitude Limits.} An aircraft which climbs cannot search for or track lower targets, and an aircraft which dives cannot search for or track higher targets. An aircraft which flies level cannot search for and track targets which are more than one altitude level above or below for each two hexes of range away they are. Note: Advanced rule 16.5 introduces more specific limits.
+}
 
 \begin{advancedrules}
 
+\x{
 \section{Radar System Technologies}
 
-\paragraph{Multi-Target Track Technology.} Some radars may track more than one aircraft at a time. This is noted in the Technology section of the ADC as “multi-Tgt Track (Number).” The number is the number of targets the aircraft may attempt to lock-onto and/or maintain locked each game-turn.
+\paragraph{Multi-Target Track Technology.}\label{rule:multi-target-track-technology} Some radars may track more than one aircraft at a time. This is noted in the Technology section of the ADC as “multi-Tgt Track (Number).” The number is the number of targets the aircraft may attempt to lock-onto and/or maintain locked each game-turn.
 
 \paragraph{Track-While-Scan Technology.} An aircraft with track-while-scan technology does not lose contact with detected targets when it switches to tracking mode. It is also allowed to continue searching for new targets while maintaining or acquiring lock-ons.
 
@@ -149,7 +334,27 @@ Note: Aircraft with Look-Down Technology ignore this limit. Aircraft with Limite
 An aircraft with Look Down Technology can ignore all Look Down Limitations and may guide look down capable missiles against targets in ground clutter conditions.
 
 \paragraph{Limited Look Down.} An aircraft with parenthesis around its Look-Down Technology indication has a Limited Look-Down capability.  It may search for and lock-onto lower altitude targets within 2 to 10 levels of the ground if the difference in altitude between the target and the ground is more than the difference in altitude between the searcher and the target. They may also guide look down capable missiles against targets as above.
+}{
 
+\section{Radar Technologies}
+
+\paragraph{Look-Down Technology.} \label{rule:look-down-missiles}
+If the technology section of an aircraft’s ADC states that it has look-down technology, it can ignore all ground cluster limitations for searches. It can also guide look-down missiles against targets in ground clutter.
+
+\paragraph{Limited Look-Down Technologu.} If the technology section of an aircraft’s ADC states that it has limited look-down technology (sometimes denoted by parentheses around the words “look-down”), it may search for and lock on to lower altitude targets within 2 to 10 levels of the ground if the difference in altitude between the target and the ground is more than the difference in altitude between the searcher and the target. It may also guide look-down missiles against such targets.
+
+% ISSUE: This differs from the statement about limited look-down technology in the radar search requirements section.
+
+\paragraph{Track-While-Scan Technology.} If the technology section of an aircraft’s ADC states that it has track-while-scan technology, it does not lose radar detections when it achieves a lock-on and further can perform radar searches and maintain radar detections while locked on to a target.
+If a number follows the technology in parenthesis, it indicates the maximum number of detections the aircraft can achieve or maintain while locked on to a target.
+
+% ISSUE: Which excess detections are lost?
+
+\paragraph{Limited Track-While-Scan Technology.} If the technology section of an aircraft’s ADC states that it has limited track-while-scan technology (sometimes denoted by parentheses around the words “track-while-scan”), it does not lose radar detections when it achieves a lock-on but cannot perform radar searches while locked on to a target.
+
+\paragraph{Multi-Target Track Technology.}\label{rule:multi-target-track-technology}  If the technology section of an aircraft’s ADC states that it has multi-target track technology, it may lock on to more than one aircraft at a time. If ADC gives a number in parentheses, this is the number of lock-ons the aircraft may attempt each game turn and may maintain. 
+
+}
 \section{Radar Vertical Limits}
 \label{rule:radar-vertical-limits}
 
@@ -159,6 +364,7 @@ For example, an aircraft in a zoom climb with a 180+ arc radar can search for or
 
 \section{Special Radar Modes}
 \label{rule:special-radar-modes}
+\label{rule:boresight-mode}
 
 \paragraph{Boresight Radar Mode.} Boresight mode slaves the radar to the gunsight. All aircraft can use boresight mode. \addedin{1B}{1B-apj-35-qa}{Aircraft whose radar has a lock-on capability but no search capability can only use boresight mode to achieve a lock-on.} \addedin{1C}{1C-tables}{Table~\ref{table:radar-boresight-mode} summarizes boresight mode.}
 
@@ -166,11 +372,13 @@ For example, an aircraft in a zoom climb with a 180+ arc radar can search for or
 
 One Boresight Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. An aircraft without Look-Down Technology may use boresight mode to detect and lock-on to low level visually sighted targets. In this case, the automatic contact and lock-on attempt is allowed, and the lock-on can be maintained as long as the difference between target level and ground level is more than the searcher and target altitude level difference. The lock-on die roll is subject to a Boresight Look Down Modifier of $-2$. \addedin{1B}{1B-apj-22-qa and 1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for boresight mode.}
 
+\label{rule:auto-track-mode}
+
 \paragraph{Auto-Track Radar Mode.} Auto-Track Radar mode allows an aircraft to automatically detect and then lock-on a target. Only aircraft with Auto-Track Technology may use this mode. \addedin{1C}{1C-tables}{Table~\ref{table:radar-auto-track-mode} summarizes auto-track mode.}
 
-\paragraph{Procedure.} Announce Auto-Track when the aircraft begins its flight. All previous contacts and lock-ons are lost. Normal radar search is not allowed. The aircraft's effective radar arc becomes the 180{deg} arc (regardless of the aircraft's normal radar arc). In the Air Radar Search and Lock-On Phase, the closest aircraft within a range equal to the radar's SEARCH strength in hexes in the 180{deg} arc is automatically detected.
+\paragraph{Procedure.} Announce Auto-Track when the aircraft begins its flight. All previous contacts and lock-ons are lost. Normal radar search is not allowed. The aircraft's effective radar arc becomes the 180{\deg} arc (regardless of the aircraft's normal radar arc). In the Air Radar Search and Lock-On Phase, the closest aircraft within a range equal to the radar's SEARCH strength in hexes in the 180{\deg} arc is automatically detected.
 
-One Auto-Track Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. Auto-Track will ignore all friendly aircraft with IFF on. A visually sighted enemy aircraft may be selected for detection and lock-on even if it was not the closest as long as it meets the range and 180{deg} arc requirements. \addedin{1B}{1B-apj-22-qa and 1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for auto-track mode.}
+One Auto-Track Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. Auto-Track will ignore all friendly aircraft with IFF on. A visually sighted enemy aircraft may be selected for detection and lock-on even if it was not the closest as long as it meets the range and 180{\deg} arc requirements. \addedin{1B}{1B-apj-22-qa and 1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for auto-track mode.}
 
 \addedin{1B}{1B-apj-37-qa}{BJMs and AJMs have no impact on auto-track radar detections, but do impact lock-on attempts.}
 
