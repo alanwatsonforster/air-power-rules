@@ -1,4 +1,6 @@
 \begin{twocolumntable}
+\x{
+
 \tablecaption{table:stores-EP}{Electronic Warfare Pods “EP”}
 \begin{tabular}{lcrcclcc}
 \toprule
@@ -33,4 +35,35 @@ ALQ-132&IR-Jammer&500&2.0&\multicolumn{2}{l}{$+2$ in 30, 60 \& 90 arcs.}&(1974)\
     \itemaddedin{1B}{1B-apj-23-errata and 1B-apj-25-qa}{The protected arcs of aircraft carrying AJMs are: AJM Type A = $180+$, $30-$ arcs, AJM Type B = $150+$, $60-$ arcs, and AJM Type C and D = all arcs.}
 \end{enumerate}
 \end{tablenote}
+
+}{
+
+\tablecaption{table:stores-EP}{Radar Jamming Pods (AJM/BJM/DJM)}
+\begin{tabularx}{1.0\linewidth}{llccccL}
+\toprule
+Year&Designation&Weight&Load&Class&Rating&Frequency Coverage\\
+\midrule
+\multicolumn{7}{c}{US Pods}\\
+\midrule
+1965&ALQ-31\tablenotemark{2} &600&2.0&BJM&A-3&LF/MF\\
+1966&QRC-335\tablenotemark{1}&350&1.0&AJM&A-3&LF\\ 
+1966&ALQ-81\tablenotemark{1} &500&2.0&DJM&A-3&LF/MF\\
+1967&ALQ-71\tablenotemark{1} &500&2.0&BJM&A-3&LF/ MF\\
+1967&ALQ-101\tablenotemark{1}&500&2.0&AJM&B-4&Air search and any two of LF/MF/HF/VF\tablenotemark{4}\\ 
+1967&ALQ-83\tablenotemark{1} &500&2.0&DJM&B-3&LF/MF/HF\\
+1968&ALQ-72\tablenotemark{1} &500&2.0&BJM&A-3&MF/HF\\
+1968&ALQ-87\tablenotemark{1} &500&2.0&BJM&A-4&MF/HF\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{1.0\linewidth}
+\tablenotetext{1}{USAF.}
+\tablenotetext{2}{USN/USMC.}
+\tablenotetext{3}{USAF/USN/USMC.}
+\tablenotetext{4}{ALQ-101 jams any two of LF/MF/HF/VF, chosen during setup.}
+
+The protected arcs of aircraft carrying AJMs are: AJM Type A = $180+$, $30-$ arcs, AJM Type B = $150+$, $60-$ arcs, and AJM Type C and D = all arcs.
+\end{tablenote}
+
+}
+
 \end{twocolumntable}
