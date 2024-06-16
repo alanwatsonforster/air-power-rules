@@ -355,12 +355,20 @@ If a number follows the technology in parenthesis, it indicates the maximum numb
 \paragraph{Multi-Target Track Technology.}\label{rule:multi-target-track-technology}  If the technology section of an aircraft’s ADC states that it has multi-target track technology, it may lock on to more than one aircraft at a time. If ADC gives a number in parentheses, this is the number of lock-ons the aircraft may attempt each game turn and may maintain. 
 
 }
+
 \section{Radar Vertical Limits}
 \label{rule:radar-vertical-limits}
-
+\x{
 \paragraph{Aircraft Nose Attitude.} An aircraft radar arc is limited in its vertical arc as well as its horizontal arc. \changedin{1C}{1C-tables}{The Radar Vertical Limits Table}{Table~\ref{table:radar-vertical-limits}} defines the vertical limits to radar arcs in terms of allowed altitude differences between searcher and target based on searcher's flight profile for the game turn. \addedin{1B}{1B-apj-23-errata}{Aircraft in unloaded dives use the steep dive vertical limits. }The listed UP limit is a factor used to determine the number of levels above the searcher the target can be for each hex away it is. The listed DOWN limit is a factor used to determine the number of levels below the searcher the target can be for each hex away it is. \addedin{1B}{1B-apj-36-errata}{Any fractions that result after using \changedin{1C}{1C-tables}{the Radar Vertical Limits Table}{Table~\ref{table:radar-vertical-limits}} are dropped (i.e., the result does not favor the searcher).}
 
 For example, an aircraft in a zoom climb with a 180+ arc radar can search for or track higher targets up to 5 levels higher for each hex away they are (“$\times5$”). It cannot search for lower targets as its Down limit is “$\times0$” meaning the allowed down difference per hex of range the target is away is zero. Thus, a target 10 hexes away could be as much as 50 levels above the searcher but not lower. The target could be at the same level.
+}{
+An aircraft's radar is limited vertically arc as well as horizontally. This advanced rule replaces the simple vertical limits given in the requirements in rule~\ref{rule:radar-search-requirements}.
+
+\paragraph{Vertical Limits Procedure.} Table~\ref{table:radar-vertical-limits} defines the vertical limits to radar arcs for each flight type. The two factors given in the table should be multipled by the horizontal range to the target, and rounded down, to give the maximum allowed difference in altitude between the searcher and the target for that arc.
+
+For example, a searching aircraft in a zoom climb with a \arcrange{180}{+} arc has a potential radar target in its horizontal arc at a range of 8 hexes. Table~\ref{table:radar-vertical-limits} gives the factors for this combination of flight type and radar arc as $+5$ and $+0$. Thus, if the target were between 0 and 40 altitude levels higher than the searcher, it would be withing the vertical limits. If the target were lower than the searcher or more than 40 altitude levels higher, it would not be within the vertical limits.
+}
 
 \section{Special Radar Modes}
 \label{rule:special-radar-modes}
