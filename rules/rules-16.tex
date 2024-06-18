@@ -253,7 +253,7 @@ It may maintain a lock-on as long as it and the target satisfy these requirement
 
 \end{itemize}
 
-These rules are summarized in Table~\ref{table:radar-breaking-lock-on} and \ref{table:ew-radar-break-lock-rolls}.
+These rules are summarized in Table~\ref{table:radar-breaking-lock-on}.
 
 }
 
@@ -372,24 +372,93 @@ For example, a searching aircraft in a zoom climb with a \arcrange{180}{+} arc h
 
 \section{Special Radar Modes}
 \label{rule:special-radar-modes}
-\label{rule:boresight-mode}
 
-\paragraph{Boresight Radar Mode.} Boresight mode slaves the radar to the gunsight. All aircraft can use boresight mode. \addedin{1B}{1B-apj-35-qa}{Aircraft whose radar has a lock-on capability but no search capability can only use boresight mode to achieve a lock-on.} \addedin{1C}{1C-tables}{Table~\ref{table:radar-boresight-mode} summarizes boresight mode.}
 
-\paragraph{Procedure.} Announce Boresight mode when the aircraft begins its flight. All previous contacts and lock-ons are lost. Normal radar search is not allowed. The aircraft's effective radar arc becomes a Limited arc (regardless of the aircraft's normal radar arc). In the Air Radar Search and Lock-On Phase, the closest visually sighted aircraft within a range equal to the radar's TRACKING strength in hexes in the limited arc is automatically detected. If two or more aircraft are equally close, randomly determine which is detected. Jamming has no effect on this detection. Boresight mode detection occurs even if the aircraft violated the normal radar use maneuver restrictions.
+\Ax{The boresight and auto-track special radar modes allow aircraft to detect and lock-on to targets even when maneuvering beyond the normal limits for radar searches. If an aircraft obtains a lock-on and wishes to maintain it during the next turn, it should switch to normal mode.
+}
+
+\x{
+\paragraph{Boresight Radar Mode.}\label{rule:boresight-mode} Boresight mode slaves the radar to the gunsight. All aircraft can use boresight mode. \addedin{1B}{1B-apj-35-qa}{Aircraft whose radar has a lock-on capability but no search capability can only use boresight mode to achieve a lock-on.} \addedin{1C}{1C-tables}{Table~\ref{table:radar-boresight-mode} summarizes boresight mode.}
+
+\paragraph{Procedure.} \changedin{2B}{2B-declaring-special-radar-modes}{Announce Boresight mode when the aircraft begins its flight.}{Announce boresight mode in the aircraft decisions phase.} All previous contacts and lock-ons are lost. Normal radar search is not allowed. The aircraft's effective radar arc becomes a Limited arc (regardless of the aircraft's normal radar arc). In the Air Radar Search and Lock-On Phase, the closest visually sighted aircraft within a range equal to the radar's TRACKING strength in hexes in the limited arc is automatically detected. If two or more aircraft are equally close, randomly determine which is detected. Jamming has no effect on this detection. Boresight mode detection occurs even if the aircraft violated the normal radar use maneuver restrictions.
 
 One Boresight Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. An aircraft without Look-Down Technology may use boresight mode to detect and lock-on to low level visually sighted targets. In this case, the automatic contact and lock-on attempt is allowed, and the lock-on can be maintained as long as the difference between target level and ground level is more than the searcher and target altitude level difference. The lock-on die roll is subject to a Boresight Look Down Modifier of $-2$. \addedin{1B}{1B-apj-22-qa and 1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for boresight mode.}
+}{
+\subsection{Boresight Radar Mode} 
+\label{rule:boresight-radar-mode}
 
-\label{rule:auto-track-mode}
+Boresight radar mode slaves the radar to the gunsight and as such has many limitations compared to normal radar mode. However, it has the advantage that it can be used regardless of the maneuver restrictions that apply to normal radar use.
 
-\paragraph{Auto-Track Radar Mode.} Auto-Track Radar mode allows an aircraft to automatically detect and then lock-on a target. Only aircraft with Auto-Track Technology may use this mode. \addedin{1C}{1C-tables}{Table~\ref{table:radar-auto-track-mode} summarizes auto-track mode.}
+All aircraft with air-to-air radar can use boresight radar mode. Aircraft with radar that has a lock-on capability but no search capability can only use boresight mode to achieve a lock-on. Table~\ref{table:radar-boresight-mode} summarizes boresight mode.
 
-\paragraph{Procedure.} Announce Auto-Track when the aircraft begins its flight. All previous contacts and lock-ons are lost. Normal radar search is not allowed. The aircraft's effective radar arc becomes the 180{\deg} arc (regardless of the aircraft's normal radar arc). In the Air Radar Search and Lock-On Phase, the closest aircraft within a range equal to the radar's SEARCH strength in hexes in the 180{\deg} arc is automatically detected.
+\paragraph{Declaring Boresight Radar Mode.} Declare boresight radar mode in the aircraft decisions phase. All previous radar detections and lock-ons are immediately lost. 
 
-One Auto-Track Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. Auto-Track will ignore all friendly aircraft with IFF on. A visually sighted enemy aircraft may be selected for detection and lock-on even if it was not the closest as long as it meets the range and 180{\deg} arc requirements. \addedin{1B}{1B-apj-22-qa and 1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for auto-track mode.}
+\paragraph{Boresight Radar Mode Requirements.} In order to use boresight radar mode in the air-radar search and lock-on phase, the aircraft must satisfy the requirements for normal radar mode given in rule \ref{rule:radar-search-requirements}, except those related to turn rate, special maneuvers, or unloaded FPs.
+
+% ISSUE: Visually sighted enemy? That is, are friendly aircraft ignored?
+
+\paragraph{Boresight Radar Search Procedure.}  In the air-radar search and lock-on phase, normal radar search is not allowed. Instead, the closest \emph{visually sighted} aircraft in the aircraft's \emph{limited} arc at a range no greater than the radar's \emph{tracking} strength in hexes is automatically detected. If two or more aircraft are equally close, randomly determine which is detected. 
+
+The limited arc is used even if the aircraft's normal radar arc is wider.
+
+Boresight mode detection occurs even if the aircraft violated the normal radar use maneuver restrictions.
+
+Jamming has no effect on this detection. 
+
+\paragraph{Boresight Radar Lock-On Procedure.}
+
+In the air-radar search and lock-on phase, normal radar lock-on is not allowed.
+Instead, one lock-on attempt is allowed against the detected target. The procedure is the same as that for normal lock-on attempts, except that in  multi-crew aircraft the crew quality modifier for the pilot is used instead of that of the radar officer.
+
+% ISSUE: What are the specific restrictions here for lock-on attemps?
+
+An aircraft without look-down technology may use boresight mode to detect and lock-on to low-level visually sighted targets
+In this case, the automatic contact and the lock-on attempt are allowed, and the lock-on can be subsequently maintained as long as the difference between target level and ground level is more than the searcher and target altitude level difference. The lock-on die roll is subject to a modifier of $-2$. 
+}
+
+\x{
+\paragraph{Auto-Track Radar Mode.}\label{rule:auto-track-mode} Auto-Track Radar mode allows an aircraft to automatically detect and then lock-on a target. Only aircraft with Auto-Track Technology may use this mode. \addedin{1C}{1C-tables}{Table~\ref{table:radar-auto-track-mode} summarizes auto-track mode.}
+
+\paragraph{Procedure.} \changedin{2B}{2B-declaring-special-radar-modes}{Announce Auto-Track when the aircraft begins its flight.}{Announce Auto-Track in the aircraft decisions phase.} All previous contacts and lock-ons are lost. Normal radar search is not allowed. The aircraft's effective radar arc becomes the 180{\deg} arc (regardless of the aircraft's normal radar arc). In the Air Radar Search and Lock-On Phase, the closest aircraft within a range equal to the radar's SEARCH strength in hexes in the 180{\deg} arc is automatically detected.
+
+One Auto-Track Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. Auto-Track will ignore all friendly aircraft with IFF on. A visually sighted enemy aircraft may be selected for detection and lock-on \addedin{2B}{2B-auto-track-selection}{on a $7-$} even if it was not the closest as long as it meets the range and 180{\deg} arc requirements. \addedin{1B}{1B-apj-22-qa and 1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for auto-track mode.}
 
 \addedin{1B}{1B-apj-37-qa}{BJMs and AJMs have no impact on auto-track radar detections, but do impact lock-on attempts.}
+}{
 
+\subsection{Auto-Track Radar Mode.}
+\label{rule:auto-track-mode} 
+
+Auto-track radar mode allows an aircraft to automatically detect and then lock-on a target, in a similar way to boresight radar mode but with more capabilities. Again, it has the advantage that it can be used regardless of the maneuver restrictions that apply to normal radar use.
+
+Only aircraft auto-track technology can use auto-track radar mode. Table~\ref{table:radar-auto-track-mode} summarizes auto-track mode.
+
+\paragraph{Declaring Auto-Track Radar Mode.} Declare auto-track radar mode in the aircraft decisions phase. All previous radar detections and lock-ons are immediately lost. 
+
+\paragraph{Auto-Track Radar Mode Requirements.} In order to use auto-track radar mode in the air-radar search and lock-on phase, the aircraft must satisfy the requirements for normal radar mode given in rule \ref{rule:radar-search-requirements}, except those related to turn rate, special maneuvers, or unloaded FPs.
+
+\paragraph{Auto-Track Radar Search Procedure.}  In the air-radar search and lock-on phase, normal radar search is not allowed. 
+Instead, the radar's arc is considered to be the \emph{\arcrange{180}{+}} arc and its range is the \emph{search} strength in hexes. Then, one of two procedures may be chosen:
+\begin{enumerate}
+\item Any one sighted aircraft in the radar arc and within range may be detected on a roll of $7-$ with no modifiers.
+\item Alternatively, the closest aircraft in the aircraft's can be automatically detected. If two or more aircraft are equally close, randomly determine which is detected. Friendly aircraft with their IFF on are ignored in auto-track mode.
+\end{enumerate}
+
+The \arcrange{180}{+} arc is used even if the aircraft's normal radar arc is wider.
+
+Auto-track mode detection occurs even if the aircraft violated the normal radar use maneuver restrictions.
+
+Jamming has no effect on this detection. 
+
+
+\paragraph{Auto-Track Radar Lock-On Procedure.}
+
+In the air-radar search and lock-on phase, normal radar lock-on is not allowed.
+Instead, one lock-on attempt is allowed against the detected target. The procedure is the same as that for normal lock-on attempts, except that in  multi-crew aircraft the crew quality modifier for the pilot is used instead of that of the radar officer.
+
+BJMs and AJMs have no impact on auto-track radar detections, but can impact lock-on attempts.
+
+}
 \section{Formations and Radar Detections}
 
 \paragraph{Radar Searches.} Enemy radar searches are done against the Close formation as a single entity. If the formation contains 3 or 4 aircraft, apply a modifier of -1. If radar contacted, all aircraft in the close formation are contacted.

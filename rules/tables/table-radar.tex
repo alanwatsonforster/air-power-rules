@@ -161,6 +161,7 @@ Description&Modifier&Search\tablenotemark{1}&Lock-On\tablenotemark{2}&Rule\\
 \multicolumn{5}{c}{Target}\\
 \midrule
 Target size modifier&See ADC&Y&N&\ref{rule:aircraft-data-cards}\\
+Boresight mode used for look-down&$+2$&N&Y&\ref{rule:boresight-radar-mode}\\
 \midrule
 \multicolumn{5}{c}{ECM}\\
 \midrule
@@ -226,6 +227,7 @@ BJM Noise&BJM No. $-$ Air Radar ECCM\\
 
 \begin{onecolumntable}
 \tablecaption{table:radar-breaking-lock-on}{Breaking Radar Lock-On}
+\x{
 \begin{tabularx}{\linewidth}{X}
 \toprule
 \addlinespace
@@ -242,8 +244,26 @@ Locks are broken when:
 \\
 \bottomrule
 \end{tabularx}
+}{
+\begin{tabularx}{\linewidth}{X}
+\toprule
+\addlinespace
+\begin{itemize}
+    \item Aircraft stalls, departs, or engages.
+    \item Aircraft does ET turn, displacement, lag, or barrel roll, or VIFF manueuver.
+    \item Aircraft suffers a H or C hit,
+    \item Radar operator GLOCs.
+    \item Target cannot be kept in radar arc
+    \item Target deploys chaff or mini-jammers and rolls effectiveness or less.
+    \item Target employs DJM and rolls DJM rating $-$ ECCM rating or less.
+\end{itemize}
+\\
+\bottomrule
+\end{tabularx}
+}
 \end{onecolumntable}
 
+\Dx{
 \begin{onecolumntable}
 \tablecaption{table:ew-radar-break-lock-rolls}{Air Radar Break Lock Rolls}
 \begin{tabular}{lp{15em}}
@@ -256,6 +276,7 @@ DJM&DJM $-$ Air Radar ECCM\\
 \bottomrule
 \end{tabular}
 \end{onecolumntable}
+}
 
 \Dx{
 \begin{onecolumntable}
@@ -337,6 +358,7 @@ Note: The radar vertical limits are given as altitude levels per hex or horizont
 
 
 \begin{onecolumntable}
+\x{
 \tablecaption{table:radar-boresight-mode}{Radar Boresight Mode}
 \begin{tabularx}{\linewidth}{X}
 \toprule
@@ -350,16 +372,34 @@ Note: The radar vertical limits are given as altitude levels per hex or horizont
 \\
 \bottomrule
 \end{tabularx}
+}{
+\tablecaption{table:radar-boresight-mode}{Boresight Radar Mode}
+\begin{tabularx}{\linewidth}{X}
+\toprule
+\begin{itemize}
+    \item Previous detections and lock-ons lost when mode declared.
+    \item No flight restrictions.
+    \item Radar arc is limited.
+    \item Maximum range is the tracking strength.
+    \item The nearest sighted aircraft in radar arc is automatically detected. 
+    \item Lock-on roll allowed.
+\end{itemize}
+\\
+\bottomrule
+\end{tabularx}
+
+}
 \end{onecolumntable}
 
 \begin{onecolumntable}
+\x{
 \tablecaption{table:radar-auto-track-mode}{Radar Auto-Track Mode}
 \begin{tabularx}{\linewidth}{X}
 \toprule
 \begin{enumerate}
     \item Radar Arc = 180+ unless normally it's limited; in which case it remains limited.
     \item Max Range = Search Strength No.
-    \item Nearest target in radar arc is automatically contacted.
+    \item Nearest target in radar arc is automatically detected.
     \item If nearest aircraft was a friendly with IFF on, it may be ignored and next nearest is automatically contacted etc.
     \item A visually sighted aircraft in arc may be selected for auto contact if not the closest by rolling 7 or less.
     \item Lock-on roll allowed, no mnvr.\ limitations.
@@ -368,4 +408,21 @@ Note: The radar vertical limits are given as altitude levels per hex or horizont
 \\
 \bottomrule
 \end{tabularx}
+}{
+\tablecaption{table:radar-auto-track-mode}{Auto-Track Radar Mode}
+\begin{tabularx}{\linewidth}{X}
+\toprule
+\begin{itemize}
+    \item Previous detections and lock-ons lost when mode declared.
+    \item No flight restrictions.
+    \item Radar arc is \arcrange{180}{+}.
+    \item Maximum range is the search strength.
+    \item Any visually sighted aircraft in the radar arc may be selected for detection by rolling 7 or less.
+    \item Otherwise, the nearest aircraft in radar arc is automatically contacted. Friendly with IFF on are ignored.
+    \item Lock-on roll allowed.
+\end{itemize}
+\\
+\bottomrule
+\end{tabularx}
+}
 \end{onecolumntable}
