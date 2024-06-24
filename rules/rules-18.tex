@@ -1,12 +1,22 @@
+\x{
 \rulechapter{Crew Quality}
 \label{rule:crew-quality}
+}{
+\rulechapter{Crewmember Ability}
+\label{rule:crew-ability}
+}
 
+\x{
 This chapter details the effects of crew quality on aircraft operations. This entire chapter is an \emph{ADVANCED RULE}.
+}{
+This advanced rule details the effects of crewmember ability on aircraft operations. Crewmember ability is subdivided into quality, attributes, and characteristics, and the implications of these are described in the following sections.
+
+}
 
 \begin{advancedrules}
 
+\x{
 \section{Quality Levels}
-
 \paragraph{Crew Quality.} Pilots and other crewmembers are classified into one of four quality levels based on experience and training. These are:
 
 \begin{itemize}
@@ -46,6 +56,95 @@ Crew quality, and any applicable attributes or characteristics are given in most
     \item Sighting attempts as described in Chapter 11.
 \end{itemize}
 \end{itemize}
+
+}{
+
+\section{Determining Crewmember Ability}
+
+Some scenarios give crewmember abilities explicitly, and no further action is required.
+
+Other scenarios do not give the crewmember abilities explicitly, but instead give a training standard for each side (excellent, good, average, limited, or poor). In these cases:
+
+\begin{itemize}
+    
+    \item Roll one die for each crewmember and consult Table~\ref{table:crew-quality-generation} to determine their quality. 
+
+    The results of the rolls for quality depend on the training standard.
+
+    \item Roll three dice for each crewmember and consult Table~\ref{table:crew-attributes-generation} to determine their attributes. 
+    
+    The rolls for attributes have no modifiers and the results do not depend on the crew quality.
+    
+    \item For veteran, regular, and novice crew, roll three dice for each crewmember and consult Table~\ref{table:crew-special-characteristics-generation} to determine their characteristics. 
+    
+    The results of the rolls for characteristics depend on the crew quality, and the tactics master roll is modified by $-1$ for excellent training standard and $+1$ for limited or poor training standard. 
+    
+    Green crewmembers cannot have any characteristics and novices cannot be combat heros.
+\end{itemize}
+
+\addedin{1C}{1C-tables}{
+    \input{tables/table-crew-generation}
+}
+
+For example, consider generating a crewmember with average training standard.
+
+\begin{itemize}
+\item Roll one die and consult Table~\ref{table:crew-quality-generation}. If the roll is 1, they are a veteran, if the roll is 2--6, they are a regular, if the roll is 7--9, they are a novice, and if the roll is 10, they are green.
+
+\item Roll one die for eyesight and consult Table~\ref{table:crew-attributes-generation}. If the roll is 1--2, their eyesight is excellent, if the roll is 3--9, their eyesight is average, and if the roll is 10, their eyesight is poor. 
+
+\item Roll one die for fitness and consult Table~\ref{table:crew-attributes-generation}. If the roll is 1--3, their fitness is excellent, if the roll is 4--8, their fitness is average, and if the roll is 9--10, their fitness is poor. 
+
+\item Roll one die for confidence and consult Table~\ref{table:crew-attributes-generation}. If the  roll is 1--2, their confidence is excellent, if the roll is 3--8, their confidence is average, and if the roll is 9--10, their confidence is poor. 
+
+\item Roll one die to detemine if they are a Sierra Hotel pilot and consult Table~\ref{table:crew-special-characteristics-generation}. If the roll is 1, they are Sierra Hotel. 
+
+\item Roll one die to detemine if they are a tactics master and consult Table~\ref{table:crew-special-characteristics-generation}. If they are a veteran, then on a roll of 0--3 they are a tactics master. If they are regular, then on a roll of 0--2 they are a tactics master. If they are a novice, then on a roll of 0--1 they are a tactics master. (If the crewmember's training standard had been excellent, limited, or poor, the roll would have been modified.)
+
+\item Finally, roll one die to determine if they are a combat hero and consult Table~\ref{table:crew-special-characteristics-generation}.  If they are a veteran, then on a roll of 1--2 they are a combat hero. If they are regular, then on a roll of 1 they are a combat hero.
+\end{itemize}
+
+\section{Crew Quality}
+\label{rule:crew-quality}
+
+Crewmembers are classified into one of four quality levels based on their experience and training. These are:
+
+\begin{itemize}
+    \item Green: A poor crewmember lacking in ability or with incomplete training.
+    \item Novice: A new crewmember fresh out of normal training, a poor caliber regular crewmember, or a green crewmember starting to improve.
+    \item Regular: An experienced crewmember with good training, who may or may not have seen combat, or an above average novice crewmember.
+    \item Veteran: A well trained crewmember, possibly combat experienced, with superior skills or an older and wiser regular crewmember.
+\end{itemize}
+
+
+
+Crew quality, and any applicable attributes or characteristics are given in most scenarios for general scenarios, or historical scenarios not providing aircrew information, use \changedin{1C}{1C-tables}{the Crew Generation Tables given in the play aids charts}{Tables~\ref{table:crew-quality-generation}, \ref{table:crew-attributes-generation}, and \ref{table:crew-special-characteristics-generation}}.
+
+\addedin{1C}{1C-tables}{
+    \input{tables/table-crew-modifiers-summary}
+}
+
+\paragraph{Aircrew Modifiers.} The quality of a pilot/crewman in an aircraft may affect the die rolls for initiative, sighting, radar use, weapon launches, attacks, departed flight and recovery from departed flight. These actions and their associated die roll modifiers are summarized in \changedin{1C}{1C-tables}{the Aircrew Modifiers Table and other tables}{Table~\ref{table:crew-modifiers} and are also given in other tables}. In multi-crew aircraft, only the modifiers for the crewman that would logically be affecting or performing an action are used. The following are some guidelines:
+
+\begin{itemize}
+\item Pilots affect:
+\begin{itemize}
+    \item In flight: Initiative, departures, and recoveries.
+    \item In combat: Gun attacks, visual bombing or rocket attacks, \changedin{1B}{1B-apj-22-qa and 1B-apj-39-qa}{and IRM launches}{IRM launches, and the use of auto-track and boresight radar modes}.
+\end{itemize}
+
+\item Crewmen affect:
+\begin{itemize}
+    \item In combat: Guided weapon launches and attacks, radar bombing, and radar guided missile launches.
+    \item For radar work:  Radar searches and lock-ons.
+\end{itemize}
+
+\item Both pilots and crewmen affect:
+\begin{itemize}
+    \item Sighting attempts as described in Chapter 11.
+\end{itemize}
+\end{itemize}
+}
 
 \section{Aircrew Flight Restriction}
 
