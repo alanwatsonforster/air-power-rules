@@ -1,4 +1,5 @@
 \begin{onecolumntable}
+\x{
 \tablecaption{table:crew-quality-restrictions}{Pilot Quality Restrictions}
 \begin{tabularx}{\linewidth}{X}
 \toprule
@@ -40,5 +41,44 @@ Pilot Quality Flight Restrictions
 \\
 \bottomrule
 \end{tabularx}
-
+}{
+\tablecaption{table:crew-quality-restrictions}{Pilot Quality Restrictions}
+\begin{tabularx}{\linewidth}{P}
+\toprule
+\multicolumn{1}{c}{Flight Restrictions}\\
+\midrule
+\\
+Green:\\
+\begin{itemize}
+\item No ET turns.
+\item No terrain-following flight.
+\item No vertical reverse or VIFF maneuvers.
+\item May not engage attacking missiles.
+\item May not use high pitch rate aircraft capabilities.
+\item Risks disorientation for rolling maneuvers.
+\item Risks disorientation for vertical climbs and dives.
+\end{itemize}\\
+Novice:\\
+\begin{itemize}
+    \item No vertical reverse maneuvers.
+    \item May not use high pitch rate aircraft capabilities.
+    \item Risks disorientation for vertical rolls.
+\end{itemize}\\
+\midrule
+\multicolumn{1}{c}{Damage Control Restrictions}\\
+\midrule
+\\
+Green:\\
+\begin{itemize}
+\item May perform damage control like a novice if in a multi-crew aircraft and another crewmember is regular or veteran.
+\item Otherwise, cannot perform damage control.
+\end{itemize}\\
+Novice:\\
+\begin{itemize}
+\item May perform damage control normally if in a multi-crew aircraft and another crewmember is regular or veteran.
+\item Otherwise, must perform damage control for two consecutive turns to complete.
+\end{itemize}\\
+\bottomrule
+\end{tabularx}
+}
 \end{onecolumntable}
