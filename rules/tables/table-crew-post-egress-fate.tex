@@ -1,5 +1,5 @@
 \begin{onecolumntable}
-
+\x{
 \tablecaption{table:crew-post-egress-fate}{Post Egress Fate}
 \small
 \begin{tabularx}{0.8\linewidth}{lCCC}
@@ -23,5 +23,36 @@ Fate Die Roll Modifiers
 \end{enumerate}
 }
 \end{tablenote}
+}{
+\tablecaption{table:crew-post-egress-fate}{Post-Egress Fate}
+\small
+\begin{tabularx}{0.5\linewidth}{lCCC}
+\toprule
+Die Roll&Result\\
+\midrule
+3 or less&POW\\
+4 or 5&MIA\\
+6 or more&Rescued\\
+\bottomrule
+\end{tabularx}
 
+\bigskip
+
+\tablecaption{table:crew-post-egress-fate-modifiers}{Post-Egress Fate Modifiers}
+\small
+\begin{tabularx}{0.9\linewidth}{Ll}
+\toprule
+Circumstance&Modifier\\
+\midrule
+Over friendly territory&$+2$\\
+Over enemy territory&$-2$\\
+Dedicated search and rescue forces available&$+2$\\
+Excellent fitness&$+1$\\
+Poor fitness&$-1$\\
+Excellent confidence&$+1$\\
+Poor confidence&$-1$\\
+\bottomrule
+\end{tabularx}
+
+}
 \end{onecolumntable}
