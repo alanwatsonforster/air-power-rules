@@ -59,11 +59,12 @@ Crew quality, and any applicable attributes or characteristics are given in most
 
 }{
 
-\section{Determining Crew Ability}
+\section{Ability Determination}
+\label{rule:crew-determination}
 
-Some scenarios give crew abilities explicitly, and no further action is required.
+Some scenarios give crew members’ abilities explicitly, and no further action is required.
 
-Other scenarios do not give the crew abilities explicitly, but instead give a training standard for each side (excellent, good, average, limited, or poor). In these cases:
+Other scenarios do not give the crew members’ abilities explicitly, but instead give a training standard for each side (excellent, good, average, limited, or poor). In these cases:
 
 \begin{itemize}
     
@@ -104,7 +105,7 @@ For example, consider generating a crew member with average training standard.
 \item Finally, roll one die to determine if they are a combat hero and consult Table~\ref{table:crew-special-characteristics-generation}.  If they are a veteran, then on a roll of 1--2 they are a combat hero. If they are regular, then on a roll of 1 they are a combat hero.
 \end{itemize}
 
-\section{Crew Member Quality}
+\section{Quality}
 \label{rule:crew-quality}
 
 Crew members are classified into one of four quality levels based on their experience and training. These are:
@@ -279,14 +280,14 @@ Attributes of aircrew that can affect play are eyesight, fitness, and confidence
 
 \end{itemize}
 }{
-\section{Crew Member Attributes}
+\section{Attributes}
 \label{rule:crew-attributes}
 
 Crew member attributes that can affect play are eyesight, fitness, and confidence. In each case, the attribute can be excellent, average, or poor.
 
 \paragraph{Crew Member Attribute Modifiers.} A crew member's attributes may modify the die rolls for entering departed avoiding, GLOC, sighting, initiative, post-egress fate, and avoiding disorientation. These modifiers are summarized in Table~\ref{table:crew-modifiers} and are also given in the rules for these actions and situations.
 
-\section{Crew Member Characteristics}
+\section{Characteristics}
 \label{rule:crew-characteristics}
 
 Crew member characteristics that can affect play are being Sierra Hotel, a tactics master, or a combat hero.
@@ -318,6 +319,8 @@ A combat hero can be worth more victory points to the other side if shot down.
 
 \paragraph{Pilot Quality.} A section or division leader must be of Regular or better quality. Aircraft with at least one veteran in the crew do not suffer the initiative penalty for not being in formation. Green pilots must always begin a general scenario game as a member of a close formation.
 }
+
+\x{
 
 \section{Campaigns and Crew Experience}
 
@@ -358,6 +361,61 @@ To be considered a “combat” mission, the aircrew in question must have been 
 
 \changedin{1B}{1B-apj-36-errata}{The maximum is excellent confidence and the minimum is poor confidence.}{Confidence cannot be improved above excellent or below poor. “Excess” changes after each mission are lost.}
 
+}{
+
+\section{Campaigns and Crew Development}
+
+Players may wish to create a campaign in which a group of pilots and other crew members are created using the procedures in rule~\ref{rule:crew-determination}, and then their combat careers are tracked from mission to mission. The crews members’ ability would develop in response to these experiences.
+
+\paragraph{Quality Development.} 
+
+Crewmembers may improve in quality by participating in combat missions or gaining air-to-air kills and then succeeding in a die roll. 
+
+The improvement is rolled for at the end of each game after the minimum required amount of experience is achieved. If a crew member fails the die roll for improvement, they may roll again after subsequent missions until they achieve success.
+
+Only missions in which the crew member engaged in offensive or defensive actions against opposing forces are considered to be combat missions. Attacks against undefended targets (“milk runs”) are not considered to be combat missions for the purpose of improvement.
+
+\begin{itemize}
+
+    \item \itemparagraph{Green to Novice.} After three or more combat missions or one or more air-to-air kills and rolling $8-$.
+
+    \item \itemparagraph{Novice to Regular.} After five or more combat missions as a novice or one or more air-to-air kills as a novice and rolling $6-$.
+
+    \item \itemparagraph{Regular to Veteran.} After five or more combat missions as a regular or one or more air-to-air kills as a regular and rolling $4-$.
+
+\end{itemize}
+
+\paragraph{Attribute Development.} Eyesight and fitness never change during a campaign. However, confidence can go up or down as follows:
+\begin{itemize}
+
+    \item Confidence increases from poor to average or from average to excellent when the crew member improves in quality or gains an air-to-air kill. 
+
+    \item Confidence decreases from excellent to average or from average to poor when the crew member is shot down, or their aircraft is damaged to a crippled state. 
+
+\end{itemize}
+
+Confidence cannot be increased above excellent or decreased below poor.
+
+\paragraph{Characteristic Development.}
+
+Crew members may gain characteristics by fulfilling certain requirements and then succeeding in a die roll. 
+
+\begin{itemize}
+
+    \item \itemparagraph{Combat Hero.} After gaining five or more air-to-air kills and rolling $9-$.
+
+    % ISSUE: Is the roll performed once? Or each time they gain a kill beyond four?
+
+    \item \itemparagraph{Decorated Combat Hero.} Upon rolling $2-$ after any single mission in which the players collectively feel the crew member in question performed in an extraordinary manner that deserves a medal. This requirement is vague, but it usually is in real life, too.
+
+    \item \itemparagraph{Tactics Master.} Upon improving to regular or veteran quality and rolling $2-$. This roll is performed once for each of these quality improvements, and if missed after achieving veteran status, it is never attained.
+
+    \item \itemparagraph{Sierra Hotel.} Upon improving in quality to any level and rolling a $1-$. This roll is performed once for each of these quality improvements.
+    
+\end{itemize}
+
+
+}
 \addedin{1C}{1C-tables}{
     \input{tables/table-crew-vps}
 }
