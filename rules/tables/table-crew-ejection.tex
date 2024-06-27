@@ -1,4 +1,5 @@
 \begin{twocolumntable}
+\x{
 \tablecaption{table:crew-egress-success}{Ejection/Bail-Out Success}
 \small
 \begin{tabularx}{0.75\linewidth}{lCCCC}
@@ -8,7 +9,7 @@
 \cmidrule{2-5}
 &None&Early&Standard&Advanced\\
 \midrule
-L, or 2L&7&8&9&9\\
+\addedin{2B}{2B-undamaged-egress}{None, }L, or 2L&7&8&9&9\\
 H, or C&6&7&8&9\\
 Kill by Progressive Damage die roll&3&5&6&8\\
 Kill by weapon with attack rating of 6 or less&2&4&6&7\\
@@ -36,5 +37,42 @@ Ejection/Bailout Die Roll Modifiers
 \end{enumerate}
 
 \end{tablenote}
+}{
+\tablecaption{table:crew-egress-success}{Emergency Egress Success}
+\small
+\begin{tabularx}{0.8\linewidth}{lCCCC}
+\toprule
+\multirow{2}{*}[-0.5ex]{\minitable{c}{Aircraft\\Damage}}&
+\multicolumn{4}{c}{Type of Ejection Seat}\\
+\cmidrule{2-5}
+&None&Early&Standard&Advanced\\
+\midrule
+None, L, or 2L&$7-$&$8-$&$9-$&$9-$\\
+H or C&$6-$&$7-$&$8-$&$9-$\\
+K by progressive damage&$3-$&$5-$&$6-$&$8-$\\
+K by a weapon with an attack rating of 6 or less&$2-$&$4-$&$6-$&$7-$\\
+K by a weapon with an attack rating of 7 or more&$1-$&$2-$&$4-$&$6-$\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.8\linewidth}
+Egress without an ejection seat is only possible at speeds of 4.0 or less and, if the aircraft was killed, at altitudes of at least 4 levels above the ground.
+\end{tablenote}
 
+\medskip
+
+\tablecaption{table:crew-egress-modifiers}{Emergency Egress Die Roll Modifiers}
+\small
+\begin{tabularx}{0.5\linewidth}{Ll}
+\toprule
+Circumstance&Modifier\\
+\midrule
+At terrain level&$+2$\\
+Altitude 1 or 2 levels above ground&$+1$\\
+Speed less than or equal to 3.0&$-1$\\
+Speed greater than or equal to 5.0&$+1$\\
+Speed greater than or equal to high Mach&$+3$\\
+\bottomrule
+\end{tabularx}
+
+}
 \end{twocolumntable}

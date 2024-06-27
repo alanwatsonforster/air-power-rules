@@ -416,12 +416,16 @@ Crew members may gain characteristics by fulfilling certain requirements and the
 
 
 }
+
+\Dx{
 \addedin{1C}{1C-tables}{
     \input{tables/table-crew-vps}
 }
 
 \paragraph{Victory Points For Aircrew Losses.} In campaign games V.P.s are awarded to the opposing side for capturing or killing aircrew. An aircrew loss occurs when an aircraft is shot down or destroyed and the crew does not successfully bail out or eject, or if the Post-Egress Fate is to be captured. \changedin{1C}{1C-tables}{The Aircrew V.P.s Table}{Table~\ref{table:crew-vps}} indicates values for lost aircrew.
+}
 
+\x{
 \section{Ejections and Bailouts}
 \label{rule:ejections-and-bail-outs}
 \label{rule:emergency-egress}
@@ -438,7 +442,7 @@ In a campaign it is important to know if aircrew survive unfortunate incidents l
 
 If an egress attempt falls in a destroyed aircraft, the aircrew is killed.
 
-\paragraph{Ball Out Restrictions.} Bailing out of an aircraft is only allowed if the aircraft is or was at a speed of four or less, and if bailing out of a destroyed aircraft, only if it was four or more levels above the ground.
+\paragraph{Ball Out Restrictions.} Bailing out of an aircraft is only allowed if the aircraft is or was at a speed of four or less, and if bailing out of a destroyed aircraft, only if it was four or more levels above the ground. \addedin{2B}{2B-gloc-bail-out}{A crew member suffering GLOC cannot bail out.}
 
 \addedin{1C}{1C-tables}{
     \input{tables/table-crew-post-egress-fate}
@@ -447,5 +451,49 @@ If an egress attempt falls in a destroyed aircraft, the aircrew is killed.
 \paragraph{Post-Egress Fate.\label{rule:post-egress-fate}} Due to the short time frame of most campaign scenarios or games, the fate of ejected or bailed out crew must be determined in order to see if they can be returned to combat. Once aircrew successfully egress, roll the die at the end of the game to see what their fate is \changedin{1C}{1C-tables}{on the Post-Egress Fate Table}{according to Table~\ref{table:crew-post-egress-fate}}. Apply any required modifiers and read the result.
 
 An aircrew will end up either MIA (missing in action) or as a POW (prisoner of war) or be RESCUED. An MIA aircrew is lost forever (drowned at sea or died on the ground or died in prison). A POW will be repatriated alive after the war ends but is out of the campaign game. Rescued aircrew may be able to re-enter the campaign. Roll one die, the result is the number of campaign days, that aircrew will miss due to injury or rescue delays. After missing the required number of days, the aircrew can be put back on the roster flying missions.
+
+}{
+
+\section{Emergency Egress}
+\label{rule:ejections-and-bail-outs}
+\label{rule:emergency-egress}
+
+\addedin{1C}{1C-tables}{
+    \input{tables/table-crew-ejection}
+}
+
+It is important to know if crew members survive events like being shot down in a campaign. In such cases, crew members may attempt emergency egress using ejection seats or, if their aircraft is not equipped with this, by bailing out.
+
+\paragraph{Energency Egress Requirements.} Crew members suffering from GLOC may not initiate ejection, but any conscious crew member may initiate ejection for all other crew members, conscious or not.
+
+Crew members may only bail out of an aircraft if they are not suffering from GLOC and if the aircraft's speed is four or less. They may only bail out of a destroyed aircraft if it is four or more levels above the ground.
+
+\paragraph{Emergency Egress Procedure.} Crew members will automatically attempt to egress from an aircraft the instant it is destroyed. Crew members may also elect to egress undamaged or damaged aircraft at any point during the aircraft's movement by simply declaring it. The attempt occurs after any proportional moves or attacks by pursuing missiles are resolved. Only one attempt per game turn is allowed.
+
+Roll one die for each crew member attempting emergency egress, apply appropriate modifiers from Table~\ref{table:crew-egress-modifiers}, and consult Table~\ref{table:crew-egress-success}. If the roll succeeds, the crew member egresses the aircraft. If the roll fails in an undamaged or damaged aircraft, the crew member may continue to fly the aircraft and may attempt egress again on subsequent turns. If an egress attempt falls in a destroyed aircraft, the crew member is killed.
+
+\addedin{1C}{1C-tables}{
+    \input{tables/table-crew-post-egress-fate}
+}
+
+\paragraph{Post-Egress Fate Procedure.\label{rule:post-egress-fate}} 
+For each crew member who successfully egresses, roll one die, apply appropriate modifiers from Table~\ref{table:crew-post-egress-fate-modifiers}, and consult Table~\ref{table:crew-post-egress-fate}. The result will be one of:
+
+\begin{itemize}
+    \item \itemparagraph{Prisoner of war (POW).} A POW will be repatriated alive after the war ends but is no longer available for the campaign.
+    \item \itemparagraph{Missing in action (MIA).} An MIA crew member is killed (perhaps drowned at sea, died on the ground, or died in prison).
+    \item \itemparagraph{Rescued.} A rescued crew member may be able to re-enter the campaign. Roll one die, the result is the number of campaign days the crew member will miss due to injury or rescue delays. After missing the required number of days, the crew member can be put back on the roster flying missions.
+
+\end{itemize}
+
+}
+
+\Ax{
+\addedin{1C}{1C-tables}{
+    \input{tables/table-crew-vps}
+}
+
+\paragraph{Victory Points For Crew Losses.} In campaign games VPs are awarded for capturing or killing opposing crew members. Table~\ref{table:crew-vps} indicates values for crew members that are killed, are MIA, or become POW.
+}
 
 \end{advancedrules}
