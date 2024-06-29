@@ -85,7 +85,7 @@ While it is normally not possible to sight lower targets at the same map locatio
 
 After padlocking, each side attempts to sight first unsighted opposing missiles and then unsighted opposing aircraft.
 
-For each unsighted opposing target, determine which friendly aircraft can participate in the sighting attempt. To participate, the aircraft must have at least one crew member who is not disoriented or suffering from GLOC, must be within sighting range, must not have the target in its blind arc, and must not have its line of sight blocked by terrain. 
+For each unsighted opposing target, determine which friendly aircraft can participate in the sighting attempt. To participate, the aircraft must have at least one crew member who is not disoriented or suffering from GLOC, must be within visual sighting range, must not have the target in its blind arc, and must not have its line of sight blocked by terrain. 
 
 If no friendly aircraft satisfies these conditions, the unsighted target remains unsighted.
 
@@ -315,9 +315,9 @@ A visual augmentation system (VAS) uses television and optical equipment to enha
 
 \begin{itemize}
 
-    \item attempt to sight a target already detected by radar in the searcher’s \arcrange{180}{+} angle-off arcs and within 10 times the target’s visibility number, or
+    \item attempt to sight a target already detected by radar in the searcher’s \arcrange{180}{+} angle-off arcs and at a range of no more than 10 times the target’s visibility number, or
 
-    \item attempt to sight a target in the searcher’s limited arc and within 6 times the target’s visibility number (whether previously detected or not).
+    \item attempt to sight a target in the searcher’s limited arc and at a range of no more than 6 times the target’s visibility number (whether previously detected or not).
 
 \end{itemize}
 
@@ -365,7 +365,7 @@ An infeared search and track system (IRSTS) uses infeared television and optical
 
 \paragraph{IRSTS Requirements.}  IRSTS is used in the Radar Search and Lock-On Phase. A pilot-only aircraft may use either radar or IRSTS in this phase, and a multi-crew aircraft may do both. Unlike radar, there are no maneuver-related restrictions on the use of IRSTS.
 
-\paragraph{IRSTS Detection.} IRSTS detects heat based on fuel consumption: the detection range is four times the number of fuel points used by the target at its current power setting (according to the fuel column in the power chart of the target’s ADC). The range is doubled if the IRSTS is used in the target’s \arcrange{30}{-} arc. The target is automatically detected if it is within the detection range.
+\paragraph{IRSTS Detection.} The target is automatically detected its range is no more than the maximum detection range, which depends on the targets fuel consumption and aspect. The maximum detection range is four times the number of fuel points used by the target at its current power setting (according to the fuel column in the power chart of the target’s ADC). The maximum range is doubled if the IRSTS is used in the target’s \arcrange{30}{-} arc. 
 
 \paragraph{IRSTS Lock-on.} One lock-on attempt is allowed against either the nearest detected target or the target with the highest fuel point use. For this purpose, the fuel use is doubled if the IRSTS is used in the target’s \arcrange{30}{-} arc. Roll the die and compare to the lock-on success requirements.
 
@@ -408,11 +408,11 @@ Some scenarios allow players to employ aircraft types unknown to their opponent 
 
 \begin{itemize}
 
-    \item Automatically, when its range to a friendly aircraft is within twice its visibility number.
+    \item Automatically, when its range to a friendly aircraft is no more than twice its visibility number.
 
-    \item Automatically, when its range to a VAS-equipped friendly aircraft is within 4 times its visibility number, and it is in the \arcrange{180}{+} arc of that aircraft.
+    \item Automatically, when its range to a VAS-equipped friendly aircraft is no more than 4 times its visibility number, and it is in the \arcrange{180}{+} arc of that aircraft.
 
-    \item On a roll of $7-$, when its range to a VAS-equipped friendly aircraft is within 10 times its visibility number, and it is in the \arcrange{180}{+} arc of that aircraft.
+    \item On a roll of $7-$, when its range to a VAS-equipped friendly aircraft is no more than 10 times its visibility number, and it is in the \arcrange{180}{+} arc of that aircraft.
 
     \item Automatically, when it begins its second turn with a radar lock-on from an aircraft with Target ID technology.
 

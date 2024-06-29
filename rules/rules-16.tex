@@ -87,7 +87,7 @@ The target of a radar search must satisfy these requirements:
     \item It must not be in ground clutter, which occurs in these three situations:
 
     \begin{itemize}
-        \item The target is within four altitude levels of the ground, and the searching aircraft is at the same altitude or higher.
+        \item The target is no more than four altitude levels above the ground, and the searching aircraft is at the same altitude or higher.
         \item The target is five to ten altitude levels above the ground, the searching aircraft is higher than the target, and the difference in altitude level between the searching aircraft and the target is greater than or equal to the difference in altitude levels between the target and the ground.
         \item The target is five to ten altitude levels above the ground, the searching aircraft is higher than the target, and the horizontal range in hexes from the searching aircraft to the target is greater than or equal to the difference in altitude levels between the target and the ground.
         
@@ -341,7 +341,7 @@ An aircraft with Look Down Technology can ignore all Look Down Limitations and m
 \paragraph{Look-Down Technology.} \label{rule:look-down-missiles}
 If the technology section of an aircraft’s ADC states that it has look-down technology, it can ignore all ground cluster limitations for searches. It can also guide look-down missiles against targets in ground clutter.
 
-\paragraph{Limited Look-Down Technologu.} If the technology section of an aircraft’s ADC states that it has limited look-down technology (sometimes denoted by parentheses around the words “look-down”), it may search for and lock on to lower altitude targets within 2 to 10 levels of the ground if the difference in altitude between the target and the ground is more than the difference in altitude between the searcher and the target. It may also guide look-down missiles against such targets.
+\paragraph{Limited Look-Down Technologu.} If the technology section of an aircraft’s ADC states that it has limited look-down technology (sometimes denoted by parentheses around the words “look-down”), it may search for and lock on to lower altitude targets that are 2 to 10 levels above the ground if the difference in altitude between the target and the ground is more than the difference in altitude between the searcher and the target. It may also guide look-down missiles against such targets.
 
 % ISSUE: This differs from the statement about limited look-down technology in the radar search requirements section.
 
@@ -367,7 +367,7 @@ An aircraft's radar is limited vertically arc as well as horizontally. This adva
 
 \paragraph{Vertical Limits Procedure.} Table~\ref{table:radar-vertical-limits} defines the vertical limits to radar arcs for each flight type. The two factors given in the table should be multipled by the horizontal range to the target, and rounded down, to give the maximum allowed difference in altitude between the searcher and the target for that arc.
 
-For example, a searching aircraft in a zoom climb with a \arcrange{180}{+} arc has a potential radar target in its horizontal arc at a range of 8 hexes. Table~\ref{table:radar-vertical-limits} gives the factors for this combination of flight type and radar arc as $+5$ and $+0$. Thus, if the target were between 0 and 40 altitude levels higher than the searcher, it would be withing the vertical limits. If the target were lower than the searcher or more than 40 altitude levels higher, it would not be within the vertical limits.
+For example, a searching aircraft in a zoom climb with a \arcrange{180}{+} arc has a potential radar target in its horizontal arc at a range of 8 hexes. Table~\ref{table:radar-vertical-limits} gives the factors for this combination of flight type and radar arc as $+5$ and $+0$. Thus, if the target were between 0 and 40 altitude levels higher than the searcher, it would be within the vertical limits. If the target were lower than the searcher or more than 40 altitude levels higher, it would not be within the vertical limits.
 }
 
 \section{Special Radar Modes}
@@ -397,7 +397,7 @@ All aircraft with air-to-air radar can use boresight radar mode. If the radar ha
 
 % ISSUE: Visually sighted enemy? That is, are friendly aircraft ignored?
 
-\paragraph{Boresight Radar Search Procedure.} Normal radar search is not allowed in the air-radar search and lock-on phase. Instead, the closest \emph{visually sighted} aircraft in the aircraft's \emph{limited} arc at a range no greater than the radar's \emph{tracking} strength in hexes is automatically detected. If two or more aircraft are equally close, randomly determine which is detected. 
+\paragraph{Boresight Radar Search Procedure.} Normal radar search is not allowed in the air-radar search and lock-on phase. Instead, the closest \emph{visually sighted} aircraft in the \emph{limited} arc with range of no more than the \emph{tracking} strength is automatically detected. If two or more aircraft are equally close, randomly determine which is detected. 
 
 The limited arc is used even if the aircraft's normal radar arc is wider.
 
@@ -417,7 +417,7 @@ An aircraft without look-down technology may use boresight mode to detect and lo
 \x{
 \paragraph{Auto-Track Radar Mode.}\label{rule:auto-track-mode} Auto-Track Radar mode allows an aircraft to automatically detect and then lock-on a target. Only aircraft with Auto-Track Technology may use this mode. \addedin{1C}{1C-tables}{Table~\ref{table:radar-auto-track-mode} summarizes auto-track mode.}
 
-\paragraph{Procedure.} \changedin{2B}{2B-declaring-special-radar-modes}{Announce Auto-Track when the aircraft begins its flight.}{Announce Auto-Track in the aircraft decisions phase.} All previous contacts and lock-ons are lost. Normal radar search is not allowed. The aircraft's effective radar arc becomes the 180{\deg} arc (regardless of the aircraft's normal radar arc). In the Air Radar Search and Lock-On Phase, the closest aircraft within a range equal to the radar's SEARCH strength in hexes in the 180{\deg} arc is automatically detected.
+\paragraph{Procedure.} \changedin{2B}{2B-declaring-special-radar-modes}{Announce Auto-Track when the aircraft begins its flight.}{Announce Auto-Track in the aircraft decisions phase.} All previous contacts and lock-ons are lost. Normal radar search is not allowed. The aircraft's effective radar arc becomes the 180{\deg} arc (regardless of the aircraft's normal radar arc). In the Air Radar Search and Lock-On Phase, the closest aircraft at a range of no more than the radar's SEARCH strength in hexes in the 180{\deg} arc is automatically detected.
 
 One Auto-Track Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. Auto-Track will ignore all friendly aircraft with IFF on. A visually sighted enemy aircraft may be selected for detection and lock-on \addedin{2B}{2B-auto-track-selection}{on a $7-$} even if it was not the closest as long as it meets the range and 180{\deg} arc requirements. \addedin{1B}{1B-apj-22-qa and 1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for auto-track mode.}
 
@@ -435,10 +435,10 @@ Only aircraft auto-track technology can use auto-track radar mode. Table~\ref{ta
 
 \paragraph{Auto-Track Radar Mode Requirements.} To use auto-track radar mode in the air-radar search and lock-on phase, the aircraft must satisfy the requirements for normal radar mode given in rule \ref{rule:radar-search-requirements}, except those related to turn rate, special maneuvers, or unloaded FPs.
 
-\paragraph{Auto-Track Radar Search Procedure.} Normal radar search is not allowed in the air-radar search and lock-on phase. Instead, the radar's arc is considered to be the \emph{\arcrange{180}{+}} arc and its range is the \emph{search} strength in hexes. Then, one of two procedures may be chosen:
+\paragraph{Auto-Track Radar Search Procedure.} Normal radar search is not allowed in the air-radar search and lock-on phase. Instead, the radar's arc is considered to be the \emph{\arcrange{180}{+}} arc and its maximum range is the \emph{search} strength in hexes. Then, one of two procedures may be chosen:
 \begin{enumerate}
-\item Any one sighted aircraft in the radar arc and within range may be detected on a roll of $7-$ with no modifiers.
-\item Alternatively, the closest aircraft in the radar arc and within range may be automatically detected. If two or more aircraft are equally close, randomly determine which is detected. Auto-track mode ignores friendly aircraft with their IFF on.
+\item Any one sighted aircraft in the \emph{\arcrange{180}{+}} arc with a range of no more than the \emph{search} strength may be detected on a roll of $7-$ with no modifiers.
+\item Alternatively, the closest aircraft in the \emph{\arcrange{180}{+}} arcawith a range of no more than the \emph{search} strength may be automatically detected. If two or more aircraft are equally close, randomly determine which is detected. Auto-track mode ignores friendly aircraft with their IFF on.
 \end{enumerate}
 
 The \arcrange{180}{+} arc is used even if the aircraft's normal radar arc is wider.
