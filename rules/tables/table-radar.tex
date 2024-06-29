@@ -3,10 +3,9 @@
 \tablecaption{table:radar-search-limitations}{Radar Search Limitations}
 \begin{tabularx}{\linewidth}{X}
 \toprule
-\smallskip
-Aircraft may not search if they:
-\medskip
-\begin{itemize}
+\addlinespace
+Aircraft may not search if they:\\
+\begin{itemize}[topsep=0pt]
  \item Turned at BT or greater.$^\dagger$
  \item Turned at HT if pilot is radar operator.$^\dagger$
  \item Used more than one VR.$^\dagger$
@@ -18,21 +17,16 @@ Aircraft may not search if they:
  \item Made an air-to-ground attack.
  \item Has their radar operator in GLOC
  \item Has their radar operator suffering disorientation.
-\end{itemize}
-\medskip
-$\dagger$ Does not apply to boresight or auto-track modes.
-\medskip
-
-Targets of searches must be:
-\medskip
-\begin{itemize}
+\end{itemize}\\
+$\dagger$ Does not apply to boresight or auto-track modes.\\
+\addlinespace
+Targets of searches must be:\\
+\begin{itemize}[topsep=0pt]
     \item Within radar arc.
     \item Within radar vertical limits.
     \item Within search range.
     \item Not in ground clutter (unless look-down or limited look-down radar).
-\end{itemize}
-\\
-\addlinespace
+\end{itemize}\\
 \bottomrule
 \end{tabularx}
 \end{onecolumntable}
@@ -248,7 +242,7 @@ Locks are broken when:
 \begin{tabularx}{\linewidth}{X}
 \toprule
 \addlinespace
-\begin{itemize}
+\begin{itemize}[topsep=0pt]
     \item Aircraft stalls, departs, or engages.
     \item Aircraft does ET turn, displacement, lag, or barrel roll, or VIFF manueuver.
     \item Aircraft suffers a H or C hit,
@@ -376,7 +370,8 @@ Note: The radar vertical limits are given as altitude levels per hex or horizont
 \tablecaption{table:radar-boresight-mode}{Boresight Radar Mode}
 \begin{tabularx}{\linewidth}{X}
 \toprule
-\begin{itemize}
+\addlinespace
+\begin{itemize}[topsep=0pt]
     \item Previous detections and lock-ons lost when mode declared.
     \item No flight restrictions.
     \item Radar arc is limited.
@@ -412,7 +407,8 @@ Note: The radar vertical limits are given as altitude levels per hex or horizont
 \tablecaption{table:radar-auto-track-mode}{Auto-Track Radar Mode}
 \begin{tabularx}{\linewidth}{X}
 \toprule
-\begin{itemize}
+\addlinespace
+\begin{itemize}[topsep=0pt]
     \item Previous detections and lock-ons lost when mode declared.
     \item No flight restrictions.
     \item Radar arc is \arcrange{180}{+}.
