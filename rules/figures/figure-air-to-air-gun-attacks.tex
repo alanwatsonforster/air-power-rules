@@ -1,79 +1,11 @@
 \begin{onecolumnfigure}[tb]
 
-\iffalse
-\begin{fitwidth}{9.333\standardhexwidth}
-\begin{tikzpicture}
-
-    \drawhexgrid{0}{0}{8}{3}  
-
-    \begin{athex}{7.00}{0.50}
-        \drawdotathex{+0.00}{0.50}
-        \drawdotathex{+0.00}{1.00}
-        \drawdotathex{-0.50}{1.25}
-        \drawdotathex{+0.50}{1.25}
-        \drawdotathex[black!25]{+0.00}{1.50}
-        \drawdotathex[black!25]{-0.50}{1.75}
-        \drawdotathex[black!25]{+0.50}{1.75}
-        \drawdotathex[black!25]{+0.00}{2.00}
-        \begin{scope}[shift={(90:1.375)}]
-            \draw [very thick,dashed] (180:1.2) -- (0:1.2);
-            \draw (180:0.9) node [anchor=90] {\tiny Range 1};
-            \draw (180:0.9) node [anchor=270] {\tiny Range 2};
-        \end{scope}
-        \drawaircraftcounter{0.00}{0.00}{90}{F-4}{}{}
-    \end{athex}
-
-    \begin{athex}{1.00}{0.50}
-        \drawdotathex{+0.50}{0.75}
-        \drawdotathex{+0.50}{1.25}
-        \drawdotathex{+1.00}{1.00}
-        \drawdotathex[black!25]{+1.00}{1.50}
-        \drawdotathex[black!25]{+0.50}{1.75}
-        \drawdotathex[black!25]{+1.50}{1.25}
-        \drawdotathex[black!25]{+1.00}{2.00}
-        \drawdotathex[black!25]{+1.50}{1.75}
-        \begin{scope}[shift={(60:1.6)}]
-            \draw[ very thick,dashed] (150:1.2) -- (-30:1.2);
-            \draw (150:1.0) node [rotate=-30,anchor=north] {\tiny Range 1};
-            \draw (150:1.0) node [rotate=-30,anchor=south] {\tiny Range 2};
-        \end{scope}
-        \drawaircraftcounter{0.00}{0.00}{60}{F-4}{}{}
-    \end{athex}
-
-    \begin{athex}{3.50}{0.25}
-        \drawdotathex{+0.50}{0.75}
-        \drawdotathex{+0.50}{1.25}
-        \drawdotathex{+1.00}{1.00}
-        \drawdotathex[black!25]{+1.00}{1.50}
-        \drawdotathex[black!25]{+0.50}{1.75}
-        \drawdotathex[black!25]{+1.50}{1.25}
-        \drawdotathex[black!25]{+1.00}{2.00}
-        \drawdotathex[black!25]{+1.50}{1.75}
-        \begin{scope}[shift={(60:1.6)}]
-            \draw[ very thick,dashed] (150:1.2) -- (-30:1.2);
-            \draw (150:1.0) node [rotate=-30,anchor=north] {\tiny Range 1};
-            \draw (150:1.0) node [rotate=-30,anchor=south] {\tiny Range 2};
-        \end{scope}
-        \drawaircraftcounter{0.00}{0.00}{60}{F-4}{}{}
-    \end{athex}
-    
-\end{tikzpicture}
-\end{fitwidth}
-\fi
-
 \begin{centering}
-\begin{fitheight}{3.5\standardhexwidth}
+\begin{fitwidth}{3.2\standardhexwidth}
 \begin{tikzpicture}
-    \drawhex{0}{0}
-    \drawhex{0}{1}
-    \drawhex{0}{2}
-    \drawhex{-1}{0.5}
-    \drawhex{-1}{1.5}
-    \drawhex{-1}{2.5}
-    \drawhex{+1}{0.5}
-    \drawhex{+1}{1.5}
-    \drawhex{+1}{2.5}
-        \begin{athex}{0.00}{0.00}
+    \setfiguresize{-1.6}{-0.67*\hexxfactor-0.1}{1.6}{3.67*\hexxfactor+0.1}
+    \begin{scope}
+        \drawmediumhexgrid
         \drawdotathex{+0.00}{0.50}
         \drawdotathex{+0.00}{1.00}
         \drawdotathex{-0.50}{1.25}
@@ -83,24 +15,15 @@
         \drawdotathex[black!35]{-0.50}{1.75}
         \drawdotathex[black!35]{+0.00}{2.00}
         \drawaircraftcounter{0.00}{0.00}{90}{F-4}{}{}
-    \end{athex}
+    \end{scope}
 \end{tikzpicture}
-\end{fitheight}
+\end{fitwidth}
 \hfil
-\begin{fitwidth}{3\standardhexwidth}
+\begin{fitwidth}{3.2\standardhexwidth}
 \begin{tikzpicture}
-\begin{scope}[rotate=90]
-    \drawhex{0}{-1}
-    \drawhex{0}{0}
-    \drawhex{0}{+1}
-    \drawhex{1}{+0.5}
-    \drawhex{1}{-0.5}
-    \drawhex{2}{-1}
-    \drawhex{2}{0}
-    \drawhex{2}{+1}
-    \drawhex{3}{+0.5}
-    \drawhex{3}{-0.5}
-    \begin{athex}{0.00}{0.00}
+    \setfiguresize{-1.6}{-0.67*\hexxfactor-0.1}{1.6}{3.67*\hexxfactor+0.1}
+    \begin{scope}[rotate=90]
+        \drawmediumhexgrid
         \drawdotathex{+1.00}{+0.00}
         \drawdotathex{+1.50}{+0.25}
         \drawdotathex{+1.50}{-0.25}
@@ -108,26 +31,17 @@
         \drawdotathex[black!35]{+2.00}{+0.00}
         \drawdotathex[black!35]{+2.00}{+0.50}
         \drawdotathex[black!35]{+2.50}{-0.25}
-        \drawdotathex[black!35]{+2.50}{+0.25}        \drawaircraftcounter{0.00}{0.00}{0}{F-4}{}{}
-    \end{athex}
-\end{scope}
+        \drawdotathex[black!35]{+2.50}{+0.25}
+        \drawaircraftcounter{0.00}{0.00}{0}{F-4}{}{}
+    \end{scope}
 \end{tikzpicture}
 \end{fitwidth}
 \hfil
-\begin{fitwidth}{3\standardhexwidth}
+\begin{fitwidth}{3.2\standardhexwidth}
 \begin{tikzpicture}
-\begin{scope}[rotate=90]
-    \drawhex{0}{-0.5}
-    \drawhex{0}{+0.5}
-    \drawhex{1}{-1}
-    \drawhex{1}{0}
-    \drawhex{1}{+1}
-    \drawhex{2}{-0.5}
-    \drawhex{2}{+0.5}
-    \drawhex{3}{-1}
-    \drawhex{3}{0}
-    \drawhex{3}{+1}
-    \begin{athex}{0.00}{0.00}
+    \setfiguresize{-1.6}{-0.67*\hexxfactor-0.1}{1.6}{3.67*\hexxfactor+0.1}
+    \begin{scope}[rotate=90]
+        \miniathex{0.0}{0.5}{\drawmediumhexgrid}
         \drawdotathex{+1.00}{+0.00}
         \drawdotathex{+1.50}{+0.25}
         \drawdotathex{+1.50}{-0.25}
@@ -137,8 +51,7 @@
         \drawdotathex[black!35]{+2.50}{-0.25}
         \drawdotathex[black!35]{+2.50}{+0.25}  
         \drawaircraftcounter{0.00}{0.00}{0}{F-4}{}{}
-    \end{athex}
-\end{scope}
+    \end{scope}
 \end{tikzpicture}
 \end{fitwidth}
 \end{centering}
