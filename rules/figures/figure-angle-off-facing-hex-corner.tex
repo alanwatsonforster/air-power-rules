@@ -61,6 +61,51 @@
 \end{tikzpicture}
 \end{fitwidth}
 
+\begin{fitwidth}{9.333\standardhexwidth}
+\begin{tikzpicture}
+    \tiny
+    \setfiguresize{-4.1}{-5*\hexxfactor-0.1}{+4.1}{+5*\hexxfactor+0.1}
+    \begin{scope}[rotate=90]
+        \drawmediumhexgrid
+        \begin{scope}[dashed,very thick,->]
+            \draw (0,0) --   (0:10);
+            \draw (0,0) --  (30:10);
+            \draw (0,0) --  (60:10);
+            \draw (0,0) --  (90:10);
+            \draw (0,0) -- (120:10);
+            \draw (0,0) -- (150:10);
+            \draw (0,0) -- (180:10);
+            \draw (0,0) -- (210:10);
+            \draw (0,0) -- (240:10);
+            \draw (0,0) -- (270:10);
+            \draw (0,0) -- (300:10);
+            \draw (0,0) -- (330:10);
+        \end{scope}
+        \miniathex{+2.0}{+0.0}{\draw node [rotate=90, anchor=south] {180{\deg} line};}
+        \miniathex{-2.0}{-0.0}{\draw node [rotate=90, anchor=south] {0{\deg} line};}
+        \miniathex{+4.0}{+1.0}{\draw node {\minitable{c}{Left\\180{\deg}}};}
+        \miniathex{+3.0}{+2.5}{\draw node {\minitable{c}{Left\\150{\deg}}};}
+        \miniathex{+1.0}{+3.5}{\draw node {\minitable{c}{Left\\120{\deg}}};}
+        \miniathex{-1.0}{+3.5}{\draw node {\minitable{c}{Left\\90{\deg}}};}
+        \miniathex{-3.0}{+2.5}{\draw node {\minitable{c}{Left\\60{\deg}}};}
+        \miniathex{-4.0}{+1.0}{\draw node {\minitable{c}{Left\\30{\deg}}};}
+        \miniathex{-4.0}{-1.0}{\draw node {\minitable{c}{Right\\30{\deg}}};}
+        \miniathex{-3.0}{-2.5}{\draw node {\minitable{c}{Right\\60{\deg}}};}
+        \miniathex{-1.0}{-3.5}{\draw node {\minitable{c}{Right\\90{\deg}}};}
+        \miniathex{+1.0}{-3.5}{\draw node {\minitable{c}{Right\\120{\deg}}};}
+        \miniathex{+3.0}{-2.5}{\draw node {\minitable{c}{Right\\150{\deg}}};}
+        \miniathex{+4.0}{-1.0}{\draw node {\minitable{c}{Right\\180{\deg}}};}
+        \ifaids
+            \drawaircraftcounter[90]{+0.00}{+0.00}{60}{F-105}{}{}
+        \else
+            \drawaircraftcounter[90]{+0.00}{+0.00}{0}{F-105}{A}{1}
+            \drawaircraftcounter[90]{+1.00}{-0.50}{210}{MiG-21}{B}{1}
+            \drawaircraftcounter[90]{-3.00}{-0.00}{0}{F-105}{C}{1}
+        \fi
+    \end{scope}
+\end{tikzpicture}
+\end{fitwidth}
+
 \ifaids\else
 \Dx{
 \par\bigskip

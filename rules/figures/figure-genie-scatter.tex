@@ -7,15 +7,14 @@
 \end{onecolumnfigure}
 
 }{
-\begin{onecolumnfigure}
-\begin{fitwidth}{1.0\linewidth}
+\begin{twocolumnfigure}
+
+\begin{fitheight}{5.2\standardhexwidth}
 \begin{tikzpicture}
-
-
-    \drawhexgrid{0}{0}{14}{4}
-
-    \begin{athex}{2.00}{2.00}
-        \begin{scope}[very thick, ->]
+    \setfiguresize{-2.67*\hexxfactor-0.1}{-2.6}{+2.67*\hexxfactor+0.1}{+2.6}
+    \begin{scope}
+        \drawmediumhexgrid
+        \begin{scope}[dashed,very thick, ->]
             \draw (0,0) --   (90:1.5) node [anchor=270] {1};
             \draw (0,0) --   (60:1.5) node [anchor=240] {2};
             \draw (0,0) --   (30:1.5) node [anchor=210] {3};
@@ -27,43 +26,54 @@
             \draw (0,0) --  (150:1.5) node [anchor=330] {9};
             \draw (0,0) --  (120:1.5) node [anchor=300] {10};
         \end{scope}
-        \drawdotathex{0}{0}
-    \end{athex}
-
-    \begin{athex}{7.00}{1.50}
-        \begin{scope}[very thick,->]
-            \draw (0,0) --   (60:1.5) node [anchor=240] {1};
-            \draw (0,0) --   (30:1.5) node [anchor=210] {2};
-            \draw (0,0) --    (0:1.5) node [anchor=180] {3};
-            \draw (0,0) --  (330:1.5) node [anchor=150] {4};
-            \draw (0,0) --  (300:1.5) node [anchor=120] {5};
-            \draw (0,0) --  (240:1.5) node [anchor=60] {6};
-            \draw (0,0) --  (180:1.5) node [anchor=0  ] {7};
-            \draw (0,0) --  (150:1.5) node [anchor=330] {8};
-            \draw (0,0) --  (120:1.5) node [anchor=300] {9};
-            \draw (0,0) --   (90:1.5) node [anchor=270] {10};
-        \end{scope}
-        \drawdotathex{0}{0}
-    \end{athex}
-    
-    \begin{athex}{12.50}{1.75}
-        \begin{scope}[very thick,->]
-            \draw (0,0) --   (60:1.7) node [anchor=240] {1};
-            \draw (60:1.000*\hexxfactor) -- +(30:1.0) node [anchor=210] {2};
-            \draw (60:0.333*\hexxfactor) --  +(0:1.2) node [anchor=180] {3};
-            \draw (0,0) --  (330:1.5) node [anchor=150] {4};
-            \draw (240:0.333*\hexxfactor) --  +(300:1.2) node [anchor=120] {5};
-            \draw (0,0) --  (240:1.7) node [anchor=60] {6};
-            \draw (240:0.333*\hexxfactor) --  +(180:1.2) node [anchor=0  ] {7};
-            \draw (0,0) --  (150:1.5) node [anchor=330] {8};
-            \draw (60:0.333*\hexxfactor) --  +(120:1.2) node [anchor=300] {9};
-            \draw (60:1*\hexxfactor) -- +(90:1.0) node [anchor=270] {10};
-        \end{scope}
-        \drawdotathex{0}{0}
-    \end{athex}
-    
+         \drawdotathex{0}{0}
+     \end{scope}
 \end{tikzpicture}
-\end{fitwidth}
+\end{fitheight}
+\hfil
+\begin{fitheight}{5.2\standardhexwidth}
+\begin{tikzpicture}
+    \setfiguresize{-2.67*\hexxfactor-0.1}{-2.6}{+2.67*\hexxfactor+0.1}{+2.6}
+    \begin{scope}[rotate=90]
+        \drawmediumhexgrid
+        \begin{scope}[dashed,very thick,->]
+            \draw (0,0) --   (0:1.5) node [anchor=270] {1};
+            \draw (0,0) -- (330:1.5) node [anchor=240] {2};
+            \draw (0,0) -- (300:1.5) node [anchor=210] {3};
+            \draw (0,0) -- (270:1.5) node [anchor=180] {4};
+            \draw (0,0) -- (240:1.5) node [anchor=150] {5};
+            \draw (0,0) -- (180:1.5) node [anchor=90 ] {6};
+            \draw (0,0) -- (120:1.5) node [anchor=30 ] {7};
+            \draw (0,0) --  (90:1.5) node [anchor=0  ] {8};
+            \draw (0,0) --  (60:1.5) node [anchor=330] {9};
+            \draw (0,0) --  (30:1.5) node [anchor=300] {10};
+        \end{scope}
+        \drawdotathex{0}{0}
+    \end{scope}
+\end{tikzpicture}
+\end{fitheight}
+\hfil
+\begin{fitheight}{5.2\standardhexwidth}
+\begin{tikzpicture}
+    \setfiguresize{-2.67*\hexxfactor-0.1}{-2.6}{+2.67*\hexxfactor+0.1}{+2.6}
+    \begin{scope}[rotate=90]
+        \miniathex{0.0}{0.5}{\drawmediumhexgrid}
+        \begin{scope}[dashed,very thick,->]
+            \draw (0,0) --    (0:1.7) node [anchor=270] {1};
+            \draw (0:1.000*\hexxfactor) -- +(330:1.0) node [anchor=240] {2};
+            \draw (0:0.333*\hexxfactor) --  +(300:1.2) node [anchor=210] {3};
+            \draw (0,0) --  (270:1.5) node [anchor=180] {4};
+            \draw (180:0.333*\hexxfactor) --  +(240:1.2) node [anchor=150] {5};
+            \draw (0,0) --  (180:1.7) node [anchor=90] {6};
+            \draw (180:0.333*\hexxfactor) --  +(120:1.2) node [anchor=30 ] {7};
+            \draw (0,0) --   (90:1.5) node [anchor=0  ] {8};
+            \draw (0:0.333*\hexxfactor) --  +(60:1.2) node [anchor=330] {9};
+            \draw (0:1*\hexxfactor) -- +(30:1.0) node [anchor=300] {10};
+        \end{scope}
+        \drawdotathex{0}{0}
+    \end{scope}
+\end{tikzpicture}
+\end{fitheight}
 
 \x{
 \figurecaption{figure:genie-scatter}{AIR-2 Genie Scatter}
@@ -71,5 +81,5 @@
 \figurecaption{figure:genie-scatter}{Genie Scatter. Roll one die for the direction. Roll another, halving it and rounding down, for the distance.}
 }
 
-\end{onecolumnfigure}
+\end{twocolumnfigure}
 }
