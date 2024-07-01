@@ -1,33 +1,32 @@
 \begin{onecolumnfigure}[tb]
-
-\begin{fitwidth}{3.333\standardhexwidth}
+\begin{fitheight}{3.2\standardhexwidth}
 \begin{tikzpicture}
-
-    \drawhexgrid{0}{0}{2}{2}  
-
-    \begin{athex}{0.50}{0.25}
-        \drawdotathex[black!25]{+0.00}{0.50}
-        \drawdotathex[black!25]{+0.00}{1.00}
-        \drawdotathex[black!25]{+0.50}{0.25}
-        \drawdotathex{+0.50}{0.75}
-        \drawdotathex[black!25]{+0.50}{1.25}
-        \drawdotathex[black!25]{+1.00}{0.50}
-        \drawdotathex[black!25]{+1.00}{1.00}
-    \end{athex}
-
-    %\begin{athex}{3.50}{0.25}
-    %    \drawdotathex[black!25]{+0.00}{0.50}
-    %    \drawdotathex[black!25]{+0.00}{1.00}
-    %    \drawdotathex[black!25]{+0.50}{0.25}
-    %    \drawdotathex{+0.50}{0.75}
-    %    \drawdotathex[black!25]{+0.50}{1.25}
-    %    \drawdotathex[black!25]{+1.00}{0.50}
-    %    \drawdotathex[black!25]{+1.00}{1.00}
-    %\end{athex}
-
+    \setfiguresize{-1.67*\hexxfactor-0.1}{-1.6}{+1.67*\hexxfactor+0.1}{+1.6}
+    \drawmediumhexgrid
+    \drawdotathex[black!25]{+0.00}{+0.50}
+    \drawdotathex[black!25]{+0.50}{+0.25}
+    \drawdotathex[black!25]{+0.50}{-0.25}
+    \drawdotathex{+0.00}{0.00}
+    \drawdotathex[black!25]{+0.00}{-0.50}
+    \drawdotathex[black!25]{-0.50}{-0.25}
+    \drawdotathex[black!25]{-0.50}{+0.25}
 \end{tikzpicture}
-\end{fitwidth}
+\end{fitheight}
+\hfil
+\begin{fitheight}{3.2\standardhexwidth}
+\begin{tikzpicture}
+    \setfiguresize{-1.67*\hexxfactor-0.1}{-1.6}{+1.67*\hexxfactor+0.1}{+1.6}
+    \miniathex{0.0}{0.5}{\drawmediumhexgrid}
+    \drawdotathex[black!25]{+0.00}{+0.50}
+    \drawdotathex[black!25]{+0.50}{+0.25}
+    \drawdotathex[black!25]{+0.50}{-0.25}
+    \drawdotathex{+0.00}{0.00}
+    \drawdotathex[black!25]{+0.00}{-0.50}
+    \drawdotathex[black!25]{-0.50}{-0.25}
+    \drawdotathex[black!25]{-0.50}{+0.25}
+\end{tikzpicture}
+\end{fitheight}
 
-\figurecaption{figure:range}{Range. The map locations shown in gray are half a hex from the map location shown in black.}
+\figurecaption{figure:range}{Range. The map locations shown in gray are half a hex from the map locations shown in black.}
 
 \end{onecolumnfigure}
