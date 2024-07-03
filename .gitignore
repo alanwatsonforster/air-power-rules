@@ -1,2 +1,13 @@
 
 .DS_Store
+*.dpth
+*.log
+*.md5
+*.aux
+*.gz
+*.toc
+*.out
+*.auxlock
+rules-*-figure[0-9].pdf
+rules-*-figure[0-9][0-9].pdf
+rules-*.pdf
