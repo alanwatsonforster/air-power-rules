@@ -7,73 +7,70 @@
 
 \iftrue
 \begin{centering}
-\begin{fitheight}{3\standardhexwidth}
+\begin{fitheight}{3.2\standardhexwidth}
 \begin{tikzpicture}
-    \drawhex{0}{0}
-    \drawhex{0}{1}
-    \drawhex{0}{2}
-    \drawhex{-1}{0.5}
-    \drawhex{-1}{1.5}
-    \drawhex{+1}{0.5}
-    \drawhex{+1}{1.5}
-        \begin{athex}{0.00}{0.00}
-        \drawdotathex{+0.00}{0.50}
-        \drawdotathex{-0.50}{0.75}
-        \drawdotathex{+0.50}{0.75}
-        \drawdotathex{+0.00}{1.00}
-        \drawdotathex{-0.50}{1.25}
-        \drawdotathex{+0.50}{1.25}
-        \drawdotathex{+0.00}{1.50}
-        \drawarrowcounter{0.00}{0.00}{90}
-    \end{athex}
+    \setfiguresize{-1.6}{-1.6}{+1.6}{+1.6}
+    \drawhex{0}{-1}
+    \drawhex{0}{+0}
+    \drawhex{0}{+1}
+    \drawhex{-1}{-0.5}
+    \drawhex{-1}{+0.5}
+    \drawhex{+1}{-0.5}
+    \drawhex{+1}{+0.5}
+    \drawdotathex{+0.00}{-0.50}
+    \drawdotathex{-0.50}{-0.25}
+    \drawdotathex{+0.50}{-0.25}
+    \drawdotathex{+0.00}{0.00}
+    \drawdotathex{-0.50}{0.25}
+    \drawdotathex{+0.50}{0.25}
+    \drawdotathex{+0.00}{0.50}
+    \drawarrowcounter{0.0}{-1.0}{90}
 \end{tikzpicture}
 \end{fitheight}
 \hfil
-\begin{fitwidth}{3\standardhexwidth}
+\begin{fitwidth}{3.2\standardhexwidth}
 \begin{tikzpicture}
+    \setfiguresize{-1.6}{-1.6}{+1.6}{+1.6}
 \begin{scope}[rotate=90]
-    \drawhex{0}{-1}
-    \drawhex{0}{0}
-    \drawhex{0}{+1}
-    \drawhex{1}{+0.5}
-    \drawhex{1}{-0.5}
-    \drawhex{2}{-1}
-    \drawhex{2}{0}
-    \drawhex{2}{+1}
-    \begin{athex}{0.00}{0.00}
-        \drawdotathex{+0.50}{+0.25}
-        \drawdotathex{+0.50}{-0.25}
-        \drawdotathex{+1.00}{+0.50}
-        \drawdotathex{+1.00}{+0.00}
-        \drawdotathex{+1.00}{-0.50}
-        \drawdotathex{+1.50}{+0.25}
-        \drawdotathex{+1.50}{-0.25}
-        \drawarrowcounter{0.00}{0.00}{0}
-    \end{athex}
+    \drawhex{-1}{-1}
+    \drawhex{-1}{0}
+    \drawhex{-1}{+1}
+    \drawhex{+0}{+0.5}
+    \drawhex{+0}{-0.5}
+    \drawhex{+1}{-1}
+    \drawhex{+1}{0}
+    \drawhex{+1}{+1}
+    \drawdotathex{-0.50}{+0.25}
+    \drawdotathex{-0.50}{-0.25}
+    \drawdotathex{+0.00}{+0.50}
+    \drawdotathex{+0.00}{+0.00}
+    \drawdotathex{+0.00}{-0.50}
+    \drawdotathex{+0.50}{+0.25}
+    \drawdotathex{+0.50}{-0.25}
+    \drawarrowcounter{-1.00}{0.00}{0}
 \end{scope}
 \end{tikzpicture}
 \end{fitwidth}
 \hfil
-\begin{fitwidth}{3\standardhexwidth}
+\begin{fitwidth}{3.2\standardhexwidth}
 \begin{tikzpicture}
+    \setfiguresize{-1.6}{-1.6}{+1.6}{+1.6}
 \begin{scope}[rotate=90]
-    \drawhex{0}{-0.5}
-    \drawhex{0}{+0.5}
-    \drawhex{1}{-1}
-    \drawhex{1}{0}
-    \drawhex{1}{+1}
-    \drawhex{2}{-0.5}
-    \drawhex{2}{+0.5}
-    \begin{athex}{0.00}{0.00}
-        \drawdotathex{+0.50}{+0.25}
-        \drawdotathex{+0.50}{-0.25}
-        \drawdotathex{+1.00}{+0.50}
-        \drawdotathex{+1.00}{+0.00}
-        \drawdotathex{+1.00}{-0.50}
-        \drawdotathex{+1.50}{+0.25}
-        \drawdotathex{+1.50}{-0.25}
-        \drawarrowcounter{0.00}{0.00}{0}
-    \end{athex}
+    \drawhex{-1}{-0.5}
+    \drawhex{-1}{+0.5}
+    \drawhex{+0}{-1}
+    \drawhex{+0}{0}
+    \drawhex{+0}{+1}
+    \drawhex{+1}{-0.5}
+    \drawhex{+1}{+0.5}
+    \drawdotathex{-0.50}{+0.25}
+    \drawdotathex{-0.50}{-0.25}
+    \drawdotathex{+0.00}{+0.50}
+    \drawdotathex{+0.00}{+0.00}
+    \drawdotathex{+0.00}{-0.50}
+    \drawdotathex{+0.50}{+0.25}
+    \drawdotathex{+0.50}{-0.25}
+    \drawarrowcounter{-1.00}{0.00}{0}
 \end{scope}
 \end{tikzpicture}
 \end{fitwidth}

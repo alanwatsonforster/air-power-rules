@@ -56,13 +56,14 @@
 \figurecaption{figure:barrel-roll-maneuvers}{Barrel Roll Maneuvers}
 
 }{
-\begin{fitwidth}{7.333\standardhexwidth}
+\begin{fitheight}{9.2\standardhexwidth}
 \begin{tikzpicture}
 \scriptsize
 
-    \drawhexgrid{0}{0}{6}{7}
+    \setfiguresize{-2.6}{-4.6}{+6.1}{+4.6}
+    \drawevenhexgrid{-2}{-4}{9}{9}
 
-    \begin{athex}{0.00}{0.00}
+    \begin{athex}{-1.00}{-3.50}
         \drawdashedcounter  {+0.00}{+0.00}{60}
         \drawdashedcounter  {+0.50}{+0.75}{60}
         \drawaircraftcounter{+1.00}{+1.50}{60}{F-4}{}{}
@@ -90,7 +91,7 @@
         \end{scope}
     \end{athex}
     
-    \begin{athex}{2.00}{2.00}
+    \begin{athex}{1.00}{-1.50}
         \drawdashedcounter  {+0.00}{+1.00}{90}
         \drawaircraftcounter{+0.00}{+2.00}{90}{F-4}{}{}
         \drawaircraftcounter{+1.00}{+2.50}{120}{F-4}{}{}
@@ -105,7 +106,7 @@
         \end{scope}
     \end{athex}
 
-    \begin{athex}{3.00}{4.50}
+    \begin{athex}{2.00}{1.00}
         \drawdashedcounter  {-0.50}{+0.75}{120}
         \drawaircraftcounter{-1.00}{+1.50}{120}{F-4}{}{}
         \drawaircraftcounter{-1.00}{+2.50}{120}{F-4}{}{}
@@ -118,7 +119,7 @@
     \end{athex}
 
 \end{tikzpicture}
-\end{fitwidth}
+\end{fitheight}
 
 \figurecaption{figure:barrel-roll-maneuvers}{A barrel roll executed as a sequence of two lag rolls to the right followed by one displacement roll to the right, each with two preparatory HFPs. Any combination of lag rolls and displacement rolls may make up a barrel roll, but all must be in the same direction. The number of preparatory HFPs required before each roll depends on the aircraft speed and other factors.}
 }

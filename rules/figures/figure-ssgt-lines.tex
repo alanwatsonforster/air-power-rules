@@ -3,9 +3,9 @@
 \begin{twocolumnfigure}[tbp]
 \begin{fitwidth}{0.3\linewidth}
 \begin{tikzpicture}
-    \setfiguresize{-6.1}{-7.67*\hexxfactor-0.1}{6.1}{0.67*\hexxfactor+0.1}
+    \setfiguresize{-6.1}{-6.7}{6.1}{1.6}
     \begin{scope}
-        \drawmediumhexgrid
+        \drawevenhexgrid{-6}{-6}{13}{8}
         \begin{scope}[very thick,dashed,-|]
             \draw (0,0) -- (210:6);
             \draw (0,0) -- (240:6*\hexxfactor);
@@ -20,9 +20,9 @@
 \hfil
 \begin{fitwidth}{0.3\linewidth}
 \begin{tikzpicture}
-    \setfiguresize{-6.1}{-7.67*\hexxfactor-0.1}{6.1}{0.67*\hexxfactor+0.1}
+    \setfiguresize{-6.1}{-6.7}{6.1}{1.6}
     \begin{scope}[rotate=90]
-        \drawmediumhexgrid
+        \drawevenhexgrid{-7}{-5.5}{9}{12}
         \begin{scope}[very thick,dashed,-|]
             \draw (0,0) -- (120:6*\hexxfactor);
             \draw (0,0) -- (150:6);
@@ -37,17 +37,17 @@
 \hfil
 \begin{fitwidth}{0.3\linewidth}
 \begin{tikzpicture}
-    \setfiguresize{-6.1}{-7.67*\hexxfactor-0.1}{6.1}{0.67*\hexxfactor+0.1}
+    \setfiguresize{-6.1}{-6.7}{6.1}{1.6}
     \begin{scope}[rotate=90]
-        \miniathex{0.0}{0.5}{\drawmediumhexgrid}
+        \drawoddhexgrid{-7}{-5}{9}{12}
         \begin{scope}[very thick,dashed,-|]
-            \miniathex{-0.333}{+0.000}{\draw (0,0) -- (120:6.667*\hexxfactor);}
-            \miniathex{+0.333}{-0.000}{\draw (0,0) -- (120:6.333*\hexxfactor);}
+            \miniathex{-0.333}{+0.000}{\draw (0,0) -- (120:6.333*\hexxfactor);}
+            \miniathex{+0.333}{-0.000}{\draw (0,0) -- (120:6.667*\hexxfactor);}
             \miniathex{-1.000}{+0.000}{\draw (0,0) -- (150:5);}
             \draw (0,0) -- (180:6*\hexxfactor);
             \miniathex{-1.000}{+0.000}{\draw (0,0) -- (210:5);}
-            \miniathex{+0.333}{-0.000}{\draw (0,0) -- (240:6.333*\hexxfactor);}
-            \miniathex{-0.333}{+0.000}{\draw (0,0) -- (240:6.667*\hexxfactor);}
+            \miniathex{+0.333}{-0.000}{\draw (0,0) -- (240:6.667*\hexxfactor);}
+            \miniathex{-0.333}{+0.000}{\draw (0,0) -- (240:6.333*\hexxfactor);}
         \end{scope}
         \drawaircraftcounter{0.00}{0.00}{0}{F-4}{}{}
     \end{scope}

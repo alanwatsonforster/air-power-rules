@@ -8,16 +8,17 @@
 
 \begin{onecolumnfigure}[t]
 
-\begin{fitwidth}{5.333\standardhexwidth}
+\begin{fitheight}{3.2\standardhexwidth}
 \begin{tikzpicture}
-    \drawhexgrid{0}{0}{4}{2}  
-    \drawaircraftcounter{1.00}{1.50}{90}{F-4}{}{}
-    \drawaircraftcounter{0.50}{0.25}{120}{F-4}{}{}
-    \drawaircraftcounter{3.00}{1.00}{90}{F-4}{}{}
-    \miniathex{0.00}{1.00}{\node {\scriptsize Legal};}
-    \miniathex{4.00}{1.00}{\node {\scriptsize Illegal};}
+    \setfiguresize{-2.5}{-1.6}{+2.5}{+1.6}
+    \drawevenhexgrid{-2}{-1}{5}{3}
+    \drawaircraftcounter{-1.00}{+0.50}{90}{F-4}{}{}
+    \drawaircraftcounter{-1.50}{-0.75}{120}{F-4}{}{}
+    \drawaircraftcounter{+1.00}{+0.00}{90}{F-4}{}{}
+    \miniathex{-2.00}{+0.00}{\node {\scriptsize Legal};}
+    \miniathex{+2.00}{+0.00}{\node {\scriptsize Illegal};}
 \end{tikzpicture}
-\end{fitwidth}
+\end{fitheight}
 
 
 \figurecaption{figure:map-location}{\protect\x{Map Location.}{Game counters representing aircraft and missiles must be located wholly within a hex or on a hex side. When located within a hex, the counter must face towards one of the sides or one of the corners. When located on a hex side, the counter must face along the hex side. The two counters on the left have legal map locations. The counter on the right has an illegal map location.}}
