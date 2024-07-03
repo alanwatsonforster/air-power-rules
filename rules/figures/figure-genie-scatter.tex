@@ -11,9 +11,9 @@
 
 \begin{fitheight}{5.2\standardhexwidth}
 \begin{tikzpicture}
-    \setfiguresize{-2.67*\hexxfactor-0.1}{-2.6}{+2.67*\hexxfactor+0.1}{+2.6}
+    \setfiguresize{-2.6}{-2.6}{+2.6}{+2.6}
     \begin{scope}
-        \drawmediumhexgrid
+        \drawevenhexgrid{-2}{-2}{5}{5}
         \begin{scope}[dashed,very thick, ->]
             \draw (0,0) --   (90:1.5) node [anchor=270] {1};
             \draw (0,0) --   (60:1.5) node [anchor=240] {2};
@@ -33,9 +33,9 @@
 \hfil
 \begin{fitheight}{5.2\standardhexwidth}
 \begin{tikzpicture}
-    \setfiguresize{-2.67*\hexxfactor-0.1}{-2.6}{+2.67*\hexxfactor+0.1}{+2.6}
+    \setfiguresize{-2.6}{-2.6}{+2.6}{+2.6}
     \begin{scope}[rotate=90]
-        \drawmediumhexgrid
+        \drawevenhexgrid{-2}{-2}{5}{5}
         \begin{scope}[dashed,very thick,->]
             \draw (0,0) --   (0:1.5) node [anchor=270] {1};
             \draw (0,0) -- (330:1.5) node [anchor=240] {2};
@@ -55,9 +55,9 @@
 \hfil
 \begin{fitheight}{5.2\standardhexwidth}
 \begin{tikzpicture}
-    \setfiguresize{-2.67*\hexxfactor-0.1}{-2.6}{+2.67*\hexxfactor+0.1}{+2.6}
+    \setfiguresize{-2.6}{-2.6}{+2.6}{+2.6}
     \begin{scope}[rotate=90]
-        \miniathex{0.0}{0.5}{\drawmediumhexgrid}
+        \drawoddhexgrid{-2}{-1.5}{5}{5}
         \begin{scope}[dashed,very thick,->]
             \draw (0,0) --    (0:1.7) node [anchor=270] {1};
             \draw (0:1.000*\hexxfactor) -- +(330:1.0) node [anchor=240] {2};

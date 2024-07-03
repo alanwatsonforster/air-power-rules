@@ -2,7 +2,13 @@
 \begin{fitheight}{3.2\standardhexwidth}
 \begin{tikzpicture}
     \setfiguresize{-1.67*\hexxfactor-0.1}{-1.6}{+1.67*\hexxfactor+0.1}{+1.6}
-    \drawmediumhexgrid
+    \drawhex{+0}{-1}
+    \drawhex{+0}{+0}
+    \drawhex{+0}{+1}
+    \drawhex{-1}{-0.5}
+    \drawhex{-1}{+0.5}
+    \drawhex{+1}{-0.5}
+    \drawhex{+1}{+0.5}
     \drawdotathex[black!25]{+0.00}{+0.50}
     \drawdotathex[black!25]{+0.50}{+0.25}
     \drawdotathex[black!25]{+0.50}{-0.25}
@@ -16,7 +22,16 @@
 \begin{fitheight}{3.2\standardhexwidth}
 \begin{tikzpicture}
     \setfiguresize{-1.67*\hexxfactor-0.1}{-1.6}{+1.67*\hexxfactor+0.1}{+1.6}
-    \miniathex{0.0}{0.5}{\drawmediumhexgrid}
+    \miniathex{0}{0.5}{
+        \drawhex{-1}{-1.5}
+        \drawhex{-1}{-0.5}
+        \drawhex{-1}{+0.5}
+        \drawhex{+0}{-1}
+        \drawhex{+0}{+0}
+        \drawhex{+1}{-1.5}
+        \drawhex{+1}{-0.5}
+        \drawhex{+1}{+0.5}
+    }
     \drawdotathex[black!25]{+0.00}{+0.50}
     \drawdotathex[black!25]{+0.50}{+0.25}
     \drawdotathex[black!25]{+0.50}{-0.25}
@@ -26,6 +41,7 @@
     \drawdotathex[black!25]{-0.50}{+0.25}
 \end{tikzpicture}
 \end{fitheight}
+
 
 \figurecaption{figure:range}{Range. The map locations shown in gray are half a hex from the map locations shown in black.}
 

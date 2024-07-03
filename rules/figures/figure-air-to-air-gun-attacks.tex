@@ -5,7 +5,15 @@
 \begin{tikzpicture}
     \setfiguresize{-1.6}{-0.67*\hexxfactor-0.1}{1.6}{3.67*\hexxfactor+0.1}
     \begin{scope}
-        \drawmediumhexgrid
+        \drawhex{-1}{+0.5}
+        \drawhex{-1}{+1.5}
+        \drawhex{-1}{+2.5}
+        \drawhex{+0}{+0}
+        \drawhex{+0}{+1}
+        \drawhex{+0}{+2}
+        \drawhex{+1}{+0.5}
+        \drawhex{+1}{+1.5}
+        \drawhex{+1}{+2.5}
         \drawdotathex{+0.00}{0.50}
         \drawdotathex{+0.00}{1.00}
         \drawdotathex{-0.50}{1.25}
@@ -23,7 +31,16 @@
 \begin{tikzpicture}
     \setfiguresize{-1.6}{-0.67*\hexxfactor-0.1}{1.6}{3.67*\hexxfactor+0.1}
     \begin{scope}[rotate=90]
-        \drawmediumhexgrid
+        \drawhex{+0}{-1}
+        \drawhex{+0}{+0}
+        \drawhex{+0}{+1}
+        \drawhex{+1}{-0.5}
+        \drawhex{+1}{+0.5}
+        \drawhex{+2}{-1}
+        \drawhex{+2}{+0}
+        \drawhex{+2}{+1}
+        \drawhex{+3}{-0.5}
+        \drawhex{+3}{+0.5}
         \drawdotathex{+1.00}{+0.00}
         \drawdotathex{+1.50}{+0.25}
         \drawdotathex{+1.50}{-0.25}
@@ -41,7 +58,18 @@
 \begin{tikzpicture}
     \setfiguresize{-1.6}{-0.67*\hexxfactor-0.1}{1.6}{3.67*\hexxfactor+0.1}
     \begin{scope}[rotate=90]
-        \miniathex{0.0}{0.5}{\drawmediumhexgrid}
+        \miniathex{0.0}{0.5}{
+            \drawhex{+0}{-1}
+            \drawhex{+0}{+0}
+            \drawhex{+1}{-1.5}
+            \drawhex{+1}{-0.5}
+            \drawhex{+1}{+0.5}
+            \drawhex{+2}{-1}
+            \drawhex{+2}{+0}
+            \drawhex{+3}{-1.5}
+            \drawhex{+3}{-0.5}
+            \drawhex{+3}{+0.5}
+        }
         \drawdotathex{+1.00}{+0.00}
         \drawdotathex{+1.50}{+0.25}
         \drawdotathex{+1.50}{-0.25}

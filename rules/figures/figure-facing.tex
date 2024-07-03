@@ -12,8 +12,7 @@
 \begin{fitheight}{5\standardhexwidth}
 \begin{tikzpicture}
     \scriptsize
-    \drawhex[color=white]{-2}{0}  
-    \drawhex[color=white]{+2}{0}  
+    \setfiguresize{-2.5}{-2.5}{+2.5}{+2.5}
     \drawhex{0}{0}  
     \drawhex{0}{+1}  
     \drawhex{0}{-1}  
@@ -41,11 +40,10 @@
 \end{minipage}
 \hfil
 \begin{minipage}[b][5\standardhexwidth][c]{5\standardhexwidth}
-\begin{fitheight}{5\standardhexwidth}
+\begin{fitwidth}{5\standardhexwidth}
 \begin{tikzpicture}[rotate=90]
     \scriptsize
-    \drawhex[color=white]{-2}{0}  
-    \drawhex[color=white]{+2}{0}  
+    \setfiguresize{-2.5}{-2.5}{+2.5}{+2.5}
     \drawhex{0}{0}  
     \drawhex{0}{+1}  
     \drawhex{0}{-1}  
@@ -69,7 +67,7 @@
     \end{scope}
     \drawaircraftcounter{0}{0}{330}{F-4}{}{}
 \end{tikzpicture}
-\end{fitheight}
+\end{fitwidth}
 \end{minipage}
 
 \figurecaption{figure:facing}{\protect\x{Facing.}{The direction of an aircraft or missile's nose on the game counter indicates its facing. The aircraft shown here face NNE.}}
