@@ -1,75 +1,109 @@
 \x{
 \rulechapter{Positioning Game Counters}
 }{
-\rulechapter{Positions}
+\rulechapter{Position and Facing}
 }
 
 \x{
 This chapter describes how the map hexes are utilized to position counters during play. The game map is used to show exactly where aircraft, missiles, and other units, are located in relationship to each other. Every game counter must be placed on the maps so that its position is clear to all players.
 }{
-This rule describes how the position of the game counters is defined with the help of the game map. The game map serves to show the exact location of aircraft, missiles, and other units. Every game counter must be placed on the map to make its location clear to all players. Aircraft and missiles in flight additionally have their position defined by their facing and altitude.
+This rule describes how the position and facing of an element --- an aircraft, a missile, a ground unit, or a naval unit --- is defined.
 }
 
 \x{
 \section{Basic Elements of Position}
-}{
-\section{Elements of Position}
-}
-\label{rule:position}
 
-\x{
 \paragraph{Aircraft and Missile Counters.} 
 Each aircraft and missile counter has a position which is defined by its map location, facing, and altitude.
-}{
-\paragraph{Aircraft and Missiles.} 
-All aircraft and missiles have their position defined by their map location, facing, and altitude.
-}
 
 \begin{itemize}
-    \item \itemparagraph{Map Location.} \x{
-    With respect to the hexgrid, aircraft and missiles may be located wholly within a hex or on one of the lines between two hexes (commonly called a hexside). When located on a hexside, the game counter must face parallel to that hexside as illustrated \changedin{1C}{1C-figures}{below}{in Figure~\ref{figure:map-location}}. \deletedin{2B}{2B-range}{\addedin{1B}{1B-apj-23-errata}{When determining range when one or both aircraft are on hexsides, count only the full hexes between them. Take the shortest number of hexes.}}
-    }{
-    Aircraft and missile counters must be located wholly within a hex or on one of the lines between two hexes, commonly called a hex side. When located on a hex side, the game counter must face parallel to that hex side as illustrated in Figure~\ref{figure:map-location}.
-    }
+    \item \itemparagraph{Map Location.} With respect to the hexgrid, aircraft and missiles may be located wholly within a hex or on one of the lines between two hexes (commonly called a hexside). When located on a hexside, the game counter must face parallel to that hexside as illustrated \changedin{1C}{1C-figures}{below}{in Figure~\ref{figure:map-location}}. \deletedin{2B}{2B-range}{\addedin{1B}{1B-apj-23-errata}{When determining range when one or both aircraft are on hexsides, count only the full hexes between them. Take the shortest number of hexes.}}
 
-    \item \itemparagraph{Facing.} \x{
-    This is the horizontal direction in which an aircraft or missile is flying. Use the silhouette on the counter to show facing by pointing the nose of the aircraft or missile in one of the twelve possible directions. Each direction differs by 30 degrees and has a corresponding compass heading associated with it (i.e., N = North, SSE = South South-East, etc.). In the scenario booklets, next to the map layout diagrams, there will be a compass arrow indicating which direction relative to the hexgrid that is North. \changedin{1C}{1C-figures}{See diagram below.}{See Figure~\ref{figure:facing}.}
-    }{
-    This is the horizontal direction in which an aircraft or missile is flying. Use the silhouette on the counter to show facing by pointing the nose of the aircraft or missile in one of the twelve possible directions shown in Figure~\ref{figure:facing}. Each direction differs by 30 degrees and has a corresponding compass heading associated with it (i.e., N is north, SSE is south-south-east, etc.). In the scenario booklets, next to the map layout diagrams, there will be a compass arrow indicating the direction of north relative to the hex grid.
-    }
+    \item \itemparagraph{Facing.} This is the horizontal direction in which an aircraft or missile is flying. Use the silhouette on the counter to show facing by pointing the nose of the aircraft or missile in one of the twelve possible directions. Each direction differs by 30 degrees and has a corresponding compass heading associated with it (i.e., N = North, SSE = South South-East, etc.). In the scenario booklets, next to the map layout diagrams, there will be a compass arrow indicating which direction relative to the hexgrid that is North. \changedin{1C}{1C-figures}{See diagram below.}{See Figure~\ref{figure:facing}.}
 
-    \item \itemparagraph{Altitude.} \x{
+    \item \itemparagraph{Altitude.} 
     An aircraft or missile's altitude is kept track of on the aircraft's log sheet in terms of numbered levels. Each altitude level represents 1000 feet of height thus the number of a level corresponds to the altitude in thousands of feet (i.e., level 24 = 24,000 feet). Altitude levels are further grouped into named bands as described later in the rules. Aircraft and missile performance may vary in each altitude band as shown on an aircraft's data card and in the missile flight tables.
-    }{
-    An aircraft or missile's altitude is described in terms of numbered levels. Each altitude level corresponds to 1000 feet. Thus, the number of a level corresponds to the altitude in thousands of feet (i.e., level 24 corresponds to 24,000 feet). Altitude levels are further grouped into named bands as described later in the rules. Aircraft and missile performance may vary between altitude bands, as shown on the aircraft data cards and according to the missile flight rules.
-    }
 
 \end{itemize}
+
+
+
+\paragraph{Ground and Naval Unit Counters.}
+Ground combat units and naval units have their positions defined simply by map location. They are always placed wholly within hexes and never on hexsides. Ground units never consider facing\addedin{1B}{1B-apj-23-errata}{ (except heavy AAA units under advanced rule 24.5)}, but large naval units must be faced in specific directions as for aircraft and missiles.
+
+}{
+\section{Position}
+\label{rule:position}
+
+Air combat occurs in three dimensions, and consequently, an element’s \emph{position} is defined in two dimensions by its \emph{map location} and in the third by its \emph{altitude}.
+
+\paragraph{Map Location.}\label{rule:map-location}
+
+The hex grid on the map defines \emph{map locations}. These are formally the centers of hexes and the centers of the sides of hexes, although they are hereafter referred to simply as “hexes” and “hex sides.” Figure~\ref{figure:map-location} shows map locations with respect to the hex grid.
+
+The game counter representing an element must be placed on the map in a way that makes its map location clear. 
+
+Map locations are written as the map designation (typically a letter or a letter followed by a number) followed by the hex number (for locations in hexes) or the hex numbers of the two adjacent hexes (for locations on hex sides). For example, “A-1316” or “B2-3421/3520”.
+
+\paragraph{Altitude.}\label{rule:altitude}
+
+Altitudes are given in terms of numbered \emph{altitude levels}. Each altitude level corresponds to 1000 feet above sea level, so the number of a level corresponds to the altitude in thousands of feet. For example, altitude level 24 corresponds to 24,000 feet above sea level.
+
+\paragraph{Aircraft and Missiles.} 
+
+
+The game counters representing aircraft and missiles may occupy map locations corresponding to either hexes and hex sides, as shown by Figure~\ref{figure:aircraft-map-location}. The altitude of an aircraft or missile is tracked on its log sheet (see rule~\ref{rule:aircraft-log-sheets}).
+
+\paragraph{Ground and Naval Units.}
+
+The game counters representing ground and naval units may only occupy map locations corresponding to hexes, as shown by Figure~\ref{figure:ground-unit-map-location}; they may not occupy hex sides. All ground units and naval units on rivers or lakes are always at the altitude level of the terrain (see rule~\ref{rule:ground-terrain}). Naval units on seas or oceans are always at altitude level 0.
 
 \input{figures/figure-map-location}
 
+\input{figures/figure-aircraft-map-location}
+
+\input{figures/figure-ground-unit-map-location}
+
+}
+
 \input{figures/figure-facing}
 
-\x{
-\paragraph{Ground and Naval Unit Counters.}
-Ground combat units and naval units have their positions defined simply by map location. They are always placed wholly within hexes and never on hexsides. Ground units never consider facing\addedin{1B}{1B-apj-23-errata}{ (except heavy AAA units under advanced rule 24.5)}, but large naval units must be faced in specific directions as for aircraft and missiles.
-}{
-\paragraph{Ground and Naval Units.}
-Most ground and naval units have their position defined only by their map location, although some also use facing.
-\begin{itemize}
-    \item\itemparagraph{Map Location.} Ground and naval unit counters are always placed wholly within hexes and never on hex sides.
-    
-    \item\itemparagraph{Facing.} Heavy AAA units (see rule~\ref{rule:heavy-aaa-unit-facing}) and large naval units must be faced like aircraft and missiles. Other ground and naval units do not consider facing.
 
-    \item\itemparagraph{Altitude.} Ground units and naval units on rivers or lakes are always at the altitude of terrain (see rule~\ref{rule:ground-terrain}). Naval units on seas or oceans are always at altitude level 0.
-\end{itemize}
+\Ax{
 }
 
 \Ax{
-\section{Altitude Bands} 
-Altitude levels are grouped into altitude bands, each several levels thick. Aircraft and missile performance can vary between the altitude bands, as the air density and temperature typically decrease with altitude. The altitude bands are shown in  Table~\ref{table:altitude-bands}.
+\section{Facing}
+\label{rule:facing}
+
+Some elements also have a \emph{facing} that defines the direction in which they are pointed or traveling.
+
+\paragraph{Principal Directions.}
+
+The hex grid on the map defines twelve \emph{principal directions} from the center of each hex to the centers of its six sides and its six corners. Each principal direction differs from the adjacent principal directions by 30{\deg}.
+
+The scenario will define the direction of north relative to the maps and the hex grid. It will always be aligned with one of the principal directions. Each principal direction is associated with a compass heading, as shown by Figure~\ref{figure:facing}.
+
+\paragraph{Aircraft and Missiles.} 
+
+The game counters representing aircraft and missiles must be oriented with their nose toward a principal direction. This direction defines their facing. 
+
+If an aircraft or missile is located in a hex, it may potentially face toward any one of the principal directions (i.e., toward any of the sides or corners). If it is on a hex side, it must face in one of the two principal directions parallel to the hex side, as shown by Figure~\ref{figure:aircraft-map-location}.
+
+\paragraph{Ground and Naval Units.}
+
+The game counters representing heavy AAA units (see rule~\ref{rule:heavy-aaa-unit-facing}) and large naval units (see rule~\ref{rule:naval-units}) must be faced with their top or bow toward a principal direction. This direction defines their facing.
+
+Other ground and naval units do not have defined facings, and the orientation of the counters representing them is not significant.
+}
+
+\Ax{
+\section{Altitude Bands}
+\label{rule:altitude-bands}
 
 \input {tables/table-altitude-bands}
+
+Altitude levels are grouped into \emph{altitude bands}, each several levels thick. Aircraft and missile performance can vary between the altitude bands, as the air density and temperature typically decrease with altitude. The altitude bands are shown in  Table~\ref{table:altitude-bands}.
 }
 
 \addedin{2B}{2B-range}{
