@@ -114,7 +114,10 @@ The modifiers for the hit die roll are described here and summarized in Table~\r
     Climbing or diving aircraft firing at targets in the same hex at the same or at different altitudes may be subject to Vertical Attack Modifiers (see 9.2 below).
     }{
     \itemparagraph{Same-Location Vertical Attack.} 
-    A climbing or diving aircraft firing at a target in the same map location  (i.e., the same hex or hex side) may be subject to a vertical-attack modifier. If the attacker is climbing and the target is diving, or vice versa, the modifier is $+2$. If the attacker is climbing or diving and the target is in level flight, the modifier is $+1$.
+    A climbing or diving aircraft firing at a target in the same map location  (i.e., the same hex or hex side) may be subject to a vertical-attack modifier. If the attacker is climbing and the target is diving, or vice versa, the modifier is $+2$. If the attacker is climbing or diving and the target is in level flight, the modifier is $+1$. If both the attacker and target are climbing or both are diving, there is no modifier.
+
+    % ISSUE: Use flight type from previous turn if the defender has not yet moved.
+    % ISSUE: Attackers in level flight should get +1 agains defenders in climbing or diving flight.
     }}
 
     \item\itemparagraph{Attacker Damage.} 
@@ -219,15 +222,9 @@ If the aircraft is firing both internal guns and pods or more than one pod, a si
 If the aircraft is firing internal guns and pods or more than one pod, a single die roll is used for the attack. The roll is compared to the hit die rolls of each gun firing. The damage rating is the highest of the guns that hit and is increased by $+1$ for each additional gun that hits.
 }
 
-\x{
+\Dx{
 \addedin{1B}{1B-apj-23-errata}{\paragraph{Vertical Attack Modifier.} 
 The same hex $+2$ Vertical Attack Modifier only applies if the target uses climbing or diving flight and the firer uses the opposite (i.e., diving aircraft attacking a climbing aircraft). A diving attacker firing on a diving target and a climbing attacker firing on a climbing target in the same hex are not subject to the vertical attack modifier. A climbing or diving attacker firing on a level target is subject to a reduced Vertical Attack Modifier of $+1$.}
-}{
-\paragraph{Same-Location Vertical Attacks.}
-A climbing or diving aircraft firing at a target in the same map location (i.e., the same hex or hex side) may be subject to a vertical-attack modifier. If the attacker is climbing and the target is diving, or vice versa, the modifier is $+2$. If the attacker is climbing or diving and the target is in level flight, the modifier is $+1$. If both the attacker and target are climbing or both are diving, there is no modifier.
-
-% ISSUE: Use flight type from previous turn if the defender has not yet moved.
-% ISSUE: Attackers in level flight should get +1 agains defenders in climbing or diving flight.
 }
 
 \addedin{1B}{1B-apj-23-errata}{\paragraph{Aborting Gun Shots.} 
