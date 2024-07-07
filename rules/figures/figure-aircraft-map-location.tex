@@ -12,16 +12,17 @@
 \begin{tikzpicture}
     \setfiguresize{-2.5}{-1.6}{+2.5}{+1.6}
     \drawevenhexgrid{-2}{-1}{5}{3}
-    \drawaircraftcounter{-1.00}{+0.50}{90}{F-4}{}{}
-    \drawaircraftcounter{-1.50}{-0.75}{120}{F-4}{}{}
-    \drawaircraftcounter{+1.00}{+0.00}{90}{F-4}{}{}
+    \drawaircraftcounter{-1.00}{+0.50}{90}{F-4}{A}{}
+    \drawaircraftcounter{-1.50}{-0.75}{120}{F-4}{B}{}
+    \drawaircraftcounter{+0.67}{+0.00}{0}{F-4}{C}{}
+    \drawaircraftcounter{+1.50}{+0.75}{30}{F-4}{D}{}
     \miniathex{-2.00}{+0.00}{\node {\scriptsize Valid};}
     \miniathex{+2.00}{+0.00}{\node {\scriptsize Invalid};}
 \end{tikzpicture}
 \end{fitheight}
 
 
-\figurecaption{figure:aircraft-map-location}{\protect\x{Map Location.}{Aircraft and missiles may be located either in hexes or on hex sides. When located in a hex, it must face towards one of the sides or one of the corners. When located on a hex side, it must face along the hex side. The two aircraft on the left have valid locations and facings. The aircraft on the right has a valid location but invalid facing.}}
+\figurecaption{figure:aircraft-map-location}{\protect\x{Map Location.}{Aircraft and missiles may be located either in hexes or on hex sides. When located in a hex, it must face towards one of the sides or one of the corners. When located on a hex side, it must face along the hex side. On the left, aircraft A and B ave valid map locations and facings. On the right, aircraft C has an invalid map location (a hex corner) and aircraft D has a valid map location but an invalid facing (not parallel to the hex side).}}
 
 \end{onecolumnfigure}
 
