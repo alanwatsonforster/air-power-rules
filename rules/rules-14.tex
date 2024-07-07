@@ -6,9 +6,9 @@ This chapter describes the procedures for launching and moving missiles in fligh
 }{
 This rule describes the procedures for launching and flying air-to-air missiles (AAMs) and conducting missile attacks on a target aircraft. 
 
-Air-to-air missiles can be divided according to their seeker into infrared- and radar-guided missiles. This rule describes the common characteristics of both types of missiles. The specific rules relating to the seekers are given in rule~\ref{rule:infeared-heat-seeking-missiles} for infrared-guided missiles and rule~\ref{rule:radar-guided-missiles} for radar-guided missiles. 
+Air-to-air missiles can be divided according to their seeker into infrared- and radar-guided missiles. This rule describes the common characteristics of both types of missiles. The specific rules relating to the seekers are given in rule~\ref{rule:infrared-heat-seeking-missiles} for infrared-guided missiles and rule~\ref{rule:radar-guided-missiles} for radar-guided missiles. 
 
-Targets may defend themselves against air-to-air missiles by maneuvering so that they can no longer be tracked by the seeker (see rules~\ref{rule:infeared-heat-seeking-missiles} and \ref{rule:radar-guided-missiles}) by dispensing decoys such as flares, chaff, and mini-jammers (see advanced rule~\ref{rule:dds}), by using radar or infrared jammers (see advanced rules~\ref{rule:radar-jamming} and \ref{rule:infrared-jamming}).
+Targets may defend themselves against air-to-air missiles by maneuvering so that they can no longer be tracked by the seeker (see rules~\ref{rule:infrared-heat-seeking-missiles} and \ref{rule:radar-guided-missiles}) by dispensing decoys such as flares, chaff, and mini-jammers (see advanced rule~\ref{rule:dds}), by using radar or infrared jammers (see advanced rules~\ref{rule:radar-jamming} and \ref{rule:infrared-jamming}).
 }
 
 \x{
@@ -31,7 +31,7 @@ The information required to launch and fly each type of air-to-air missile is pr
 
     \item \itemparagraph{Load.} The load points of missile (for conf.\ limits).
 
-    \item \itemparagraph{Seeker.} A letter code indicating the type of seeker the missile has. E, I, M, A, are infeared seekers (Early, Improved, Modern, Advanced).  BR, RH, AH are radar seekers (Beam-Rider, Radar-Homer, Active-Homer). A dash means it is unguided and has no seeker.
+    \item \itemparagraph{Seeker.} A letter code indicating the type of seeker the missile has. E, I, M, A, are infrared seekers (Early, Improved, Modern, Advanced).  BR, RH, AH are radar seekers (Beam-Rider, Radar-Homer, Active-Homer). A dash means it is unguided and has no seeker.
 
     \item \itemparagraph{Launch G.} This is the maximum turn rate an aircraft may use during flight to launch the missile without penalty. If a higher rate was used, a cumulative $+2$ modifier must be applied to the roll for each step of higher turn rate.
 
@@ -82,7 +82,7 @@ Table~\ref{table:missile-data} gives information for carrying, launching, flying
 
     \item \itemparagraph{Load.} This gives load points of the missile (for configuration limits).
 
-    \item \itemparagraph{Seeker.} A letter code indicating the type of seeker the missile has: E, I, M, and A are early, improved, modern, and advanced infeared seekers; BR, RH, and AH are beam-rider, radar-homing, and active-homing seekers; and a dash means that the missile is unguided and has no seeker.
+    \item \itemparagraph{Seeker.} A letter code indicating the type of seeker the missile has: E, I, M, and A are early, improved, modern, and advanced infrared seekers; BR, RH, and AH are beam-rider, radar-homing, and active-homing seekers; and a dash means that the missile is unguided and has no seeker.
 
     \item \itemparagraph{Launch Turn Rate.} This is the maximum turn rate an aircraft may use during flight to launch the missile without penalty. If the aircraft used a higher rate, a cumulative $+2$ modifier applies to the launch roll for each level of higher turn rate.
 
@@ -438,7 +438,7 @@ For example, consider two missiles with 17 FPs launched at an aircraft with 5 FP
 
     A missile may not dive if its target is at the same or a higher altitude level.
 
-    \item \itemparagraph{Combined Flight.} FPs may be expended in level and climbing flight and level and diving flight in any order. Any number of FPs may be expended in climbing flight or diving flight at the same location, but a missile may not expend FPs in both climbing and diving flight at the same location. Furthermore, the following requirements apply to changing between climbing flight and diving flight or vice versa:
+    \item \itemparagraph{Combined Flight.} FPs may be expended in level and climbing flight and level and diving flight in any order. Any number of FPs may be expended in climbing flight or diving flight at the same map location (i.e., the same hex or hex side), but a missile may not expend FPs in both climbing and diving flight at the same map location. Furthermore, the following requirements apply to changing between climbing flight and diving flight or vice versa:
 
 
     \begin{itemize}
@@ -459,7 +459,7 @@ For example, consider two missiles with 17 FPs launched at an aircraft with 5 FP
 
     The missile must meet the normal preparatory FP requirements for slide maneuvers, including penalties for altitude and supersonic speed if applicable. A slide maneuver costs 1 FP to execute. All FPs used to prepare for and execute a slide maneuver must be in level flight.
         
-    Any missile that expends more than one FP from the same location while climbing or diving may execute a vertical roll at no cost in FPs. Missiles are normally limited to one vertical roll in their entire flight. However, every time their target performs a vertical roll, a missile is allowed to perform one additional vertical roll in the same game turn.
+    Any missile that expends more than one FP from the same map location (i.e., the same hex or hex side) while climbing or diving may execute a vertical roll at no cost in FPs. Missiles are normally limited to one vertical roll in their entire flight. However, every time their target performs a vertical roll, a missile is allowed to perform one additional vertical roll in the same game turn.
 
 \end{itemize}
 }
@@ -474,7 +474,7 @@ To become armed, missiles must expend their first FP moving forward in level fli
 \paragraph{Missile Arming.} \label{rule:instant-arming-missiles}
 Missiles must complete arming before they can declare turns, declare maneuvers, or attack a target. The arming requirements are different for normal missiles and instant-arming missiles. Instant-arming missiles are noted as such in Table~\ref{table:missile-data}.
 
-Normal missiles complete arming after expending their first FP. They cannot declare turns or maneuvers before their first FP, so they cannot use it for turn requirements or in preparation for a maneuver. They can only declare attacks after expending their first FP. If they reach the location and altitude of their target in their first FP, they miss and are removed from play.
+Normal missiles complete arming after expending their first FP. They cannot declare turns or maneuvers before their first FP, so they cannot use it for turn requirements or in preparation for a maneuver. They can only declare attacks after expending their first FP. If they reach the position (i.e., map location and altitude) of their target in their first FP, they miss and are removed from play.
 
 Instant-arming missiles are armed as soon as they are launched. They can declare turns and maneuvers before their first FP and use it for turn requirements or in preparation for a maneuver. They can also declare attacks before expending their first FP. 
 
@@ -533,9 +533,9 @@ On the first and subsequent turns of flight, the follow-on must cease moving whe
 \paragraph{When Does A Missile Attack?} 
 A missile attacks its target the instant one of the following conditions are fulfilled:
 \begin{enumerate}
-\item The missile moves to the same location and altitude as the target.
-\item The target moves to the same location and altitude as the missile.
-\item At the start of or during the missile’s proportional move, the target occupies one of the locations shown in Figure~\ref{figure:missile-attacks} relative to the missile, the missile has the same altitude as the target, and the missile has at least one FP remaining in its proportional move.
+\item The missile moves to the same position (i.e., map location and altitude) as the target.
+\item The target moves to the same position (i.e., map location and altitude) as the missile.
+\item At the start of or during the missile’s proportional move, the target occupies one of the map locations shown in Figure~\ref{figure:missile-attacks} relative to the missile, the missile has the same altitude as the target, and the missile has at least one FP remaining in its proportional move.
 \end{enumerate}
 }
 

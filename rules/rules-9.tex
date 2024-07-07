@@ -40,7 +40,7 @@ All aircraft guns have a range of two hexes unless noted otherwise on the ADC. \
 The procedure to obtain the range in air-to-air gun attacks differs from that described in rule~\ref{rule:range} and used in the rest of the game. 
 
 \begin{itemize}
-\item The horizontal range is determined using Figure~\ref{figure:air-to-air-gun-attacks}. If the target occupies the same map location as the attacker, the horizontal range is 0.
+\item The horizontal range is determined using Figure~\ref{figure:air-to-air-gun-attacks}. If the target occupies the same map location (i.e., the same hex or hex side) as the attacker, the horizontal range is 0.
 \item The vertical range is the difference in altitude levels divided by two and rounded down.
 \item The range is the sum of the horizontal and vertical ranges.
 \end{itemize}
@@ -58,8 +58,8 @@ The following requirements apply to gun attacks:
     \item An aircraft may not fire on an unsighted aircraft.
     \item A climbing aircraft may not fire on a lower aircraft
     \item A diving aircraft may not fire on a higher aircraft.
-    \item An aircraft in level flight may fire on a target in the same map location only if it is at the same altitude.
-    \item An aircraft in level flight may fire on a target in another map location only if it is at the same or an adjacent altitude level.
+    \item An aircraft in level flight may fire on a target in the same map location  (i.e., the same hex or hex side) only if it is at the same altitude.
+    \item An aircraft in level flight may fire on a target in another map location  (i.e., a different hex or hex side) only if it is at the same or an adjacent altitude level.
     \item An aircraft may not fire immediately after an FP in which it turned at the ET rate, an unloaded FP, or an FP used to prepare for or execute a rolling maneuver.
     \item An aircraft may not fire immediately after an FP in the recovery period after an ET turn or an unloaded FP.
 
@@ -114,7 +114,7 @@ The modifiers for the hit die roll are described here and summarized in Table~\r
     Climbing or diving aircraft firing at targets in the same hex at the same or at different altitudes may be subject to Vertical Attack Modifiers (see 9.2 below).
     }{
     \itemparagraph{Same-Location Vertical Attack.} 
-    A climbing or diving aircraft firing at a target in the same map location may be subject to a vertical-attack modifier. If the attacker is climbing and the target is diving, or vice versa, the modifier is $+2$. If the attacker is climbing or diving and the target is in level flight, the modifier is $+1$.
+    A climbing or diving aircraft firing at a target in the same map location  (i.e., the same hex or hex side) may be subject to a vertical-attack modifier. If the attacker is climbing and the target is diving, or vice versa, the modifier is $+2$. If the attacker is climbing or diving and the target is in level flight, the modifier is $+1$.
     }}
 
     \item\itemparagraph{Attacker Damage.} 
@@ -274,7 +274,7 @@ For example, an aircraft directly behind the target aircraft and facing in the s
 \paragraph{Angle-Off Procedure for Attack Modifiers.}
 This procedure is used to determine the angle-off modifiers for gun (rule~\ref{rule:air-to-air-gun-combat}), rocket (rule~\ref{rule:air-to-air-rocket-combat}), and missile (rule~\ref{rule:air-to-air-missiles}) attacks on aircraft.
 
-If the attacking aircraft or missile and the target are at the same map location (hex or hex side), the angle-off arc is given by the difference in their facings. A difference of \arc{180} corresponds to the \arc{180} line rather than the \arc{180} arc. For example, if the target faces N and the attacker faces NNW, the facing difference is \arc{30}, and the attacker is in the target's left \arc{30} arc.
+If the attacking aircraft or missile and the target are at the same map location (i.e., the same hex or hex side), the angle-off arc is given by the difference in their facings. A difference of \arc{180} corresponds to the \arc{180} line rather than the \arc{180} arc. For example, if the target faces N and the attacker faces NNW, the facing difference is \arc{30}, and the attacker is in the target's left \arc{30} arc.
 
 Otherwise, consult Figure~\ref{figure:angle-off}. The attacking aircraft or missile will often unambiguously be in an angle-off arc. However, sometimes the attacker will be located on the borderline between two arcs. To resolve these cases, consider the speeds of the attacker and target at the start of the game turn:
 \begin{itemize}
