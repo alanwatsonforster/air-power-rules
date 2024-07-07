@@ -110,7 +110,7 @@ Altitude levels are grouped into \emph{altitude bands}, each several levels thic
 \section{Range}
 \label{rule:range}
 
-Many rules depend on the range between two counters. Other than in the exceptional cases noted subsequently, the range in hexes between two counters is determined as using the following procedure.
+Many rules depend on the \emph{range} from one element to another. Other than in the exceptional cases noted subsequently, the range in hexes between two elements is determined as using the following procedure.
 
 \paragraph{Range Procedure.}
 The range has two components, the horizontal and vertical ranges. They are determined and combined as follows:
@@ -119,12 +119,20 @@ The range has two components, the horizontal and vertical ranges. They are deter
 
 \begin{itemize}
 \item
-The horizontal range is the length of the shortest route between the map locations, measured in hexes. Moving between a hex side and one of the two adjacent hexes or four adjacent hex sides counts as one-half of a hex, as shown in Figure~\ref{figure:range}. After determining the number of hexes, including half hexes, round down. That is, half hexes can only contribute a full hex to the horizontal range if both the initial and final segments of the route are half hexes.
+The horizontal range is the length of the shortest route between the map locations, measured in hexes and counting only whole hexes.
+
+If both elements are on hex centers, then the procedure is straightforward and probably familiar. However, if one or both are on hex sides, it may be less familiar. Figure~\ref{figure:range} shows map locations that are one hex apart, including both hex centers and hex sides. These diagrams can be understood by considering Figure~\ref{figure:map-location} and noting that the distance from each map location to the surrounding six map locations is half a hex.
+
+Figure~\ref{figure:range-example} gives examples of horizontal ranges.
+
 \item
-The vertical range is the difference in altitude levels divided by two and rounded down. That is, each two full altitudes levels of difference counts as one hex of vertical range.
+The vertical range is the difference in altitude levels divided by two and rounded down. That is, each two whole altitudes levels of difference counts as one hex of vertical range.
 \item
 The range is the sum of the horizontal and the vertical ranges.
 \end{itemize}
+
+\input{figures/figure-range-example}
+
 
 \paragraph{Range Exceptions.}
 The normal range procedure is \emph{not} used in the following cases:
