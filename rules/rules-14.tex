@@ -645,6 +645,17 @@ An aircraft may declare itself defensively engaged against any missiles that are
 
 % ISSUE: GLOC? Disorientation? Individually sighted?
 
+\paragraph{Engagement Requirements.} 
+
+A target aircraft may not defensively engage (see rule~\ref{rule:engaging-missiles}) a missile  unless:
+\begin{itemize}
+    \item In the aircraft decisions phase, the missile is individually by the target aircraft, 
+    \item In the aircraft decisions phase, the missile and the target aircraft are individually sighted by an aircraft friendly to the target aircraft and neither are in that aircraft’s restricted arc, or
+    \item The target aircraft has RWR indications of a missile attack (see rule~\ref{rule:rwr}).
+\end{itemize}
+Furthermore, an aircraft whose pilot is suffering from GLOC (see rule~\ref{rule:gloc}), is disoriented (see advanced rule~\ref{rule:disorientation}), or is green (see advanced rule~\ref{rule:crew-quality}) may not defensively engage a missile.
+
+
 \paragraph{Missile Attacks on Engaged Aircraft.} An engaged aircraft is considered to be actively defending itself against attacking missiles. As such, it is allowed the following benefits during its move:
 
 \begin{itemize}
@@ -673,7 +684,11 @@ Against engaged aircraft, missiles that were not sighted or for which it has not
 \end{itemize}
 
 
-\paragraph{Engagement Restrictions.} An engaged aircraft is not allowed to make attacks of any sort, may not launch weapons, may not use terrain-following flight, and may not perform damage control.
+\paragraph{Engagement Restrictions.} An engaged aircraft is not allowed to make attacks of any sort, may not launch weapons, may not perform damage control (see advanced rule~\ref{rule:damage-control}), may not carry out radar searches (see rule~\ref{rule:radar-searches}), loses all radar lock-ons (see rule\ref{rule:radar-tracking}), may not illuminate a target (see rule~\ref{rule:target-illumination})
+
+If an aircraft in terrain-following flight (see advanced rule~\ref{rule:terrain-following-flight} engages a missile, it is considered to have left terrain-following flight during the aircraft decisions phase. An engaged aircraft may not enter terrain-following flight.
+
+If an aircraft in a close formation (see advanced rule~\ref{rule:close-formations}) engages a missile, all aircraft in the formation move as if they were engaged (i.e., at the same time as the missile and with all of the restrictions on an engaged aircraft) and the formation is considered to have broken down.
 
 }
 
