@@ -1,3 +1,5 @@
+% !TEX program = xelatex
+
 \documentclass[10pt]{report}
 
 \newcommand{\thisversion}{2C}
@@ -6,10 +8,10 @@
 \newif\ifpartial\partialtrue
 
 \ifpartial
-% Overleaf wants \tikzexternalize in the main file.
 \usepackage{tikz}
 \usetikzlibrary{external}
-%\tikzexternalize
+\tikzsetexternalprefix{external/}
+\tikzexternalize
 \fi
 
 \input{rules}

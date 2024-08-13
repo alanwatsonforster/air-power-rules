@@ -115,7 +115,7 @@ Table~\ref{table:missile-data} gives information for carrying, launching, flying
     \item \itemparagraph{Notes.} The notes indicate whether the missile has special characteristics such as:
     \begin{itemize}
         \item NW: nuclear warhead (see advanced rule~\ref{rule:air-to-air-nuclear-rockets}).
-    \item UNC: compatible with IR uncage technology (see rule~\ref{rule:ir-uncage}).
+    \item UNC: seeker compatible with IR uncage technology (see rule~\ref{rule:ir-uncage}).
     \item HOJ: home-on-jam seeker (see rule~\ref{rule:home-on-jam-seeker}).
     \item IA: instant-arming missile (see rule~\ref{rule:instant-arming-missiles}).
     \item LD: look-down missile (see rule~\ref{rule:look-down-missiles}).
@@ -263,7 +263,7 @@ Table~\ref{table:missile-launch-modifiers} summarizes the modifiers for missile 
     
     \item The quality and characteristics of the crew give launch modifiers (see advanced rule~\ref{rule:crew-quality} and \ref{rule:crew-characteristics}). 
     
-    In multi-crew aircraft, the pilot is the relevant crew member for IRM launches, and the radar operator (RIO, WSO, or equivalent) is the relevant crew member for BRM, RHM, and ARM launches.
+    In multi-crew aircraft, the pilot is the relevant crewmember for IRM launches, and the radar operator (RIO, WSO, or equivalent) is the relevant crewmember for BRM, RHM, and ARM launches.
 
     \item If the launch aircraft is damaged, it suffers a launch modifier.
     
@@ -351,7 +351,7 @@ If an aircraft's speed includes a fraction; say it is 4.5 instead of 5.0, round 
 \begin{itemize}
 \item If the missile and aircraft have the same number of FPs available, they alternate FPs one by one, with the missile moving first.
 
-\item The missile will typically have more FPs than the aircraft. In this case, divide the missile's number of FPs by the aircraft's number of FPs. If the result is exact, the missile and aircraft alternative proportional moves, with the missile moving the result in FPs and then the aircraft moving one FP. If the result is not exact, this procedure is modified with the remaining FPs being added one each to the first proportional moves of the missile.
+\item The missile will typically have more FPs than the aircraft. In this case, divide the missile's number of FPs by the aircraft's number of FPs. If the result is exact, the missile and aircraft alternative proportional moves, with the missile moving the result in FPs and then the aircraft moving one FP. If the result is not exact, this procedure is modified, and the remaining FPs are added one each to the first proportional moves of the missile.
 
 \item If the aircraft has more FPs than the missile, use the preceding procedure with the roles reversed to determine the number of FPs in the aircraft's proportional moves. The missile still moves first.
 
@@ -476,7 +476,7 @@ Missiles must complete arming before they can declare turns, declare maneuvers, 
 
 Normal missiles complete arming after expending their first FP. They cannot declare turns or maneuvers before their first FP, so they cannot use it for turn requirements or in preparation for a maneuver. They can only declare attacks after expending their first FP. If they reach the position (i.e., map location and altitude) of their target in their first FP, they miss and are removed from play.
 
-Instant-arming missiles are armed as soon as they are launched. They can declare turns and maneuvers before their first FP and use it for turn requirements or in preparation for a maneuver. They can also declare attacks before expending their first FP. 
+Instant-arming missiles are armed from the moment they are launched. They can declare turns and maneuvers before their first FP and use it for turn requirements or in preparation for a maneuver. They can also declare attacks before expending their first FP. 
 
 A missile's first FP must be spent in level flight unless, in the game turn it was launched, the launching aircraft used climbing or diving flight and spent more than half of its FPs as VFPs. In this case, the missile could either spend its first FP in level flight or in climbing or diving flight, respectively.
 
@@ -540,7 +540,7 @@ A missile attacks its target the instant one of the following conditions are ful
 }
 
 \Ax{
-\paragraph{Manually Decoy Procedure.} Some aircraft are equipped with an integrated or pod-mounted defensive decoy system (DDS) that can dispense flares, chaff, or mini-jammers in an attempt to confuse missile seekers (see advanced rule \ref{rule:dds}).
+\paragraph{Manual Decoy Procedure.}\label{rule:manual-decoy-procedure} Some aircraft are equipped with an integrated or pod-mounted defensive decoy system (DDS) that can dispense flares, chaff, or mini-jammers in an attempt to confuse missile seekers (see advanced rule \ref{rule:dds}).
 
 An engaged aircraft (see rule~\ref{rule:engaging-missiles}) equipped with a DDS may manually dispense decoys to attempt to defeat an attack by a sighted missile. Decoys may be dispensed manually even if an automatic decoy program is in effect (see advanced rule~\ref{rule:dds} and below). A non-engaged aircraft may not manually dispense decoy clusters.
 
@@ -662,9 +662,11 @@ Furthermore, an aircraft whose pilot is suffering from GLOC (see rule~\ref{rule:
 
     \item If it selects idle power, it automatically gains the $+1$ hit modifier against attacks by IR missiles. This benefit applies to all IR missile attacks, even those by unsighted missiles or missiles for which it has not been alerted by ECM.
     
-    \item It may manually deploy decoys to attempt to defeat sighted missiles or missiles to which it has been alerted by ECM.
+    \item It may manually deploy decoys (see rule~\ref{rule:manual-decoy-procedure}) to attempt to defeat sighted missiles or missiles to which it has been alerted by ECM.
     
 \end{itemize}
+
+\showhyphens{sightedy}
 
 However, an engaged aircraft may only deploy manual decoys against sighted missiles or those for which it has been alerted by ECM. 
 
@@ -686,7 +688,7 @@ Against engaged aircraft, missiles that were not sighted or for which it has not
 
 \paragraph{Engagement Restrictions.} An engaged aircraft is not allowed to make attacks of any sort, may not launch weapons, may not perform damage control (see advanced rule~\ref{rule:damage-control}), may not carry out radar searches (see rule~\ref{rule:radar-searches}), loses all radar lock-ons (see rule\ref{rule:radar-tracking}), may not illuminate a target (see rule~\ref{rule:target-illumination})
 
-If an aircraft in terrain-following flight (see advanced rule~\ref{rule:terrain-following-flight} engages a missile, it is considered to have left terrain-following flight during the aircraft decisions phase. An engaged aircraft may not enter terrain-following flight.
+If an aircraft in terrain-following flight (see advanced rule \ref{rule:terrain-following-flight}) engages a missile, it is considered to have left terrain-following flight during the aircraft decisions phase. An engaged aircraft may not enter terrain-following flight.
 
 If an aircraft in a close formation (see advanced rule~\ref{rule:close-formations}) engages a missile, all aircraft in the formation move as if they were engaged (i.e., at the same time as the missile and with all of the restrictions on an engaged aircraft) and the formation is considered to have broken down.
 
@@ -752,7 +754,7 @@ On the first game turn sustainer powered flight, use the missile speed attenuati
 
 }{
 
-Missiles use powerful boost motors to accelerate to top speed within two to three seconds. After that, most missiles glide to their targets and rapidly lose speed. Some have sustainer motors that burn after the booster goes out and lose speed at a lesser rate. Nevertheless, the speed loss can be dramatic, up to a third of the missile’s top speed within a single turn, depending on its actions. This procedure replaces the simpler method for determining missile speeds given by rule \ref{rule:missile-flight}.
+Missiles use powerful boost motors to accelerate to top speed within two to three seconds. After that, most missiles glide to their targets and rapidly lose speed. Some have sustainer motors that burn after the booster goes out and lose speed at a lesser rate. Nevertheless, the speed loss can be dramatic, up to a third of the missile’s top speed within a single turn, depending on its actions. This procedures given here replace the simpler methods for determining missile speeds given by rule \ref{rule:missile-flight}.
 
 \paragraph{Missile Speed Attenuation Procedure.}
 Each turn, the average speed of the missile is determined based on its start speed, altitude, and flight time. The average speed is noted in the log. The average speed gives the number of FPs available to a missile and is used for all other purposes, including turn requirements. It is calculated as follows:
@@ -767,7 +769,7 @@ On the second and subsequent game turns of flight, the missile’s start speed i
 The average speed of a missile during a game turn, including the first game turn, is obtained by multiplying the missile’s start speed by the attenuation factor from Table~\ref{table:missile-speed-attenuation-factor} appropriate for the altitude band of the missile and its game turn of flight. Round any resulting fractions to the nearest whole number, with 0.5 rounding up. Table~\ref{table:missile-speed-math-saver} gives the result of this calculation for all valid start speeds and attenuation factors.
 \end{itemize}
 
-\paragraph{Missile Sustainer Procedure.} Some missiles have sustainer motors that provide extra thrust after the missile’s booster gives out. This procedure replaces the simpler method by rule \ref{rule:missile-flight}.
+\paragraph{Missile Sustainer Procedure.} Some missiles have sustainer motors that provide extra thrust after the missile’s booster gives out
 
 \begin{itemize}
     \item On the first game turn of sustainer-powered flight, determine the average speed using the attenuation factor for the altitude band two above the actual band (up to the UH altitude band).
