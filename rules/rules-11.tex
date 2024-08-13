@@ -59,7 +59,7 @@ Padlocking is an administrative procedure used only in the Visual Sighting Phase
 
 \paragraph{Sighting Range.} The range for sighting is determined normally (see rule~\ref{rule:range}) with one exception: when attempting to sight a higher aircraft in daylight, the vertical range is the difference in altitude levels divided by \emph{four} (rather than two) and rounded down. This is because it is easier to see an aircraft silhouetted against the sky.
 
-\paragraph{Blind and Restricted Arcs.} A pilot's view may be obstructed by their aircraft's rear fuselage and nose. Each aircraft's ADC indicates its blind and restricted arcs (if any). An L after the arc indicates that the aircraft is blinded or restricted only to lower altitude in that arc. An aircraft cannot padlock or attempt to sight targets in its blind arcs. 
+\paragraph{Blind and Restricted Arcs.} A crewmember’s view may be obstructed by their aircraft’s rear fuselage and nose. Each aircraft’s ADC indicates its blind and restricted arcs (if any). An L after the arc indicates that the aircraft is blinded or restricted only to lower altitude in that arc. An aircraft cannot padlock or attempt to sight targets in its blind arcs. 
 
 An aircraft also cannot attempt to sight targets at the same map location (i.e., the same hex or hex side) but lower altitude, but it can padlock them (as the padlocking aircraft can roll slightly to keep the target in view). An aircraft may sight or padlock targets at the same map location but higher altitude.
 
@@ -85,9 +85,9 @@ While it is normally not possible to sight lower targets at the same map locatio
 
 After padlocking, each side attempts to sight first unsighted opposing missiles and then unsighted opposing aircraft.
 
-For each unsighted opposing target, determine which friendly aircraft can participate in the sighting attempt. To participate, the aircraft must have at least one crew member who is not disoriented or suffering from GLOC, must be within visual sighting range, must not have the target in its blind arc, and must not have its line of sight blocked by terrain. 
+For each unsighted opposing target, identify which friendly aircraft can participate in the sighting attempt. To participate, the aircraft must have at least one crewmember who is not disoriented or suffering from GLOC, must be within visual sighting range, must not have the target in its blind arc, and must not have its line of sight blocked by terrain. 
 
-If no friendly aircraft satisfies these conditions, the unsighted target remains unsighted.
+If no friendly aircraft can participate, the unsighted target remains unsighted.
 
 Otherwise, determine which of the participating aircraft is the searcher. This will normally be the participating friendly aircraft closest to the target, but if two or more are equally close, their players may designate which is the searcher. Roll a die and apply appropriate modifiers. The target is sighted if the modified result is less than or equal to the target's visibility number.
 
@@ -130,7 +130,7 @@ Otherwise, determine which of the participating aircraft is the searcher. This w
     \item \itemparagraph{Restricted Arc.} If the target is in the restricted arcs of \emph{all} of the participants, apply a modifier of $+2$.
     \item \itemparagraph{Missile Motor.} If the target is a missile whose boost or sustainer motor burned in the previous game turn, apply a modifier of $-3$ for a normal motor and $-1$ for a smokeless motor.
     \item \itemparagraph{Missile Launch.} If the target is a missile launched from a sighted aircraft in the previous game turn or an aircraft that launched a sighted missile in the previous game turn, apply a modifier of $-2$. (For these modifiers, it is important to attempt to sight missiles before aircraft.)
-    \item \itemparagraph{Target using DDS Flares.} If the target used a DDS program with flares in the previous game turn (see rule~\ref{rule:dds}), apply the PPL as a modifier.
+    \item \itemparagraph{Target using DDS Flares.} If the target used a DDS program with flares (see rule~\ref{rule:dds}) in the previous game turn, apply the PPL as a modifier.
     \item \itemparagraph{Searcher is Multi-Crew.} If the searcher is a multi-crew aircraft,    
     apply a $-1$ modifier. A searcher with one crewmember who is disoriented or suffering from GLOC does not gain this modifier.
     \item \itemparagraph{Searcher is in Stratus.} If the searcher is looking out of stratus, apply a modifier of $+2$.
@@ -174,7 +174,7 @@ One exception to this restriction is that IRMs may be fired upon targets that ha
     \item the attacker is sighted, and both attacker and defender are within spotting range of (and not in the blind or restricted arc of) another friendly aircraft at the start of the \changedin{2B}{2B-sighting-and-pre-emption}{defender's}{attacker's} movement.
 \end{itemize}
 }{
-\paragraph{Sighting Restrictions on Defensive Preemption.}
+\paragraph{Sighting and Defensive Preemptions.}
 A threatened aircraft may not preempt (see rule~\ref{rule:defensive-preemptions}) a threatening aircraft unless:
 \begin{itemize}
      \item At the start of the threatening aircraft’s move, it is individually sighted by the threatened aircraft,
@@ -192,8 +192,8 @@ A threatened aircraft may not preempt (see rule~\ref{rule:defensive-preemptions}
     \item RWR indications allow the engagement of an unsighted missile.
 \end{itemize}
 }{
-\paragraph{Sighting Restrictions on Defensively Engaging Missiles.} 
-A target aircraft may not defensively engage (see rule~\ref{rule:engaging-missiles}) a missile  unless:
+\paragraph{Sighting and Defensively Engaging Missiles.} 
+A target aircraft may not defensively engage a missile (see rule~\ref{rule:engaging-missiles}) unless:
 \begin{itemize}
     \item In the aircraft decisions phase, the missile is individually by the target aircraft, 
     \item In the aircraft decisions phase, the missile and the target aircraft are individually sighted by an aircraft friendly to the target aircraft and neither are in that aircraft’s restricted arc, or
@@ -321,7 +321,7 @@ A visual augmentation system (VAS) uses television and optical equipment to enha
 
 \end{itemize}
 
-In the first case, sighting automatically succeeds if the searcher has a radar lock on the target. Otherwise, roll a die and apply appropriate modifiers. The VAS range modifiers are used instead of the visual sighting range modifiers, and eyesight, multi-crew, and HUD interface modifiers are ignored. The target is sighted if the modified result is less than or equal to the target’s visibility number.
+In the first case, if the searcher has a radar lock on the target, sighting automatically succeeds. Otherwise, roll a die and apply appropriate modifiers. The VAS range modifiers are used instead of the visual sighting range modifiers, and eyesight, multi-crew, and HUD interface modifiers are ignored. The target is sighted if the modified result is less than or equal to the target’s visibility number.
 
 \paragraph{VAS Restrictions.}
 An aircraft that elects to use VAS during the visual sighting phase may not padlock. An aircraft sighted by a VAS system is sighted only to the VAS-equipped aircraft that sighted it and may only be attacked by other aircraft if it is also visually sighted normally.

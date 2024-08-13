@@ -1,0 +1,24 @@
+#!/bin/sh
+
+./latex-compile.py --engine=xelatex "$1" |
+sed "
+  s/^compiling \(.*\)\.\.\./compiling./
+  s/^in file //
+  s/\(.*\):\(.* at lines \)\([0-9][0-9]*\)\(.*\)/\1:\3: \2\3\4/
+  /:  Underfull /{
+      s/:  Underfull /: warning: underfull /
+      p
+      d
+  }
+  /:  Overfull /{
+      s/:  Overfull /: warning: underfull /
+      p
+      d
+  }
+  s/.*/$1:0: other: &/
+" |
+sed 's/^\.\///' |
+tee /dev/stderr | 
+bbresults -p '(?P<file>.+?):(?P<line>\d+):((?P<col>\d+):)?\s+(?P<type>[weo][a-z]+:)?\s+(?P<msg>.*)$'
+
+exit
