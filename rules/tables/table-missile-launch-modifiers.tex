@@ -40,7 +40,7 @@ C&\changedin{2B}{2B-missile-launch-modifiers}{$+2$}{$+3$}\\
 \begin{twocolumntable}
 \tablecaption{table:missile-launch-modifiers}{Air-to-Air Missile Launch Modifiers}
 
-\begin{tabularx}{0.7\linewidth}{Xll}
+\begin{tabularx}{0.9\linewidth}{Xll}
 \toprule
 Description&Modifier&Rule\\
 \midrule
@@ -51,11 +51,11 @@ Missile is launched out-of-envelope&$+3$&\ref{rule:irm-out-of-envelope-launches}
 \midrule
 \multicolumn{2}{c}{IRMs}\\
 \midrule
-Target is in ground clutter&$+2$&\ref{rule:irm-launch-modifiers}\\
+Target is in infrared ground clutter$^1$&$+2$&\ref{rule:irm-launch-modifiers}\\
 Target is lower and above the highest cloud layer&$+3$&\ref{rule:clouds}$^*$
 \\
 Target is in Sun clutter&$+3$&\ref{rule:sun}$^*$\\
-Target is using a flare DDS (up to missile flare rating)&$+$PPL&\ref{rule:irm-launch-modifiers}$^*$\\
+Target is using a flare DDS&$+$PPL (up to flare rating)&\ref{rule:irm-launch-modifiers}$^*$\\
 \midrule
 \multicolumn{2}{c}{BRMs, RHMs, and AHMs}\\
 \midrule
@@ -75,8 +75,8 @@ H&$+2$&\ref{rule:aircraft-damage-resolution}\\
 C&$+3$&\ref{rule:aircraft-damage-resolution}\\
 \bottomrule
 \end{tabularx}
-\begin{tablenote}{0.7\linewidth}
-$^*$ Advanced rule.
+\begin{tablenote}{0.9\linewidth}
+$^*$ Advanced rule. $^1$ A target is in infrared ground clutter if the launching aircraft is in the LO or ML altitude bands (altitude levels 0 to 16), the target is lower, and the difference in altitude is more than half the horizontal range (rounded down).
 \end{tablenote}
 \end{twocolumntable}
 }
