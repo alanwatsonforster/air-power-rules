@@ -345,10 +345,11 @@ An aircraft with a start speed 1.0 less than M1 is at low transonic speed. An ai
 If an aircraft's ADC notes that it has low transonic drag (LTD) or high transonic drag (HTD), the drag penalty is lower or higher than for normal aircraft. (Some earlier ADCs note that an aircraft is a “supersonic delta.” Such an aircraft is treated as having low transonic drag.)
 }
 
-\paragraph{Supersonic Speeds.} 
 \x{
+\paragraph{Supersonic Speeds.} 
 An aircraft flying at M1 or faster is in supersonic flight and is subject to the following effects\addedin{1C}{1C-tables}{, which are summarized in Table~\ref{table:supersonic-penalties}}:
 }{
+\paragraph{Supersonic Flight.} 
 An aircraft flying at M1 or faster is in supersonic flight and is subject to the following effects, which are summarized in Table~\ref{table:supersonic-penalties}:
 }
 
@@ -376,6 +377,10 @@ An aircraft flying at M1 or faster is in supersonic flight and is subject to the
     \item An aircraft which performs rolling maneuvers while supersonic incurs 1.0 additional decel point for the game turn.
 
 \end{itemize}
+
+\addedin{1B}{1B-apj-36-errata}{The supersonic \addedin{2B}{2B-supersonic}{turning and }maneuver costs and penalties depend on the aircraft's supersonic status at the start of a \addedin{2B}{2B-supersonic}{turn or }maneuver.}
+\itemaddedin{2B}{2B-when-supersonic}{For other purposes, an aircraft is supersonic if its speed is greater than or equal to the M1 speed in the altitude band in which it started the game turn.}
+
 }{
 \begin{itemize}
 
@@ -400,9 +405,19 @@ An aircraft flying at M1 or faster is in supersonic flight and is subject to the
     \item It has its climb capability reduced to {\twothirds} of that given on the ADC (see rule~\ref{rule:climbing-flight}). At supersonic speeds, an aircraft's wings are less efficient due to shock effects and a shift of the aerodynamic center of lift.
 
 \end{itemize}
+\paragraph{Altitude and Supersonic Flight.}
+As noted above, the M1 speed decreases with altitude whereas an aircraft has the same speed though its move. Thus, when climbing an aircraft can pass from subsonic flight to supersonic flight and when diving it can pass from supersonic flight to subsonic flight. This ambiguity is resolved as follows:
+
+\begin{itemize}
+\item
+For turns and maneuvers, an aircraft is in supersonic flight if its speed is greater than or equal to the M1 speed in the altitude band in which it declares the turn or maneuver. 
+\item
+For other purposes, an aircraft is in supersonic flight if its speed is greater than or equal to the M1 speed in the altitude band in which it started the game turn.
+\end{itemize}
 }
 
-\addedin{1B}{1B-apj-36-errata}{The supersonic \addedin{2B}{2B-supersonic}{turning and }maneuver costs and penalties depend on the aircraft's supersonic status at the start of a \addedin{2B}{2B-supersonic}{turn or }maneuver.}
+
+
 
 \x{
 \paragraph{Poor Supersonic Maneuvering Aircraft (PSSM).} Some aircraft, usually early delta-wing designs without tails or canards, maneuver poorly when at supersonic speeds due to shifts in their aerodynamic center of lift.  Such aircraft are noted on their ADC. They are penalized as follows when Supersonic:
