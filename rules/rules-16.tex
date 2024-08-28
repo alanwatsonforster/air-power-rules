@@ -8,7 +8,7 @@
 \x{
 This chapter details the procedures for the use of radar for detection and tracking of other aircraft.
 }{
-This rule describes how aircraft use their radars to search for and track other aircraft. 
+This rule describes how aircraft use their air-to-air radars to search for and track other aircraft. 
 }
 
 \Dx{
@@ -46,9 +46,6 @@ Targets on the borderline of a radar arc are considered to be within the arc.
 \Ax{
 \paragraph{Radar Operator.} In a single-crewed aircraft, the radar operator is always the pilot. In a multi-crewed aircraft, the radar operator is the pilot for boresight and auto-track modes (see advanced rule~\ref{rule:special-radar-modes}) and the radar officer (RIO, WSO, observer, navigator, or equivalent) for other modes.
 
-
-\paragraph{Radar Operator.} In a single-crewed aircraft, the radar operator is always the pilot. In a multi-crewed aircraft, the radar operator is the pilot for boresight and auto-track modes (see advanced rule~\ref{rule:special-radar-modes}) and the radar officer (RIO, WSO, observer, navigator, or equivalent) for other modes.
-
 \paragraph{Radar Search Requirements.}
 \label{rule:radar-search-requirements}
 
@@ -79,25 +76,28 @@ The target of a radar search must satisfy these requirements:
     \begin{itemize}
         \item If the searching aircraft used climbing flight during the current game turn, the target must not be lower.
         \item If the searching aircraft used diving flight during the current game turn, the target must not be higher.
-        \item If searching aircraft used level flight during the current game turn, the difference in altitude between it and the target may be at most one level for every two full hexes of horizontal range.
+        \item If searching aircraft used level flight during the current game turn, the difference in altitude between it and the target must not be more than one level for every two full hexes of horizontal range.
     \end{itemize}
 
     If advanced rule~\ref{rule:radar-vertical-limits} is being used, it supersedes these simple vertical limits.
 
-    \item It must not be in ground clutter, which occurs in these three situations:
+    \item It must not be in radar ground clutter, which occurs in these two situations:
 
     \begin{itemize}
-        \item The target is no more than four altitude levels above the ground, and the searching aircraft is at the same altitude or higher.
-        \item The target is five to ten altitude levels above the ground, the searching aircraft is higher than the target, and the difference in altitude level between the searching aircraft and the target is greater than or equal to the difference in altitude levels between the target and the ground.
-        \item The target is five to ten altitude levels above the ground, the searching aircraft is higher than the target, and the horizontal range in hexes from the searching aircraft to the target is greater than or equal to the difference in altitude levels between the target and the ground.
+        \item If the target is no more than four altitude levels above the ground, and the searching aircraft is at the same altitude or higher.
+        \item If the target is five to ten altitude levels above the ground, the searching aircraft is higher than the target, and the difference in altitude level between the searching aircraft and the target is greater than or equal to the difference in altitude levels between the target and the ground.
         
     \end{itemize}
 
     For example, if the ground is at level 0, and a target aircraft is at level 6. The difference in altitude between the target and the ground is 6 levels. A higher searcher would have to be at most 5 levels above the target (i.e., at altitude levels 7 to 11) and at a horizontal range of at most 5 hexes.
 
-    Aircraft with limited look-down technology may ignore the last restriction. Aircraft with (full) look-down technology may ignore all three restrictions.
+    Aircraft with limited look-down technology may ignore the restriction on horizontal range. Aircraft with (full) look-down technology may ignore both restrictions.
+    
+    Table~\ref{table:radar-look-down} summarizes these rules.
+    \input{tables/table-radar-look-down}
 
     \end{itemize}
+    
     
 }
 
