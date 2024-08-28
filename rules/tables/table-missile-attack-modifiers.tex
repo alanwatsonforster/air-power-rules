@@ -45,36 +45,36 @@ Reminder: $\mbox{Max launch range for \changedin{1B}{1B-apj-23-errata and 1B-apj
 \begin{twocolumntable}
 \tablecaption{table:missile-attack-modifiers}{AAM and SAM Attack Modifiers}
 
-\begin{tabularx}{0.8\linewidth}{Pll}
+\begin{tabularx}{0.9\linewidth}{Pll}
 \toprule
 Description&Modifier&Rule\\
 \midrule
 \multicolumn{2}{c}{All Missiles}\\
 \midrule
-Target size modifier&ADC&\ref{rule:aircraft-data-cards}\\
+Target size modifier&From ADC&\ref{rule:aircraft-data-cards}\\
 Target did not engage the missile&$-1$&\ref{rule:engaging-missiles}\\
 \midrule
 \multicolumn{2}{c}{IRMs and IR SAMs}\\
 \midrule
-Target using afterburner power.&$-3$&\ref{rule:engine-thrust}\\
-Target using military power.&$-1$&\ref{rule:engine-thrust}\\
-Target using idle power.&$+1$&\ref{rule:engine-thrust}\\
-Target in infrared ground clutter&$+2$&\ref{rule:irm-attack-modifiers}\\
+Target using afterburner power&$-3$&\ref{rule:engine-thrust}\\
+Target using military power&$-1$&\ref{rule:engine-thrust}\\
+Target using idle power&$+1$&\ref{rule:engine-thrust}\\
+Target in infrared ground clutter$^1$&$+2$&\ref{rule:irm-attack-modifiers}\\
 Target in terrain-following flight&$+1$&\ref{rule:irm-attack-modifiers}\\
-Target using flare DDS (up to missile flare rating)&$+$PPL&\ref{rule:irm-attack-modifiers}$^*$\\
-Target using IR jammer&$+$Modifier&\ref{rule:irm-attack-modifiers}$^*$\\
+Target using flare DDS&$+$PPL (up to flare rating)&\ref{rule:irm-attack-modifiers}$^*$\\
+Target using IR jammer&From jammer data&\ref{rule:irm-attack-modifiers}$^*$\\
 \midrule
 \multicolumn{2}{c}{BRMs, RHMs, AHMs, and BR/CG/CW/TVM SAMs}\\
 \midrule
 DJM rating in excess of missile ECCM rating&$+$&\ref{rule:deceptive-jammers}$^*$\\
-Target using chaff DDS (up to missile chaff rating)&$+$PPL&\ref{rule:dds}$^*$\\
-Target using mini-jammer DDS (up to missile chaff rating plus one)&$+$PPL&\ref{rule:dds}$^*$\\
-Target in radar ground clutter (BRM/RHM/AHM only)&$+$&\ref{rule:missile-attacks}\\
+Target using chaff DDS&$+$PPL (up to chaff rating)&\ref{rule:dds}$^*$\\
+Target using mini-jammer DDS&$+$PPL (up to chaff rating plus one)&\ref{rule:dds}$^*$\\
+Target in radar ground clutter (BRM/RHM/AHM only)$^2$&$6 - \mbox{altitude AGL} - \mbox{ECCM rating}$&\ref{rule:rgm-attack-modifiers}\\
 Target in terrain-following flight (SAMs only)&$+$&\ref{rule:terrain-following-flight} \& \ref{rule:sams}\\
 \bottomrule
 \end{tabularx}
-\begin{tablenote}{0.8\linewidth}
-$^*$ Advanced rule.
+\begin{tablenote}{0.9\linewidth}
+$^*$ Advanced rule. $^1$ A target is in infrared ground clutter if it is in the LO altitude band (altitude levels 0 to 7) and two or more levels lower than the missile at the start of the missile's proportional move prior to its attack. $^2$ A target is in radar ground clutter if it is no more than 5 altitude levels above the ground and either lower than the illuminating aircraft (for BRMs and RHMs) or   two or more levels lower than the missile at the start of the missile's proportional move prior to its attack. (for AHMs). The modifier is 6 minus the target altitude above the ground level minus the missile ECCM rating. If the modifier is negative, it is ignored.
 \end{tablenote}
 \end{twocolumntable}
 }
