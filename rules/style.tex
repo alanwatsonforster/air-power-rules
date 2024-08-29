@@ -243,11 +243,10 @@ minus \fontdimen4\font}
 
 % Floats
 
-\newenvironment{onecolumntable}[1][tp]{
+\newenvironment{onecolumntablefloat}[1][tp]{
     \ifaids
         \begin{table}[tp]
         \centering
-        \begin{minipage}{0.5\linewidth}
     \else
         \silentlychangedin{1C}{1C-tables}{
             \begin{table}[h!]
@@ -255,19 +254,32 @@ minus \fontdimen4\font}
             \begin{table}[#1]
         }
     \fi
-    \centering
 }{
-    \ifaids
-        \end{minipage}
-    \fi
     \end{table}
 }
 
-\newenvironment{twocolumntable}[1][tp]{
+
+\newenvironment{onecolumntable}{
+    \begin{minipage}{\columnwidth}
+    \centering
+}{
+    \end{minipage}
+    \vspace{\floatsep}
+}
+
+\newenvironment{twocolumntablefloat}[1][tp]{
     \begin{table*}[#1]
+    \setlength{\columnseprule}{0pt}
     \centering
 }{
     \end{table*}
+}
+
+\newenvironment{twocolumntable}{
+    \begin{minipage}{\linewidth}
+    \centering
+}{
+    \end{minipage}
 }
 
 \newenvironment{fullwidthtable}[1][tp]{

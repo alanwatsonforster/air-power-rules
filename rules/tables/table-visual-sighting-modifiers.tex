@@ -1,5 +1,6 @@
 
 \x{
+\begin{twocolumntablefloat}
 \begin{twocolumntable}
 \tablecaption{table:sighting-range-modifiers}{Relative Range Effects}
 \begin{tabular}{lcccccccc}
@@ -17,36 +18,10 @@ Die Roll Modifier&$+0$&$+1$&$+2$&$+3$&$+4$&$+5$&$+6$&$+8$\\
 \addedin{1B}{1B-apj-23-errata}{When looking for higher targets in daytime, count each 4 levels difference of altitude as 1 hex of range.}
 \end{tablenote}
 \end{twocolumntable}
-}{
-\begin{onecolumntable}[p]
-\tablecaption{table:sighting-range-modifiers}{Sighting Modifiers for Range}
-\begin{tabularx}{0.7\linewidth}{CCC}
-\toprule
-\multicolumn{2}{c}{Range}\\
-\cmidrule{1-2}
-Visual&VAS&Modifier\\
-\midrule
-\phantom{0}0--3&&$-2$\\
-\phantom{0}4--6&&$-1$\\
-\phantom{0}7--9&\phantom{0}0--20&$+0$\\
-10--12&21--30&$+1$\\
-13--15&31--40&$+2$\\
-16--20&41--50&$+3$\\
-&51--60&$+4$\\
-21--30&61--70&$+5$\\
-&71--80&$+6$\\
-\samewidth[l]{00--00}{31+}&\samewidth[l]{00--00}{81+}&$+8$\\
-\bottomrule
-\end{tabularx}
-\begin{tablenote}{0.7\linewidth}
-\begin{itemize}
-\item When searching for higher targets during the day, count each 4 levels difference in altitude as 1 hex of range.
-\end{itemize}
-\end{tablenote}
-\end{onecolumntable}
-}
+\end{twocolumntablefloat}
 
-\x{
+
+\begin{twocolumntablefloat}
 \begin{twocolumntable}
 \tablecaption{table:sighting-position-modifiers}{Paint Scheme / Position / Weather Effects}
 \begin{tabular}{lcccccccc}
@@ -61,24 +36,9 @@ Aircraft Smoking&$-1$&$-2$&$-2$&NA&NA&NA\\
 \bottomrule
 \end{tabular}
 \end{twocolumntable}
-}{
-\begin{onecolumntable}[p]
-\tablecaption{table:sighting-position-modifiers}{Sighting Modifiers for Target Aircraft Position}
-\begin{tabularx}{\linewidth}{lCCCCCC}
-\toprule
-&\vertical{Lower}&\vertical{Level}&\vertical{Higher}&\vertical{In Haze}&\vertical{In Stratus}&\vertical{\minitable{l}{Against\\Clouds}}\\
-\midrule
-Silver          &$-2$&$-1$&$-1$&$+1$&$+3$&$-1$\\
-Uncamouflaged   &$-1$&$+0$&$+0$&$+1$&$+3$&$-1$\\
-Camouflaged     &$+1$&$+0$&$-1$&$+0$&$+3$&$-2$\\
-Low-visibility grey  &$+0$&$+1$&$+1$&$+2$&$+3$&$-1$\\
-Smoker&$-1$&$-2$&$-2$&---&---&---\\
-\bottomrule
-\end{tabularx}
-\end{onecolumntable}
-}
+\end{twocolumntablefloat}
 
-\x{
+\begin{onecolumntablefloat}
 \begin{onecolumntable}
 \tablecaption{table:sighting-additional-modifiers}{Additional Modifiers}
 \begin{tabularx}{\linewidth}{Xl}
@@ -112,8 +72,56 @@ Target using DDS Flare program&$+$PPL No.\\
 NOTE: All modifiers are cumulative. Disoriented or GLOC aircrew may not search.
 \end{tablenote}
 \end{onecolumntable}
+\end{onecolumntablefloat}
+
 }{
-\begin{onecolumntable}[p]
+\begin{twocolumntablefloat}[t]
+\begin{twocolumntable}
+\begin{multicols}{2}
+
+\begin{onecolumntable}
+\tablecaption{table:sighting-range-modifiers}{Sighting Modifiers for Range}
+\begin{tabularx}{0.7\linewidth}{CCC}
+\toprule
+\multicolumn{2}{c}{Range}\\
+\cmidrule{1-2}
+Visual&VAS&Modifier\\
+\midrule
+\phantom{0}0--3&&$-2$\\
+\phantom{0}4--6&&$-1$\\
+\phantom{0}7--9&\phantom{0}0--20&$+0$\\
+10--12&21--30&$+1$\\
+13--15&31--40&$+2$\\
+16--20&41--50&$+3$\\
+&51--60&$+4$\\
+21--30&61--70&$+5$\\
+&71--80&$+6$\\
+\samewidth[l]{00--00}{31+}&\samewidth[l]{00--00}{81+}&$+8$\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.7\linewidth}
+\begin{itemize}
+\item When searching for higher targets during the day, count each 4 levels difference in altitude as 1 hex of range.
+\end{itemize}
+\end{tablenote}
+\end{onecolumntable}
+
+\begin{onecolumntable}
+\tablecaption{table:sighting-position-modifiers}{Sighting Modifiers for Target Aircraft Position}
+\begin{tabularx}{\linewidth}{lCCCCCC}
+\toprule
+&\vertical{Lower}&\vertical{Level}&\vertical{Higher}&\vertical{In Haze}&\vertical{In Stratus}&\vertical{\minitable{l}{Against\\Clouds}}\\
+\midrule
+Silver          &$-2$&$-1$&$-1$&$+1$&$+3$&$-1$\\
+Uncamouflaged   &$-1$&$+0$&$+0$&$+1$&$+3$&$-1$\\
+Camouflaged     &$+1$&$+0$&$-1$&$+0$&$+3$&$-2$\\
+Low-visibility grey  &$+0$&$+1$&$+1$&$+2$&$+3$&$-1$\\
+Smoker&$-1$&$-2$&$-2$&---&---&---\\
+\bottomrule
+\end{tabularx}
+\end{onecolumntable}
+
+\begin{onecolumntable}
 \tablecaption{table:sighting-additional-modifiers}{Additional Sighting Modifiers}
 \begin{tabularx}{\linewidth}{Xl}
 \toprule
@@ -153,4 +161,8 @@ RWR indications&$-1$\\
 \end{itemize}
 \end{tablenote}
 \end{onecolumntable}
+
+\end{multicols}
+\end{twocolumntable}
+\end{twocolumntablefloat}
 }
