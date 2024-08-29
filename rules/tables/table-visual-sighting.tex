@@ -1,5 +1,6 @@
 \x{
 
+\begin{onecolumntablefloat}
 \begin{onecolumntable}
 \tablecaption{table:sighting-rules-summary}{Sighting Rules Summary}
 \begin{tabularx}{\linewidth}{p{12em}X}
@@ -32,7 +33,12 @@ No PLs if in Target Sun Arc.
 \bottomrule
 \end{tabularx}
 \end{onecolumntable}
+\end{onecolumntablefloat}
 }{
+
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\begin{multicols}{2}
 
 \begin{onecolumntable}
 \tablecaption{table:sighting-range}{Sighting and Identification Ranges}
@@ -83,8 +89,11 @@ Green&0\\
     \item Targets beyond sighting range cannot be padlocked.
 \end{itemize}
 \end{tablenote}
-
 \end{onecolumntable}
+
+\end{multicols}
+\end{twocolumntable}
+\end{twocolumntablefloat}
 
 
 
