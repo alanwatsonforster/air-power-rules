@@ -257,6 +257,7 @@ An aircraft may exit a rolling maneuver banked in any desired direction.
 }
 
 \section{Turning and Minimum Speeds}
+\label{rule:turning-and-minimum-speeds}
 
 \x{
 As the angle of attack on an aircraft's wing increases, so does the speed at which it stalls. To simulate this, no aircraft may utilize turn rates greater than EZ unless their start speed for the turn equals or exceeds their minimum speed plus the amount shown \changedin{1C}{1C-tables}{on the table below}{in Table~\ref{table:turn-minimum-speed}}.
@@ -362,6 +363,9 @@ An aircraft may depart controlled flight for reasons other than being stalled. A
     \item When its Start speed is insufficient for a carried turn rate.
 
     \itemdeletedin{2A}{2A-snap}{When performing a risky snap-turn.}
+    
+    \itemaddedin{2B}{2B-pssm-maneuvering-departures} When it has poor supersonic maneuverability (PSSM), is supersonic, and its carried turn rate is not permitted.  
+
 
     \item When an aircraft is above its ceiling and attempts to roll or use higher than EZ turns.
 
@@ -374,11 +378,13 @@ A Maneuvering Departure is always automatic in the first case and occurs on a di
 An aircraft may depart controlled flight for reasons other than being stalled. An aircraft may experience a maneuvering departure in the following situations:
 
 \begin{itemize}
-\item When its start speed is insufficient for its carried turn rate.
+    \item When its start speed is insufficient for its carried turn rate (see rule \ref{rule:turning-and-minimum-speeds}).
+    
+    \item When it has poor supersonic maneuverability (PSSM), is supersonic, and its carried turn rate is not permitted (see rule \ref{rule:pssm}).
 
-    \item When it is above its ceiling and attempts to roll or turn at a rate higher than EZ.
+    \item When it is above its ceiling and attempts to roll or turn at a rate higher than EZ (see advanced rule \ref{rule:flight-above-maximum-ceiling}).
 
-    \item When it executes a rolling maneuver in the EH or higher altitude bands.
+    \item When it executes a rolling maneuver in the EH or higher altitude bands (see rule \ref{rule:rolling-maneuvers-at-eh-or-uh-altitude}).
 
 \end{itemize}
 
