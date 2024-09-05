@@ -78,7 +78,25 @@
 \end{tikzpicture}
 \end{fitheight}
 
-
 \figurecaption{figure:range}{Range. The map locations shown in dark gray are one hex from the map locations shown in black. The map locations shown in light gray are half a hex from the map locations shown in black.}
+
+\vspace{\floatsep}
+
+\begin{fitheight}{6.2\standardhexwidth}
+\begin{tikzpicture}
+    \setfiguresize{-5}{-3.1}{+5}{+3.1}
+    \drawevenhexgrid{-4}{-2.5}{9}{6}
+    \drawaircraftcounter{-2.00}{+1.50}{30}{F-4}{A}{}
+    \drawaircraftcounter{-3.00}{-2.00}{60}{MiG-21}{B}{}
+    \drawaircraftcounter{-0.50}{+0.25}{120}{F-4}{C}{}
+    \drawaircraftcounter{+0.50}{+0.75}{120}{MiG-21}{D}{}
+    \drawaircraftcounter{+1.50}{-0.75}{120}{MiG-21}{E}{}
+    \drawaircraftcounter{+2.50}{-0.75}{240}{MiG-21}{F}{}
+    \drawaircraftcounter{+1.50}{-1.25}{60}{F-4}{G}{}
+\end{tikzpicture}
+\end{fitheight}
+
+\figurecaption{figure:range-example}{Examples of horizontal range. The horizontal range from A to B is 4 hexes, from B to C is 3 hexes, from C to D is 1 hex, from C to E is 2 hexes, from D to E is 2 hexes, from E to F is 1 hex, from E to G is 0 hexes, and from F to G is 1 hex.
+}
 
 \end{onecolumnfigure}
