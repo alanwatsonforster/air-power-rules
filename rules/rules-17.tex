@@ -291,7 +291,7 @@ In addition to the general missile attack modifiers given in rule~\ref{rule:miss
 
     For example, consider an AA-3-2 missile attacking an aircraft using an active DDS. \ref{table:missile-data} gives a chaff vulnerability rating of 4, so the corresponding mini-jammer vulnerability rating is 5 (one more). If the target’s mini-jammer PPL is 3, the modifier is $+3$ (limited by the PPL), but if the target’s mini-jammer PPL is 6, the modifier is $+5$ (limited by the mini-jammer vulnerability rating).
     
-    \item For radar-guided AAMs, if the target is in radar ground clutter, apply the modifier described here.\label{rule:radar-ground-clutter}
+    \item For radar-guided AAMs, if the target is in radar ground clutter, apply the modifier described here.\label{rule:rgm-ground-clutter}
 
     A target is in radar ground cluster if it is in the LO altitude band (altitude levels 0 to 7), within five altitude levels of the ground, and either the illuminating aircraft is higher than the target (for BRMs and RHMs) or the target is two or more levels below the missile’s altitude at the start of the proportional move in which it attacks (for AHMs).
 
@@ -367,7 +367,7 @@ If neither engages, then a shoot-out occurs with both aircraft moving proportion
 
 Note: Expendable mini-jammers (introduced in the 1980s), function like chaff in the game but are superior against some missile types. See Chapter 19 for additional discussion.
 
-\paragraph{Ground Clutter.}\label{rule:radar-ground-clutter} Ground clutter affects radar guided missiles that attack targets close to the ground. If the target aircraft is within five altitude levels of the ground or less, and the illuminating or tracking aircraft which is guiding the missile is higher than the target, or if an active AH missile dives to attack a target (loses 2 or more levels in its move), a ground clutter modifier is applied to the to hit die roll.
+\paragraph{Ground Clutter.}\label{rule:rgm-ground-clutter} Ground clutter affects radar guided missiles that attack targets close to the ground. If the target aircraft is within five altitude levels of the ground or less, and the illuminating or tracking aircraft which is guiding the missile is higher than the target, or if an active AH missile dives to attack a target (loses 2 or more levels in its move), a ground clutter modifier is applied to the to hit die roll.
 
 The modifier is determined first, by subtracting the target's altitude above the ground from six. Then subtract the missile's ECCM rating from the remainder. If the result is still positive, that is the die roll modifier.
 }
