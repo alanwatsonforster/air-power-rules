@@ -1,40 +1,4 @@
-\Ax{
-\begin{onecolumntablefloat}
-\begin{onecolumntable}
-\tablecaption{table:radar-search-limitations}{Radar Search Limitations}
-\begin{tabularx}{\linewidth}{X}
-\toprule
-\addlinespace
-Aircraft may not search if they:\\
-\begin{itemize}[topsep=0pt]
- \item Turned at BT or greater.$^\dagger$
- \item Turned at HT if pilot is radar operator.$^\dagger$
- \item Used more than one VR.$^\dagger$
- \item Used any other special maneuver except a slide.$^\dagger$
- \item Unloaded and have not yet recovered.$^\dagger$
- \item Were stalled, departed, or engaged
- \item Received H or C damage or performed damage control.
- \item Made an air-to-air gun or rocket attack.
- \item Made an air-to-ground attack.
- \item Has their radar operator in GLOC
- \item Has their radar operator suffering disorientation.
-\end{itemize}\\
-$\dagger$ Does not apply to boresight or auto-track modes.\\
-\addlinespace
-Targets of searches must be:\\
-\begin{itemize}[topsep=0pt]
-    \item Within radar arc.
-    \item Within radar vertical limits.
-    \item Within search range.
-    \item Not in ground clutter (unless look-down or limited look-down radar).
-\end{itemize}\\
-\bottomrule
-\end{tabularx}
-\end{onecolumntable}
-\end{onecolumntablefloat}
-}
-
-\x{
+\Dx{
 \begin{twocolumntablefloat}
 \begin{twocolumntable}
 \tablecaption{table:radar-contact}{Radar Contact}
@@ -86,49 +50,9 @@ Above = Maximum Range in Hexes for Each Column
 \end{tablenote}
 \end{twocolumntable}
 \end{twocolumntablefloat}
-}{
-\begin{twocolumntablefloat}
-\begin{twocolumntable}
-\tablecaption{table:radar-searches}{Radar Search Ranges}
-
-\begin{tabularx}{0.9\linewidth}{*{12}{C}}
-\toprule
-\multicolumn{1}{c}{\multirow[b]{2}{*}{\minitable{c}{Search\\Strength}}}&
-\multicolumn{11}{c}{Detection Die Roll}\\
-\cmidrule{2-12}
-&
-\multicolumn{1}{c}{$10-$}&
-\multicolumn{1}{c}{$9-$}&
-\multicolumn{1}{c}{$8-$}&
-\multicolumn{1}{c}{$7-$}&
-\multicolumn{1}{c}{$6-$}&
-\multicolumn{1}{c}{$5-$}&
-\multicolumn{1}{c}{$4-$}&
-\multicolumn{1}{c}{$3-$}&
-\multicolumn{1}{c}{$2-$}&
-\multicolumn{1}{c}{$1-$}&
-\multicolumn{1}{c}{$0-$}\\
-\midrule
-\phantom{0}3& 6& 8& 9&10&11&12&13&---&14&---&\phantom{0}15+\\
-\phantom{0}6&12&15&18&20&22&24&26&28&29&30&\phantom{0}31+\\
-\phantom{0}8&16&20&24&28&30&32&34&36&28&40&\phantom{0}41+\\
-10&20&25&30&35&38&40&42&45&48&50&\phantom{0}51+\\
-12&24&30&36&42&45&48&51&54&57&60&\phantom{0}61+\\
-15&30&38&45&52&56&60&64&68&72&75&\phantom{0}76+\\
-18&36&45&54&63&68&72&76&81&86&90&\phantom{0}91+\\
-20&40&50&60&70&75&80&85&90&95&100&101+\\
-25&50&63&75&87&94&100&106&113&119&125&126+\\
-30&60&75&90&105&113&120&128&135&143&150&151+\\
-40&80&100&120&140&150&160&170&180&190&200&201+\\
-50&100&125&150&175&188&200&213&225&238&250&251+\\
-EWR&150&188&225&263&280&300&319&338&356&375&376+\\
-\bottomrule
-\end{tabularx}
-\end{twocolumntable}
-\end{twocolumntablefloat}
 }
 
-\x{
+\Dx{
 
 \begin{onecolumntablefloat}
 \begin{onecolumntable}
@@ -151,46 +75,6 @@ EWR&150&188&225&263&280&300&319&338&356&375&376+\\
 \end{tabularx}
 \end{onecolumntable}
 \end{onecolumntablefloat}
-
-}{
-
-\begin{twocolumntablefloat}
-\begin{twocolumntable}
-\tablecaption{table:radar-search-and-lock-on-modifiers}{Radar Search and Lock-On Modifiers}
-\begin{tabularx}{0.9\linewidth}{lLccl}
-\toprule
-Description&Modifier&Search\tablenotemark{1}&Lock-On\tablenotemark{2}&Rule\\
-\midrule
-\multicolumn{5}{c}{Target}\\
-\midrule
-Target size modifier&See ADC&Y&N&\ref{rule:aircraft-data-cards}\\
-Boresight mode used for look-down&$+2$&N&Y&\ref{rule:boresight-mode}\\
-\midrule
-\multicolumn{5}{c}{ECM}\\
-\midrule
-Target using IFF&$-2$&Y&Y&\ref{rule:iff}\advancedrulemark\\
-Target using chaff DDS&+PPL modifier\tablenotemark{3} $-$ half ECCM rating\tablenotemark{4}&Y&Y&\ref{rule:dds}\advancedrulemark\\
-Target using mini-jammer DDS&+PPL modifier\tablenotemark{3}&Y&Y&\ref{rule:dds}\advancedrulemark\\
-Target and searcher in BJM arc&+BJM rating $-$ ECCM rating&Y&N&\ref{rule:radar-jamming}\advancedrulemark\\
-Searcher in AJM-C/D arc&+AJM rating $-$ ECCM rating&Y&N&\ref{rule:radar-jamming}\advancedrulemark\\
-\midrule
-\multicolumn{5}{c}{Radar Operator}\\
-\midrule
-Veteran&$-1$&Y&N&\ref{rule:crew-quality}\advancedrulemark\\
-Novice&$+1$&Y&N&\ref{rule:crew-quality}\advancedrulemark\\
-Green&$+2$&Y&N&\ref{rule:crew-quality}\advancedrulemark\\
-Tactics master&$-1$&Y&N&\ref{rule:crew-characteristics}\advancedrulemark\\
-\bottomrule
-\end{tabularx}
-\begin{tablenote}{0.9\linewidth}
-\advancedruletext
-\tablenotetext{1}{The modifier applies to search attempts if Y appears in this column.}
-\tablenotetext{2}{The modifier applies to lock-on attempts if Y appears in this column.}
-\tablenotetext{3}{Table~\ref{table:ew-decoy-ppl-effectiveness} gives the modifier.}
-\tablenotetext{4}{Round up one half of the ECCM rating before subtracting it from the PPL modifier.}
-\end{tablenote}
-\end{twocolumntable}
-\end{twocolumntablefloat}
 
 }
 
@@ -233,10 +117,10 @@ BJM Noise&BJM No. $-$ Air Radar ECCM\\
 \end{onecolumntablefloat}
 }
 
+\Dx{
 \begin{onecolumntablefloat}
 \begin{onecolumntable}
 \tablecaption{table:radar-breaking-lock-on}{Breaking Radar Lock-On}
-\x{
 \begin{tabularx}{\linewidth}{X}
 \toprule
 \addlinespace
@@ -253,25 +137,9 @@ Locks are broken when:
 \\
 \bottomrule
 \end{tabularx}
-}{
-\begin{tabularx}{\linewidth}{X}
-\toprule
-\addlinespace
-\begin{itemize}[topsep=0pt]
-    \item Aircraft stalls, departs, or engages.
-    \item Aircraft does ET turn, displacement, lag, or barrel roll, or VIFF manueuver.
-    \item Aircraft suffers a H or C hit,
-    \item Radar operator GLOCs.
-    \item Target cannot be kept in radar arc
-    \item Target deploys chaff or mini-jammers and rolls effectiveness or less.
-    \item Target employs DJM and rolls DJM rating $-$ ECCM rating or less.
-\end{itemize}
-\\
-\bottomrule
-\end{tabularx}
-}
 \end{onecolumntable}
 \end{onecolumntablefloat}
+}
 
 \Dx{
 \begin{onecolumntablefloat}
@@ -326,10 +194,10 @@ Note: Boresight and Auto-Track Modes allow maneuver restrictions to be ignored b
 \end{onecolumntablefloat}
 }
 
+\Dx{
 \begin{twocolumntablefloat}
 \begin{twocolumntable}
 \tablecaption{table:radar-vertical-limits}{Radar Vertical Limits}
-\x{
 \begin{tabularx}{0.8\linewidth}{c*{6}{C}}
 \toprule
 \multicolumn{1}{c}{\multirow{2}{*}{\minitable{c}{Type\\Radar}}}&
@@ -347,7 +215,257 @@ Limited&$-2$, $-9$&$-0.5$, $-3$&$+0.5$, $-0.5$&$+2$, $+0$&$+4$, $+0.5$&$+9$, $+2
 120+&$-0$, $-X$&$+0.5$, $-X$&$+4$, $-4$&$+6$, $-2$&$+X$, $-0.5$&$+X$, $+0$\\
 \bottomrule
 \end{tabularx}
-}{
+\begin{tablenote}{0.8\linewidth}
+Note: The radar vertical limits are given as altitude levels per hex or horizontal distance. 
+\end{tablenote}
+
+\end{twocolumntable}
+\end{twocolumntablefloat}
+}
+
+
+\Dx{
+\begin{onecolumntablefloat}
+\begin{onecolumntable}
+\tablecaption{table:radar-boresight-mode}{Radar Boresight Mode}
+\begin{tabularx}{\linewidth}{X}
+\toprule
+\begin{enumerate}
+    \item Radar Arc = Limited.
+    \item Max Range = Search Strength No.
+    \item Previous contacts and locks lost when mode declared.
+    \item Nearest Visually sighted target in aircraft's Limit arc automatically contacted.
+    \item Lock-on roll allowed, no mnvr.\ limitations.
+\end{enumerate}
+\\
+\bottomrule
+\end{tabularx}
+\end{onecolumntable}
+\end{onecolumntablefloat}
+}
+
+
+\Dx{
+\begin{onecolumntablefloat}
+\begin{onecolumntable}
+\tablecaption{table:radar-auto-track-mode}{Radar Auto-Track Mode}
+\begin{tabularx}{\linewidth}{X}
+\toprule
+\begin{enumerate}
+    \item Radar Arc = 180+ unless normally it's limited; in which case it remains limited.
+    \item Max Range = Search Strength No.
+    \item Nearest target in radar arc is automatically detected.
+    \item If nearest aircraft was a friendly with IFF on, it may be ignored and next nearest is automatically contacted etc.
+    \item A visually sighted aircraft in arc may be selected for auto contact if not the closest by rolling 7 or less.
+    \item Lock-on roll allowed, no mnvr.\ limitations.
+    \item Previous contacts and locks lost when mode declared.
+\end{enumerate}
+\\
+\bottomrule
+\end{tabularx}
+\end{onecolumntable}
+\end{onecolumntablefloat}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Ax{
+
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\tablecaption{table:radar-use-summary}{Radar Use Summary}
+\small
+\begin{tabularx}{0.9\linewidth}{l*{5}{C}}
+\toprule
+Mode&\multicolumn{3}{c}{Normal}&Boresight&Auto-Track\\
+\cmidrule{2-4}
+Use&Searching&Tracking Attempt&Maintaining Track&All&All\\
+\midrule
+Rule
+&\ref{rule:normal-mode}
+&\ref{rule:normal-mode}
+&\ref{rule:normal-mode}
+&\ref{rule:boresight-mode}
+&\ref{rule:auto-track-mode}\\
+\midrule
+Turn Limit (pilot only)
+&TT or less
+&TT or less
+&BT or less
+&ET or less
+&ET or less\\
+Turn Limit (radar officer)
+&HT or less
+&HT or less
+&BT or less\\
+Slides?&Yes&Yes&Yes&Yes&Yes\\
+VRs?&One&One&One&Yes&Yes\\
+Other Maneuvers?&No&No&No&Yes&Yes\\
+Unloaded FPs?&No&No&Yes&Yes&Yes\\
+Preemption?&No&No&No&Yes&Yes\\
+TFF (pilot only)?&No&No&No&No&No\\
+TFF (radar officer)?&Yes&Yes&Yes&No&No\\
+\midrule
+Stalled or Departed?&No&No&No&No&No\\
+Engaged?&No&No&No&No&No\\
+AtA or AtG Attack?&No&No&No&No&No\\
+H or C Damage?&No&No&No&No&No\\
+Damage Control?&No&No&No&No&No\\
+GLOC or Disoriented?&No&No&No&No&No\\
+\midrule
+Arc&From ADC&From ADC&From ADC&Limited&\arcrange{180}{+}\\
+\midrule
+Range&Search&Tracking&Tracking&Tracking&Search\\
+&Range&Range& Range&Strength&Strength\\
+\midrule
+Detection Roll&Table \ref{table:radar-searches}&&&\multicolumn{1}{L}{Automatic for closest sighted target.}&\multicolumn{1}{L}{Automatic for closest target or $7-$ for other sighted target. Friendly aircraft with IFF on are ignored.}\\
+\midrule
+Tracking Roll&&From ADC&&From ADC&From ADC\\
+\bottomrule
+\end{tabularx}
+\end{twocolumntable}
+\end{twocolumntablefloat}
+
+\begin{twocolumntablefloat}[tp]
+\begin{twocolumntable}
+
+\tablecaption{table:radar-look-down}{Radar Look-Down Summary}
+\small
+\begin{tabularx}{0.9\linewidth}{cCCCC}
+\toprule
+&\multicolumn{2}{c}{No Look-Down}&Limited Look-Down&Full Look-Down\\
+\cmidrule{2-3}
+\minitable{c}{Target\\Altitude}&
+\minitable{c}{Radar\\Altitude}&
+\minitable{c}{Radar Altitude\\and Horizontal Range}&
+\minitable{c}{Radar\\Altitude}&
+\minitable{c}{Radar\\Altitude}\\
+\midrule
+\phantom{0}0&&&&Any\\
+\phantom{0}1&$\le\phantom{0}0$&&$\le\phantom{0}0$&Any\\
+\phantom{0}2&$\le\phantom{0}1$&&$\le\phantom{0}1$&Any\\
+\phantom{0}3&$\le\phantom{0}2$&&$\le\phantom{0}3$&Any\\
+\phantom{0}4&$\le\phantom{0}3$&&$\le\phantom{0}5$&Any\\
+\phantom{0}5&$\le\phantom{0}5$&$\le\phantom{0}9$ and range $\le4$&$\le\phantom{0}9$&Any\\
+\phantom{0}6&$\le\phantom{0}6$&$\le\phantom{}11$ and range $\le5$&$\le\phantom{}11$&Any\\
+\phantom{0}7&$\le\phantom{0}7$&$\le\phantom{}13$ and range $\le6$&$\le\phantom{}13$&Any\\
+\phantom{0}8&$\le\phantom{0}8$&$\le\phantom{}15$ and range $\le7$&$\le\phantom{}15$&Any\\
+\phantom{0}9&$\le\phantom{0}9$&$\le\phantom{}17$ and range $\le8$&$\le\phantom{}17$&Any\\
+\phantom{}10&$\le\phantom{}10$&$\le\phantom{}19$ and range $\le9$&$\le\phantom{}19$&Any\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.9\linewidth}
+The table gives conditions under which a radar can detector or track a target at altitude 10 or less according to its level of look-down technology. For no look-down technology, two conditions are given, and if the radar fulfills either condition, it may search or track. Otherwise, the target is in radar round clutter. All altitudes are above the ground level at the location of the target. See rule \ref{rule:radar-ground-clutter}.
+\end{tablenote}
+
+
+\end{twocolumntable}
+\end{twocolumntablefloat}
+
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\tablecaption{table:radar-searches}{Radar Detection Rolls}
+\small
+\begin{tabularx}{0.9\linewidth}{*{12}{C}}
+\toprule
+\multicolumn{1}{c}{\multirow[b]{2}{*}{\minitable{c}{Search\\Strength}}}&
+\multicolumn{11}{c}{Detection Die Roll}\\
+\cmidrule{2-12}
+&
+\multicolumn{1}{c}{$10-$}&
+\multicolumn{1}{c}{$9-$}&
+\multicolumn{1}{c}{$8-$}&
+\multicolumn{1}{c}{$7-$}&
+\multicolumn{1}{c}{$6-$}&
+\multicolumn{1}{c}{$5-$}&
+\multicolumn{1}{c}{$4-$}&
+\multicolumn{1}{c}{$3-$}&
+\multicolumn{1}{c}{$2-$}&
+\multicolumn{1}{c}{$1-$}&
+\multicolumn{1}{c}{$0-$}\\
+\midrule
+\phantom{0}3& 6& 8& 9&10&11&12&13&---&14&---&\phantom{0}15+\\
+\phantom{0}6&12&15&18&20&22&24&26&28&29&30&\phantom{0}31+\\
+\phantom{0}8&16&20&24&28&30&32&34&36&28&40&\phantom{0}41+\\
+10&20&25&30&35&38&40&42&45&48&50&\phantom{0}51+\\
+12&24&30&36&42&45&48&51&54&57&60&\phantom{0}61+\\
+15&30&38&45&52&56&60&64&68&72&75&\phantom{0}76+\\
+18&36&45&54&63&68&72&76&81&86&90&\phantom{0}91+\\
+20&40&50&60&70&75&80&85&90&95&100&101+\\
+25&50&63&75&87&94&100&106&113&119&125&126+\\
+30&60&75&90&105&113&120&128&135&143&150&151+\\
+40&80&100&120&140&150&160&170&180&190&200&201+\\
+50&100&125&150&175&188&200&213&225&238&250&251+\\
+EWR&150&188&225&263&280&300&319&338&356&375&376+\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.9\linewidth}
+The table gives the detection roll for normal mode searches. In the row corresponding to the radar search strength, move right to the column that is equal to or more than the range, and then move up to determine the detection die roll. See rule \ref{rule:normal-mode}.
+\end{tablenote}
+\end{twocolumntable}
+\end{twocolumntablefloat}
+
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\tablecaption{table:radar-search-and-lock-on-modifiers}{Radar Search and Tracking Modifiers}
+\small
+\begin{tabularx}{0.9\linewidth}{lLccl}
+\toprule
+Description&Modifier&Search\tablenotemark{1}&Tracking\tablenotemark{2}&Rule\\
+\midrule
+\multicolumn{5}{c}{Target}\\
+\midrule
+Target size modifier&See ADC&Yes&No&\ref{rule:aircraft-data-cards}\\
+Boresight mode assuming limited look-down&$+2$&No&Yes&\ref{rule:boresight-mode}\\
+Auto-track mode assuming limited look-down&$+2$&No&Yes&\ref{rule:auto-track-mode}\\
+\midrule
+\multicolumn{5}{c}{ECM}\\
+\midrule
+Target using IFF&$-2$&Yes&Yes&\ref{rule:iff}\advancedrulemark\\
+Target using chaff DDS&+PPL modifier\tablenotemark{3} $-$ half ECCM rating\tablenotemark{4}&Yes&Yes&\ref{rule:dds}\advancedrulemark\\
+Target using mini-jammer DDS&+PPL modifier\tablenotemark{3}&Yes&Yes&\ref{rule:dds}\advancedrulemark\\
+Target and searcher in BJM arc&+BJM rating $-$ ECCM rating&Yes&No&\ref{rule:radar-jamming}\advancedrulemark\\
+Searcher in AJM-C/D arc&+AJM rating $-$ ECCM rating&Yes&No&\ref{rule:radar-jamming}\advancedrulemark\\
+\midrule
+\multicolumn{5}{c}{Radar Operator}\\
+\midrule
+Veteran&$-1$&Yes&No&\ref{rule:crew-quality}\advancedrulemark\\
+Novice&$+1$&Yes&No&\ref{rule:crew-quality}\advancedrulemark\\
+Green&$+2$&Yes&No&\ref{rule:crew-quality}\advancedrulemark\\
+Tactics master&$-1$&Yes&No&\ref{rule:crew-characteristics}\advancedrulemark\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.9\linewidth}
+\advancedruletext
+\tablenotetext{1}{The modifier applies to search attempts if Yes appears in this column.}
+\tablenotetext{2}{The modifier applies to tracking attempts if Yes appears in this column.}
+\tablenotetext{3}{Table~\ref{table:ew-decoy-ppl-effectiveness} gives the modifier.}
+\tablenotetext{4}{Round up one half of the ECCM rating before subtracting it from the PPL modifier.}
+\end{tablenote}
+\end{twocolumntable}
+\end{twocolumntablefloat}
+
+\Ax{
+\begin{onecolumntablefloat}
+\begin{onecolumntable}
+\tablecaption{table:ew-radar-break-lock-rolls}{Breaking Lock-Ons with ECM}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+ECM&Roll\\
+\midrule
+Chaff&Effectiveness or less\\
+MJM&Effectiveness or less\\
+DJM&DJM rating $-$ ECCM rating or less.\\
+\bottomrule
+\end{tabularx}
+\end{onecolumntable}
+\end{onecolumntablefloat}
+}
+
+
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\tablecaption{table:radar-vertical-limits}{Radar Vertical Limits}
 \begin{tabularx}{0.8\linewidth}{c*{6}{L@{ to }L}}
 \toprule
 Arc&
@@ -364,7 +482,6 @@ Limited&$-2$&$-9$&$-0.5$&$-3$&$+0.5$&$-0.5$&$+2$&$+0$&$+4$&$+0.5$&$+9$&$+2$\\
 120+&$-0$&$-\infty$&$+0.5$&$-\infty$&$+4$&$-4$&$+6$&$-2$&$+\infty$&$-0.5$&$+\infty$&$+0$\\
 \bottomrule
 \end{tabularx}
-}
 \begin{tablenote}{0.8\linewidth}
 Note: The radar vertical limits are given as altitude levels per hex or horizontal distance. 
 \end{tablenote}
@@ -373,78 +490,7 @@ Note: The radar vertical limits are given as altitude levels per hex or horizont
 \end{twocolumntablefloat}
 
 
-\begin{onecolumntablefloat}
-\begin{onecolumntable}
-\x{
-\tablecaption{table:radar-boresight-mode}{Radar Boresight Mode}
-\begin{tabularx}{\linewidth}{X}
-\toprule
-\begin{enumerate}
-    \item Radar Arc = Limited.
-    \item Max Range = Search Strength No.
-    \item Previous contacts and locks lost when mode declared.
-    \item Nearest Visually sighted target in aircraft's Limit arc automatically contacted.
-    \item Lock-on roll allowed, no mnvr.\ limitations.
-\end{enumerate}
-\\
-\bottomrule
-\end{tabularx}
-}{
-\tablecaption{table:radar-boresight-mode}{Boresight Radar Mode}
-\begin{tabularx}{\linewidth}{X}
-\toprule
-\addlinespace
-\begin{itemize}[topsep=0pt]
-    \item Previous detections and lock-ons lost when mode declared.
-    \item No flight restrictions.
-    \item Radar arc is limited.
-    \item Maximum range is the tracking strength.
-    \item The nearest sighted aircraft in radar arc is automatically detected. 
-    \item Lock-on roll allowed.
-\end{itemize}
-\\
-\bottomrule
-\end{tabularx}
 
 }
-\end{onecolumntable}
-\end{onecolumntablefloat}
 
-\begin{onecolumntablefloat}
-\begin{onecolumntable}
-\x{
-\tablecaption{table:radar-auto-track-mode}{Radar Auto-Track Mode}
-\begin{tabularx}{\linewidth}{X}
-\toprule
-\begin{enumerate}
-    \item Radar Arc = 180+ unless normally it's limited; in which case it remains limited.
-    \item Max Range = Search Strength No.
-    \item Nearest target in radar arc is automatically detected.
-    \item If nearest aircraft was a friendly with IFF on, it may be ignored and next nearest is automatically contacted etc.
-    \item A visually sighted aircraft in arc may be selected for auto contact if not the closest by rolling 7 or less.
-    \item Lock-on roll allowed, no mnvr.\ limitations.
-    \item Previous contacts and locks lost when mode declared.
-\end{enumerate}
-\\
-\bottomrule
-\end{tabularx}
-}{
-\tablecaption{table:radar-auto-track-mode}{Auto-Track Radar Mode}
-\begin{tabularx}{\linewidth}{X}
-\toprule
-\addlinespace
-\begin{itemize}[topsep=0pt]
-    \item Previous detections and lock-ons lost when mode declared.
-    \item No flight restrictions.
-    \item Radar arc is \arcrange{180}{+}.
-    \item Maximum range is the search strength.
-    \item Any visually sighted aircraft in the radar arc may be selected for detection by rolling 7 or less.
-    \item Otherwise, the nearest aircraft in radar arc is automatically contacted. Friendly with IFF on are ignored.
-    \item Lock-on roll allowed.
-\end{itemize}
-\\
-\bottomrule
-\end{tabularx}
-}
-\end{onecolumntable}
-\end{onecolumntablefloat}
+
