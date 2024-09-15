@@ -234,7 +234,7 @@ If the lock-on number is marked with an asterisk, the radar is not capable of ai
 \section{Radar Use}
 \label{rule:radar-use}
 
-\paragraph{Radar Modes.} Radars may be operated in normal, boresight, or auto-track mode. The later two modes are collectively known as special modes. Searching and tracking in normal mode are described in rules~\ref{rule:normal-mode}. The special modes are described in advanced rules \ref{rule:boresight-mode} and \ref{rule:auto-track-mode}. 
+\paragraph{Radar Modes.} Radars may be operated in normal, boresight, or auto-track mode. The latter two modes are collectively known as special modes. Searching and tracking in normal mode are described in rules~\ref{rule:normal-mode}. The special modes are described in advanced rules \ref{rule:boresight-mode} and \ref{rule:auto-track-mode}. 
 
 % Switching off a radar prevents it from being detected by RWR-C and RWR-D (see advanced rule \ref{rule:rwr})
 
@@ -251,14 +251,14 @@ A successful radar search gives a detection or “contact” and provides an ind
 
 A successful tracking attempt gives a “track” or “lock-on,” which allows a radar to follow a target, either by steering the antenna mechanically in early radars or by steering the beam electronically in modern radars. This in turn allows the tracking aircraft more freedom to maneuver and can increase the radar power directed at the target. In addition, provided other requirements are met, radar ranging for gun attacks and cuing of VAS for sighting automatically succeeds against targets that are being tracked (see advanced rules~\ref{rule:radar-ranging} and \ref{rule:vas}). An aircraft can fire uncaged IRMs at targets it is tracking (see advanced rule \ref{rule:irm-radar}) and use target ID technology to identify them (see advanced rule \ref{rule:target-id-technology}). Finally, tracking is a requirement for illuminating a target. 
 
-Illumination is required for guiding radar-guided missiles other than active AHMs to their target (see rule \ref{rule:target-illumination}).
+Illumination is required for guiding radar-guided missiles (except AHMs with mid-course guidance or in their active phase) to their target (see rule \ref{rule:target-illumination}).
 
 Unlike visual sighting, radar outcomes apply individually to aircraft. For example, if one aircraft has a detection or a track of an enemy aircraft, other friendly aircraft do not automatically share that detection or track.
 
 \paragraph{Common Radar Use Requirements.}
 \label{rule:common-radar-use-requirements}
 
-To use its radar for an air-to-air search or tracking attempt, an aircraft must satisfy these common requirements:
+To use its radar for an air-to-air search or tracking attempt, in any radar mode, an aircraft must satisfy these common requirements:
 
     \begin{itemize}
         \item It must not have carried out an air-to-air gun, air-to-air rocket, or air-to-ground attack.
@@ -274,7 +274,7 @@ Each radar mode may add additional requirements, particularly on maneuvering.
 
 \paragraph{Common Radar Target Requirements.}
 \label{rule:common-radar-target-requirements}
-The target of an air-to-air search or tracking attempt must satisfy these common requirements:
+The target of an air-to-air search or tracking attempt, in any radar mode, must satisfy these common requirements:
 
     \begin{itemize}
 
@@ -294,6 +294,9 @@ The target of an air-to-air search or tracking attempt must satisfy these common
 \end{itemize}
 
 Each radar mode may add additional requirements, particularly on range.
+
+\paragraph{Radar Range.}
+The range between the radar and the target is calculated in the normal manner, according to rule \ref{rule:range}, with two altitude levels being equivalent to one hex.
 
 \section{Radar Ground Clutter}
 \label{rule:radar-ground-clutter}
@@ -357,7 +360,7 @@ An aircraft with its radar in normal mode can perform a search in the air-to-air
 \item During the entire preceding flight phase, it did not:
 \begin{itemize}
         \item Turn at the HT rate or tighter (if the pilot is the radar operator) or the BT rate or tighter (is another crew member is the radar operator).
-        \item It does not prepare for or execute any special maneuvers except slides and vertical rolls. It may perform only one vertical roll per game turn.
+        \item It does not prepare for or execute any special maneuvers except slides and vertical rolls. It may execute at most one vertical roll per game turn.
         \item Use an unloaded FP.
         \item Declare a defensive preemption (see rule \ref{rule:defensive-preemptions}).
         \item Use terrain-following flight if it is a single-crewed aircraft.
@@ -367,7 +370,7 @@ An aircraft with its radar in normal mode can perform a search in the air-to-air
 \item At the end of the preceding flight phase, the target of the search:
 \begin{itemize}
     \item Is undetected by the searching aircraft.
-    \item Has a range that does not exceed the search range given in the radar section of the ADC.
+    \item Has a range that does not exceed the search range given in the radar section of the ADC. 
     \item Satisfies the common radar target requirements (see rule \ref{rule:common-radar-target-requirements}).
 \end{itemize}
 
@@ -415,7 +418,7 @@ An aircraft may attempt to convert a detection into a track. In addition to the 
 \paragraph{Normal Mode Tracking Requirements.} An aircraft with its radar in normal mode can attempt to track a target provided:
 \begin{itemize}
 \item It has a radar detection of the target.
-\item The range to the target is no greater than the tracking range given in the radar section of the ADC.
+\item The range to the target is no greater than the tracking range given in the radar section of the ADC. 
 \end{itemize}
 
 \paragraph{Normal Mode Tracking Procedure.} An aircraft may make one tracking attempt against one detected target per game turn (unless it has multi-target track technology, described in advanced rule \ref{rule:multi-target-track-technology}). Roll the die. If the result after applying any modifiers is less than or equal to the lock-on number given in the radar section of the ADC, the tracking attempt succeeds. 
@@ -474,7 +477,7 @@ A number in parenthesis indicates the maximum number of detections the aircraft 
 
 % ISSUE: Which excess detections are lost?
 
-\paragraph{Limited Track-While-Scan Technology.} If the technology section of an aircraft’s ADC states that it has \emph{limited} track-while-scan technology (sometimes denoted by parentheses around the words “track-while-scan”), it does not lose radar detections when it achieves a track but cannot perform radar searches while tracking a target.
+\paragraph{Limited Track-While-Scan Technology.} If the technology section of an aircraft’s ADC states that it has \emph{limited} track-while-scan technology (sometimes denoted by parentheses around the words “track-while-scan”), it does not lose radar detections when it achieves a track but cannot perform further radar searches while tracking a target.
 
 \paragraph{Multi-Target Track Technology.}\label{rule:multi-target-track-technology}  If the technology section of an aircraft’s ADC states that it has multi-target track technology, it may track more than one aircraft at a time. A number in parenthese indicates number of targets the aircraft may attempt to track attempt each game turn and the number of tracks it may maintain. 
 
@@ -521,7 +524,7 @@ An aircraft with its radar in boresight mode can perform a boresight search and 
 \item At the end of the preceding flight phase, the target:
 \begin{itemize}
     \item Is visually sighted.
-    \item Has a range that does not exceed the radar's \emph{tracking strength}.
+    \item Has a range that does not exceed the radar's \emph{tracking strength}. 
     \item Satisfies the common radar target requirements (see rule \ref{rule:common-radar-target-requirements}) for a limited arc.
 \end{itemize}
 
