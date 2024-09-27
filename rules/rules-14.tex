@@ -726,7 +726,7 @@ Missiles use powerful boost motors which accelerate them to top speed within a m
 
 \paragraph{Missile Speed Attenuation Factor.} To realistically account for the high-speed loss that can occur each turn, a Speed Attenuation Factor is applied to the missile's base start speed to get an average speed for the turn. The average speed indicates the number of FPs that the missile has. The average speed is therefore the speed that is listed on the aircraft log and used for the missile's flight.
 
-\paragraph{Missile Base Start Speed.} On the first turn of the missile's flight, the base start speed equals the missile's listed speed \changedin{1C}{1C-tables}{from the MDT}{in Table~\ref{table:missile-data}} plus the speed of the launching aircraft. On all subsequent game turns, the base start speed is the missile's previous average speed plus any changes for climbing, diving, and maneuvering.
+\paragraph{Missile Base Start Speed.} On the first turn of the missile's flight, the base start speed equals the missile's listed speed \changedin{1C}{1C-tables}{from the MDT}{in Table~\ref{table:missile-data}} plus the speed of the launching aircraft\addedin{1B}{1B-missile-launch-speed}{ in the turn of launch}. On all subsequent game turns, the base start speed is the missile's previous average speed plus any changes for climbing, diving, and maneuvering.
 
 \paragraph{Procedure.} At the beginning of every turn of its flight, including its first, determine a missile's average speed as follows:
 
@@ -760,7 +760,7 @@ Missiles use powerful boost motors to accelerate to top speed within two to thre
 Each turn, the average speed of the missile is determined based on its start speed, altitude, and flight time. The average speed is noted in the log. The average speed gives the number of FPs available to a missile and is used for all other purposes, including turn requirements. It is calculated as follows:
 \begin{itemize}
 \item 
-On the first game turn of flight, the missiles’s start speed is its base speed from Table~\ref{table:missile-data} plus the start speed of the launching aircraft in the game turn after launch.
+On the first game turn of flight, the missiles’s start speed is its base speed from Table~\ref{table:missile-data} plus the start speed of the launching aircraft in the game turn of launch.
 
 \item
 On the second and subsequent game turns of flight, the missile’s start speed is its average speed from the previous turn decreased according to \ref{rule:missile-flight} for climbing, diving, and turning in the previous game turn.
