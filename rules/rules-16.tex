@@ -264,7 +264,7 @@ To use its radar for an air-to-air search or tracking attempt, in any radar mode
         \item It must not have carried out an air-to-air gun, air-to-air rocket, or air-to-ground attack.
         \item It must not have been in stalled or departed flight.
         \item It must not have engaged a missile.
-        \item It must not have received H or C damage
+        \item It must not have received H or C damage in the current game turn.
         \item It must not have have performed damage control.
         \item Its radar operator must not be suffering from GLOC.
         \item Its radar operator must not be disoriented.
@@ -272,13 +272,13 @@ To use its radar for an air-to-air search or tracking attempt, in any radar mode
     
 Each radar mode may add additional requirements, particularly on maneuvering.
 
-\paragraph{Common Radar Target Requirements.}
-\label{rule:common-radar-target-requirements}
-The target of an air-to-air search or tracking attempt, in any radar mode, must satisfy these common requirements:
+\paragraph{Radar Limits.}
+\label{rule:radar-arc-requirements}
+The target of an air-to-air search or tracking attempt, in any radar mode, must be within the horizontal and vertical limits of the radar:
 
     \begin{itemize}
 
-    \item It must be within the radar arc of the aircraft using radar.
+    \item It must be within the horizontal radar arc of the aircraft using radar.
 
     \item It must satisfy these vertical limits:
     \begin{itemize}
@@ -287,13 +287,11 @@ The target of an air-to-air search or tracking attempt, in any radar mode, must 
         \item If aircraft aircraft using radar used level flight during the current game turn, the difference in altitude between it and the target must not be more than one level for every two full hexes of horizontal range.
     \end{itemize}
 
-    If advanced rule \ref{rule:radar-vertical-limits} is being used, it supersedes these simple vertical limits.
-
-    \item It must not be in radar ground clutter (see  \ref{rule:radar-ground-clutter}).
+    If advanced rule \ref{rule:radar-vertical-limits} on vertical radar limits is being used, it supersedes these simple rules.
     
 \end{itemize}
 
-Each radar mode may add additional requirements, particularly on range.
+The horizontal and vertical limits of a radar may depend on the mode in which it is being used. Each radar mode may add additional requirements, particularly on range. 
 
 \paragraph{Radar Range.}
 The range between the radar and the target is calculated in the normal manner, according to rule \ref{rule:range}, with two altitude levels being equivalent to one hex.
@@ -303,13 +301,13 @@ The range between the radar and the target is calculated in the normal manner, a
 
 Early radars were unable to effectively search and track targets at lower altitudes due to the strong radar return from the ground. This is known as “radar ground clutter” and was deliberately used by aircraft to avoid radar detection. Later radars gained technology that mitigated this problem.
 
-Whether a target is in radar ground clutter depends on the altitude of the target, the relative position the aircraft using radar, and the technology of the radar. The relevant technologies are limited look-down technology and full look-down technology (see advanced rule \ref{rule:radar-technology}). Table~\ref{table:radar-look-down} summarizes these rules.
+Whether a target is in radar ground clutter depends on the altitude of the target, the relative position the aircraft using radar, the technology of the radar, and in some cases the use of the radar. The relevant technologies are limited look-down technology and full look-down technology (see advanced rule \ref{rule:radar-technology}). Table~\ref{table:radar-look-down} summarizes these rules.
 
 When considering radar ground clutter, all altitudes are with respect to the ground at the location of the target aircraft.
 
 
 \paragraph{No Look-Down Technology.}
-For a radar with no form of look-down technology, a target that is zero to ten levels above the ground is in ground clutter unless one of the following conditions is met:
+For a radar with no form of look-down technology attempting to \emph{search, maintain a detection, or convert a detection into a track}, a target that is zero to ten levels above the ground is in ground clutter unless one of the following conditions is met:
  
 
     \begin{itemize}
@@ -324,7 +322,18 @@ For a radar with no form of look-down technology, a target that is zero to ten l
 
     \end{itemize}
 
-\paragraph{Limited Look-Down Technology.} For a radar with \emph{limited} look-down technology (see rule \ref{rule:limited-look-down-technology}), a target that is zero to ten levels above the ground is in ground clutter unless one of the following conditions is met:
+For a radar with no form of look-down technology attempting to \emph{maintain a track}, a target that is zero to ten levels above the ground is in ground clutter unless one of the following conditions is met:
+ 
+
+    \begin{itemize}
+
+        \item The target is one to four altitude levels above the ground and radar-using aircraft is lower than the target.
+        
+        \item The target is five to ten altitude levels above the ground.
+        
+    \end{itemize}
+
+\paragraph{Limited Look-Down Technology.} For a radar with \emph{limited} look-down technology (see rule \ref{rule:limited-look-down-technology}) attempting any radar use, a target that is zero to ten levels above the ground is in ground clutter unless one of the following conditions is met:
 
     \begin{itemize}
 
@@ -360,18 +369,18 @@ An aircraft with its radar in normal mode can perform a search in the air-to-air
 \item During the entire preceding flight phase, it did not:
 \begin{itemize}
         \item Turn at the HT rate or tighter (if the pilot is the radar operator) or the BT rate or tighter (is another crew member is the radar operator).
-        \item It does not prepare for or execute any special maneuvers except slides and vertical rolls. It may execute at most one vertical roll per game turn.
+        \item Prepare for or execute any special maneuvers except slides and at most one vertical roll.
         \item Use an unloaded FP.
         \item Declare a defensive preemption (see rule \ref{rule:defensive-preemptions}).
         \item Use terrain-following flight if it is a single-crewed aircraft.
         \item Violate any of the common radar use requirements (see rule \ref{rule:common-radar-use-requirements}).
 \end{itemize}
 
-\item At the end of the preceding flight phase, the target of the search:
+\item At the end of the preceding flight phase, the target of the search must:
 \begin{itemize}
-    \item Is undetected by the searching aircraft.
-    \item Has a range that does not exceed the search range given in the radar section of the ADC. 
-    \item Satisfies the common radar target requirements (see rule \ref{rule:common-radar-target-requirements}).
+    \item Have a range that is not greater than the search range given in the radar section of the ADC. 
+    \item Be within the radar horizontal and vertical limits (see rule \ref{rule:radar-arc-requirements}).
+    \item Not be in radar ground clutter (see  \ref{rule:radar-ground-clutter}).
 \end{itemize}
 
 \end{itemize}
@@ -413,7 +422,7 @@ There is no limit to the number of detected targets an aircraft can maintain.
 
 %To employ radar-guided missiles, an aircraft must refine and concentrate its radar beam on a target to determine the position more accurately and increase the reflected energy for semi-active radar-homing missiles. This is accomplished by switching the radar to a tracking mode and achieving a lock-on.
 
-An aircraft may attempt to convert a detection into a track. In addition to the other benefits mentioned above, the maneuvering requirements for continuing to track a target are relaxed compared to those for continuing to detect a target, as the radar automatically adjusts to follow the target it is tracking.
+An aircraft may attempt to convert a detection into a track. In addition to the other benefits mentioned above, the maneuvering requirements for continuing to track a target are relaxed compared to those for continuing to detect a target, as the radar automatically adjusts to follow the target.
 
 \paragraph{Normal Mode Tracking Requirements.} An aircraft with its radar in normal mode can attempt to track a target provided:
 \begin{itemize}
@@ -443,17 +452,18 @@ If a tracking attempt fails, the aircraft maintains all previous radar detection
 \paragraph{Maintaining a Normal Mode Track.} An aircraft may voluntarily stop tracking a target at any time.
 An aircraft using is radar in normal mode continues to track a target as long as:
 \begin{itemize}
-\item The aircraft does not select a special radar mode.
-\item During the flight phase, the aircraft:
+\item The tracking aircraft does not select a special radar mode.
+\item During the flight phase, the tracking aircraft does not:
 \begin{itemize}
-\item Does not use the ET turn rate.
-\item Does not prepare for or execute any special maneuvers except slides and vertical rolls. It may perform more than one vertical roll per game turn.
-\item Does not declare a defensive preemption (see rule \ref{rule:defensive-preemptions}).
+\item Use the ET turn rate.
+\item Prepare for or execute any special maneuvers except slides and at most one vertical roll.
+\item Declare a defensive preemption (see rule \ref{rule:defensive-preemptions}).
 \end{itemize}
 \item At the end of the flight phase, the target:
 \begin{itemize}
-\item Satisfies the common radar requirements above.
+\item Is within the radar horizontal and vertical limits (see rule \ref{rule:radar-arc-requirements}).
 \item Has range that is no greater than the tracking range.
+\item Is not in radar ground clutter (see  \ref{rule:radar-ground-clutter}).
 \item Does not break the lock using decoys or ECM (see advanced rule \ref{rule:electronic-warfare}) and Table~\ref{table:radar-breaking-lock-on}. 
 \end{itemize}
 \end{itemize}
@@ -525,7 +535,8 @@ An aircraft with its radar in boresight mode can perform a boresight search and 
 \begin{itemize}
     \item Is visually sighted.
     \item Has a range that does not exceed the radar's \emph{tracking strength}. 
-    \item Satisfies the common radar target requirements (see rule \ref{rule:common-radar-target-requirements}) for a limited arc.
+    \item It is within the radar horizontal and vertical limits (see rule \ref{rule:radar-arc-requirements}).
+    \item Is not in radar ground clutter (see  \ref{rule:radar-ground-clutter}).
 \end{itemize}
 
 \end{itemize}
@@ -556,7 +567,8 @@ Alternatively, it may choose to continue to use boresight mode. If it has only a
     \item At the end of the flight phase, the target:
     \begin{itemize}
         \item Has a range that does not exceed the radar's \emph{tracking strength}.
-        \item Satisfies the common radar target requirements (see rule \ref{rule:common-radar-target-requirements}) for a limited arc.
+        \item Is within the radar horizontal and vertical limits (see rule \ref{rule:radar-arc-requirements}).
+        \item Is not in radar ground clutter (see  \ref{rule:radar-ground-clutter}).
     \end{itemize}
 \end{itemize}
 
@@ -594,7 +606,8 @@ An aircraft with its radar in auto-track mode can perform an auto-track search a
 \item At the end of the preceding flight phase, the target:
 \begin{itemize}
     \item Has a range that does not exceed the radar's \emph{search strength}.
-    \item Satisfies the common radar target requirements (see rule \ref{rule:common-radar-target-requirements}) for a \arcrange{180}{+} arc.
+    \item Is within the radar horizontal and vertical limits (see rule \ref{rule:radar-arc-requirements}).
+    \item Is not in radar ground clutter (see  \ref{rule:radar-ground-clutter}).
 \end{itemize}
 
 \end{itemize}
@@ -627,7 +640,8 @@ Alternatively, it may choose to continue to use auto-track mode. If it has only 
     \item At the end of the flight phase, the target:
     \begin{itemize}
         \item Has a range that does not exceed the radar's \emph{search strength}.
-        \item Satisfies the common radar target requirements (see rule \ref{rule:common-radar-target-requirements}) for a limited arc.
+        \item Is within the radar horizontal and vertical limits (see rule \ref{rule:radar-arc-requirements}).
+        \item Is not in radar ground clutter (see  \ref{rule:radar-ground-clutter}).
     \end{itemize}
 \end{itemize}
 
