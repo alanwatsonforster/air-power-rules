@@ -156,7 +156,9 @@ When determining if a radar target is in ground clutter, the horizontal range an
 \paragraph{Closeness.}
 \label{rule:closeness}
 
-Range is used to determine relative closeness. If two aircraft have different ranges from a reference aircraft, the one with the smaller range is considered to be closer to the reference aircraft. If two aircraft have the same range, they are considered to be equally close.
+Range is used to determine relative closeness. If two aircraft have different ranges from a reference aircraft, the one with the smaller range is considered to be closer to the reference aircraft. If two aircraft have the same range, they are considered to be equally close. (That is, horizontal differences of half a hex and vertical differences of an odd number of altitude levels are ignored when determining closeness.)
+
+For example, assuming all the aircraft in Figure~\ref{figure:range-example} have the same altitude, then aircraft C and D are equally close to aircraft A, since both are at a range of 2 hexes. Furthermore, assuming that aircraft A and C are at the same altitude and aircraft D is one altitude level below or above, then aircraft C and D are still equally close to aircraft A since both are still at a range of 2 hexes.
 
 }
 
