@@ -5,12 +5,17 @@
 }
 
 \CX{
+
 This chapter describes how the map hexes are utilized to position counters during play. The game map is used to show exactly where aircraft, missiles, and other units, are located in relationship to each other. Every game counter must be placed on the maps so that its position is clear to all players.
+
 }{
+
 This rule describes how the position and facing of an element --- an aircraft, a missile, a ground unit, or a naval unit --- is defined.
+
 }
 
 \CX{
+
 \section{Basic Elements of Position}
 
 \paragraph{Aircraft and Missile Counters.} 
@@ -32,12 +37,14 @@ Each aircraft and missile counter has a position which is defined by its map loc
 Ground combat units and naval units have their positions defined simply by map location. They are always placed wholly within hexes and never on hexsides. Ground units never consider facing\addedin{1B}{1B-apj-23-errata}{ (except heavy AAA units under advanced rule 24.5)}, but large naval units must be faced in specific directions as for aircraft and missiles.
 
 }{
+
 \section{Position}
 \label{rule:position}
 
 Air combat occurs in three dimensions, and consequently, an element’s \emph{position} is defined in two dimensions by its \emph{map location} and in the third by its \emph{altitude}.
 
-\paragraph{Map Location.}\label{rule:map-location}
+\paragraph{Map Location.}
+\label{rule:map-location}
 
 The hex grid on the map defines \emph{map locations}. These are formally the centers of hexes and the centers of the sides of hexes, although they are hereafter referred to simply as “hexes” and “hex sides.” Figure~\ref{figure:map-location} shows map locations with respect to the hex grid.
 
@@ -45,12 +52,19 @@ The game counter representing an element must be placed on the map in a way that
 
 Map locations are written as the map designation (typically a letter or a letter followed by a number) followed by the hex number (for locations in hexes) or the hex numbers of the two adjacent hexes (for locations on hex sides). For example, “A-1316” or “B2-3421/3520”.
 
-\paragraph{Altitude.}\label{rule:altitude}
+\paragraph{Altitude.}
+\label{rule:altitude}
 
 Altitudes are given in terms of numbered \emph{altitude levels}. Each altitude level corresponds to 1000 feet above sea level, so the number of a level corresponds to the altitude in thousands of feet. For example, altitude level 24 corresponds to 24,000 feet above sea level.
 
-\paragraph{Aircraft and Missiles.} 
+\paragraph{Altitude Bands}
+\label{rule:altitude-bands}
 
+\input{tables/table-altitude-bands}
+
+Altitude levels are grouped into \emph{altitude bands}, each several levels thick. Aircraft and missile performance can vary between the altitude bands, as the air density and temperature typically decrease with altitude. The altitude bands are shown in  Table~\ref{table:altitude-bands}.
+
+\paragraph{Aircraft and Missiles.} 
 
 The game counters representing aircraft and missiles may occupy map locations corresponding to either hexes and hex sides, as shown by Figure~\ref{figure:aircraft-map-location}. The altitude of an aircraft or missile is tracked on its log sheet (see rule~\ref{rule:aircraft-log-sheets}).
 
@@ -91,14 +105,6 @@ The game counters representing heavy AAA units (see rule~\ref{rule:heavy-aaa-uni
 Other ground and naval units do not have defined facings, and the orientation of the counters representing them is not significant.
 }
 
-\AX{
-\section{Altitude Bands}
-\label{rule:altitude-bands}
-
-\input {tables/table-altitude-bands}
-
-Altitude levels are grouped into \emph{altitude bands}, each several levels thick. Aircraft and missile performance can vary between the altitude bands, as the air density and temperature typically decrease with altitude. The altitude bands are shown in  Table~\ref{table:altitude-bands}.
-}
 
 \addedin{2B}{2B-range}{
 \section{Range}
