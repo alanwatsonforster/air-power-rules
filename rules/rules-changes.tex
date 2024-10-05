@@ -28,6 +28,10 @@
     \newcommand{\earlierversion}{2B}
     \newcommand{\earlierversions}{1A1B1C1D2A2B}
 }{}
+\IfStrEq{\thisversion}{3A}{
+    \newcommand{\earlierversion}{2C}
+    \newcommand{\earlierversions}{1A1B1C1D2A2B2C}
+}{}
 
 % These commands compare their first argument to \thisversion. If their first argument is an equal to, earlier than, or later than \thisversion, they evaluate their second argument. The first argument will normally be the version in which a change was made. The commands should be read as "if the change was made in this, in an earlier, or in a later version, then evaluate the second argument."
 
@@ -139,3 +143,10 @@
 \newcommand{\Dx}[2][2C-editing]{\deletedin{2C}{#1}{#2}}
 \newcommand{\SAx}[2][2C-editing]{\silentlyaddedin{2C}{#1}{#2}}
 \newcommand{\IAx}[2][2C-editing]{\itemaddedin{2C}{#1}{#2}}
+
+\newcommand{\Y}[3][3A-editing]{\changedin{3A}{#1}{#2}{#3}}
+\newcommand{\AY}[2][3A-editing]{\addedin{3A}{#1}{#2}}
+\newcommand{\DY}[2][3A-editing]{\deletedin{3A}{#1}{#2}}
+\newcommand{\SAY}[2][3A-editing]{\silentlyaddedin{3A}{#1}{#2}}
+\newcommand{\IAY}[2][3A-editing]{\itemaddedin{3A}{#1}{#2}}
+
