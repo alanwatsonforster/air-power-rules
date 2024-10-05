@@ -126,12 +126,20 @@ minus \fontdimen4\font}
 
 \setcounter{secnumdepth}{2}
 
+
+\renewcommand{\chaptername}{Rule}
+
 \newcommand{\rulechapter}[1]{
+    \typeout{}
+    \typeout{==================================================================}
     \chapter{#1}%
     \addtocontents{toc}{\protect\vspace{-1ex}}%
     \thispagestyle{fancy}%
+    \typeout{==================================================================}
+    \typeout{}
 }
 \newcommand{\appendixchapter}[1]{
+    \typeout{Appendix \thechapter: #1}
     \chapter{#1}%
     \addtocontents{toc}{\protect\vspace{-1ex}}%
     \thispagestyle{fancy}%
@@ -144,14 +152,14 @@ minus \fontdimen4\font}
         {-3.5ex \@plus -1ex \@minus -.2ex}%
         {2.3ex \@plus.2ex}%
         {\normalfont\Large\bfseries\raggedright}%
-    }
+}
 \renewcommand\paragraph{%
     \@startsection{paragraph}{4}%
         {\z@}%
         {\parskip}%
         {-\interwordspace}%
         {\normalfont\normalsize\bfseries}%
-    }
+}
 \makeatother
 
 \newcommand{\OLDadvancedrules}{
