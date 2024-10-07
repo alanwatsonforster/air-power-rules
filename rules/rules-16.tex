@@ -207,6 +207,8 @@ The radar and technology sections of the ADC give the characteristics of an airc
 
 \paragraph{Radar Arc.} The arcs line shows the arc in which the radar operates when used in normal mode. (The arc may differ in boresight mode and auto-track mode, described in advanced rules \ref{rule:boresight-mode} and \ref{rule:auto-track-mode}.)
 
+\DY[3A-limited-arcs]{
+
 \input{figures/figure-limited-arc}
 
 The arc may be the word “limited” or an arc range (see rule \ref{rule:ranges-of-angle-off-arcs}). Figure~\ref{figure:limited-arcs} shows the limited arc. In this figure, only the map locations within the limited arc line are within the limited arc. 
@@ -214,6 +216,8 @@ The arc may be the word “limited” or an arc range (see rule \ref{rule:ranges
 The arc ranges \arcrange{180}{+}, \arcrange{150}{+}, \arcrange{120}{+} include the specified arc and all more forward arcs (see rule \ref{rule:ranges-of-angle-off-arcs}). For example, \arcrange{150}{+} includes the \arc{150} and \arc{180} arcs.
 
 Targets on the borderline of a radar arc are considered to be within the arc.
+
+}
 
 \paragraph{Radar Search Capability.} The search line shows the radar's search capability. If this line has two numbers separated by a dash, the radar is capable of normal air-to-air search. The first number is the maximum search range in hexes. The second number is the search strength rating. 
 
