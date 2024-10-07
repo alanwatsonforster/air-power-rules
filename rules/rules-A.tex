@@ -86,12 +86,12 @@ For clarity, we will define the relative position of a \emph{distant element}  w
 
 \item For advantage (rule~\ref{rule:initiative}), the aircraft potentially in a superior position is the reference element, and the aircraft potentially in an inferior position is the distant element.
 
-\item For envelopes and IRM launch requirements (rules~\ref{rule:missile-launches} and \ref{rule:irm-launch-requirements}), the target aircraft is the reference element, and the launching aircraft is the distant element.
+\item For envelopes and IRM target aspect launch requirements (rules~\ref{rule:missile-launches} and \ref{rule:irm-launch-requirements}), the target aircraft is the reference element, and the launching aircraft is the distant element.
 
 \item When determining the field of view of sensors, the aircraft or missile sensing is the reference element, and the aircraft being sensed is the distant element. Sensors include:
 \begin{itemize} 
+\item VAS (rule~\ref{rule:vas}),
 \item IRSTS (rule~\ref{rule:irsts}),
-\item VAS (rule~\ref{rule:irsts}),
 \item missile seekers (rule~\ref{rule:air-to-air-missiles}), and
 \item air-to-air radar (rule~\ref{rule:air-to-air-radar}).
 \end{itemize}
@@ -203,9 +203,161 @@ Restricted or blind regions for sighting are sometimes given as \arc{30}L, \arc{
 
 For example, a restricted arc given as \arc{180}{L} refers to the \arc{180} arcs but only for distant elements at lower altitudes and might apply to an aircraft whose nose obscures the view from the cockpit forward and downwards.
 
-\section{Vertical Arcs}
+}
+
+\AY[3A-vertical-arcs]{
+
+\section{Combined Arcs}
 \label{rule:vertical-arcs}
 \label{rule:vertical-limits}
 
+
+Aircraft and missile sensors have fields that are limited not just horizontally but also vertically. The \emph{combined arcs} described here extend the horizontal arcs above to include appropriate vertical limits.
+
+Combined arcs are used to determine if a target is in the field of:
+\begin{itemize} 
+\item VAS (rule~\ref{rule:vas}),
+\item IRSTS (rule~\ref{rule:irsts}),
+\item missile seekers (rule~\ref{rule:air-to-air-missiles}), 
+\item air-to-air radar (rule~\ref{rule:air-to-air-radar}), and
+\item laser designators (rule~\ref{rule:laser-guided-weapons}).
+\end{itemize}
+They are also used to determine if the target satisfies the aspect requirements for IRM launches (rule~\ref{rule:irm-launch-requirements}). They are not used elsewhere.
+
+\paragraph{Flight Slope.}
+
+The \emph{flight slope} characterizes the vertical attitude of the reference element just as its facing characterizes is horizontal aspect.
+
+The flight slope is calculated over a number of FPs as the number of altitude levels gained divided by the number of HFPs expended. 
+
+The flight slope will be positive if the element gains altitude, zero if it maintains altitude, and negative if it loses altitude. For purely vertical flight with no HFPs, the flight slope will be positive infinity ($+\infty$) for climbing or negative infinity ($-\infty$) for diving.
+
+For aircraft and missile prior to launch, determine the flight slope by considering all of the FPs expended by the aircraft in the previous flight phase. 
+
+For missiles in flight, if the previous proportional move had two or more FPs, determine the flight slope by considering them all. Otherwise, if the previous proportional more only had one FP and was the first one of the missile’s flight, determine the flight slope from that FP and the last FP of the aircraft before launch. Otherwise, determine the flight slope from the missile’s last two FPs.
+
+For example, if an aircraft executes level flight with four HFPs and no free descent, its flight slope is 0. If it executes the same but with free descent, its flight slope is $-1/4 = -0.25$. If it executes a zoom climb with three HFPs and four VFPs, gaining seven altitude levels, its flight slope is $+7/3 \approx 2.33$. If it executes a vertical dive with no HFPs and six VFPs, losing twelve altitude levels, its flight slope is $-12/0 = -\infty$.
+
+\paragraph{Combined Arcs Procedure.}
+
+\input{tables/table-combined-arcs}
+
+%\begin{itemize}
+%
+%\item For a pure vertical climb the flight slope is $+\infty$ and Table~X gives a single positive vertical limit factor in parentheses. Multiply it by the horizontal range to the distant element and add the altitude of the reference element to determine the lower altitude limit.
+%
+%The distant element is within the combined arc if:
+%\begin{itemize}
+%\item Its altitude is greater than or equal to the lower altitude limit.
+%\end{itemize}
+%There is no requirement on the horizontal arc; the distant element can be in any horizontal arc since for pure vertical flight the interpretation of facing is ambiguous.
+%
+%\item For a pure vertical dive the flight slope is $-\infty$ and Table~X gives a single negative vertical limit factor in parentheses. Multiply it by the horizontal range to the distant element and add the altitude of the reference element to determine the upper altitude limit.
+%
+%The distant element is within the combined arc if:
+%\begin{itemize}
+%\item Its altitude is less than or equal to the lower altitude limit.
+%\end{itemize}
+%Again, there is no requirement on the horizontal arc.
+%
+%\item If Table~X gives two vertical limit factors that are not in parentheses, then the first is the lower limit factor and the second is the upper limit factor. Multiply both of them by the horizontal range to the distant element to determine the lower and upper altitude limits. Round up the lower altitude limit and round down the upper altitude limit. 
+%
+%The distant element is within the combined arc if:
+%\begin{itemize}
+%\item It is within the corresponding horizontal arc,
+%\item The altitude difference is greater than or equal to the lower altitude limit, and
+%\item The altitude difference is less than or equal to the upper altitude limit.
+%\end{itemize}
+%
+%\item If Table~X gives two vertical limit factors and the second is in parentheses, then the first is the normal lower limit factor and the second is the all-round lower limit factor. Multiply both of them by the horizontal range to the distant element to determine the normal lower and all-round lower altitude limits. Round up the normal lower altitude limit.
+%
+%The distant element is within the combined arc if either:
+%\begin{itemize}
+%\item It is within the corresponding horizontal arc, and
+%\item Its altitude is greater than or equal to the normal lower altitude limit,
+%\end{itemize}
+%or
+%\begin{itemize}
+%\item Its altitude is greater than or equal to the all-round lower limit.
+%\end{itemize}
+%In the second case, there is no requirement on the horizontal arc.
+%
+%\item If Table~X gives two vertical limit factors and the first is in parentheses, then  the first is the all-round upper limit factor and the second is the normal upper limit factor. Multiply both of them by the horizontal range to the distant element to determine the normal upper and all-round upper altitude limits. Round down the normal upper altitude limit.
+%
+%The distant element is within the combined arc if either:
+%\begin{itemize}
+%\item It is within the corresponding horizontal arc, and
+%\item Its altitude is less than or equal to the normal upper altitude limit,
+%\end{itemize}
+%or
+%\begin{itemize}
+%\item Its altitude is less than or equal to the all-round upper limit.
+%\end{itemize}
+%In the second case, there is no requirement on the horizontal arc.
+%
+%
+%\end{itemize}
+
+Cross-reference the arc and the flight slope in Table~\ref{table:vertical-limit-factors}. The entries in the table are either one or two \emph{vertical limit factors}. The factors themselves are either in parentheses or not in parentheses.
+
+\begin{itemize}
+
+\item
+The factors not in parentheses are \emph{mixed} vertical limit factors. They are multiplied by the horizontal range from the reference to the distant element, rounded up if lower limits and rounded down if upper limits, and then give the \emph{maximum} number of levels that the distant aircraft can be below (negative factor) or above (positive factor) the reference aircraft and still be within the combined arc. 
+
+In these cases, the distant aircraft must also be in the corresponding horizontal arc to be within the combined arc.
+
+\item
+The factors in parentheses are \emph{pure} vertical limit factors. They are multiplied by the horizontal range from the reference to the distant element, and then give the \emph{minimum} number of levels that the distant aircraft can be above (positive factor) or below (negative factor) the reference aircraft and still be in the combined arc. 
+
+In these cases, the distant aircraft \emph{need not} be in the corresponding horizontal arc; it can be in \emph{any} horizontal arc.
+
+\end{itemize}
+
+To determine if the distant element is within the field:
+
+\begin{itemize}
+\item 
+If Table~\ref{table:vertical-limit-factors} gives a single pure vertical limit factor, this will be a lower limit (positive factor and pure vertical climb) or upper limit (negative factor and pure vertical dive). The distant aircraft is within the field if its altitude satisfies the corresponding limit.
+
+\item 
+If Table~\ref{table:vertical-limit-factors} gives two mixed factors, the first is for the lower limit and the second for the upper limit. The distant aircraft is within the field if its altitude satisfies \emph{both} corresponding limits.
+
+\item 
+If Table~\ref{table:vertical-limit-factors} gives a mixed factor followed by a pure factor, both are lower limits. The distant aircraft is in the combined arc if it satisfies \emph{either} of the corresponding limits.
+
+\item 
+If Table~\ref{table:vertical-limit-factors} gives a pure factor followed by a mixed factor, both are upper limits. The distant aircraft is in the combined arc if it satisfies \emph{either} of the corresponding limits.
+
+\end{itemize}
+
+For example, consider an aircraft at an altitude of 10 attempting to detect another at a horizontal range of 5 hexes using radar with an \arcrange{180}{+} arc.
+\begin{itemize}
+\item
+If the aircraft has a flight slope of 0, Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of $-1.0$ and $+1.0$. 
+
+Applying them, we see that the target is within the field of the radar if it has an altitude of 5 to 15 inclusive and is within the \arcrange{180}{+} horizontal arc.
+
+\item
+If the aircraft has a flight slope of more than 0 but no more than 1 ($0 < \mbox{FS} \le 1$), Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of $-0.5$ and $+2.0$. 
+
+Applying them, we see that the target is within the field of the radar if it has an altitude of 8 to 20 inclusive and is within the \arcrange{180}{+} horizontal arc.
+
+\item
+If the aircraft has a flight slope of more than 1 but no more than 3 ($1 < \mbox{FS} \le 3$), Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of $+0.5$ and $+7.0$. 
+
+Applying them, we see that the target is within the field of the radar if it has an altitude of 13 to 45 inclusive and is within the \arcrange{180}{+} horizontal arc.
+
+\item
+If the aircraft has a flight slope of more than 3 but that is still finite ($3 < \mbox{FS} < +\infty$), Table~\ref{table:vertical-limit-factors} gives one mixed factor (without parentheses) of $+2.0$ and one pure factor (with parentheses) of $(+7)$.
+
+Applying them, we see that the target is within the field of the radar if it either has an altitude of 20 or more and is within the \arcrange{180}{+} horizontal arc or if it has an altitude of at least 45 and is at any horizontal position.
+
+\item
+If the aircraft in a pure vertical climb ($\mbox{FS} = +\infty$), Table~\ref{table:vertical-limit-factors} gives only one pure factor (with parentheses) of $(+3)$.
+
+Applying it, we see that target is within the field of the radar if it has an altitude of at least 25 and is at any horizontal position.
+
+\end{itemize}
 }
 
