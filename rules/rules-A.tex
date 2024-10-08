@@ -309,38 +309,26 @@ For example, if an aircraft executes level flight with four HFPs and no free des
 %
 %\end{itemize}
 
-Cross-reference the arc and the flight slope in Table~\ref{table:vertical-limit-factors}. The entries in the table are either one or two \emph{vertical limit factors}. The factors themselves are either in parentheses or not in parentheses.
+Cross-reference the arc and the flight slope in Table~\ref{table:vertical-limit-factors}. The entries in the table are one or two numerical vertical limit factors indicating upper ($\le$) or lower ($\ge$) limits. The factors themselves are either in parentheses or not in parentheses.
 
 \begin{itemize}
 
 \item
-The factors not in parentheses are \emph{mixed} vertical limit factors. They are multiplied by the horizontal range from the reference to the distant element, rounded up if lower limits and rounded down if upper limits, and then give the \emph{maximum} number of levels that the distant aircraft can be below (negative factor) or above (positive factor) the reference aircraft and still be within the combined arc. 
+The factors not in parentheses are \emph{mixed} vertical limit factors. They are multiplied by the horizontal range from the reference to the distant element, rounded up if lower limits and rounded down if upper limits, and then give the \emph{maximum} number of levels that the distant aircraft can be above ($\le$) or below ($\ge$) the reference aircraft and still be within the combined arc. 
 
 In these cases, the distant aircraft must also be in the corresponding horizontal arc to be within the combined arc.
 
 \item
-The factors in parentheses are \emph{pure} vertical limit factors. They are multiplied by the horizontal range from the reference to the distant element, and then give the \emph{minimum} number of levels that the distant aircraft can be above (positive factor) or below (negative factor) the reference aircraft and still be in the combined arc. 
+The factors in parentheses are \emph{pure} vertical limit factors. They are multiplied by the horizontal range from the reference to the distant element and then give the \emph{minimum} number of levels that the distant aircraft can be above ($\le$) or below ($\ge$) the reference aircraft and still be in the combined arc. 
 
 In these cases, the distant aircraft \emph{need not} be in the corresponding horizontal arc; it can be in \emph{any} horizontal arc.
 
 \end{itemize}
 
-To determine if the distant element is within the combined arc:
+If Table~\ref{table:vertical-limit-factors} gives one factor, the distant element is within the combined arc if the condition corresponding to the factor is satisfied.
 
-\begin{itemize}
-\item 
-If Table~\ref{table:vertical-limit-factors} gives a single pure vertical limit factor, this will be a lower limit (positive factor and pure vertical climb) or upper limit (negative factor and pure vertical dive). The distant aircraft is within the combined arc if its altitude satisfies the corresponding limit.
+If Table~\ref{table:vertical-limit-factors} gives two factors, they will be combined with “and” or “or.” In the case of “and,” the distant element is within the combined arc if the conditions corresponding to both factors are satisfied. In the case of “or,” the distant element is within the combined arc if the condition corresponding to either factor is satisfied.
 
-\item 
-If Table~\ref{table:vertical-limit-factors} gives two mixed factors, the first is for the lower limit and the second for the upper limit. The distant aircraft is within the combined arc if its altitude satisfies \emph{both} corresponding limits.
-
-\item 
-If Table~\ref{table:vertical-limit-factors} gives a mixed factor followed by a pure factor, both are lower limits. The distant aircraft is in the combined arc if it satisfies \emph{either} of the corresponding limits.
-
-\item 
-If Table~\ref{table:vertical-limit-factors} gives a pure factor followed by a mixed factor, both are upper limits. The distant aircraft is in the combined arc if it satisfies \emph{either} of the corresponding limits.
-
-\end{itemize}
 
 \paragraph{Combined Arcs Graphical Procedure.}
 
