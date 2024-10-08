@@ -210,7 +210,7 @@ For example, a restricted arc given as \arc{180}{L} refers to the \arc{180} arcs
 \paragraph{Limited Arcs.}
 \label{rule:limited-arcs}
 
-\input{figures/figure-limited-arc}
+%\input{figures/figure-limited-arc}
 
 Some sensors and rules make use of a \emph{limited arc} that is even narrower than the \arcrange{180}{+} arc. Figure~\ref{figure:limited-arcs} shows the limited arc. In this figure, only the map locations within the limited arc line are within the limited arc. 
 
@@ -325,14 +325,14 @@ In these cases, the distant aircraft \emph{need not} be in the corresponding hor
 
 \end{itemize}
 
-To determine if the distant element is within the field:
+To determine if the distant element is within the combined arc:
 
 \begin{itemize}
 \item 
-If Table~\ref{table:vertical-limit-factors} gives a single pure vertical limit factor, this will be a lower limit (positive factor and pure vertical climb) or upper limit (negative factor and pure vertical dive). The distant aircraft is within the field if its altitude satisfies the corresponding limit.
+If Table~\ref{table:vertical-limit-factors} gives a single pure vertical limit factor, this will be a lower limit (positive factor and pure vertical climb) or upper limit (negative factor and pure vertical dive). The distant aircraft is within the combined arc if its altitude satisfies the corresponding limit.
 
 \item 
-If Table~\ref{table:vertical-limit-factors} gives two mixed factors, the first is for the lower limit and the second for the upper limit. The distant aircraft is within the field if its altitude satisfies \emph{both} corresponding limits.
+If Table~\ref{table:vertical-limit-factors} gives two mixed factors, the first is for the lower limit and the second for the upper limit. The distant aircraft is within the combined arc if its altitude satisfies \emph{both} corresponding limits.
 
 \item 
 If Table~\ref{table:vertical-limit-factors} gives a mixed factor followed by a pure factor, both are lower limits. The distant aircraft is in the combined arc if it satisfies \emph{either} of the corresponding limits.
@@ -342,33 +342,48 @@ If Table~\ref{table:vertical-limit-factors} gives a pure factor followed by a mi
 
 \end{itemize}
 
+\paragraph{Combined Arcs Graphical Procedure.}
+
+This procedure can be carried out graphically using Figures \ref{figure:combined-arcs-a} to \ref{figure:combined-arcs-d}. Determine the flight slope of the reference aircraft. Then, on the appropriate Figure for the arc, find the position that corresponds to the horizontal range to the distant element and its altitude relative to the reference element and the line or lines whose color corresponds to the flight slope. The determination of whether the distant element is within the combined arc then depends on whether there are one or two lines and whether they are solid or dashed:
+
+\begin{itemize}
+    \item For two solid lines: the distant element is within the combined arc if it lies between the solid lines and is within the horizontal arc.
+    \item For one solid line: the distant element is within the combined arc if it is above (flight slope positive) or below (flight slope negative) line for climbing/diving and is within the horizontal arc.
+    \item For one solid line and one dashed line: the distant element is within the combined arc if it is be above (flight slope positive) or below (flight slope negative) the solid line and is within the horizontal arc or if it is above (flight slope positive) or below (flight slope negative) the dashed line.
+    \item For one dashed line: the distant element is within the combined arc if it is above (flight slope positive) or below (flight slope negative) the dashed line.
+\end{itemize}
+
 For example, consider an aircraft at an altitude of 10 attempting to detect another at a horizontal range of 5 hexes using radar with an \arcrange{180}{+} arc.
 \begin{itemize}
 \item
 If the aircraft has a flight slope of 0, Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of $-1.0$ and $+1.0$. 
 
-Applying them, we see that the target is within the field of the radar if it has an altitude of 5 to 15 inclusive and is within the \arcrange{180}{+} horizontal arc.
+Applying them, we see that the target is within the combined arc of the radar if it has an altitude of 5 to 15 inclusive and is within the \arcrange{180}{+} horizontal arc.
 
 \item
 If the aircraft has a flight slope of more than 0 but no more than 1 ($0 < \mbox{FS} \le 1$), Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of $-0.5$ and $+2.0$. 
 
-Applying them, we see that the target is within the field of the radar if it has an altitude of 8 to 20 inclusive and is within the \arcrange{180}{+} horizontal arc.
+We see that the target is within the field of the radar if it has an altitude of 8 to 20 inclusive and is within the \arcrange{180}{+} horizontal arc.
 
 \item
 If the aircraft has a flight slope of more than 1 but no more than 3 ($1 < \mbox{FS} \le 3$), Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of $+0.5$ and $+7.0$. 
 
-Applying them, we see that the target is within the field of the radar if it has an altitude of 13 to 45 inclusive and is within the \arcrange{180}{+} horizontal arc.
+We see that the target is within the field of the radar if it has an altitude of 13 to 45 inclusive and is within the \arcrange{180}{+} horizontal arc.
 
 \item
 If the aircraft has a flight slope of more than 3 but that is still finite ($3 < \mbox{FS} < +\infty$), Table~\ref{table:vertical-limit-factors} gives one mixed factor (without parentheses) of $+2.0$ and one pure factor (with parentheses) of $(+7)$.
 
-Applying them, we see that the target is within the field of the radar if it either has an altitude of 20 or more and is within the \arcrange{180}{+} horizontal arc or if it has an altitude of at least 45 and is at any horizontal position.
+We see that the target is within the field of the radar if it either has an altitude of 20 or more and is within the \arcrange{180}{+} horizontal arc or if it has an altitude of at least 45 and is at any horizontal position.
 
 \item
 If the aircraft in a pure vertical climb ($\mbox{FS} = +\infty$), Table~\ref{table:vertical-limit-factors} gives only one pure factor (with parentheses) of $(+3)$.
 
-Applying it, we see that target is within the field of the radar if it has an altitude of at least 25 and is at any horizontal position.
+We see that target is within the field of the radar if it has an altitude of at least 25 and is at any horizontal position.
 
 \end{itemize}
+
+% This file contains \clearpages to avoid exceeding memory limits, so input it at the end of the chapter.
+\input{figures/figure-combined-arcs}
+
 }
 
