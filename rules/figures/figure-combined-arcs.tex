@@ -35,15 +35,15 @@
         }
         \begin{scope}[shift={(\xmax-8.5,0)}]
             \draw (-0.7,+5.2) [fill=white] rectangle (+6.7,-5.2);
-            \draw [very thick,color=Tpurple](0,+4) -- (1,+4) node [color=black,anchor=west] {$\mbox{FS} = +\infty$};
-            \draw [very thick,color=Tred   ](0,+3) -- (1,+3) node [color=black,anchor=west] {$+3 < \mbox{FS} < +\infty$};
-            \draw [very thick,color=Tgreen ](0,+2) -- (1,+2) node [color=black,anchor=west] {$+1 < \mbox{FS} \le +3$};
-            \draw [very thick,color=Torange](0,+1) -- (1,+1) node [color=black,anchor=west] {$0 < \mbox{FS} \le +1$};
-            \draw [very thick,color=Tblue  ](0,+0) -- (1,+0) node [color=black,anchor=west] {$\mbox{FS} = 0$};
-            \draw [very thick,color=Tbrown ](0,-1) -- (1,-1) node [color=black,anchor=west] {$0 > \mbox{FS} \ge -1$};
-            \draw [very thick,color=Tpink  ](0,-2) -- (1,-2) node [color=black,anchor=west] {$-1 > \mbox{FS} \ge -3$};
-            \draw [very thick,color=Tolive ](0,-3) -- (1,-3) node [color=black,anchor=west] {$-3 > \mbox{FS} > -\infty$};
-            \draw [very thick,color=Tcyan  ](0,-4) -- (1,-4) node [color=black,anchor=west] {$\mbox{FS} = -\infty$};
+            \draw [very thick,color=Tpurple](0,+4) -- (1,+4) node [color=black,anchor=west] {$\wbox[r]{$+0 < \mbox{FS}$}{$\mbox{FS}$} = +\infty$};
+            \draw [very thick,color=Tred   ](0,+3) -- (1,+3) node [color=black,anchor=west] {$\wbox[r]{$+0 < \mbox{FS}$}{$+3 < \mbox{FS}$} < +\infty$};
+            \draw [very thick,color=Tgreen ](0,+2) -- (1,+2) node [color=black,anchor=west] {$\wbox[r]{$+0 < \mbox{FS}$}{$+1 < \mbox{FS}$} \le +3$};
+            \draw [very thick,color=Torange](0,+1) -- (1,+1) node [color=black,anchor=west] {$\wbox[r]{$+0 < \mbox{FS}$}{$0 < \mbox{FS}$} \le +1$};
+            \draw [very thick,color=Tblue  ](0,+0) -- (1,+0) node [color=black,anchor=west] {$\wbox[r]{$+0 < \mbox{FS}$}{$\mbox{FS}$} = 0$};
+            \draw [very thick,color=Tbrown ](0,-1) -- (1,-1) node [color=black,anchor=west] {$\wbox[r]{$+0 < \mbox{FS}$}{$0 > \mbox{FS}$} \ge -1$};
+            \draw [very thick,color=Tpink  ](0,-2) -- (1,-2) node [color=black,anchor=west] {$\wbox[r]{$+0 < \mbox{FS}$}{$-1 > \mbox{FS}$} \ge -3$};
+            \draw [very thick,color=Tolive ](0,-3) -- (1,-3) node [color=black,anchor=west] {$\wbox[r]{$+0 < \mbox{FS}$}{$-3 > \mbox{FS}$} > -\infty$};
+            \draw [very thick,color=Tcyan  ](0,-4) -- (1,-4) node [color=black,anchor=west] {$\wbox[r]{$+0 < \mbox{FS}$}{$\mbox{FS}$} = -\infty$};
         \end{scope}
     \end{scope}
 }
@@ -60,7 +60,7 @@
         \begin{itemize}
             \item Find the lines with the colors corresponding to the flight slope.
             \item For two solid lines: must be between the solid lines and within the horizontal arc.
-            \item For one solid line: must be above/below line for climbing/diving and within the horizontal arc.
+            \item For one solid line: must be above/below line and within the horizontal arc.
             \item For one solid line and one dashed line: must be above/below solid line and within the horizontal arc or must be above/below dashed line.
             \item For one dashed line: must be above/below dashed line.
             \item Select above/below according to whether the flight slope is positive/negative.
