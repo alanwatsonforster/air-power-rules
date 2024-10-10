@@ -72,7 +72,7 @@ For example, assuming all the aircraft in Figure~\ref{figure:range-example} have
 
 Other situations described in these rules depend on the angle at which one element is seen from another. For example, radars are typically restricted to scanning over forward cone, the aircraft fuselage and wings can prevent the crew from sighting to the rear and below, early infrared-homing missiles could only track targets from behind, and it is easier to compensate gunfire for deflection when firing from the rear or front of the target than from the beam.
 
-The angle can have two components. The horizontal angle is described by the rules in in this section, and the vertical angle by the rules in the following section.
+This angle can be considered only horizontally or both horizontally and vertically. The horizontal arcs described here consider and quantify only the horizontal component. The combined arcs described subsequently consider and quantify both the horizontally and vertically components.
 
 \paragraph{Reference and Distant Elements.} 
 
@@ -113,13 +113,13 @@ The relative horizontal position of the distant element with respect to the refe
 
 If the distant element is directly behind the reference element, the angle-off is \arc{0}; if it is directly on the beam, the angle-off is \arc{90}; and if it is directly in front, the angle-off is \arc{180}.
 
-\paragraph{Angle-Off Arcs.} 
+\paragraph{Horizontal Arcs.} 
 
-Angle-off is grouped into \emph{arcs} covering \arc{30} to the left or right of the target. Figure~\ref{figure:angle-off} shows these arcs. The reference element is at the center, and the arcs radiate from it. The appropriate figure is used according to whether the reference element is in a hex facing a hex corner, in a hex facing a hex side, or on a hex side.
+Angle-off is grouped into \emph{horizontal arcs} covering \arc{30} to the left or right of the target. Figure~\ref{figure:angle-off} shows these arcs. The reference element is at the center, and the arcs radiate from it. The appropriate figure is used according to whether the reference element is in a hex facing a hex corner, in a hex facing a hex side, or on a hex side.
 
 \paragraph{Borderline Procedure.} 
 
-The distant element will often unambiguously be in an angle-off arc. However, sometimes it will be located on the borderline between two arcs. In these cases, use the disambiguation procedure described below and summarized in Tables \ref{table:angle-off-borderlines} and \ref{table:angle-off-adjacent}.
+The distant element will often unambiguously be in a horizontal arc. However, sometimes it will be located on the borderline between two arcs. In these cases, use the disambiguation procedure described below and summarized in Tables \ref{table:angle-off-borderlines} and \ref{table:angle-off-adjacent}.
 
 In the context of the fields of sensors, jammers, and laser designators, if either or both of the adjacent arcs are within the field, the borderline is also considered to be within the field. (In other words, the fields include the borderlines.)
 
@@ -145,11 +145,11 @@ The narrower arc is the arc further from the \arc{120} arc. The wider arc is the
 Ground elements are always considered to be slower than any aircraft.
 
 \paragraph{Same-Location Procedure}
-If the reference and distant element are at the same map location (i.e., the same hex or hex side), the angle-off arc is the same as if the distant element (i.e., the non-reference element) were moved backward one hex.
+If the reference and distant element are at the same map location (i.e., the same hex or hex side), the horizontal arc is the same as if the distant element (i.e., the non-reference element) were moved backward one hex.
 
 Moving the distant element backward would always leave it on a borderline facing the reference element, requiring the use of the disambiguation procedure for borderlines described above.
 
-\paragraph{Angle-Off Lines.} The imaginary lines extending behind and ahead of the reference element are the \arc{0} and \arc{180} lines, respectively. Although not formally arcs, these lines are, at times, treated as such. To count as being on one of these lines, the distant element must be on the borderline and facing directly along it towards the reference element. If they are on the line but not facing directly along it towards the target, they are considered in either the \arc{30} or \arc{180} arc but not on the \arc{0} or \arc{180} lines.
+\paragraph{The \arc{0} and \arc{180} Lines.} The imaginary lines extending behind and ahead of the reference element are the \arc{0} and \arc{180} lines, respectively. Although not formally arcs, these lines are, at times, treated as such. To count as being on one of these lines, the distant element must be on the borderline and facing directly along it towards the reference element. If they are on the line but not facing directly along it towards the target, they are considered in either the \arc{30} or \arc{180} arc but not on the \arc{0} or \arc{180} lines.
 
 \paragraph{Angle-Off Examples.}
 
@@ -189,14 +189,14 @@ If the reference element and the distant aircraft had the same speeds, then the 
 \end{itemize}
 
 
-\paragraph{Ranges of Angle-Off Arcs.}
+\paragraph{Ranges of Horizontal Arcs.}
 \label{rule:ranges-of-angle-off-arcs}
 
-Ranges of angle-off arcs are used for restricted or blind regions for sighting, sensor fields of view, and determining advantage. If a range is given as an arc followed by a plus sign, it consists of those arcs and all more forward arcs. If a range is given as an arc followed by a minus sign, it consists of those arcs and all more rearward arcs. Ranges specified in this way consist of both the left and right arcs.
+Ranges of horizontal arcs are used for restricted or blind regions for sighting, sensor fields of view, and determining advantage. If a range is given as an arc followed by a plus sign, it consists of those arcs and all more forward arcs. If a range is given as an arc followed by a minus sign, it consists of those arcs and all more rearward arcs. Ranges specified in this way consist of both the left and right arcs.
 
 For example, a blind arc given as $\arcrange{60}{-}$ consists the \arc{30} and \arc{60} arcs and a radar search field given as $\arcrange{150}{+}$ consists of the \arc{150} and \arc{180} arcs. 
 
-\paragraph{Lower Angle-Off Arcs.}
+\paragraph{Lower Horizontal Arcs.}
 \label{rule:lower-angle-off-arcs}
 
 Restricted or blind regions for sighting are sometimes given as \arc{30}L, \arc{60}L, or \arc{180}L. These refer to the \arcrange{30}{-}, \arcrange{60}{-}, or \arcrange{180}{+} arc ranges but only apply to distant elements at lower altitudes.
@@ -207,12 +207,12 @@ For example, a restricted arc given as \arc{180}{L} refers to the \arc{180} arcs
 
 \AY[3A-limited-arcs]{
 
-\paragraph{Limited Arcs.}
+\paragraph{Limited Horizontal Arcs.}
 \label{rule:limited-arcs}
 
 \input{figures/figure-limited-arc}
 
-Some sensors and rules make use of a \emph{limited arc} that is even narrower than the \arcrange{180}{+} arc. Figure~\ref{figure:limited-arcs} shows the limited arc. In this figure, only the map locations within the limited arc line are within the limited arc. 
+Some sensors and rules make use of a \emph{limited horizontal arc} that is even narrower than the \arcrange{180}{+} horizontal arc. Figure~\ref{figure:limited-arcs} shows the limited arc. In this figure, only the map locations within the limited arc line are within the limited arc. 
 
 }
 
