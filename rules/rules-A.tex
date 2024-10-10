@@ -237,15 +237,15 @@ They are also used to determine if the target satisfies the aspect requirements 
 
 \paragraph{Flight Slope.}
 
-The \emph{flight slope} characterizes the vertical attitude of the reference element just as its facing characterizes is horizontal aspect.
+The \emph{flight slope} characterizes the vertical orientation of the reference element just as its facing characterizes its horizontal orientation.
 
-The flight slope is calculated over a number of FPs as the number of altitude levels gained divided by the number of HFPs expended. 
+The flight slope is calculated over a number of FPs (defined below) as the number of altitude levels gained divided by the number of HFPs expended. 
 
 The flight slope will be positive if the element gains altitude, zero if it maintains altitude, and negative if it loses altitude. For purely vertical flight with no HFPs, the flight slope will be positive infinity ($+\infty$) for climbing or negative infinity ($-\infty$) for diving.
 
-For aircraft and missile prior to launch, determine the flight slope by considering all of the FPs expended by the aircraft in the previous flight phase. 
+For an aircraft and missile prior to launch, determine the flight slope by considering all of the FPs expended by the aircraft or by the missile’s launching aircraft in the previous flight phase. 
 
-For missiles in flight, if the previous proportional move had two or more FPs, determine the flight slope by considering them all. Otherwise, if the previous proportional more only had one FP and was the first one of the missile’s flight, determine the flight slope from that FP and the last FP of the aircraft before launch. Otherwise, determine the flight slope from the missile’s last two FPs.
+For a missile in flight, if the previous proportional move had two or more FPs, determine the flight slope by considering them all. Otherwise, if the previous proportional move only had one FP and was the first one of the missile’s flight, determine the flight slope from that FP and the last FP of the launching aircraft prior to launch. Otherwise, determine the flight slope from the missile’s last two FPs.
 
 For example, if an aircraft executes level flight with four HFPs and no free descent, its flight slope is 0. If it executes the same but with free descent, its flight slope is $-1/4 = -0.25$. If it executes a zoom climb with three HFPs and four VFPs, gaining seven altitude levels, its flight slope is $+7/3 \approx 2.33$. If it executes a vertical dive with no HFPs and six VFPs, losing twelve altitude levels, its flight slope is $-12/0 = -\infty$.
 
@@ -319,20 +319,18 @@ The factors not in parentheses are \emph{mixed} vertical limit factors. They are
 In these cases, the distant aircraft must also be in the corresponding horizontal arc to be within the combined arc.
 
 \item
-The factors in parentheses are \emph{pure} vertical limit factors. They are multiplied by the horizontal range from the reference to the distant element and then give the \emph{minimum} number of levels that the distant aircraft can be above ($\le$) or below ($\ge$) the reference aircraft and still be in the combined arc. 
+The factors in parentheses are \emph{pure} vertical limit factors. They are multiplied by the horizontal range from the reference to the distant element and then give the \emph{minimum} number of levels that the distant aircraft can be above ($\ge$) or below ($\le$) the reference aircraft and still be in the combined arc. 
 
 In these cases, the distant aircraft \emph{need not} be in the corresponding horizontal arc; it can be in \emph{any} horizontal arc.
 
 \end{itemize}
 
-If Table~\ref{table:vertical-limit-factors} gives one factor, the distant element is within the combined arc if the condition corresponding to the factor is satisfied.
-
-If Table~\ref{table:vertical-limit-factors} gives two factors, they will be combined with “and” or “or.” In the case of “and,” the distant element is within the combined arc if the conditions corresponding to both factors are satisfied. In the case of “or,” the distant element is within the combined arc if the condition corresponding to either factor is satisfied.
+If Table~\ref{table:vertical-limit-factors} gives one factor, the distant element is within the combined arc if it satisfies the corresponding conditions. If Table~\ref{table:vertical-limit-factors} gives two factors, they will be combined with “and” or “or.” In the case of “and,” the distant element is within the combined arc if it satisfiers both of the corresponding conditions. In the case of “or,” the distant element is within the combined arc if it satisfies either of the corresponding conditions.
 
 
 \paragraph{Combined Arcs Graphical Procedure.}
 
-This procedure can be carried out graphically using Figures \ref{figure:combined-arcs-a} to \ref{figure:combined-arcs-d}. Determine the flight slope of the reference aircraft. Then, on the appropriate Figure for the arc, find the position that corresponds to the horizontal range to the distant element and its altitude relative to the reference element and the line or lines whose color corresponds to the flight slope. The determination of whether the distant element is within the combined arc then depends on whether there are one or two lines and whether they are solid or dashed:
+This procedure can be carried out graphically using Figures \ref{figure:combined-arcs-a} to \ref{figure:combined-arcs-d}. Determine the flight slope of the reference aircraft. Then, on the appropriate figure for the arc, find the position that corresponds to the horizontal range to the distant element and its altitude relative to the reference element. Next, find the line or lines whose color corresponds to the flight slope. The determination of whether the distant element is within the combined arc then depends on whether there are one or two lines and whether they are solid or dashed:
 
 \begin{itemize}
     \item For two solid lines: the distant element is within the combined arc if it lies between the solid lines and is within the horizontal arc.
@@ -346,7 +344,7 @@ For example, consider an aircraft at an altitude of 10 attempting to detect anot
 \item
 If the aircraft has a flight slope of 0, Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of $-1.0$ and $+1.0$. 
 
-Applying them, we see that the target is within the combined arc of the radar if it has an altitude of 5 to 15 inclusive and is within the \arcrange{180}{+} horizontal arc.
+We see that the target is within the combined arc of the radar if it has an altitude of 5 to 15 inclusive and is within the \arcrange{180}{+} horizontal arc.
 
 \item
 If the aircraft has a flight slope of more than 0 but no more than 1 ($0 < \mbox{FS} \le 1$), Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of $-0.5$ and $+2.0$. 
