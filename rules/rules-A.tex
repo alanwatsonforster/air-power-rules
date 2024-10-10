@@ -11,7 +11,7 @@ This rule describes how the relative position is determined. The relative positi
 \section{Range}
 \label{rule:range}
 
-Many situations described in these rules depend on the \emph{range} from one element to another. For example, it is more difficult to sight or identify more distant aircraft and radars often have a limited range.
+Many situations described in these rules depend on the \emph{range} from one element to another. For example, it is more difficult to sight or identify aircraft at longer range and radars often have a limited range.
 
 Other than in the exceptional cases noted subsequently, the range in hexes from one element to another is determined using the following procedure.
 
@@ -22,7 +22,7 @@ The range has two components, the horizontal and vertical ranges. They are deter
 
 \begin{itemize}
 \item
-The \emph{horizontal range} is the length of the shortest route between the map locations, measured in hexes and counting only whole hexes.
+The \emph{horizontal range} is the length of the shortest route between the map locations, measured in hexes and rounding down half hexes.
 
 If both elements are on hex centers, then the procedure is straightforward and probably familiar. However, if one or both are on hex sides, it may be less familiar. Figure~\ref{figure:range} shows map locations that are half a hex and one hex apart, including both hex centers and hex sides. These diagrams can be understood by noting that the distance from each map location to the surrounding six map locations is half a hex.
 
@@ -57,7 +57,7 @@ When determining if a radar target is in ground clutter, the horizontal range an
 \paragraph{Closeness.}
 \label{rule:closeness}
 
-Range is used to determine relative closeness. If two aircraft have different ranges from a reference element, the one with the smaller range is considered to be closer to the reference element. If two aircraft have the same range, they are considered to be equally close. (That is, horizontal differences of half a hex and vertical differences of an odd number of altitude levels are ignored when determining closeness.)
+Range is used to determine relative closeness. If two aircraft have different ranges from a reference element, the one with the smaller range is considered to be closer to the reference element. If two aircraft have the same range, they are considered to be equally close. (That is, any fraction of a hex that is rounded down in the horizontal range, vertical range, or both is ignored when determining closeness.)
 
 For example, assuming all the aircraft in Figure~\ref{figure:range-example} have the same altitude, then aircraft C and D are equally close to aircraft A, since both are at a range of 2 hexes. Furthermore, assuming that aircraft A and C are at the same altitude and aircraft D is one altitude level below or above, then aircraft C and D are still equally close to aircraft A since both are still at a range of 2 hexes.
 
