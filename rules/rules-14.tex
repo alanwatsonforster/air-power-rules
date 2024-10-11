@@ -139,6 +139,15 @@ An aircraft may launch up to two missiles at an enemy aircraft during the air-to
 }
 
 \AX{
+
+\paragraph{Missile Launch Envelopes.}
+The missile data include the launch envelopes, which are the minimum and maximum ranges for launches from the front, side, and rear of the target. Front launches are from the \arcrange{150}{+} horizontal arc, rear launches are from the \arcrange{60}{-} arc, and side launches are from other arcs.
+
+\AY[3A-horizontal-arcs]{
+When determining the horizontal arc, the target is the reference element and the launching aircraft is the distant element. Resolve borderline cases by first moving the faster element forward. If the faster element remains on the borderline, use the wider arc.
+}
+
+
 \paragraph{Missile Launch Requirements.} 
 The following requirements apply to all types of missiles:
 \begin{itemize}
@@ -150,6 +159,8 @@ The following requirements apply to all types of missiles:
     \item An aircraft that fired its guns or rockets after its last FP that game turn may not launch missiles.
 
     \item An aircraft that prepared for or executed a roll maneuver during its last FP that game turn may not launch missiles.
+    
+    \item The target must be within the missile envelopes.
 
     \item An aircraft firing IRMs must also satisfy the additional requirements in rule~\ref{rule:irm-launch-prerequisites}.
     \end{itemize}
