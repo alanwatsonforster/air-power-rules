@@ -102,8 +102,6 @@ Table~\ref{table:missile-data} gives information for carrying, launching, flying
 
     \item \itemparagraph{Launch Envelopes.} These are the minimum and maximum ranges at which a missile may be launched at a target. (For BRMs and RHMs, the maximum range also depends on the aircraft’s radar tracking strength.)
 
-    Front launches are those taken from the target’s \arc{150} and \arc{180} arcs; side launches are those from the \arc{120} and \arc{90} arcs; rear launches are those from the \arc{60} or \arc{30} arcs. A dash indicates the shot is not allowed.
-
     \item \itemparagraph{Speed.} This is the missile’s base speed, which is used as described below to determine a missile’s actual speed on its first turn of flight. After the first game turn, the missile’s speed will vary according to the procedure given below. A dash with a second number indicates the missile has a sustainer motor, which lasts a number of game turns equal to the second number.
 
     \item \itemparagraph{Active Homing.} This is the range in hexes at which an AH missile’s radar seeker becomes active, allowing it to track its target.
@@ -141,12 +139,13 @@ An aircraft may launch up to two missiles at an enemy aircraft during the air-to
 \AX{
 
 \paragraph{Missile Launch Envelopes.}
-The missile data include the launch envelopes, which are the minimum and maximum ranges for launches from the front, side, and rear of the target. Front launches are from the \arcrange{150}{+} horizontal arc, rear launches are from the \arcrange{60}{-} arc, and side launches are from other arcs.
+The missile data include the launch envelopes, which are the minimum and maximum ranges for launches from the front, side, and rear of the target.  If no ranges are given, launches are not allowed from that aspect.
+
+Front launches are from the target's \arcrange{150}{+} horizontal arc, rear launches are from the target's \arcrange{60}{-} horizontal arc, and side launches are from other arcs.
 
 \AY[3A-horizontal-arcs]{
 When determining the horizontal arc, the target is the reference element and the launching aircraft is the distant element. Resolve borderline cases by first moving the faster element forward. If the faster element remains on the borderline, use the wider arc.
 }
-
 
 \paragraph{Missile Launch Requirements.} 
 The following requirements apply to all types of missiles:
@@ -160,7 +159,7 @@ The following requirements apply to all types of missiles:
 
     \item An aircraft that prepared for or executed a roll maneuver during its last FP that game turn may not launch missiles.
     
-    \item The target must be within the missile envelopes.
+    \item The target must be within the missile launch envelope.
 
     \item An aircraft firing IRMs must also satisfy the additional requirements in rule~\ref{rule:irm-launch-prerequisites}.
     \end{itemize}
