@@ -59,7 +59,11 @@ Padlocking is an administrative procedure used only in the Visual Sighting Phase
 
 \paragraph{Sighting Range.} The range for sighting is determined normally (see rule~\ref{rule:range}) with one exception: when attempting to sight a higher aircraft or missile in daylight, the vertical range is the difference in altitude levels divided by \emph{four} (rather than two) and rounded down. This is because it is easier to see an aircraft silhouetted against the sky.
 
-\paragraph{Blind and Restricted Arcs.} A crewmember’s view may be obstructed by their aircraft’s rear fuselage and nose. Each aircraft’s ADC indicates its blind and restricted arcs (if any). An L after the arc indicates that the aircraft is blinded or restricted only to lower altitude in that arc. An aircraft cannot padlock or attempt to sight targets in its blind arcs. 
+\paragraph{Blind and Restricted Arcs.} A crewmember’s view may be obstructed by their aircraft’s fuselage. Each aircraft’s ADC indicates its blind and restricted \AY[3A-horizontal-arcs]{horizontal} arcs (if any). An L after the arc indicates that the aircraft is blinded or restricted only to lower altitude in that arc (e.g., by a long nose). An aircraft cannot padlock or attempt to sight targets in its blind arcs. 
+
+\AY[3A-horizontal-arcs]{
+When determining the horizontal arc, the aircraft attempting sighting is the reference aircraft and the aircraft or missile being sighted is the distant aircraft. Resolve borderline cases by first moving the faster element forward. If the faster element remains on the borderline, use the rearward arc.
+}
 
 An aircraft also cannot attempt to sight targets at the same map location (i.e., the same hex or hex side) but lower altitude, but it can padlock them (as the padlocking aircraft can roll slightly to keep the target in view). An aircraft may sight or padlock targets at the same map location but higher altitude.
 
@@ -315,9 +319,9 @@ A visual augmentation system (VAS) uses television and optical equipment to enha
 
 \begin{itemize}
 
-    \item attempt to sight a target already detected by radar in the searcher’s \arcrange{180}{+} angle-off arcs and at a range of no more than 10 times the target’s visibility number, or
+    \item attempt to sight a target already detected by radar in the searcher’s \arcrange{180}{+} \CY[3A-combined-arcs]{angle-off}{combined} arcs and at a range of no more than 10 times the target’s visibility number, or
 
-    \item attempt to sight a target in the searcher’s limited arc and at a range of no more than 6 times the target’s visibility number (whether previously detected or not).
+    \item attempt to sight a target in the searcher’s limited \AY[3A-combined-arcs]{combined} arc and at a range of no more than 6 times the target’s visibility number (whether previously detected or not).
 
 \end{itemize}
 
@@ -359,15 +363,15 @@ An infrared search and track system (IRSTS) uses infrared television and optical
 
 \paragraph{IRSTS Types.} Two types of IRSTS exist: 
 \begin{itemize}
-    \item IRSTS-A (early) covers the limited arc and successfully locks-on on a roll of $6-$.
-    \item IRSTS-B (advanced) covers the \arcrange{180}{+} arc and successfully locks-on on a roll of $8-$.
+    \item IRSTS-A (early) covers the limited \AY[3A-combined-arcs]{combined} arc and successfully locks-on on a roll of $6-$.
+    \item IRSTS-B (advanced) covers the \arcrange{180}{+} \AY[3A-combined-arcs]{combined} arc and successfully locks-on on a roll of $8-$.
 \end{itemize}
 
 \paragraph{IRSTS Requirements.}  IRSTS is used in the Radar Search and Lock-On Phase. A pilot-only aircraft may use either radar or IRSTS in this phase, and a multi-crew aircraft may do both. Unlike radar, there are no maneuver-related restrictions on the use of IRSTS.
 
 \paragraph{IRSTS Detection.} The target is automatically detected its range is no more than the maximum detection range, which depends on the targets fuel consumption and aspect. The maximum detection range is four times the number of fuel points used by the target at its current power setting (according to the fuel column in the power chart of the target’s ADC). The maximum range is doubled if the IRSTS is used in the target’s \arcrange{30}{-} arc. 
 
-\paragraph{IRSTS Lock-on.} One lock-on attempt is allowed against either the nearest detected target or the target with the highest fuel point use. For this purpose, the fuel use is doubled if the IRSTS is used in the target’s \arcrange{30}{-} arc. Roll the die and compare to the lock-on success requirements.
+\paragraph{IRSTS Lock-on.} One lock-on attempt is allowed against either the nearest detected target or the target with the highest fuel point use. For this purpose, the fuel use is doubled if the IRSTS is used in the target’s \arcrange{30}{-} \AY[3A-combined-arcs]{combined} arc. Roll the die and compare to the lock-on success requirements.
 
 \paragraph{IRSTS Lock-on Sighting Benefits.} When searching for a locked-on target, an aircraft with a HUD interface receives the HUD modifier and can attempt visual sighting at night to twice the normal range.
 
@@ -410,9 +414,9 @@ Some scenarios allow players to employ aircraft types unknown to their opponent 
 
     \item Automatically, when its range to a friendly aircraft is no more than twice its visibility number.
 
-    \item Automatically, when its range to a VAS-equipped friendly aircraft is no more than 4 times its visibility number, and it is in the \arcrange{180}{+} arc of that aircraft.
+    \item Automatically, when its range to a VAS-equipped friendly aircraft is no more than 4 times its visibility number, and it is in the \arcrange{180}{+} arc \AY[3A-combined-arcs]{combined} of that aircraft.
 
-    \item On a roll of $7-$, when its range to a VAS-equipped friendly aircraft is no more than 10 times its visibility number, and it is in the \arcrange{180}{+} arc of that aircraft.
+    \item On a roll of $7-$, when its range to a VAS-equipped friendly aircraft is no more than 10 times its visibility number, and it is in the \arcrange{180}{+} \AY[3A-combined-arcs]{combined} arc of that aircraft.
 
     \item Automatically, when it begins its second turn with a radar lock-on from an aircraft with Target ID technology.
 
