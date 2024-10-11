@@ -309,7 +309,7 @@ For example, if an aircraft executes level flight with four HFPs and no free des
 %
 %\end{itemize}
 
-Cross-reference the arc and the flight slope in Table~\ref{table:vertical-limit-factors}. The entries in the table are one or two numerical vertical limit factors indicating upper ($\le$) or lower ($\ge$) limits. The factors themselves are either in parentheses or not in parentheses.
+Cross-reference the arc and the flight slope in Table~\ref{table:vertical-limit-factors}. Note that there is one column for the flight slope for forward arcs (the limited, \arcrange{180}{+}, \arcrange{150}{+}, and \arcrange{120}{+} arcs) and another for rearward arcs (the \arcrange{30}{-},  \arcrange{60}{-}, and  \arcrange{90}{-} arcs). The entries in the table are one or two numerical vertical limit factors indicating upper ($\le$) or lower ($\ge$) limits. The factors themselves are either in parentheses or not in parentheses.
 
 \begin{itemize}
 
@@ -330,13 +330,15 @@ If Table~\ref{table:vertical-limit-factors} gives one factor, the distant elemen
 
 \paragraph{Combined Arcs Graphical Procedure.}
 
-This procedure can be carried out graphically using Figures \ref{figure:combined-arcs-a} to \ref{figure:combined-arcs-d}. Determine the flight slope of the reference aircraft. Then, on the appropriate figure for the arc, find the position that corresponds to the horizontal range to the distant element and its altitude relative to the reference element. Next, find the line or lines whose color corresponds to the flight slope. The determination of whether the distant element is within the combined arc then depends on whether there are one or two lines and whether they are solid or dashed:
+The combined arcs procedure can be carried out graphically using Figures \ref{figure:combined-arcs-a} to \ref{figure:combined-arcs-g}. Determine the flight slope of the reference aircraft. Then, on the appropriate figure for the arc, find the position that corresponds to the horizontal range to the distant element and its altitude relative to the reference element. Next, consult the legend and find the line or lines whose color corresponds to the flight slope and whether the distant element needs to be above, between, or below the lines.
+
+The determination of whether the distant element is within the combined arc then depends on whether there are one or two lines and whether they are solid or dashed:
 
 \begin{itemize}
     \item For two solid lines: the distant element is within the combined arc if it lies between the solid lines and is within the horizontal arc.
-    \item For one solid line: the distant element is within the combined arc if it is above (flight slope positive) or below (flight slope negative) line for climbing/diving and is within the horizontal arc.
-    \item For one solid line and one dashed line: the distant element is within the combined arc if it is be above (flight slope positive) or below (flight slope negative) the solid line and is within the horizontal arc or if it is above (flight slope positive) or below (flight slope negative) the dashed line.
-    \item For one dashed line: the distant element is within the combined arc if it is above (flight slope positive) or below (flight slope negative) the dashed line.
+    \item For one solid line: the distant element is within the combined arc if it is above/below the line and is within the horizontal arc.
+    \item For one solid line and one dashed line: the distant element is within the combined arc if it is be above/below the solid line and is within the horizontal arc or if it is above/below the dashed line.
+    \item For one dashed line: the distant element is within the combined arc if it is above/below the dashed line.
 \end{itemize}
 
 For example, consider an aircraft at an altitude of 10 attempting to detect another at a horizontal range of 5 hexes using radar with an \arcrange{180}{+} arc.
