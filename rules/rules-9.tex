@@ -100,12 +100,21 @@ The modifiers for the hit die roll are described here and summarized in Table~\r
     If the attack is a snap shot, apply a modifier of $+1$.
     }
 
-    \CX{
+    \DX
+    {
     \item\itemparagraph{Deflection (Angle-Off).}
     The best shots occur when an attacker is directly behind his opponent; at other angles, the target aircraft is harder to hit. \changedin{1C}{1C-tables}{Consult the Angle-Off Table and apply the listed modifiers (see 9.2)}{Determine the angle-off (see 9.2) and apply the modifiers given in Table~\ref{table:air-to-air-gun-and-rocket-modifiers}.}
-    }{
+    }
+    \CY[3A-horizontal-arcs]
+    {
     \item\itemparagraph{Angle-Off (Deflection).}
     Shots are more successful when an attacker is directly behind the target; the target is harder to hit at other angles. Determine the angle-off (see rule~\ref{rule:angle-off}) and apply the modifiers given in Table~\ref{table:air-to-air-gun-and-rocket-modifiers}.
+    }
+    {
+    \item\itemparagraph{Horizontal Arc.}
+    If the attacker is not immediately behind or in front of the target, they must compensate for the \emph{deflection} or lateral motion of the target during the flight time of the bullets or shells. This becomes harder as the angle-off gets closer to the beam. Determine the horizontal arc of the attacker from the target (see rule~\ref{rule:angle-off}) and apply the modifiers given in Table~\ref{table:air-to-air-gun-and-rocket-modifiers}.
+    
+    When determining the horizontal arc, the target is the reference aircraft and the attacker is the distant aircraft. Resolve borderline cases by first moving the faster aircraft forward. If the faster aircraft remains on the borderline, choose the narrower arc.
     }
 
     \itemaddedin{1B}{1B-apj-23-errata}{
@@ -550,7 +559,7 @@ If it meets these criteria, apply a $-2$ modifier to the hit die roll.
 Steady-state gunsight tracking (SSGT) of a target from the rear allows the attacker to better compensate for deflection. This can be reflected in an advantageous hit roll modifier.
 
 \paragraph{SSGT Procedure.}
- To benefit from SSGT, an aircraft must accumulate FPs consecutively while on a tracking line (see Figure~\ref{figure:ssgt-lines}), at a range of no more than six hexes from the target, and with the target in the field of fire of its guns or in its limited arc. Both VFPs and HFPs count for SSGT. FPs used for an ET turn, unloaded FPs, or FPs used to prepare for or execute a rolling maneuver do not count for SSGT, and neither do FPs used for the recovery periods after an ET turn or an unloaded FP. FPs used for or to recover from turns at lesser turn rates do count. Attacking or turning during a move does not interrupt the accumulation of FPs.
+ To benefit from SSGT, an aircraft must accumulate FPs consecutively while on a tracking line (see Figure~\ref{figure:ssgt-lines}), at a range of no more than six hexes from the target, and with the target in the field of fire of its guns or in its limited horizontal arc. Both VFPs and HFPs count for SSGT. FPs used for an ET turn, unloaded FPs, or FPs used to prepare for or execute a rolling maneuver do not count for SSGT, and neither do FPs used for the recovery periods after an ET turn or an unloaded FP. FPs used for or to recover from turns at lesser turn rates do count. Attacking or turning during a move does not interrupt the accumulation of FPs.
 
 \paragraph{SSGT Modifiers.} When attacking with guns or rockets, an aircraft gains a $-1$ modifier of each 1/3 of its speed (round down) in accumulated FPs. The maximum modifier is $-2$. 
 
@@ -595,9 +604,9 @@ An aircraft with radar ranging can use its radar to compute the target's precise
 
 \item For RE, the attacker must have accumulated at least 1 FP of SSGT (see rule~\ref{rule:steady-state-gunsight-tracking}).
 
-\item For CA, the attacker must attack from the \arcrange{90}{-} arc.
+\item For CA, the attacker must attack from the \arcrange{90}{-} horizontal arc.
 
-\item For IG, there are no requirements and the attacker can attack from any arc.
+\item For IG, there are no requirements and the attacker can attack from any horizontal arc.
 
 \end{itemize}
 
