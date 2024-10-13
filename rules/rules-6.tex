@@ -524,7 +524,7 @@ For other purposes, an aircraft is in supersonic flight if its speed is greater 
 \CX{
 Rapid throttle movements or uncontrolled yaw rates can flame-out jet engines which are at high power settings.
 }{
-A jet engine can suffer a flame-out if its air supply is disturbed or inadequate. This can be caused by using low engine power at supersonic speeds, rapid throttle movements, uncontrolled yaw rates, and excess altitude.
+A jet engine can suffer a flame-out if its air supply is disturbed or inadequate. This can be caused by using low engine power at supersonic speeds, rapid throttle movements, uncontrolled yaw rates, and excess altitude. Flamed-out engines can often be relit.
 }
 
 \CX{
@@ -574,15 +574,24 @@ A single-engine jet is treated as if it is in Idle power. On multi-engine aircra
 A single-engined aircraft is treated as using idle power.  For multi-engined aircraft, if half or less of the engines are flamed out, the aircraft receives half the normal APs (keep fractions). If more than half (but not all) are flamed out, the aircraft receives {\onethird} of normal APs (round down). If all the engines are flamed out, the aircraft is treated as using idle power.
 }
 
-\paragraph{Engine Relights.} 
 \CX{
-Attempts to restart flamed out engines are allowed if an aircraft is not in abnormal flight and during its turn it performs or meets the same criteria as for performing Damage Control (see chapter 10). Roll a die once at the end of the aircraft's flight phase. On the first attempt, 2 or less indicates success; on the second and third attempts, 4 or less indicates success.
+\paragraph{Engine Relights.} 
+Attempts to restart flamed out engines are allowed if an aircraft is not in abnormal flight and during its turn it performs or meets the same criteria as for performing Damage Control (see chapter 10). Roll a die once at the end of the aircraft's flight phase. On the first attempt, 2 or less indicates success; on the second and third attempts, 4 or less indicates success. \addedin{2B}{2B-idle-after-relight}{A relit engine is considered to be in idle power for the purposes of changing power in the following game turn (see rule \label{rule:rapid-power-response}).}
+
 
 One attempt is allowed per engine per turn beginning on the game-turn following the flame-out. A maximum of three relight attempts per engine is allowed; if all three relight attempts are unsuccessful, the engine is permanently flamed out. (If in a single engine jet, the pilot might consider reading the ejection rules).
 }{
-A pilot can attempt to relight flamed-out engines. One attempt is allowed per engine per turn starting on the game turn following the flame-out. The aircraft must not be in abnormal flight and must meet the requirements for performing damage control (see rule~\ref{rule:progressive-damage}). At the end of the aircraft's move, roll a die. The attempt is successful on a roll of $2-$ on the first attempt and $4-$ on the second and third attempts.
+\paragraph{Relight Requirements.}
+A pilot can attempt to relight a flamed-out engine in any game turn following the one in which the flame-out occurred and in which the aircraft satisfies the requirements for performing damage control (see rule~\ref{rule:progressive-damage}). 
 
-A maximum of three relight attempts per engine are allowed; if all three attempts fail, the engine is permanently flamed out. (The pilot of a single-engine jet might consider reading rule~\ref{rule:ejections-and-bail-outs}.)
+\paragraph{Relight Procedure.}
+If an aircraft fulfills the requirements, in the Aircraft Administrative Phase, roll a die for each engine that flamed out on a prior game turn and has not accumulated three failed attempts.
+
+The first attempt succeeds on a die roll of $2-$, and the second and third attempts succeed on a die roll of $4-$. 
+
+If the attempt is successful, the engine can function normally again. It is considered to be in idle power for the purposes of changing power in the following game turn (see rule \ref{rule:rapid-power-response}) and has its number of restart failures reset to zero. 
+
+If the third attempt fails, the engine is permanently flamed out; no more attempts at relighting it are permitted. (The pilot of a single-engine jet might consider reading rule~\ref{rule:ejections-and-bail-outs}.)
 }
 
 \addedin{2A}{2A-cruise}{\section{Realistic Cruise Speeds} 
