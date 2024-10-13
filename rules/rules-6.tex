@@ -96,29 +96,36 @@ The sum of the aircraft's current speed plus any speed gain or loss at the end o
 
 }{
 
-\paragraph{Speed Change Procedure.} In the Aircraft Administrative Phase, determine the aircraft’s new speed for the next game turn according to this procedure. Subtract the number of DPs from the number of APs. 
+\paragraph{Speed Change Procedure.} In the Aircraft Administrative Phase, determine the aircraft’s new speed for the next game turn according to this procedure. 
+
+Sum the number of APs and the number of DPs accrued during the game turn, including any carried forward from the previous game turn.
 
 \begin{itemize}
 \item If the aircraft has an equal number of APs and DPs, it does not change speed.
-\item If the aircraft has more APs than DPs, subtract the DPs from the APs, and then increase the speed by 0.5 for every 2.0 remaining APs. Any APs not used to increase speed are carried forward to the next game turn. 
 
-However, if the new speed reaches the maximum speed or maximum dive speed, according to rule~\ref{rule:speed-limits}, it is not increased further.
-\item If the aircraft has more DPs than APs, subtract the APs from the DPs, and then decrease the speed by 0.5 for every 2.0 remaining DPs. Any DPs not used to increase speed are carried forward to the next game turn. 
+The aircraft carries no APs or DPs forward into the next game turn.
 
-However, if the new speed reaches 0.0, it is not reduced further.
+\item If the aircraft has more APs than DPs, subtract the DPs from the APs, and then increase the speed by 0.5 for every 2.0 remaining APs. However, if the new speed reaches the maximum speed or dive speed, according to rule~\ref{rule:speed-limits}, it is not increased further.
+
+The aircraft carries any APs not used to increase speed forward to the next game turn. 
+
+\item If the aircraft has more DPs than APs, subtract the APs from the DPs, and then decrease the speed by 0.5 for every 2.0 remaining DPs. However, if the new speed reaches 0.0, it is not reduced further.
+
+The aircraft carries any DPs not used to decrease speed forward to the next game turn. 
+
 \end{itemize}
 
 These rules for carrying APs and DPs are further subject to these exceptions at low and high speeds:
 \CY[3A-AP-carry-at-speed-limits]{
 \begin{itemize}
 \item An aircraft with a new speed of 0.0 does not carry DPs forward to the next game turn.
-\item An aircraft with a new speed equal to its maximum speed or maximum dive speed, according to rule \ref{rule:speed-limits}, may carry at most 1.5 APs forward to the next game turn.
+\item An aircraft with a new speed equal to its maximum speed or dive speed, according to rule \ref{rule:speed-limits}, may carry at most 1.5 APs forward to the next game turn.
 \end{itemize}
 }{
 \begin{itemize}
 \item An aircraft with a new speed of 0.0 does not carry DPs forward to the next game turn.
 \item An aircraft with a new speed equal to its maximum speed or dive speed, according to rule \ref{rule:speed-limits}, does not carry APs forward to the next game turn.
-\item An aircraft that suffers a speed fadeback or has its speed reduced to its maximum dive speed, according to rule \ref{rule:speed-limits}, does not carry APs or DPs forward to the next game turn.
+\item An aircraft that suffers a speed fadeback or has its speed reduced to its dive speed, according to rule \ref{rule:speed-limits}, does not carry APs or DPs forward to the next game turn.
 \end{itemize}
 }
 
@@ -136,7 +143,7 @@ For example, an aircraft has accumulated 6.0 APs and 3.0 DPs and so has a net of
 
 Example: A rapid accel aircraft gaining 6.0 accel points and 2.0 decel points in a turn, would gain 1.0 of speed. Its net accel is 4.0 ($6.0 - 2.0$). Each 1.5 of Accel gains 0.5 speed so 3.0 Accel is good for the 1.0 speed increase and the left over 1.0 Accel would be carried to the next game turn.
 }{
-\paragraph{Rapid Acceleration Aircraft.} If an ADC notes that an aircraft has rapid acceleration (RA), it is considered to be an exceptionally clean design that speeds up quicker than normal. This kind of aircraft receives a speed increase of 0.5 FP for each 1.5 APs instead of each 2.0. It decelerates normally.
+\paragraph{Rapid Acceleration Aircraft.} If its ADC notes that an aircraft has rapid acceleration (RA), it is considered to be an exceptionally clean design that speeds up quicker than normal. This kind of aircraft receives a speed increase of 0.5 FP for each 1.5 APs instead of each 2.0. It decelerates normally.
 
 For example, an RA aircraft has accumulated 6.0 APs and 2.0, and so has a net of 4.0 APs. Its speed is increased by 1.0, and 1.0 AP is carried forward to the next game turn.
 }
@@ -208,7 +215,7 @@ If an aircraft is in level flight, climbing flight, or diving flight in which it
 
 If an aircraft is in diving flight in which it loses more than one altitude level, it may use APs to accelerate beyond the maximum speed up to the dive speed (for the altitude band in which it ends its flight). If the aircraft has APs that would increase its speed beyond the dive speed, up to 1.5 APs (1.0 APs for RA aircraft) may be carried forward to the next turn, and any excess APs beyond these are lost.
 }{
-If an aircraft is in level flight, climbing flight, or diving flight in which it only loses one altitude level, then the speed change procedure in rule \ref{rule:speed-change} cannot increase its speed above its \emp{maximum speed} for the altitude band in which it ends its flight. Furthermore, if the aircraft’s new speed equals its maximum speed, it carries no APs forward to the next game turn.
+If an aircraft is in level flight, climbing flight, or diving flight in which it only loses one altitude level, then the speed change procedure in rule \ref{rule:speed-change} cannot increase its speed above its \emph{maximum speed} for the altitude band in which it ends its flight. Furthermore, if the aircraft’s new speed equals its maximum speed, it carries no APs forward to the next game turn.
 
 If an aircraft is in a diving flight and loses more than one altitude level, then the speed change procedure in rule \ref{rule:speed-change} cannot increase its speed above its \emph{dive speed} for the altitude band in which it ends its flight. Furthermore, if the aircraft’s new speed equals its dive speed, it carries no APs forward to the next game turn.}
 }
