@@ -161,7 +161,7 @@ Reminder:  Do not confuse Accel and Decel points with \changedin{1B}{1B-apj-23-e
 
 In the game, the thrust produced by an aircraft's engines results in the aircraft gaining APs; how many depends on the aircraft's chosen power setting and current configuration. At the beginning of each aircraft's move, the player must select one of the four allowed power settings. If a new setting is not selected, the setting from the previous game turn remains in effect. Note the selected power setting code on the power line of the aircraft log.
 
-\paragraph{Power Settings.} The four power settings and their codes are: idle (I), normal (N), military (M), and afterburner (AB).
+\paragraph{Power Settings.} The four power settings of jet engines and their codes are: idle (I), normal (N), military (M), and afterburner (AB).
 
 \begin{itemize}
     \item\itemparagraph{Idle.} Idle power is the minimum setting that will keep a jet engine functioning. An aircraft using idle power receives the DPs given in the idle power row of the power chart on the ADC for the aircraft's configuration.
@@ -182,6 +182,18 @@ In the game, the thrust produced by an aircraft's engines results in the aircraf
 \paragraph{Insufficient Power Above Cruise Speed.} If an aircraft uses idle or normal power, and its speed exceeds its listed cruise speed, it receives one DP in addition to any others received that turn.
 
 }
+
+\addedin{2B}{2B-propeller-aircraft}{
+\paragraph{Propeller Aircraft.}
+The four power settings of the engine of a propellor aircraft (with either reciprocating and turboprop engines) and their code are: idle (I), normal (N), half-throttle (HT), and full-throttle (FT). 
+
+The idle and normal settings have the same behavior as those of jet engines. 
+
+If the aircraft does not choose the idle or normal setting, it may choose any amount of APs between 0.0 and the maximum shown for the full-throttle setting. If the amount chosen is less than or equal to the half-throttle setting, the fuel consumption (rule~\ref{rule:fuel-consumption}) for half-throttle is used. Otherwise, the fuel-consumption for full-throttle is used.
+
+The ADCs of some propellor aircraft note that they have their power reduced at high speed or altitude. Such reductions apply to both the half-throttle and full-throttle settings.
+}
+
 
 \section{Speed Limits}
 \label{rule:speed-limits}
@@ -541,7 +553,7 @@ A jet engine can suffer a flame-out if its air supply is disturbed or inadequate
 
 \end{itemize}
 }{
-\paragraph{When Does A Jet Flame Out?} An aircraft may experience a flame-out if:
+\paragraph{When Does A Jet Flame Out?} A jet aircraft may experience a flame-out if:
 
 \begin{itemize}
 
@@ -557,6 +569,8 @@ A jet engine can suffer a flame-out if its air supply is disturbed or inadequate
 
 \end{itemize}
 }
+
+\addedin{2B}{2B-propeller-aircraft}{Propeller aircraft never suffer flame-outs.}
 
 \paragraph{Flame-Out Procedure.} 
 \CX{
