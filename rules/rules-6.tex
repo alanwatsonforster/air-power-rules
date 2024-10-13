@@ -47,6 +47,7 @@ In the game, aircraft engines produce thrust in terms of accel points; how many 
 \section{Acceleration and Deceleration Points}
 }
 \label{rule:acceleration-and-deceleration-points}
+\label{rule:speed-change}
 
 \CX{
 Aircraft speed will increase or decrease as a result of the accel points and decel points it accumulates in a game-turn. \addedin{1C}{1C-tables}{Table~\ref{table:acceleration} summarizes the sources of APs and DPs, and the details are given in the corresponding sections of these rules.}
@@ -63,36 +64,21 @@ An aircraft's speed will increase or decrease due to the acceleration points (AP
 \CX{
 \paragraph{Decel Points.} Decel points represent the energy lost due to using low power settings, aircraft maneuvering, and/or climbing flight. The advanced rules discuss additional sources of decel points. Decel points will cancel an equal number of any accel points gained.
 }{
-\paragraph{Deceleration Points.} Deceleration points (DPs) represent the energy lost from low engine power, turning, maneuvering, and climbing flight. The advanced rules discuss additional sources of DPs. DPs cancel an equal number of APs.
+\paragraph{Deceleration Points.} Deceleration points (DPs) represent the energy lost from low engine power, turning, maneuvering, and climbing flight. The advanced rules discuss additional sources of DPs. DPs cancel an equal number of APs and in that sense can be thought of as negative APs.
 }
 
+\CX{
 \paragraph{Speed Change Determination Procedure.} When an aircraft completes its move, it may have received both accel and decel points. Note the totals of each, then subtract any decel points from accel points. If the result is 0.0, there is no change in aircraft speed for the turn and you can ignore all following steps. If the result is positive, the aircraft may gain speed (accelerate). If the result is negative, the aircraft may lose speed (decelerate).
 
 \paragraph{Speed Gain.}
-\CX{
 Add 0.5 to the aircraft's current speed for each 2.0 accel points left after subtracting decel.  Any unused Accel points (up to 1.5) are carried forward to the next game turn and will be added to any accel points received in that turn.
 
 Example: An aircraft accumulating 6.0 accel points and 3.0 decel has a net accel of 3.0. Two of those accel are used to increase its speed by 0.5 and the rest is carried to the next turn.
-}{
-Add 0.5 to the aircraft's speed for every 2.0 APs left after subtracting the DPs. Any leftover APs (up to 1.5) are carried forward to the next game turn and will be added to any APs received in that game turn.
-
-Example: An aircraft has accumulated 6.0 APs and 3.0 DPs and so has a net of $+3.0$. Its speed is increased by 0.5, and 1.0 AP is carried forward to the next game turn.
-}
 
 \paragraph{Speed Loss.} 
-\CX{
 Subtract 0.5 from the aircraft's current speed for each 2.0 decel points left. Any unused decel points (up to 1.5) are carried forward to the next game turn and will be added to any decel points received in that turn.
 
 Example: An aircraft accumulating 2.5 accel and 5.0 decel has a net accel of $-2.5$, or in other terms has 2.5 decel left over. Two of those decel are used to reduce its speed by 0.5. The remaining 0.5 decel is carried to the next game turn.
-}{
-Subtract 0.5 from the aircraft's speed for every 2.0 DPs left after subtracting APs. Any leftover DPs (up to 1.5) are carried forward to the next game turn and will be added to any DPs received in that game turn.
-
-Example: An aircraft has accumulated 2.5 APs and 5.0 DPs and so has a net of $-2.5$. Its speed is reduced by 0.5, and 0.5 DP is carried forward to the next game turn.
-}
-
-\addedin{1C}{1C-tables}{
-    \input{tables/table-acceleration}
-}
 
 \paragraph{Maximum Deceleration.} 
 \CX{
@@ -108,6 +94,43 @@ The sum of the aircraft's current speed plus any speed gain or loss at the end o
 The sum of the aircraft's current speed plus any speed gain or loss at the end of its flight becomes the aircraft's new start speed for the next game turn. 
 }
 
+}{
+
+\paragraph{Speed Change Procedure.} In the Aircraft Administrative Phase, determine the aircraft’s new speed for the next game turn according to this procedure. Subtract the number of DPs from the number of APs. 
+
+\begin{itemize}
+\item If the aircraft has an equal number of APs and DPs, it does not change speed.
+\item If the aircraft has more APs than DPs, subtract the DPs from the APs, and then increase the speed by 0.5 for every 2.0 remaining APs. Any APs not used to increase speed are carried forward to the next game turn. 
+
+However, if the new speed reaches the maximum speed or maximum dive speed, according to rule~\ref{rule:speed-limits}, it is not increased further.
+\item If the aircraft has more DPs than APs, subtract the APs from the DPs, and then decrease the speed by 0.5 for every 2.0 remaining DPs. Any DPs not used to increase speed are carried forward to the next game turn. 
+
+However, if the new speed reaches 0.0, it is not reduced further.
+\end{itemize}
+
+These rules for carrying APs and DPs are further subject to these exceptions at low and high speeds:
+\CY[3A-AP-carry-at-speed-limits]{
+\begin{itemize}
+\item An aircraft with a new speed of 0.0 does not carry DPs forward to the next game turn.
+\item An aircraft with a new speed equal to its maximum speed or maximum dive speed, according to rule \ref{rule:speed-limits}, may carry at most 1.5 APs forward to the next game turn.
+\end{itemize}
+}{
+\begin{itemize}
+\item An aircraft with a new speed of 0.0 does not carry DPs forward to the next game turn.
+\item An aircraft with a new speed equal to its maximum speed or dive speed, according to rule \ref{rule:speed-limits}, does not carry APs forward to the next game turn.
+\item An aircraft that suffers a speed fadeback or has its speed reduced to its maximum dive speed, according to rule \ref{rule:speed-limits}, does not carry APs or DPs forward to the next game turn.
+\end{itemize}
+}
+
+On the aircraft’s log sheet, note the new speed as its start speed for the next game turn and any APs or DPs carried forward.
+
+For example, an aircraft has accumulated 6.0 APs and 3.0 DPs and so has a net of 3.0 APs. Its speed increases by 0.5, and it carries 1.0 AP forward to the next game turn. Another aircraft has accumulated 2.5 APs and 7.0 DPs, and so has a net of 4.5 DPs. Its speed is reduced by 1.0, and it carries 0.5 DP  forward to the next game turn. These examples assume that the aircraft does not run up against the minimum and maximum speed limits mentioned as exceptions.
+}
+
+\addedin{1C}{1C-tables}{
+    \input{tables/table-acceleration}
+}
+
 \CX{
 \paragraph{Rapid Accel Aircraft.} An aircraft noted on its ADC as being Rapid Accel capable is considered to be an exceptionally clean design which speeds up quicker than normal. This kind of aircraft receives a speed increase of 0.5 FP for each 1.5 accel points instead of each 2.0. It decelerates normally.
 
@@ -115,14 +138,14 @@ Example: A rapid accel aircraft gaining 6.0 accel points and 2.0 decel points in
 }{
 \paragraph{Rapid Acceleration Aircraft.} If an ADC notes that an aircraft has rapid acceleration (RA), it is considered to be an exceptionally clean design that speeds up quicker than normal. This kind of aircraft receives a speed increase of 0.5 FP for each 1.5 APs instead of each 2.0. It decelerates normally.
 
-Example: An RA aircraft has accumulated 6.0 APs and 2.0, and so has a net of $+4.0$. Its speed is increased by 1.0, and 1.0 AP is carried forward to the next game turn.
+For example, an RA aircraft has accumulated 6.0 APs and 2.0, and so has a net of 4.0 APs. Its speed is increased by 1.0, and 1.0 AP is carried forward to the next game turn.
 }
 \DX{
 Reminder:  Do not confuse Accel and Decel points with \changedin{1B}{1B-apj-23-errata}{speed}{flight} points. They are separate things.
 }
 
 \AX{
-\paragraph{Fractional APs.} APs and DPs points are almost always received in steps of 0.5. If the aircraft is damaged, its engine power APs may be halved, and so it might receive APs in steps of 0.25.
+\paragraph{Fractional APs and DPs.} APs and DPs points are almost always received in steps of 0.5. If the aircraft is damaged, its engine power APs may be halved, and so it might receive APs in steps of 0.25.
 }
 
 \AX{
@@ -180,9 +203,14 @@ If an aircraft is in diving flight, it may use accel points to accelerate beyond
 }{
 \paragraph{Maximum and Dive Speed.} The MMVC shows the maximum speed by altitude band and configuration and the dive speed by altitude band (regardless of configuration).
 
+\CY[3A-AP-carry-at-speed-limits]{
 If an aircraft is in level flight, climbing flight, or diving flight in which it only loses one altitude level, then APs that would increase its speed beyond the maximum speed (for the altitude band in which it ends its flight) are ignored. If the aircraft has APs that would increase its speed beyond the maximum speed, up to 1.5 APs (1.0 APs for RA aircraft) may be carried forward to the next game turn, and any excess APs beyond these are lost.
 
 If an aircraft is in diving flight in which it loses more than one altitude level, it may use APs to accelerate beyond the maximum speed up to the dive speed (for the altitude band in which it ends its flight). If the aircraft has APs that would increase its speed beyond the dive speed, up to 1.5 APs (1.0 APs for RA aircraft) may be carried forward to the next turn, and any excess APs beyond these are lost.
+}{
+If an aircraft is in level flight, climbing flight, or diving flight in which it only loses one altitude level, then the speed change procedure in rule \ref{rule:speed-change} cannot increase its speed above its \emp{maximum speed} for the altitude band in which it ends its flight. Furthermore, if the aircraft’s new speed equals its maximum speed, it carries no APs forward to the next game turn.
+
+If an aircraft is in a diving flight and loses more than one altitude level, then the speed change procedure in rule \ref{rule:speed-change} cannot increase its speed above its \emph{dive speed} for the altitude band in which it ends its flight. Furthermore, if the aircraft’s new speed equals its dive speed, it carries no APs forward to the next game turn.}
 }
 
 \CX{
@@ -192,15 +220,15 @@ If an aircraft is in diving flight in which it loses more than one altitude leve
 
 Fadeback Example: An aircraft which dove on the previous turn has a start speed of 12.0 which is in its allowed dive speed range. It chooses level flight, where its maximum allowed speed is 9.0, and maneuvers such that its power accel nearly balances decel. At the end of its move it loses 0.5 speed due to decel. Its new start speed is 11.5, still greater than its maximum level so a fadeback penalty applies reducing its new start speed to 10.5. In the new turn it stays level accumulating only enough decel to lose 1.0 speed. The subsequent start speed is 9.5, still above the limit of 9.0, so a fadeback applies, again reducing speed to 9.0.
 }{
-\paragraph{Exceeding Maximum Speed.} If at the end of its move, an aircraft in level flight, climbing flight, or diving flight in which it only loses one altitude level has a new start speed that exceeds its maximum speed, it suffers a speed fadeback, which reduces its speed by 1.0 or to the aircraft's maximum speed, whichever is greater.
+\paragraph{Exceeding Maximum Speed.} If an aircraft in level flight, climbing flight, or diving flight in which it only loses one altitude level has a new start speed calculated by rule~\ref{rule:speed-change} that exceeds its maximum speed, it suffers a speed fadeback, which reduces its speed by 1.0 or to its maximum speed, whichever is greater. \AY[3A-AP-carry-at-speed-limits]{The aircraft also carries neither APs nor DPs forward into the next game turn.}
 
-Example: An aircraft dived several levels on the previous game turn and has a start speed of 12.0, which does not exceed its dive speed. It chooses level flight, for which its maximum speed is 9.0, and at the end of its move loses 0.5 speed due to DPs. Its new start speed is 11.5, which is greater than its maximum level, and so a fadeback occurs that reduces its new start speed to 10.5. In the next game turn, the aircraft continues in level flight, and at the end of its move loses 1.0 speed due to DPs. Its new start speed is 9.5, still above the maximum of 9.0, so another fadeback occurs that reduces the new start speed to 9.0.
+For example, an aircraft dived several levels on the previous game turn and has a start speed of 12.0, which does not exceed its dive speed. It chooses level flight, for which its maximum speed is 9.0, and loses 0.5 speed due to DPs. Its new start speed is 11.5, which is greater than its maximum level, and so a fadeback occurs that reduces its new start speed to 10.5. In the next game turn, the aircraft continues in level flight and loses 1.0 speed due to DPs. Its new start speed is 9.5, still above the maximum of 9.0, so another fadeback occurs that reduces the new start speed to 9.0. \AY[3A-AP-carry-at-speed-limits]{In both game turns the aircraft will carry neither APs nor DPs forward.}
 }
 
 \CX{
 \paragraph{Diving Speed Limits.} An aircraft in diving flight may never have a start speed greater than its dive speed on the MMVC. If (at the end of its move) its new start speed would be higher than its allowed dive speed, its start speed is automatically reduced to maximum dive speed. This usually occurs when an aircraft enters a new altitude band having a lesser dive speed.
 }{
-\paragraph{Exceeding Dive Speed.} An aircraft in diving flight may never have a new start speed greater than its dive speed. If, at the end of its move, its new start speed is higher than its dive speed, the new start speed is reduced to the dive speed. (This situation can occur when an aircraft enters a new altitude band with a lower dive speed.)
+\paragraph{Exceeding Dive Speed.} If a diving aircraft enters a new altitude band, its new speed calculated by rule~\ref{rule:speed-change} may be greater than the dive speed in the lower band. In this case, its new start speed is reduced to the dive speed in the lower band. \AY[3A-AP-carry-at-speed-limits]{The aircraft also carries neither APs not DPs forward into the next game turn.}
 }
 
 \section{Abnormal Flight (Stalls and Departures)}
