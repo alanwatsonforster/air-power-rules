@@ -11,7 +11,7 @@ Aircraft change facing by turning. Facing changes usually occur in 30 degree inc
 }{
 This rule gives the procedures for changing an aircraft's facing by turning.
 
-An aircraft executes a turn by flying a certain distance forward and then changing facing by 30{\deg} (or sometimes 60{\deg} or 90{\deg}) to the left or right, according to the direction of the turn. The distance it must fly before changing facing depends on its speed, altitude band, and turn rate as described below. An aircraft may change facing more than one in a single game turn if its selected turn rate allows this.
+An aircraft executes a turn by flying a certain distance forward and then changing facing by 30{\deg}\DY{ (or sometimes 60{\deg} or 90{\deg})} to the left or right, according to the direction of the turn. The distance it must fly before changing facing depends on its speed, altitude band, and turn rate as described below. An aircraft may change facing more than once in a single game turn if its selected turn rate allows this.
 }
 
 \section{Turning}
@@ -33,7 +33,7 @@ Five rates of turn are potentially available to an aircraft. Each rate of turn c
 \item BT: Break turn rate
 \item ET: Emergency turn rate
 \end{itemize}
-An aircraft's ADC, configuration, speed, and altitude may restrict the available turn rates. Furthermore, if advanced rule~\ref{rule:crew-ability} is being used, green pilots may not use the ET rate.
+An aircraft's ADC, configuration, speed, altitude, and damage may restrict the available turn rates. Furthermore, if advanced rule~\ref{rule:crew-ability} is being used, green pilots may not use the ET rate.
 }
 
 \paragraph{Turning Procedure.} 
@@ -50,6 +50,7 @@ Be sure to use the chart corresponding to the altitude band the aircraft is in. 
 
 Changing facing does not cost any FPs; it is the end result of having begun to turn and having used the specified number of FPs (or more) in flight while turning. A turn consists of all the FPs used prior to changing the aircraft's facing plus the act of facing itself. If an aircraft is on a hexside at the time of facing, shift it to the adjacent hex (in the direction the aircraft is turning) and then change its facing as shown \changedin{1C}{1C-figures}{below}{in Figure~\ref{figure:changing-facing}}. 
 }{
+\CY[3A-turning]{
 An aircraft may begin turning at any point in its flight. When it spends its first FP to begin turning, the player must announce:
 
 \begin{itemize}
@@ -57,11 +58,29 @@ An aircraft may begin turning at any point in its flight. When it spends its fir
     \item the turn rate.
 \end{itemize}
 
-Next, consult Table~\ref{table:turn} and cross-index the selected turn rate with the aircraft’s speed (rounded down). Use the section corresponding to the aircraft’s current altitude band. If the result is a dash, that combination of turn rate and speed is not allowed. If a 60 or 90 appears, the aircraft may change facing by up to 60{\deg} or 90{\deg}, respectively, for each FP expended. If another number appears, it indicates the minimum number of FPs that the aircraft must expend before changing facing by 30{\deg}.
-
-%\addedin{2A}{2A-sustained, from FH in APJ 36}{A 60 or 90 degree turn is considered one facing change except for purposes of sustained turning decel.}
+Next, consult Table~\ref{table:turn} and cross-index the selected turn rate with the aircraft’s speed (rounded down). Use the section corresponding to the aircraft’s current altitude band. If the result is a dash, that combination of turn rate and speed is not allowed. 
+If a 60 or 90 appears, the aircraft may change facing by up to 60{\deg} or 90{\deg}, respectively, for each FP expended.
+If another number appears, it indicates the minimum number of FPs that the aircraft must expend before changing facing by 30{\deg}.
 
 Changing facing does not cost any FPs; it is the result of having begun to turn and having used the specified number of FPs (or more) in flight while turning. A turn consists of all the FPs used before changing the aircraft’s facing and the act of facing itself. If an aircraft is on a hex side at the time of facing, shift it to the adjacent hex (in the direction the aircraft is turning) and then change its facing as shown in Figure~\ref{figure:changing-facing}.
+
+}{
+An aircraft may declare a turn at any point in its flight. When it declares a turn the player must announce:
+
+\begin{itemize}
+    \item the direction of the turn (left or right) and,
+    \item the turn rate.
+\end{itemize}
+
+Next, consult Table~\ref{table:turn} and cross-index the selected turn rate with the aircraft’s speed (rounded down) to determine the turn requirement. Use the section corresponding to the aircraft’s current altitude band. If the result is a dash, that combination of turn rate and speed is not allowed. 
+If a 60 or 90 appears, the aircraft may declare and execute up to two or three turns, respectively, for each FP expended.
+If another number appears, it indicates the minimum number of FPs the aircraft must expend between declaring and executing the turn.
+
+An aircraft executes a turn by changing its facing by 30{\deg} in the sense of the turn. If an aircraft is on a hex side when it executes a turn, shift it to the adjacent hex (in the direction the aircraft is turning) and then change its facing as shown in Figure~\ref{figure:changing-facing}. 
+
+Executing a turn does not cost any FPs; it is the result of using the specified number of FPs (or more) in flight after declaring the turn.
+}
+
 }
 
 \input{figures/figure-changing-facing}
@@ -70,7 +89,7 @@ Changing facing does not cost any FPs; it is the result of having begun to turn 
 \CX{
 An aircraft may stop a turn at any point in its flight prior to changing its facing but any FPs that were used toward the aborted turn may not be counted toward any other maneuvering requirements or new turns. The turn rate in use may be changed to a tighter one whenever a facing change is completed or when the turn is stopped and started anew. An aircraft may always expend more FPs than necessary prior to changing facing.
 }{
-An aircraft may stop a turn at any point in its flight prior to changing its facing, but any FPs used toward the aborted turn may not be counted toward any other maneuvering requirements or new turns. The turn rate may be changed to a higher one when an aircraft changes facing change or stops turning. An aircraft may always expend more FPs than necessary before changing facing.
+An aircraft may stop a turn at any point in its flight prior to \CY[3A-turns]{changing its facing}{executing the turn and changing its facing}, but any FPs used toward the aborted turn may not be counted toward any other maneuvering requirements or new turns. The turn rate may be changed to a higher one when an aircraft changes facing change or stops turning. An aircraft may always expend more FPs than necessary before changing facing.
 }
 \paragraph{Carrying a Turn.} 
 \CX{
@@ -103,8 +122,13 @@ For example, “2BTL” indicates the aircraft has expended 2 FPs on a break tur
 \paragraph{Move to Face Requirement.} 
 An aircraft must move in order to change facing. If an aircraft ends a game turn with sufficient FPs expended to meet the turning requirements but does not face; it may not change facing in the next game turn until it expends at least one FP in flight. \addedin{1B}{1B-apj-36-errata}{If an aircraft is carrying a turn and the new turning requirement due to the new speed and altitude is equal to or less than what is has already expended, it must still expend one FP before changing facing} It may not face freely and then begin moving; it must move to face.
 }{
+\CY[3A-turns]{
 \paragraph{Move-to-Face Requirement.} 
 An aircraft must move to change facing. If an aircraft ends a game turn with sufficient FPs expended to meet the turning requirements but does not face, it may not change facing in the next game turn until it expends at least one FP in flight. If an aircraft is carrying a turn and the new turning requirement due to the new speed and altitude is equal to or less than the number of FPs it has already expended, it must still expend one FP before changing facing. In both cases, it may not change facing and then begin moving; it must move to face.
+}{
+\paragraph{Move-to-Execute Requirement.} 
+An aircraft must move to execute a turn and change facing. If an aircraft ends a game turn with sufficient FPs expended to meet the turning requirements but does not execute the turn, it may not execute the turn in the next game turn until it expends at least one FP in flight. If an aircraft is carrying a turn and the new turning requirement due to the new speed and altitude is equal to or less than the number of FPs it has already expended, it must still expend one FP before executing the turn. In both cases, it may not execute the turn and then begin moving; it must move to execute.
+}
 }
 
 \CX{
@@ -114,6 +138,9 @@ Note: An aircraft is assessed decel points for Turn Drag based on the highest tu
 
 \addedin{1B}{1B-apj-22-qa, 1B-apj-35-qa, and 1B-apj-36-errata}{A turn that is carried over from one game-turn to the next must be considered for decel in both game-turns. If it corresponds to the highest turn rate during both game-turns, the decel will be paid twice.}
 }{
+
+\CY[3A-turns]{
+
 \paragraph{Turn-Induced Drag.} Turning creates drag, which causes deceleration. If an aircraft used turning flight in a game turn (whether it changed facing or not), consult the turn-drag chart on its ADC. Cross-index the highest turn rate used in the game turn and the configuration to determine the number of turn-drag DPs the aircraft receives. EZ turns are not listed; turns at EZ rates give no drag in the basic rules (although see advanced rules \ref{rule:supersonic-speed-effects} and \ref{rule:sustained-turning}). 
 
 If an aircraft used different turn rates in a game turn, it only receives turn-drag DPs for the highest turn rate used. 
@@ -121,6 +148,19 @@ If an aircraft used different turn rates in a game turn, it only receives turn-d
 An aircraft receives turn-drag DPs for turning flight, whether it changes facing once, more than once, or not at all.
 
 A turn carried from one game turn to the next is considered for turn drag in both game turns. If it corresponds to the highest turn rate during both game turns, the corresponding turn-drag DPs will be received in both game turns.
+
+}{
+
+\paragraph{Turn Drag.} Turning creates drag, which causes deceleration. Each time an aircraft declares a turn, consult the turn drag chart on its ADC. Cross-index the turn rate and the configuration to determine the number of DPs the aircraft receives. EZ turns are not listed; turns at the EZ rate give no drag (although see advanced rule \ref{rule:supersonic-speed-effects} for supersonic EZ turns).
+
+\paragraph{Multiple Turns.}
+If the turn requirement is 60, the aircraft may declare and execute one or two turns for each FP expended. If the turn requirement is 90, the aircraft may declare and execute one, two, or three turns for each FP expended.
+
+Each executed turn gives a change of facing of 30{\deg}, so in many ways, declaring and executing multiple turns is equivalent to moving one FP and then changing facing by 60{\deg} or 90{\deg}. 
+
+Nevertheless, in these cases the aircraft is actually executing multiple turns each corresponding to a change of facing of 30{\deg}, and this distinction is important for calculating the total drag. That is, declaring and executing two turns (changing facing by a total of 60{\deg}) gives turn drag for two turns, and doing so for three turns (changing facing by a total of 90{\deg}) gives turn drag for three turns.
+
+}
 
 }
 
@@ -142,12 +182,14 @@ The sequence of play is not required, and you may ignore it.
 \CX{
 VFPs expended to climb or to dive do count as FPs expended toward turn FP requirements. If an aircraft moves to a new altitude band while turning, use the Turn Chart entry for the altitude band it began the turn in until the aircraft changes facing the first time; then use the chart for the altitude band the aircraft is currently in.
 }{
-VFPs expended to climb or dive do count as FPs expended toward turn FP requirements. 
+VFPs expended to climb or dive count as FPs expended toward turn FP requirements. 
 
 If an aircraft moves to a new altitude band while turning, use the turn-chart entry for the altitude band in which it expended the first FP being counted toward its current facing requirement. If the aircraft has not yet changed facing, then this will be the altitude band in which it started the turn. If the aircraft has already changed facing and is continuing to turn, this will be the altitude band in which it last changed facing.
 }
 
 \begin{advancedrules}
+
+\DY[3A-turns]{
 
 \section{Sustained Turns}
 \label{rule:sustained-turning}
@@ -183,7 +225,7 @@ An aircraft noted as having a high bleed rate loses speed faster than others in 
 If an ADC notes that an aircraft has a high bleed rate (HBR), it loses speed faster than others in a sustained turn and receives a sustained turn drag of 1.5 DPs (rather than 1.0 DPs) for each 30{\deg} of facing change in the second and subsequent facing changes.
 }
 }
-
+}
 
 \deletedin{2A}{2A-snap}{
 \section{Snap Turning}
