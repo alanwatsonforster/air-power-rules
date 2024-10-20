@@ -77,6 +77,7 @@ NOTE: All modifiers are cumulative. Disoriented or GLOC aircrew may not search.
 }{
 \begin{twocolumntablefloat}[t]
 \begin{twocolumntable}
+\small
 \begin{multicols}{2}
 
 \begin{onecolumntable}
@@ -139,9 +140,11 @@ Smoker&$-1$&$-1$&$-2$&$-2$&---&---&---\\
 \end{onecolumntable}
 }
 
+\columnbreak
+
 \begin{onecolumntable}
 \tablecaption{table:sighting-additional-modifiers}{Additional Sighting Modifiers}
-\begin{tabularx}{\linewidth}{Xl}
+\begin{tabularx}{1.0\linewidth}{Xl}
 \toprule
 \multicolumn{2}{c}{Participating Aircraft}\\
 \midrule1 or 2&$+0$\\
@@ -168,8 +171,8 @@ Poor eyesight&$+1$\\
 Tactics master&$-1$\\
 Multi-crew aircraft&$-1$\\
 Looking out of stratus&$+2$\\
-IRSTS lock-on and HUD interface&$-1$\\
-RWR indications&$-1$\\
+\CY[3A-sighting-modifiers]{RWR indications}{Radar or RWR detection or IRSTS lock-on}&$-1$\\
+\CY[3A-sighting-modifiers]{IRSTS lock-on and HUD interface}{Radar detection or IRSTS lock-on and HUD interface}&$-1$\\
 \bottomrule
 \end{tabularx}
 \begin{tablenote}{1.0\linewidth}
