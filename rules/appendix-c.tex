@@ -1,0 +1,60 @@
+\appendixchapter{Updating ADCs}
+
+ADCs for many aircraft have been published in {\AirSup}, {\AirStr}, {\TSOH}, and {\APJ}. Still more have been created by players interested in less common aircraft. 
+
+Many of the values in these ADCs remains relevant under the current rules, but some need updating. This appendix describes how to identify and update earlier ADCs.
+
+
+\section{Identifying ADC Versions}
+
+First-edition ADCs can be identified in one of two ways:
+\begin{itemize} 
+\item They have the idle power labeled “Idle FP” or similar and the speedbrake row labeled “Spbr.\ FP” or similar. 
+\item They have “v1” in the upper right, next to the text “Air Power”.
+\end{itemize}
+
+Second-edition ADCs can be identified in one of two ways:
+\begin{itemize} 
+\item They have the idle power labeled “Idle DP” or similar and the speedbrake row labeled “Spbr.\ DP” or similar. 
+\item They have “v2” in the upper right, next to the text “Air Power”.
+\end{itemize}
+
+Version 3 ADCs can be identified in one way:
+\begin{itemize}
+\item They have “v3” in the upper right, next to the text “Air Power”.
+\end{itemize}
+
+\section{Updating ADCs}
+
+\subsection{Idle and Speedbrake DPs}
+
+To update first-edition ADCs to the current rules:
+
+\begin{itemize}
+
+\item Multiply the “Idle FP” values by two and interpret them as Idle DP values.
+\item Multiply the “Spbr.\ FP” values by two and interpret them as SPBR DP values.
+
+\end{itemize}
+
+For example, if the original idle FP values are 0.5, 0.5, and 1.0 (for CL, 1/2, and DT configurations), the updated values are 1.0, 1.0, and 2.0.
+
+Second-edition and version 3 ADCs do not need updating in this way.
+
+\AY{
+\subsection{Turn Drag}
+
+To update first-edition and second-edition ADCs to the current rules:
+
+\begin{itemize}
+
+\item Take the original turn drag values, halve them, and add 0.5 for normal aircraft, 0.25 for LBR aircraft, and 0.75 for HBR aircraft. 
+
+\end{itemize}
+
+For example, if the original turn drag is 2.0, the updated turn drag is 1.5 for normal aircraft, 1.25 for LBR aircraft, and 1.75 for HBR aircraft.
+
+Version 3 ADCs do not need updating in this way.
+
+
+}
