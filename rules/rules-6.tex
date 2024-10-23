@@ -10,7 +10,7 @@ Aircraft speed can change during play as a result of using various power setting
 }{
 Aircraft speed can change during play due to using engine power, climbing, diving, turning, maneuvering, and using speedbrakes. 
 
-To keep things simple, an aircraft's start speed is used as its speed for an entire game turn. Activities that may affect speed are noted in the aircraft log sheet as the aircraft moves, and any consequent speed changes are determined after the aircraft completes its move. The changed speed is noted as the aircraft's new start speed for the next game turn.
+\paragraph{Start Speed.} An aircraft's start speed is used as its speed for an entire game turn. Activities that may affect speed are noted in the aircraft log sheet as the aircraft moves. Any consequent speed changes have effect on the aircraft's new start speed for the next game turn.
 }
 
 \DX{
@@ -52,7 +52,9 @@ In the game, aircraft engines produce thrust in terms of accel points; how many 
 \CX{
 Aircraft speed will increase or decrease as a result of the accel points and decel points it accumulates in a game-turn. \addedin{1C}{1C-tables}{Table~\ref{table:acceleration} summarizes the sources of APs and DPs, and the details are given in the corresponding sections of these rules.}
 }{
-An aircraft's speed will increase or decrease due to the acceleration points (APs) and deceleration points (DPs) it accumulates in a game turn. Table~\ref{table:acceleration} summarizes the sources of APs and DPs, and the corresponding sections of these rules give details. Do not confuse FPs with APs and DPs; FPs measure speed, whereas APs and DPs determine how much the speed changes.
+An aircraft's speed will increase or decrease due to the acceleration points (APs) and deceleration points (DPs) it accumulates in a game turn. Table~\ref{table:acceleration} summarizes the sources of APs and DPs, and the corresponding sections of these rules give details. 
+
+Do not confuse FPs with APs and DPs; FPs are determined by an aircraft’s speed and measure how far it can move in a game turn, whereas APs and DPs determine how much the speed changes.
 }
 
 \CX{
@@ -96,26 +98,42 @@ The sum of the aircraft's current speed plus any speed gain or loss at the end o
 
 }{
 
-\paragraph{Speed Change Procedure.} In the Aircraft Administrative Phase, determine the aircraft’s new speed for the next game turn according to this procedure. 
+\paragraph{Speed Change Procedure.} 
 
-Sum the number of APs and the number of DPs accrued during the game turn, including any carried forward from the previous game turn.
+In the Aircraft Administrative Phase, determine the aircraft’s new speed for the next game turn according to this procedure. 
 
 \begin{itemize}
-\item If the aircraft has an equal number of APs and DPs, it does not change speed.
+\item Determine the number of APs and DPs accumulated in the current game turn and any carried forward from the previous game turn. Subtract the number of DPs from the number of APs.
 
-The aircraft carries no APs or DPs forward into the next game turn.
+\item If the result is zero, the aircraft does not change speed and carries no APs or DPs forward into the next game turn.
 
-\item If the aircraft has more APs than DPs, subtract the DPs from the APs, and then increase the speed by 0.5 for every 2.0 remaining APs. However, if the new speed reaches the maximum speed or dive speed, according to rule~\ref{rule:speed-limits}, it is not increased further.
+\item If the result is positive, the aircraft increases speed by 0.5 for every 2.0 excess APs and any APs not used to increase speed forward to the next game turn.
 
-The aircraft carries any APs not used to increase speed forward to the next game turn. 
-
-\item If the aircraft has more DPs than APs, subtract the APs from the DPs, and then decrease the speed by 0.5 for every 2.0 remaining DPs. However, if the new speed reaches 0.0, it is not reduced further.
-
-The aircraft carries any DPs not used to decrease speed forward to the next game turn. 
+\item If the result is negative, the aircraft decreases speed by 0.5 for every 2.0 excess DPs and any DPs not used to decrease speed forward to the next game turn. 
 
 \end{itemize}
 
-These rules for carrying APs and DPs are further subject to these exceptions at low and high speeds:
+On the aircraft’s log sheet, note the new speed as its start speed for the next game turn and any APs or DPs carried forward.
+
+For example, an aircraft has accumulated 6.0 APs and 3.0 DPs and so has a net of 3.0 APs. Its speed increases by 0.5, and it carries 1.0 AP forward to the next game turn. Another aircraft has accumulated 2.5 APs and 7.0 DPs, and so has a net of 4.5 DPs. Its speed is reduced by 1.0, and it carries 0.5 DP  forward to the next game turn. (These examples assume that the aircraft does not run up against the minimum and maximum speed limits.)
+
+\paragraph{Speed Change Exceptions.}
+
+The rules for changing speed are subject to these exceptions at low and high speeds:
+
+\begin{itemize}
+
+\item If the new speed increases to the maximum speed or dive speed, according to rule~\ref{rule:speed-limits}, it is not increased further.
+
+\item If the new speed exceeds the maximum speed or dive speed, according to rule~\ref{rule:speed-limits}, the aircraft suffers a fadeback.
+
+\item If the new speed reaches 0.0, it is not reduced further.
+
+\end{itemize}
+
+\paragraph{Carry Exceptions.}
+
+The rules for carrying APs and DPs are subject to these exceptions at low and high speeds:
 \CY[3A-AP-carry-at-speed-limits]{
 \begin{itemize}
 \item An aircraft with a new speed of 0.0 does not carry DPs forward to the next game turn.
@@ -129,13 +147,19 @@ These rules for carrying APs and DPs are further subject to these exceptions at 
 \end{itemize}
 }
 
-On the aircraft’s log sheet, note the new speed as its start speed for the next game turn and any APs or DPs carried forward.
-
-For example, an aircraft has accumulated 6.0 APs and 3.0 DPs and so has a net of 3.0 APs. Its speed increases by 0.5, and it carries 1.0 AP forward to the next game turn. Another aircraft has accumulated 2.5 APs and 7.0 DPs, and so has a net of 4.5 DPs. Its speed is reduced by 1.0, and it carries 0.5 DP  forward to the next game turn. These examples assume that the aircraft does not run up against the minimum and maximum speed limits mentioned as exceptions.
 }
 
 \addedin{1C}{1C-tables}{
     \input{tables/table-acceleration}
+}
+
+\AY{
+\paragraph{Supersonic Acceleration.}
+
+A supersonic aircraft (see rule \ref{rule:supersonic-speed-effects}) requires 3.0 APs (instead of 2.0 APs) to increase speed by 0.5. It decelerates normally.
+
+For example, a supersonic aircraft has accumulated 6.0 APs and 2.0 DPs, and so has a net of 4.0 APs. Its speed is increased by 0.5, and 1.0 AP is carried forward to the next game turn.
+
 }
 
 \CX{
@@ -143,23 +167,30 @@ For example, an aircraft has accumulated 6.0 APs and 3.0 DPs and so has a net of
 
 Example: A rapid accel aircraft gaining 6.0 accel points and 2.0 decel points in a turn, would gain 1.0 of speed. Its net accel is 4.0 ($6.0 - 2.0$). Each 1.5 of Accel gains 0.5 speed so 3.0 Accel is good for the 1.0 speed increase and the left over 1.0 Accel would be carried to the next game turn.
 }{
-\paragraph{Rapid Acceleration Aircraft.} If its ADC notes that an aircraft has rapid acceleration (RA), it is considered to be an exceptionally clean design that speeds up quicker than normal. This kind of aircraft receives a speed increase of 0.5 FP for each 1.5 APs instead of each 2.0. It decelerates normally.
+\paragraph{Rapid Acceleration Aircraft.} If an ADC notes that an aircraft has rapid acceleration (RA), it is an exceptionally clean design that speeds up quicker than normal. A subsonic RA aircraft requires only 1.5 APs (instead of the normal 2.0 APs) to increase speed by 0.5 FP and a supersonic RA aircraft requires only 2.0 APs (instead of the normal 3.0 APs) to increase speed by 0.5 FP. In both cases, it decelerates normally.
 
-For example, an RA aircraft has accumulated 6.0 APs and 2.0, and so has a net of 4.0 APs. Its speed is increased by 1.0, and 1.0 AP is carried forward to the next game turn.
+For example, a subsonic RA aircraft has accumulated 6.0 APs and 2.0 DPs, and so has a net of 4.0 APs. Its speed is increased by 1.0, and 1.0 AP is carried forward to the next game turn.
 }
 \DX{
 Reminder:  Do not confuse Accel and Decel points with \changedin{1B}{1B-apj-23-errata}{speed}{flight} points. They are separate things.
 }
 
 \AX{
-\paragraph{Fractional APs and DPs.} APs and DPs points are almost always received in steps of 0.5. If the aircraft is damaged, its engine power APs may be halved, and so it might receive APs in steps of 0.25.
+\paragraph{Fractional APs and DPs.} 
+\CY{
+APs and DPs are almost always received in steps of 0.5. If the aircraft is damaged, its engine power APs may be halved, and so it might receive APs in steps of 0.25.
+}{
+APs and DPs are always received in steps of 0.25.
+}
 }
 
 \AX{
-\section{Engine Thrust}
+\section{Engine Power}
 \label{rule:engine-thrust}
 
-In the game, the thrust produced by an aircraft's engines results in the aircraft gaining APs; how many depends on the aircraft's chosen power setting and current configuration. At the beginning of each aircraft's move, the player must select one of the four allowed power settings. If a new setting is not selected, the setting from the previous game turn remains in effect. Note the selected power setting code on the power line of the aircraft log.
+In the game, the thrust produced by an aircraft's engines results in the aircraft gaining APs; how many depends on the aircraft's chosen power setting and current configuration. 
+
+At the beginning of each aircraft's move, the player must select one of the allowed power settings and determine the number of APs the aircraft will receive. If a new setting is not selected, the power setting and number of APs from the previous game turn remains in effect. Note the selected power setting code and the number of APs in the aircraft log.
 
 \paragraph{Power Settings.} The four power settings of jet engines and their codes are: idle (I), normal (N), military (M), and afterburner (AB).
 
@@ -177,7 +208,11 @@ In the game, the thrust produced by an aircraft's engines results in the aircraf
 
 \end{itemize}
 
-\paragraph{Changing Power Settings.}\label{rule:rapid-power-response} An aircraft is normally limited in increasing its power setting from game turn to game turn. Normal aircraft may safely increase power by one or two levels per game turn. For example, they may safely increase power from idle to military but not from idle to afterburner. If an ADC notes that an aircraft has rapid power response (RPR),  it may safely increase power by any amount each turn. Normal aircraft may increase power from idle to afterburner at the risk of flaming out (see rule~\ref{rule:engine-flame-outs}). Aircraft may decrease their power setting without limit. 
+\paragraph{Changing Power Settings.}\label{rule:rapid-power-response} A jet aircraft is normally limited in increasing its power setting from game turn to game turn. Normal aircraft may safely increase power by one or two levels per game turn. For example, they may safely increase power from idle to military but not from idle to afterburner. Normal aircraft may increase power from idle to afterburner at the risk of flaming out (see rule~\ref{rule:engine-flame-outs}). 
+
+If an ADC notes that an aircraft has rapid power response (RPR), it may safely increase power by any amount each turn. 
+
+Aircraft may decrease their power setting without limit or risk. 
 
 \paragraph{Insufficient Power Above Cruise Speed.} If an aircraft uses idle or normal power, and its speed exceeds its listed cruise speed, it receives one DP in addition to any others received that turn.
 
@@ -189,9 +224,9 @@ The four power settings of the engine of a propellor aircraft (with either recip
 
 The idle and normal settings have the same behavior as those of jet engines. 
 
-If the aircraft does not choose the idle or normal setting, it may choose any amount of APs between 0.0 and the maximum shown for the full-throttle setting. If the amount chosen is less than or equal to the half-throttle setting, the fuel consumption (rule~\ref{rule:fuel-consumption}) for half-throttle is used. Otherwise, the fuel-consumption for full-throttle is used.
+If the aircraft does not choose the idle or normal setting, it may choose any amount of APs between 0.0 and the maximum shown for the full-throttle setting. If the amount chosen is less than or equal to the half-throttle setting, the fuel consumption (rule~\ref{rule:fuel-consumption}) for half-throttle is used. Otherwise, the fuel-consumption for full-throttle is used. For all other purposes, the half-throttle and full-throttle settings are considered to be equivalent to military power.
 
-The ADCs of some propellor aircraft note that they have their power reduced at high speed or altitude. Such reductions apply to both the half-throttle and full-throttle settings.
+The ADC of a propellor aircraft may note that it has have its power reduced at high speed or altitude. Such reductions apply to both the half-throttle and full-throttle settings.
 }
 
 
@@ -321,7 +356,7 @@ While departed, the aircraft changes facing randomly as follows:
 
 An aircraft in departed flight loses altitude levels equal to its start speed in FPs (rounded up) plus two for each game turn it is departed (i.e., plus two on the first game turn, plus four on the second, and so on)
 
-The aircraft's speed does not change while in departed flight, and all APs and DPs points are ignored. Engine thrust does not aid recovery or change the speed. Aircraft that enter departed flight with a power setting of afterburner or military risk a flame-out.
+The aircraft's speed does not change while in departed flight, and all APs and DPs are ignored. Engine thrust does not aid recovery or change the speed. Aircraft that enter departed flight with a power setting of afterburner or military risk a flame-out.
 }
 
 \paragraph{Recovering From Departed Flight.} 
