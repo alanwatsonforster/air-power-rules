@@ -10,14 +10,14 @@
     \drawhex{+1}{-0.5}
     \drawhex{+1}{+0.5}
 
-    \drawdotathex[black!20]{+0.00}{0.00}
+    \drawdotathex[black!50]{+0.00}{0.00}
 
-    \drawdotathex[black!40]{+0.00}{+0.50}
-    \drawdotathex[black!40]{+0.50}{+0.25}
-    \drawdotathex[black!40]{+0.50}{-0.25}
-    \drawdotathex[black!40]{+0.00}{-0.50}    
-    \drawdotathex[black!40]{-0.50}{-0.25}
-    \drawdotathex[black!40]{-0.50}{+0.25}
+    \drawdotathex[black!50,thin,fill=white]{+0.00}{+0.50}
+    \drawdotathex[black!50,thin,fill=white]{+0.50}{+0.25}
+    \drawdotathex[black!50,thin,fill=white]{+0.50}{-0.25}
+    \drawdotathex[black!50,thin,fill=white]{+0.00}{-0.50}    
+    \drawdotathex[black!50,thin,fill=white]{-0.50}{-0.25}
+    \drawdotathex[black!50,thin,fill=white]{-0.50}{+0.25}
 
     \drawdotathex[black!100]{+0.00}{+1.00}
     \drawdotathex[black!100]{+0.50}{+0.75}
@@ -52,14 +52,14 @@
         \drawhex{+1}{+0.5}
     }
 
-    \drawdotathex[black!20]{+0.00}{0.00}
+    \drawdotathex[black!50]{+0.00}{0.00}
 
-    \drawdotathex[black!40]{+0.00}{+0.50}
-    \drawdotathex[black!40]{+0.50}{+0.25}
-    \drawdotathex[black!40]{+0.50}{-0.25}
-    \drawdotathex[black!40]{+0.00}{-0.50}    
-    \drawdotathex[black!40]{-0.50}{-0.25}
-    \drawdotathex[black!40]{-0.50}{+0.25}
+    \drawdotathex[black!50,thin,fill=white]{+0.00}{+0.50}
+    \drawdotathex[black!50,thin,fill=white]{+0.50}{+0.25}
+    \drawdotathex[black!50,thin,fill=white]{+0.50}{-0.25}
+    \drawdotathex[black!50,thin,fill=white]{+0.00}{-0.50}    
+    \drawdotathex[black!50,thin,fill=white]{-0.50}{-0.25}
+    \drawdotathex[black!50,thin,fill=white]{-0.50}{+0.25}
 
     \drawdotathex[black!100]{+0.00}{+1.00}
     \drawdotathex[black!100]{+0.50}{+0.75}
@@ -78,7 +78,7 @@
 \end{tikzpicture}
 \end{fitheight}
 
-\figurecaption{figure:range}{Range. The map locations shown in black are one hex from the map locations shown in light gray. The map locations shown in dark gray are half a hex from the map locations shown in light gray.}
+\figurecaption{figure:range}{Horizontal range. The map locations shown with black dots are one full hex from the central map locations shown with a gray dot. The map locations shown with open dots are less than one full hex from the central map locations. When determining horizontal ranges, if the last step is less than one full hex, it is ignored.}
 
 \vspace{\floatsep}
 
