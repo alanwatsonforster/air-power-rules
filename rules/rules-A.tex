@@ -16,15 +16,17 @@ Many situations described in these rules depend on the \emph{range} from one ele
 Other than in the exceptional cases noted subsequently, the range in hexes from one element to another is determined using the following procedure.
 
 \paragraph{Range Procedure.}
-The range has two components, the horizontal and vertical ranges. They are determined and combined as follows:
+The range has two components, the horizontal range and the vertical range. They are determined and combined as follows:
 
 \input{figures/figure-range}
 
 \begin{itemize}
 \item
-The \emph{horizontal range} is the length of the shortest route between the map locations, measured in hexes and rounding down half hexes.
+The \emph{horizontal range} is the length of the shortest route between the map locations, measured in full hexes.
 
-If both elements are on hex centers, then the procedure is straightforward and probably familiar. However, if one or both are on hex sides, it may be less familiar. Figure~\ref{figure:range} shows map locations that are half a hex and one hex apart, including both hex centers and hex sides. These diagrams can be understood by noting that the distance from each map location to the surrounding six map locations is half a hex.
+If both map locations are at hex centers, then the procedure is straightforward and familiar. However, if one or both are on hex sides, it may be less familiar. Figure~\ref{figure:range} shows map locations that are one full hex apart, including both hex centers and hex sides. 
+
+Figure~\ref{figure:range} also shows locations that are less than one full hex apart. If the last step of the shortest route is less than one full hex, it is ignored.
 
 Figure~\ref{figure:range-example} gives examples of horizontal ranges.
 
@@ -34,7 +36,9 @@ The \emph{vertical range} is the difference in altitude levels divided by two an
 The \emph{range} is the sum of the horizontal and the vertical ranges.
 \end{itemize}
 
-The ranges determined using this method are symmetric, in the sense that the range from a first element to a second is the same as the range from the second element to the first. This is not necessarily the case with some of the exceptional ranges defined below.
+The horizontal range, vertical range, and range are always non-negative integers.
+
+The ranges determined using this procedure are symmetric, in the sense that the range from a first element to a second is the same as the range from the second element to the first.
 
 \paragraph{Range Exceptions.}
 The normal range procedure is \emph{not} used in the following cases:
@@ -44,7 +48,7 @@ The normal range procedure is \emph{not} used in the following cases:
 The range for air-to-air gun attacks is determined according to rule~\ref{rule:air-to-air-gun-combat}.
 
 \item
-When attempting to search for a higher aircraft or missile in daylight, the vertical range is the difference in altitude levels divided by \emph{four} and rounded down (see rule~\ref{rule:sighting-aircraft-and-missiles}).
+When attempting to sight a higher aircraft or missile in daylight, the vertical range is the difference in altitude levels divided by \emph{four} and rounded down (see rule~\ref{rule:sighting-aircraft-and-missiles}).
 
 \item
 When considering positions of advantage, the horizontal range and vertical altitude difference are considered separately (see rule~\ref{rule:positions-of-advantage}).
@@ -57,7 +61,7 @@ When determining if a radar target is in ground clutter, the horizontal range an
 \paragraph{Closeness.}
 \label{rule:closeness}
 
-Range is used to determine relative closeness. If two aircraft have different ranges from a reference element, the one with the smaller range is considered to be closer to the reference element. If two aircraft have the same range, they are considered to be equally close. (That is, any fraction of a hex that is rounded down in the horizontal range, vertical range, or both is ignored when determining closeness.)
+Range is used to determine closeness. If two aircraft have different ranges from a reference element, the one with the smaller range is considered to be closer to the reference element. If two aircraft have the same range, they are considered to be equally close.
 
 For example, assuming all the aircraft in Figure~\ref{figure:range-example} have the same altitude, then aircraft C and D are equally close to aircraft A, since both are at a range of 2 hexes. Furthermore, assuming that aircraft A and C are at the same altitude and aircraft D is one altitude level below or above, then aircraft C and D are still equally close to aircraft A since both are still at a range of 2 hexes.
 
