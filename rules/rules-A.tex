@@ -320,52 +320,5 @@ In these cases, the distant aircraft \emph{need not} be in the corresponding hor
 \end{itemize}
 
 If Table~\ref{table:vertical-limit-factors} gives one factor, the distant element is within the combined arc if it satisfies the corresponding conditions. If Table~\ref{table:vertical-limit-factors} gives two factors, they will be combined with “and” or “or.” In the case of “and,” the distant element is within the combined arc if it satisfiers both of the corresponding conditions. In the case of “or,” the distant element is within the combined arc if it satisfies either of the corresponding conditions.
-
-
-\paragraph{Combined Arcs Graphical Procedure.}
-
-The combined arcs procedure can be carried out graphically using Figures \ref{figure:combined-arcs-a} to \ref{figure:combined-arcs-g}. Determine the flight slope of the reference aircraft. Then, on the appropriate figure for the arc, find the position that corresponds to the horizontal range to the distant element and its altitude relative to the reference element. Next, consult the legend and find the line or lines whose color corresponds to the flight slope and whether the distant element needs to be above, between, or below the lines.
-
-The determination of whether the distant element is within the combined arc then depends on whether there are one or two lines and whether they are solid or dashed:
-
-\begin{itemize}
-    \item For two solid lines: the distant element is within the combined arc if it lies between the solid lines and is within the horizontal arc.
-    \item For one solid line: the distant element is within the combined arc if it is above/below the line and is within the horizontal arc.
-    \item For one solid line and one dashed line: the distant element is within the combined arc if it is be above/below the solid line and is within the horizontal arc or if it is above/below the dashed line.
-    \item For one dashed line: the distant element is within the combined arc if it is above/below the dashed line.
-\end{itemize}
-
-For example, consider an aircraft at an altitude of 10 attempting to detect another at a horizontal range of 5 hexes using radar with an \arcrange{180}{+} arc.
-\begin{itemize}
-\item
-If the aircraft has a flight slope of 0, Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of $-1.0$ and $+1.0$. 
-
-We see that the target is within the combined arc of the radar if it has an altitude of 5 to 15 inclusive and is within the \arcrange{180}{+} horizontal arc.
-
-\item
-If the aircraft has a flight slope of more than 0 but no more than 1 ($0 < \mbox{FS} \le 1$), Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of $-0.5$ and $+2.0$. 
-
-We see that the target is within the field of the radar if it has an altitude of 8 to 20 inclusive and is within the \arcrange{180}{+} horizontal arc.
-
-\item
-If the aircraft has a flight slope of more than 1 but no more than 3 ($1 < \mbox{FS} \le 3$), Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of $+0.5$ and $+7.0$. 
-
-We see that the target is within the field of the radar if it has an altitude of 12 to 45 inclusive and is within the \arcrange{180}{+} horizontal arc.
-
-\item
-If the aircraft has a flight slope of more than 3 but that is still finite ($3 < \mbox{FS} < +\infty$), Table~\ref{table:vertical-limit-factors} gives one mixed factor (without parentheses) of $+2.0$ and one pure factor (with parentheses) of $(+7)$.
-
-We see that the target is within the field of the radar if it either has an altitude of 20 or more and is within the \arcrange{180}{+} horizontal arc or if it has an altitude of at least 45 and is at any horizontal position.
-
-\item
-If the aircraft in a pure vertical climb ($\mbox{FS} = +\infty$), Table~\ref{table:vertical-limit-factors} gives only one pure factor (with parentheses) of $(+3)$.
-
-We see that target is within the field of the radar if it has an altitude of at least 25 and is at any horizontal position.
-
-\end{itemize}
-
-% This file contains \clearpages to avoid exceeding memory limits, so input it at the end of the chapter.
-\input{figures/figure-combined-arcs}
-
 }
 
