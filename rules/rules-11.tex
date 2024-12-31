@@ -7,7 +7,7 @@ This chapter details the procedures for visual detection and tracking of targets
 This rule details the procedures for visual detection and identification of targets.
 }
 
-\section{Sighting Aircraft and Missiles}
+\section{Sighting of Aircraft and Missiles by Aircraft}
 \label{rule:sighting-aircraft-and-missiles}
 
 \CX{
@@ -57,12 +57,14 @@ Padlocking is an administrative procedure used only in the Visual Sighting Phase
 
 }{
 
-\paragraph{Sighting Range.} The range for sighting is determined normally (see rule~\ref{rule:range}) with one exception: when attempting to sight a higher aircraft or missile in daylight, the vertical range is the difference in altitude levels divided by \emph{four} (rather than two) and rounded down. This is because it is easier to see an aircraft silhouetted against the sky.
+\paragraph{Sighting Range.} The range for sighting is determined normally (see rule~\ref{rule:range}). When attempting to sight a higher aircraft or missile in daylight, the vertical range is the difference in altitude levels divided by \emph{four}, rather than two, and rounded down. This is because it is easier to see an aircraft silhouetted against the sky.
 
-\paragraph{Blind and Restricted Arcs.} A crewmember’s view may be obstructed by their aircraft’s fuselage. Each aircraft’s ADC indicates its blind and restricted \AY[3A-horizontal-arcs]{horizontal} arcs (if any). An L after the arc indicates that the aircraft is blinded or restricted only to lower altitude in that arc (e.g., by a long nose). An aircraft cannot padlock or attempt to sight targets in its blind arcs. 
+\paragraph{Blind and Restricted Arcs.} A crewmember’s view may be obstructed by their aircraft’s fuselage or wings. Each aircraft’s ADC indicates its blind and restricted \AY[3A-horizontal-arcs]{horizontal} arcs (if any). An L after the arc indicates that the aircraft is blinded or restricted only to lower altitude in that arc (e.g., by a long nose). 
+
+An aircraft cannot padlock or attempt to sight targets in its blind arcs. An aircraft can padlock and attempt to sight targets in its restricted arcs, but receives an adverse modifier to the sighting die roll.
 
 \AY[3A-horizontal-arcs]{
-When determining the horizontal arc, the aircraft attempting sighting is the reference element and the aircraft or missile being sighted is the distant element. Resolve borderline cases by first moving the faster element forward. If the faster element remains on the borderline, use the rearward arc.
+When determining the horizontal arc, the aircraft attempting sighting is the reference element and the target aircraft or missile being sighted is the distant element. Resolve borderline cases by first moving the faster element forward. If the faster element remains on the borderline, use the rearward arc.
 }
 
 An aircraft also cannot attempt to sight targets at the same map location (i.e., the same hex or hex side) but lower altitude, but it can padlock them (as the padlocking aircraft can roll slightly to keep the target in view). An aircraft may sight or padlock targets at the same map location but higher altitude.
@@ -93,7 +95,7 @@ For each unsighted opposing target, identify which friendly aircraft can partici
 
 If no friendly aircraft can participate, the unsighted target remains unsighted.
 
-\CY[3A-searcher]{Otherwise, determine which of the participating aircraft is the searcher. This will normally be the participating friendly aircraft closest to the target, but if two or more are equally close, their players may designate which is the searcher.}{Otherwise, the player may designate which of the participating aircraft is the searcher.} Roll a die and apply appropriate modifiers. The target is sighted if the modified result is less than or equal to the target's visibility number.
+\CY[3A-searcher]{Otherwise, determine which of the participating aircraft is the searcher. This will normally be the participating friendly aircraft closest to the target, but if two or more are equally close, their players may designate which is the searcher.}{Otherwise, the player may designate which of the participating aircraft is the searcher. This will often be the participating friendly aircraft closest to the target, but sometimes it is worthwhile to designate a further aircraft with more advantageous modifiers.} Roll a die and apply appropriate modifiers. The target is sighted if the modified result is less than or equal to the target's visibility number.
 
 
 }
@@ -130,23 +132,26 @@ If no friendly aircraft can participate, the unsighted target remains unsighted.
     \item \itemparagraph{Range.} Apply the modifiers from Table ~\ref{table:sighting-range-modifiers}.
     \item \itemparagraph{Target Position.} Apply the from Table~\ref{table:sighting-position-modifiers} for altitude of the target relative to the searcher, whether it is in haze or stratus, and whether it is silhouetted against clouds as seen by the searcher. These modifiers depend on the paint scheme of the target.
     \item \itemparagraph{Target is Smoker} If the target is a smoker, apply the modifiers from Table~\ref{table:sighting-position-modifiers} for altitude of the target relative to the searcher. Some aircraft are noted on their power charts as being smokers at military power. When they use military power, this modifier applies to them. Some results on the optional damage tables cause aircraft to become smokers regardless of their power setting. The modifier applies to them, too.
-    \item \itemparagraph{Number of Participants.} Apply the modifiers from \ref{table:sighting-additional-modifiers} for the number of aircraft participating in the sighting attempt. 
-    \item \itemparagraph{Restricted Arc.} If the target is in the restricted arcs of \CY[3A-restricted-arc]{\emph{all} of the participants}{the searcher}, apply a modifier of $+2$.
-    \item \itemparagraph{Missile Motor.} If the target is a missile whose boost or sustainer motor burned in the previous game turn, apply a modifier of $-3$ for a normal motor and $-1$ for a smokeless motor.
-    \item \itemparagraph{Missile Launch.} If the target is a missile launched from a sighted aircraft in the previous game turn or an aircraft that launched a sighted missile in the previous game turn, apply a modifier of $-2$. (For these modifiers, it is important to attempt to sight missiles before aircraft.)
+    \item \itemparagraph{Number of Participants.} Apply the modifier from \ref{table:sighting-additional-modifiers} for the number of aircraft participating in the sighting attempt. 
+    \item \itemparagraph{Restricted Arc.} If the target is in the restricted arcs of \CY[3A-restricted-arc]{\emph{all} of the participants}{the searcher}, apply a $+2$ modifier.
+    \item \itemparagraph{Missile Motor.} If the target is a missile whose boost or sustainer motor burned in the previous game turn, apply a $-3$ modifier for a normal motor and a $-1$ modifier for a smokeless motor.
+    \item \itemparagraph{Missile Launch.} If the target is a missile launched from a sighted aircraft in the previous game turn or an aircraft that launched a sighted missile in the previous game turn, apply a $-2$ modifier. (For these modifiers, it is important to attempt to sight missiles before aircraft.)
     \item \itemparagraph{Target using DDS Flares.} If the target used a DDS program with flares (see rule~\ref{rule:dds}) in the previous game turn, apply the PPL as a modifier.
-    \item \itemparagraph{Searcher is Multi-Crew.} If the searcher is a multi-crew aircraft,    
-    apply a $-1$ modifier. A searcher with one crewmember who is disoriented or suffering from GLOC does not gain this modifier.
+    \item \itemparagraph{Searcher is Multi-Crew.} If the searcher is a multi-crew aircraft, apply a $-1$ modifier. A searcher with one crewmember who is disoriented or suffering from GLOC does not gain this modifier.
     \item \itemparagraph{Searcher is in Stratus.} If the searcher is looking out of stratus, apply a modifier of $+2$.
-    \item \itemparagraph{Searcher is a Veteran.} If the searcher is a veteran, apply a modifier of $-1$.
-    \item \itemparagraph{Searcher is a Novice.} If the searcher is a veteran, apply a modifier of $+1$.
-    \item \itemparagraph{Searcher is Green.} If the searcher is a veteran, apply a modifier of $+2$.
-    \item \itemparagraph{Searcher has Poor or Excellent Eyesight.} If the searcher has poor eyesight, apply a $+1$ modifier, and if they have excellent eyesight, apply a $-1$ modifier.
-    \item \itemparagraph{Searcher is a Tactics Master.} If the searcher is a tactics master, apply a modifier of $-1$.
+    \item \itemparagraph{Searcher Ability.} If advanced rule \ref{rule:crew-ability} on crew ability is being used, apply these modifiers:
+    \begin{itemize}
+    \item If the searcher is a veteran, apply a $-1$ modifier. 
+    \item If the searcher is a novice, apply a $+1$ modifier. 
+    \item If the searcher is green, apply a $+2$ modifier. 
+    \item If the searcher has poor eyesight, apply a $+1$ modifier.
+    \item If the searcher has excellent eyesight, apply a $-1$ modifier.
+    \item If the searcher is a tactics master, apply a $-1$ modifier.
+    \end{itemize}
     \IDY[3A-sighting-modifiers]{\itemparagraph{Searcher has IRSTS Lock-on and HUD Interface.} If the searcher has an IRSTS lock-on to the target and HUD interface technology, apply a $-1$ modifier.}
     \IDY[3A-sighting-modifiers]{\itemparagraph{Searcher has RWR Indications.} If the searcher has RWR indications, apply a modifier of $-1$.}
-    \IAY[3A-sighting-modifiers]{\itemparagraph{Other Detections or Lock-Ons.} If the searcher has a radar or RWR detection or an IRSTS lock-on, apply a modifier of $-1$.}
-    \IAY[3A-sighting-modifiers]{\itemparagraph{Other Detections or Lock-Ons and HUD Interface.} If the searcher has a radar detection or an IRSTS lock-on and a HUD interface, apply an additional modifier of $-1$.}
+    \IAY[3A-sighting-modifiers]{\itemparagraph{Other Detections.} If the searcher has a radar, IRSTS, or RWR detection (or lock-on) for the target, apply a $-1$ modifier. This modifier is applied only once regardless of how many different types of detections the searcher has of the target.}
+    \IAY[3A-sighting-modifiers]{\itemparagraph{Other Detections and HUD Interface.} If the searcher has a radar or IRSTS detection (or lock-on) and HUD interface technology, apply an additional $-1$ modifier. Again, this modifier is applied only once regardless of how many different types of detections the searcher has of the target.}
 
 \end{itemize}
 
@@ -321,9 +326,9 @@ A visual augmentation system (VAS) uses television and optical equipment to enha
 
 \begin{itemize}
 
-    \item attempt to sight a target already detected by radar in the searcher’s \arcrange{180}{+} \CY[3A-combined-arcs]{angle-off}{combined} arcs and at a range of no more than 10 times the target’s visibility number, or
+    \item attempt to sight a target already detected by radar in the searcher’s \arcrange{180}{+} \CY[3A-combined-arcs]{angle-off arcs}{combined arcs (see rule \ref{rule:combined-arcs})} and at a range of no more than 10 times the target’s visibility number, or
 
-    \item attempt to sight a target in the searcher’s limited \AY[3A-combined-arcs]{combined} arc and at a range of no more than 6 times the target’s visibility number (whether previously detected or not).
+    \item attempt to sight a target in the searcher’s limited \CY[3A-combined-arcs]{arc}{combined arcs (see rule \ref{rule:combined-arcs})} and at a range of no more than 6 times the target’s visibility number (whether previously detected or not).
 
 \end{itemize}
 
@@ -365,8 +370,8 @@ An infrared search and track system (IRSTS) uses infrared television and optical
 
 \paragraph{IRSTS Types.} Two types of IRSTS exist: 
 \begin{itemize}
-    \item IRSTS-A (early) covers the limited \AY[3A-combined-arcs]{combined} arc and successfully locks-on on a roll of $6-$.
-    \item IRSTS-B (advanced) covers the \arcrange{180}{+} \AY[3A-combined-arcs]{combined} arc and successfully locks-on on a roll of $8-$.
+    \item IRSTS-A (early) covers the limited \CY[3A-combined-arcs]{arc}{combined arc (see rule \ref{rule:combined-arcs})} and successfully locks-on on a roll of $6-$.
+    \item IRSTS-B (advanced) covers the \arcrange{180}{+} \CY[3A-combined-arcs]{arc}{combined arcs (see rule \ref{rule:combined-arcs})} and successfully locks-on on a roll of $8-$.
 \end{itemize}
 
 \paragraph{IRSTS Requirements.}  IRSTS is used in the Radar Search and Lock-On Phase. A pilot-only aircraft may use either radar or IRSTS in this phase, and a multi-crew aircraft may do both. Unlike radar, there are no maneuver-related restrictions on the use of IRSTS.
