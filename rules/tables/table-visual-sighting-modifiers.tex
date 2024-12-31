@@ -31,7 +31,7 @@ Target Aircraft Position&Lower&Level&Higher&In Haze&In Stratus&Silh,\ by Cloud\\
 Silver          &$-2$&$-1$&$-1$&$+1$&$+3$&$-1$\\
 Uncamouflaged   &$-1$&$+0$&$+0$&$+1$&$+3$&$-1$\\
 Camouflaged     &$+1$&$+0$&$-1$&$+0$&$+3$&$-2$\\
-Low Vis.\ Grey  &$+0$&$+1$&$+1$&$+2$&$+3$&$-1$\\
+Low Vis.\ Gray  &$+0$&$+1$&$+1$&$+2$&$+3$&$-1$\\
 Aircraft Smoking&$-1$&$-2$&$-2$&NA&NA&NA\\
 \bottomrule
 \end{tabular}
@@ -102,7 +102,8 @@ Visual&VAS&Modifier\\
 \end{tabularx}
 \begin{tablenote}{0.7\linewidth}
 \begin{itemize}
-\item When searching for higher targets during the day, count each 4 levels difference in altitude as 1 hex of range.
+\item If searching for higher targets during the day, count each 4 levels difference in altitude as 1 hex of range.
+\IAY[3A-sighting]{If the searcher, target, or both are in haze (see advanced rule \ref{rule:haze}), consider the sighting range to be twice the normal range.}
 \end{itemize}
 \end{tablenote}
 \end{onecolumntable}
@@ -117,31 +118,48 @@ Visual&VAS&Modifier\\
 Silver          &$-2$&$-1$&$-1$&$+1$&$+3$&$-1$\\
 Uncamouflaged   &$-1$&$+0$&$+0$&$+1$&$+3$&$-1$\\
 Camouflaged     &$+1$&$+0$&$-1$&$+0$&$+3$&$-2$\\
-Low-visibility grey  &$+0$&$+1$&$+1$&$+2$&$+3$&$-1$\\
+Low-visibility Gray  &$+0$&$+1$&$+1$&$+2$&$+3$&$-1$\\
 Smoker&$-1$&$-2$&$-2$&---&---&---\\
 \bottomrule
 \end{tabularx}
 \end{onecolumntable}
 }{
+\CY[3A-sighting]{
 \begin{onecolumntable}
 \tablecaption{table:sighting-position-modifiers}{Sighting Modifiers for Target Aircraft Position}
 \begin{tabularx}{\linewidth}{lCCCCCCC}
 \toprule
 &\vertical{Lower (Land)}&\vertical{Lower (Sea)}&\vertical{Level}&\vertical{Higher}&\vertical{In Haze}&\vertical{In Stratus}&\vertical{\minitable{l}{Against\\Clouds}}\\
 \midrule
-Silver          &$-2$&$-2$&$-1$&$-1$&$+1$&$+3$&$-1$\\
-Light           &$-1$&$-1$&$+0$&$+0$&$+1$&$+3$&$-1$\\
-Dark            &$+0$&$+1$&$+0$&$-1$&$+0$&$+3$&$-2$\\
-Camouflaged     &$+1$&$-1$&$+0$&$-1$&$+0$&$+3$&$-2$\\
-Low-visibility grey  &$+0$&$+0$&$+1$&$+1$&$+2$&$+3$&$-1$\\
+Silver              &$-2$&$-2$&$-1$&$-1$&$+1$&$+3$&$-1$\\
+Uncamouflaged       &$-1$&$-1$&$+0$&$+0$&$+1$&$+3$&$-1$\\
+Camouflaged         &$+1$&$-1$&$+0$&$-1$&$+0$&$+3$&$-2$\\
+Low-Visibility Gray &$+0$&$+0$&$+1$&$+1$&$+2$&$+3$&$-1$\\
 Smoker&$-1$&$-1$&$-2$&$-2$&---&---&---\\
 \bottomrule
 \end{tabularx}
 \end{onecolumntable}
+}{
+\begin{onecolumntable}
+\tablecaption{table:sighting-position-modifiers}{Sighting Modifiers for Target Aircraft Background}
+\begin{tabularx}{\linewidth}{lCCCCC}
+\toprule
+&\vertical{\minitable{l}{Against\\Land}}&\vertical{\minitable{l}{Against\\Water}}&\vertical{\minitable{l}{Level}}&\vertical{\minitable{l}{Against\\Sky}}&\vertical{\minitable{l}{Against\\Clouds}}\\
+\midrule
+Silver               &$-2$&$-2$&$-1$&$-1$&$-2$\\
+Light Uncamouflaged  &$-1$&$-1$&$+0$&$+0$&$-2$\\
+Dark Uncamouflaged   &$+0$&$+1$&$+0$&$-1$&$-2$\\
+Camouflaged          &$+1$&$-1$&$+0$&$-1$&$-2$\\
+Low-Visibility Gray  &$+0$&$+0$&$+1$&$+1$&$-1$\\
+\bottomrule
+\end{tabularx}
+\end{onecolumntable}
+}
 }
 
 \columnbreak
 
+\CY[3A-sighting]{
 \begin{onecolumntable}
 \tablecaption{table:sighting-additional-modifiers}{Additional Sighting Modifiers}
 \begin{tabularx}{1.0\linewidth}{Xl}
@@ -154,7 +172,7 @@ Smoker&$-1$&$-1$&$-2$&$-2$&---&---&---\\
 \midrule
 \multicolumn{2}{c}{Target}\\
 \midrule
-In the restricted arcs of \CY[3A-restricted-arc]{all of the participants}{the searcher}&$+2$\\
+In the restricted arcs of all of the participants&$+2$\\
 Missile with a normal motor burning&$-3$\\
 Missile with a smokeless motor burning&$-1$\\
 Missile just launched from a sighted aircraft&$-2$\\
@@ -170,18 +188,59 @@ Excellent eyesight&$-1$\\
 Poor eyesight&$+1$\\
 Tactics master&$-1$\\
 Multi-crew aircraft&$-1$\\
-Looking out of stratus&$+2$\\
-\CY[3A-sighting-detection]{RWR indications}{Radar, IRSTS, or RWR detection}&$-1$\\
-\CY[3A-sighting-hud]{IRSTS lock-on and HUD interface}{Radar or IRSTS lock-on and HUD interface}&$-1$\\
+In stratus$+2$\\
+RWR indications&$-1$\\
+IRSTS lock-on and HUD interface&$-1$\\
 \bottomrule
 \end{tabularx}
 \begin{tablenote}{1.0\linewidth}
 \begin{itemize}
-    \item Disoriented or GLOCed crewmembers may not search or participate in searches.
     \item Eyesight, multi-crew, and HUD modifiers are not applicable to VAS searches.
 \end{itemize}
 \end{tablenote}
 \end{onecolumntable}
+}{
+\begin{onecolumntable}
+\tablecaption{table:sighting-additional-modifiers}{Additional Sighting Modifiers}
+\begin{tabularx}{1.0\linewidth}{Xl}
+\toprule
+\multicolumn{2}{c}{Participating Aircraft}\\
+\midrule1 or 2&$+0$\\
+3 or 4&$-1$\\
+5 or 8&$-2$\\
+9+    &$-3$\\
+\midrule
+\multicolumn{2}{c}{Target}\\
+\midrule
+In stratus&$+3$\\
+In the restricted arcs of the searcher&$+2$\\
+Missile with a normal motor burning&$-3$\\
+Missile with a smokeless motor burning&$-1$\\
+Missile just launched from a sighted aircraft&$-2$\\
+Aircraft that just launched a sighted missile&$-2$\\
+Aircraft using a DDS flare program&$+$PPL\\
+\midrule
+\multicolumn{2}{c}{Searcher}\\
+\midrule
+In stratus&$+2$\\
+Multi-crew aircraft&$-1$\\
+Veteran&$-1$\\
+Novice&$+1$\\
+Green&$+2$\\
+Excellent eyesight&$-1$\\
+Poor eyesight&$+1$\\
+Tactics master&$-1$\\
+Radar, IRSTS, or RWR detection&$-1$\\
+Radar or IRSTS lock-on and HUD interface&$-1$\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{1.0\linewidth}
+\begin{itemize}
+    \item Eyesight, multi-crew, and HUD modifiers are not applicable to VAS searches.
+\end{itemize}
+\end{tablenote}
+\end{onecolumntable}
+}
 
 \end{multicols}
 \end{twocolumntable}

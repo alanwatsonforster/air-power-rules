@@ -41,7 +41,7 @@ No PLs if in Target Sun Arc.
 \begin{multicols}{2}
 
 \begin{onecolumntable}
-\tablecaption{table:sighting-range}{Sighting and Identification Ranges}
+\tablecaption{table:maximum-sighting-range}{Maximum Sighting and Identification Ranges}
 %\begin{tabularx}{\linewidth}{Xp{10em}}
 \begin{tabularx}{\linewidth}{lL}
 \toprule
@@ -67,7 +67,16 @@ VAS &$\mbox{visibility} \times 4$\\
 Visual&Same position, facing, and speed.\\
 \bottomrule
 \end{tabularx}
+\AY[3A-haze]{
+\begin{tablenote}{\linewidth}
+\begin{itemize}
+    \item If the searcher, target, or both are in haze (see advanced rule \ref{rule:haze}), consider the sighting range to be twice the normal range.
+\end{itemize}
+\end{tablenote}
+}
 \end{onecolumntable}
+
+\columnbreak
 
 \begin{onecolumntable}
 \tablecaption{table:padlocks}{Padlocks}
@@ -86,7 +95,7 @@ Green&0\\
     \item Pilot and observer (or equivalent) can both padlock.
     \item Disoriented or GLOCed crewmembers may not padlock.
     \item Targets in blind arcs cannot be padlocked, but lower targets at the same map location can be padlocked.
-    \item Targets beyond sighting range cannot be padlocked.
+    \item Targets beyond maximum sighting range cannot be padlocked.
 \end{itemize}
 \end{tablenote}
 \end{onecolumntable}
