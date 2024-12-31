@@ -347,42 +347,55 @@ An aircraft that elects to use VAS during the visual sighting phase may not padl
 
 An Infrared Search and Track System is capable of passively detecting and tracking aircraft. IRSTS operation is not detectable by any aircraft's ECM or RWR gear. IRSTS can be used to sight aircraft at night and to target IR missiles in a manner similar to IR Uncage technology.
 
-\paragraph{IRSTS Types.} Two types of IRSTS systems exist: A (Early) and B (Advanced). IRSTS is used in the Radar Search and Lock-On Phase. A single pilot aircraft may use radar or IRSTS in this phase, a multi-crew aircraft may do both. \addedin{1B}{1B-apj-25-qa}{Unlike radar, there are no maneuver-related restrictions on the use of IRSTS.}
+\paragraph{IRSTS Types.} \changedin{2A}{2A-irsts-c}{Two types of IRSTS systems exist: A (Early) and B (Advanced)}{Three types of IRSTS systems exist: A (Early), B (Modern), and C (Advanced)}. IRSTS is used in the Radar Search and Lock-On Phase. A single pilot aircraft may use radar or IRSTS in this phase, a multi-crew aircraft may do both. \addedin{1B}{1B-apj-25-qa}{Unlike radar, there are no maneuver-related restrictions on the use of IRSTS.}
 
-\paragraph{Detection.} IRSTS detects heat based on fuel consumption: Detection range equals four times the fuel used number (based on the Fuel column of the Power Chart for the current power setting). The range is doubled if the IRSTS is in the target's 30{\deg} arc or less. The target is detected if it is in detection range.
+\paragraph{Detection.} IRSTS detects heat based on fuel consumption: Detection range equals four times the fuel used number (based on the Fuel column of the Power Chart for the current power setting)\addedin{2A}{2A-irsts-c}{ for IRSTS-A and B and six times the fuel used number for IRSTS-C}. The range is doubled if the IRSTS is in the target's 30{\deg} arc or less. The target is detected if it is in detection range.
 
 \begin{itemize}
     \item IRSTS-A operates in the limited radar arc of an aircraft.
     \item IRSTS-B operates in the 180{\deg} arc of an aircraft.
+    \itemaddedin{2A}{2A-irsts-c} IRSTS-C operates in the 150{\deg} arc of an aircraft.
 \end{itemize}
 
-\paragraph{IRSTS Lock-on.} One lock-on attempt is allowed against the nearest detected target or the target with the highest fuel point use (and consequently the largest IR signature); double the value as seen from 30{\deg} arc or less. Roll the die. On a 6 or less for type A or 8 or less for type B, the target is locked-up.
+\paragraph{IRSTS Lock-on.} \changedin{2A}{2A-irsts-c}{One lock-on attempt is allowed}{An IRSTS-A and B can attempt one lock-on} against the nearest detected target or the target with the highest fuel point use (and consequently the largest IR signature); double the value as seen from 30{\deg} arc or less. \addedin{2A}{2A-irsts-c}{An IRSTS-C can attempt to lock-on up to \addedin{2B}{2B-irsts-c}{any }six detected targets.} Roll the die. On a 6 or less for type A or 8 or less for type B\addedin{2A}{2A-irsts-c}{ and C}, the target is locked-up. \addedin{2B}{2B-irsts}{After the lock-on attempts are resolved, if any succeeded, the aircraft loses all other IRSTS detections.}
+
+\addedin{2B}{2B-irsts}{
+\paragraph{Maintaining IRSTS Detections and Lock-Ons.} IRSTS detections or lock-ons are maintained provided the target satisfies the arc and range requirements for detection at the start of each subsequent Radar Search and Lock-On Phase and, if the aircraft has a single pilot, provided the pilot does not use radar.
+}
 
 \paragraph{Lock-on Sighting Benefits.} In the visual sighting phase, an aircraft with an IRSTS lock-on and having HUD interface receives the HUD modifier. Visual Sighting at night is permitted against a locked-on target out to twice the normal range.
 
-\paragraph{IR Missile Targeting.} An IRM equipped-fighter with an IRSTS lock-on may launch missiles at the target even if they are not visually spotted (handy at night and in haze).  A Type-B system lock-on allows IRMs to be launched as if IR uncage technology were available even if the fighter does not normally have that technology.
+\paragraph{IR Missile Targeting.} An IRM equipped-fighter with an IRSTS lock-on may launch missiles at the target even if they are not visually spotted (handy at night and in haze).  A Type-B \addedin{2B}{2B-irsts-c}{or -C }system lock-on allows IRMs to be launched as if IR uncage technology were available even if the fighter does not normally have that technology.
 }{
 
 \section{Infrared Search and Track Systems}
 \label{rule:irsts}
 
-An infrared search and track system (IRSTS) uses infrared television and optical equipment to enhance the aircraft crew’s ability to sight and track targets using their infrared emissions. IRSTS operation is not detectable by any aircraft’s ECM or RWR gear. IRSTS can be used to sight aircraft at night and to target IR missiles in a manner similar to IRM uncage technology.
+An infrared search and track system (IRSTS) uses infrared television and optical equipment to provide the aircraft crew with the ability to detect and track aircraft using their infrared emissions. IRSTS operation is not detectable by any aircraft’s ECM or RWR gear. IRSTS can be used to detect aircraft at night and to target IR missiles in a manner similar to IRM uncage technology.
 
-\paragraph{IRSTS Types.} Two types of IRSTS exist: 
+\paragraph{IRSTS Types.} Three types of IRSTS exist: 
 \begin{itemize}
     \item IRSTS-A (early) covers the limited \CY[3A-combined-arcs]{arc}{combined arc (see rule \ref{rule:combined-arcs})} and successfully locks-on on a roll of $6-$.
-    \item IRSTS-B (advanced) covers the \arcrange{180}{+} \CY[3A-combined-arcs]{arc}{combined arcs (see rule \ref{rule:combined-arcs})} and successfully locks-on on a roll of $8-$.
+    \item IRSTS-B (modern) covers the \arcrange{180}{+} \CY[3A-combined-arcs]{arc}{combined arcs (see rule \ref{rule:combined-arcs})} and successfully locks-on on a roll of $8-$.
+    \item IRSTS-B (advanced) covers the \arcrange{150}{+} \CY[3A-combined-arcs]{arc}{combined arcs (see rule \ref{rule:combined-arcs})} and successfully locks-on on a roll of $8-$.
+    
 \end{itemize}
 
 \paragraph{IRSTS Requirements.}  IRSTS is used in the Radar Search and Lock-On Phase. A pilot-only aircraft may use either radar or IRSTS in this phase, and a multi-crew aircraft may do both. Unlike radar, there are no maneuver-related restrictions on the use of IRSTS.
 
-\paragraph{IRSTS Detection.} The target is automatically detected its range is no more than the maximum detection range, which depends on the targets fuel consumption and aspect. The maximum detection range is four times the number of fuel points used by the target at its current power setting (according to the fuel column in the power chart of the target’s ADC). The maximum range is doubled if the IRSTS is used in the target’s \arcrange{30}{-} arc. 
+\paragraph{IRSTS Detection.} The target is automatically detected its range is no more than the maximum detection range, which depends on the targets fuel consumption and aspect. For IRSTS-A/B, the maximum detection range is four times the number of fuel points used by the target at its current power setting (according to the fuel column in the power chart of the target’s ADC). For IRSTS-C, the maximum detection range is six times the number of fuel points. The maximum range is doubled if the IRSTS is used in the target’s \arcrange{30}{-} arc. 
 
-\paragraph{IRSTS Lock-on.} One lock-on attempt is allowed against either the nearest detected target or the target with the highest fuel point use. For this purpose, the fuel use is doubled if the IRSTS is used in the target’s \arcrange{30}{-} \AY[3A-combined-arcs]{combined} arc. Roll the die and compare to the lock-on success requirements.
+\paragraph{IRSTS Lock-On.} An IRSTS-A/B may attempt to lock-on either the nearest detected target or the target with the highest fuel point use. For this purpose, the fuel use is doubled if the IRSTS is used in the target’s \arcrange{30}{-} \AY[3A-combined-arcs]{combined} arc. An IRSTS-C may attempt to lock-on up to six of the detected targets, with no restrictions on closeness or fuel usage.
 
-\paragraph{IRSTS Lock-on Sighting Benefits.} When searching for a locked-on target, an aircraft with a HUD interface receives the HUD modifier and can attempt visual sighting at night to twice the normal range.
+For each target, roll the die. The lock-on succeeds on a roll of $6-$ for an IRSTS-A and $8-$ for an IRSTS-B/C. 
 
-\paragraph{IRSTS Assist for IRMs.} An aircraft may launch IRMs at a locked-on target even if it is not sighted. (This is handy at night and in haze.) An IRSTS-B allows IRMs to be launched at locked-on targets as if IRM uncage technology were available, even if the fighter does not have that technology.
+After the lock-on attempts are resolved, if any succeeded, the aircraft loses all other IRSTS detections.
+
+\paragraph{Maintaining IRSTS Detections and Lock-Ons.} IRSTS detections or lock-ons are maintained provided the target satisfies the arc and range requirements for detection at the start of each subsequent Radar Search and Lock-On Phase and, if the aircraft has a single pilot, provided the pilot does not use radar.
+
+\paragraph{IRSTS Lock-on Sighting Benefits.} An IRSTS can provide a \emph{detection} of the target aircraft but does not by itself \emph{sight} the target. Nevertheless, an IRSTS can aid in subsequent sighting attempts. When searching for a locked-on target, an aircraft with a HUD interface receives the HUD modifier and can attempt visual sighting at night to twice the normal range.
+
+\paragraph{IRSTS Assist for IRMs.} An aircraft may launch IRMs at a locked-on target even if it is not sighted. An IRSTS-B/C allows IRMs to be launched at locked-on targets as if IRM uncage technology were available, even if the fighter does not have that technology.
 
 }
 
