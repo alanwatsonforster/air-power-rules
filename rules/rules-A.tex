@@ -31,32 +31,18 @@ Figure~\ref{figure:range} also shows locations that are less than one full hex a
 Figure~\ref{figure:range-example} gives examples of horizontal ranges.
 
 \item
-The \emph{vertical range} is the difference in altitude levels divided by two and rounded down. That is, each two whole altitudes levels of difference counts as one hex of vertical range.
+The \emph{vertical range} is the difference in altitude levels divided by two and rounded down. That is, each two whole altitudes levels of difference counts as one unit of vertical range.
+
+Exceptionally, when sighting a \emph{higher} aircraft or missile in daylight, the vertical range is the difference in altitude levels divided by \emph{four} and rounded down (see rule~\ref{rule:sighting-aircraft-and-missiles}).
+
 \item
 The \emph{range} is the sum of the horizontal and the vertical ranges.
 \end{itemize}
 
-The horizontal range, vertical range, and range are always non-negative integers.
+The horizontal range, vertical range, and range are always non-negative integers. Furthermore, they are symmetric, in the sense that the horizontal range, vertical range, and range from a first element to a second are the same as from the second element to the first.
 
-The ranges determined using this procedure are symmetric, in the sense that the range from a first element to a second is the same as the range from the second element to the first.
-
-\paragraph{Range Exceptions.}
-The normal range procedure is \emph{not} used in the following cases:
-\begin{itemize}
-
-\item
-The range for air-to-air gun attacks is determined according to rule~\ref{rule:air-to-air-gun-combat}.
-
-\item
-When attempting to sight a higher aircraft or missile in daylight, the vertical range is the difference in altitude levels divided by \emph{four} and rounded down (see rule~\ref{rule:sighting-aircraft-and-missiles}).
-
-\item
-When considering positions of advantage, the horizontal range and vertical altitude difference are considered separately (see rule~\ref{rule:positions-of-advantage}).
-
-\item
-When determining if a radar target is in ground clutter, the horizontal range and vertical altitude difference are considered separately (see rule~\ref{rule:radar-ground-clutter}).
-
-\end{itemize}
+\paragraph{Range Exception.}
+The normal range procedure is \emph{not} used for air-to-air gun attacks. Instead, the range is determined according to rule~\ref{rule:air-to-air-gun-combat}.
 
 \paragraph{Closeness.}
 \label{rule:closeness}
