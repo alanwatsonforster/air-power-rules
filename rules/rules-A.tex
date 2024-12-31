@@ -60,7 +60,7 @@ For example, assuming all the aircraft in Figure~\ref{figure:range-example} have
 \label{rule:horizontal-arcs}
 \label{rule:angle-off}
 
-Other situations described in these rules depend on the angle at which one element is seen from another. For example, radars are typically restricted to scanning over forward cone, the aircraft fuselage and wings can prevent the crew from sighting to the rear and below, early infrared-homing missiles could only track targets from behind, and it is easier to compensate gunfire for deflection when firing from the rear or front of the target than from the beam.
+Other situations described in these rules depend on the angle at which one element is seen from another. For example, radars are typically restricted to scanning over forward cone and, early infrared-homing missiles could only track targets from behind.
 
 This angle can be considered only horizontally or both horizontally and vertically. The horizontal arcs described here consider and quantify only the horizontal component. The combined arcs described subsequently consider and quantify both the horizontally and vertically components.
 
@@ -72,24 +72,26 @@ For clarity, we will define the relative position of a \emph{distant element}  w
 
 \item In air-to-air gun, rocket, and missile attacks (rules~\ref{rule:air-to-air-gun-combat}, \ref{rule:air-to-air-rocket-combat}, and \ref{rule:missile-attacks}), the target aircraft is the reference element, and the attacking aircraft or missile is the distant element.
 
-\item For visual sighting (rule~\ref{rule:sighting-aircraft-and-missiles}), the sighting aircraft is the reference element, and the aircraft or missile being sighted is the distant element.
+\item For visual sighting (rule~\ref{rule:sighting-aircraft-and-missiles}), the sighting aircraft is the reference element, and the aircraft, missile, or ground unit being sighted is the distant element.
 
 \item For advantage (rule~\ref{rule:initiative}), the aircraft potentially in a superior position is the reference element, and the aircraft potentially in an inferior position is the distant element.
 
 \item For missile launch envelopes and IRM target aspect launch requirements (rules~\ref{rule:missile-launches} and \ref{rule:irm-launch-requirements}), the target aircraft is the reference element, and the launching aircraft is the distant element.
 
-\item When determining the field of view of sensors, the aircraft or missile sensing is the reference element, and the aircraft being sensed is the distant element. Sensors include:
+\item When determining the field of view of sensors, the aircraft or missile sensing is the reference element, and the aircraft or ground unit being sensed is the distant element. Sensors include:
 \begin{itemize} 
 \item VAS (rule~\ref{rule:vas}),
 \item IRSTS (rule~\ref{rule:irsts}),
-\item missile seekers (rule~\ref{rule:air-to-air-missiles}), and
+\item missile seekers (rule~\ref{rule:air-to-air-missiles}),
 \item air-to-air radar (rule~\ref{rule:air-to-air-radar}).
+\item air-to-ground radar (rule~\ref{rule:air-to-ground-radar}).
 \end{itemize}
-
 
 \item When determining the field of effect of jammers, the aircraft jamming is the reference element, and the radar being jammed is the distant element.
 
 \item When determining the field of laser designators (rule~\ref{rule:laser-guided-weapons}), the designating aircraft is the reference aircraft, and the target is the distant element.
+
+\item When determining the field of heavy AAA units, the AAA unit is the reference element and the aircraft being targeted is the distant element.
 
 \end{itemize}
 
@@ -203,6 +205,8 @@ For example, a restricted arc given as \arc{180}{L} refers to the \arc{180} arcs
 \input{figures/figure-limited-arc}
 
 Some sensors and rules make use of a \emph{limited horizontal arc} that is even narrower than the \arcrange{180}{+} horizontal arc. Figure~\ref{figure:limited-arcs} shows the limited arc. In this figure, only the map locations within the limited arc line are within the limited arc. 
+
+If an aircraft is banked (see rule \ref{rule:direction-of-bank}), instead of the limited arc, it may elect to use the \arc{180} arc with the same sense as its bank.
 
 }
 
