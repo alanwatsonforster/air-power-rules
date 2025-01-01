@@ -1,11 +1,21 @@
+\CX{
 \rulechapter{Night and Adverse Weather}
+}{
+\rulechapter{Night and Weather}
+}
 \label{rule:night-and-weather}
 
+\CX{
 This chapter details the effects of various weather phenomena on aircraft flight and combat. This entire chapter is an \emph{ADVANCED RULE}.
+}{
+This rule describes the impact of night and weather on aircraft flight and combat. This entire chapter is an advanced rule.
+}
 
 \begin{advancedrules}
 
+\DX{
 Weather is an important consideration in air combat. Clouds offer concealment from visual and IR guided weapons, contrails give away aircraft positions, night or adverse weather conditions can hinder or limit aircraft flight, or the Sun can dazzle a pilot or draw off an IR missile. The following rules address these factors.
+}
 
 \section{Common Weather}
 \label{rule:clouds}
@@ -17,12 +27,61 @@ Weather is an important consideration in air combat. Clouds offer concealment fr
     \input{tables/table-weather}
 }
 
+\AX{
+\subsection{Generating Weather}
+
+The game weather is either given in the scenario notes or can be generated. The following procedure is used to generate weather.
+
+\paragraph{Climate Types.} Decide on the appropriate climate type: polar, temperate, arid, and tropical. These types should not be interpreted too strictly; for example the Korean peninsular experiences a continental climate and can be considered to be polar in winter and temperate in summer.
+
+\paragraph{Contrail Altitudes.} Roll one die and add the base contrail level given by Table~\ref{table:climate-zones} for the appropriate climate type. The result is the lowest altitude level at which contrails can occur. The highest level at which contrails can occur is the lowest level plus 25.
+
+For example, if the climate type is polar and the die roll is 7, contrails can occur from altitude level 27 to altitude level 52.
+
+\paragraph{Sky Type.} Roll one die and determine the sky type from Table~\ref{table:climate-zones} for the appropriate climate type. The sky type can be clear, broken, or overcast.
+
+For example, if the climate type is polar, the sky type is clear on a roll of 1 to 4, broken on a roll of 5 to 7, and overcast on a roll of 8 to 10.
+
+\paragraph{Haze and Cloud Layers.} Roll one die and determine the number and type of haze and cloud layers from Table~\ref{table:haze-and-clouds} for the sky type. The result may indicate that there is haze layer (Hz), and if so its upper altitude band, and the number of stratus cloud layers (SCL) or dense cloud layers (DCL). The altitudes of each haze layer or cloud layer is determined as follows:
+
+\begin{itemize}
+
+\item If haze is present, it extends from the altitude level 0 to the top of the indicated altitude band. For example, “ML Hz” means that there is haze in the LO and ML altitude bands, extending from altitude level 0 to altitude level 16.
+
+\IDY[3A-cloud-altitudes]{A stratus cloud layer extends over only one altitude level. For each layer, randomly select the one of the four stratus cloud counters and then flip it like a coin to show one side. (The counters show altitudes of 8, 11, 16, 18, 23, 27, 28, and 32.)}
+
+\IAY[3A-cloud-altitudes]{A stratus cloud layer extends over only one altitude level. For each stratus cloud layer, roll two dice to determine its altitude:
+\begin{itemize}
+\item If the first result is 1 to 5, the altitude is 4 plus the second result.
+\item If the first result is 6 to 8, the altitude is 14 plus the second result.
+\item If the first result is 9 or 10, the altitude is 24 plus the second result.
+\end{itemize}
+Thus, stratus cloud layers can be between altitude levels 5 and 34. For example, if the first result is 7 and the second is 2, the altitude is 16.
+}
+
+\IDY[3A-cloud-altitudes]{A dense cloud layer can extend over several altitude levels. For each layer, randomly select two of the six dense cloud counters. The first one indicates the lower altitude level and the second the upper altitude level. (The counters show lower/upper altitudes of 2/25, 3/20, 5/16, 7/15, 9/13, and 11/12.)}
+
+\IAY[3A-cloud-altitudes]{A dense cloud layer may extend over several altitude layers. For each dense cloud layer, roll four dice to determine the lower and upper altitudes:
+\begin{itemize}
+\item The lower altitude is the sum of half of the first result and half of the second, and then rounded down. 
+\item The upper altitude is the sum of the third result, half of the fourth, and 10, and then rounded down.
+\end{itemize}
+
+Thus, the lower altitude can be between levels 1 and 10 and the upper altitude can be between levels 11 and 25. For example, if the results are 7, 2, 3, and 5, the lower altitude is 4 and the upper altitude is 15.}
+
+\end{itemize}
+
+Dense cloud layers that overlap or are adjacent merge to form a single, possibly thicker, dense cloud layer. A stratus layer that overlaps a dense cloud layer also merges with the dense cloud layer and is ignored. \CY[3A-cloud-altitudes]{A stratus cloud layer that is adjacent to a dense cloud layer is retained as a separate cloud layer.}{Two stratus cloud layers with the same altitude are merged to form a single stratus cloud layer. A stratus cloud layer that is adjacent to a dense cloud layer or another stratus cloud layer is retained as a separate cloud layer.}
+
+}
+
 \paragraph{Contrailing.} Aircraft or missiles at high altitude and high speed can leave contrails in the air. Anytime an aircraft or missile is at a speed of 4.0 or more and within the Contrail Levels, it leaves a contrail.
 
 To determine the contrailing levels, roll one die and add the result to the base contrail level given on \changedin{1C}{1C-tables}{the weather chart}{Table~\ref{table:climate-zones}} for the geographic region of play. The result is the lowest level contrailing occurs. Contrails occur up to 25 levels above the lowest contrail level.
 
 Any aircraft or missile that is contrailing is automatically sighted, assuming no cloud layers are between it and a searching aircraft, out to a range of 150 hexes (90 hexes for missiles) regardless of normal visibility limits.
 
+\DX{
 \changedin{1C}{1C-tables}{
 \paragraph{The Weather Table.} The game weather is either given in the scenario notes or can be generated by the weather table. To use the table, roll one die and consult the appropriate geographic area column.  The result will be either, Clear, Broken, or Overcast skies. Roll again under the appropriate heading to determine if Haze and/or any Cloud Layers exist.
 }{
@@ -38,9 +97,9 @@ Any aircraft or missile that is contrailing is automatically sighted, assuming n
 \begin{itemize}
     \item Stratus Layers: Put all the Stratus information counters in a cup, randomly pick one for each layer called for and flip the counter like a coin. The number on the resulting Face up side is the altitude level the Stratus Layer occupies. Each Stratus Layer is only 1,000 feet thick.
 
-    \item Dense Layers: Put all the Dense information counters in a cup and randomly pick two for each Dense Layer called for. Refer to the “Low Ceiling” side of the first counter drawn and the “High Ceiling” side of the second drawn for each Dense Layer. The indicated numbers are the lowest and highest levels of the Dense Layer. Dense clouds exist in those levels and all levels in between. Dense Layers which overlap simply combine into a larger Dense Layer.
+    \item Dense Layers: Put all the Dense information counters in a cup and randomly pick two for each Dense Layer called for. Refer to the “Low Ceiling” side of the first counter drawn and the “High Ceiling” side of the second drawn for each Dense Layer. The indicated numbers are the lowest and highest levels of the Dense Layer. Dense clouds exist in those levels and all levels in between.   \changedin{2B}{2B-merging-cloud-layers}{Dense Layers which overlap simply combine into a larger Dense Layer.}{Dense layers that overlap or are adjacent simply combine into a single, possibly larger, dense layer. A stratus layer that overlaps a dense layer is ignored. A stratus later that is adjacent to a dense layer is retained as a separate cloud layer.}
 \end{itemize}
-
+}
 
 \paragraph{Stratus Layer Effects.} Aircraft above or below Stratus may not sight aircraft on the other side. Aircraft in a Stratus Layer may be sighted and may sight targets above or below but with adverse sighting die roll modifiers (see Sighting Modifiers Tables). Two aircraft in the same Stratus Layer may not sight each other unless they are in the same or adjacent hexes.
 
