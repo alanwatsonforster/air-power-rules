@@ -22,6 +22,7 @@ Die Roll   &Time of Day        &Sun Angle \\
 
 }{
 
+\CX{
 \begin{twocolumntablefloat}
 \begin{twocolumntable}
 \tablecaption{table:sun-angle}{Sun Angle}
@@ -40,5 +41,27 @@ Die Roll   &Time of Day        &Sun Angle \\
 \end{tabular}
 \end{twocolumntable}
 \end{twocolumntablefloat}
+}{
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\tablecaption{table:sun-angle}{Sun Position Generation}
+\small
+\begin{tabularx}{0.7\linewidth}{lllL}
+\toprule
+Die Roll   &Time of Day        &Direction&Angle \\
+\midrule
+1          &Dawn	           &East&0 levels per hex. \\
+2 to 3     &Early Morning      &East&1 level per two hexes. \\
+4	       &Late Morning	   &East&1 level per hex. \\
+5 to 6     &Noon	           &Overhead&Any level below and within two hexes. \\
+7	       &Early Afternoon    &West&1 level per hex. \\
+8 to 9     &Late Afternoon     &West&1 level per two hexes. \\
+10	       &Dusk	           &West&0 levels per hex. \\
+\bottomrule
+\end{tabularx}
+\end{twocolumntable}
+\end{twocolumntablefloat}
+
+}
 
 }
