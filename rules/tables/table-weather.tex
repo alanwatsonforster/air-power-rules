@@ -1,3 +1,5 @@
+\CX{
+
 \begin{twocolumntablefloat}
 \begin{twocolumntable}
 \tablecaption{table:climate-zones}{Weather Generation: Geographic Area}
@@ -41,3 +43,55 @@ Die Roll    &Clear      &Broken         &Overcast               \\
 \end{tablenote}
 \end{twocolumntable}
 \end{twocolumntablefloat}
+
+}{
+
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\tablecaption{table:climate-zones}{Weather Generation: Climate Type}
+\small
+\begin{tabularx}{0.7\linewidth}{l*{4}{C}}
+\toprule
+&\multicolumn{4}{c}{Climate Zone}\\
+\cmidrule{2-5}
+&Polar    &Temperate &Arid &Tropical  \\
+\midrule
+Base Contrail Altitude&20                 &25             &30           &25              \\
+\midrule
+Clear        &\phantom{0}1 to 4\phantom{0} &\phantom{0}1 to 5\phantom{0} &\phantom{0}1 to 8\phantom{0} &\phantom{0}1 to 6\phantom{0} \\
+Broken       &\phantom{0}5 to 7\phantom{0} &\phantom{0}6 to 8\phantom{0} &\phantom{0}9 to 10           &7                            \\
+Overcast     &\phantom{0}8 to 10\phantom{} &\phantom{0}9 to 10\phantom{} & ---                          &\phantom{0}8 to 10\phantom{} \\
+\bottomrule
+\end{tabularx}
+\end{twocolumntable}
+\end{twocolumntablefloat}
+
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\tablecaption{table:haze-and-clouds}{Weather Generation: Sky Type}
+\small
+\begin{tabularx}{0.7\linewidth}{lCCC}
+\toprule
+Die Roll&\multicolumn{3}{c}{Sky Type}\\
+\cmidrule{2-4}
+&Clear&Broken&Overcast\\
+\midrule
+    1	    & LO Hz & LO Hz + 3 SCL          & LO Hz + 3 SCL + 1 DCL \\
+    2       & ML Hz & ML Hz + 1 DCL          & LO Hz + 3 SCL + 1 DCL \\
+    3	    & 1 SCL & ML Hz + 1 DCL          & LO Hz + 2 SCL + 2 DCL \\
+    4	    & 1 SCL & 1 SCL + 1 DCL          & 1 SCL + 3 DCL \\
+    5	    & 2 SCL & 2 SCL + 1 DCL          & 2 SCL + 2 DCL \\
+    6	    & ---   & 3 SCL                  & 2 SCL + 2 DCL \\
+    7       & ---   & 4 SCL                  & 2 SCL + 3 DCL \\
+    8  	    & ---   & HI Hz + 1 SCL          & ML Hz + 1 DCL \\
+    9	    & ---   & LO Hz + 1 SCL          & 2 DCL \\
+   10	    & ---   & 2 SCL                  & 1 DCL\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.7\linewidth}
+Hz = haze, SCL = stratus cloud layer, and DCL = dense cloud layer.
+\end{tablenote}
+\end{twocolumntable}
+\end{twocolumntablefloat}
+
+}
