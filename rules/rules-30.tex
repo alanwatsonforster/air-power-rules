@@ -116,7 +116,9 @@ Any aircraft or missile that is contrailing is automatically sighted, assuming n
 \paragraph{Generating Weather.} The game weather is either given in the scenario notes or can be generated using Tables~\ref{table:climate-zones} and \ref{table:haze-and-clouds}. To generate weather, roll one die and consult the appropriate geographic area of Table~\ref{table:climate-zones}. The result will be either, Clear, Broken, or Overcast skies. Roll again under the appropriate heading in Table~\ref{table:haze-and-clouds} to determine if Haze and/or any Cloud Layers exist.
 }}
 
+\DX{
 \paragraph{Haze Layers.}  \DX{If Haze is indicated for some altitude band, it exists in all levels of that band and down to ground level.} Haze reduces visibility. The maximum visual sighting range to and from aircraft in Haze is twice the target's visibility number in hexes. The sighting range to ground units in Haze is halved.
+}
 
 \DX{
 \paragraph{Cloud Layers.} Two types of Cloud Layers may be called for: Stratus and Dense. More than one layer of each type may be called for. When the Weather Table result includes Cloud Layers determine their exact altitudes as follows:
@@ -222,19 +224,36 @@ AAA units firing on the target with aimed fire suffer a $+1$ modifier to their h
 The only effects of contrails are on the visual sighting of aircraft and missiles (see rule \ref{rule:sighting-aircraft-and-missiles}):
 \begin{itemize}
 \item
-During the day, any aircraft or missile that is contrailing can be automatically sighted to a sighting range of 150 for aircraft and 90 for missiles.
+During the day, a contrailing aircraft can be sighted automatically to a sighting range of 150.
 
 \item
-At night, any aircraft or missile that is contrailing \emph{and above the highest cloud layer present} can be automatically sighted to a sighting range of 24. 
+During the day, a contrailing missile can be sighted automatically to a sighting range of 90.
 
-\item At night, any aircraft or missile that is contrailing \emph{and not above the highest cloud layer present} can be sighted normally to a sighting range of 6.
+\item
+At night, a contrailing aircraft or missile that is \emph{above the highest cloud layer present} can be automatically sighted to a sighting range of 24. 
+
+\item At night, a contrailing aircraft that is \emph{not above the highest cloud layer present} can be sighted normally to a sighting range of 6.
 \end{itemize}
 
 In all cases, the usual effects of haze and cloud layers on sighting apply.
 }
 
+\AX{
+\section{Haze and Cloud Layers}
+
+
+\paragraph{Haze Layer Effects.}\label{rule:haze-layers}
+Haze reduces visibility. The effects of haze layers are:
+\begin{itemize}
+\item If either the searcher or target or both are in a haze layer, the sighting range for visual sighting and identification (see rule~\ref{rule:visual-sighting}) is considered to be twice the normal range. This applies to normal visual sighting (air-to-air, air-to-ground, and ground-to-air) and to the use of VAS. It does not apply to the use of IRSTS or TV/IR optics.
+\item Air-to-air attacks with visually aimed weapons require the target to be individually sighted by the attacker at the start of the attacker's movement. Exceptionally and for this purpose only, if a potential target moves first and enters a haze layer (see rule \ref{rule:individual-sighting}), the sighting range is considered to be the normal range and not twice the normal range.
+\item At night, an aircraft in a haze layer is considered to be flying in adverse conditions (see rule \ref{rule:adverse-conditions}).
+\end{itemize}
+}
+
 \section{Night and Adverse Weather Flight}
 \label{rule:night-and-adverse-weather-flight}
+\label{rule:adverse-conditions}
 
 Night and Adverse weather conditions severely limit what a pilot can or will do with his aircraft. Night flying in Clear Conditions is less restrictive.
 
