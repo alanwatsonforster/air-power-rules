@@ -244,7 +244,7 @@ In all cases, the usual effects of haze and cloud layers on sighting apply.
 
 \paragraph{Haze Layers.}
 \label{rule:haze-layers}
-Haze reduces visibility in visible light. The effects of haze layers are:
+Haze layers can be one or more altitude bands thick. They partially block visible light and reduce contrast. The effects of haze layers are:
 \begin{itemize}
 \item\itemparagraph{Sighting Range.} If either the searcher or target or both are in a haze layer, the sighting range for visual sighting and identification (see rule~\ref{rule:visual-sighting}) is considered to be twice the normal range. This applies to normal visual sighting (air-to-air, air-to-ground, and ground-to-air) and to the use of VAS. It does not apply to the use of IRSTS or TV/IR optics.
 \item\itemparagraph{Individual Sighting.} Air-to-air attacks with visually aimed weapons require the target to be individually sighted by the attacker at the start of the attacker's movement (see rule \ref{rule:individual-sighting}). Exceptionally and for this purpose only, if a potential target moves first and enters a haze layer , the sighting range is considered to be the normal range and not twice the normal range.
@@ -254,10 +254,7 @@ Haze reduces visibility in visible light. The effects of haze layers are:
 
 \paragraph{Stratus Cloud Layers.}
 \label{rule:stratus-cloud-layers}
-Stratus cloud layers are cloud layers that are only one altitude level thick. They block visible and infrared light from one side to the other. The effects of stratus cloud layers are:
-
-
-Optical and infrared sensors can see into and out of a stratus cloud layer (sometimes with reduced performance), but cannot penetrate beyond it. When used within a stratus cloud layer, they have a maximum range of 1.
+Stratus cloud layers are only one altitude level thick. They largely block visible and infrared light. The effects of stratus cloud layers are:
 
 \begin{itemize}
 
@@ -295,14 +292,52 @@ However, if both the missile and the target are in the same layer, then at the e
 
 If, at the end of any of the missile’s proportional moves, the target and missile (for IRMs and IR SAMs) or the target and launching unit (for OG/LG SAMs) are on opposite sides of a stratus cloud layer, the missile fails to track and is removed from play.
 
-\item\itemparagraph{IRM Launch Modifier.} During the day, if an IRM missile is launched from above the highest stratus or dense cloud layer at lower target with a horizontal range that is less than twice the difference in altitude levels, a launch roll modifier of $+3$ applies. This modifier represents the effect of the reflection of the Sun off the highest cloud layer.
+\item\itemparagraph{IRM Launch Modifier.} During the day, if an IRM missile is launched from above the highest stratus or dense cloud layer at a lower target with a horizontal range that is less than twice the difference in altitude levels, a launch roll modifier of $+3$ applies. This modifier represents the effect of the reflection of the Sun off the highest cloud layer.
 
 \item\itemparagraph{Individual Sighting.} Air-to-air attacks with visually aimed weapons require the target to be individually sighted by the attacker at the start of the attacker's movement (see rule \ref{rule:individual-sighting}). Exceptionally and for this purpose only, if a potential target moves first and crosses to the other side of a stratus cloud layer or enters the same layer as the attacker, the stratus cloud layer is not considered to block visual sighting.
 
 \item\itemparagraph{Adverse Conditions.} At night, an aircraft below a stratus cloud layer is considered to be flying in adverse conditions (see rule \ref{rule:adverse-conditions}).
 
 \end{itemize}
+
+\paragraph{Dense Cloud Layers.}
+\label{rule:dense-cloud-layers}
+Dense cloud layers can be more than altitude level thick. They almost completely block visible and infrared light. The effects of dense cloud layers are:
+
+\begin{itemize}
+
+\item\itemparagraph{Blocking Sight Lines.} Dense cloud layers block sight lines and limit visual sighting as follows:
+
+\begin{itemize}
+\item
+Aircraft and ground units in a dense cloud layer may not visually sight targets.
+
+\item 
+Aircraft and ground units in a dense cloud layer may not be visually sighted.
+\end{itemize}
+
+As an exception, during the day, an aircraft being tailed that enters a dense cloud layer continues to be sighted by the tailing aircraft for as long as the latter continues to tail and the tailing aircraft can potentially attack with guns.
+
+The same limitations apply to the use of VAS, IRSTS, TV/IR optics, laser designators, laser spot trackers, IRM and IR/OG/LG SAM launches, and OG/LG SAM tracking. In particular, aircraft in dense cloud layer may not launch IRMs or be the target of IRMs even with radar assist (see rule \ref{rule:irm-radar}).
+
+\item\itemparagraph{Visual Sighting Modifiers.} Dense cloud layers give the following sighting modifiers:
+\begin{itemize}
+
+\item Aircraft between a dense cloud layer and the searcher are considered to be seen against clouds for determining the sighting modifier from Table~\ref{table:sighting-position-modifiers}.
+
+\end{itemize}
+
+\item\itemparagraph{Missile Tracking.} IRMs and IR/OG/LG SAMs may not track and attack aircraft in dense cloud layers. 
+
+As an exception, if the target of an IRM or IR SAM enters a dense layer, the missile is allowed to follow during its next proportional move. If it cannot attack during this proportional move, it fails to track and in removed from play.
+
+\item\itemparagraph{Collisions.} As an exception to the usual rule for collisions, in dense cloud layers collisions are possible between an aircraft being tailed and the aircraft tailing it and also between two friendly aircraft at the same position and not in a close formation.
+
+\item\itemparagraph{Adverse Conditions.} At night, an aircraft below a dense cloud layer is considered to be flying in adverse conditions (see rule \ref{rule:adverse-conditions}).
+
+\end{itemize}
 }
+
 
 \section{Night and Adverse Weather Flight}
 \label{rule:night-and-adverse-weather-flight}
