@@ -130,9 +130,9 @@ Any aircraft or missile that is contrailing is automatically sighted, assuming n
 \end{itemize}
 }
 
-\paragraph{Stratus Layer Effects.} Aircraft \addedin{2B}{2B-stratus}{or ground units} above or below Stratus may not sight aircraft \addedin{2B}{2B-stratus}{or ground units} on the other side. Aircraft in a Stratus Layer may be sighted and may sight targets above or below but with adverse sighting die roll modifiers (see Sighting Modifiers Tables). Two aircraft in the same Stratus Layer may not sight each other unless they are in the same or adjacent hexes. \addedin{2B}{2B-stratus}{Similarly, aircraft and ground units may not use VAS, IRSTS, TV/IR Optics, Night IR sights, tracking for OG/LG SAMs, laser designators, and laser spots on targets on the opposite side of Stratus.}
+\paragraph{Stratus Layer Effects.} Aircraft \addedin{2B}{2B-stratus}{or ground units} above or below Stratus may not sight aircraft \addedin{2B}{2B-stratus}{or ground units} on the other side. Aircraft in a Stratus Layer may be sighted and may sight targets above or below but with adverse sighting die roll modifiers (see Sighting Modifiers Tables). Two aircraft in the same Stratus Layer may not sight each other unless they are in the same or adjacent hexes. \addedin{2B}{2B-stratus}{Similarly, aircraft and ground units may not use VAS, IRSTS, TV/IR Optics, Night IR sights, launch IRMs (even with radar assist), launch IR SAMs, launch or track OG/LG SAMs, use laser designators, or use laser spot trackers on targets on the opposite side of Stratus.}
 
-\paragraph{IRM Effects.} IRMs may pursue and attack aircraft in Stratus Layers. However, anytime both target and an IRM end a proportional move in the same Stratus Layer and the missile is not in an adjacent hex it loses seeker lock-up and is removed from play. If, at the end of a proportional move, the target and IRM are on opposite sides of a Stratus Layer, the missile loses seeker lock-up and is removed from play.
+\paragraph{IRM Effects.} IRMs may pursue and attack aircraft in Stratus Layers. However, anytime both target and an IRM end \changedin{2B}{2B-stratus}{a}{the missile's} proportional move in the same Stratus Layer and the missile is not in an adjacent hex it loses seeker lock-up and is removed from play. If, at the end of \changedin{2B}{2B-stratus}{a}{the missile's} proportional move, the target and IRM are on opposite sides of a Stratus Layer, the missile loses seeker lock-up and is removed from play.
 
 \paragraph{Dense Layer Effects.} Aircraft in dense layers may not sight or be sighted. IRMs pursuing aircraft that enter a dense layer may attack them only if they can reach their target during their very next proportional move. If they cannot, they are removed from play.
 
@@ -242,16 +242,36 @@ In all cases, the usual effects of haze and cloud layers on sighting apply.
 \section{Haze and Cloud Layers}
 
 
-\paragraph{Haze Layer Effects.}
+\paragraph{Haze Layers.}
 \label{rule:haze-layers}
-Haze reduces visibility. The effects of haze layers are:
+Haze reduces visibility in visible light. The effects of haze layers are:
 \begin{itemize}
 \item If either the searcher or target or both are in a haze layer, the sighting range for visual sighting and identification (see rule~\ref{rule:visual-sighting}) is considered to be twice the normal range. This applies to normal visual sighting (air-to-air, air-to-ground, and ground-to-air) and to the use of VAS. It does not apply to the use of IRSTS or TV/IR optics.
-\item Air-to-air attacks with visually aimed weapons require the target to be individually sighted by the attacker at the start of the attacker's movement. Exceptionally and for this purpose only, if a potential target moves first and enters a haze layer (see rule \ref{rule:individual-sighting}), the sighting range is considered to be the normal range and not twice the normal range.
+\item Air-to-air attacks with visually aimed weapons require the target to be individually sighted by the attacker at the start of the attacker's movement (see rule \ref{rule:individual-sighting}). Exceptionally and for this purpose only, if a potential target moves first and enters a haze layer , the sighting range is considered to be the normal range and not twice the normal range.
 \item At night, an aircraft in a haze layer is considered to be flying in adverse conditions (see rule \ref{rule:adverse-conditions}).
 \end{itemize}
 
 
+\paragraph{Stratus Cloud Layers.}
+\label{rule:stratus-cloud-layers}
+Stratus cloud layers are cloud layers that are only one altitude level thick. They block visible and infrared light from one side to the other. The effects of stratus cloud layers are:
+
+\begin{itemize}
+
+\item Aircraft and ground units above or below a stratus cloud layer may not visually sight targets beyond that layer.
+
+Aircraft above or below a stratus cloud layer may not use VAS, IRSTS, TV/IR optics, laser designators, or laser spot trackers to sight, detector, designate, or track a target beyond that layer. They may also not launch IRMs on targets on the other side of the layer, even with radar assist (see rule \ref{rule:irm-radar}).
+
+Ground units below a stratus cloud layer may not use night IR sights to detect aircraft above that layer, may not launch IR SAMs at targets above that layer, and may not launch or track OG/LG SAMs at targets above that layer.
+
+\item Aircraft in a stratus layer can attempt to sight other aircraft and missiles with a modifier of $+2$. 
+\item Aircraft and missiles in a stratus layer can be sighted with a modifier of $+3$. 
+\item An aircraft in a stratus layer can sight other aircraft and missiles in the same layer to a maximum range of 1 (i.e., in the same or adjacent hexes), and in this case both the $+2$ modifier for the searcher and the $+3$ modifier for target would apply.
+\item IRMs and IR/OG/LG SAMs may pursue and attack aircraft in stratus cloud layers. However, if both the missile and the target are in the same layer, then at the end of each of the missile’s proportional moves the range to the target must be at most 1 otherwise the missile fails to track and is removed. If, at the end of any of the missile’s proportional moves, the target and missile are on opposite sides of a stratus cloud layer, the missile fails to track and is removed from play.
+\item Air-to-air attacks with visually aimed weapons require the target to be individually sighted by the attacker at the start of the attacker's movement (see rule \ref{rule:individual-sighting}). Exceptionally and for this purpose only, if a potential target moves first and crosses to the other side of a stratus cloud layer, the stratus cloud layer is not considered to block visual sighting.
+\item At night, an aircraft below a stratus cloud layer is considered to be flying in adverse conditions (see rule \ref{rule:adverse-conditions}).
+
+\end{itemize}
 }
 
 \section{Night and Adverse Weather Flight}
