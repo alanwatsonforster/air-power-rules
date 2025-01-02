@@ -24,6 +24,7 @@ Weather is an important consideration in air combat. Clouds offer concealment fr
 }
 }{
 \section{Flight Conditions}
+\label{rule:flight-conditions}
 
 \input{tables/table-sun-angle}
 \input{tables/table-weather}
@@ -45,6 +46,7 @@ The flight conditions may be specified by the scenario, agreed on by the players
 Determine whether the scenario occurs at night by rolling one die and considering the scenario year. The scenario occurs at night on a roll of $1-$ in the 1950s, $2-$ in the 1960s, $3-$ in the 1970s or 1980s, and $4-$ in the 1990s or later.
 
 \subsection{Sun Position}
+\label{rule:sun-position}
 
 Determine the time of day of the scenario and the corresponding position of the Sun by rolling one die and consulting Table~\ref{table:sun-angle}. The position has two components: the direction and the angle.
 
@@ -145,6 +147,8 @@ Bright sunlight reflecting off clouds can distract IR guided missiles. When laun
 \section{Sun}
 \label{rule:sun}
 
+\DX{
+
 The Sun has always been a factor in air combat. Pilots often try to maneuver so that enemy pilots or AAA gunners are dazzled by the glare. The Sun may also draw off IR guided missiles.
 
 \paragraph{Sun Position.} The sun is always considered to be off map. A Sun Arc is defined from each aircraft extending away from the Sun's position, East in the morning, West in the Evening. Think of the Sun arc as where the aircraft's shadow would go. Any units in the Sun arc and in the Sun Angle altitudes of a target aircraft, will suffer Sun Clutter Effects.
@@ -167,6 +171,45 @@ IR missiles launched in target's Sun Clutter add 3 to the launch roll. IR missil
 
 AAA Units firing from target's Sun Clutter, add 1 to their hit die rolls.
 
+}{
+
+The Sun has always been a factor in air combat. Pilots often try to maneuver so that enemy pilots or AAA gunners are dazzled by the glare. The Sun may also draw off IR-guided missiles.
+
+\paragraph{Sun Clutter.} 
+A searcher or attacker is said to be in its target's \emph{Sun clutter} if the target is in front of or close to the Sun. Thus, the geometry of Sun clutter depends not only on the geometry of the searcher or attacker and its target but also on the presence and position of the Sun (see rule \ref{rule:flight-conditions}).
+
+More precisely, a searcher or attacker is in the Sun clutter of its target if:
+
+\begin{itemize}
+\item It is day.
+\item The searcher or attacker is above any haze and cloud layers present.
+\item If the Sun is overhead, the searcher or attacker is at a lower altitude than the target, and the horizontal range is 2 or less.
+\item If the Sun is not overhead, the searcher or attacker is within a limited arc that originates on the target and faces directly away from the Sun (so to the west for the dawn/morning and to the east for the afternoon/dusk) and satisfies the altitude requirement. 
+
+At dawn and dusk, the altitude requirement is that the searcher or attacker has to have the same altitude as the target. In the morning and afternoon, the altitude requirements are given in terms of the number of altitude levels that the searcher or attacker has to be below the target for each hex or full two hexes of horizontal range.
+
+A limited arc facing east or west is not defined for hex sides that are not oriented east-west. In these cases, consider the limited arc to originate from the center of the adjacent hex closest to the Sun.
+
+\end{itemize}
+
+For example, to be affected by Sun clutter in the early morning, an aircraft six levels below a target would have to be above any haze and cloud layers present, be west of the target, be in a limited arc centered on the target, and oriented to the west, and be at a horizontal range of either 12 or 13.
+
+\paragraph{Sun Clutter Effects.} Aircraft, missile, or ground units in the Sun clutter of a target suffer the following restrictions:
+\begin{itemize}
+\item 
+Aircraft cannot padlock or participate in searches for the target (see rule \ref{rule:sighting-aircraft-and-missiles}). If a target begins the visual sighting phase in the Sun clutter of all opposing aircraft, it will be unsighted for the rest of the game turn.
+\item
+Ground units cannot sight the target.
+\item 
+IRMs and IR SAMs launched at the target will have a $+3$ modifier to their launch roll.
+\item
+IRMs and IR SAMs that end a proportional move in their target’s Sun clutter may be decoyed by the Sun. Roll one die and subtract 3. If the result is less than or equal to the missile’s flare vulnerability number, the missile ceases to track the target and is removed from play.
+\item
+AAA units firing on the target with aimed fire suffer a $+1$ modifier to their hit die roll.
+\end{itemize}
+
+
+}
 \section{Night and Adverse Weather Flight}
 \label{rule:night-and-adverse-weather-flight}
 
