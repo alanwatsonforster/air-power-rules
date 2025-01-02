@@ -211,6 +211,7 @@ AAA units firing on the target with aimed fire suffer a $+1$ modifier to their h
 \AX{
 \section{Contrail Layers}
 \label{rule:contrailing}
+\label{rule:contrail-layers}
 
 \paragraph{Contrails.} Aircraft or missiles at high altitude and high speed can leave contrails in the air. If an aircraft or missile is at a speed of 4.0 or more and within the contrail layer, it generates a contrail.
 
@@ -267,8 +268,6 @@ The common effects of stratus and dense cloud layers are:
 
 \item\itemparagraph{IRM Launch Modifier.} During the day, if an IRM missile is launched from above the highest cloud layer at a lower target with a horizontal range that is less than twice the difference in altitude levels, a launch roll modifier of $+3$ applies. This modifier represents the effect of the reflection of the Sun off the highest cloud layer.
 
-\item\itemparagraph{Adverse Conditions.} At night, an aircraft below the highest cloud layer is considered to be flying in adverse conditions (see rule \ref{rule:adverse-conditions}).
-
 \end{itemize}
 
 Additional specific effects of stratus and dense cloud layers are noted below.
@@ -293,7 +292,7 @@ Aircraft and ground units above or below a stratus cloud layer may not visually 
 \item An aircraft in a stratus layer can sight other aircraft and missiles \emph{in the same layer} to a maximum range of 1.
 \end{itemize}
 
-The same capabilities and limitations apply to the use of VAS, IRSTS, TV/IR optics, laser designators, laser spot trackers, IRM and IR/OG/LG SAM launches, OG/LG SAM tracking, and RS/RS/BG/BS weapons. 
+The same limitations apply to the use of VAS, IRSTS, TV/IR optics, laser designators, laser spot trackers, IRM and IR/OG/LG SAM launches, OG/LG SAM tracking, AAA units not stacked with a FCR or with integral W-type FCR, and RS/RS/BG/BS weapons. 
 
 In particular, aircraft above or below a stratus cloud layer may not launch IRMs at targets beyond that layer, even with radar assist (see rule \ref{rule:irm-radar}).
 
@@ -319,6 +318,8 @@ If, at the end of any of the missile’s proportional moves, the target and miss
 
 \item\itemparagraph{Individual Sighting.} Air-to-air attacks with visually aimed weapons require the target to be individually sighted by the attacker at the start of the attacker's movement (see rule \ref{rule:individual-sighting}). Exceptionally and for this purpose only, if a potential target moves first and crosses to the other side of a stratus cloud layer or enters the same layer as the attacker, the stratus cloud layer is not considered to block visual sighting.
 
+\item\itemparagraph{Adverse Conditions.} At night, an aircraft in a stratus cloud layer is considered to be flying in adverse conditions (see rule \ref{rule:adverse-conditions}).
+
 \end{itemize}
 
 \paragraph{Dense Cloud Layers.}
@@ -338,9 +339,9 @@ Aircraft and ground units in a dense cloud layer may not visually sight targets.
 Aircraft and ground units in a dense cloud layer may not be visually sighted.
 \end{itemize}
 
-As an exception, during the day, an aircraft being tailed that enters a dense cloud layer continues to be sighted by the tailing aircraft for as long as the latter continues to tail. The tailing aircraft can potentially attack the aircraft being tailed with guns.
+As an exception, during the day, an aircraft being tailed (see rule \ref{rule:tailing}) that enters a dense cloud layer continues to be sighted by the tailing aircraft for as long as the latter continues to tail. The tailing aircraft can potentially attack the aircraft being tailed with guns.
 
-The same limitations apply to the use of VAS, IRSTS, TV/IR optics, laser designators, laser spot trackers, IRM and IR/OG/LG SAM launches, OG/LG SAM tracking, and RG/RS/BG/BS weapons.
+The same limitations apply to the use of VAS, IRSTS, TV/IR optics, laser designators, laser spot trackers, IRM and IR/OG/LG SAM launches, OG/LG SAM tracking, AAA units not stacked with a FCR or with integral W-type FCR, and RG/RS/BG/BS weapons.
 
 In particular, aircraft in dense cloud layer may not launch IRMs or be the target of IRMs, even with radar assist (see rule \ref{rule:irm-radar}).
 
@@ -348,23 +349,24 @@ In particular, aircraft in dense cloud layer may not launch IRMs or be the targe
 
 As an exception, if the target of an IRM or IR SAM enters a dense layer, the missile is allowed to follow during its next proportional move. If it cannot attack during this proportional move, it fails to track and is removed from play.
 
-\item\itemparagraph{Collisions.} As an exception to the usual rule for collisions, in dense cloud layers collisions are possible between an aircraft being tailed and the aircraft tailing it and also between two friendly aircraft at the same position and not in a close formation.
+\item\itemparagraph{Collisions.} As an exception to the usual rule for aircraft collisions (see rule )\ref{rule:aircraft-collisions}), in dense cloud layers collisions are possible between an aircraft being tailed and the aircraft tailing it (see rule \ref{rule:tailing}) and also between two friendly aircraft at the same position and not in a close formation.
+
+\item\itemparagraph{Adverse Conditions.} At night, an aircraft below the highest dense cloud layer is considered to be flying in adverse conditions (see rule \ref{rule:adverse-conditions}).
 
 \end{itemize}
 }
 
-
+\CX{
 \section{Night and Adverse Weather Flight}
 \label{rule:night-and-adverse-weather-flight}
 \label{rule:adverse-conditions}
 
 Night and Adverse weather conditions severely limit what a pilot can or will do with his aircraft. Night flying in Clear Conditions is less restrictive.
 
-\DX{
 \addedin{2B}{2B-generating-night-conditions}{
 \paragraph{Determining Night Conditions.}
 The scenario notes may indicate night conditions. If not, they may be agreed on by the players or determined randomly following this procedure. Roll one die. The scenario occurs at night on a roll of $1-$ for scenarios in the 1950s, $2-$ in the 1960s, $3-$ in the 1970s or 1980s, and $4-$ in the 1990s or later.
-}}
+}
 
 \paragraph{Clear Weather Night Flight.} An aircraft above all dense layers, and not in haze or stratus is considered in the Clear. The following limitations apply to Clear Wx night flying:
 
@@ -408,7 +410,6 @@ The scenario notes may indicate night conditions. If not, they may be agreed on 
 
 Check for fatal ground collisions each time the aircraft does a facing change at a rate in excess of the safe limit. On a die roll of "1" the aircraft crashes killing the crew.
 
-\DX{
 \paragraph{Pilot Disorientation.} Anytime an aircraft performs an action which risks disorientation or faces while turning at a rate that risks disorientation, roll the die. On a modified "3" or less, the pilot becomes disoriented and the aircraft conducts the rest of its move as if the pilot were GLOC'd. \addedin{1B}{1B-apj-36-errata}{However, disoriented Pilots may bail out or eject normally.}
 
 The disorientation die roll is modified for the following:
@@ -419,7 +420,6 @@ The disorientation die roll is modified for the following:
 \end{itemize}
 
 \paragraph{Disorientation Recovery.} Recovery from Disoriented flight requires a die roll as if recovering from disorientated flight with all the appropriate departure recovery modifier.
-}
 
 \paragraph{Night and Adverse Weather Effects on Ground Units.} The following limitations are placed on units attempting to engage aircraft at night and/or in adverse weather:
 
@@ -442,6 +442,105 @@ The disorientation die roll is modified for the following:
 \section{Air to Ground Night and Adverse Weather Attacks}
 
 Aircraft need help in locating targets at night. FACs and target marks have been previously discussed. Other aids for night attack include: illumination flares, TV/IR Optics, and Ground Attack Radar.
+
+}{
+
+\section{Night and Adverse Conditions}
+\label{rule:night-and-adverse-weather-flight}
+\label{rule:adverse-conditions}
+
+Night and adverse conditions severely limit what a pilot can or will do with his aircraft.
+
+\subsection{Night Effects on Aircraft}
+\label{rule:aircraft-at-night}
+
+\begin{itemize}
+
+    \item\itemparagraph{Sighting Aircraft.} Aircraft contrailing above the highest cloud layers are spotted automatically to a sighting range of 24 (see rule \ref{rule:contrail-layers}). 
+    
+    Otherwise, the maximum visual sighting ranges for all aircraft is 2 unless the target used AB power or is contrailing in which case the maximum sighting range is 6. 
+    
+    Sighting modifiers for paint scheme, relative altitude and smoking do not apply at night.
+
+    \item\itemparagraph{Sighting Missiles.} Missiles contrailing above the highest cloud layers are spotted automatically to a range of 24 hexes (see rule \ref{rule:contrail-layers}). 
+    
+    Otherwise, missiles may only be sighted on the turn after launch and on each turn a sustainer is burning. The visibility numbers are halved and the modifier for having been launched from a sighted aircraft does not apply.
+
+    \item\itemparagraph{Aiming.} Visual aiming for ground attacks is allowed only if the target is illuminated by parachute flares, or the aircraft has TV/IR optics, or a laser spot tracker with a laser spot.
+
+    \item\itemparagraph{Laser Designators.} Only laser designator types B and C may be used.
+
+\end{itemize}
+
+\subsection{Flying at Night and in Adverse Conditions}
+
+\paragraph{Flying in Clear Night Conditions.}
+
+Clear night conditions exists at night at altitudes outside of stratus layers and above all dense cloud and haze layers. The following restrictions apply to aircraft flying in clear night conditions:
+
+\begin{itemize}
+
+    \item\itemparagraph{Risk of Disorientation.} ET turns, all special maneuvers except slides, vertical climbs, and vertical dives risk pilot disorientation.
+
+    \item\itemparagraph{Tailing.} Tailing (see rule \ref{rule:tailing}) is not allowed.
+    
+    \item\itemparagraph{TFF.} TFF is not allowed unless the aircraft has Terrain Following technology or TV/IR optics technology (which confers Terrain Following-A technology).
+
+    \item\itemparagraph{Pilot Quality.} Green pilots (see advanced rule \ref{rule:crew-quality}) may not fly at night.
+
+\end{itemize}
+
+\paragraph{Flying in Adverse Conditions.}
+
+Adverse conditions exist in a dense cloud layer (both during the day and at night) or at night in haze or below the highest dense cloud layer. The following restrictions apply to aircraft in adverse conditions:
+
+\begin{itemize}
+
+    \item\itemparagraph{Forbidden Maneuvers.} All special maneuvers except slides not allowed.
+
+    \item\itemparagraph{Risk of Disorientation.} HT or greater turns, vertical climbs, and vertical dives risk pilot disorientation.
+
+    \item\itemparagraph{Tailing.} Tailing (see rule \ref{rule:tailing}) is not allowed.
+
+    \item\itemparagraph{TFF.} TFF is not allowed unless the aircraft has Terrain Following technology or TV/IR optics technology (which confers Terrain Following-A technology). Furthermore, turns of HT/BT/ET or greater in TFF risk collisions with the ground for aircraft with TFF technology of type A/B/C, respectively.
+    
+    Check for fatal ground collisions each time the aircraft changes facing at a rate in excess of the safe limit. On a die roll of 1 the aircraft collides with terrain, killing the crew.
+
+    \item\itemparagraph{Pilot Quality.} Green pilots (see advanced rule \ref{rule:crew-quality}) may not fly in adverse conditions.
+
+\end{itemize}
+
+
+\paragraph{Disorientation.} Any time an aircraft declares a turn, maneuver, or flight type that risks disorientation, roll the die. The pilot becomes disoriented on a result of $3-$. The die roll is modified as follows:
+\begin{itemize}
+    \item For each risky turn declared in the game turn after the first, apply a cumulative $-1$ modifier.
+    \item If the pilot is a veteran, apply a $+1$ modifier.
+    \item If the pilot has excellent confidence, apply a $+1$ modifier.
+    \item If the pilot has poor confidence, apply a $-1$ modifier.
+\end{itemize}
+
+If the pilot becomes disoriented, the aircraft conducts the rest of its move and subsequent moves until recovery, as if the pilot were suffering from GLOC. (However, a disoriented pilot may bail out or eject normally.)
+
+\paragraph{Recovery from Disorientation.} Recovery from disorientation follows the same procedure as recovery from departed flight with all the same modifiers.
+
+\subsection{Night Effects on Ground Units.} The following limitations are placed on units attempting to engage aircraft at night and/or in adverse weather:
+
+\begin{itemize}
+
+    \item Unless an AAA unit is stacked with a FCR or has an integral W-type FCR, it may only track aircraft for aimed fire within the reduced maximum visual sighting ranges given in rule \ref{rule:aircraft-at-night}. 
+
+    \item Unless an AAA unit is stacked with a FCR or has an integral W-type FCR, it conduct plotted fire but only plot one target hex and altitude before a game begins and may not vary from that.
+
+    \item IR/OG/LG SAMs equipped with night IR sights may operate normally against aircraft in AB power and to a range of to 6 against other aircraft.
+
+    \item IR/OG/LG SAMs may only attempt lock-ons or launches on targets within the reduced maximum visual sighting ranges given in rule \ref{rule:aircraft-at-night}. 
+
+\end{itemize}
+
+\section{Air to Ground Night and Adverse Weather Attacks}
+
+Aircraft need help in locating targets at night. FACs and target marks have been previously discussed. Other aids for night attack include: illumination flares, TV/IR Optics, and Ground Attack Radar.
+}
 
 \subsection{Illumination Flares}
 
