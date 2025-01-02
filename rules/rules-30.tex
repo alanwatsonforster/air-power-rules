@@ -126,7 +126,7 @@ Any aircraft or missile that is contrailing is automatically sighted, assuming n
 \begin{itemize}
     \item Stratus Layers: Put all the Stratus information counters in a cup, randomly pick one for each layer called for and flip the counter like a coin. The number on the resulting Face up side is the altitude level the Stratus Layer occupies. Each Stratus Layer is only 1,000 feet thick.
 
-    \item Dense Layers: Put all the Dense information counters in a cup and randomly pick two for each Dense Layer called for. Refer to the “Low Ceiling” side of the first counter drawn and the “High Ceiling” side of the second drawn for each Dense Layer. The indicated numbers are the lowest and highest levels of the Dense Layer. Dense clouds exist in those levels and all levels in between.   \changedin{2B}{2B-merging-cloud-layers}{Dense Layers which overlap simply combine into a larger Dense Layer.}{Dense layers that overlap or are adjacent simply combine into a single, possibly larger, dense layer. A stratus layer that overlaps a dense layer is ignored. A stratus later that is adjacent to a dense layer is retained as a separate cloud layer.}
+    \item Dense Layers: Put all the Dense information counters in a cup and randomly pick two for each Dense Layer called for. Refer to the “Low Ceiling” side of the first counter drawn and the “High Ceiling” side of the second drawn for each Dense Layer. The indicated numbers are the lowest and highest levels of the Dense Layer. Dense clouds exist in those levels and all levels in between.   \changedin{2B}{2B-merging-cloud-layers}{Dense Layers which overlap simply combine into a larger Dense Layer.}{Dense layers that overlap or are adjacent simply combine into a single, possibly larger, dense layer. A stratus layer that overlaps a dense layer is ignored. A stratus layer that is adjacent to a dense layer is retained as a separate cloud layer.}
 \end{itemize}
 }
 
@@ -246,9 +246,9 @@ In all cases, the usual effects of haze and cloud layers on sighting apply.
 \label{rule:haze-layers}
 Haze reduces visibility in visible light. The effects of haze layers are:
 \begin{itemize}
-\item If either the searcher or target or both are in a haze layer, the sighting range for visual sighting and identification (see rule~\ref{rule:visual-sighting}) is considered to be twice the normal range. This applies to normal visual sighting (air-to-air, air-to-ground, and ground-to-air) and to the use of VAS. It does not apply to the use of IRSTS or TV/IR optics.
-\item Air-to-air attacks with visually aimed weapons require the target to be individually sighted by the attacker at the start of the attacker's movement (see rule \ref{rule:individual-sighting}). Exceptionally and for this purpose only, if a potential target moves first and enters a haze layer , the sighting range is considered to be the normal range and not twice the normal range.
-\item At night, an aircraft in a haze layer is considered to be flying in adverse conditions (see rule \ref{rule:adverse-conditions}).
+\item\itemparagraph{Sighting Range.} If either the searcher or target or both are in a haze layer, the sighting range for visual sighting and identification (see rule~\ref{rule:visual-sighting}) is considered to be twice the normal range. This applies to normal visual sighting (air-to-air, air-to-ground, and ground-to-air) and to the use of VAS. It does not apply to the use of IRSTS or TV/IR optics.
+\item\itemparagraph{Individual Sighting.} Air-to-air attacks with visually aimed weapons require the target to be individually sighted by the attacker at the start of the attacker's movement (see rule \ref{rule:individual-sighting}). Exceptionally and for this purpose only, if a potential target moves first and enters a haze layer , the sighting range is considered to be the normal range and not twice the normal range.
+\item\itemparagraph{Adverse Conditions.} At night, an aircraft in a haze layer is considered to be flying in adverse conditions (see rule \ref{rule:adverse-conditions}).
 \end{itemize}
 
 
@@ -256,20 +256,50 @@ Haze reduces visibility in visible light. The effects of haze layers are:
 \label{rule:stratus-cloud-layers}
 Stratus cloud layers are cloud layers that are only one altitude level thick. They block visible and infrared light from one side to the other. The effects of stratus cloud layers are:
 
+
+Optical and infrared sensors can see into and out of a stratus cloud layer (sometimes with reduced performance), but cannot penetrate beyond it. When used within a stratus cloud layer, they have a maximum range of 1.
+
 \begin{itemize}
 
-\item Aircraft and ground units above or below a stratus cloud layer may not visually sight targets beyond that layer.
+\item\itemparagraph{Blocking Sight Lines.} Stratus cloud layers block sight lines and limit visual sighting as follows:
 
-Aircraft above or below a stratus cloud layer may not use VAS, IRSTS, TV/IR optics, laser designators, or laser spot trackers to sight, detector, designate, or track a target beyond that layer. They may also not launch IRMs on targets on the other side of the layer, even with radar assist (see rule \ref{rule:irm-radar}).
+\begin{itemize}
+\item
+Aircraft and ground units above or below a stratus cloud layer may not visually sight targets beyond that layer.
 
-Ground units below a stratus cloud layer may not use night IR sights to detect aircraft above that layer, may not launch IR SAMs at targets above that layer, and may not launch or track OG/LG SAMs at targets above that layer.
+\item An aircraft in a stratus cloud layer may sight targets outside the layer, albeit with the modifiers discussed below.
 
-\item Aircraft in a stratus layer can attempt to sight other aircraft and missiles with a modifier of $+2$. 
-\item Aircraft and missiles in a stratus layer can be sighted with a modifier of $+3$. 
-\item An aircraft in a stratus layer can sight other aircraft and missiles in the same layer to a maximum range of 1 (i.e., in the same or adjacent hexes), and in this case both the $+2$ modifier for the searcher and the $+3$ modifier for target would apply.
-\item IRMs and IR/OG/LG SAMs may pursue and attack aircraft in stratus cloud layers. However, if both the missile and the target are in the same layer, then at the end of each of the missile’s proportional moves the range to the target must be at most 1 otherwise the missile fails to track and is removed. If, at the end of any of the missile’s proportional moves, the target and missile are on opposite sides of a stratus cloud layer, the missile fails to track and is removed from play.
-\item Air-to-air attacks with visually aimed weapons require the target to be individually sighted by the attacker at the start of the attacker's movement (see rule \ref{rule:individual-sighting}). Exceptionally and for this purpose only, if a potential target moves first and crosses to the other side of a stratus cloud layer, the stratus cloud layer is not considered to block visual sighting.
-\item At night, an aircraft below a stratus cloud layer is considered to be flying in adverse conditions (see rule \ref{rule:adverse-conditions}).
+\item An aircraft or missile in a stratus cloud layer may sighted by aircraft and ground units outside the layer, albeit with the modifiers discussed below.
+
+\item An aircraft in a stratus layer can sight other aircraft and missiles \emph{in the same layer} to a maximum range of 1.
+\end{itemize}
+
+The same capabilities and limitations apply to the use of VAS, IRSTS, TV/IR optics, laser designators, laser spot trackers, IRM and IR/OG/LG SAM launches, and OG/LG SAM tracking. In particular, aircraft above or below a stratus cloud layer may not launch IRMs at targets beyond that layer even with radar assist (see rule \ref{rule:irm-radar}).
+
+\item\itemparagraph{Visual Sighting Modifiers.} Stratus cloud layers give the following sighting modifiers:
+\begin{itemize}
+
+\item Aircraft in a stratus cloud layer or between a stratus cloud layer and the searcher are considered to be seen against clouds for determining the sighting modifier from Table~\ref{table:sighting-position-modifiers}.
+
+\item
+Aircraft in a stratus cloud layer can sight other aircraft and missiles with a modifier of $+2$.
+
+\item Aircraft and missiles in a stratus cloud layer can be sighted by other aircraft with a modifier of $+3$. 
+
+\end{itemize}
+When an aircraft in a stratus cloud layer is searching for a target in the same layer, all of these modifiers apply.
+
+\item\itemparagraph{Missile Tracking.} IRMs and IR/OG/LG SAMs may track and attack aircraft in stratus cloud layers. 
+
+However, if both the missile and the target are in the same layer, then at the end of each of the missile’s proportional moves the range to the target must be at most 1 otherwise the missile fails to track and is removed. 
+
+If, at the end of any of the missile’s proportional moves, the target and missile (for IRMs and IR SAMs) or the target and launching unit (for OG/LG SAMs) are on opposite sides of a stratus cloud layer, the missile fails to track and is removed from play.
+
+\item\itemparagraph{IRM Launch Modifier.} During the day, if an IRM missile is launched from above the highest stratus or dense cloud layer at lower target with a horizontal range that is less than twice the difference in altitude levels, a launch roll modifier of $+3$ applies. This modifier represents the effect of the reflection of the Sun off the highest cloud layer.
+
+\item\itemparagraph{Individual Sighting.} Air-to-air attacks with visually aimed weapons require the target to be individually sighted by the attacker at the start of the attacker's movement (see rule \ref{rule:individual-sighting}). Exceptionally and for this purpose only, if a potential target moves first and crosses to the other side of a stratus cloud layer or enters the same layer as the attacker, the stratus cloud layer is not considered to block visual sighting.
+
+\item\itemparagraph{Adverse Conditions.} At night, an aircraft below a stratus cloud layer is considered to be flying in adverse conditions (see rule \ref{rule:adverse-conditions}).
 
 \end{itemize}
 }
