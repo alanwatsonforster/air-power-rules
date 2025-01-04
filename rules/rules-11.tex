@@ -21,7 +21,7 @@ Aircraft and missiles can be visually sighted or unsighted by the opposing aircr
 Each side first declares padlocks of currently sighted opposing aircraft and missiles. Any opposing aircraft or missile that is not padlocked is considered to become unsighted. Each side can then attempt to sight unsighted opposing aircraft and missiles. At the end of the visual sighting phase, the only opposing aircraft and missiles that are sighted are those that were padlocked or for which the sighting attempt succeeded. All other opposing aircraft and missiles are unsighted.
 
 \paragraph{Duration of Sighting.}
-An aircraft's or missile's status as sighted or unsighted is determined anew in each game turn's visual sighting phase. It then maintains that status until the following game turn's visual sighting phase. A sighted aircraft or missile that enters a blind arc does not immediately cease to be sighted; it remains sighted at least until the following game turn's visual sighting phase.
+An aircraft's or missile's status as sighted or unsighted is determined anew in the visual sighting phase of each game turn. It then maintains that status until the next visual sighting phase. A sighted aircraft or missile that enters a blind arc does not immediately cease to be sighted; it remains sighted at least until the next visual sighting phase.
 
 \paragraph{Sighted or Unsighted by All.}
 If an opposing aircraft or missile is unsighted, it is unsighted by all friendly aircraft. If it is sighted, it is sighted by all of the friendly aircraft, even those that have it in their blind arcs. For most purposes, this is sufficient. However, for aircraft carrying out attacks with visually aimed weapons, using defensive preemptions, and defensively engaging missiles, there are additional requirements on individual sighting described below.
@@ -54,13 +54,11 @@ Padlocking is an administrative procedure used only in the Visual Sighting Phase
 
 }{
 
-\paragraph{Sighting Range.} The range for sighting is determined normally according to  rule~\ref{rule:range}.
-
-When attempting to sight a higher aircraft or missile in daylight, the vertical range is the difference in altitude levels divided by \emph{four}, rather than two, and rounded down. This is because it is easier to see an aircraft silhouetted against the sky.
+\paragraph{Sighting Range.} The range for sighting is determined according to rule~\ref{rule:range}. When attempting to sight a higher aircraft or missile in daylight, the vertical range is the difference in altitude levels divided by \emph{four}, rather than two, and rounded down. This is because it is easier to see an aircraft silhouetted against the sky.
 
 \AY[3A-sighting-weather]{If the searcher or the target or both are in haze (see advanced rule \ref{rule:haze}), the sighting range is considered to be twice the actual range. This reduces both the maximum range to which an aircraft or missile can be sighted and gives more adverse modifiers.}
 
-\paragraph{Maximum Sighting Range.} An aircraft or a missile in flight has a visibility number, given for aircraft by the ADC and for missiles by Table~\ref{table:missile-data}. The visibility number determines the maximum range for sighting. During daylight and clear weather, the maximum visual sighting range to an aircraft or missile is four times its visibility number. Table \ref{table:maximum-sighting-range} summarizes the maximum sighting range in other conditions (see advanced rule \ref{rule:night-and-weather}).
+\paragraph{Maximum Sighting Range.} An aircraft or a missile in flight has a visibility number, given for aircraft by the ADC and for missiles by Table~\ref{table:missile-data}. The visibility number determines the maximum range for sighting. During daylight and clear weather, the maximum visual sighting range to an aircraft or missile is four times its visibility number. Table \ref{table:maximum-sighting-range} summarizes the maximum sighting range in these cases and in other conditions covered by the advanced rule.
 
 \paragraph{Blind and Restricted Arcs.} A crewmember’s view may be obstructed by their aircraft’s fuselage or wings. Each aircraft’s ADC indicates its blind and restricted \AY[3A-horizontal-arcs]{horizontal} arcs (if any). An L after the arc indicates that the aircraft is blinded or restricted only to lower altitude in that arc (e.g., by a long nose). 
 
@@ -76,13 +74,9 @@ An aircraft also cannot attempt to sight targets at the same map location (i.e.,
 
 Padlocking allows aircraft to maintain sight of enemy aircraft and missiles.
 
-If advanced rule~\ref{rule:crew-ability} on crew ability is not being used, a pilot can padlock one target, and an observer (or equivalent crewmember) of a multi-crew aircraft can padlock another. If it is being used, the crew quality and characteristics determine how many targets they can padlock: a novice or green crewmember cannot padlock any, a regular can padlock one, and a veteran or tactics master can padlock two (see Table~\ref{table:padlocks}). 
+A pilot can padlock one target, and an observer (or equivalent crewmember) of a multi-crew aircraft can padlock another. Table~\ref{table:padlocks} summarizes these cases and others covered by the advanced rules.
 
-Crewmembers who are disoriented or suffering from GLOC cannot padlock.
-
-For example, a multi-crew aircraft with two veteran crewmembers would be able to declare four padlocks (two for the pilot and two for the observer), but a multi-crew aircraft with a veteran pilot and green observer would only be able to declare two (two for the pilot and none for the observer).
-
-To be eligible for padlocking, a target must have been sighted on the previous game turn, must be within maximum visual sighting range of the padlocking aircraft, and must not be in its blind arc. 
+To be eligible for padlocking, a target must have been sighted on the previous game turn, must be within maximum visual sighting range of the padlocking aircraft, and must not be in its blind arc. Table~\ref{table:padlocks} summarizes these requirements and others covered by the advanced rules.
 
 While it is normally not possible to sight lower targets at the same map location (i.e., the same hex or hex side), it is possible to padlock them.
 
