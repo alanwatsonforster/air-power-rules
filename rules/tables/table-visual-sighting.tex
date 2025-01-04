@@ -37,71 +37,89 @@ No PLs if in Target Sun Arc.
 }{
 
 \begin{twocolumntablefloat}
-\begin{twocolumntable}
-\begin{multicols}{2}
 
-\begin{onecolumntable}
+\begin{twocolumntable}
 \tablecaption{table:maximum-sighting-range}{Maximum Sighting and Identification Ranges}
-%\begin{tabularx}{\linewidth}{Xp{10em}}
-\begin{tabularx}{\linewidth}{lL}
+\small
+\begin{tabularx}{0.8\linewidth}{llLl}
 \toprule
-\multicolumn{2}{c}{Sighting during Day}\\
+Target&Process&Range&Rule\\
 \midrule
-Visual&$\mbox{visibility} \times 4$\\
-VAS &$\mbox{visibility} \times 6$\\
-VAS with radar assist&$\mbox{visibility} \times 10$\\
+\multicolumn{4}{c}{Sighting during Day}\\
 \midrule
-\multicolumn{2}{c}{Sighting at Night}\\
+Aircraft&Visual&$\mbox{visibility} \times 4$&\ref{rule:sighting-aircraft-and-missiles}\\
+Aircraft&Visual in haze&$\mbox{visibility} \times 2$&\ref{rule:haze-and-cloud-layers}$^*$\\
+Aircraft&VAS &$\mbox{visibility} \times 6$&\ref{rule:vas}$^*$\\
+Aircraft&VAS with radar assist&$\mbox{visibility} \times 10$&\ref{rule:vas}$^*$\\
+Aircraft, Contrailing&Visual&150&\ref{rule:contrail-layers}$^*$\\
+Missile&Visual&$\mbox{visibility} \times 4$&\ref{rule:sighting-aircraft-and-missiles}\\
+Missile, Contrailing&Visual&90&\ref{rule:contrail-layers}$^*$\\
 \midrule
-Visual&2 hexes\\
-Visual against aircraft using AB&6 hexes\\
-HUD and IRSTS lock-on&Twice normal\\
+\multicolumn{4}{c}{Sighting \wbox[l]{during Day}{at Night}}\\
 \midrule
-\multicolumn{2}{c}{Identification during Day}\\
+Aircraft&Visual&2&\ref{rule:night-and-adverse-weather-flight}$^*$\\
+Aircraft, Using AB&Visual&6&\ref{rule:night-and-adverse-weather-flight}$^*$\\
+Aircraft&IRSTS lock-on and HUD&Twice normal&\ref{rule:irsts}$^*$\\
+Aircraft, Contrailing above Clouds&Visual&24&\ref{rule:contrail-layers}$^*$\\
+Aircraft, Contrailing below Clouds&Visual&6&\ref{rule:contrail-layers}$^*$\\
+Missile&Visual&$\mbox{visibility} \times 2$&\ref{rule:night-and-adverse-weather-flight}$^*$\\
+Missile, Contrailing above Clouds&Visual&24&\ref{rule:contrail-layers}$^*$\\
+Missile, Contrailing below Clouds&Visual&6&\ref{rule:contrail-layers}$^*$\\
 \midrule
-Visual&$\mbox{visibility} \times 2$\\
-VAS &$\mbox{visibility} \times 4$\\
+\multicolumn{4}{c}{Identification during Day}\\
 \midrule
-\multicolumn{2}{c}{Identification at Night}\\
+Aircraft&Visual&$\mbox{visibility} \times 2$&\ref{rule:limited-intelligence}$^*$\\
+Aircraft&VAS&$\mbox{visibility} \times 4$&\ref{rule:limited-intelligence}$^*$\\
+Aircraft&VAS (on roll of $7-$)&$\mbox{visibility} \times 10$&\ref{rule:limited-intelligence}$^*$\\
 \midrule
-Visual&Same position, facing, and speed.\\
+\multicolumn{4}{c}{Identification \wbox[l]{during Day}{at Night}}\\
+\midrule
+Aircraft&Visual&0$^a$&\ref{rule:night-and-adverse-weather-flight}$^*$\\
 \bottomrule
 \end{tabularx}
-\AY[3A-haze]{
+\CY[3A-haze]{
+\begin{tablenote}{0.7\linewidth}
+%\begin{itemize}
+$^*$ Advanced rule. $^a$ Identification at night requires the same position, facing, and speed as the target.
+%\end{itemize}
+\end{tablenote}
+}{
 \begin{tablenote}{\linewidth}
 \begin{itemize}
-    \item If the searcher, target, or both are in haze (see advanced rule \ref{rule:haze}), consider the sighting range to be twice the normal range.
+   \item $^*$ Advanced rule.
+   \item If the searcher, target, or both are in haze (see advanced rule \ref{rule:haze}), consider the sighting range to be twice the normal range.
 \end{itemize}
 \end{tablenote}
 }
-\end{onecolumntable}
+\end{twocolumntable}
 
-\columnbreak
+\vspace{\floatsep}
 
-\begin{onecolumntable}
+\begin{twocolumntable}
+\small
 \tablecaption{table:padlocks}{Padlocks}
-\begin{tabularx}{0.7\linewidth}{Xc}
+\begin{tabularx}{0.7\linewidth}{Xcl}
 \toprule
-Crewmember&Padlocks\\
+Crewmember&Padlocks&Rule\\
 \midrule
-Veteran or tactics master&2\\
-Regular&1\\
-Novice&0\\
-Green&0\\
+Pilot&\wbox[r]{$+0$}{1}&\ref{rule:sighting-aircraft-and-missiles}\\
+Observer&\wbox[r]{$+0$}{1}&\ref{rule:sighting-aircraft-and-missiles}\\
+\midrule
+Veteran or tactics master&$+1$&\ref{rule:crew-quality}$^*$\\
+Novice&$-1$&\ref{rule:crew-quality}$^*$\\
+Green&$-1$&\ref{rule:crew-quality}$^*$\\
 \bottomrule
 \end{tabularx}
 \begin{tablenote}{0.7\linewidth}
-\begin{itemize}
-    \item Pilot and observer (or equivalent) can both padlock.
-    \item Disoriented or GLOCed crewmembers may not padlock.
-    \item Targets in blind arcs cannot be padlocked, but lower targets at the same map location can be padlocked.
-    \item Targets beyond maximum sighting range cannot be padlocked.
-\end{itemize}
-\end{tablenote}
-\end{onecolumntable}
+$^*$ Advanced rule.
 
-\end{multicols}
+\smallskip
+
+The targets of padlocks (see rule \ref{rule:sighting-aircraft-and-missiles}) must have been sighted in the previous game turn, be within maximum sighting range, not be in the blind arc of the padlocking aircraft, and not be in Sun clutter (see advanced rule \ref{rule:sun}). Targets at the same map location but lower altitude can be padlocked. Crewmembers suffering GLOC (see advanced rule \ref{rule:gloc}) or disorientation (see advanced rule \ref{rule:disorientation}) may not padlock).
+
+\end{tablenote}
 \end{twocolumntable}
+
 \end{twocolumntablefloat}
 
 

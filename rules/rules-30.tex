@@ -235,6 +235,7 @@ In all cases, the usual effects of haze and cloud layers on sighting apply.
 
 \AX{
 \section{Haze and Cloud Layers}
+\label{rule:haze-and-cloud-layers}
 
 Haze and cloud layers can absorb or scatter visible and infrared light and so have negative impacts on visual sighting and on sensors or weapons that operate with visible or infrared light.
 
@@ -360,6 +361,7 @@ As an exception, if the target of an IRM or IR SAM enters a dense layer, the mis
 \section{Night and Adverse Weather Flight}
 \label{rule:night-and-adverse-weather-flight}
 \label{rule:adverse-conditions}
+\label{rule:disorientation}
 
 Night and Adverse weather conditions severely limit what a pilot can or will do with his aircraft. Night flying in Clear Conditions is less restrictive.
 
@@ -448,6 +450,7 @@ Aircraft need help in locating targets at night. FACs and target marks have been
 \section{Night and Adverse Conditions}
 \label{rule:night-and-adverse-weather-flight}
 \label{rule:adverse-conditions}
+\label{rule:disorientation}
 
 Night and adverse conditions severely limit what a pilot can or will do with his aircraft.
 
@@ -563,7 +566,7 @@ Aircraft with TV/IR Optics technology or that carry Optics pods (OP) are conside
 
 \begin{itemize}
 
-    \item They may visually sight into their 180+ arcs out to a range of 18 hexes (count 2 levels of altitude as one hex) as if it were daylight. They may visually attack sighted targets within that range as if it were daylight.
+    \item They may visually sight into their 180+ arcs out to a range of 18 hexes (count 2 levels of altitude as one hex) as if it were daylight. They may visually attack sighted targets within that range as if it were daylight. \addedin{2B}{2B-tvir-optics}{This capability may be used during the day and at night. Haze layers do not reduce the maximum visual sighting range for TV/IR optics or OPs.}
 
     \item If they are designator equipped (via technology, or by carrying an LP pod, or dual capable OP/LP pod), they may opt to visually sight and attack sighted targets as if it were daylight into any single arc that the designator can place a laser spot in instead of their 180+ arcs. As above the range is 18 hexes.
 
@@ -593,7 +596,17 @@ Aircraft with ground Nav and Attack radars, or with air to air radars of 150+ ar
 
 \end{itemize}
 
-\paragraph{Radar Detection Procedure.} If the target counter, or hex is in a line of sight, within the aircraft's radar arc and detection range, roll one die. On a 7 or less the target is detected. Air to air radars used in the air to ground mode halve their maximum detection range. Ground Nav and attack radars have no strength ratings and may never be used in an air to air manner. Their lock-on numbers are asterisked as a reminder.
+\paragraph{Radar Detection Procedure.} If the target counter, or hex is in a line of sight, within the aircraft's radar arc and \changedin{2B}{2B-radar-bombing}{detection}{ground-navigation radar} range, roll one die. On a 7 or less the target is detected. Air to air radars used in the air to ground mode \changedin{2B}{2B-radar-bombing}{halve their maximum detection range}{use half their search range}. Ground Nav and attack radars have no strength ratings and may never be used in an air to air manner. Their lock-on numbers are asterisked as a reminder.
+
+\addedin{2B}{2B-radar-bombing}{
+\paragraph{Radar Tracking Procedure.} An aircraft with a ground-attack radar may attempt to lock-on to a detected target. The target must be within the ground-attack radar range. Air to air radars used in the air to ground mode use half their tracking range. The attempt succeeds on a roll equal to the lock-on number or less.
+}
+
+\addedin{2B}{2B-radar-bombing}{
+\paragraph{Requirements and Restrictions.} A radar cannot simultaneously be used in the air-to-ground mode and air-to-air mode. If it is used in the air-to-ground mode, all detections and lock-ons of aircraft are lost. If it is used in the air-to-air mode, all detections and lock-ons of ground targets are lost. 
+
+The use of radar to detect and track ground targets is governed by the same restrictions as the use of air-to-air radar in normal mode to detect and track aircraft (see rule \ref{rule:air-to-air-radar}). For example, pilot-only aircraft can attempt to detect and lock-on ground targets only of they did not use a HT or harder turn.
+}
 
 \paragraph{Radar Bombing Procedure.} Normal aiming is required against the target. Tracking time does not apply. If a lock-on is held, then the bombsight modifier is applied otherwise it is ignored. Attacks are resolved through normal procedures.
 
@@ -610,64 +623,80 @@ You may now play all scenarios.
 
 \subsection{Illumination Flares}
 
-Aircraft equipped with illumination flare pods (IPs) may drop parachute flare clusters provide illumination as if it were day.
+Aircraft equipped with illumination flare pods (IPs) may drop parachute flare clusters to provide illumination.
 
-\paragraph{Illumination Flare Pods.} Illumination flare pods may be carried on stations capable of carrying EP pods. There are four flare clusters per pod. The parachute flares are distinct from decoy flares and may not be used as such. 
+\paragraph{Illumination Flare Pods.} Aircraft may carry IPs on any station that can carry an EP. Each IP has four flare clusters.  
 
-\paragraph{Dispensing Flares.} Aircraft with IPs may initiate a flare run. A flare run counts as the allowed air-to-ground attack for the game turn. In a flare run the aircraft may dispense up to four flare clusters, one per hex, in any hex it passes through in its flight. The aircraft may fly level, climb, dive, turn, and maneuver, but it must not be turning or maneuvering when it actually dispenses flare clusters. It may turn and maneuver between dispensing flare clusters.
+\paragraph{Dispensing Flares.} Aircraft with IPs may initiate a flare run. A flare run counts as the allowed air-to-ground attack for the game turn. In a flare run, an aircraft may dispense up to four flare clusters, one per hex, in any hex it passes through in its flight. An aircraft may fly level, climb, dive, turn, and maneuver, but it must not be turning or maneuvering when it actually dispenses flare clusters. It may turn and maneuver between dispensing flare clusters.
 
-\paragraph{Duration.} Parachute flare clusters provide illumination for 10 game turns, including the game turn in which they were dispensed or until they reach ground level, whichever occurs first. They descend one level each odd-numbered game turn, including the game turn on which they were released, if this is odd-numbered.
+\paragraph{Duration.} Parachute flare clusters provide illumination for 10 game turns, including the game turn in which they were dispensed or until they reach ground level, whichever occurs first. They descend one level each odd-numbered game turn, including the game turn on which they were dispensed, if this is odd-numbered.
 
 \paragraph{Effects.} 
-Parachute flares clusters illuminate the hex in which they are dispensed and the six surrounding hexes provided they are no more than 5 altitude levels above the ground level. Ground targets in illuminated hexes may be sighted and attacked normally by aircraft as if it were day.
+Parachute flare clusters illuminate the hex in which they were dispensed and the six surrounding hexes provided they are no more than 5 altitude levels above the ground level. Ground targets in illuminated hexes may be sighted and attacked by aircraft as if it were day. Parachute flare clusters are distinct from decoy flares and may not be used as such.
 
-\subsection{TV/IR Optics Capability}
+\subsection{TV/IR Optics and Optics Pods}
 
-Aircraft with TV/IR Optics technology or that carry Optics pods (OP) are considered to have the following capabilities:
+TV/IR optics technology and optics pods (OP) use TV cameras sensitive to infrared light to allow aircraft to sight and attack at night or in haze.
 
-\begin{itemize}
+\paragraph{Visual Sighting.} Aircraft with TV/IR optics technology or an OP may visually sight ground units and may visually attack sighted ground units in their \arcrange{180}{+} arcs within a range of 18 as if it were day. Haze layers do not reduce the maximum visual sighting range for TV/IR optics or OPs. This capability may be used in the day or at night. 
 
-    \item They may visually sight into their 180+ arcs out to a range of 18 hexes (count 2 levels of altitude as one hex) as if it were daylight. They may visually attack sighted targets within that range as if it were daylight.
+\paragraph{Use with Laser Designators.} Aircraft also equipped with a laser designator (either an integrated one or one in an LP or dual capable OP/LP pod) may elect to use this capability in any single arc into which they can designate rather than their \arcrange{180}{+} arcs.
 
-    \item If they are designator equipped (via technology, or by carrying an LP pod, or dual capable OP/LP pod), they may opt to visually sight and attack sighted targets as if it were daylight into any single arc that the designator can place a laser spot in instead of their 180+ arcs. As above the range is 18 hexes.
-
-\end{itemize}
+\paragraph{Terrain Following Capability.} Aircraft with TV/IR optics technology automatically have type-A terrain-following technology.
 
 \section{Radar Bombing}
 
-Aircraft with ground Nav and Attack radars, or with air to air radars of 150+ arc capability, or multi-crewed with radars of 180+ capability, may do radar bombing.
+Certain aircraft may use their radar to bomb targets that are not visually sighted, albeit with certain restrictions and reduced accuracy.
 
-\paragraph{Radar Bombing Options.} Radar bombing allows level bombing attacks with BB class weapons against radar significant targets which have been radar detected. If the radar significant target is locked-onto and the aircraft has computed or advanced bombsights, dive bombing, toss bombing and laydown attacks are allowed as well.
+\paragraph{Air-to-Ground Radar.} An aircraft has a radar with an air-to-ground capability if satisfy one of the following requirements: 
+\begin{itemize}
+\item Any aircraft with ground-navigation and ground-attack radar.
+\item Any aircraft with an air-to-air radar with an arc of \arcrange{150}{+}.
+\item Any multi-crewed aircraft with an air-to-air radar with an arc of \arcrange{180}{+}.
+\end{itemize}
 
-\paragraph{Radar Significant Targets.} The following comprise radar significant targets:
+Ground-navigation and ground-attack radars have no strength ratings and may never be used in an air-to-air manner. Their lock-on numbers are asterisked.
+
+Air-to-air radars have their ranges halved when used for as air-to-ground radars.
+
+\paragraph{Radar-Significant Targets.} The following can potentially be detected by air-to-ground radars:
 
 \begin{itemize}
 
-    \item In any terrain: building counters, locomotives, trains, POL sites and bridges.
+    \item In any terrain: ground units representing buildings, airport facilities (hangers, shelters, towers), locomotives, trains, POL sites, bridges, docks, piers, and dams
 
-    \item In Clear terrain or on roads and trails: Vehicle units, AAA and Arty. sites, SAM sites, and radar units.
+    \item In clear terrain or on roads and trails: ground units representing vehicles, AAA, artillery, SAMs, and radars.
 
-    \item Naval units at sea, on rivers, or in ports. Docks, Piers, and Dams.
+    \item Naval units.
 
-    \item Aircraft on runways, in revetments, and all airport facilities (hangers, shelters, towers).
+    \item Aircraft on runways and in shelters.
 
-    \item Isolated urban areas of not greater than 3 hexes in size and not adjacent to built up areas, built up area hexes, and runway hexes.
+    \item Isolated urban areas of not greater than 3 hexes in size and not adjacent to built-up areas, built-up area hexes, and runway hexes.
     
     \item Any hex with a black navigation point triangle in it.
 
 \end{itemize}
 
-\paragraph{Radar Detection Procedure.} If the target counter, or hex is in a line of sight, within the aircraft's radar arc and detection range, roll one die. On a 7 or less the target is detected. Air to air radars used in the air to ground mode halve their maximum detection range. Ground Nav and attack radars have no strength ratings and may never be used in an air to air manner. Their lock-on numbers are asterisked as a reminder.
+\paragraph{Requirements and Restrictions.} A radar cannot simultaneously be used in the air-to-ground mode and air-to-air mode. If it is used in the air-to-ground mode, all detections and tracks of aircraft are lost. If it is used in the air-to-air mode, all detections and tracks of ground targets are lost. 
 
-\paragraph{Radar Bombing Procedure.} Normal aiming is required against the target. Tracking time does not apply. If a lock-on is held, then the bombsight modifier is applied otherwise it is ignored. Attacks are resolved through normal procedures.
+The use of radar to detect and track ground targets is governed by the same restrictions as the use of air-to-air radar in normal mode to detect and track aircraft (see rule \ref{rule:air-to-air-radar}). For example, pilot-only aircraft can attempt to detect and lock-on ground targets only of they did not use a HT or harder turn.
 
-\paragraph{Ground Radars and Laser Designators.} Aircraft that have locked up a radar significant target and that have Designators type B or C, may place a laser spot on the target without visually sighting it and may conduct laser guided weapon attacks.
+\paragraph{Radar Detection Procedure.} If the target unit or hex is in a line of sight, within the aircraft's radar arc and ground-navigation range, roll one die. On a $7-$ the target is detected. Air-to-air radars using in the air-to-ground mode use half of their search range in place of the ground-navigation range.
+
+\paragraph{Radar Tracking Procedure.} Aircraft which also have a ground-attack radar or an air-to-air radar with tracking capability may attempt to track (lock-on) to a detected ground target. The target must be within the ground-attack radar range. Air-to-air radars used in the air-to-ground mode use half their tracking range in place of the ground-attack range. The attempt succeeds on a roll equal to the lock-on number or less.
+
+\paragraph{Radar Bombing Options.} Aircraft may conduct level bombing attacks with BB weapons on detected ground targets. Aircraft with computed or advanced bomb systems may also conduct dive, toss, or laydown bombing attacks with BB weapons on tracked ground targets.
+
+\paragraph{Radar Bombing Procedure.} Attacks are resolved the normal procedures. Normal aiming is required. Modifiers for additional aiming are not applicable. If the target is tracked, then the bomb system modifier is applied, otherwise it is ignored. 
+
+\paragraph{Radar Tracking and Laser Designators.} Aircraft with type-B or type-C laser designators may designate an unsighted but tracked ground target for attacks with laser guided weapons or aircraft with laser spot trackers.
 
 \trainingnote{
 \centering 
-CONGRATULATIONS!! \\
-You have now learned all the rules (it's Miller time)!\\
-You may now play all scenarios.
+
+CONGRATULATIONS!
+
+You have now learned all the rules and may now play all scenarios.
 }
 
 }

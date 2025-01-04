@@ -44,10 +44,10 @@ Aircraft Smoking&$-1$&$-2$&$-2$&NA&NA&NA\\
 \begin{tabularx}{\linewidth}{Xl}
 \toprule
 Number of aircraft searching:\\
-1 or 2&$+0$\\
-3 or 4&$-1$\\
-5 or 8&$-2$\\
-9+    &$-3$\\
+\quad 1 or 2&$+0$\\
+\quad 3 or 4&$-1$\\
+\quad 5 or 8&$-2$\\
+\quad 9+    &$-3$\\
 \textchangedin{2A}{2A-missile-sighting}{Tgt.\ is just launched Missile or SAM$^*$}{Target is a missile with a normal boost or sustainer motor burning}&$-3$\\
 \tablerowaddedin{2A}{2A-missile-sighting}{\textaddedin{2A}{2A-missile-sighting}{Target is a missile with a smokeless boost or sustainer motor burning}&\textaddedin{2A}{2A-missile-sighting}{$-1$}}
 \tablerowaddedin{2A}{2A-missile-sighting}{\textaddedin{2A}{2A-missile-sighting}{Target is a missile just launched from a spotted aircraft}&\textaddedin{2A}{2A-missile-sighting}{$-2$}}
@@ -57,8 +57,8 @@ Searcher is Looking out of Stratus&$+2$\\
 Searcher is Veteran and Tactics Master&$-2$\\
 Searcher is Veteran or Tactics Master&$-1$\\
 Multi-crew aircraft Searching&$-1$\\
-\CX[AWF as the only reference to the HUD modifier in the rules is in the context of an IRSTS lock-on]{\changedin{1B}{1B-apj-25-qa and 1B-apj-34-qa}{Hud Interface Technology used}{Searcher has HUD Interface Technology}}{Searcher has IRSTS lock-on and HUD interface technology}&$-1$\\
-Searcher has RWR indications&$-1$\\
+\changedin{2B}{2B-sighting-and-hud}{\changedin{1B}{1B-apj-25-qa and 1B-apj-34-qa}{Hud Interface Technology used}{Searcher has HUD Interface Technology}}{Searcher has radar or IRSTS lock-on and HUD interface technology}&$-1$\\
+Searcher has \changedin{2B}{RWR indications}{radar, IRSTS, or RWR detection}&$-1$\\
 Has Poor Eyes&$+1$\\
 Has Good Eyes&$-1$\\
 is Novice&$+1$\\
@@ -165,7 +165,8 @@ Low-Visibility Gray  &$+0$&$+0$&$+1$&$+1$&$-1$\\
 \begin{tabularx}{1.0\linewidth}{Xl}
 \toprule
 \multicolumn{2}{c}{Participating Aircraft}\\
-\midrule1 or 2&$+0$\\
+\midrule
+1 or 2&$+0$\\
 3 or 4&$-1$\\
 5 or 8&$-2$\\
 9+    &$-3$\\
@@ -188,9 +189,9 @@ Excellent eyesight&$-1$\\
 Poor eyesight&$+1$\\
 Tactics master&$-1$\\
 Multi-crew aircraft&$-1$\\
-In stratus$+2$\\
-RWR indications&$-1$\\
-IRSTS lock-on and HUD interface&$-1$\\
+In stratus&$+2$\\
+Radar, IRSTS, or RWR detection&$-1$\\
+Radar or IRSTS lock-on and HUD interface&$-1$\\
 \bottomrule
 \end{tabularx}
 \begin{tablenote}{1.0\linewidth}
@@ -205,7 +206,8 @@ IRSTS lock-on and HUD interface&$-1$\\
 \begin{tabularx}{1.0\linewidth}{Xl}
 \toprule
 \multicolumn{2}{c}{Participating Aircraft}\\
-\midrule1 or 2&$+0$\\
+\midrule
+1 or 2&$+0$\\
 3 or 4&$-1$\\
 5 or 8&$-2$\\
 9+    &$-3$\\
