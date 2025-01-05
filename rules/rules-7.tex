@@ -333,32 +333,20 @@ If an aircraft has turn carry brought forward to the next game turn, and the new
 If an aircraft carries a turn forward and the new start speed is less than that required by Table~\ref{table:turn-minimum-speed}, it suffers a maneuvering departure. (These departures are described in advanced rule~\ref{rule:maneuvering-departures}); if this advanced rule is not being used, the aircraft enters regular departed flight described in rule~\ref{rule:abnormal-flight}.)
 }
 
-\CX{
+\DX{
 \section{G Induced Loss of Consciousness}
-}{
-\section{GLOC}
-}
 \label{rule:gloc}
 
-\CX{
 Aircrew aboard aircraft which turn too sharply may lose consciousness due to G force effects. This is known as GLOC.
-}{
-When an aircraft turns too sharply, crewmembers may lose consciousness due to G-force effects. This is known as G-induced loss of consciousness or GLOC.
-}
 
 \paragraph{When Can GLOC Occur?} 
-\CX{
 When an aircraft turns at the ET rate in the LO, ML, or MH altitude bands its crew may lose consciousness (at higher altitudes, the G-force of these turn rates is insufficient to cause GLOC). Each crewmember must check for GLOC after each facing change at the ET rate.
-}{
-GLOC can occur when an aircraft changes facing at the ET rate in the LO, ML, or MH altitude bands. Each crewmember must check for GLOC after each facing change at the ET rate in these bands. At higher altitudes, the G-force of an ET turn is insufficient to cause GLOC.
-}
 
 \addedin{1C}{1C-tables}{
     \input{tables/table-gloc}
 }
 
 \paragraph{GLOC Procedure.} 
-\CX{
 Roll the die once for each crewman and apply any required modifiers\addedin{1C}{1C-tables}{\ from Table~\ref{table:gloc-avoidance}}. A result of 1 or less results in GLOC. \deletedin{1C}{1C-tables}{The GLOC roll is modified for the following:
 
 \begin{itemize}
@@ -368,26 +356,15 @@ Roll the die once for each crewman and apply any required modifiers\addedin{1C}{
     \item Crewmember fitness (variable) = $+/-1$ (See Chapter 18)
 \end{itemize}
 }
-}{
-Roll the die once for each crewmember and apply any required modifiers\addedin{1C}{1C-tables}{\ from Table~\ref{table:gloc-avoidance}}. A result of $1-$ results in GLOC. 
-}
 
-\CX{
 \paragraph{GLOC Cycle.} The GLOC check cycle continues with increasing probability of unconsciousness until the aircraft does no ET or BT turn rates in a game turn.
-}{
-\paragraph{GLOC Cycle.} The GLOC check cycle continues with increasing probability of unconsciousness until the aircraft does not use the ET or BT turn rates in a game turn, either explicitly or implicitly by carrying them into the game turn.
-}
 
-\paragraph{GLOC Duration and Recovery.} \CX{
+\paragraph{GLOC Duration and Recovery.} 
 \addedin{1C}{1C-tables}{Table~\ref{table:gloc-recovery} summarizes the procedure for recovery from GLOC.} GLOC normally lasts from the instant it occurs until the affected crewmember recovers. Affected crewmembers automatically recover in the Admin Phase of the second game turn following the one in which GLOC occurred (If a pilot blacked-out during turn 5, recovery would occur in the Admin Phase of turn 7).
 
 \paragraph{Early Recovery.} A crewmember may recover from GLOC early. \notein{1B}{AWF: APJ 21 QA has a comment on this, but it is superseded by the following change from the APJ 23 errata.}\changedin{1B}{1B-apj-23-errata}{Unconscious crewmembers with excellent fitness, or unconscious crewmembers in multi-crew aircraft in which another member is not GLOC'd, are eligible for early recovery.  Check for early recovery during the Admin Phase of the game turn following the one in which GLOC occurred. }{All GLOC'd crewmembers are eligible for early recovery in the admin phase of the turn following the one in which GLOC occurred. Additionally, GLOC'd crew having excellent fitness or in a multi-crew aircraft where another crewman is not GLOC'd are eligible for early recovery in the admin phase of the turn in which GLOC occurred.} To check for early recovery, roll the die: the crewmembers recover on a result of 4 or less (no modifiers apply).
-}{
-If a crewmember has excellent fitness or is in a multi-crew aircraft with another member who is not suffering from GLOC, they may check for an early recovery in the aircraft administrative phases of the game turn in which GLOC occurred and the following game turn. Early recovery requires a roll of $4-$ with no modifiers. All crewmembers recover automatically in the aircraft administrative phase of the second game turn following the one in which GLOC occurred. Table~\ref{table:gloc-recovery} summarizes the procedure for recovery from GLOC.
-}
 
 \paragraph{Effects Of GLOC.} 
-\CX{
 An individual affected by GLOC is unconscious. The following procedures are followed depending on which crewmember is unconscious:
 
 \begin{itemize}
@@ -398,19 +375,6 @@ An individual affected by GLOC is unconscious. The following procedures are foll
 
     \item\itemparagraph{Ejection.} If the pilot of a multi-crew aircraft is GLOC'd, and randomized flight of the aircraft will result in an inevitable crash, a conscious crewmember can eject himself and all other crewmembers.
 
-\end{itemize}
-}{
-A crewmember affected by GLOC is unconscious. The effects depend on which crewmember is unconscious:
-
-\begin{itemize}
-
-    \item\itemparagraph{Unconscious Crewmember.} An unconscious crewmember may not padlock or participate in visual sighting (see rule \ref{rule:visual-sighting}) and may not eject themselves or bale out.
-
-    \item\itemparagraph{Unconscious Pilot.} The aircraft's flight is randomized and controlled by Table~\ref{table:gloc-flight}. If the pilot becomes unconscious when the aircraft still has FPs to use, roll on the table to finish the aircraft's move. Roll the die on subsequent game turns until the pilot recovers or is ejected or the aircraft is destroyed.
-
-    \item\itemparagraph{Unconscious Non-Pilot Crewmember.} The efforts of that crewmember are lost until he recovers. If the unconscious crewmember is normally the radar operator, the radar cannot be used except in auto-track and boresight modes. The bombsight is degraded by one level (but never to less than manual). Multi-crew sighting and any other multi-crew benefits are lost.
-
-    \item\itemparagraph{Ejection.} If the pilot of a multi-crew aircraft suffers GLOC, and randomized flight of the aircraft will result in an inevitable crash, a conscious crewmember can eject themselves and all other crewmembers.
 \end{itemize}
 }
 
