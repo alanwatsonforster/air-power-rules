@@ -77,12 +77,12 @@ An aircraft expends vertical FPs (VFPs) to gain or lose altitude levels. The amo
 \paragraph{Requirements Extending Beyond a Game Turn.} Some game activities, like ground-attack aiming, are measured in fractions of an aircraft's speed. If such a period extends beyond a game turn, the higher speed in either game turn is used to compute the requirement.
 }
 
-\section{Types of Primary Flight}
+\section{Types of Flight}
 
 \CX{
 At the start of an aircraft's move, it must commit itself to one of the following three general types of flight: Level, Climbing or Diving. Write the appropriate code in the flight type line of the aircraft log. This represents the aircraft committing its nose to remain level, to move up, or to move down for the game turn. The flight type may not be changed until the next turn. Only one type of flight may be performed each turn and some restrictions may apply when switching from one type to another between turns.
 }{
-At the start of an aircraft's move, it must select one of the following three primary types of flight: level, climbing, or diving. These represent the aircraft committing its nose to remain level, to move up, or to move down for the game turn. Write the appropriate code in the primary flight type line of the aircraft log. Once selected, aircraft may not change its primary flight type until the next game turn. Aircraft may perform only one type of primary flight each game turn.
+At the start of an aircraft's move, it must select one of the following three types of flight: level, climbing, or diving. These represent the aircraft committing its nose to remain level, to move up, or to move down for the game turn. Write the appropriate code in the flight type line of the aircraft log. Once selected, aircraft may not change its flight type until the next game turn. Aircraft may perform only one type of flight each game turn.
 }
 
 \paragraph{Level Flight.} 
@@ -129,7 +129,7 @@ HFPs and VFPs may be expended in any order so long as any limits for the aircraf
 
 For example, assume an aircraft with a speed of 7.0 is allowed to expend up to two-thirds of its FPs as VFPs. The aircraft could have five VFPs but elects to use three VFPs and four HFPs. The aircraft may expend the seven FPs as follows: HHHHVVV, VVVHHHH, HHVVHVH, or in any other order. No matter in which order the FPs are used, the aircraft will only move horizontally four hexes as all the other FPs are VFPs that change altitude but do not move the aircraft horizontally.
 
-\relevantadvancedrules{\ref{rule:changing-primary-flight-type}.}
+\relevantadvancedrules{\ref{rule:changing-flight-type}.}
 
 }
 
@@ -137,7 +137,7 @@ For example, assume an aircraft with a speed of 7.0 is allowed to expend up to t
 \CX{
 Two other types of flight are possible. These are Stalled and Departed Flight (see rule 6.4).  An aircraft in abnormal flight may not select Level, Climbing, or Diving flight until recovered from the abnormal condition.
 }{
-Two other primary types of flight are possible. These are stalled flight and departed flight (see rule~\ref{rule:abnormal-flight}
+Two other types of flight are possible. These are stalled flight and departed flight (see rule~\ref{rule:abnormal-flight}
 ) and are considered abnormal flight. An aircraft in abnormal flight may not select level, climbing, or diving flight until it has recovered from the abnormal condition.
 }
 
@@ -177,7 +177,7 @@ For example, an aircraft with a start speed of 6.5 and a carried half FP from th
 }{
 \section{Order of HFPs and VFPs}
 }
-\label{rule:changing-primary-flight-type}
+\label{rule:changing-flight-type}
 
 \CX{
 To reflect the distance traveled forward while an aircraft is raising or lowering its nose, before any altitude change can occur, use the following restrictions.
