@@ -117,17 +117,19 @@ On the aircraft’s log sheet, note the new speed as its start speed for the nex
 
 For example, an aircraft has accumulated 6.0 APs and 3.0 DPs and so has a net of 3.0 APs. Its speed increases by 0.5, and it carries 1.0 AP forward to the next game turn. Another aircraft has accumulated 2.5 APs and 7.0 DPs, and so has a net of 4.5 DPs. Its speed is reduced by 1.0, and it carries 0.5 DP  forward to the next game turn. (These examples assume that the aircraft does not run up against the minimum and maximum speed limits.)
 
+\relevantadvancedrules{\ref{rule:supersonic-speed-effects}.}
+
 \paragraph{Speed Change Exceptions.}
 
 The rules for changing speed are subject to these exceptions at low and high speeds:
 
 \begin{itemize}
 
+\item If the new speed reaches 0.0, it is not reduced further.
+
 \item If the new speed increases to the maximum speed or dive speed, according to rule~\ref{rule:speed-limits}, it is not increased further.
 
 \item If the new speed exceeds the maximum speed or dive speed, according to rule~\ref{rule:speed-limits}, the aircraft suffers a fadeback.
-
-\item If the new speed reaches 0.0, it is not reduced further.
 
 \end{itemize}
 
@@ -153,23 +155,16 @@ The rules for carrying APs and DPs are subject to these exceptions at low and hi
     \input{tables/table-acceleration}
 }
 
-\AY{
-\paragraph{Supersonic Acceleration.}
-
-A supersonic aircraft (see rule \ref{rule:supersonic-speed-effects}) requires 3.0 APs (instead of 2.0 APs) to increase speed by 0.5. It decelerates normally.
-
-For example, a supersonic aircraft has accumulated 6.0 APs and 2.0 DPs, and so has a net of 4.0 APs. Its speed is increased by 0.5, and 1.0 AP is carried forward to the next game turn.
-
-}
-
 \CX{
 \paragraph{Rapid Accel Aircraft.} An aircraft noted on its ADC as being Rapid Accel capable is considered to be an exceptionally clean design which speeds up quicker than normal. This kind of aircraft receives a speed increase of 0.5 FP for each 1.5 accel points instead of each 2.0. It decelerates normally.
 
 Example: A rapid accel aircraft gaining 6.0 accel points and 2.0 decel points in a turn, would gain 1.0 of speed. Its net accel is 4.0 ($6.0 - 2.0$). Each 1.5 of Accel gains 0.5 speed so 3.0 Accel is good for the 1.0 speed increase and the left over 1.0 Accel would be carried to the next game turn.
 }{
-\paragraph{Rapid Acceleration Aircraft.} If an ADC notes that an aircraft has rapid acceleration (RA), it is an exceptionally clean design that speeds up quicker than normal. A subsonic RA aircraft requires only 1.5 APs (instead of the normal 2.0 APs) to increase speed by 0.5 FP and a supersonic RA aircraft requires only 2.0 APs (instead of the normal 3.0 APs) to increase speed by 0.5 FP. In both cases, it decelerates normally.
+\paragraph{Rapid Acceleration Aircraft.} If an ADC notes that an aircraft has rapid acceleration (RA), it is an exceptionally clean design that speeds up quicker than normal. A  RA aircraft requires only 1.5 APs (instead of the normal 2.0 APs) to increase speed by 0.5 FP. It decelerates normally.
 
-For example, a subsonic RA aircraft has accumulated 6.0 APs and 2.0 DPs, and so has a net of 4.0 APs. Its speed is increased by 1.0, and 1.0 AP is carried forward to the next game turn.
+For example, a RA aircraft has accumulated 6.0 APs and 2.0 DPs, and so has a net of 4.0 APs. Its speed is increased by 1.0, and 1.0 AP is carried forward to the next game turn.
+
+\relevantadvancedrules{\ref{rule:supersonic-speed-effects}.}
 }
 \DX{
 Reminder:  Do not confuse Accel and Decel points with \changedin{1B}{1B-apj-23-errata}{speed}{flight} points. They are separate things.
@@ -192,12 +187,12 @@ In the game, the thrust produced by an aircraft's engines results in the aircraf
 
 At the beginning of each aircraft's move, the player must select one of the allowed power settings and determine the number of APs the aircraft will receive. If a new setting is not selected, the power setting and number of APs from the previous game turn remains in effect. Note the selected power setting code and the number of APs in the aircraft log.
 
-\paragraph{Power Settings.} The four power settings of jet engines and their codes are: idle (I), normal (N), military (M), and afterburner (AB).
+\paragraph{Jet Aircraft.} The four power settings of jet aircraft and their codes are: idle (I), normal (N), military (M), and afterburner (AB).
 
 \begin{itemize}
     \item\itemparagraph{Idle.} Idle power is the minimum setting that will keep a jet engine functioning. An aircraft using idle power receives the DPs given in the idle power row of the power chart on the ADC for the aircraft's configuration.
 
-    (In earlier ADCs, the idle power row is labeled “Idle FP” rather than “Idle Dec.”, and the values should be doubled to obtain the corresponding number of DPs.)
+    %(In earlier ADCs, the idle power row is labeled “Idle FP” rather than “Idle Dec.”, and the values should be doubled to obtain the corresponding number of DPs.)
 
     \item\itemparagraph{Normal.} Normal power is an economic setting used to conserve fuel and increase range. It provides enough thrust to maintain an aircraft's current speed up to its cruise speed, provided no drag-producing turns, maneuvers, or climbs are performed. No APs are received.
 
@@ -208,25 +203,28 @@ At the beginning of each aircraft's move, the player must select one of the allo
 
 \end{itemize}
 
-\paragraph{Changing Power Settings.}\label{rule:rapid-power-response} A jet aircraft is normally limited in increasing its power setting from game turn to game turn. Normal aircraft may safely increase power by one or two levels per game turn. For example, they may safely increase power from idle to military but not from idle to afterburner. Normal aircraft may increase power from idle to afterburner at the risk of flaming out (see rule~\ref{rule:engine-flame-outs}). 
-
-If an ADC notes that an aircraft has rapid power response (RPR), it may safely increase power by any amount each turn. 
-
-Aircraft may decrease their power setting without limit or risk. 
-
-\paragraph{Insufficient Power Above Cruise Speed.} If an aircraft uses idle or normal power, and its speed exceeds its listed cruise speed, it receives one DP in addition to any others received that turn.
+\relevantadvancedrules{\ref{rule:engine-flame-outs} and \ref{rule:loss-of-thrust-with-altitude-and-speed}.}
 
 }
 
 \addedin{2B}{2B-propeller-aircraft}{
 \paragraph{Propeller Aircraft.}
-The four power settings of the engine of a propellor aircraft (with either reciprocating and turboprop engines) and their code are: idle (I), normal (N), half-throttle (HT), and full-throttle (FT). 
+The four power settings of the propeller aircraft (with either reciprocating and turboprop engines) and their code are: idle (I), normal (N), half-throttle (HT), and full-throttle (FT). 
 
-The idle and normal settings have the same behavior as those of jet engines. 
+\begin{itemize}
+\item\itemparagraph{Idle and Normal.} The idle and normal settings have the same behavior as those of jet aircraft. 
 
-If the aircraft does not choose the idle or normal setting, it may choose any amount of APs between 0.0 and the maximum shown for the full-throttle setting. If the amount chosen is less than or equal to the half-throttle setting, the fuel consumption (rule~\ref{rule:fuel-consumption}) for half-throttle is used. Otherwise, the fuel-consumption for full-throttle is used. For all other purposes, the half-throttle and full-throttle settings are considered to be equivalent to military power.
+\item\itemparagraph{Half-Throttle and Full-Throttle.} If the aircraft does not choose the idle or normal setting, it may choose any amount of APs between 0.0 and the maximum shown for the full-throttle setting. If the amount chosen is less than or equal to the half-throttle setting, the fuel consumption (rule~\ref{rule:fuel-consumption}) for half-throttle is used. Otherwise, the fuel-consumption for full-throttle is used. For all other purposes, the half-throttle and full-throttle settings are considered to be equivalent to military power.
+\end{itemize}
 
-The ADC of a propellor aircraft may note that it has have its power reduced at high speed or altitude. Such reductions apply to both the half-throttle and full-throttle settings.
+\relevantadvancedrules{\ref{rule:loss-of-thrust-with-altitude-and-speed}.}
+
+}
+
+\AX{
+\paragraph{Insufficient Power Above Cruise Speed.} If an aircraft uses idle or normal power, and its speed exceeds its listed cruise speed, it receives one DP in addition to any others received that turn.
+
+\relevantadvancedrules{\ref{rule:cruise-speeds}.}
 }
 
 
@@ -244,7 +242,7 @@ Aircraft are restricted in the speeds they may use in normal flight. The minimum
 An aircraft must maintain a minimum speed or it will stall. The Minimum-Maximum Velocity Chart (MMVC) of the ADC shows the minimum allowed speeds in each altitude band for each aircraft configuration. This minimum speed is the smaller of the two numbers listed. An aircraft with a start speed below this minimum is stalled, and must check to see if it enters departed flight. Whether stalled or departed, it will use the abnormal flight procedures (see 6.4) instead of regular flight.
 }{
 \paragraph{Minimum Speed.} 
-An aircraft must maintain a minimum speed, or it will stall. The MMVC shows the minimum allowed speed in each altitude band for each configuration. This minimum speed is the smaller of the two numbers listed. An aircraft with a start speed below this minimum is stalled and must check to see if it enters departed flight. Whether stalled or departed, it will use the abnormal flight procedures (see rule~\ref{rule:abnormal-flight}) instead of normal flight.
+An aircraft must maintain a minimum speed, or it will stall. The MMVC shows the minimum allowed speed in each altitude band for each configuration. This minimum speed is the smaller of the two numbers listed. An aircraft with a start speed below this minimum is stalled and must check to see whether it enters stalled or departed flight. In either case, it will use the abnormal flight procedures (see rule~\ref{rule:abnormal-flight}) instead of normal flight.
 }
 
 \CX{
@@ -285,45 +283,56 @@ For example, an aircraft dived several levels on the previous game turn and has 
 \paragraph{Exceeding Dive Speed.} If a diving aircraft enters a new altitude band, its new speed calculated by rule~\ref{rule:speed-change} may be greater than the dive speed in the lower band. In this case, its new start speed is reduced to the dive speed in the lower band. \AY[3A-AP-carry-at-speed-limits]{The aircraft also carries neither APs not DPs forward into the next game turn.}
 }
 
+
+\CX{
 \section{Abnormal Flight (Stalls and Departures)}
 \label{rule:abnormal-flight}
+
+An aircraft which does not maintain sufficient speed stalls. A stalled aircraft rapidly loses altitude, but remains under minimal control. A stalled aircraft has a chance of going out of control meaning it departs controlled flight, in which it tumbles or spins uncontrollably earthward until it crashes or the pilot regains control.
+}{
+\section{Stalled and Departed Flight}
+\label{rule:abnormal-flight}
+
+An aircraft enters abnormal flight if it does not maintain its minimum speed (see rule \ref{rule:speed-limits}). If this occurs, it can either enter stalled flight or departed flight. A stalled aircraft rapidly loses altitude but remains under minimal control and will return to normal flight if it picks up enough speed. However, a departed aircraft tumbles or spins until the pilot regains control. In both cases, the aircraft loses altitude rapidly and can collide with the terrain.
+}
 
 \addedin{1C}{1C-tables}{
     \input{tables/table-departed-flight}
 }
 
-\CX{
-An aircraft which does not maintain sufficient speed stalls. A stalled aircraft rapidly loses altitude, but remains under minimal control. A stalled aircraft has a chance of going out of control meaning it departs controlled flight, in which it tumbles or spins uncontrollably earthward until it crashes or the pilot regains control.
-}{
-An aircraft stalls if it does not maintain its minimum speed (see~\ref{rule:speed-limits}) A stalled aircraft rapidly loses altitude but remains under minimal control. It has a chance of going out of control and entering a departed flight. If it does, it tumbles or spins uncontrollably earthward until it crashes or the pilot regains control.
-}
 
-\paragraph{Check for Departed Flight.} 
+
 \CX{
+\paragraph{Check for Departed Flight.} 
 If the Start speed for an aircraft is less than its minimum allowed speed at the beginning of a turn, the aircraft is stalled. All stalled aircraft must check to see if they depart from controlled flight. During the Stalled Aircraft Phase, roll the die once for each stalled aircraft and apply any appropriate modifiers \changedin{1C}{1C-tables}{(see play aid tables)}{from Table~\ref{table:departed-flight-avoidance}}. If the result is 5 or less, the aircraft enters Departed Flight; otherwise, it remains in Stalled Flight.
 }{
-If the start speed of an aircraft is less than its minimum speed, it is stalled. All stalled aircraft must check to see if they depart from controlled flight. During the stalled aircraft phase, roll the die once for each stalled aircraft and apply any appropriate modifiers \changedin{1C}{1C-tables}{(see play aid tables)}{from Table~\ref{table:departed-flight-avoidance}}. On a result of $5-$, the aircraft enters departed flight; otherwise, it remains in stalled flight.
+\paragraph{Entering Stalled Flight.} 
+If the start speed of an aircraft is less than its minimum speed, it enters stalled flight. 
+
+\paragraph{Entering Departed Flight.} 
+Each game turn including the one in which it enters stalled flight, all aircraft in stalled flight must check to see if they enter departed flight. In the stalled aircraft phase, roll the die once for each stalled aircraft and apply any appropriate modifiers \changedin{1C}{1C-tables}{(see play aid tables)}{from Table~\ref{table:departed-flight-avoidance}}. If the ADC notes that an aircraft has fly-by-wire controls, it gains a modifier of $+2$. On a result of $5-$, the aircraft enters departed flight; otherwise, it remains in stalled flight.
 }
 
 \paragraph{Stalled Flight Procedure.} 
 \CX{
 Aircraft in stalled flight may not change map location or facing. An aircraft in stalled flight loses altitude levels equal to its start speed FPs plus one for each turn it remains stalled (round 0.5 up). The aircraft receives 0.5 accel points per altitude level lost on the first game turn of the stall (in subsequent game turns, it receives 1.0 Accel points per altitude level lost). Accel points may also be received from the aircraft power setting.
 }{
-An aircraft in stalled flight does not change its map location or facing, but loses altitude levels equal to its start speed in FPs (rounded up) plus one for each game turn it is stalled (i.e., plus one on the first game turn, plus two on the second, and so on). The aircraft receives 0.5 APs per altitude level lost on the first game turn of the stall and 1.0 APs per altitude level lost on subsequent game turns. APs may also be received from engine thrust.
+An aircraft in stalled flight does not change its map location or facing, but loses altitude levels equal to its start speed (rounded up) plus one for each game turn it is stalled (i.e., plus one on the first game turn, plus two on the second, and so on). The aircraft receives 0.5 APs per altitude level lost on the first game turn of the stall and 1.0 APs per altitude level lost on subsequent game turns. APs may also be received from engine thrust.
 }
 
-\paragraph{Ending A Stall.} 
 \CX{
+\paragraph{Ending A Stall.} 
 An aircraft will exit stalled flight at the beginning of the first turn in which its start speed is no longer less than its current minimum speed (which may have changed from the original stall speed due to altitude loss, or configuration change). Upon exiting the stall, the aircraft may only perform level flight or diving flight. It may go directly into a vertical dive if desired. \addedin{1B}{1B-apj-34-qa}{Any carried half FP is lost.} \addedin{2B}{2B-stalled}{The aircraft has a wings-level attitude.}
 }{
-An aircraft will exit stalled flight at the beginning of the first game turn in which its start speed is no longer less than its current minimum speed (which may have changed from the original stall speed due to altitude loss or configuration change). Upon exiting the stall, the aircraft may only perform level flight or diving flight. It may go directly into a vertical dive if desired. Any carried half FP is lost. The aircraft has a wings-level attitude.
+\paragraph{Recovering from Stalled Flight.} 
+An aircraft will exit stalled flight at the beginning of the first game turn in which its start speed is no longer less than its current minimum speed (which may have changed from the original minimum speed due to altitude loss). Upon exiting the stall, the aircraft may only perform level flight or diving flight. It may go directly into a vertical dive if desired. Any carried half FP is lost. The aircraft has a wings-level attitude.
+
+\relevantadvancedrules{\ref{rule:aircraft-configuration}.}
 }
 
+\DX{
 \paragraph{Configuration Effects.}
-\CX{
 Configuration has an effect on stall speed. An aircraft may jettison external stores in order to reduce its configuration from DT to 1/2 or CL, or from 1/2 to CL. This change in configuration may change the aircraft's stall speed helping it to recover sooner.
-}{
-An aircraft may jettison external stores to reduce its configuration from DT to 1/2 or CL or from 1/2 to CL. This may change the aircraft's stall speed, helping it recover sooner.
 }
 
 \paragraph{Departed Flight Procedure.} 
@@ -354,7 +363,7 @@ While departed, the aircraft changes facing randomly as follows:
 
 \end{itemize}
 
-An aircraft in departed flight loses altitude levels equal to its start speed in FPs (rounded up) plus two for each game turn it is departed (i.e., plus two on the first game turn, plus four on the second, and so on)
+An aircraft in departed flight loses altitude levels equal to its start speed (rounded up) plus two for each game turn it is departed (i.e., plus two on the first game turn, plus four on the second, and so on)
 
 The aircraft's speed does not change while in departed flight, and all APs and DPs are ignored. Engine thrust does not aid recovery or change the speed. Aircraft that enter departed flight with a power setting of afterburner or military risk a flame-out.
 }
@@ -365,7 +374,7 @@ During the Stalled Aircraft phase of each turn, each departed aircraft checks to
 
 If the aircraft recovers, it may resume normal flight. Start speed is automatically minimum speed (from the MMVC) or the speed at which it departed (whichever is greater). On the turn of recovery, an aircraft may only choose diving flight (vertical dives are allowed). Exception: a High Pitch Rate capable aircraft may choose level flight. \addedin{1B}{1B-apj-35-qa}{The aircraft recovers to a wings level attitude.} \addedin{1B}{1B-apj-34-qa}{Any carried half FP is lost.} \addedin{2B}{2B-departed}{Any carried APs or DPs are lost.}
 }{
-During the stalled aircraft phase of each game turn, each departed aircraft checks to see if it recovers from departed flight. Roll a die and apply any appropriate modifiers\addedin{1C}{1C-tables}{\ from Table~\ref{table:departed-flight-recovery}}. If the result is $6-$, the aircraft recovers; otherwise, it remains in departed flight.
+During the stalled aircraft phase of each game turn, each departed aircraft checks to see if it recovers from departed flight. Roll a die and apply any appropriate modifiers\addedin{1C}{1C-tables}{\ from Table~\ref{table:departed-flight-recovery}}. If the ADC notes that an aircraft has fly-by-wire controls, it gains a modifier of $-2$. If the result is $6-$, the aircraft recovers; otherwise, it remains in departed flight.
 
 If the aircraft recovers, it may resume normal flight. Its start speed is its minimum speed or the speed at which it departed, whichever is greater. On the turn of recovery, an aircraft may only choose diving flight, including a vertical dive, unless it is an HPR aircraft, in which case it can also choose level flight. The aircraft recovers to a wings-level attitude. Any carried half FP is lost. Any carried APs or DPs are lost.
 }
@@ -394,8 +403,6 @@ Most jet aircraft and some propellor aircraft are equipped with speedbrakes. Spe
 }{
 Most jet aircraft and some propellor aircraft are equipped with speedbrakes. At the start of each aircraft’s move, when the engine power setting and APs are selected, an aircraft may choose to receive DPs up to the maximum listed on the speedbrake row of the power chart on the ADC. The deceleration from speedbrakes is in addition to any other DPs received by the aircraft.
 }
-
-(In earlier ADCs, the speedbrake row is labeled “Spbr.\ FP” rather than “Spbr.\ Dec.”, and the values should be doubled to obtain the corresponding number of DPs.)
 }
 
 \section{Supersonic Speed Effects}
@@ -470,7 +477,7 @@ An aircraft flying at M1 or faster is in supersonic flight and is subject to the
 }{
 \begin{itemize}
 
-   \item It requires 3 APs per 0.5 of speed gain, unless it is has rapid-acceleration, in which case it requires 2 APs per 0.5 of speed gain.
+   \item It requires 3 APs per 0.5 of speed gain, unless it is has rapid acceleration, in which case it requires 2 APs per 0.5 of speed gain. For example, a supersonic aircraft without rapid acceleration has accumulated 6.0 APs and 2.0 DPs, and so has a net of 4.0 APs. Its speed is increased by 0.5, and 1.0 AP is carried forward to the next game turn. If it had rapid acceleration, its speed would increase by 1.0, and 0.0 AP would be carried forward to the next game turn.
 
     \item If it uses idle or normal power, it suffers an automatic and immediate flame-out (see \ref{rule:engine-flame-outs}).
 
@@ -569,6 +576,19 @@ For other purposes, an aircraft is in supersonic flight if its speed is greater 
 \paragraph{Supersonic Effects On Climb Capability.} At supersonic speeds reduce the aircraft's CCC numbers to 2/3ds that listed due to shock wave effects on wing lift. (The wings are less efficient due to shifting of aerodynamic center of lift).
 }
 
+\addedin{2A}{2A-cruise}{\section{Realistic Cruise Speeds} 
+\label{rule:cruise-speeds}
+
+An aircraft's cruise speed depends on its configuration:
+\begin{itemize}
+    \item If its configuration is CL, use the cruise speed given on its ADC.
+    \item If its configuration is $1/2$, use the cruise speed on its ADC reduced by 0.5. 
+    \item If its configuration is DT, use the cruise speed on its ADC reduced by 1.0.
+\end{itemize} 
+
+\addedin{2B}{AWF}{If an aircraft uses idle or normal power, the determination of whether it receives DPs for being above the cruise speed uses its configuration at the start of the game turn.}
+}
+
 \section{Engine Flame-Outs}
 \label{rule:engine-flame-outs}
 
@@ -577,6 +597,10 @@ Rapid throttle movements or uncontrolled yaw rates can flame-out jet engines whi
 }{
 A jet engine can suffer a flame-out if its air supply is disturbed or inadequate. This can be caused by using low engine power at supersonic speeds, rapid throttle movements, uncontrolled yaw rates, and excess altitude. Flamed-out engines can often be relit.
 }
+
+\paragraph{Changing Power Settings.}\label{rule:rapid-power-response} A jet aircraft is normally limited in increasing its power setting from game turn to game turn. Normal aircraft may safely increase power by one or two levels per game turn. For example, they may safely increase power from idle to military but not from idle to afterburner. Normal aircraft may increase power from idle to afterburner at the risk of flaming out (see rule~\ref{rule:engine-flame-outs}). If an ADC notes that an aircraft has rapid power response (RPR), it may safely increase power by any amount each turn. 
+
+Propeller aircraft may increase their power settings without limit or risk. Jet and propeller may decrease their power setting without limit or risk. 
 
 \CX{
 \paragraph{When Does A Jet Flame-Out?} An aircraft may experience a flame-out if:
@@ -647,24 +671,11 @@ If the attempt is successful, the engine can function normally again. It is cons
 If the third attempt fails, the engine is permanently flamed out; no more attempts at relighting it are permitted. (The pilot of a single-engine jet might consider reading rule~\ref{rule:ejections-and-bail-outs}.)
 }
 
-\addedin{2A}{2A-cruise}{\section{Realistic Cruise Speeds} 
-\label{rule:cruise-speeds}
-
-An aircraft's cruise speed depends on its configuration:
-\begin{itemize}
-    \item If its configuration is CL, use the cruise speed given on its ADC.
-    \item If its configuration is $1/2$, use the cruise speed on its ADC reduced by 0.5. 
-    \item If its configuration is DT, use the cruise speed on its ADC reduced by 1.0.
-\end{itemize} 
-
-\addedin{2B}{AWF}{If an aircraft uses idle or normal power, the determination of whether it receives DPs for being above the cruise speed uses its configuration at the start of the game turn.}
-}
-
 \AX{
-\section{Loss of Thrust with Altitude}
-\label{rule:loss-of-thrust-with-altitude}
+\section{Loss of Thrust with Altitude and Speed}
+\label{rule:loss-of-thrust-with-altitude-and-speed}
 
-Jet engines lose thrust in the thinner air at high altitudes. To reflect this, use the following:
+\paragraph{Jet Aircraft.} Jet engines lose thrust in the thinner air at high altitudes. To reflect this, use the following:
 
 \begin{itemize}
 
@@ -676,7 +687,10 @@ Jet engines lose thrust in the thinner air at high altitudes. To reflect this, u
 
 Use Table~\ref{table:fractions} to calculate the reduced thrust.
 
-\paragraph{High-Altitude Engines.} Some aircraft have engines designed specially for high-altitude flight. If an ADC notes that an aircraft has high-altitude engines (HAE), it ignores this rule.
+Some aircraft have engines designed specially for high-altitude flight. If an ADC notes that an aircraft has high-altitude engines (HAE), it ignores this rule.
+
+\paragraph{Propeller Aircraft.} Propeller engines lose thrust in the thinner air at high altitudes and also at high speeds. The ADC of a propellor aircraft may note that it has have its power reduced at high speed or altitude. Such reductions apply to both the half-throttle and full-throttle settings.
+
 }
 
 \end{advancedrules}

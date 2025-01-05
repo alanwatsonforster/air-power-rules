@@ -1,9 +1,16 @@
 \begin{onecolumntablefloat}[tp]
 
+\CX{
+
 \begin{onecolumntable}
 \tablecaption{table:departed-flight-avoidance}{\protect\CX{Avoiding Departed Flight Modifiers}{Entering Departed Flight.}}
 \begin{tabularx}{0.8\linewidth}{Xl}
+Situation&Modifier&Rule\\
 \toprule
+\multicolumn{2}{c}{Aircraft}\\
+\midrule
+Fly-by-wire             &$+2$\\
+\midrule
 \multicolumn{2}{c}{Pilot}\\
 \midrule
 Veteran                 &$+1$\\
@@ -12,15 +19,11 @@ Green                   &$-2$\\
 Sierra Hotel            &$+1$\\
 Excellent confidence    &$+1$\\
 Poor confidence         &$-1$\\
-\midrule
-\multicolumn{2}{c}{Aircraft}\\
-\midrule
-Fly-by-wire             &$+2$\\
 \bottomrule
 \end{tabularx}
 \AX{
 \begin{tablenote}{0.8\linewidth}
-Stalled aircraft enter departed flight on a die roll of $5-$. See rule~\ref{rule:abnormal-flight}.
+Stalled aircraft enter departed flight on a die roll of $5-$ (see rule~\ref{rule:abnormal-flight}).
 \end{tablenote}
 }
 \end{onecolumntable}
@@ -44,11 +47,67 @@ Fly-by-wire\DX{\addedin{2B}{2B-disoriented-fbw-modifier}{\tablenotemark{\dagger}
 \end{tabularx}
 \begin{tablenote}{0.8\linewidth}
 \AX{
-Departed aircraft recover on a die roll of $6-$. See rule~\ref{rule:abnormal-flight}.\\
+Departed aircraft recover on a die roll of $6-$. See rule~\ref{rule:abnormal-flight}. $^*$ Advanced rule. $^a$ The ADC will state whether an aircraft is fly-be-wire.\\
 \addlinespace
 }
 \DX{\addedin{2B}{2B-disoriented-fbw-modifier}{\tablenotetext{\dagger}{Not applicable to recovery from disorientation.}}}
 \end{tablenote}
 \end{onecolumntable}
+
+}{
+
+\begin{onecolumntable}
+\tablecaption{table:departed-flight-avoidance}{\protect\CX{Avoiding Departed Flight Modifiers}{Entering Departed Flight.}}
+\begin{tabularx}{0.8\linewidth}{Xll}
+Situation&Modifier&Rule\\
+\toprule
+\multicolumn{3}{c}{Aircraft}\\
+\midrule
+Fly-by-wire$^a$             &$+2$&\ref{rule:abnormal-flight}\\
+\midrule
+\multicolumn{3}{c}{Pilot}\\
+\midrule
+Veteran                 &$+1$&\ref{rule:crew-ability-effects}$^*$\\
+Novice                  &$-1$&\ref{rule:crew-ability-effects}$^*$\\
+Green                   &$-2$&\ref{rule:crew-ability-effects}$^*$\\
+Sierra Hotel            &$+1$&\ref{rule:crew-ability-effects}$^*$\\
+Excellent confidence    &$+1$&\ref{rule:crew-ability-effects}$^*$\\
+Poor confidence         &$-1$&\ref{rule:crew-ability-effects}$^*$\\
+\bottomrule
+\end{tabularx}
+\AX{
+\begin{tablenote}{0.8\linewidth}
+Stalled aircraft enter departed flight on a die roll of $5-$ (see rule~\ref{rule:abnormal-flight}). $^*$ Advanced rule. $^a$ The ADC will state whether an aircraft is fly-by-wire.
+\end{tablenote}
+}
+\end{onecolumntable}
+
+\vspace{\floatsep}
+
+\begin{onecolumntable}
+\tablecaption{table:departed-flight-recovery}{\protect\CX{Departed Flight Recovery Modifiers}{Recovering from Departed Flight.}}
+\begin{tabularx}{0.8\linewidth}{Xll}
+\toprule
+\multicolumn{3}{c}{Aircraft}\\
+\midrule
+Fly-by-wire$^a$         &$-2$&\ref{rule:abnormal-flight}\\
+\midrule
+\multicolumn{3}{c}{Pilot}\\
+\midrule
+Veteran                 &$-1$&\ref{rule:crew-ability-effects}$^*$\\
+Green                   &$+2$&\ref{rule:crew-ability-effects}$^*$\\
+Sierra Hotel            &$-1$&\ref{rule:crew-ability-effects}$^*$\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.8\linewidth}
+\AX{
+Departed aircraft recover on a die roll of $6-$ (see rule~\ref{rule:abnormal-flight}). $^*$ Advanced rule. $^a$ The ADC will state whether an aircraft is fly-by-wire.\\
+\addlinespace
+}
+\DX{\addedin{2B}{2B-disoriented-fbw-modifier}{\tablenotetext{\dagger}{Not applicable to recovery from disorientation.}}}
+\end{tablenote}
+\end{onecolumntable}
+
+}
 
 \end{onecolumntablefloat}
