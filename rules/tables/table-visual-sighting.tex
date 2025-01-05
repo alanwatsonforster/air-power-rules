@@ -34,22 +34,22 @@ No PLs if in Target Sun Arc.
 \end{tabularx}
 \end{onecolumntable}
 \end{onecolumntablefloat}
+
 }
 {
 
 \begin{twocolumntablefloat}
-
 \begin{twocolumntable}
 \tablecaption{table:maximum-sighting-range}{Maximum Sighting and Identification Ranges}
 \small
 \begin{tabularx}{0.7\linewidth}{llLl}
 \toprule
-Target&Process&Range&Rule\\
+Target&Process&Range$^a$&Rule\\
 \midrule
 \multicolumn{4}{c}{\wbox[l]{Identification during the Day}{Sighting during the Day}}\\
 \midrule
 Aircraft&Visual&$\mbox{visibility} \times 4$&\ref{rule:sighting-aircraft-and-missiles}\\
-Aircraft&Visual in haze&$\mbox{visibility} \times 2$&\ref{rule:haze-and-cloud-layers}$^*$\\
+\RDY[3A-sighting]{Aircraft&Visual in haze&$\mbox{visibility} \times 2$&\ref{rule:haze-and-cloud-layers}$^*$}
 Aircraft&VAS &$\mbox{visibility} \times 6$&\ref{rule:vas}$^*$\\
 Aircraft&VAS with radar assist&$\mbox{visibility} \times 10$&\ref{rule:vas}$^*$\\
 Aircraft, Contrailing&Visual&150&\ref{rule:contrail-layers}$^*$\\
@@ -75,23 +75,12 @@ Aircraft&VAS (on roll of $7-$)&$\mbox{visibility} \times 10$&\ref{rule:limited-i
 \midrule
 \multicolumn{4}{c}{\wbox[l]{Identification during the Day}{Identification at Night}}\\
 \midrule
-Aircraft&Visual&0$^a$&\ref{rule:night-and-adverse-weather-flight}$^*$\\
+Aircraft$^b$&Visual&0&\ref{rule:night-and-adverse-weather-flight}$^*$\\
 \bottomrule
 \end{tabularx}
-\CY[3A-haze]{
 \begin{tablenote}{0.7\linewidth}
-%\begin{itemize}
-$^*$ Advanced rule. $^a$ Identification at night requires the same position, facing, and speed as the target.
-%\end{itemize}
+$^*$ Advanced rule. $^a$ If searching visually for higher targets during the day, count each 4 levels difference in altitude as 1 hex of range.\AY[3A-sighting]{ If the searcher, target, or both are in haze (see advanced rule \ref{rule:haze-layers}), consider the sighting range to be twice the normal range.} $^b$ Identification at night requires the same position, facing, and speed as the target. 
 \end{tablenote}
-}{
-\begin{tablenote}{0.7\linewidth}
-\begin{itemize}
-   \item $^*$ Advanced rule.
-   \item If the searcher, target, or both are in haze (see advanced rule \ref{rule:haze}), consider the sighting range to be twice the normal range.
-\end{itemize}
-\end{tablenote}
-}
 \end{twocolumntable}
 
 \vspace{\floatsep}
@@ -112,7 +101,7 @@ Unconscious&0&\ref{rule:gloc}$^*$\\
 Disoriented&0&\ref{rule:disorientation}$^*$\\
 \bottomrule
 \end{tabularx}
-\begin{tablenote}{0.7\linewidth}
+\begin{tablenote}{0.8\linewidth}
 $^*$ Advanced rule.
 \end{tablenote}
 \end{onecolumntable}

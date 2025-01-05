@@ -100,10 +100,9 @@ If no friendly aircraft can participate, the unsighted target remains unsighted.
 
 \CY[3A-sighting]{Otherwise, determine which of the participating aircraft is the searcher. This will normally be the participating friendly aircraft closest to the target, but if two or more are equally close, their players may designate which is the searcher.}{Otherwise, the player may designate which of the participating aircraft is the searcher. This will often be the participating friendly aircraft closest to the target, but sometimes it is worthwhile to designate a further aircraft with more advantageous modifiers.} Roll a die and apply appropriate modifiers. The target is sighted if the modified result is less than or equal to the target's visibility number.
 
-
+\relevantadvancedrules{\ref{rule:gloc}, \ref{rule:disorientation}, and \ref{rule:sun}.}
 }
 
-\relevantadvancedrules{\ref{rule:gloc}, \ref{rule:disorientation}, and \ref{rule:sun}.}
 
 
 \input{tables/table-visual-sighting-modifiers}
@@ -174,9 +173,9 @@ If no friendly aircraft can participate, the unsighted target remains unsighted.
 The target position modifiers depend on the paint scheme of the target aircraft:
 \begin{itemize}
 \item\itemparagraph{Silver.} This corresponds aircraft in a natural-metal finish that produces glints.
-\IDY[3A-sighting]\itemparagraph{Uncamouflaged.} This corresponds to aircraft with an uncamouflaged paint scheme in light colors (for example, USN aircraft in Light Gull Grey and Ivory White in the 1960s) or dark gray or blue (for example, USN aircraft in Glossy Sea Blue in the early 1950s).
-\IAY[3A-sighting]\itemparagraph{Light Uncamouflaged.} This corresponds to aircraft with an uncamouflaged paint scheme in light colors (for example, USN aircraft in Light Gull Grey and Ivory White in the 1960s).
-\IAY[3A-sighting]\itemparagraph{Dark Uncamouflaged.} This corresponds to aircraft with an uncamouflaged paint scheme in dark gray or blue (for example, USN aircraft in Glossy Sea Blue in the early 1950s).
+\IDY[3A-sighting]{\itemparagraph{Uncamouflaged.} This corresponds to aircraft with an uncamouflaged paint scheme in light colors (for example, USN aircraft in Light Gull Grey and Ivory White in the 1960s) or dark gray or blue (for example, USN aircraft in Glossy Sea Blue in the early 1950s).}
+\IAY[3A-sighting]{\itemparagraph{Light Uncamouflaged.} This corresponds to aircraft with an uncamouflaged paint scheme in light colors (for example, USN aircraft in Light Gull Grey and Ivory White in the 1960s).}
+\IAY[3A-sighting]{\itemparagraph{Dark Uncamouflaged.} This corresponds to aircraft with an uncamouflaged paint scheme in dark gray or blue (for example, USN aircraft in Glossy Sea Blue in the early 1950s).}
 \item\itemparagraph{Camouflaged.} This corresponds to aircraft with an camouflaged paint scheme appropriate for the zone.
 \item\itemparagraph{Low-Visibility Gray.} This corresponds to aircraft with a low-visibility gray paint scheme.
 \end{itemize}
@@ -444,22 +443,14 @@ After the lock-on attempts are resolved, if any succeeded, the aircraft loses al
 
 \paragraph{Maintaining IRSTS Detections and Lock-Ons.} IRSTS detections or lock-ons are maintained provided the target satisfies the arc and range requirements for detection at the start of each subsequent Radar Search and Lock-On Phase and, if the aircraft has a single pilot, provided the pilot does not use radar.
 
-\paragraph{IRSTS Lock-on Sighting Benefits.} An IRSTS can provide a \emph{detection} of the target aircraft but does not by itself \emph{sight} the target. Nevertheless, an IRSTS can aid in subsequent sighting attempts. 
-
-When searching for a locked-on target, an aircraft with a HUD interface receives the HUD modifier and can attempt visual sighting at night to twice the normal range.
-
 \paragraph{Sighting Effects.}
-If an aircraft has HUD interface technology and has a radar or IRSTS track (see rule  \ref{rule:irsts} or \ref{rule:air-to-air-radar}) on a target aircraft in their \arcrange{180}{+} \CY[3A-combined-arcs]{arcs}{combined arcs}, they gain the following sighting benefits benefits:
+An IRSTS can provide a \emph{detection} of the target aircraft but does not by itself \emph{sight} the target. Nevertheless, an IRSTS can aid in subsequent sighting attempts. 
 
 \begin{itemize}
-
-\item\itemparagraph{Sighting Roll Modifier.}
-Apply a $-1$ modifier to the sighting roll, in addition to the $-1$ modifier for having a detection or track. This modifier is applied only once regardless of how many different types of lock-ons the searcher has for the target.
-
-\item\itemparagraph{Maximum Sighting Range.} The maximum sighting range at night is doubled (see advanced rule \ref{rule:night}).
-
+\item If an searcher has an IRSTS detection or track of a target aircraft, they gain a $-1$ sighting roll modifier. (This modifier can also be gained by having a radar detector or track or a RWR detection; it is applied only once regardless of the number of different types of detections or tracks the searcher has.)
+\item
+If an searcher has an IRSTS track of a target aircraft of a target aircraft in their \arcrange{180}{+} \CY[3A-combined-arcs]{arcs}{combined arcs} and also has HUD interface technology (see rule \ref{rule:hud}), they gain an additional $-1$ sighting roll modifier.  (This modifier can also be gained by having a radar track; it is applied only once regardless of the number of different types of tracks the searcher has.) Furthermore, the maximum sighting range at night for visual searches is doubled (see advanced rule \ref{rule:night}).
 \end{itemize}
-
 
 \paragraph{IRSTS Assist for IRMs.} An aircraft may launch IRMs at a locked-on target even if it is not sighted. An IRSTS-B/C allows IRMs to be launched at locked-on targets as if IRM uncage technology were available, even if the fighter does not have that technology.
 
