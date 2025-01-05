@@ -33,7 +33,9 @@ Five rates of turn are potentially available to an aircraft. Each rate of turn c
 \item BT: Break turn rate
 \item ET: Emergency turn rate
 \end{itemize}
-An aircraft's ADC, configuration, speed, altitude, and damage may restrict the available turn rates. Furthermore, if advanced rule~\ref{rule:crew-ability} is being used, green pilots may not use the ET rate.
+An aircraft's ADC, speed, altitude, and damage may restrict the available turn rates. 
+
+\relevantadvancedrules{\ref{rule:aircraft-configuration}, \ref{rule:turning-and-minimum-speeds} and \ref{rule:crew-ability-effects}.}
 }
 
 \paragraph{Turning Procedure.} 
@@ -81,6 +83,8 @@ An aircraft executes a turn by changing its facing by 30{\deg} in the sense of t
 Executing a turn does not cost any FPs; it is the result of using the specified number of FPs (or more) in flight after declaring the turn.
 }
 
+\relevantadvancedrules{\ref{rule:direction-of-bank}.}
+
 }
 
 \input{figures/figure-changing-facing}
@@ -91,6 +95,12 @@ An aircraft may stop a turn at any point in its flight prior to changing its fac
 }{
 An aircraft may stop a turn at any point in its flight prior to \CY[3A-turns]{changing its facing}{executing the turn and changing its facing}, but any FPs used toward the aborted turn may not be counted toward any other maneuvering requirements or new turns. The turn rate may be changed to a higher one when an aircraft changes facing change or stops turning. An aircraft may always expend more FPs than necessary before changing facing.
 }
+
+\AX{
+\paragraph{Turning Flight.} An aircraft is considered to be in \emph{turning flight} from the moment it declares a turn to the moment it either completes the turn by changes facing or aborts the turn.
+}
+
+
 \paragraph{Carrying a Turn.} 
 \CX{
 Sometimes a turn will not or cannot be completed in one game turn. In this case, the turn may be continued into the next game turn. The continuing turn should be noted on the Turn Carry row of the aircraft log with:
@@ -118,6 +128,8 @@ Sometimes a turn will not or cannot be completed in one game turn. In this case,
 
 For example, “2BTL” indicates the aircraft has expended 2 FPs on a break turn to the left.
 
+\relevantadvancedrules{\ref{rule:maneuvering-departures}.}
+
 \CX{
 \paragraph{Move to Face Requirement.} 
 An aircraft must move in order to change facing. If an aircraft ends a game turn with sufficient FPs expended to meet the turning requirements but does not face; it may not change facing in the next game turn until it expends at least one FP in flight. \addedin{1B}{1B-apj-36-errata}{If an aircraft is carrying a turn and the new turning requirement due to the new speed and altitude is equal to or less than what is has already expended, it must still expend one FP before changing facing} It may not face freely and then begin moving; it must move to face.
@@ -141,7 +153,7 @@ Note: An aircraft is assessed decel points for Turn Drag based on the highest tu
 
 \CY[3A-turns]{
 
-\paragraph{Turn-Induced Drag.} Turning creates drag, which causes deceleration. If an aircraft used turning flight in a game turn (whether it changed facing or not), consult the turn-drag chart on its ADC. Cross-index the highest turn rate used in the game turn and the configuration to determine the number of turn-drag DPs the aircraft receives. EZ turns are not listed; turns at EZ rates give no drag in the basic rules (although see advanced rules \ref{rule:supersonic-speed-effects} and \ref{rule:sustained-turning}). 
+\paragraph{Turn-Induced Drag.} Turning creates drag, which causes deceleration. If an aircraft used turning flight in a game turn (whether it changed facing or not), consult the turn-drag chart on its ADC. Cross-index the highest turn rate used in the game turn and the configuration to determine the number of turn-drag DPs the aircraft receives. EZ turns are not listed; turns at EZ rates give no drag. 
 
 If an aircraft used different turn rates in a game turn, it only receives turn-drag DPs for the highest turn rate used. 
 
@@ -149,9 +161,13 @@ An aircraft receives turn-drag DPs for turning flight, whether it changes facing
 
 A turn carried from one game turn to the next is considered for turn drag in both game turns. If it corresponds to the highest turn rate during both game turns, the corresponding turn-drag DPs will be received in both game turns.
 
+\relevantadvancedrules{\ref{rule:supersonic-speed-effects} and \ref{rule:sustained-turning}.}
+
 }{
 
-\paragraph{Turn Drag.} Turning creates drag, which causes deceleration. Each time an aircraft declares a turn, consult the turn drag chart on its ADC. Cross-index the turn rate and the configuration to determine the number of DPs the aircraft receives. EZ turns are not listed; turns at the EZ rate give no drag (although see advanced rule \ref{rule:supersonic-speed-effects} for supersonic EZ turns).
+\paragraph{Turn Drag.} Turning creates drag, which causes deceleration. Each time an aircraft declares a turn, consult the turn drag chart on its ADC. Cross-index the turn rate and the configuration to determine the number of DPs the aircraft receives. EZ turns are not listed; turns at the EZ rate give no drag.
+
+\relevantadvancedrules{\ref{rule:supersonic-speed-effects}.}
 
 \paragraph{Multiple Turns.}
 If the turn requirement is 60 or 90, the aircraft is carrying out a multiple turn. If the turn requirement is 60, the aircraft may declare and execute one or two turns for each FP expended. If the turn requirement is 90, the aircraft may declare and execute one, two, or three turns for each FP expended.
@@ -204,7 +220,7 @@ Whenever an aircraft changes facing more than once in a game turn, it is perform
 
 Special maneuvers which cause facing changes are not considered for purposes of the sustained turn penalty. \deletedin{2A}{2A-snap}{The snap turn facing change is counter toward determining sustained turn penalties.}
 }{
-Sustained Turn Drag. An aircraft performing a sustained turn receives a drag penalty of 1.0 DPs for each 30{\deg} of facing change in the second and subsequent facing changes, in addition to any DPs from turn drag. The aircraft receives sustained turn drag even if it uses mixed turn rates or turn rates that give 0 DPs of turn drag. Special maneuvers that cause facing changes are not considered for purposes of the sustained turn penalty.
+\paragraph{Sustained Turn Drag.} An aircraft performing a sustained turn receives a drag penalty of 1.0 DPs for each 30{\deg} of facing change in the second and subsequent facing changes, in addition to any DPs from turn drag. The aircraft receives sustained turn drag even if it uses mixed turn rates or turn rates that give 0 DPs of turn drag. Special maneuvers that cause facing changes are not considered for purposes of the sustained turn penalty.
 }
 
 \changedin{2A}{2A-sustained}{
