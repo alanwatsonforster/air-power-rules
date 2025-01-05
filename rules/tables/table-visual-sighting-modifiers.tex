@@ -1,5 +1,6 @@
 
 \CX{
+
 \begin{twocolumntablefloat}
 \begin{twocolumntable}
 \tablecaption{table:sighting-range-modifiers}{Relative Range Effects}
@@ -19,7 +20,6 @@ Die Roll Modifier&$+0$&$+1$&$+2$&$+3$&$+4$&$+5$&$+6$&$+8$\\
 \end{tablenote}
 \end{twocolumntable}
 \end{twocolumntablefloat}
-
 
 \begin{twocolumntablefloat}
 \begin{twocolumntable}
@@ -75,18 +75,18 @@ NOTE: All modifiers are cumulative. Disoriented or GLOC aircrew may not search.
 \end{onecolumntablefloat}
 
 }{
-\begin{twocolumntablefloat}[t]
-\begin{twocolumntable}
-\small
+
+\begin{twocolumntablefloat}
+
 \begin{multicols}{2}
 
 \begin{onecolumntable}
 \tablecaption{table:sighting-range-modifiers}{Sighting Modifiers for Range}
 \begin{tabularx}{0.7\linewidth}{CCC}
 \toprule
-\multicolumn{2}{c}{Range}\\
+\multicolumn{2}{c}{Range$^a$}\\
 \cmidrule{1-2}
-Visual&VAS&Modifier\\
+Visual&VAS$^*$&Modifier\\
 \midrule
 \phantom{0}0--3&&$-2$\\
 \phantom{0}4--6&&$-1$\\
@@ -101,19 +101,20 @@ Visual&VAS&Modifier\\
 \bottomrule
 \end{tabularx}
 \begin{tablenote}{0.7\linewidth}
-\begin{itemize}
-\item If searching for higher targets during the day, count each 4 levels difference in altitude as 1 hex of range.
+$^*$ Advanced rule \ref{rule:vas}.
+$^a$ If searching for higher targets during the day, count each 4 levels difference in altitude as 1 hex of range.
 \IAY[3A-sighting]{If the searcher, target, or both are in haze (see advanced rule \ref{rule:haze}), consider the sighting range to be twice the normal range.}
-\end{itemize}
 \end{tablenote}
 \end{onecolumntable}
+
+\vfill\null\columnbreak
 
 \CY[3A-uncamouflaged]{
 \begin{onecolumntable}
 \tablecaption{table:sighting-position-modifiers}{Sighting Modifiers for Target Aircraft Position}
 \begin{tabularx}{\linewidth}{lCCCCCC}
 \toprule
-&\vertical{Lower}&\vertical{Level}&\vertical{Higher}&\vertical{In Haze}&\vertical{In Stratus}&\vertical{\minitable{l}{Against\\Clouds}}\\
+&\vertical{Lower}&\vertical{Level}&\vertical{Higher}&\vertical{In Haze$^*$}&\vertical{In Stratus$^*$}&\vertical{\minitable{l}{Against\\Clouds$^*$}}\\
 \midrule
 Silver          &$-2$&$-1$&$-1$&$+1$&$+3$&$-1$\\
 Uncamouflaged   &$-1$&$+0$&$+0$&$+1$&$+3$&$-1$\\
@@ -122,8 +123,12 @@ Low-visibility Gray  &$+0$&$+1$&$+1$&$+2$&$+3$&$-1$\\
 Smoker&$-1$&$-2$&$-2$&---&---&---\\
 \bottomrule
 \end{tabularx}
+\begin{tablenote}{\linewidth}
+$^*$ Advanced rule \ref{rule:haze-and-cloud-layers}.
+\end{tablenote}
 \end{onecolumntable}
-}{
+}
+{
 \CY[3A-sighting]{
 \begin{onecolumntable}
 \tablecaption{table:sighting-position-modifiers}{Sighting Modifiers for Target Aircraft Position}
@@ -157,51 +162,54 @@ Low-Visibility Gray  &$+0$&$+0$&$+1$&$+1$&$-1$\\
 }
 }
 
-\columnbreak
+\end{multicols}
 
 \CY[3A-sighting]{
-\begin{onecolumntable}
+\begin{twocolumntable}
+\small
 \tablecaption{table:sighting-additional-modifiers}{Additional Sighting Modifiers}
-\begin{tabularx}{1.0\linewidth}{Xl}
+\begin{tabularx}{0.7\linewidth}{Xll}
 \toprule
-\multicolumn{2}{c}{Participating Aircraft}\\
+Situation&Modifier&Rule\\
 \midrule
-1 or 2&$+0$\\
-3 or 4&$-1$\\
-5 or 8&$-2$\\
-9+    &$-3$\\
+\multicolumn{3}{c}{Participating Aircraft}\\
 \midrule
-\multicolumn{2}{c}{Target}\\
+1 or 2&$+0$&\ref{rule:sighting-aircraft-and-missiles}\\
+3 or 4&$-1$&\ref{rule:sighting-aircraft-and-missiles}\\
+5 or 8&$-2$&\ref{rule:sighting-aircraft-and-missiles}\\
+9+    &$-3$&\ref{rule:sighting-aircraft-and-missiles}\\
 \midrule
-In the restricted arcs of all of the participants&$+2$\\
-Missile with a normal motor burning&$-3$\\
-Missile with a smokeless motor burning&$-1$\\
-Missile just launched from a sighted aircraft&$-2$\\
-Aircraft that just launched a sighted missile&$-2$\\
-Aircraft using a DDS flare program&$+$PPL\\
+\multicolumn{3}{c}{Target}\\
 \midrule
-\multicolumn{2}{c}{Searcher}\\
+In the restricted arcs of all of the participants&$+2$&\ref{rule:sighting-aircraft-and-missiles}\\
+Missile with a normal motor burning&$-3$&\ref{rule:sighting-aircraft-and-missiles}\\
+Missile with a smokeless motor burning&$-1$&\ref{rule:sighting-aircraft-and-missiles}\\
+Missile just launched from a sighted aircraft&$-2$&\ref{rule:sighting-aircraft-and-missiles}\\
+Aircraft that just launched a sighted missile&$-2$&\ref{rule:sighting-aircraft-and-missiles}\\
+Aircraft using a DDS flare program&$+$PPL&\ref{rule:dds}
+$^*$\\
 \midrule
-Veteran&$-1$\\
-Novice&$+1$\\
-Green&$+2$\\
-Excellent eyesight&$-1$\\
-Poor eyesight&$+1$\\
-Tactics master&$-1$\\
-Multi-crew aircraft&$-1$\\
-In stratus&$+2$\\
-Radar, IRSTS, or RWR detection&$-1$\\
-Radar or IRSTS lock-on and HUD interface&$-1$\\
+\multicolumn{3}{c}{Searcher}\\
+\midrule
+Veteran&$-1$&\ref{rule:crew-ability-effects}$^*$\\
+Novice&$+1$&\ref{rule:crew-ability-effects}$^*$\\
+Green&$+2$&\ref{rule:crew-ability-effects}$^*$\\
+Excellent eyesight$^a$&$-1$&\ref{rule:crew-ability-effects}$^*$\\
+Poor eyesight$^a$&$+1$&\ref{rule:crew-ability-effects}$^*$\\
+Tactics master&$-1$&\ref{rule:crew-ability-effects}$^*$\\
+Multi-crew aircraft$^a$&$-1$&\ref{rule:sighting-aircraft-and-missiles}\\
+In stratus&$+2$&\ref{rule:stratus-cloud-layers}\\
+Radar, IRSTS, or RWR detection$^b$&$-1$&\ref{rule:air-to-air-radar}, \ref{rule:irsts}, \& \ref{rule:rwr}\\
+Radar or IRSTS lock-on and HUD interface$^{ac}$&$-1$&\ref{rule:air-to-air-radar}, \ref{rule:irsts}, \& \ref{rule:hud}\\
 \bottomrule
 \end{tabularx}
-\begin{tablenote}{1.0\linewidth}
-\begin{itemize}
-    \item Eyesight, multi-crew, and HUD modifiers are not applicable to VAS searches.
-\end{itemize}
+\begin{tablenote}{0.7\linewidth}
+$^*$ Advanced rule. $^a$ Not applicable to VAS searches. $^b$ This modifier is applied only once regardless of how many different types of detections or lock-ons the searcher has for the target.  $^c$ This modifier is applied only once regardless of how many different types of lock-ons the searcher has for the target.
 \end{tablenote}
-\end{onecolumntable}
+\end{twocolumntable}
+
 }{
-\begin{onecolumntable}
+\begin{twocolumntable}
 \tablecaption{table:sighting-additional-modifiers}{Additional Sighting Modifiers}
 \begin{tabularx}{1.0\linewidth}{Xl}
 \toprule
@@ -244,7 +252,5 @@ Radar or IRSTS lock-on and HUD interface&$-1$\\
 \end{onecolumntable}
 }
 
-\end{multicols}
-\end{twocolumntable}
 \end{twocolumntablefloat}
 }

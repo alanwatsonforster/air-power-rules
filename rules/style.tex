@@ -200,6 +200,11 @@ minus \fontdimen4\font}
   \vspace{1ex}
 }
 
+\newcommand{\relevantadvancedrules}[1]{
+\begin{raggedleft} \emph{Relevant advanced rules: #1}\par
+\end{raggedleft}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Table of Contents
@@ -275,7 +280,7 @@ minus \fontdimen4\font}
 
 \newenvironment{onecolumntable}{
     \begin{minipage}{\columnwidth}
-    \centering
+    \centering\small
 }{
     \end{minipage}
     \vspace{\floatsep}
@@ -291,7 +296,7 @@ minus \fontdimen4\font}
 
 \newenvironment{twocolumntable}{
     \begin{minipage}{\linewidth}
-    \centering
+    \centering\small
 }{
     \end{minipage}
 }
