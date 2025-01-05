@@ -97,10 +97,12 @@
     \newcommand{\addedin}[3]{%
         \ifthisversion{#1}{#3}%
         \ifearlierversion{#1}{#3}%
+        \ignorespaces
     }
     \newcommand{\textaddedin}[3]{\addedin{#1}{#2}{#3}}
     \newcommand{\deletedin}[3]{%
         \iflaterversion{#1}{#3}%
+        \ignorespaces
     }
     \newcommand{\textdeletedin}[3]{\deletedin{#1}{#2}{#3}}
     \newcommand{\changedin}[4]{%
@@ -108,20 +110,25 @@
     }
     \newcommand{\textchangedin}[4]{\changedin{#1}{#2}{#3}{#4}}
     \newcommand{\notein}[2]{%
+        \ignorespaces
     }
     \newcommand{\itemaddedin}[3]{%
         \ifthisversion{#1}{\item #3}%
         \ifearlierversion{#1}{\item #3}%
+        \ignorespaces
     }
     \newcommand{\itemdeletedin}[3]{%
         \iflaterversion{#1}{\item #3}%
+        \ignorespaces
     }
     \newcommand{\tablerowaddedin}[3]{%
         \ifthisversion{#1}{#3\\}%
         \ifearlierversion{#1}{#3\\}%
+        \ignorespaces
     }
     \newcommand{\tablerowdeletedin}[3]{%
         \iflaterversion{#1}{#3\\}%
+        \ignorespaces
     }
 }
 
