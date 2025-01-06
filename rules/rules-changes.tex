@@ -51,48 +51,39 @@
     \newcommand{\addedin}[3]{%
         \ifthisversion{#1}{\added{#3}\endnote{Added in #2.}}%
         \ifearlierversion{#1}{#3}%
-        \ignorespaces
     }
     \newcommand{\textaddedin}[3]{%
         \ifthisversion{#1}{\textadded{#3}\endnote{Added in #2.}}%
         \ifearlierversion{#1}{#3}%
-        \ignorespaces
     }
     \newcommand{\deletedin}[3]{%
         \iflaterversion{#1}{#3}%
         \ifthisversion{#1}{\deleted{#3}\endnote{Deleted in #2.}}%
-        \ignorespaces
     }
     \newcommand{\textdeletedin}[3]{%
         \iflaterversion{#1}{#3}%
         \ifthisversion{#1}{\textdeleted{#3}\endnote{Deleted in #2.}}%
-        \ignorespaces
     }
     \newcommand{\changedin}[4]{%
         \iflaterversion{#1}{#3}%
         \ifthisversion{#1}{\deleted{#3} \added{#4}\endnote{Changed in #2.}}%
         \ifearlierversion{#1}{#4}%
-        \ignorespaces
     }
     \newcommand{\textchangedin}[4]{%
         \iflaterversion{#1}{#3}%
         \ifthisversion{#1}{\textdeleted{#3} \textadded{#4}\endnote{Changed in #2.}}%
         \ifearlierversion{#1}{#4}%
-        \ignorespaces
     }
     \newcommand{\notein}[2]{%
         \ifthisversion{#1}{\endnote{Note in #1: #2}}%
-        \ignorespaces
     }
     \newcommand{\itemaddedin}[3]{%
         \ifthisversion{#1}{\added{\item \added{#3}\endnote{Added in #2.}}}%
         \ifearlierversion{#1}{\item #3}%
-        \ignorespaces
     }
     \newcommand{\itemdeletedin}[3]{%
         \ifthisversion{#1}{\deleted{\item \deleted{#3}\endnote{Deleted in #2.}}}%
         \iflaterversion{#1}{\item #3}%
-        \ignorespaces
     }
     \newcommand{\tablerowaddedin}[3]{%
         \added{\scriptsize Next row added:\endnote{Added in #2.}}\\
@@ -110,12 +101,10 @@
     \newcommand{\addedin}[3]{%
         \ifthisversion{#1}{#3}%
         \ifearlierversion{#1}{#3}%
-        \ignorespaces
     }
     \newcommand{\textaddedin}[3]{\addedin{#1}{#2}{#3}}
     \newcommand{\deletedin}[3]{%
         \iflaterversion{#1}{#3}%
-        \ignorespaces
     }
     \newcommand{\textdeletedin}[3]{\deletedin{#1}{#2}{#3}}
     \newcommand{\changedin}[4]{%
@@ -123,21 +112,18 @@
     }
     \newcommand{\textchangedin}[4]{\changedin{#1}{#2}{#3}{#4}}
     \newcommand{\notein}[2]{%
-        \ignorespaces
     }
     \newcommand{\itemaddedin}[3]{%
         \ifthisversion{#1}{\item #3}%
         \ifearlierversion{#1}{\item #3}%
-        \ignorespaces
     }
     \newcommand{\itemdeletedin}[3]{%
         \iflaterversion{#1}{\item #3}%
-        \ignorespaces
     }
     \newcommand{\tablerowaddedin}[3]{%
         \ifthisversion{#1}{#3\\}%
         \ifearlierversion{#1}{#3\\}%
-        \ignorespaces
+
     }
     \newcommand{\tablerowdeletedin}[3]{%
         \iflaterversion{#1}{#3\\}%
