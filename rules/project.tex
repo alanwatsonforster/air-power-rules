@@ -358,7 +358,13 @@ Version 3A contains unauthoritaive major changes.
     
     Subsonic EZ turns still have zero drag, since at most speeds an aircraft can only execute at most one per game turn and so would not accrue the old penalty for sustained turns.
 
-    We similarly average the DPs for supersonic turns over two turns.
+    We average the old DPs per game turn for supersonic turns over two turns.
+    
+    \itemtag{3A-rolls} Each roll now gives the DPs in the ADC when it is declared. The additional drag for more than one roll is gone.
+    
+    The turn drag for rolls is the same as on the previous version. This is somewhat inconsistent with the approach taken for turns, were we average the old turn drag over two turns, and for supersonic rolls, where we average the old roll drag over two rolls.
+    
+    We average the old DPs per game turn for supersonic rolls over two rolls.
     
     \itemtag{3A-vertical-attacks} The $+1$ same-location vertical attack modifier also applies if the attacker is in level flight and the target is climbing or diving.
     
