@@ -678,7 +678,7 @@ Although IRSTS operates passively, it is in many ways similar to radar in that i
 
 \paragraph{IRSTS Detection.} The target is automatically detected its range is no more than the maximum detection range, which depends on the targets fuel consumption and aspect. For IRSTS-A/B, the maximum detection range is four times the number of fuel points used by the target at its current power setting (according to the fuel column in the power chart of the target’s ADC). For IRSTS-C, the maximum detection range is six times the number of fuel points. The maximum range is doubled if the IRSTS is used in the target’s \arcrange{30}{-} arc. 
 
-\AY[3A-irsts-weather]{IRSTS systems are not affected by haze (see advanced rule \ref{rule:night-and-weather}).}
+\AY[3A-irsts-weather]{IRSTS systems are not affected by haze (see advanced rule \ref{rule:haze-layers}).}
 
 \paragraph{IRSTS Lock-On.} An IRSTS-A/B may attempt to lock-on either the nearest detected target or the target with the highest fuel point use. For this purpose, the fuel use is doubled if the IRSTS is used in the target’s \arcrange{30}{-} \AY[3A-combined-arcs]{combined} arc. An IRSTS-C may attempt to lock-on up to six of the detected targets, with no restrictions on closeness or fuel usage.
 
@@ -694,7 +694,7 @@ An IRSTS can provide a \emph{detection} of the target aircraft but does not by i
 \begin{itemize}
 \item If an searcher has an IRSTS detection or track of a target aircraft, they gain a $-1$ sighting roll modifier. (This modifier can also be gained by having a radar detector or track or a RWR detection; it is applied only once regardless of the number of different types of detections or tracks the searcher has.)
 \item
-If an searcher has an IRSTS track of a target aircraft of a target aircraft in their \arcrange{180}{+} \CY[3A-combined-arcs]{arcs}{combined arcs} and also has HUD interface technology (see rule \ref{rule:hud}), they gain an additional $-1$ sighting roll modifier.  (This modifier can also be gained by having a radar track; it is applied only once regardless of the number of different types of tracks the searcher has.) Furthermore, the maximum sighting range at night for visual searches is doubled (see advanced rule \ref{rule:night}).
+If an searcher has an IRSTS track of a target aircraft of a target aircraft in their \arcrange{180}{+} \CY[3A-combined-arcs]{arcs}{combined arcs} and also has HUD interface technology (see rule \ref{rule:hud}), they gain an additional $-1$ sighting roll modifier.  (This modifier can also be gained by having a radar track; it is applied only once regardless of the number of different types of tracks the searcher has.) Furthermore, the maximum sighting range at night for visual searches is doubled (see advanced rule \ref{rule:combat-at-night}).
 \end{itemize}
 
 \paragraph{IRSTS Assist for IRMs.} An aircraft may launch IRMs at a locked-on target even if it is not sighted. An IRSTS-B/C allows IRMs to be launched at locked-on targets as if IRM uncage technology were available, even if the fighter does not have that technology.
