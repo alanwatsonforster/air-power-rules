@@ -67,7 +67,7 @@ Target using DDS Flare program&$+$PPL No.\\
 \bottomrule
 \end{tabularx}
 \begin{tablenote}{0.9\linewidth}
-\deletedin{2A}{2A-missile-sighting}{$^*$ does not apply to smokeless missiles.}
+\deletedin{2A}{2A-missile-sighting}{$^*$~does not apply to smokeless missiles.}
 
 NOTE: All modifiers are cumulative. Disoriented or GLOC aircrew may not search.
 \end{tablenote}
@@ -84,7 +84,7 @@ NOTE: All modifiers are cumulative. Disoriented or GLOC aircrew may not search.
 \tablecaption{table:sighting-range-modifiers}{Sighting Modifiers for Range}
 \begin{tabularx}{1.0\linewidth}{CCc}
 \toprule
-\multicolumn{2}{c}{Range$^a$}\\
+\multicolumn{2}{c}{Sighting Range$^a$}\\
 \cmidrule{1-2}
 Visual&VAS$^*$&Modifier\\
 \midrule
@@ -101,9 +101,9 @@ Visual&VAS$^*$&Modifier\\
 \bottomrule
 \end{tabularx}
 \begin{tablenote}{1.0\linewidth}
-$^*$ Advanced rule \ref{rule:vas}.
-$^a$ If searching for higher targets during the day, count each 4 levels difference in altitude as 1 hex of range.
-\AY[3A-sighting]{If the searcher, target, or both are in a haze layer, consider the sighting range to be twice the normal range (see advanced rule \ref{rule:haze-layers}).}
+$^*$~Advanced rule \ref{rule:vas}.
+$^a$~For higher targets during the day, count each 4 levels difference in altitude as 1 hex of range.
+\AY[3A-sighting]{If the searcher, target, or both are in a haze layer, the sighting range is twice the normal range (see advanced rule \ref{rule:haze-layers}).}
 \end{tablenote}
 \end{onecolumntable}
 
@@ -124,24 +124,24 @@ Smoker&$-1$&$-2$&$-2$&---&---&---\\
 \bottomrule
 \end{tabularx}
 \begin{tablenote}{1.0\linewidth}
-$^*$ Advanced rule \ref{rule:haze-and-cloud-layers}. $^a$~If applicable, the modifiers for being in a haze layer, in a stratus layer, and seen against clouds are cumulative with the other modifiers. $^b$~If an aircraft has an inappropriate camouflaged paint scheme for the zone (for example, a desert camouflage scheme in a temperate zone), it should use the uncamouflaged modifiers when seen against land. 
+$^*$~Advanced rules \ref{rule:haze-layers} and \ref{rule:cloud-layers}. $^a$~If applicable, the modifiers for being in a haze layer, in a stratus layer, and seen against clouds are cumulative with the other modifiers. $^b$~If an aircraft has an inappropriate camouflaged paint scheme, use the uncamouflaged modifiers when seen against land. 
 \end{tablenote}
 }
 {
-\tablecaption{table:sighting-position-modifiers}{Sighting Modifiers for Background}
+\tablecaption{table:sighting-position-modifiers}{Sighting Modifiers for Background$^a$}
 \begin{tabularx}{\linewidth}{lCCCCC}
 \toprule
-&\vertical{\minitable{l}{Against\\Land}}&\vertical{\minitable{l}{Against\\Water}}&\vertical{\minitable{l}{Level}}&\vertical{\minitable{l}{Against\\Sky}}&\vertical{\minitable{l}{Against\\Clouds$^{*a}$}}\\
+&\vertical{\minitable{l}{Against\\Land}}&\vertical{\minitable{l}{Against\\Water}}&\vertical{\minitable{l}{Level}}&\vertical{\minitable{l}{Against\\Sky}}&\vertical{\minitable{l}{Against\\Clouds$^{*b}$}}\\
 \midrule
 Silver               &$-2$&$-2$&$-1$&$-1$&$-2$\\
 Light Uncamouflaged  &$-1$&$-1$&$+0$&$+0$&$-2$\\
 Dark Uncamouflaged   &$+0$&$+1$&$+0$&$-1$&$-2$\\
-Camouflaged$^b$      &$+1$&$-1$&$+0$&$-1$&$-2$\\
+Camouflaged$^c$      &$+1$&$-1$&$+0$&$-1$&$-2$\\
 Low-Visibility Gray  &$+0$&$+0$&$+1$&$+1$&$-1$\\
 \bottomrule
 \end{tabularx}
 \begin{tablenote}{1.0\linewidth}
-$^*$ Advanced rule \ref{rule:haze-and-cloud-layers}. $^a$~If applicable, the modifier from being seen against a cloud layer replaces the other modifiers. $^b$~If an aircraft has an inappropriate camouflaged paint scheme for the zone (for example, a desert camouflage scheme in a temperate zone), it should use the light or dark modifiers when seen against land. 
+$^*$~Advanced rule. $^a$ Not applicable at night (see advanced rule \ref{rule:aircraft-at-night}). $^b$~If applicable, the modifier from being seen against a cloud layer replaces the other modifiers (see advanced rule \ref{rule:cloud-layers}). $^c$~If an aircraft has an inappropriate camouflaged paint scheme for the zone (for example, a desert camouflage scheme in a temperate zone), it should use the light or dark modifiers when seen against land. 
 \end{tablenote}
 }
 \end{onecolumntable}
@@ -166,30 +166,32 @@ Situation&Modifier&Rule\\
 \multicolumn{3}{c}{Target}\\
 \midrule
 In the restricted arcs of \CY[3A-sighting]{all of the participants}{the searcher}&$+2$&\ref{rule:sighting-aircraft-and-missiles}\\
+Aircraft that is smoking and level or highe r$^a$&$-2$&\ref{rule:sighting-aircraft-and-missiles}\\
+Aircraft that is smoking and lower $^a$&$-1$&\ref{rule:sighting-aircraft-and-missiles}\\
 Missile with a normal motor burning&$-3$&\ref{rule:sighting-aircraft-and-missiles}\\
 Missile with a smokeless motor burning&$-1$&\ref{rule:sighting-aircraft-and-missiles}\\
 Missile just launched from a sighted aircraft&$-2$&\ref{rule:sighting-aircraft-and-missiles}\\
 Aircraft that just launched a sighted missile&$-2$&\ref{rule:sighting-aircraft-and-missiles}\\
-\RAY[3A-sighting]{In a stratus cloud layer&$+3$&\ref{rule:stratus-cloud-layers}$^*$}
-\RAY[3A-sighting]{Below the highest cloud layer&$+1$&\ref{rule:common-cloud-layers}$^*$}
+\RAY[3A-sighting]{In a stratus cloud layer&$+3$&\ref{rule:cloud-layers}$^*$}
+\RAY[3A-sighting]{Below the highest dense cloud layer&$+1$&\ref{rule:cloud-layers}$^*$}
 Aircraft using a DDS flare program&$+$PPL&\ref{rule:dds}$^*$\\
 \midrule
 \multicolumn{3}{c}{Searcher}\\
 \midrule
-Multi-crew aircraft$^a$&$-1$&\ref{rule:sighting-aircraft-and-missiles}\\
+Multi-crew aircraft $^b$&$-1$&\ref{rule:sighting-aircraft-and-missiles}\\
 Veteran&$-1$&\ref{rule:crew-ability-effects}$^*$\\
 Novice&$+1$&\ref{rule:crew-ability-effects}$^*$\\
 Green&$+2$&\ref{rule:crew-ability-effects}$^*$\\
-Excellent eyesight$^a$&$-1$&\ref{rule:crew-ability-effects}$^*$\\
-Poor eyesight$^a$&$+1$&\ref{rule:crew-ability-effects}$^*$\\
+Excellent eyesight $^b$&$-1$&\ref{rule:crew-ability-effects}$^*$\\
+Poor eyesight $^b$&$+1$&\ref{rule:crew-ability-effects}$^*$\\
 Tactics master&$-1$&\ref{rule:crew-ability-effects}$^*$\\
-In a stratus cloud layer&$+2$&\ref{rule:stratus-cloud-layers}\\
-Radar, IRSTS, or RWR detection$^b$&$-1$&\ref{rule:air-to-air-radar}, \ref{rule:irsts}$^*$, \& \ref{rule:rwr}$^*$\\
-HUD interface and radar or IRSTS lock-on$^{ac}$&$-1$& \ref{rule:hud}$^*$, \ref{rule:air-to-air-radar}, \& \ref{rule:irsts}$^*$\\
+In a stratus cloud layer&$+2$&\ref{rule:cloud-layers}\\
+Radar, IRSTS, or RWR detection $^c$&$-1$&\ref{rule:air-to-air-radar}, \ref{rule:irsts}$^*$, \& \ref{rule:rwr}$^*$\\
+HUD interface and radar or IRSTS lock-on $^{bc}$&$-1$& \ref{rule:hud}$^*$, \ref{rule:air-to-air-radar}, \& \ref{rule:irsts}$^*$\\
 \bottomrule
 \end{tabularx}
 \begin{tablenote}{0.6\linewidth}
-$^*$~Advanced rule. $^a$~Not applicable to VAS searches. $^b$~This modifier is applied only once regardless of how many different types of detections or lock-ons the searcher has for the target.  $^c$~This modifier is applied only once regardless of how many different types of lock-ons the searcher has for the target.
+$^*$~Advanced rule. $^a$ Not applicable at night (see advanced rule \ref{rule:aircraft-at-night}). $^b$~Not applicable to VAS searches (see advanced rule \ref{rule:vas}). $^c$~Applied only once regardless of how many different types of detections or lock-ons the searcher has for the target.
 \end{tablenote}
 \end{twocolumntable}
 
