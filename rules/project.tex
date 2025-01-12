@@ -327,6 +327,8 @@ Version 2B contains unauthoritaive minor changes.
     
     \item{2B-aaa-sun-clutter} AAA units stacked with a FCR or with an integrated W-type FCR are not penalized for firing when in the Sun clutter of their target.
     
+    \item{2B-contrails-at-night} Missiles, as well as aircraft, that are contrailing and below the hightest cloud layer can also be sighted to a range of 6. In both cases, sighting is automatic.
+    
     \item{2B-tvir-optics} Haze does not reduce the sighting range for TV/IR optics or OPs. They may be used during the day (to see through haze) and at night.
     
     \item{2B-radar-bombing} The navigation range (or half the air-to-air search range) is used for the detection range. The attack range (or half the air-to-air tracking range) is used for the tracking range. I have added a procedure for lock-ons. I have added that a radar cannot simultaneously be used in the air-to-ground mode and air-to-air mode, and detections and tracks are lost when it switches from one mode to the other. I apply the same restrictions to the use of air-to-ground radar as air-to-air radar in normal mode (e.g., pilot-only aircraft cannot search if they used a HT or more).
@@ -380,13 +382,14 @@ Version 3A contains unauthoritaive major changes.
     
     The modifiers for light are the same as the original modifiers for uncamouflaged. The modifiers for “against land” and “against sea” are the same as the original modifiers for lower except that dark over sea is $+1$ (the same as camouflaged over land), dark over land is $+0$, and camouflaged over sea is $-1$.
 
-    
     \item
     If the searcher or target is in haze, the search range is considered to be doubled.
     
     \item
-    The $+2$ modifier applies if the target is in the restricted arc of the searcher, not all participating aircraft.
+    A $+2$ modifier applies if the target is in the restricted arc of the searcher, not all participating aircraft.
     
+    \item
+    A $+1$ modifier applies if the target is below the highest dense cloud layer.
     
     \end{itemize}
 

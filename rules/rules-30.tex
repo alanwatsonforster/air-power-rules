@@ -227,7 +227,7 @@ During the day, a contrailing missile can be sighted automatically to a sighting
 \item
 At night, a contrailing aircraft or missile that is \emph{above the highest cloud layer present} can be automatically sighted to a sighting range of 24. 
 
-\item At night, a contrailing aircraft that is \emph{not above the highest cloud layer present} can be sighted normally to a sighting range of 6.
+\item At night, a contrailing aircraft or missile that is \emph{not above the highest cloud layer present} can be automatically sighted to a sighting range of 6.
 \end{itemize}
 
 In all cases, the usual effects of haze and cloud layers on sighting apply.
@@ -349,11 +349,17 @@ The scenario notes may indicate night conditions. If not, they may be agreed on 
 
     \item IRMs may not be fired unless the target is visually sighted or an IRSTS or Radar Assist is used.
 
-    \item Visual sighting ranges for all aircraft is 2 hexes unless the target used AB power or is contrailing in which case the sighting range is 6. Sighting modifiers for paint scheme, relative altitude and smoking do not apply at night.
+    \itemdeletedin{2B}{2B-contrails-at-night}{Visual sighting ranges for all aircraft is 2 hexes unless the target \changedin{2B}{2B-contrails-at-night}{used AB power or is contrailing}{} in which case the sighting range is 6. Sighting modifiers for paint scheme, relative altitude and smoking do not apply at night.}
 
-    \item Missiles may only be sighted on the turn after launch and on each turn a sustainer is burning. The visibility numbers are halved and the Just Launched modifier does not apply.
+    \itemaddedin{2B}{2B-contrails-at-night}{Unless they are contrailing, visual sighting ranges for all aircraft is 2 hexes unless the target used AB power in which case the sighting range is 6. Sighting modifiers for paint scheme, relative altitude and smoking do not apply at night.}
+
+    \itemdeletedin{2B}{2B-contrails-at-night}{Missiles may only be sighted on the turn after launch and on each turn a sustainer is burning. The visibility numbers are halved and the Just Launched modifier does not apply.}
+    
+    \itemaddedin{2B}{2B-contrails-at-night}{Unless they are contrailing, missiles may only be sighted on the turn after launch and on each turn a sustainer is burning. The visibility numbers are halved and the Just Launched modifier does not apply.}
 
     \item Missiles or aircraft contrailing above the highest cloud layers are spotted automatically up to 24 hexes away due to moonlight reflections.
+
+    \itemaddedin{2B}{2B-contrails-at-night}{Missiles or aircraft contrailing not above the highest cloud layer are spotted automatically up to 6 hexes away.}
 
     \item Tailing is not allowed, TFF is not allowed unless Terrain Following Technology exists. Note, being equipped with TV/lR optics capability confers Terrain Following-A technology on the aircraft.
 
@@ -468,11 +474,11 @@ Adverse conditions exist in a dense cloud layer (both during the day and at nigh
 
 The following combat effects apply to aircraft at night.
 
-\paragraph{Sighting Aircraft.} Aircraft contrailing above the highest cloud layers are spotted automatically to a sighting range of 24 (see rule \ref{rule:contrail-layers}). Otherwise, the maximum visual sighting range for all aircraft is 2 unless the target used AB power or is contrailing, in which case the maximum sighting range is 6. 
+\paragraph{Sighting Aircraft.} Aircraft contrailing are spotted automatically to a sighting range of 24 if they are above the highest cloud layer and 6 otherwise (see rule \ref{rule:contrail-layers}). Otherwise, the maximum visual sighting range for all aircraft is 2 unless the target used AB power or is contrailing, in which case the maximum sighting range is 6. 
     
 Sighting modifiers for \CY[3A-sighting]{paint scheme, relative altitude,}{background} and smoking do not apply at night.
 
-\paragraph{Sighting Missiles.} Missiles contrailing above the highest cloud layers are spotted automatically to a range of 24 hexes (see rule \ref{rule:contrail-layers}). Otherwise, missiles may only be sighted on the turn after launch, and on each turn, a sustainer is burning. The visibility numbers are halved, and the modifier for having been launched from a sighted aircraft does not apply.
+\paragraph{Sighting Missiles.} Missiles contrailing are spotted automatically to a sighting range of 24 if they are above the highest cloud layer and 6 otherwise (see rule \ref{rule:contrail-layers}). Otherwise, missiles may only be sighted on the turn after launch, and on each turn, a sustainer is burning. The visibility numbers are halved, and the modifier for having been launched from a sighted aircraft does not apply.
 
 \paragraph{Aiming.} Visual aiming for ground attacks is allowed only if the target is illuminated by parachute flares, or the aircraft has TV/IR optics, or a laser spot tracker with a laser spot.
 
@@ -567,7 +573,8 @@ You may now play all scenarios.
 
 }{
 
-\subsection{Illumination Flares}
+\section{Illumination Flares}
+\label{rule:illumination-flares}
 
 Aircraft equipped with illumination flare pods (IPs) may drop parachute flare clusters to provide illumination.
 
@@ -580,7 +587,7 @@ Aircraft equipped with illumination flare pods (IPs) may drop parachute flare cl
 \paragraph{Effects.} 
 Parachute flare clusters illuminate the hex in which they were dispensed and the six surrounding hexes provided they are no more than 5 altitude levels above the ground level. Ground targets in illuminated hexes may be sighted and attacked by aircraft as if it were day. Parachute flare clusters are distinct from decoy flares and may not be used as such.
 
-\subsection{TV/IR Optics and Optics Pods}
+\section{TV/IR Optics and Optics Pods}
 \label{rule:tv-ir-optics}
 
 TV/IR optics technology and optics pods (OPs) use TV cameras sensitive to infrared light to allow aircraft to sight and attack at night or in haze.
