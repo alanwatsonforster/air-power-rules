@@ -1,56 +1,103 @@
 \begin{twocolumntablefloat}
 \begin{twocolumntable}
 \tablecaption{table:stores-BB}{Bombs (BB)}
-\begin{tabular}{lclccccl}
+\begin{tabular}{lllccccc}
 \toprule
 Type&
 Year&
 Effect&
 Weight&
 Load&
-\multicolumn{2}{c}{Attack Strength}&High-Drag Option?\\
+\multicolumn{2}{c}{Attack Strength}&High-Drag\\
 \cmidrule{6-7}
-&&&&&Soft&Hard\\
+&&&&& \wbox[c]{Hard}{Soft}&Hard\\
 \midrule
-\multicolumn{8}{c}{US Bombs}\\
+\multicolumn{8}{c}{US HE Bombs}\\
 \midrule
-M30     &   &HE     &\phantom{0}100&0.5&\phantom{0}1.0&\phantom{0}0.0&N\\
-M57     &   &HE     &\phantom{0}250&1.5&\phantom{0}2.0&\phantom{0}0.5&N\\
-M64     &   &HE     &\phantom{0}500&2.0&\phantom{0}3.0&\phantom{0}1.0&N\\
-M65     &   &HE     &\phantom{}1000&3.0&\phantom{0}6.0&\phantom{0}3.0&N\\
-M66     &   &HE     &\phantom{}2000&4.0&\phantom{}10.0&\phantom{0}6.0&N\\
-M74     &   &Incend &\phantom{0}100&0.5&\phantom{0}1.5&\phantom{0}0.0&N\\
-M76     &   &Incend &\phantom{0}500&1.5&\phantom{0}4.0&\phantom{0}0.5&N\\
-BLU-1   &   &Napalm &\phantom{0}750&2.5&\phantom{0}6.0&\phantom{0}2.0&N\\
-M117    &   &HE     &\phantom{0}750&2.0&\phantom{0}4.0&\phantom{0}2.0&Y\\
-M118    &   &HE     &\phantom{}3000&5.0&\phantom{}15.0&\phantom{}12.0&N\\
-Mk 81   &   &HE     &\phantom{0}250&1.0&\phantom{0}2.0&\phantom{0}0.5&Y\\
-Mk 82   &   &HE     &\phantom{0}500&1.5&\phantom{0}3.0&\phantom{0}1.0&Y\\
-Mk 83   &   &HE     &\phantom{}1000&2.5&\phantom{0}6.0&\phantom{0}3.0&Y\\
-Mk 84   &   &HE     &\phantom{}2000&3.0&\phantom{}10.0&\phantom{0}6.0&Y\\
-BLU-10  &   &Napalm &\phantom{0}250&1.0&\phantom{0}2.0&\phantom{0}1.0&Y*\\
-BLU-11  &   &Napalm &\phantom{0}500&1.5&\phantom{0}4.0&\phantom{0}1.0&Y*\\
-BLU-27  &   &Napalm &\phantom{0}750&2.5&\phantom{0}6.0&\phantom{0}2.0&N\\
-Mk 77   &   &Fire   &\phantom{0}750&2.0&\phantom{0}6.0&\phantom{0}2.0&Y*\\
-Mk 79   &   &Fire   &\phantom{}1000&2.5&\phantom{0}8.0&\phantom{0}3.0&Y*\\
-CBU-20  &   &AT     &\phantom{0}500&1.5&\phantom{0}2.0&\phantom{0}4.0&Y (1960)\\
-CBU-41  &   &Napalm &\phantom{0}850&2.0&\phantom{0}4.0&\phantom{0}2.0&Y (1960)\\
-CBU-58  &   &AP     &\phantom{0}800&2.0&\phantom{0}6.0&\phantom{0}0.5&N (1964)\\
-CBU-59  &   &Mixed  &\phantom{0}750&2.0&\phantom{0}4.0&\phantom{0}4.0&Y (1968)\\
-CBU-71  &   &AP     &\phantom{0}800&2.0&\phantom{0}6.0&\phantom{0}2.0&Y (1968)\\
+M30             & 1940  &HE     & \phantom{00}100 & \phantom{0}0.5 & \phantom{0}1.0 & \phantom{0}0.0 & N\\
+M57             & 1940  &HE     & \phantom{00}250 & \phantom{0}1.5 & \phantom{0}2.0 & \phantom{0}0.5 & N\\
+M64             & 1940  &HE     & \phantom{00}500 & \phantom{0}2.0 & \phantom{0}3.0 & \phantom{0}1.0 & N\\
+M65             & 1940  &HE     & \phantom{0}1000 & \phantom{0}3.0 & \phantom{0}6.0 & \phantom{0}3.0 & N\\
+M66             & 1940  &HE     & \phantom{0}2000 & \phantom{0}4.0 & \phantom{}10.0 & \phantom{0}6.0 & N\\
+\addlinespace
+M117            & 1955  &HE     & \phantom{00}750 & \phantom{0}2.0 & \phantom{0}4.0 & \phantom{0}2.0 & N/Y\\
+M118            & 1955  &HE     & \phantom{0}3000 & \phantom{0}5.0 & \phantom{}15.0 & \phantom{}12.0 & N\\
+\addlinespace
+Mk 81           & 1960  &HE     & \phantom{00}250 & \phantom{0}1.0 & \phantom{0}2.0 & \phantom{0}0.5 & N/Y\\
+Mk 82           & 1960  &HE     & \phantom{00}500 & \phantom{0}1.5 & \phantom{0}3.0 & \phantom{0}1.0 & N/Y\\
+Mk 83           & 1960  &HE     & \phantom{0}1000 & \phantom{0}2.5 & \phantom{0}6.0 & \phantom{0}3.0 & N/Y\\
+Mk 84           & 1960  &HE     & \phantom{0}2000 & \phantom{0}3.0 & \phantom{}10.0 & \phantom{0}6.0 & N/Y\\
+\midrule
+\multicolumn{8}{c}{Russian HE Bombs}\\
+\midrule
+
+% Generic WWII bombs
+\wbox[l]{FAB-1000}{FAB-100 }   
+                & 1940  &HE     & \phantom{00}225 & \phantom{0}1.5 & \phantom{0}2.0 & \phantom{0}0.5 & N\\
+\wbox[l]{FAB-1000}{FAB-250 }     
+                & 1940  &HE     & \phantom{00}550 & \phantom{0}2.0 & \phantom{0}3.0 & \phantom{0}1.0 & N\\
+\wbox[l]{FAB-1000}{FAB-500 }     
+                & 1940  &HE     & \phantom{0}1100 & \phantom{0}3.0 & \phantom{0}6.0 & \phantom{0}3.0 & N\\
+\addlinespace
+\wbox[l]{FAB-1000}{FAB-250 } M46    
+                & 1946  &HE     & \phantom{00}550 & \phantom{0}2.0 & \phantom{0}3.0 & \phantom{0}1.0 & N\\
+\wbox[l]{FAB-1000}{FAB-500 } M46    
+                & 1946  &HE     & \phantom{0}1100 & \phantom{0}3.0 & \phantom{0}6.0 & \phantom{0}3.0 & N\\
+\wbox[l]{FAB-1000}{FAB-1500} M46    
+                & 1946  &HE     & \phantom{0}3050 & \phantom{0}4.5 & \phantom{}15.0 & \phantom{}12.0 & N\\
+\wbox[l]{FAB-1000}{FAB-3000} M46    
+                & 1946  &HE     & \phantom{0}6600 & \phantom{0}8.0 & \phantom{}25.0 & \phantom{}20.0 & N\\
+\wbox[l]{FAB-1000}{FAB-5000} M46    
+                & 1946  &HE     & \phantom{}11000 & \phantom{}12.0 & \phantom{}40.0 & \phantom{}30.0 & N\\
+\wbox[l]{FAB-1000}{FAB-9000} M46    
+                & 1946  &HE     & \phantom{}20000 & \phantom{}16.0 & \phantom{}60.0 & \phantom{}40.0 & N\\
+\addlinespace
+\wbox[l]{FAB-1000}{FAB-50  } M54    
+                & 1954  &HE     & \phantom{00}110 & \phantom{0}1.0 & \phantom{0}1.0 & \phantom{0}0.5 & N\\
+\wbox[l]{FAB-1000}{FAB-100 } M54    
+                & 1954  &HE     & \phantom{00}225 & \phantom{0}1.5 & \phantom{0}2.0 & \phantom{0}0.5 & N\\
+\wbox[l]{FAB-1000}{FAB-250 } M54    
+                & 1954  &HE     & \phantom{00}550 & \phantom{0}2.0 & \phantom{0}3.0 & \phantom{0}1.0 & N\\
+\wbox[l]{FAB-1000}{FAB-500 } M54    
+                & 1954  &HE     & \phantom{0}1100 & \phantom{0}3.0 & \phantom{0}6.0 & \phantom{0}3.0 & N\\
+\wbox[l]{FAB-1000}{FAB-750 } M54    
+                & 1954  &HE     & \phantom{0}1650 & \phantom{0}3.5 & \phantom{0}8.0 & \phantom{0}4.0 & N\\
+\wbox[l]{FAB-1000}{FAB-1000} M54    
+                & 1954  &HE     & \phantom{0}2200 & \phantom{0}4.0 & \phantom{}10.0 & \phantom{0}6.0 & N\\
+\wbox[l]{FAB-1000}{FAB-1500} M54    
+                & 1954  &HE     & \phantom{0}3050 & \phantom{0}4.5 & \phantom{}15.0 & \phantom{}12.0 & N\\
+\addlinespace
+\wbox[l]{FAB-1000}{FAB-250 } M62    
+                & 1962  &HE     & \phantom{00}550 & \phantom{0}2.0 & \phantom{0}3.0 & \phantom{0}1.0 & N/Y\\
+\wbox[l]{FAB-1000}{FAB-500 } M62    
+                & 1962  &HE     & \phantom{0}1100 & \phantom{0}3.0 & \phantom{0}6.0 & \phantom{0}3.0 & N/Y\\
+\wbox[l]{FAB-1000}{FAB-1000} M62    
+                & 1962  &HE     & \phantom{0}2200 & \phantom{0}3.5 & \phantom{}10.0 & \phantom{0}6.0 & N\\
+\wbox[l]{FAB-1000}{FAB-1500} M62    
+                & 1962  &HE     & \phantom{0}3050 & \phantom{0}5.0 & \phantom{}15.0 & \phantom{}12.0 & N\\
+
+\midrule
+CBU-20  &      &AT     & \phantom{0}500 & 1.5 & \phantom{0}2.0 & \phantom{0}4.0 & Y (1960)\\
+CBU-41  &      & Napalm & \phantom{0}850 & 2.0 & \phantom{0}4.0 & \phantom{0}2.0 & Y (1960)\\
+CBU-58  &      &AP     & \phantom{0}800 & 2.0 & \phantom{0}6.0 & \phantom{0}0.5 & N (1964)\\
+CBU-59  &      &Mixed  & \phantom{0}750 & 2.0 & \phantom{0}4.0 & \phantom{0}4.0 & Y (1968)\\
+CBU-71  &      &AP     & \phantom{0}800 & 2.0 & \phantom{0}6.0 & \phantom{0}2.0 & Y (1968)\\
+
+M74     &      &Incend & \phantom{0}100 & 0.5 & \phantom{0}1.5 & \phantom{0}0.0 & N\\
+M76     &      &Incend & \phantom{0}500 & 1.5 & \phantom{0}4.0 & \phantom{0}0.5 & N\\
+BLU-1   &      & Napalm & \phantom{0}750 & 2.5 & \phantom{0}6.0 & \phantom{0}2.0 & N\\
+BLU-10  &      & Napalm & \phantom{0}250 & 1.0 & \phantom{0}2.0 & \phantom{0}1.0 & Y*\\
+BLU-11  &      & Napalm & \phantom{0}500 & 1.5 & \phantom{0}4.0 & \phantom{0}1.0 & Y*\\
+BLU-27  &      & Napalm & \phantom{0}750 & 2.5 & \phantom{0}6.0 & \phantom{0}2.0 & N\\
+Mk 77   &      &Fire   & \phantom{0}750 & 2.0 & \phantom{0}6.0 & \phantom{0}2.0 & Y*\\
+Mk 79   &      &Fire   & \phantom{}1000 & 2.5 & \phantom{0}8.0 & \phantom{0}3.0 & Y*\\
 \midrule
 \multicolumn{8}{c}{Soviet    Bombs}\\
 \midrule
-FAB-50  &   &HE     &\phantom{0}110&1.0&\phantom{0}1.0&\phantom{0}0.5&N\\
-FAB-100 &   &HE     &\phantom{0}225&1.5&\phantom{0}2.0&\phantom{0}0.5&N\\
-FAB-250 &   &HE     &\phantom{0}550&2.0&\phantom{0}3.0&\phantom{0}1.0&N\\
-FAB-500 &   &HE     &\phantom{}1100&3.0&\phantom{0}6.0&\phantom{0}3.0&N\\
-FAB-750 &   &HE     &\phantom{}1650&3.5&\phantom{0}8.0&\phantom{0}4.0&N\\
-FAB-1000&   &HE     &\phantom{}2200&4.0&\phantom{}10.0&\phantom{0}6.0&N\\
-ZAB-100 &   &Incend &\phantom{0}225&1.5&\phantom{0}2.0&\phantom{0}0.5&N\\
-ZAB-250 &   &Incend &\phantom{0}550&2.0&\phantom{0}4.0&\phantom{0}0.5&N\\
-ZAB-1000&   &Incend &\phantom{}2200&4.0&\phantom{0}8.0&\phantom{0}2.0&N\\
-PLAB-250&   &Incend &\phantom{0}550&2.0&\phantom{0}4.0&\phantom{0}1.0&Y*\\
+ZAB-100 &   &Incend & \phantom{0}225 & 1.5 & \phantom{0}2.0 & \phantom{0}0.5 & N\\
+ZAB-250 &   &Incend & \phantom{0}550 & 2.0 & \phantom{0}4.0 & \phantom{0}0.5 & N\\
+ZAB-1000 &   &Incend & \phantom{}2200 & 4.0 & \phantom{0}8.0 & \phantom{0}2.0 & N\\
+PLAB-250 &   &Incend & \phantom{0}550 & 2.0 & \phantom{0}4.0 & \phantom{0}1.0 & Y*\\
 \bottomrule
 \end{tabular}
 \end{twocolumntable}
