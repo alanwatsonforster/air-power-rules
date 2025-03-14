@@ -5,7 +5,10 @@
 This chapter details the procedures for visual detection and tracking of targets. \addedin{1C}{1C-tables}{The rules are summarized in Table~\ref{table:sighting-rules-summary}}
 
 }{
-This rule details the procedures for visual detection and identification of targets.
+This rule details the procedures for visual sighting and identification of targets during daylight and in clear weather. 
+
+Advanced rule~\ref{rule:night-and-weather} covers the modifications appropriate for sighting at night and in the presence of the Sun, clouds, and haze.
+
 }
 
 \section{Sighting of Aircraft and Missiles by Aircraft}
@@ -15,10 +18,11 @@ This rule details the procedures for visual detection and identification of targ
 
 \paragraph{When is Sighting Checked?}  Enemy aircraft and missiles in flight are determined to be sighted or not during the Visual Sighting Phase of every game-turn. Sighting probability is based on range and visibility numbers. Visually aimed weapons may only be fired at sighted aircraft targets.
 }{
-Aircraft and missiles can be visually sighted or unsighted by the opposing aircraft. This is important for many reasons. For example, aircraft may only fire visually aimed weapons, including guns and infrared-homing missiles, at sighted aircraft and may only defensively engage sighted missiles.
+Aircraft and missiles are either \emph{sighted} or \emph{unsighted} by opposing aircraft. This is important for many reasons. For example, aircraft may only fire their guns at sighted target aircraft and may only defensively engage sighted missiles.
 
-\paragraph{Actions in the Visual Sighting Phase.} 
-Each side first declares padlocks of currently sighted opposing aircraft and missiles. Any opposing aircraft or missile that is not padlocked is considered to become unsighted. Each side can then attempt to sight unsighted opposing missiles and then unsighted opposing aircraft. At the end of the visual sighting phase, the only opposing aircraft and missiles that are sighted are those that were padlocked or for which the sighting attempt succeeded. All other opposing aircraft and missiles are unsighted.
+\paragraph{General Procedure.} 
+Sighting is determined in the visual sighting phase.
+Each side first declares padlocks of currently sighted opposing aircraft and missiles. Any opposing aircraft or missile that is not padlocked is considered to become unsighted. Each side can then attempt to sight first unsighted opposing missiles and then unsighted opposing aircraft. If an attempt is successful, the missile or aircraft becomes sighted. At the end of the visual sighting phase, the only opposing aircraft and missiles that are sighted are those that were padlocked or for which the sighting attempt succeeded. All other opposing aircraft and missiles are unsighted.
 
 \paragraph{Duration of Sighting.}
 An aircraft's or missile's status as sighted or unsighted is determined anew in the visual sighting phase of each game turn. It then maintains that status until the next visual sighting phase. A sighted aircraft or missile that enters a blind arc does not immediately cease to be sighted; it remains sighted at least until the next visual sighting phase.
@@ -54,25 +58,27 @@ Padlocking is an administrative procedure used only in the Visual Sighting Phase
 
 }{
 
-\paragraph{Sighting Range.} The range for sighting is determined according to rule~\ref{rule:range}. When attempting to sight a higher aircraft or missile in daylight, the vertical range is the difference in altitude levels divided by \emph{four}, rather than two, and rounded down. This is because it is easier to see an aircraft silhouetted against the sky.
+\paragraph{Sighting Range.} The range for sighting is determined according to rule~\ref{rule:range}. When attempting to sight an aircraft or missile that is \emph{higher}, the vertical range is the difference in altitude levels divided by \emph{four} and rounded down, as it is easier to see an aircraft or missile silhouetted against the sky. When attempting to sight an aircraft or missile or one that is lower or level, the vertical range is the difference in altitude levels divided by two, as usual, and rounded down.
 
 \AY[3A-sighting-weather]{\relevantadvancedrules{\ref{rule:haze-layers}.}}
 
-\paragraph{Maximum Sighting Range.} An aircraft or a missile in flight has a visibility number, given for aircraft by the ADC and for missiles by Table~\ref{table:missile-data}. The visibility number determines the maximum range for sighting.
+\paragraph{Visibility Number.} An aircraft or a missile in flight has a visibility number, given for aircraft by their ADC and for missiles by the Missile Data Table (Table~\ref{table:missile-data}). The visibility number determines the maximum range for sighting.
 
-During the day and in clear weather, the maximum visual sighting range to an aircraft or missile is four times its visibility number. Table \ref{table:maximum-sighting-range} summarizes the maximum sighting range.
+\paragraph{Maximum Sighting Range.} During daylight and in clear weather, the maximum visual sighting range to an aircraft or missile is four times its visibility number. Table \ref{table:maximum-sighting-range} summarizes the maximum sighting range.
 
 \relevantadvancedrules{\ref{rule:vas}, \ref{rule:irsts}, \ref{rule:limited-intelligence}, \ref{rule:contrail-layers}, \ref{rule:haze-layers}, and~\ref{rule:combat-at-night}.}
 
 \paragraph{Blind and Restricted Arcs.} A crewmember’s view may be obstructed by their aircraft’s fuselage or wings. Each aircraft’s ADC indicates its blind and restricted \AY[3A-horizontal-arcs]{horizontal} arcs (if any). An L after the arc indicates that the aircraft is blinded or restricted only to lower altitude in that arc (e.g., by a long nose). 
 
-An aircraft cannot padlock or attempt to sight targets in its blind arcs. An aircraft can padlock and attempt to sight targets in its restricted arcs, but receives an adverse modifier to the sighting die roll.
+An aircraft cannot padlock or attempt to sight a target in its blind arcs. 
+
+An aircraft can padlock and attempt to sight a target in its restricted arcs, but receives an adverse modifier to the sighting die roll.
 
 \AY[3A-horizontal-arcs]{
-When determining the horizontal arc, the aircraft attempting sighting is the reference element and the target aircraft or missile being sighted is the distant element. Resolve borderline cases by first moving the faster element forward. If the faster element remains on the borderline, use the rearward arc.
+When determining the blind and restricted horizontal arcs (see rule \ref{rule:horizontal-arcs}), the aircraft attempting sighting is the reference element and the target aircraft or missile being sighted is the distant element. Resolve borderline cases by first moving the faster element forward. If the faster element remains on the borderline or the two elements have the same speed, use the rearward arc. For example, if the faster element remains on the borderline between the \arc{60} and \arc{90} arcs, use the \arc{60} arc.
 }
 
-An aircraft also cannot attempt to sight targets at the same map location (i.e., the same hex or hex side) and lower altitude, but it can padlock them (as the padlocking aircraft can roll slightly to keep the target in view). An aircraft may sight or padlock targets at the same map location but higher altitude.
+An aircraft cannot attempt to sight a target at the same map location (i.e., the same hex or hex side) and lower altitude, but can padlock such a target (as it can roll slightly to keep the target in view). An aircraft may sight or padlock targets at the same map location but higher altitude.
 
 \paragraph{Padlocking Procedure.}
 
@@ -98,7 +104,7 @@ For each unsighted opposing target, identify which friendly aircraft can partici
 
 If no friendly aircraft can participate, the unsighted target remains unsighted.
 
-\CY[3A-sighting]{Otherwise, determine which of the participating aircraft is the searcher. This will normally be the participating friendly aircraft closest to the target, but if two or more are equally close, their players may designate which is the searcher.}{Otherwise, the player may designate which of the participating aircraft is the searcher. This will often be the participating friendly aircraft closest to the target, but sometimes it is worthwhile to designate a further aircraft with more advantageous modifiers.} Roll a die and apply appropriate modifiers. The target is sighted if the modified result is less than or equal to the target's visibility number.
+\CY[3A-sighting]{Otherwise, determine which of the participating aircraft is the searcher. This will normally be the participating friendly aircraft closest to the target, but if two or more are equally close, their players may designate which is the searcher.}{Otherwise, the player may designate which of the participating aircraft is the searcher. This will often be the participating friendly aircraft closest to the target, but sometimes it is worthwhile to designate a different aircraft with more advantageous modifiers.} Roll a die and apply appropriate modifiers. The target is sighted if the modified result is less than or equal to the target's visibility number.
 
 \relevantadvancedrules{\ref{rule:gloc}, \ref{rule:disorientation}, and \ref{rule:sun}.}
 }
@@ -137,23 +143,28 @@ If no friendly aircraft can participate, the unsighted target remains unsighted.
         
     \IDY[3A-sighting]{\itemparagraph{Target Position.} Apply the appropriate modifiers from Table~\ref{table:sighting-position-modifiers} for altitude of the target aircraft relative to the searcher. These modifiers depend on the paint scheme of the target and do not apply to missiles.}
     
-    \IAY[3A-sighting]{\itemparagraph{Target Background.} Apply the appropriate modifier from Table~\ref{table:sighting-position-modifiers} for the background against which the target aircraft is seen:
+    \IAY[3A-sighting]{\itemparagraph{Target Position.} Apply the appropriate modifier from Table~\ref{table:sighting-position-modifiers} for the position of the target aircraft with respect to the searcher:
     \begin{itemize}
-    \item\itemparagraph{Against Sky.} This modifier applies if the target is above the searcher.
+    \item\itemparagraph{Against Land.} This modifier applies if the target is below the searcher and on any map sheet that in which the majority of hexes are not water hexes.
+    \item\itemparagraph{Against Water.} This modifier applies if the target is below the searcher and on a map sheet in which the majority of hexes are water hexes.
     \item\itemparagraph{Level.} This modifier applies if it has the same altitude as the searcher.
-    \item\itemparagraph{Against Water.} This modifier applies if the target is below the searcher and on a map sheet that is completely water hexes.
-    \item\itemparagraph{Against Land.} This modifier applies if the target is below the searcher and on any map sheet that is not completely water hexes.
+    \item\itemparagraph{Against Sky.} This modifier applies if the target is above the searcher.
     \end{itemize}   
-    The target background modifiers do not apply when sighting missiles.
+    The target position modifiers do not apply when sighting missiles.
     }
 
-    \item \itemparagraph{Target is Smoker.} 
-    \CY[3A-sighting]{If the target is a smoker, apply the modifiers from Table~\ref{table:sighting-position-modifiers} for altitude of the target relative to the searcher.}{If the target is a smoker and lower than the searcher, apply a $-1$ modifier. If it is a smoker and level with or higher than the searcher, apply a $-2$ modifier.} Some aircraft are noted on their power charts as being smokers at military power. When they use military power, this modifier applies to them. Some results on the optional damage tables cause aircraft to become smokers regardless of their power setting. The modifier applies to them, too.
     \item \itemparagraph{Number of Participants.} Apply the modifier from \ref{table:sighting-additional-modifiers} for the number of aircraft participating in the sighting attempt. 
+    
+    To participate, an aircraft must be within maximum visual sighting range of the target, must not have the target in its blind arc, and must have an unblocked line of sight.
+
     \item \itemparagraph{Restricted Arc.} If the target is in the restricted arcs of \CY[3A-sighting]{\emph{all} of the participants}{the searcher}, apply a $+2$ modifier.
+    \item \itemparagraph{Target is Smoker.} 
+    \CY[3A-sighting]{If the target is a smoker, apply the modifiers from Table~\ref{table:sighting-position-modifiers} for altitude of the target relative to the searcher.}{If a target aircraft is a smoker and lower than the searcher, apply a $-1$ modifier. If it is a smoker and level with or higher than the searcher, apply a $-2$ modifier.} 
+    
+    Aircraft can be smokers in two different circumstances. Some aircraft are noted on their power charts as being smokers when they use military power. Also, some results on the optional damage tables cause an aircraft to become a smoker regardless of their power setting.
     \item \itemparagraph{Missile Motor.} If the target is a missile whose boost or sustainer motor burned in the previous game turn, apply a $-3$ modifier for a normal motor and a $-1$ modifier for a smokeless motor.
     \item \itemparagraph{Missile Launch.} If the target is a missile launched from a sighted aircraft in the previous game turn or an aircraft that launched a sighted missile in the previous game turn, apply a $-2$ modifier. (For these modifiers, it is important to attempt to sight missiles before aircraft.)
-    \item \itemparagraph{Searcher is Multi-Crew.} If the searcher is a multi-crew aircraft, apply a $-1$ modifier. A searcher with one crewmember who is disoriented or suffering from GLOC does not gain this modifier.
+    \item \itemparagraph{Searcher is Multi-Crew.} If the searcher is a multi-crew aircraft, apply a $-1$ modifier.
     \item\itemparagraph{Searcher has Detection.} If the searcher has a radar detection (or lock-on) of the target, apply a $-1$ modifier.
 
 \end{itemize}
@@ -170,7 +181,7 @@ The target position modifiers depend on the paint scheme of the target aircraft:
 \item\itemparagraph{Camouflaged.} This corresponds to aircraft with an camouflaged paint scheme appropriate for the zone.
 \item\itemparagraph{Low-Visibility Gray.} This corresponds to aircraft with a low-visibility gray paint scheme.
 \end{itemize}
-If an aircraft has an inappropriate camouflaged paint scheme for the zone (for example, a desert camouflage scheme in a temperate zone), it should use the \CY[3A-sighting]{uncamouflaged}{light or dark} modifiers when seen against land. The scenario notes will indicate the paint schemes of the aircraft.
+The scenario notes will indicate the paint schemes of the aircraft. If an aircraft has an inappropriate camouflaged paint scheme for the zone (for example, a desert camouflage scheme in a temperate zone), the scenario notes may indicate that the aircraft should be use the \CY[3A-sighting]{uncamouflaged}{light or dark uncamouflaged} modifiers when seen against land.
 }
 
 \CX{
@@ -308,7 +319,7 @@ When a camouflaged AAA or SAM unit fires or launches a missile, it becomes “de
 Aircraft with \emph{HUD interface} technology have their heads-up displays (HUDs) interfaced to their radar or IRSTS systems. This allows the HUD to indicate to the pilot the position of a target aircraft being tracked and makes subsequent sighting easier.
 
 \paragraph{Sighting Effects.}
-If an aircraft has HUD interface technology and has a radar or IRSTS track (see rule  \ref{rule:irsts} or \ref{rule:air-to-air-radar}) on a target aircraft in their \arcrange{180}{+} \CY[3A-combined-arcs]{arcs}{combined arcs}, they gain the following sighting benefits benefits:
+If an aircraft has HUD interface technology and has a radar or IRSTS lock-on (see rule \ref{rule:air-to-air-radar} and \ref{rule:irsts}) on a target aircraft in their \arcrange{180}{+} \CY[3A-combined-arcs]{arcs}{combined arcs (see rule \ref{rule:combined-arcs})}, they gain the following sighting benefits benefits:
 
 \begin{itemize}
 
@@ -349,7 +360,7 @@ Ignore multi-crew and HUD interface modifiers. The VAS range modifiers are used 
     \item within 10 times the target's visibility number.
 \end{itemize}
 
-\paragraph{VAS Considerations.} Enemy aircraft sighted by VAS systems are sighted only to the VAS equipped aircraft that specifically saw them and may not be attacked by other aircraft unless also visually sighted by the regular procedure. VAS systems may be used to accomplish target identification. An aircraft that elects to use VAS during the Visual Sighting Phase may not padlock.
+\paragraph{VAS Considerations.} Enemy aircraft sighted by VAS systems are sighted only to the VAS equipped aircraft that specifically saw them and may not be attacked by other aircraft unless also visually sighted by the regular procedure. VAS systems may be used to accomplish target identification. \changedin{2B}{2B-vas-and-padlocks}{An aircraft}{A pilot} that elects to use VAS during the Visual Sighting Phase may not padlock.
 
 }{
 
@@ -375,7 +386,7 @@ In the first case, if the searcher has a radar lock on the target, sighting auto
 \AY[3A-sighting]{If the searcher or the target or both are in haze (see advanced rule \ref{rule:haze}), the sighting range is considered to be twice the actual range.}
 
 \paragraph{VAS Restrictions.}
-An aircraft that elects to use VAS during the visual sighting phase may not padlock. An aircraft sighted by a VAS system is sighted only to the VAS-equipped aircraft that sighted it and may only be attacked by other aircraft if it is also visually sighted normally.
+A pilot that elects to use VAS during the visual sighting phase may not padlock. An aircraft sighted by a VAS system is sighted only to the VAS-equipped aircraft that sighted it and may only be attacked by other aircraft if it is also visually sighted normally.
 
 \paragraph{VAS Considerations.}   VAS systems may be used to accomplish target identification (see rule~\ref{rule:limited-intelligence}).
 
@@ -456,13 +467,11 @@ IFF may help determine if an aircraft is friendly, but does not identify it (see
 \paragraph{Missile Identification.} 
 When an aircraft is the target of a missile, the target's player is given only the following information:
 
-% ISSUE: Is a "type" the specific missile model (e.g., AIM-9L) or the generic seeker type (e.g, IRM)?
-
 \begin{itemize}
     \item Which aircraft is the target, when the missile is launched.
     \item The missile is an active AHM, when an AHM goes active and if the target has a RWR capable of detecting this.
-    \item The missile type, if decoys defeat it.
-    \item The missile type, if it hits.
+    \item The missile seeker type, if decoys defeat it.
+    \item The missile seeker type, if it hits.
 \end{itemize}
 
 If the missile attacks and misses, its type need not be revealed until the end of the game.

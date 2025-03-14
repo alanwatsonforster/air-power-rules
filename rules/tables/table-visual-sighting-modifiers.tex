@@ -128,7 +128,7 @@ $^*$~Advanced rules \ref{rule:haze-layers} and \ref{rule:cloud-layers}. $^a$~If 
 \end{tablenote}
 }
 {
-\tablecaption{table:sighting-position-modifiers}{Sighting Modifiers for Background$^a$}
+\tablecaption{table:sighting-position-modifiers}{Sighting Modifiers for Position$^a$}
 \begin{tabularx}{\linewidth}{lCCCCC}
 \toprule
 &\vertical{\minitable{l}{Against\\Land}}&\vertical{\minitable{l}{Against\\Water}}&\vertical{\minitable{l}{Level}}&\vertical{\minitable{l}{Against\\Sky}}&\vertical{\minitable{l}{Against\\Clouds$^{*b}$}}\\
@@ -136,12 +136,12 @@ $^*$~Advanced rules \ref{rule:haze-layers} and \ref{rule:cloud-layers}. $^a$~If 
 Silver               &$-2$&$-2$&$-1$&$-1$&$-2$\\
 Light Uncamouflaged  &$-1$&$-1$&$+0$&$+0$&$-2$\\
 Dark Uncamouflaged   &$+0$&$+1$&$+0$&$-1$&$-2$\\
-Camouflaged$^c$      &$+1$&$-1$&$+0$&$-1$&$-2$\\
+Camouflaged          &$+1$&$-1$&$+0$&$-1$&$-2$\\
 Low-Visibility Gray  &$+0$&$+0$&$+1$&$+1$&$-1$\\
 \bottomrule
 \end{tabularx}
 \begin{tablenote}{1.0\linewidth}
-$^*$~Advanced rule. $^a$ Not applicable at night (see advanced rule \ref{rule:combat-at-night}). $^b$~If applicable, the modifier from being seen against a cloud layer replaces the other modifiers (see advanced rule \ref{rule:cloud-layers}). $^c$~If an aircraft has an inappropriate camouflaged paint scheme for the zone (for example, a desert camouflage scheme in a temperate zone), it should use the light or dark modifiers when seen against land. 
+$^*$~Advanced rule. $^a$ Not applicable at night (see advanced rule \ref{rule:combat-at-night}). $^b$~If applicable, the modifier from being seen against a cloud layer replaces the other modifiers (see advanced rule \ref{rule:cloud-layers}).
 \end{tablenote}
 }
 \end{onecolumntable}
@@ -152,7 +152,7 @@ $^*$~Advanced rule. $^a$ Not applicable at night (see advanced rule \ref{rule:co
 \begin{twocolumntable}
 \small
 \tablecaption{table:sighting-additional-modifiers}{Additional Sighting Modifiers}
-\begin{tabularx}{0.6\linewidth}{Xll}
+\begin{tabularx}{0.8\linewidth}{Xll}
 \toprule
 Situation&Modifier&Rule\\
 \midrule
@@ -160,13 +160,13 @@ Situation&Modifier&Rule\\
 \midrule
 1 or 2&$+0$&\ref{rule:sighting-aircraft-and-missiles}\\
 3 or 4&$-1$&\ref{rule:sighting-aircraft-and-missiles}\\
-5 or 8&$-2$&\ref{rule:sighting-aircraft-and-missiles}\\
+5 to 8&$-2$&\ref{rule:sighting-aircraft-and-missiles}\\
 9+    &$-3$&\ref{rule:sighting-aircraft-and-missiles}\\
 \midrule
 \multicolumn{3}{c}{Target}\\
 \midrule
 In the restricted arcs of \CY[3A-sighting]{all of the participants}{the searcher}&$+2$&\ref{rule:sighting-aircraft-and-missiles}\\
-Aircraft that is smoking and level or highe r$^a$&$-2$&\ref{rule:sighting-aircraft-and-missiles}\\
+Aircraft that is smoking and level or higher $^a$&$-2$&\ref{rule:sighting-aircraft-and-missiles}\\
 Aircraft that is smoking and lower $^a$&$-1$&\ref{rule:sighting-aircraft-and-missiles}\\
 Missile with a normal motor burning&$-3$&\ref{rule:sighting-aircraft-and-missiles}\\
 Missile with a smokeless motor burning&$-1$&\ref{rule:sighting-aircraft-and-missiles}\\
@@ -186,12 +186,12 @@ Excellent eyesight $^b$&$-1$&\ref{rule:crew-ability-effects}$^*$\\
 Poor eyesight $^b$&$+1$&\ref{rule:crew-ability-effects}$^*$\\
 Tactics master&$-1$&\ref{rule:crew-ability-effects}$^*$\\
 In a stratus cloud layer&$+2$&\ref{rule:cloud-layers}\\
-Radar, IRSTS, or RWR detection $^c$&$-1$&\ref{rule:air-to-air-radar}, \ref{rule:irsts}$^*$, \& \ref{rule:rwr}$^*$\\
-HUD interface and radar or IRSTS lock-on $^{bc}$&$-1$& \ref{rule:hud}$^*$, \ref{rule:air-to-air-radar}, \& \ref{rule:irsts}$^*$\\
+Radar, IRSTS, or RWR detection or lock-on $^c$&$-1$&\ref{rule:air-to-air-radar}, \ref{rule:irsts}$^*$, \& \ref{rule:rwr}$^*$\\
+HUD interface, radar or IRSTS lock-on, and target in \arcrange{180}{+} combined arc $^{bc}$&$-1$& \ref{rule:hud}$^*$, \ref{rule:air-to-air-radar}, \& \ref{rule:irsts}$^*$\\
 \bottomrule
 \end{tabularx}
-\begin{tablenote}{0.6\linewidth}
-$^*$~Advanced rule. $^a$ Not applicable at night (see advanced rule \ref{rule:combat-at-night}). $^b$~Not applicable to VAS searches (see advanced rule \ref{rule:vas}). $^c$~Applied only once regardless of how many different types of detections or lock-ons the searcher has for the target.
+\begin{tablenote}{0.8\linewidth}
+$^*$~Advanced rule. $^a$ Not applicable at night (see advanced rule \ref{rule:combat-at-night}). $^b$~Not applicable to VAS searches (see advanced rule \ref{rule:vas}). $^c$~The first modifier applies if the searcher has any of the mentioned detections or lock-ons for the target. The second modifier also applies if the searcher has any of the mentioned lock-ons for the target and HUD interface technology. Both of these modifiers are applied only once regardless of how many different types of detections or lock-ons the searcher has for the target. 
 \end{tablenote}
 \end{twocolumntable}
 
