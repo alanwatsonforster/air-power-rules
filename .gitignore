@@ -18,3 +18,5 @@ rules/project.pdf
 rules/Worksheet.worksheet
 rules/project.pdf
 rules/project.pdf
+*.fdb_latexmk
+*.xdv
