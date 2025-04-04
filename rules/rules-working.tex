@@ -1,4 +1,5 @@
-% !TEX program = xelatex
+%!LW recipe=latexmk (xelatex)
+%!TEX program = xelatex
 
 \documentclass[10pt]{report}
 
@@ -7,12 +8,12 @@
 
 \newif\ifpartial\partialtrue
 
-\ifpartial
-\usepackage{tikz}
-\usetikzlibrary{external}
-\tikzsetexternalprefix{external/}
-\tikzexternalize
-\fi
+%\ifpartial
+%\usepackage{tikz}
+%\usetikzlibrary{external}
+%\tikzsetexternalprefix{external/}
+%\tikzexternalize
+%\fi
 
 \input{rules}
  
