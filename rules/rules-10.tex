@@ -1,15 +1,9 @@
 \rulechapter{Aircraft Damage}
 
-\CX{
 This chapter details the procedures for determining the damage results of successful hits against aircraft.
-}{
-This rule describes the procedures for determining the damage inflicted by successful hits against aircraft and the effects of that damage.
-}
 
 \section{Aircraft Damage Resolution}
 \label{rule:aircraft-damage-resolution}
-
-\CX{
 
 When a gun, rocket, or missile hit is achieved on an aircraft, determine the damage inflicted and apply it to the aircraft.
 
@@ -72,89 +66,12 @@ A result of no affect, or aircraft kill requires no further action. Light, Heavy
 
 For example, if an aircraft was hit twice before and had H and L hits. Its damage level is considered H. On this turn, it is hit again and receives a 2L. Since 3L = H, the aircraft damage becomes 2H. And since 2H = C, the aircraft damage level becomes C. It is now Crippled.
 
-}{
-
-
-\paragraph{Damage Procedure.} When a gun, rocket, or missile attack hits an aircraft, determine the weapons attack rating and apply any required modifiers. For missiles, the attack rating will depend on whether a direct or proximity hit was achieved. Roll the die and apply any required modifiers. Consult Table~\ref{table:aircraft-damage} and cross-index the modified roll with the modified attack rating. If the result is a dash, no damage is inflicted. Otherwise, the result gives the damage level suffered by the target. Note this damage on the target's log sheet.
-
-\paragraph{Attack Rating Modifiers.}
-The weapon attack rating is modified as follows:
-\begin{itemize}
-\item If the target already has L or worse damage, apply a $+1$ modifier.
-\item If the hit was from a gun snap shot, apply a $-1$ modifier.
-\end{itemize}
-
-\paragraph{Damage Die Roll Modifiers.} The damage die roll is modified as follows:
-
-\begin{itemize}
-
-    \item Apply the target's vulnerability, shown on its ADC, as a modifier.
-    
-    \item For direct missile hits, apply a modifier of $-2$. Proximity hits do not receive this modifier.    
-    
-    \item For rocket hits, apply a modifier of $-2$ just as for direct missile hits.
-    
-\end{itemize}
-
-\paragraph{Levels of Damage.} A single hit can potentially produce one of five damage levels:
-
-\begin{itemize}
-
-    \item\itemparagraph{L or 2L.} Light damage. The aircraft suffers minor performance losses.
-
-    \item\itemparagraph{H.} Heavy damage. The aircraft suffers major performance losses and possibly a system loss.
-
-    \item\itemparagraph{C.} Crippled. The aircraft suffers severe performance losses, possibly a system loss, and is likely ineffective for further combat.
-    
-    \item\itemparagraph{K.} Killed. The aircraft is destroyed and removed from play.
-
-\end{itemize}
-
-\input{tables/table-aircraft-damage}
-
-\paragraph{Cumulative Damage.} 
-If an aircraft has only been damaged once, that damage is used directly. However, when an aircraft is damaged more than once,
-damage from each hit can combine to create more severe damage. The rules for combining damage are given here and in Table~\ref{table:cummulative-damage}.
-\begin{eqnarray*}
-3\textrm{L}&=&\textrm{H}\\
-2\textrm{H}&=&\textrm{C}\\
-2\textrm{C}&=&\textrm{K}\\
-\textrm{C} + \textrm{H}&=&\textrm{K}
-\end{eqnarray*}
-If two hits do not combine according to these rules, both are noted, but only the more severe damage is considered for damage effects.
-
-\input{tables/table-cummulative-damage}
-
-For example, consider an aircraft that is hit once and suffers an H result. Its damage level is H. If it is hit a second time and suffers an L result, its damage becomes $\textrm{H}+\textrm{L}$ (since $\textrm{H}+\textrm{L}$ does not appear in the rules above), but for damage effects its damage level is still considered to be H (since H is the more severe than L). If it is hit a third time and suffers a 2L result, its damage becomes C (since by the rules above $2\textrm{L} + \textrm{L} = 3\textrm{L} = \textrm{H}$ and $\textrm{H} + \textrm{H} = 2\textrm{H} = \textrm{C}$).
-
-
-\paragraph{Damage Effects.}
-Damage degrades an aircraft's flight and combat performance. The precise effect depends on the highest damage level suffered, either directly or cumulatively, according to Table~\ref{table:aircraft-damage-effects}.
-
-\input{tables/table-aircraft-damage-effects}
-
-\paragraph{System Losses.}
-When an aircraft's damage level reaches H or C, it may suffer a system loss. Roll one die, consult Table~\ref{table:system-loss}, and apply the corresponding result. Check once when the damage level reaches H, once again if the damage level increases from H to C, and twice if the damage level reaches C directly.
-
-\paragraph{Jettison of Stores.} Only results specifically calling the aircraft to jettison stores require it to do so. In these case, it must jettison enough stores to become CL.
-
-\paragraph{Combat Ability.} As long as an aircraft has functional combat systems, it may attack air and land targets regardless of its damage level. Disadvantageous modifiers may apply to attack die rolls.
-
-\input{tables/table-system-loss}
-
-}
 
 \trainingnote{
 \centering
-\CX{
 You are now ready to play Training Scenario Three.
 
 The Sequence of play is still not required.
-}{
-You are now ready to play training scenario 3.
-
-The sequence of play is still not required, and you may ignore it.
-}
 }
 
 \begin{advancedrules}
@@ -166,7 +83,6 @@ The sequence of play is still not required, and you may ignore it.
     \input{tables/table-progressive-damage}
 }
 
-\CX{
 An aircraft's damage can worsen or spread if not contained by Damage Control (for example, leaking hydraulic fluid could burst into flame, or a damaged engine could fall).
 
 \paragraph{Procedure.} Roll the die once for each damaged aircraft during the Aircraft Admin Phase of every game-turn following the one in which it was hit. Do not check for progressive damage on any game-turn in which a damaged aircraft is hit again if the hit resulted in a higher damage level.
@@ -190,47 +106,13 @@ Consult \changedin{1C}{1C-tables}{the progressive damage table}{Table~\ref{table
 \end{itemize}
 
 Once an aircraft completes its flight without violating the above restrictions, damage control is automatically completed. An aircraft damaged before moving may not perform damage control in the game-turn it was hit. It may perform damage control on any subsequent turn. Previous damage control is nullified when an aircraft is hit anew.
-}{
 
-An aircraft's damage can progressively worsen or spread unless the pilot contains it by performing damage control. For example, leaking hydraulic fluid could burst into flame, or a damaged engine could fall. Furthermore, aerodynamic loading of the damaged skin at supersonic speeds can cause severe structural damage to the airframe.
-
-\paragraph{Progressive Damage Procedure.} Roll the die once for each damaged aircraft during the aircraft administration phase of every game turn following the one in which it was damaged. Do not check for progressive damage on the game turn in which a damaged aircraft is hit again if the hit resulted in a higher damage level. Consult \changedin{1C}{1C-tables}{the progressive damage table}{Table~\ref{table:progressive-damage}}. If the die roll is less than or equal to the number corresponding to the aircraft's current damage level, then the damage increases to the next higher level.
-
-\paragraph{Damage Control.} 
-\label{rule:damage-control}
-
-Performing damage control involves the crew activating backup electrical, fuel transfer, and hydraulic systems, shutting down damaged ones, and fighting fires. Damage control stabilizes the aircraft's current damage level so it will not progress. An aircraft that performs damage control counters progressive damage and does not check for it until it suffers damage again.
-
-\paragraph{Damage Control Procedure.} Declare the intent to perform damage control at the start of an aircraft's move. Fly the aircraft normally within the following restrictions:
-
-\begin{itemize}
-    \item No turns above the EZ rate may be performed.
-    \item No maneuvers except slides may be performed.
-    \item The only climbing flight allowed is a sustained climb not using afterburner power.
-    \item The only diving flight allowed is a steep dive with no more than 2 VFPs and not using afterburner power.
-    \item Terrain-following flight is not allowed.
-    \item Free descent is allowed.
-    \item External stores may be jettisoned
-    \item No attacks or weapons launches are allowed.
-    \item No radar work may be performed.
-\end{itemize}
-
-If the aircraft completes its flight without violating these restrictions, it completes damage control. 
-
-An aircraft damaged before moving may not perform damage control until the following game turn. 
-
-An aircraft loses the benefits of previous damage control if it suffers damage again.
-
-\paragraph{Progressive Damage at Supersonic Speeds.} A aircraft with H or C damage at supersonic speeds must additionally check twice for progressive damage in the aircraft administration phase, regardless of damage control.
-
-}
 \section{Optional Aircraft Damage Tables}
 
 \addedin{1C}{1C-tables}{
     \input{tables/table-optional-advanced-aircraft-damage}
 }
 
-\CX{
 The optional Damage Tables may be substituted for the generic damage level restrictions. These tables determine specific effects of L, H, and C level hits. For each hit consult \changedin{1C}{1C-tables}{the appropriate Damage Table}{Table~\ref{table:optional-damage}} and roll the die with no modifiers. \deletedin{1C}{1C-tables}{(Optional damage tables are in play aids sheets.)} \addedin{2B}{2B-optional-damage-tables}{Use the section of the table for the actual damage inflicted, not the cumulative damage. For example, if an aircraft already has H+2L damage and receives a further L damage, roll on the L table even though the cumulative damage will be C.}
 
 \paragraph{Optional Damage Table Results.} Only the indicated results from the die roll are applied to a damaged aircraft. In some cases, an aircraft may lose systems and not performance, or lose performance and not systems, or it may lose both systems and performance. The specifics of the damage rolled are not revealed to the enemy; they are recorded on paper. Visible signs of damage such as smoke or fire indicated on the tables are told to the opponent.
@@ -243,25 +125,6 @@ The optional Damage Tables may be substituted for the generic damage level restr
 
 \paragraph{Combat Ability.} As long as an aircraft has functional combat systems it may attack air and land targets regardless of damage level. The damage modifiers do apply to (and degrade) attack rolls.
 
-}{
-
-The optional damage tables in Table~\ref{table:optional-damage} may be substituted for the generic results in Table~\ref{table:aircraft-damage-effects}. The optional damage tables give specific and more varied effects for L, H, and C damage. 
-
-\paragraph{Optional Damage Table Procedure.}
-When an aircraft suffers damage, roll the die with no modifiers and consult Table~\ref{table:optional-damage}. Use the section appropriate for damage for the actual damage inflicted, not the cumulative damage. For example, if an aircraft already has H+2L damage and receives a further L damage, roll on the L table even though the cumulative damage will be C.
-
-\paragraph{Optional Damage Table Results.} Only the specific results from the table are applied to a damaged aircraft. In some cases, an aircraft may lose systems and not performance, or lose performance and not systems, or it may lose both systems and performance. The specifics of the damage are not revealed to the opponent, but they are recorded on paper. Visible signs of damage indicated on the tables --- emission of white vapor, smoke, and fire --- \emph{are} revealed to the opponent.
-
-\paragraph{Fuel Fires.} 
-An aircraft suffering a fuel fire must check for the consequences at the end of the flight phase. Roll one die. On a $2-$, the aircraft explodes, killing the crew. On an $8+$, the fire goes out permanently, but the aircraft continues to leak fuel.
-
-A fuel fire may be extinguished by shutting down all engines. Declare this when doing damage control, and treat the aircraft as if all engines were flamed out. Check for success at the end of the flight phase. Roll one die. On $4-$, the fire resumes permanently. Otherwise, it is extinguished. If the engines are subsequently restarted, the afterburner is disabled.
-
-\paragraph{Progressive Damage} The progressive damage is checked for normally. If it occurs, determine damage for increased damage level using the tables.
-
-\paragraph{Hollow Aircraft} If the table indicates damage to a system or performance capability the damaged aircraft does not have, roll the die again. If the second die roll also results in non-applicable damage, record the hit for progressive damage purposes and for die roll penalties for combat. The aircraft is otherwise not affected.
-
-}
 
 \section{Aircraft Crash Sites}
 
@@ -269,19 +132,10 @@ A fuel fire may be extinguished by shutting down all engines. Declare this when 
     \input{figures/figure-crash-sites}
 }
 
-\CX{
 An aircraft may impact the ground as a result of a variety of mishaps. Whenever an aircraft is shot down, abandoned, or crashes because of stalled, departed, terrain collision, GLOC/Disoriented/Fatal error flight, it must impact somewhere.
 
 \paragraph{Crash Site Determination.} The crash site is determined by the nature of the crash. For stalled, departed, terrain collision, GLOC/Disoriented/Fatal error, GLOC crashes, the crash site is the aircraft's present hex or hexside. For shot down or abandoned aircraft, the crash site is determined by \changedin{1C}{1C-figures}{the Crash Site Location Diagram}{Figure~\ref{figure:crash-sites}}. Consult the \changedin{1C}{CSLD in the play aids}{Figure} for the exact location based on the aircraft's facing and position at the moment of the craft.
 
 \paragraph{Crash Site Damage.} If a crash site hex contains ground units, buildings, or target type terrain, damage may be inflicted on them by the explosion and crash. One ground unit, building, POL marker, or one of the target terrains printed in the hex is immediately attacked at 1 - 2 odds (no modifiers). Determine which is attacked randomly.
-
-}{
-An aircraft may impact the ground as a result of various mishaps. Whenever an aircraft is shot down, abandoned, or crashes because of stalled or departed flight, controlled flight into terrain, GLOC, or disorientation, it must impact somewhere.
-
-\paragraph{Crash Site Determination.} The crash site is determined by the nature of the crash. For crashes due to a stalled or departed flight, controlled flight into terrain, or because of GLOC or disorientation, the crash site is the aircraft's  map location at the point it reached the altitude of the terrain. For shot-down or abandoned aircraft, the crash site is determined by rolling a die and consulting Figure~\ref{figure:crash-sites}.
-
-\paragraph{Crash Site Damage.} If a crash site hex contains ground units, buildings, or other targets, damage may be inflicted on them by the explosion and crash. One of the targets is immediately attacked at 1--2 odds (with no modifiers). Determine randomly which is attacked.
-}
 
 \end{advancedrules}
