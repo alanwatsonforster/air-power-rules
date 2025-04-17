@@ -4,16 +4,16 @@
 \documentclass[10pt]{report}
 
 \newcommand{\thisversion}{2C}
-\newcommand{\thissubversion}{}
+\newcommand{\thissubversion}{-changes}
 
 \newif\ifpartial\partialtrue
 
-%\ifpartial
-%\usepackage{tikz}
-%\usetikzlibrary{external}
-%\tikzsetexternalprefix{external/}
-%\tikzexternalize
-%\fi
+\ifpartial
+\usepackage{tikz}
+\usetikzlibrary{external}
+\tikzsetexternalprefix{external/}
+\tikzexternalize
+\fi
 
 \input{rules}
  
