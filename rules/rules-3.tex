@@ -1,20 +1,7 @@
-\CX{
 \rulechapter{Positioning Game Counters}
-}{
-\rulechapter{Position and Facing}
-}
-
-\CX{
 
 This chapter describes how the map hexes are utilized to position counters during play. The game map is used to show exactly where aircraft, missiles, and other units, are located in relationship to each other. Every game counter must be placed on the maps so that its position is clear to all players.
 
-}{
-
-This rule concerns the position and facing of an element --- an aircraft, a missile, a ground unit, or a naval unit --- and the range, the horizontal arc, and the vertical arc of one element with respect to another. 
-
-}
-
-\CX{
 
 \section{Basic Elements of Position}
 
@@ -36,84 +23,14 @@ Each aircraft and missile counter has a position which is defined by its map loc
 \paragraph{Ground and Naval Unit Counters.}
 Ground combat units and naval units have their positions defined simply by map location. They are always placed wholly within hexes and never on hexsides. Ground units never consider facing\addedin{1B}{1B-apj-23-errata}{ (except heavy AAA units under advanced rule 24.5)}, but large naval units must be faced in specific directions as for aircraft and missiles.
 
-}{
-
-\section{Position}
-\label{rule:position}
-
-Air combat occurs in three dimensions, and consequently, an element’s \emph{position} is defined in two dimensions by its \emph{map location} and in the third by its \emph{altitude}.
-
-\paragraph{Map Location.}
-\label{rule:map-location}
-
-The hex grid on the map defines \emph{map locations}. These are formally the centers of hexes and the centers of the sides of hexes, although they are hereafter referred to simply as “hexes” and “hex sides.” Figure~\ref{figure:map-location} shows map locations with respect to the hex grid.
-
-The game counter representing an element must be placed on the map in a way that makes its map location clear. 
-
-Map locations are written as the map designation (typically a letter or a letter followed by a number) followed by the hex number (for locations in hexes) or the hex numbers of the two adjacent hexes (for locations on hex sides). For example, “A-1316” or “B2-3421/3520”.
-
-\paragraph{Altitude.}
-\label{rule:altitude}
-
-Altitudes are given in terms of numbered \emph{altitude levels}. Each altitude level corresponds to 1000 feet above sea level, so the number of a level corresponds to the altitude in thousands of feet. For example, altitude level 24 corresponds to 24,000 feet above sea level.
-
-\paragraph{Altitude Bands}
-\label{rule:altitude-bands}
-
-\input{tables/table-altitude-bands}
-
-Altitude levels are grouped into \emph{altitude bands}, each several levels thick. Aircraft and missile performance can vary between the altitude bands, as the air density and temperature typically decrease with altitude. The altitude bands are shown in  Table~\ref{table:altitude-bands}.
-
-\paragraph{Aircraft and Missiles.} 
-
-The game counters representing aircraft and missiles may occupy map locations corresponding to either hexes and hex sides, as shown by Figure~\ref{figure:aircraft-map-location}. The altitude of an aircraft or missile is tracked on its log sheet (see rule~\ref{rule:aircraft-log-sheets}).
-
-\paragraph{Ground and Naval Units.}
-
-The game counters representing ground and naval units may only occupy map locations corresponding to hexes, as shown by Figure~\ref{figure:ground-unit-map-location}; they may not occupy hex sides. All ground units and naval units on rivers or lakes are always at the altitude level of the terrain (see rule~\ref{rule:ground-terrain}). Naval units on seas or oceans are always at altitude level 0.
-
-
-
-}
 
 \input{figures/figure-map-location}
 
 \input{figures/figure-facing}
 
-\AX{
-\section{Facing}
-\label{rule:facing}
-
-Some elements also have a \emph{facing} that defines the direction in which they are pointed or traveling.
-
-\paragraph{Principal Directions.}
-
-The hex grid on the map defines twelve \emph{principal directions} from the center of each hex to the centers of its six sides and its six corners. Each principal direction differs from the adjacent principal directions by 30{\deg}.
-
-The scenario will define the direction of north relative to the maps and the hex grid. It will always be aligned with one of the principal directions. Each principal direction is associated with a compass heading, as shown by Figure~\ref{figure:facing}.
-
-\paragraph{Aircraft and Missiles.} 
-
-The game counters representing aircraft and missiles must be oriented with their nose toward a principal direction. This direction defines their facing. 
-
-If an aircraft or missile is located in a hex, it may potentially face toward any one of the principal directions (i.e., toward any of the sides or corners). If it is on a hex side, it must face in one of the two principal directions parallel to the hex side, as shown by Figure~\ref{figure:aircraft-map-location}.
-
-\paragraph{Ground and Naval Units.}
-
-The game counters representing heavy AAA units (see rule~\ref{rule:heavy-aaa-unit-facing}) and large naval units (see rule~\ref{rule:naval-units}) must be faced with their top or bow toward a principal direction. This direction defines their facing.
-
-Other ground and naval units do not have defined facings, and the orientation of the counters representing them is not significant.
-}
-
 \section{Stacking}
 
-\CX{
 It is allowed, within the limits given below, for more than one counter to be in the same position on the map at the same time. When counters end up on top of other counters at the end of a turn, they are considered stacked. Stacking restrictions apply only al the end of a turn after all moves are completed.
-}{
-Counters are considered to be stacked when they occupy the same map location at the end of a game turn. Stacking is permitted within the limits given below. These limits only apply at the end of a game turn.
-}
-
-\CX{
 
 \paragraph{In The Air.}
 Aircraft and missiles may freely fly through hexes or hexsides containing other game counters. They may freely stack on top of ground and naval units. They may freely stack with other aircraft and missiles that are not at the same altitude level. However, no more than two friendly aircraft may safely end up stacked together at the same altitude level (unless in Close Formation). Aircraft from opposing sides may not stack together at the same altitude safely. If these last two situations occur, you must check for collisions.
@@ -123,27 +40,11 @@ Exception: Up to four aircraft may be stacked together and may safely fly togeth
 \paragraph{On The Ground.}
 No more than four ground unit counters may ever stack in the same ground terrain hex. No more than four small naval unit counters may ever stack in the same water, coastal, or river terrain hex. No more than two large naval unit counters may ever stack in the same water hex. When taxiing on the ground, up to four aircraft may move together in a stack.
 
-}{
-
-\paragraph{Aircraft.} Aircraft in flight may stack with other aircraft, missiles, ground units, and naval units without limit. However, if aircraft in flight are stacked at the same altitude level, there may be a risk of collision according to rule~\ref{rule:aircraft-collisions}. No more than four aircraft may stack together when taxiing on the ground.
-
-\paragraph{Missiles.} Missiles may stack with other missiles, aircraft, ground units, and naval units without limit.
-
-\paragraph{Ground Units.} No more than four ground unit counters may be stacked in the same ground terrain hex. 
-
-\paragraph{Naval Units.} No more than four small naval unit counters may be stacked in the same water, coastal, or river terrain hex. No more than two large naval unit counters may be stacked in the same water hex.
-
-}
 
 \section{Aircraft Collisions}
 \label{rule:aircraft-collisions}
 
-\CX{
 Collisions are possible during the Flight Phase whenever an aircraft executes a head-on gun attack at range zero\addedin{1B}{1B-apj-36-errata}{ and the aircraft are at the same altitude}. Collisions are also possible at the end of \changedin{1B}{1B-apj-36-errata}{a game-turn}{the flight phase} in the following situations:
-}{
-\paragraph{Potential Collisions.}
-Collisions are possible in the following situations:
-}
 
 \begin{itemize}
     \IAX{If \CY[3A-head-on-attacks]{an}{a moving or non-moving} aircraft carries out a head-on gun attack at range 0 (see rule~\ref{rule:air-to-air-gun-combat}) on a target at the same altitude.}
@@ -160,7 +61,6 @@ Collisions are possible in the following situations:
     \itemaddedin{2B}{2B-stacking}{If more than four friendly aircraft are stacked at the same altitude after all aircraft have moved, even if they are in a close formation.}
 \end{itemize}
 
-\CX{
 \paragraph{Collision Resolution.} 
 \addedin{2B}{2B-collisions}{Potential collisions resulting from head-on gun attacks are resolved immediately after the attack. Other potential collisions are resolved at the end of the flight phase.} For each potential collision, the player who last moved into the position must roll the die. On a roll of 1, his aircraft collides with one of the others. Determine which aircraft it collides with randomly. Both aircraft immediately roll on the 10 column of the Damage table to determine their damage.
 
@@ -173,19 +73,6 @@ Collisions are possible in the following situations:
 \end{itemize}
 
 \notein{1B}{AWF: There is a clarification of the collision exceptions in the APJ 23 errata, but it seems to restate the original exceptions. I have not included it.}
-
-}{
-\paragraph{Collision Resolution Procedure.} 
-\CY[3A-head-on-attacks]{
-If an aircraft carries out a head-on gun attack at range 0 and the same altitude, it immediately checks for a collision. The other cases are resolved at the end of the flight phase. Of the aircraft that could collide and which have not already checked for a collision at the same position (because of a head-on gun attack), the one that moved last checks for a collision. To check for a collision, roll the die. On a roll of 1, the aircraft collides with one of the others. Determine the other aircraft randomly. Both aircraft suffer damage from a weapon with an attack rating of 10 (see rule~\ref{rule:aircraft-damage-resolution}).
-}{
-If any aircraft carries out a head-on gun attack at range 0 and the same altitude, the moving aircraft checks for collision after the attacks are resolved and damage applied. To check for a collision, roll the die. On a roll of 1, the two aircraft collide.
-
-The other cases are resolved at the end of the flight phase. Of the aircraft that could collide and which have not already checked for a collision at the same position (because of a head-on gun attack), the one that moved last checks for a collision. To check for a collision, roll the die. On a roll of 1, the aircraft collides with one of the others. Determine the other aircraft randomly. 
-
-If two aircraft collide, both suffer damage from a weapon with an attack rating of 10 (see rule~\ref{rule:aircraft-damage-resolution}).
-}
-}
 
 
 \addedin{2B}{2B-range}{
@@ -237,221 +124,3 @@ Range is used to determine closeness. If two aircraft have different ranges from
 For example, assuming all the aircraft in Figure~\ref{figure:range-example} have the same altitude, then aircraft C and D are equally close to aircraft A, since both are at a range of 2 hexes. Furthermore, assuming that aircraft A and C are at the same altitude and aircraft D is one altitude level below or above, then aircraft C and D are still equally close to aircraft A since both are still at a range of 2 hexes.
 
 }
-
-
-
-\AY[3A-horizontal-arcs]{
-
-\section{Horizontal Arcs}
-\label{rule:horizontal-arcs}
-\label{rule:angle-off}
-
-Other situations described in these rules depend on the angle at which one element is seen from another. For example, radars are typically restricted to scanning over forward cone and, early infrared-homing missiles could only track targets from behind.
-
-This angle can be considered only horizontally or both horizontally and vertically. The horizontal arcs described here consider and quantify only the horizontal component. The combined arcs described subsequently consider and quantify both the horizontally and vertically components.
-
-\paragraph{Reference and Distant Elements.} 
-
-For clarity, we will define the relative position of a \emph{distant element}  with respect to a \emph{reference element}. These roles depend on the context:
-
-\begin{itemize}
-
-\item In air-to-air gun, rocket, and missile attacks (rules~\ref{rule:air-to-air-gun-combat}, \ref{rule:air-to-air-rocket-combat}, and \ref{rule:missile-attacks}), the target aircraft is the reference element, and the attacking aircraft or missile is the distant element.
-
-\item For visual sighting (rule~\ref{rule:sighting-aircraft-and-missiles}), the sighting aircraft is the reference element, and the aircraft, missile, or ground unit being sighted is the distant element.
-
-\item For advantage (rule~\ref{rule:initiative}), the aircraft potentially in a superior position is the reference element, and the aircraft potentially in an inferior position is the distant element.
-
-\item For missile launch envelopes and IRM target aspect launch requirements (rules~\ref{rule:missile-launches} and \ref{rule:irm-launch-requirements}), the target aircraft is the reference element, and the launching aircraft is the distant element.
-
-\item When determining the field of view of sensors, the aircraft or missile sensing is the reference element, and the aircraft or ground unit being sensed is the distant element. Sensors include:
-\begin{itemize} 
-\item VAS (rule~\ref{rule:vas}),
-\item IRSTS (rule~\ref{rule:irsts}),
-\item missile seekers (rule~\ref{rule:air-to-air-missiles}),
-\item air-to-air radar (rule~\ref{rule:air-to-air-radar}).
-\item air-to-ground radar.
-\end{itemize}
-
-\item When determining the field of effect of jammers, the aircraft jamming is the reference element, and the radar being jammed is the distant element.
-
-\item When determining the field of laser designators (rule~\ref{rule:laser-guided-weapons}), the designating aircraft is the reference aircraft, and the target is the distant element.
-
-\item When determining the field of heavy AAA units, the AAA unit is the reference element and the aircraft being targeted is the distant element.
-
-\end{itemize}
-
-
-\input{figures/figure-angle-off}
-\input{tables/tables-angle-off}
-
-\paragraph{Angle-Off.} 
-
-The relative horizontal position of the distant element with respect to the reference element is quantified by the horizontal angle between two imaginary lines, one extending behind the tail of the reference element and the other between the reference element and the distant element. This angle is known as the \emph{angle off the tail} or simply the \emph{angle-off}. 
-
-If the distant element is directly behind the reference element, the angle-off is \arc{0}; if it is directly on the beam, the angle-off is \arc{90}; and if it is directly in front, the angle-off is \arc{180}.
-
-\paragraph{Horizontal Arcs.} 
-
-Angle-off is grouped into \emph{horizontal arcs} covering \arc{30} to the left or right of the target. Figure~\ref{figure:angle-off} shows these arcs. The reference element is at the center, and the arcs radiate from it. The appropriate figure is used according to whether the reference element is in a hex facing a hex corner, in a hex facing a hex side, or on a hex side.
-
-\paragraph{Borderline Procedure.} 
-
-The distant element will often unambiguously be in a horizontal arc. However, sometimes it will be located on the borderline between two arcs. In these cases, use the disambiguation procedure described below and summarized in Tables \ref{table:angle-off-borderlines} and \ref{table:angle-off-adjacent}.
-
-In the context of the fields of sensors, jammers, and laser designators, if either or both of the adjacent arcs are within the field, the borderline is also considered to be within the field. (In other words, the fields include the borderlines.)
-
-In other contexts, if the distant element is on the border between the two \arc{0} arcs or the two \arc{180} arcs, it is considered to be in the \arc{0} arc or \arc{180} arc. This rule does not specify whether it falls in the left or right arcs, but this is never relevant to the game rules. 
-
-% TODO: How do we disambiguate missile envelopes and IRM launch requirements? Included would work for the latter, but not for the former.
-
-For the other borderlines, the procedure for determining the arc is more complex. Consider the speeds of the reference element and distant element at the start of the game turn:
-\begin{itemize}
-\item If the reference element is slower, the distant element is in the arc it would move into if it moved forward.
-\item If the reference element is faster, the distant element is in the arc it would move into if the reference element moved forward.
-\item If neither is faster or if the distant element remains on the borderline after one of the previous two cases (i.e., it is facing directly towards or away from the reference element), the resolution again depends on the context:
-\begin{itemize}
-\item For gun and rocket attacks (rule~\ref{rule:air-to-air-gun-combat}), the distant element (attacking aircraft) is considered to be in the narrower arc.
-\item For determining blind and restricted arcs (rule \ref{rule:sighting-aircraft-and-missiles}), the distant element (element being sighted) is considered to be in the rearward arc.
-\item For determining advantage purposes (rule~\ref{rule:initiative}), the distant element (element potentially disadvantaged) is considered to be in the rearward arc.
-\item For missile launch envelopes (rule~\ref{rule:missile-launches}), IRM target aspect launch requirements (rule~\ref{rule:irm-launch-requirements})), and missile attacks (rule~\ref{rule:missile-attacks}), the distant element (launching aircraft or attacking missile) is considered to be in the wider arc.
-\end{itemize}
-\end{itemize}
-
-The narrower arc is the arc further from the \arc{120} arc. The wider arc is the arc closer to the \arc{120} arc. The rearward arc is the arc closer to the \arc{30} arc.
-
-Ground elements are always considered to be slower than any aircraft.
-
-\paragraph{Same-Location Procedure}
-If the reference and distant element are at the same map location (i.e., the same hex or hex side), the horizontal arc is the same as if the distant element (i.e., the non-reference element) were moved backward one hex.
-
-Moving the distant element backward would always leave it on a borderline facing the reference element, requiring the use of the disambiguation procedure for borderlines described above.
-
-\paragraph{The \arc{0} and \arc{180} Lines.} The imaginary lines extending behind and ahead of the reference element are the \arc{0} and \arc{180} lines, respectively. Although not formally arcs, these lines are, at times, treated as such. To count as being on one of these lines, the distant element must be on the borderline and facing directly along it towards the reference element. If they are on the line but not facing directly along it towards the target, they are considered in either the \arc{30} or \arc{180} arc but not on the \arc{0} or \arc{180} lines.
-
-\paragraph{Horizontal Arc Examples.}
-
-Consider Figure~\ref{figure:angle-off}, in which the aircraft A1, A2, and A3 are the reference elements and aircraft B1, B2,  B3, C1, C2, and C3 are distant elements. 
-
-Aircraft C2 is unambiguously on the \arc{0} line, and C1 is unambiguously in the right \arc{90} arc, but the other attackers are on borderlines between two arcs. Aircraft C3 cannot be on the \arc{0} line as it is not facing the target and so is in the \arc{30} arc.
-
-\begin{itemize}
-
-\item
-In the context of the field sensors, jammers, or laser designators, distant elements on borderlines are considered to be within the field if either or both adjacent arcs are within the field. B1 would be within the field only if either the right \arc{60} arc, the right \arc{90} arc, or both were within the field. B2 would be within the field only if either the right \arc{150} arc, the right \arc{180} arc, or both were within the field. B3 would be within the field only if either the left \arc{90} arc, the left \arc{120} arc, or both were within the field.
-
-\item In other contexts, we need to consider the relative speeds of the reference and distant elements:
-
-\begin{itemize}
-\item
-If the reference elements were slower than the distant elements, then B2 and B3 would be considered to be in the arcs into which they move if they moved forward: B2 would be in the right \arc{150} arc, and B3 would be in the left \arc{120} arc.
-
-\item
-If the reference elements were faster than the distant elements, then B2 and B3 would be considered to be in the arcs into which they move if the reference element moved forward: B2 would be in the right \arc{150} arc and B3 would be in the left \arc{90} arc.
-
-\item
-If the reference element and the distant aircraft had the same speeds, then the context would determine whether B2 and B3 are considered to be in the narrower, wider, or rearward arc. The same procedure would be used for B1 regardless of the relative speeds since B1 is facing along a borderline.
-
-\begin{itemize}
-
-\item For gun and rocket attacks, the distant elements are in the narrower arc, so B1 would be in the right \arc{90} arc, B2 in the right \arc{180} arc, and B3 in the right \arc{90} arc.
-
-\item For missile attacks (for which the distant elements would be missiles), the distant elements are in the wider arc, so B1 would be in the right \arc{120} arc, B2 in the right \arc{150} arc, and B3 in the right \arc{120} arc.
-
-\item For visual sighting and advantage, the distant elements are in the rearward arc, so B1 would be in the right \arc{90} arc, B2 in the right \arc{150} arc, and B3 in the right \arc{120} arc.
-
-\end{itemize}
-
-\end{itemize}
-
-\end{itemize}
-
-
-\paragraph{Ranges of Horizontal Arcs.}
-\label{rule:ranges-of-angle-off-arcs}
-
-Ranges of horizontal arcs are used for restricted or blind regions for sighting, sensor fields of view, and determining advantage. If a range is given as an arc followed by a plus sign, it consists of those arcs and all more forward arcs. If a range is given as an arc followed by a minus sign, it consists of those arcs and all more rearward arcs. Ranges specified in this way consist of both the left and right arcs.
-
-For example, a blind arc given as $\arcrange{60}{-}$ consists the \arc{30} and \arc{60} arcs and a radar search field given as $\arcrange{150}{+}$ consists of the \arc{150} and \arc{180} arcs. 
-
-\paragraph{Lower Horizontal Arcs.}
-\label{rule:lower-angle-off-arcs}
-
-Restricted or blind regions for sighting are sometimes given as \arc{30}L, \arc{60}L, or \arc{180}L. These refer to the \arcrange{30}{-}, \arcrange{60}{-}, or \arcrange{180}{+} arc ranges but only apply to distant elements at lower altitudes.
-
-For example, a restricted arc given as \arc{180}{L} refers to the \arc{180} arcs but only for distant elements at lower altitudes and might apply to an aircraft whose nose obscures the view from the cockpit forward and downwards.
-
-}
-
-\AY[3A-limited-arcs]{
-
-\paragraph{Limited Horizontal Arcs.}
-\label{rule:limited-arcs}
-
-\input{figures/figure-limited-arc}
-
-Some sensors and rules make use of a \emph{limited horizontal arc} that is even narrower than the \arcrange{180}{+} horizontal arc. Figure~\ref{figure:limited-arcs} shows the limited arc. In this figure, only the map locations within the limited arc line are within the limited arc. 
-
-If an aircraft is banked (see rule \ref{rule:direction-of-bank}), instead of the limited arc, it may elect to use the \arc{180} arc with the same sense as its bank.
-
-}
-
-\AY[3A-combined-arcs]{
-
-\advancedrules
-
-\section{Combined Arcs}
-\label{rule:vertical-arcs}
-\label{rule:vertical-limits}
-\label{rule:combined-arcs}
-
-
-Aircraft and missile sensors have fields that are limited not just horizontally but also vertically. The \emph{combined arcs} described here extend the horizontal arcs above to include appropriate vertical limits.
-
-Combined arcs are used to determine if a target is in the field of:
-\begin{itemize} 
-\item VAS (rule~\ref{rule:vas}),
-\item IRSTS (rule~\ref{rule:irsts}),
-\item missile seekers (rule~\ref{rule:air-to-air-missiles}), 
-\item air-to-air radar (rule~\ref{rule:air-to-air-radar}), and
-\item laser designators (rule~\ref{rule:laser-guided-weapons}).
-\end{itemize}
-They are also used to determine if the target satisfies the aspect requirements for IRM launches (rule~\ref{rule:irm-launch-requirements}). They are not used elsewhere.
-
-\paragraph{Flight Slope.}
-
-The \emph{flight slope} characterizes the vertical orientation of the reference element just as its facing characterizes its horizontal orientation.
-
-The flight slope is calculated over a number of FPs (defined below) as the number of altitude levels gained divided by the number of HFPs expended. 
-
-The flight slope will be positive if the element gains altitude, zero if it maintains altitude, and negative if it loses altitude. For purely vertical flight with no HFPs, the flight slope will be positive infinity ($+\infty$) for climbing or negative infinity ($-\infty$) for diving.
-
-For an aircraft and missile prior to launch, determine the flight slope by considering all of the FPs expended by the aircraft or by the missile’s launching aircraft in the previous flight phase. 
-
-For a missile in flight, if the previous proportional move had two or more FPs, determine the flight slope by considering them all. Otherwise, if the previous proportional move only had one FP and was the first one of the missile’s flight, determine the flight slope from that FP and the last FP of the launching aircraft prior to launch. Otherwise, determine the flight slope from the missile’s last two FPs.
-
-For example, if an aircraft executes level flight with four HFPs and no free descent, its flight slope is 0. If it executes the same but with free descent, its flight slope is $-1/4 = -0.25$. If it executes a zoom climb with three HFPs and four VFPs, gaining seven altitude levels, its flight slope is $+7/3 \approx 2.33$. If it executes a vertical dive with no HFPs and six VFPs, losing twelve altitude levels, its flight slope is $-12/0 = -\infty$.
-
-\paragraph{Combined Arcs Procedure.}
-
-\input{tables/table-combined-arcs}
-
-Cross-reference the arc and the flight slope in Table~\ref{table:vertical-limit-factors}. Note that there is one column for the flight slope for forward arcs (the limited, \arcrange{180}{+}, \arcrange{150}{+}, and \arcrange{120}{+} arcs) and another for rearward arcs (the \arcrange{30}{-},  \arcrange{60}{-}, and  \arcrange{90}{-} arcs). The entries in the table are one or two numerical vertical limit factors indicating upper ($\le$) or lower ($\ge$) limits. The factors themselves are either in parentheses or not in parentheses.
-
-\begin{itemize}
-
-\item
-The factors not in parentheses are \emph{mixed} vertical limit factors. They are multiplied by the horizontal range from the reference to the distant element, rounded up if lower limits and rounded down if upper limits, and then give the \emph{maximum} number of levels that the distant aircraft can be above ($\le$) or below ($\ge$) the reference aircraft and still be within the combined arc. 
-
-In these cases, the distant aircraft must also be in the corresponding horizontal arc to be within the combined arc.
-
-\item
-The factors in parentheses are \emph{pure} vertical limit factors. They are multiplied by the horizontal range from the reference to the distant element and then give the \emph{minimum} number of levels that the distant aircraft can be above ($\ge$) or below ($\le$) the reference aircraft and still be in the combined arc. 
-
-In these cases, the distant aircraft \emph{need not} be in the corresponding horizontal arc; it can be in \emph{any} horizontal arc.
-
-\end{itemize}
-
-If Table~\ref{table:vertical-limit-factors} gives one factor, the distant element is within the combined arc if it satisfies the corresponding conditions. If Table~\ref{table:vertical-limit-factors} gives two factors, they will be combined with “and” or “or.” In the case of “and,” the distant element is within the combined arc if it satisfiers both of the corresponding conditions. In the case of “or,” the distant element is within the combined arc if it satisfies either of the corresponding conditions.
-}
-
