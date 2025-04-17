@@ -1,18 +1,8 @@
-\CX{
 \rulechapter{Changing A/C Direction}
-}{
-\rulechapter{Changing Aircraft Direction}
-}
 
-\CX{
 This chapter discusses the procedures for changing an aircraft's direction by turning.
 
 Aircraft change facing by turning. Facing changes usually occur in 30 degree increments. To execute a turn, an aircraft must first fly a certain distance forward and then it may change facing by 30 degrees to the left or right depending on which way it was turning. The distance it must fly before changing facing is dependent on its speed, altitude band, and rate of turn as described below. An aircraft may change facing as often as possible within a single game turn depending on its selected turn rate.
-}{
-This rule gives the procedures for changing an aircraft's facing by turning.
-
-An aircraft executes a turn by flying a certain distance forward and then changing facing by 30{\deg}\DY{ (or sometimes 60{\deg} or 90{\deg})} to the left or right, according to the direction of the turn. The distance it must fly before changing facing depends on its speed, altitude band, and turn rate as described below. An aircraft may change facing more than once in a single game turn if its selected turn rate allows this.
-}
 
 \section{Turning}
 \label{rule:turning}
@@ -21,25 +11,9 @@ An aircraft executes a turn by flying a certain distance forward and then changi
     \input{tables/table-turn}
 }
 
-\CX{
 Five rates of turn are available to an aircraft. Each rate of turn corresponds to an increasing angle of bank and wing angle of attack. In general, the greater the angle of bank and angle of attack, the quicker the aircraft will turn and the greater the G force the pilot will feel.
-}{
-\paragraph{Turn Rates.}
-Five rates of turn are potentially available to an aircraft. Each rate of turn corresponds to an increasing angle of bank and wing angle of attack. In general, the greater the angle of bank and angle of attack, the quicker the aircraft will turn and the greater the G force the pilot will feel. The turn rates, from lowest to highest, and their codes are:
-\begin{itemize}
-\item EZ: Easy turn rate
-\item TT: Tactical turn rate
-\item HT: Hard turn rate
-\item BT: Break turn rate
-\item ET: Emergency turn rate
-\end{itemize}
-An aircraft's ADC, speed, altitude, and damage may restrict the available turn rates. 
-
-\relevantadvancedrules{\ref{rule:aircraft-configuration}, \ref{rule:turning-and-minimum-speeds} and \ref{rule:crew-ability-effects}.}
-}
 
 \paragraph{Turning Procedure.} 
-\CX{
 An aircraft may begin turning at any point in its flight. When the first FP is spent to begin turning, the player must announce:
 
 \begin{itemize}
@@ -51,58 +25,14 @@ Next consult \changedin{1C}{1C-tables}{the Integrated Turn Charts}{Table~\ref{ta
 Be sure to use the chart corresponding to the altitude band the aircraft is in. If an “NA” is encountered, that combination of turn rate and speed is not allowed. If a number appears, that is the minimum number of FPs that the aircraft must expend in flight before changing facing. If a 60 or 90 appears, that indicates the aircraft may change facing by up to 60 or 90 degrees respectively for each FP expended inflight that game turn. \addedin{2A}{2A-sustained, from FH in APJ 36}{A 60 or 90 degree turn is considered one facing change except for purposes of sustained turning decel.}
 
 Changing facing does not cost any FPs; it is the end result of having begun to turn and having used the specified number of FPs (or more) in flight while turning. A turn consists of all the FPs used prior to changing the aircraft's facing plus the act of facing itself. If an aircraft is on a hexside at the time of facing, shift it to the adjacent hex (in the direction the aircraft is turning) and then change its facing as shown \changedin{1C}{1C-figures}{below}{in Figure~\ref{figure:changing-facing}}. 
-}{
-\CY[3A-turning]{
-An aircraft may begin turning at any point in its flight. When it spends its first FP to begin turning, the player must announce:
-
-\begin{itemize}
-    \item the direction of the turn (left or right) and,
-    \item the turn rate.
-\end{itemize}
-
-Next, consult Table~\ref{table:turn} and cross-index the selected turn rate with the aircraft’s speed (rounded down). Use the section corresponding to the aircraft’s current altitude band. If the result is a dash, that combination of turn rate and speed is not allowed. 
-If a 60 or 90 appears, the aircraft may change facing by up to 60{\deg} or 90{\deg}, respectively, for each FP expended.
-If another number appears, it indicates the minimum number of FPs that the aircraft must expend before changing facing by 30{\deg}.
-
-Changing facing does not cost any FPs; it is the result of having begun to turn and having used the specified number of FPs (or more) in flight while turning. A turn consists of all the FPs used before changing the aircraft’s facing and the act of facing itself. If an aircraft is on a hex side at the time of facing, shift it to the adjacent hex (in the direction the aircraft is turning) and then change its facing as shown in Figure~\ref{figure:changing-facing}.
-
-}{
-An aircraft may declare a turn at any point in its flight. When it declares a turn the player must announce:
-
-\begin{itemize}
-    \item the direction of the turn (left or right) and,
-    \item the turn rate.
-\end{itemize}
-
-Next, consult Table~\ref{table:turn} and cross-index the selected turn rate with the aircraft’s speed (rounded down) to determine the turn requirement. Use the section corresponding to the aircraft’s current altitude band. If the result is a dash, that combination of turn rate and speed is not allowed. 
-If a 60 or 90 appears, the aircraft may declare and execute up to two or three turns, respectively, for each FP expended.
-If another number appears, it indicates the minimum number of FPs the aircraft must expend between declaring and executing the turn.
-
-An aircraft executes a turn by changing its facing by 30{\deg} in the sense of the turn. If an aircraft is on a hex side when it executes a turn, shift it to the adjacent hex (in the direction the aircraft is turning) and then change its facing as shown in Figure~\ref{figure:changing-facing}. 
-
-Executing a turn does not cost any FPs; it is the result of using the specified number of FPs (or more) in flight after declaring the turn.
-}
-
-\relevantadvancedrules{\ref{rule:direction-of-bank}.}
-
-}
 
 \input{figures/figure-changing-facing}
 
 \paragraph{Stopping or Changing Turns.} 
-\CX{
 An aircraft may stop a turn at any point in its flight prior to changing its facing but any FPs that were used toward the aborted turn may not be counted toward any other maneuvering requirements or new turns. The turn rate in use may be changed to a tighter one whenever a facing change is completed or when the turn is stopped and started anew. An aircraft may always expend more FPs than necessary prior to changing facing.
-}{
-An aircraft may stop a turn at any point in its flight prior to \CY[3A-turns]{changing its facing}{executing the turn and changing its facing}, but any FPs used toward the aborted turn may not be counted toward any other maneuvering requirements or new turns. The turn rate may be changed to a higher one when an aircraft changes facing change or stops turning. An aircraft may always expend more FPs than necessary before changing facing.
-}
-
-\AX{
-\paragraph{Turning Flight.} An aircraft is considered to be in \emph{turning flight} from the moment it declares a turn to the moment it either completes the turn by changes facing or aborts the turn.
-}
 
 
 \paragraph{Carrying a Turn.} 
-\CX{
 Sometimes a turn will not or cannot be completed in one game turn. In this case, the turn may be continued into the next game turn. The continuing turn should be noted on the Turn Carry row of the aircraft log with:
 \begin{itemize}
 
@@ -113,101 +43,30 @@ Sometimes a turn will not or cannot be completed in one game turn. In this case,
     \item the direction (L, R).
 
 \end{itemize}
-}{
-Sometimes a turn will not or cannot be completed in one game turn. In this case, the turn may be carried into the next game turn. The carried turn should be noted on the turn carry row of the aircraft log with:
-\begin{itemize}
-
-    \item the number of FPs expended for the turn so far,
-
-    \item the turn rate (EZ, TT, HT, BT, or ET), and
-
-    \item the direction (L or R).
-
-\end{itemize}
-}
 
 For example, “2BTL” indicates the aircraft has expended 2 FPs on a break turn to the left.
 
-\relevantadvancedrules{\ref{rule:maneuvering-departures}.}
-
-\CX{
 \paragraph{Move to Face Requirement.} 
 An aircraft must move in order to change facing. If an aircraft ends a game turn with sufficient FPs expended to meet the turning requirements but does not face; it may not change facing in the next game turn until it expends at least one FP in flight. \addedin{1B}{1B-apj-36-errata}{If an aircraft is carrying a turn and the new turning requirement due to the new speed and altitude is equal to or less than what is has already expended, it must still expend one FP before changing facing} It may not face freely and then begin moving; it must move to face.
-}{
-\CY[3A-turns]{
-\paragraph{Move-to-Face Requirement.} 
-An aircraft must move to change facing. If an aircraft ends a game turn with sufficient FPs expended to meet the turning requirements but does not face, it may not change facing in the next game turn until it expends at least one FP in flight. If an aircraft is carrying a turn and the new turning requirement due to the new speed and altitude is equal to or less than the number of FPs it has already expended, it must still expend one FP before changing facing. In both cases, it may not change facing and then begin moving; it must move to face.
-}{
-\paragraph{Move-to-Execute Requirement.} 
-An aircraft must move to execute a turn and change facing. If an aircraft ends a game turn with sufficient FPs expended to meet the turning requirements but does not execute the turn, it may not execute the turn in the next game turn until it expends at least one FP in flight. If an aircraft is carrying a turn and the new turning requirement due to the new speed and altitude is equal to or less than the number of FPs it has already expended, it must still expend one FP before executing the turn. In both cases, it may not execute the turn and then begin moving; it must move to execute.
-}
-}
 
-\CX{
 \paragraph{Turn Drag.} Turning creates drag, which causes deceleration. If an aircraft used turning flight in a game turn (whether it changed facing or not), check the Turn Drag Chart on the ADC. At the intersection of the Configuration column and the Turn Rate row is the number of Decel points it receives for making the turn. EZ turns are not listed; there is no Turn Drag for EZ rates (exception; see sustained turning). 
 
 Note: An aircraft is assessed decel points for Turn Drag based on the highest turn rate used in the game turn. Those Turn Drag Decel points are imposed if any turning occurred, whether the aircraft faced once, more than once, not at all, or used different turn rates in the game turn.
 
 \addedin{1B}{1B-apj-22-qa, 1B-apj-35-qa, and 1B-apj-36-errata}{A turn that is carried over from one game-turn to the next must be considered for decel in both game-turns. If it corresponds to the highest turn rate during both game-turns, the decel will be paid twice.}
-}{
-
-\CY[3A-turns]{
-
-\paragraph{Turn-Induced Drag.} Turning creates drag, which causes deceleration. If an aircraft used turning flight in a game turn (whether it changed facing or not), consult the turn-drag chart on its ADC. Cross-index the highest turn rate used in the game turn and the configuration to determine the number of turn-drag DPs the aircraft receives. EZ turns are not listed; turns at EZ rates give no drag. 
-
-If an aircraft used different turn rates in a game turn, it only receives turn-drag DPs for the highest turn rate used. 
-
-An aircraft receives turn-drag DPs for turning flight, whether it changes facing once, more than once, or not at all.
-
-A turn carried from one game turn to the next is considered for turn drag in both game turns. If it corresponds to the highest turn rate during both game turns, the corresponding turn-drag DPs will be received in both game turns.
-
-\relevantadvancedrules{\ref{rule:supersonic-speed-effects} and \ref{rule:sustained-turning}.}
-
-}{
-
-\paragraph{Turn Drag.} Turning creates drag, which causes deceleration. Each time an aircraft declares a turn, consult the turn drag chart on its ADC. Cross-index the turn rate and the configuration to determine the number of DPs the aircraft receives. EZ turns are not listed; turns at the EZ rate give no drag.
-
-\relevantadvancedrules{\ref{rule:supersonic-speed-effects}.}
-
-\paragraph{Multiple Turns.}
-If the turn requirement is 60 or 90, the aircraft is carrying out a multiple turn. If the turn requirement is 60, the aircraft may declare and execute one or two turns for each FP expended. If the turn requirement is 90, the aircraft may declare and execute one, two, or three turns for each FP expended.
-
-Each executed turn gives a change of facing of 30{\deg}, so in many ways, declaring and executing multiple turns is equivalent to moving one FP and then changing facing by 60{\deg} or 90{\deg}. 
-
-Nevertheless, in these cases the aircraft is actually executing multiple turns each corresponding to a change of facing of 30{\deg}, and this distinction is important for calculating the total drag. That is, declaring and executing two turns (changing facing by a total of 60{\deg}) gives turn drag for two turns, and doing so for three turns (changing facing by a total of 90{\deg}) gives turn drag for three turns.
-
-In the first and last turns of a multiple turn, the aircraft may expend additional FPs (i.e., one or more) before executing the turn.
-
-}
-
-}
 
 \trainingnote{\centering
-\CX{
 You are now ready to play Training Scenario 1.
 
 The Sequence of Play is not required, ignore it.
-}{
-You are now ready to play training scenario 1.
-
-The sequence of play is not required, and you may ignore it.
-}
 }
 
 % ISSUE: Clarify that this is the altitude at the start of the FP (which is relevant, for example, if HTR/C2 takes the aircraft into a different altitude band).
 
 \paragraph{Turning While Climbing or Diving.} 
-\CX{
 VFPs expended to climb or to dive do count as FPs expended toward turn FP requirements. If an aircraft moves to a new altitude band while turning, use the Turn Chart entry for the altitude band it began the turn in until the aircraft changes facing the first time; then use the chart for the altitude band the aircraft is currently in.
-}{
-VFPs expended to climb or dive count as FPs expended toward turn FP requirements. 
-
-If an aircraft moves to a new altitude band while turning, use the turn-chart entry for the altitude band in which it expended the first FP being counted toward its current facing requirement. If the aircraft has not yet changed facing, then this will be the altitude band in which it started the turn. If the aircraft has already changed facing and is continuing to turn, this will be the altitude band in which it last changed facing.
-}
 
 \begin{advancedrules}
-
-\DY[3A-turns]{
 
 \section{Sustained Turns}
 \label{rule:sustained-turning}
@@ -215,13 +74,9 @@ If an aircraft moves to a new altitude band while turning, use the turn-chart en
 Whenever an aircraft changes facing more than once in a game turn, it is performing a sustained turn.
 
 \notein{1B}{AWF: FH in the APJ 36 errata stated that the penalty was for each 30 degrees of facing change, 1B-apj-38-qa stated that this was a change in the 2nd edition rules.}
-\CX{
 \paragraph{Sustained Turn Drag Penalty.} An aircraft performing a sustained turn receives a drag penalty to 1.0 decel point for each \changedin{2A}{2A-sustained}{change of facing beyond the first}{30 degrees of facing change in the second and subsequent facing changes} in addition to any decel from the Turn Drag Chart. The drag penalty for sustained turning applies even if mixed turn rates or turn rates that normally incur 0 decel points are used.  
 
 Special maneuvers which cause facing changes are not considered for purposes of the sustained turn penalty. \deletedin{2A}{2A-snap}{The snap turn facing change is counter toward determining sustained turn penalties.}
-}{
-\paragraph{Sustained Turn Drag.} An aircraft performing a sustained turn receives a drag penalty of 1.0 DPs for each 30{\deg} of facing change in the second and subsequent facing changes, in addition to any DPs from turn drag. The aircraft receives sustained turn drag even if it uses mixed turn rates or turn rates that give 0 DPs of turn drag. Special maneuvers that cause facing changes are not considered for purposes of the sustained turn penalty.
-}
 
 \changedin{2A}{2A-sustained}{
 \paragraph{High Bleed Rate Drag Penalty.} An aircraft noted as having a High Bleed Rate loses speed faster than others in a sustained turn. Such aircraft receive a drag penalty of 2.0 decel points for each change of facing (after the first; in addition to any penalty from the Turn Drag Chart).
@@ -230,19 +85,10 @@ As above, the penalty for sustained turning applies even if mixed turn rates or 
 
 }{
 \paragraph{Low Bleed Rate.}
-\CX{
 An aircraft noted as having a low bleed rate loses speed slower than others in a sustained turn and receives a drag penalty of 0.5 DPs (rather than 1.0 DP) for each 30 degrees of facing change in the second and subsequent facing changes.
-}{
-If an ADC notes that an aircraft has a low bleed rate (LBR), it loses speed slower than others in a sustained turn and receives a sustained drag penalty of 0.5 DPs (rather than 1.0 DPs) for each 30{\deg} of facing change in the second and subsequent facing changes.
-}
 
 \paragraph{High Bleed Rate.} 
-\CX{
 An aircraft noted as having a high bleed rate loses speed faster than others in a sustained turn and receives a drag penalty of 1.5 DPs (rather than 1.0 DP) for each 30 degrees of facing change in the second and subsequent facing changes.
-}{
-If an ADC notes that an aircraft has a high bleed rate (HBR), it loses speed faster than others in a sustained turn and receives a sustained turn drag of 1.5 DPs (rather than 1.0 DPs) for each 30{\deg} of facing change in the second and subsequent facing changes.
-}
-}
 }
 
 \deletedin{2A}{2A-snap}{
@@ -273,34 +119,16 @@ A snap turn represents an aircraft using its instantaneous maximum angle of atta
 \paragraph{Snap Turn Equivalent to Break Turn.} For purposes of gun combat, weapons launches, and other restrictions, a Snap Turn is equivalent to a \changedin{1B}{1B-apj-22-qa}{BT}{BT or ET} turn. However, if the aircraft also turned at ET rate during the game-turn, the ET restrictions would apply.
 }
 
-\CX{
 \section{Angle of Bank}
-}{
-\section{Direction of Bank}
-}
 \label{rule:direction-of-bank}
 
-\CX{
 When an aircraft turns, it banks in the direction of that turn.  If an aircraft first turns left, and then immediately turns right, it must first roll out of the left bank and into a right bank. To reflect this momentary delay, an aircraft must spend 1 FP after the last facing (or after aborting the other turn) before FPs can be used to turn in the opposite direction. The aircraft is reversing its bank while spending this FP; this FP cannot be used for any other maneuvering requirement.
-}{
-When an aircraft turns, it banks in the direction of that turn. If an aircraft turns in one direction and then in the other, it must roll between the turns to reverse its bank. 
-
-An aircraft must spend 1 FP after the last facing (or after aborting a turn) to reverse its bank before using FPs to turn in the opposite direction. The aircraft cannot use this FP for any turning or maneuvering requirements.
-}
 
 \paragraph{High Roll Rate.} 
-\CX{
 An aircraft noted as having a High Roll Rate can instantly reverse its angle of bank. It is not required to spend the 1 FP to reverse angle of bank. \deletedin{2A}{2A-snap}{\addedin{1B}{1B-apj-23-errata}{It must still pay the one HFP prep to snap turn if not beginning from wings level, or if having just faced, prepped for or executed a maneuver.}}
-}{
-If an ADC notes that an aircraft has a high roll rate (HRR), it can instantly reverse its bank. It does not need to spend 1 FP to reverse its bank between turns in opposite directions.
-}
 
 \paragraph{Low Roll Rate.} 
-\CX{
 An aircraft noted as having a Low Roll Rate must spend 2 FP after the last facing (or after aborting the other turn) before FPs can be used to turn in the opposite direction. The aircraft is reversing its bank while spending these FPs; the FPs cannot be used for any other maneuvering requirement.
-}{
-If an ADC notes that an aircraft has a low roll rate (LRR), it must spend 2 FPs after the last facing (or after aborting a turn) before using FPs to turn in the opposite direction. The aircraft cannot use these FPs for any turning or maneuvering requirements.
-}
 
 \addedin{1B}{1B-apj-36-errata}{The term “wings level” means an aircraft did not just face, abort a turn, or prep for or complete a maneuver. Thus it reflects an aircraft's readiness to maneuver further. Being “not wings level” is \emph{not} synonymous with being banked.}
 
@@ -310,30 +138,17 @@ If wings level, a Low Roll Rate aircraft must first spend 1 FP to establish an a
 
 
 \paragraph{Rolling Maneuvers and Banks.} 
-\CX{
 When an aircraft performs a rolling maneuver, it may exit that maneuver banked in any desired direction.
-}{
-An aircraft may exit a rolling maneuver banked in any desired direction.
-}
 
 \section{Turning and Minimum Speeds}
 \label{rule:turning-and-minimum-speeds}
 
-\CX{
 As the angle of attack on an aircraft's wing increases, so does the speed at which it stalls. To simulate this, no aircraft may utilize turn rates greater than EZ unless their start speed for the turn equals or exceeds their minimum speed plus the amount shown \changedin{1C}{1C-tables}{on the table below}{in Table~\ref{table:turn-minimum-speed}}.
-}{
-As the angle of attack on an aircraft's wing increases, so does the speed at which it stalls. To simulate this effect, no aircraft may use turn rates greater than EZ unless their start speed for the turn equals or exceeds their minimum speed plus the amount shown in Table~\ref{table:turn-minimum-speed}.
-}
 
 \input{tables/table-turn-minimum-speed}
 
-\CX{
 If an aircraft has turn carry brought forward to the next game turn, and the new start speed for the aircraft is less than the Minimum Turn Speed required, a Maneuvering Departure automatically occurs. If not using advanced rule 7.7, consider the aircraft to enter regular departed flight.
-}{
-If an aircraft carries a turn forward and the new start speed is less than that required by Table~\ref{table:turn-minimum-speed}, it suffers a maneuvering departure. (These departures are described in advanced rule~\ref{rule:maneuvering-departures}); if this advanced rule is not being used, the aircraft enters regular departed flight described in rule~\ref{rule:abnormal-flight}.)
-}
 
-\DX{
 \section{G Induced Loss of Consciousness}
 \label{rule:gloc}
 
@@ -376,12 +191,11 @@ An individual affected by GLOC is unconscious. The following procedures are foll
     \item\itemparagraph{Ejection.} If the pilot of a multi-crew aircraft is GLOC'd, and randomized flight of the aircraft will result in an inevitable crash, a conscious crewmember can eject himself and all other crewmembers.
 
 \end{itemize}
-}
+
 
 \section{Maneuvering Departures}
 \label{rule:maneuvering-departures}
 
-\CX{
 An aircraft may depart controlled flight for reasons other than being stalled. An aircraft may experience maneuvering departures in the following situations:
 
 \begin{itemize}
@@ -400,46 +214,19 @@ An aircraft may depart controlled flight for reasons other than being stalled. A
 \end{itemize}
 
 A Maneuvering Departure is always automatic in the first case and occurs on a die roll of 4 or less in the latter two.  
-}{
-An aircraft may depart controlled flight for reasons other than being stalled. An aircraft may experience a maneuvering departure in the following situations:
 
-\begin{itemize}
-    \item When its start speed is insufficient for its carried turn rate (see rule \ref{rule:turning-and-minimum-speeds}).
-    
-    \item When it has poor supersonic maneuverability (PSSM), is supersonic, and its carried turn rate is not permitted (see rule \ref{rule:pssm}).
-
-    \item When it is above its ceiling and attempts to roll or turn at a rate higher than EZ (see advanced rule \ref{rule:flight-above-maximum-ceiling}).
-
-    \item When it executes a rolling maneuver in the EH or higher altitude bands (see rule \ref{rule:rolling-maneuvers-at-eh-or-uh-altitude}).
-
-\end{itemize}
-
-A maneuvering departure is automatic in the first case and occurs on a die roll of $4-$ in the latter two. 
-}
-
-\CX{
 When a maneuvering departure occurs, use the following procedures for its abnormal flight:
 
 \paragraph{Determine Location Shift.} A maneuvering departure will shift the aircraft's position. Divide the aircraft's remaining FPs (at the instant of maneuvering departure) by 2 and drop any fractions. This result is the number of hexes the aircraft will be moved during the maneuvering departure.
 
 \paragraph{Facing Changes.} Determine the direction and quantity of facing changes as for regular departures. However, initially make only the first facing change, then shift the aircraft the required number of hexes determined as described above, and only then apply the remaining facing changes.
 
-}{
-\paragraph{Maneuvering Departure Procedure.} When an aircraft suffers a maneuvering departure, use the following procedures for its abnormal flight. A maneuvering departure will change the aircraft's map location and facing. Divide the aircraft's remaining FPs (at the instant of maneuvering departure) by two and round down to determine the number of hexes the aircraft will move during the maneuvering departure. Determine the direction and number of 30{\deg} facing changes as for regular departures (see rule~\ref{rule:abnormal-flight}). However, initially make only the first 30{\deg} facing change, then move the aircraft the number of hexes determined above, and only then apply the remaining facing changes.
-
-}
-
-\CX{
 \addedin{1B}{1B-apj-36-errata}{\paragraph{Altitude Loss.} On the turn in which it occurs, a Maneuvering Departure does not, by itself, impose an altitude loss. The subsequent departed flight most likely will.}
-}{
-\paragraph{Altitude Loss.} A maneuvering departure does not, by itself, cause an aircraft to lose altitude. The subsequent departed flight most likely will.
-}
 
 \paragraph{Subsequent Turns.} On subsequent game turns, a maneuvering departure is treated as regular departed flight.
 
-\DX{
 \section{Formation Restrictions on Turning}
 
 \paragraph{Close Formations.} If a Close Formation consists solely of two aircraft, turns of up to the HT rate may be used. If more than two aircraft are in close formation, only the EZ and TT rates may be used. If these limits are exceeded, the formation automatically breaks down into tactical formation and collisions are possible if more than two aircraft are in the same position at the end of the turn. Tactical formations have no turning restrictions.
-}
+
 \end{advancedrules}
