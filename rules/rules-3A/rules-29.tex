@@ -1,0 +1,58 @@
+\rulechapter{Aircraft Fuel Consumption}
+
+This chapter details the restrictions imposed on aircraft operations by their need for fuel. This entire Chapter is an \emph{ADVANCED RULE.}
+
+\section{Fuel Consumption}
+\label{rule:fuel-consumption}
+
+\paragraph{Fuel Points.} Fuel is measured in fuel points. Each fuel point is equal to approximately 20 pounds of JP4 jet fuel (in some aircraft each point represents a lesser amount).
+
+\paragraph{Internal Fuel Tankage.} The ADC shows the internal fuel tankage (in fuel points) for an aircraft.
+
+\paragraph{External Fuel Tankage.} Fuel may also be carried in external fuel tanks. When an external fuel tank (FT) is attached to an aircraft, the aircraft can carry additional fuel points.
+
+\paragraph{Starting Fuel.} If a scenario indicates that starting fuel is greater than internal tank capacity, the excess fuel is in the external tanks. If the tanks are jettisoned, the total fuel available is immediately reduced to internal tank capacity. If starting fuel is less than internal capacity, the external tanks are empty. They may be jettisoned without penalty.
+
+\paragraph{Fuel Usage.} An aircraft uses fuel points each game-turn based on its power setting for the turn. The power chart on the ADC shows the fuel usage for each power setting. In the Aircraft Admin Phase of a game-turn, the aircraft notes the fuel used and subtracts it from· the previous game-turn's fuel remaining.
+
+The power chart assumes that all engines for the aircraft are operating. If one or more of the aircraft's engines are not operating, fuel use is multiplied by the fraction of engines still running. For example, if one of two engines is running, fuel use is half of the amount indicated,
+
+\paragraph{Exhausted Fuel.} If, at any time, an aircraft's fuel points are reduced to zero, its engines flame-out and cannot be restarted. The aircraft, if not landed before then, glides to its destruction being considered a kill for the enemy.
+
+\addedin{1C}{1C-tables}{
+    \input{tables/table-bingo}
+}
+
+\paragraph{Bingo Fuel.} The quantity of fuel required to return safely to base is bingo fuel. This quantity is provided in the scenario. When an aircraft ends a scenario or disengages, the fuel it has remaining is noted and compared with the bingo fuel figure. Roll one die and consult the appropriate column \changedin{1C}{1C-tables}{on the bingo chart}{of Table~\ref{table:bingo-fuel}} to determine the aircraft's fate which will be either a safe return, divert to an emergency landing strip, or a crash. If a crash occurs V.P.s equal to an aircraft kill are awarded to the other side in lieu of the crashed aircraft's end game damage. If the aircraft diverts, bonus points equal to L damage on the aircraft are awarded to the other side.
+
+\section{Prolonged Scenarios}
+\label{rule:prolonged-scenarios}
+
+When fuel usage is in effect, players may continue to play a scenario without regard to its specified length in game turns. Instead, the scenario continues until all aircraft of one side have been destroyed or have disengaged from battle.
+
+\paragraph{Disengagement.} Aircraft generally disengage because of damage or fuel considerations. An aircraft may disengage at the end of any game turn in which one of the following apply:
+
+\begin{itemize}
+
+    \item It is not visually spotted and not radar contacted and rolls an 8 or less.
+
+    \item It has flown out of spotting range and is not radar contacted, and the player rolls 8 or less.
+
+    \item The aircraft is spotted but out of enemy cannon range and outside IR missile maximum lock-on range and no radar lock-ons with the potential of guiding radar missiles are held against it and the player makes a disengagement roll of 6 or less.
+
+    \item The aircraft declares an intent to disengage, and subsequently avoids gelling shot at by missiles or for three game-turns running and makes a disengagement roll of 4 or less.
+
+    \item The aircraft has agreement from all other players that it can disengage.
+
+\end{itemize}
+
+Aircraft which intend to disengage may not make attacks of any sort. Aircraft which successfully disengage are removed from play.
+
+\section{Air to Air Refueling}
+\label{rule:air-to-air-refueling}
+
+\paragraph{Tankers.} Some scenarios may specify that air to air refueling tankers are available to one side or another. If that is the case, aircraft that are capable of air to air refueling, may seek to refuel from a tanker at the end of play.
+
+\paragraph{Refueling Procedure.} The scenario will give a tanker availability number. When play ends, a die is rolled for each group of aircraft that disengaged together or ended play together. If the result (after individual modification) is equal to or less than the tanker number, an aircraft in that group is considered to reach the tanker and will receive enough fuel to bingo home safely regardless of their fuel state at the end of play.
+
+A die roll modifier of $+1$ to reach the tanker exists for each 20 percent below bingo fuel an aircraft exits the game with. Apply this modifier individually to the group roll for each aircraft.

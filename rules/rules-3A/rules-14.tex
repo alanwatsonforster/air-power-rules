@@ -1,0 +1,819 @@
+\rulechapter{Air-to-Air Missile Flight and Combat}
+\label{rule:air-to-air-missiles}
+
+\CX{
+This chapter describes the procedures for launching and moving missiles in flight, and for conducting missile attacks when a target aircraft is reached. Aircraft may launch missiles against a properly detected and tracked target. The precise requirements for detection and tracking are specific to each type of missile and are described later.
+}{
+This rule describes the procedures for launching and flying air-to-air missiles (AAMs) and conducting missile attacks on a target aircraft. 
+
+Air-to-air missiles can be divided according to their seeker into infrared- and radar-guided missiles. This rule describes the common characteristics of both types of missiles. The specific rules relating to the seekers are given in rule~\ref{rule:infrared-heat-seeking-missiles} for infrared-guided missiles and rule~\ref{rule:radar-guided-missiles} for radar-guided missiles. 
+
+Targets may defend themselves against air-to-air missiles by maneuvering so that they can no longer be tracked by the seeker (see rules~\ref{rule:infrared-heat-seeking-missiles} and \ref{rule:radar-guided-missiles}) by dispensing decoys such as flares, chaff, and mini-jammers (see advanced rule~\ref{rule:dds}), by using radar or infrared jammers (see advanced rules~\ref{rule:radar-jamming} and \ref{rule:infrared-jamming}).
+}
+
+\CX{
+\section{Missile Data Tables}
+}{
+\section{Missile Data}
+}
+\label{rule:missile-data}
+
+\CX{
+The information required to launch and fly each type of air-to-air missile is provided in \changedin{1C}{1C-tables}{the Missile Data Table (MDT) included in the play aid charts}{Table~\ref{table:missile-data}}. The data included in the table is as follows:
+
+\begin{itemize}
+
+    \item \itemparagraph{Type.} The name and/or model number of the missile.
+
+    \item \itemparagraph{Year.} The operational service entry date, if known.
+
+    \item \itemparagraph{Weight.} Weight in pounds of missile (for load limits).
+
+    \item \itemparagraph{Load.} The load points of missile (for conf.\ limits).
+
+    \item \itemparagraph{Seeker.} A letter code indicating the type of seeker the missile has. E, I, M, A, are infrared seekers (Early, Improved, Modern, Advanced).  BR, RH, AH are radar seekers (Beam-Rider, Radar-Homer, Active-Homer). A dash means it is unguided and has no seeker.
+
+    \item \itemparagraph{Launch G.} This is the maximum turn rate an aircraft may use during flight to launch the missile without penalty. If a higher rate was used, a cumulative $+2$ modifier must be applied to the roll for each step of higher turn rate.
+
+    \item \itemparagraph{Launch Roll.} The die roll or less needed to successfully launch missile. \changedin{1C}{1C-tables}{The missile combat charts indicate}{Table~\ref{table:missile-launch-modifiers} indicates} the various modifiers to the roll.
+
+    \item \itemparagraph{Turn Ability.} Missiles use \changedin{1C}{1C-tables}{the Turn Charts}{Table~\ref{table:turn} to determined their turn requirements} just as aircraft do. Their maximum allowed turn rates are listed here.
+
+    \item \itemparagraph{Flight Time.} This is the maximum number of game turns the missile may be in play.
+
+    \item \itemparagraph{Visibility.} This is the missile's visibility number used for sighting purposes.
+
+    \item \itemparagraph{ECCM \#.} The missile's resistance rating to jamming and ground clutter. It is used as a die roll modifier in certain situations explained later, see ECM rules.
+
+    \item \itemparagraph{Chaff \#.} This is the missile's vulnerability rating to chaff and mini-jammer decoys. See ECM rules.
+
+    \item \itemparagraph{Flare \#.} This is the missile's vulnerability rating to flare decoys. See ECM rules.
+
+    \item \itemparagraph{Launch Envelope.} The missile's minimum and maximum ranges in terms of hexes that a missile may be fired at a target are listed here for front, side and rear shots (note, for radar missiles the maximum range is a function of the aircraft's radar tracking strength).
+
+    Note: Front shots are those taken from the target's 150 and 180 arcs; side shots are those from the 120 and 90 arcs; rear shots are those from the 60 or less arcs. NA indicates the shot is not allowed. Each two altitude levels difference in altitude between firer and target equal one hex in range.
+
+    \item \itemparagraph{Speed.} This is the missile's BASE speed which is used as described below to determine a missile's actual speed on its first turn of flight. After the first game turn, the missile's speed will be vary based on numerous factors explained below. A slash with a second number indicates the missile has a sustainer motor which lasts a number of game turns equal to the second number.
+
+    \item \itemparagraph{Active Homing.} This is the range in hexes at which an AH missile's own radar seeker becomes active allowing it to track its target.
+
+    \item \itemparagraph{Home-On-Jam.} A “Y” indicates the missile has a home on jam ability which allows it to guide against aircraft using barrage jamming, see ECM rules.
+
+    \item \itemparagraph{Look Down.} A “Y” indicates the missile has the ability to be used in look down parameters in conjunction with a look down capable radar.
+
+    \item \itemparagraph{Roll To Hit.} The two columns list the number or less from the missile's attack die roll that will result in a direct (first column) or proximity (second column) hit. A direct hit gives a minus 2 damage roll modifier for blast effects.
+
+    \item \itemparagraph{Attack Rating.} The two columns list the attack ratings for a direct (first column) or  proximity (2d column) hit for use with the Aircraft damage tables.
+
+\end{itemize}
+
+Notes: Any special characteristics or missile notes are indicated in the notes section and the note text can be found at the bottom of the MDCs.
+
+}{
+Table~\ref{table:missile-data} gives information for carrying, launching, flying, and attacking with air-to-air missiles. The data included in the table is as follows:
+
+\begin{itemize}
+
+    \item \itemparagraph{Year.} The operational service entry date.
+    
+    \item \itemparagraph{Type and Name.} These give the designation or model of the missile and its name. Sometimes, the table gives more than one designation. For example, for early USAF missiles, it gives both the post-1963 AIM designations and the pre-1963 GAR/MB designations.
+
+    \item \itemparagraph{Weight.} This gives the missile weight in pounds (for load limits).
+
+    \item \itemparagraph{Load.} This gives load points of the missile (for configuration limits).
+
+    \item \itemparagraph{Seeker.} A letter code indicating the type of seeker the missile has: E, I, M, and A are early, improved, modern, and advanced infrared seekers; BR, RH, and AH are beam-rider, radar-homing, and active-homing seekers; and a dash means that the missile is unguided and has no seeker.
+
+    \item \itemparagraph{Launch Turn Rate.} This is the maximum turn rate an aircraft may use during flight to launch the missile without penalty. If the aircraft used a higher rate, a cumulative $+2$ modifier applies to the launch roll for each level of higher turn rate.
+
+    \item \itemparagraph{Launch Roll.} The die roll or less needed to successfully launch a missile. Table~\ref{table:missile-launch-modifiers} gives the various modifiers to the roll.
+
+    \item \itemparagraph{Turn Rate.} Missiles use Table~\ref{table:turn} to determine their turn requirements, just as aircraft do. This is their maximum turn rate.
+
+    \item \itemparagraph{Flight Time.} This is the maximum number of game turns the missile may be in play.
+
+    \item \itemparagraph{Visibility.} This is the missile’s visibility number for sighting purposes.
+
+    \item \itemparagraph{ECCM Rating.} This is the missile’s resistance rating to jamming and ground clutter (see rule~\ref{rule:electronic-warfare} and \ref{rule:rgm-ground-clutter}).
+
+    \item \itemparagraph{Chaff Vulnerability Rating.} This is the missile’s vulnerability rating to chaff (see rule~\ref{rule:electronic-warfare}). The missile’s mini-jammer vulnerability rating is not given explicitly, but is the chaff vulnerability rating plus one.
+
+    \item \itemparagraph{Flare Vulnerability Rating.} This is the missile’s vulnerability rating to flare decoys (see rule~\ref{rule:electronic-warfare}).
+
+    \item \itemparagraph{Launch Envelopes.} These are the minimum and maximum ranges at which a missile may be launched at a target. (For BRMs and RHMs, the maximum range also depends on the aircraft’s radar tracking strength.)
+
+    \item \itemparagraph{Speed.} This is the missile’s base speed, which is used as described below to determine a missile’s actual speed on its first turn of flight. After the first game turn, the missile’s speed will vary according to the procedure given below. A dash with a second number indicates the missile has a sustainer motor, which lasts a number of game turns equal to the second number.
+
+    \item \itemparagraph{Active Homing.} This is the range in hexes at which an AH missile’s radar seeker becomes active, allowing it to track its target.
+
+    \item \itemparagraph{Hit Roll.} The two columns list the number or less for the missile’s attack hit roll that will result in a direct (first column) or proximity (second column) hit. A direct hit gives a $-2$ damage roll modifier.
+
+    \item \itemparagraph{Attack Rating.} The two columns list the attack ratings for a direct (first column) or proximity (second column) hit for use with the aircraft damage tables.
+
+    \item \itemparagraph{Notes.} The notes indicate whether the missile has special characteristics such as:
+    \begin{itemize}
+        \item NW: nuclear warhead (see advanced rule~\ref{rule:air-to-air-nuclear-rockets}).
+    \item UNC: seeker compatible with IR uncage technology (see rule~\ref{rule:ir-uncage}).
+    \item HOJ: home-on-jam seeker (see rule~\ref{rule:home-on-jam-seeker}).
+    \item IA: instant-arming missile (see rule~\ref{rule:instant-arming-missiles}).
+    \item LD: look-down missile (see rule~\ref{rule:look-down-missiles}).
+    
+    \end{itemize}
+
+\end{itemize}
+}
+
+\section{Missile Launches}
+\label{rule:missile-launches}
+
+\CX{
+An aircraft may launch up to two missiles at a targeted enemy aircraft during the Air to Air Missile Launch Phase.
+}{
+An aircraft may launch up to two missiles at an enemy aircraft during the air-to-air missile launch phase.
+}
+
+\addedin{1C}{1C-tables}{
+    \input{tables/table-missile-launch-modifiers}
+}
+
+\AX{
+
+\paragraph{Missile Launch Envelopes.}
+The missile data include the launch envelopes, which are the minimum and maximum ranges for launches from the front, side, and rear of the target.  If no ranges are given, launches are not allowed from that aspect.
+
+Front launches are from the target's \arcrange{150}{+} horizontal arc, rear launches are from the target's \arcrange{60}{-} horizontal arc, and side launches are from other arcs.
+
+\AY[3A-horizontal-arcs]{
+When determining the horizontal arc, the target is the reference element and the launching aircraft is the distant element. Resolve borderline cases by first moving the faster element forward. If the faster element remains on the borderline, use the wider arc.
+}
+
+\paragraph{Missile Launch Requirements.} 
+The following requirements apply to all types of missiles:
+\begin{itemize}
+
+    \item All missiles launched by an aircraft in a single phase must be the same type (for example, AIM-9 or AA-7). An aircraft may launch IR and RH versions of a single type in the same phase if the targeting requirements of each seeker type are met.
+    \item An aircraft that engaged a missile (see rule \ref{rule:engaging-missiles}) may not launch missiles.
+    \item An aircraft that turned at the ET rate may not launch a missile until after a recovery period (see rule~\ref{rule:recovery-periods}).
+
+    \item An aircraft that fired its guns or rockets after its last FP that game turn may not launch missiles.
+
+    \item An aircraft that prepared for or executed a roll maneuver during its last FP that game turn may not launch missiles.
+    
+    \item The target must be within the missile launch envelope.
+
+    \item An aircraft firing IRMs must also satisfy the additional requirements in rule~\ref{rule:irm-launch-prerequisites}.
+    \end{itemize}
+
+
+
+
+The following requirements apply to BR, RH, and AH missiles:
+
+\begin{itemize}
+
+    \item An aircraft may not fire on a target that is not within its radar arc limits.
+
+\end{itemize}
+}
+
+\CX{
+\paragraph{Procedure.} 
+Announce the number of missiles that each aircraft will attempt to fire (one or two) and their intended target during the Air to Air Missile Launch Phase.
+
+Roll the die for each missile.\addedin{1C}{1C-tables}{\ Table~\ref{table:missile-launch-modifiers} shows the modifiers to the launch roll.} If the result is equal to or less than the missile launch roll number given for that type of missile \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}}, the launch is successful, place a missile counter in the launch aircraft's position with the exact same facing and altitude as the aircraft. On the next game turn, the missile will fly in pursuit of its target. \changedin{2A}{2A-missile-launch}{If the launch roll is greater than the launch number}{If the launch roll fails by more than one or is an unmodified 10}, the missile has malfunctioned (through faulty guidance, or because of a dud motor). The malfunctioned missile is removed from play. In either case, the missile and its load points are considered expended. \addedin{2A}{2A-missile-launches}{If the launch roll fails by exactly one and is not an unmodified 10, the launch fails, but the missile remains on the rail and can be used in the future.}
+
+If all declared launch attempts from an aircraft fail, the player may attempt one additional launch that phase. If at least one missile fired previously, this last attempt is not allowed. A missile's target is noted when it is launched.
+}{
+\paragraph{Missile Launch Procedure.} 
+Announce the type and number of missiles each aircraft will attempt to fire (one or two) and their target.
+
+Roll the die for each missile.\addedin{1C}{1C-tables}{\ Table~\ref{table:missile-launch-modifiers} shows the modifiers to the launch roll.} 
+
+\begin{itemize}
+    \item If the modified result is equal to or less than the missile launch roll number given in Table~\ref{table:missile-data} \emph{and is not an unmodified 10}, the launch succeeds. Place a missile counter at the launch aircraft's position with the same facing and altitude as the aircraft. On the next game turn, the missile will fly in pursuit of its target. 
+
+    \item If the modified result is only one greater than the missile launch roll number given in Table~\ref{table:missile-data} \emph{and is not an unmodified 10}, the missile fails before launch.
+    In this case, the missile is not launched but remains on the rail and can be used in a subsequent game turn.
+
+    \item If the modified result is more than one greater than the missile launch roll number given in Table~\ref{table:missile-data} \emph{or is an unmodified 10}, the missile fails after launch (perhaps because of faulty guidance or a dud motor). The failed missile is removed from play.  
+
+
+\end{itemize}
+
+In the first and third cases, the missile is considered to have been expended, and its load points are no longer counted for the aircraft's load.
+
+If all declared launch attempts result in launch failures or missile failures, the player may attempt one additional launch in that phase. This last attempt is not allowed if at least one launch attempt was successful. 
+
+A missile's target is noted when it is launched.
+}
+\DX{
+\paragraph{Missile Launch Restrictions.} Only “free” aircraft may launch missiles. All missiles launched by one aircraft in a single phase must be of the same type (for example, AIM-9 or AA-7). IR and RH versions of a single type may be launched in the same phase by the one aircraft if the targeting requirements of each seeker type are met.
+
+Aircraft attempting to launch Visually aimed (IR) missiles are restricted as follows:
+ 
+\begin{itemize}
+
+    \item If the launch aircraft climbed during the turn of launch, it may not fire at a lower target.
+
+    \item If the launching aircraft dove, it may not fire at a higher target.
+
+    \item If the launching aircraft flew level, the difference in altitude between the firer and target may not be more than one level for each two hexes distance between the two.
+
+\end{itemize}
+
+Aircraft attempting to launch Radar Guided missiles are restricted as follows:
+
+\begin{itemize}
+
+    \item The target must be within the aircraft's radar arc limits or the launch aircraft may not fire.
+
+\end{itemize}
+
+Aircraft attempting to launch any type of missile are restricted as follows:
+
+\begin{itemize}
+
+    \item An aircraft that turned at ET may not launch a missile unless the recovery period described in chapter 9 has been met.
+
+    \item An aircraft that fired its \changedin{2B}{2B-launch-restrictions}{guns during}{guns or rockets after} its last FP that turn may not launch missiles.
+
+    \item An aircraft that executed a roll maneuver, or prepped for a roll during its last FP that turn, may not launch missiles.
+    
+\end{itemize}
+}
+
+\paragraph{Missile Launch Modifiers.} 
+\label{rule:missile-launch-modifiers}
+
+\CX{
+High aircraft turn rates during the turn of launch can adversely affect a missile's ability to stay locked on to a target during its separation from the launch aircraft and motor ignition. Each missile has a Launch G (turn rate) listed for it \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}}. This is the highest turn rate the launching aircraft may use in the game turn and still be able to launch those missiles without penalty. If a higher turn rate was used in the turn, a $+2$ modifier is applied to the launch roll for each turn rate above the listed Launch G.
+
+For example, if a missile has a Launch G of “TT”, and the aircraft used a BT turn rate during the game turn, a $+4$ modifier to the launch roll would apply.
+
+Additional launch roll modifiers may exist for weather, terrain clutter, crew quality, and the presence of missile countermeasures in the form of decoys (expendable chaff, flares, and mini-jammers), or electronic jamming. These modifiers are explained in later rules.
+}{
+
+Table~\ref{table:missile-launch-modifiers} summarizes the modifiers for missile launch rolls. In more detail, they are:
+\begin{itemize}
+    \item The turn rate of an aircraft during launch can adversely affect a missile's ability to stay locked onto a target during its separation from the aircraft and motor ignition. 
+    
+    Each missile has a maximum launch turn rate given in Table~\ref{table:missile-data}. If the launching aircraft has used a higher turn rate and has not yet completed the corresponding recovery period (see rule~\ref{rule:recovery-periods}), it suffers a $+2$ modifier for each turn rate above the maximum.
+
+    For example, if a missile has a maximum launch turn rate of TT and the launching aircraft used a BT turn rate and has not yet completed the recovery period, a $+4$ modifier would apply to the launch roll.
+
+    \item If a missile is launched out-of-envelope, it receives a $+3$ modifier (see advanced rules \ref{rule:irm-out-of-envelope-launches} and \ref{rule:radar-out-of-envelope-launches}).
+    
+    \item IRMs are also subject to the modifiers in rule~\ref{rule:irm-launch-modifiers}.
+
+    \item BRMs are also subject to the modifiers in rule~\ref{rule:brm-launch-modifiers}
+    
+    \item RHMs are also subject to the modifiers in rule~\ref{rule:rhm-launch-modifiers}.
+    
+    \item AHMs are also subject to the modifiers in rule~\ref{rule:ahm-launch-modifiers}.
+    
+    \item The quality and characteristics of the crew give launch modifiers (see advanced rule~\ref{rule:crew-ability} and \ref{rule:crew-characteristics}). 
+    
+    In multi-crew aircraft, the pilot is the relevant crewmember for IRM launches, and the radar operator (RIO, WSO, or equivalent) is the relevant crewmember for BRM, RHM, and ARM launches.
+
+    \item If the launch aircraft is damaged, it suffers a launch modifier.
+    
+\end{itemize}
+}
+\section{Missile Flight}
+\label{rule:missile-flight}
+
+\CX{
+Missile flight has been simplified for ease of play. A missile must expend all of its FPs each turn. It does not differentiate between HFPs and VFPs as aircraft do. The missile's start speed and altitude is recorded on the aircraft log each game turn. Unlike aircraft, missiles may both climb and dive (within restrictions) in the same turn in order to pursue their target. Missiles never have or carry half FPs or partial altitude gains.
+}{
+Missile flight is a simplified version of aircraft flight. The missile's start speed and altitude are recorded on the aircraft log each game turn. A missile must expend all of its FPs each turn. It does not differentiate between HFPs and VFPs, as aircraft do. Unlike aircraft, missiles may both climb and dive (within restrictions) in the same turn to pursue their target. Missiles never have or carry half FPs or partial altitude gains.
+}
+
+\CX{
+\paragraph{Start Speeds And Altitudes}. On its first turn of flight (the game turn after the one in which it was launched) a missile's start altitude is the same as the launch aircraft's start altitude the turn after launch. Its start speed is its base speed listed \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}} adjusted as follows:
+
+\begin{itemize}
+
+    \item minus one if the speed of the launch aircraft on the turn after launch is 3.0 or less or,
+
+    \item plus one if the start speed is 6.0 or more or
+
+    \item plus two if the start speed is 9.0 or more
+\end{itemize}
+
+On subsequent turns, the missile's start altitude will be the altitude it ended up at after its flight in the previous turn and its start speed will be two thirds its previous speed rounding fractions up, and adjusted as follows:
+
+\begin{itemize}
+
+    \item minus one if the missile's altitude gain for the turn equaled half or more of its speed in levels, or minus two if it equaled its speed or more in levels.
+
+    \item plus one if the missile's altitude loss for the turn equaled half or more of its speed in levels, or plus two if it equaled its speed or more in levels.
+
+\end{itemize}
+
+Example: A missile with a start speed of 14 gained 8 levels during its flight. Its new start speed would be 8 (2/3d's of 14 = 9; minus 1 for altitude gain).
+}{
+\paragraph{Missile Start Speeds And Altitudes}. In its first game turn of flight (the game turn after the one in which it was launched), a missile's start altitude is the same as the launch aircraft's start altitude in the game turn after launch. Its start speed is its base speed listed in Table~\ref{table:missile-data} adjusted as follows:
+
+\begin{itemize}
+
+    \item $-1$ if the speed of the launch aircraft on the turn after launch is 3.0 or less,
+
+    \item $+1$ if the speed is 6.0 or more, and
+
+    \item $+2$ if the speed is 9.0 or more.
+\end{itemize}
+
+In subsequent game turns, the missile's start altitude will be its altitude after its flight in the previous turn, and its start speed will be {\twothirds} its previous speed, rounding fractions up, and then adjusted as follows:
+
+\begin{itemize}
+
+    \item $-1$ if the missile's altitude gain for the game turn in levels is half or more of its speed or $-2$ if it is its speed or more.
+
+    \item $+1$ if the missile's altitude loss for the game turn in levels is half or more of its speed or $+2$ if it is its speed or more.
+
+\end{itemize}
+
+For example, if a missile with a start speed of 14 gains 8 levels during its flight, its new start speed would be 8 (as { \twothirds} of 14 is 9 and this is then reduced by 1 for an altitude gain in levels of half or more of its speed).
+}
+
+\CX{
+\paragraph{Sustainer Motors.} Missiles equipped with sustainer motors determine their start speed differently. If a missile has a sustainer, its first turn of flight speed is equal to its base speed as indicated \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}} plus the full speed of the aircraft (rounding fractions up). For every turn the sustainer lasts, the missile's speed is not reduced to two thirds as above but only adjusted for climbs and dives. After the sustainer burns out, the missile's speed is reduced as above. A missile with a sustainer will have a number after a slash in the Speed column \changedin{1C}{1C-tables}{of the MDT}{in Table~\ref{table:missile-data}}. The number indicates how many turns the sustainer motor lasts.  A “1” indicates the sustainer is only good for the first turn of flight.
+}{
+\paragraph{Missile Sustainer Motors.} 
+Table~\ref{table:missile-data} indicates whether a missile has a sustainer motor. If the number after the dash following the base speed is zero, the missile does not have a sustainer motor, and its speed is determined as described above. Otherwise, the missile has a sustainer motor, and the number indicates how many game turns it burns. For example, “1” indicates the sustainer only burns during the first turn of flight.
+
+If a missile has a sustainer motor, in its first game turn of flight its speed is equal to its base speed given in Table~\ref{table:missile-data} plus the speed of the aircraft, rounding fractions up. In subsequent game turns, while the sustainer continues to burn, the missile’s speed is not reduced by {\twothirds} as above but only adjusted for climbs and dives. In game turns after the sustainer burns out, the missile’s speed is reduced as above. 
+}
+
+\paragraph{Missile Order of Flight.} A missile always flies at the same time as its target.
+
+\CX{
+\paragraph{Missile Proportional Flight.} Missiles and their targets move simultaneously. To simulate this, the missile and its target always alternate their expenditure of FPs in proportion to their relative speeds\addedin{2A}{2A-missile-flight}{, with the missile moving first}. Proportional speed is determined by dividing the faster speed by the slower speed. The result (ignoring fractions) is the number of FPs expended by the faster missile per FP expended by the slower aircraft.  Leftover missile FPs are tacked on as extra FPs in the first few segments of the proportional flight.
+
+For example, if the aircraft speed is 5.0 and the missile speed is 15.0. Five goes into fifteen three times. Thus, the missile will move 3 FP for each 1 FP moved by the aircraft.  In this case, \changedin{2A}{2A-missile-flight}{the aircraft would move one FP and then the missile would move three}{the missile would move three FPs and then the aircraft would move one}.  This continues until both are out of FPs for the turn or the missile reaches a position from which an attack can occur.
+
+If the proportion includes leftover FPs, for example, say the missile's speed was 17.0 instead of 15.0. In this case five goes into seventeen three times with two left over. The missile would still move three for one except the two extra points are added on one at a time in the first two segments of movement that turn. That is, \changedin{2A}{2A-missile-flight}{the aircraft would move one, then the missile four ($3+1$), then the aircraft one and missile four again}{the missile would move four FPs, then the aircraft one, then the missile four, and the the aircraft one again}. After that, the missile reverts to its three to one proportion.
+
+If an aircraft's speed includes a fraction; say it is 4.5 instead of 5.0, round it up to simplify determining proportions but use its actual speed when moving. This would give the same result as in the above paragraph (5 into 17). The difference comes in the execution of the segments. The moves would be 4 for 1, 4 for 1, 3 for 1, 3 for 1, and then 3 for the aircraft's half FP.
+}{
+\paragraph{Missile Proportional Flight.} Real missiles and their targets move simultaneously. To simulate this, the missile and its target always alternate their expenditure of FPs proportionally, with the missile moving first. 
+
+\begin{itemize}
+\item If the missile and aircraft have the same number of FPs available, they alternate FPs one by one, with the missile moving first.
+
+\item The missile will typically have more FPs than the aircraft. In this case, divide the missile's number of FPs by the aircraft's number of FPs. If the result is exact, the missile and aircraft alternative proportional moves, with the missile moving the result in FPs and then the aircraft moving one FP. If the result is not exact, this procedure is modified, and the remaining FPs are added one each to the first proportional moves of the missile.
+
+\item If the aircraft has more FPs than the missile, use the preceding procedure with the roles reversed to determine the number of FPs in the aircraft's proportional moves. The missile still moves first.
+
+\end{itemize}
+
+For example:
+\begin{itemize}
+    \item If the missile has 15 FPs and the aircraft has 5 FPs, the missile will move 3 FPs in each of the five proportional moves, and the aircraft will move 1 FP in each of the five proportional moves.
+    \item If the missile has 17 FPs and the aircraft has 5 FPs, the missile will move 4 FPs in the first two proportional moves, and 3 FPs in the last three proportional moves, and the aircraft will move 1 FP in each of the five proportional moves.
+    \item If the missile has 7 FPs and the aircraft has 10 FPs, the missile will move 1 FP in each of the seven proportional moves, and the aircraft will move 2 FPs in the first three proportional moves and 1 FP in the last four proportional moves.
+\end{itemize}
+
+}
+
+\deletedin{2A}{2A-spbr}{
+\paragraph{Speedbrake Effects on Proportional Moves (adv. rule 6.5)} When engaged in proportional movement with attacking missiles, speedbrakes (when applied) can only use up the last available FP to be expended. Or, stated another way, when engaged in proportional flight with attacking missiles, if the aircraft still has at least one full FP to expend it must do so each on every proportional move whether speedbrakes have been used yet or not.
+}
+
+\AX{
+\paragraph{Follow-On Missiles.} When two missiles are launched in the same game turn, the first one is termed the “lead” missile, and the second one is termed a “follow-on” missile. The follow-on missile may not move until the lead missile has moved at least two FPs. This launch delay simulates the time delay between the launches of the two missiles. The launch delay may be longer, but not more than {\onethird} the missile’s speed.  
+
+When the follow-on missile first begins moving, it is not allowed to move more FPs than the lead missile has left to it in that segment of the proportional move. For example, if the proportional moves are 5 FPs for the missiles and 1 FP for the aircraft, and the follow-on missile starts moving after the lead missile has moved three FPs, the follow-on missile would only be able to move 2 FPs. Both missiles could move 5 FPs in the next segment, but the follow-on missile would still trail by the equivalent of 3 FPs.
+
+On the follow-on missile’s first game turn of flight, it effectively loses FPs equal to the launch delay. On its last turn of flight, it regains these.
+
+If the missile has a flight time of only one game turn, the first game turn of flight is also the last game of flight. In this case, the FPs corresponding to the launch delay are added one each to the initial complete proportional moves, after any that have also received an additional FP from the remainder.
+
+If the missile has a flight time of more than one game turn, on the first game turn, it moves FPs equal to its speed minus the launch delay. On subsequent game turns before its last game turn of flight, it moves FPs equal to its speed. On its last game turn of flight, the FPs corresponding to the launch delay are added one each to the initial complete proportional moves (and not to the incomplete proportional moves containing the launch delay).
+
+For example, consider two missiles with 17 FPs launched at an aircraft with 5 FPs. In the first game turn of flight, the proportional moves for the lead missile are 4, 4, 3, 3, and 3 FPs. The follow-on missile can have a launch delay between 2 and 6 FPs. If the launch delay is 2 FPs and the missile flight time is more than one game turn, the proportional moves for the follow-on missile in the first game turn of flight are 2, 4, 3, 3, and 3 FPs, and the missile gains the two FPs corresponding to the launch delay in its last game turn of flight. If the launch delay is 2 FPs and the missile flight time is only one game turn, the proportional moves for the follow-on missile in the first game turn of flight are 2, 5, 4, 3, and 3 FPs. That is, the missile regains the two FPs corresponding to the launch delay in its first two complete proportional moves.
+
+}
+
+\CX{
+\paragraph{Missile Types Of Flight.} A missile may fly level, climb and dive all in the same game turn as necessary to pursue its target. The following \changedin{1C}{1C-tables}{is}{and Table~\ref{table:missile-flight-rules} are} a summary of missile types of flight.
+
+\addedin{1C}{1C-tables}{
+    \input{tables/table-missile-flight-rules}
+}
+
+\begin{itemize}
+
+    \item \itemparagraph{Level Flight.} The missile expends one FP to fly forward one hex or hexside. A missile may freely lose one altitude level (at no FP cost) for each hex/hexside it enters.
+
+    \item \itemparagraph{Climbing Flight.} The missile expends one FP to climb one or two levels. A missile may not climb if its target is at the same or a lower altitude level. Exception: Those missiles noted as “TVM” (track-via-missile) or “MCG” (Mid-Course-Guidance) capable may climb as high as desired above a target before diving back down to intercept. The maximum altitude level any missile in play is allowed to reach is 100.
+
+    \item \itemparagraph{Diving Flight.} The missile expends one FP to dive two or three levels. A missile may not dive if its target is at the same altitude level or a higher one. Once per game-turn, a missile may lose just one altitude with one FP. Remember, missiles may lose altitude freely by one level, for each hex entered in level flight mode.
+
+    \item \itemparagraph{Combined Flight.} FPs expended to move forward or to change altitude may be intermixed in any order. Any number of FPs may be expended climbing OR diving on the same hex/hexside. However, a missile may not both climb AND dive from the same hex/hexside and the following restrictions apply if the missile wishes to switch directly from climbing to diving or vice versa:
+
+    \begin{itemize}
+
+        \item \changedin{1B}{1B-apj-23-errata}{if the missile’s Turn Ability is less than BT/2, it must expend two FPs in forward level flight (free altitude loss not allowed for these) between climbing and diving FPs.}{If the missile's Turn Ability is not BT/2, ET/2, or ET/3 it must expend FPs in level flight equal to {\onethird} its speed (round up) between VFPs used to climb and dive (free altitude loss not allow for these either).}
+        
+        \item \changedin{1B}{1B-apj-23-errata}{if the missile’s Turn Ability is BT/2 or greater (e.g., ET/2 or ET/3), only one FP must be expended in level flight between the climbing and diving FPs.}{If the missile's Turn Ability is BT/2 or better, it need only FPs equal to $1/10$ its speed (round up) in level flight between VFPs used to climb and dive.}
+
+    \end{itemize}
+
+    \item \itemparagraph{Turning.} Missiles use the Turn Charts just as do aircraft. Missiles do not receive decel points for turning or changing facing. Missiles never consider angles of bank and may therefore reverse turns instantly.\deletedin{2A}{2A-snap}{ Missiles may use a snap turn once in their entire flight. If the snap turn is the first action performed, the normal prep-move requirements for snap-turning are waived (see Arming below).} If a divisor is given, then the turn rate is better by the divisor's factor.
+
+    Example: A missile with ET/2 turn rate requires only half the normal ET requirement. At speed 16.0, in the LO band, it would only have to move 3 FPs per facing change (half of six). Always round fractions up when determining missile turn requirements (i.e., half of 5 would be 3, or a third of 7 would be 3).
+
+    \item \itemparagraph{Maneuvers.} Missiles are allowed slide maneuvers on every game turn like aircraft, lag displacement, and barrel rolls are not allowed. Any missile which expends more than one FP from the same position while climbing or diving may execute a vertical roll. Missiles are limited to one vertical roll in their entire flight unless they are pursuing a target which also does vertical rolls. In this case, the missile is allowed as many additional vertical rolls in a game turn as their target has performed.
+
+    The normal prep-move requirements for all maneuvers must be met just as for aircraft and all maneuvers cost 1 FP to execute except for vertical rolls which cost 0. \addedin{1B}{1B-apj-23-errata}{Missile\deletedin{2A}{2A-snap}{ snap turns (except those performed as Instant Snap Turns) and missile} slides are subject to a $+1$ prep requirement if the missiles are supersonic.}
+
+\end{itemize}
+}{
+\paragraph{Missile Types Of Flight.} A missile may fly level, climb, and dive all in the same game turn as necessary to pursue its target. Missile types of flight are described below and summarized in Table~\ref{table:missile-flight-rules}.
+
+\addedin{1C}{1C-tables}{
+    \input{tables/table-missile-flight-rules}
+}
+
+\begin{itemize}
+
+    \item \itemparagraph{Level Flight.} A missile may expend one FP to move one hex or hex side forward. A missile may only fly onto a hex side if it faces parallel to that hex side (see rule~\ref{rule:position}). During the FP, a missile may also freely lose one altitude level (at no additional FP cost).
+
+    \item \itemparagraph{Climbing Flight.} A missile may expend one FP to climb one or two altitude levels. 
+    
+    A missile may not climb if its target is at the same or a lower altitude level unless it has a TVM (track-via-missile) seeker or is capable of MCG (mid-course guidance). Such missiles may climb above their target to a maximum altitude level of 100.
+
+    \item \itemparagraph{Diving Flight.} A missile may expend one FP to dive two or three altitude levels. Once per game turn, one FP may be expended to dive to just one altitude level. (Missiles may also lose altitude freely by one level per FP in level flight.)
+
+    A missile may not dive if its target is at the same or a higher altitude level.
+
+    \item \itemparagraph{Combined Flight.} FPs may be expended in level and climbing flight and level and diving flight in any order. Any number of FPs may be expended in climbing flight or diving flight at the same map location (i.e., the same hex or hex side), but a missile may not expend FPs in both climbing and diving flight at the same map location. Furthermore, the following requirements apply to changing between climbing flight and diving flight or vice versa:
+
+
+    \begin{itemize}
+
+        \item If the missile's turn rate is not BT/2, ET/2, or ET/3, it must expend FPs in level flight equal to {\onethird} its speed (round up) between FPs used in climbing flight and diving flight or vice versa. In these FPs, altitude may not be lost freely.
+        
+        \item If the missile's turn rate is BT/2, ET/2, or ET/3, it must expend FPs in level flight equal to $1/10$ its speed (round up)  between FPs used in climbing and diving flight or vice versa. In these FPs, it may lose altitude freely.
+
+    \end{itemize}
+
+    \item \itemparagraph{Turning.} Missiles may declare turns and change facing like aircraft but do not specify a turn rate when they declare a turn. Instead, missiles are always considered to be turning at the rate given in Table~\ref{table:missile-data}, which is given as a conventional turn rate and a divisor. The turn requirements of a missile correspond to those of the given conventional turn rate divided by the divisor and rounded up.
+    
+    For example, the turn requirement for an ET turn at speed 16.0 in the LO altitude band is 6 FPs. The corresponding turn requirement for a missile with a turn rate of ET/2 is 6/2 FPs or 3 FPs, and a missile with a turn rate of ET/3 is 6/3 FPs or 2 FPs. In these calculations, always round up, so, for example, half of 7 is 4 and {\onethird} of 7 is 3.
+    
+    Missiles may stop turns at any point. They are considered to have a high roll rate (HRR) and may reverse turns instantly. Missiles do not receive DPs for turning or changing facing. 
+
+    \item \itemparagraph{Maneuvers.} Missiles are allowed to execute slide maneuvers and vertical rolls. They may not execute other maneuvers. Missiles do not receive DPs for maneuvers. 
+
+    The missile must meet the normal preparatory FP requirements for slide maneuvers, including penalties for altitude and supersonic speed if applicable. A slide maneuver costs 1 FP to execute. All FPs used to prepare for and execute a slide maneuver must be in level flight.
+        
+    Any missile that expends more than one FP from the same map location (i.e., the same hex or hex side) while climbing or diving may execute a vertical roll at no cost in FPs. Missiles are normally limited to one vertical roll in their entire flight. However, every time their target performs a vertical roll, a missile is allowed to perform one additional vertical roll in the same game turn.
+
+\end{itemize}
+}
+
+\CX{
+\paragraph{Missile Arming.} Missiles must complete arming before they can turn or maneuver in pursuit of a target. Arming occurs automatically after the missile has flown a certain distance, usually one hex.
+
+To become armed, missiles must expend their first FP moving forward in level flight unless on the turn of launch the firing aircraft was in a climb or dive where more than half the aircraft's flight was spent as VFPs. In this case, the missile could use an FP to gain or lose altitude as appropriate instead. This one FP in which missiles are becoming armed may not be counted toward prep-moves, or turning requirements, nor can the missile attack targets it reaches (they are missed). They may commence maneuvering normally on second and subsequent FPs. 
+
+}{
+
+\paragraph{Missile Arming.} \label{rule:instant-arming-missiles}
+Missiles must complete arming before they can declare turns, declare maneuvers, or attack a target. The arming requirements are different for normal missiles and instant-arming missiles. Instant-arming missiles are noted as such in Table~\ref{table:missile-data}.
+
+Normal missiles complete arming after expending their first FP. They cannot declare turns or maneuvers before their first FP, so they cannot use it for turn requirements or in preparation for a maneuver. They can only declare attacks after expending their first FP. If they reach the position (i.e., map location and altitude) of their target in their first FP, they miss and are removed from play.
+
+Instant-arming missiles are armed from the moment they are launched. They can declare turns and maneuvers before their first FP and use it for turn requirements or in preparation for a maneuver. They can also declare attacks before expending their first FP. 
+
+A missile's first FP must be spent in level flight unless, in the game turn it was launched, the launching aircraft used climbing or diving flight and spent more than half of its FPs as VFPs. In this case, the missile could either spend its first FP in level flight or in climbing or diving flight, respectively.
+
+}
+
+
+\CX{
+\paragraph{Missile Tracking.} At the end of each game turn, and at the end of each segment of proportional movement, a missile must have the target within the tracking parameters of its seeker head (in terms of angle-off) or it will lose contact and either self-destruct or enter ballistic unguided flight. In either case, it is removed from play. The exact tracking requirements are described for each missile kind of missile later in the rules.
+}{
+\section{Missile Tracking} 
+\label{rule:missile-tracking}
+
+% ISSUE: Why at the end of each game turn? If a missile is close enough, it can be evaded by simply doing D2, even though the missile could D2 on its next FP. Perhaps apply this only after each missile proportional move.
+
+At the end of each of its proportional moves and at the end of each game turn of its flight, a missile must have the target within the tracking parameters of its seeker, or it will lose contact and either self-destruct or enter ballistic unguided flight. In either case, it is removed from play. 
+
+The tracking requirements for IRMs are given by rule~\ref{rule:irm-tracking-requirements}.
+
+}
+
+\deletedin{2A}{2A-snap}{
+\paragraph{Instant Snap Turning (adv. rule 7.3).} Instant arming missiles, (indicated by an asterisk \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}}) may begin maneuvering and attack immediately after launch. They are also allowed to immediately snap turn without prep-moving with their first FP or any FP later in their flight so long as no turns, maneuvers, or switches between climbs and dives have yet commenced. If they elect to snap-turn later in their flight, after any turns, maneuvers, or switches have occurred, they must prep-move for the snap-turn normally.
+
+Non-instant arming missiles may also snap-turn as their first maneuvering actions, but only after becoming armed. This is allowed as above, with their first FP following becoming armed, or later as long as no turns, maneuvers, or switches between climbs and dives have yet occurred or commenced. As above, if they elect to snap turn later in their flight they must prep-turn normally.
+}
+
+\DX{
+\addedin{2A}{2A-snap}{
+\paragraph{Instant Arming Missile.}\label{rule:instant-arming-missiles}
+Instant arming missiles, (indicated by an asterisk \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}}) may begin maneuvering and attack immediately after launch.
+}
+}
+
+\DX{
+\paragraph{Follow On Missiles.} Whenever two missiles are launched at a time, the second one is termed a “follow-on” missile. This missile may not begin moving until the first missile has moved at least two FPs. This simulates the time delay between the firing of the two missiles. The time delay may be longer, but not more than 1/3 the first missile's speed.
+
+When the follow-on missile first begins moving, it is not allowed to move more FPs than the lead missile has left to it in that segment of the proportional move. For example, if the proportions are 5 to 1 and the follow on starts moving after the lead missile moves three points, the follow on would only be able to move 2 points (the same as was left to the lead). In the next segment, both could move 5 hexes but the follow-on missile would still trail by a distance of 3 (the original delay).
+
+On the first and subsequent turns of flight, the follow-on must cease moving when the first missile does. Thus, on the first turn, it will be cheated out of FPs equal to the delay between it and the first missile. To compensate, the follow-on missile is allowed to use those FPs on the last turn of its flight, they are added as bonus FPs one per proportional segment starting with the first \addedin{2B}{2B-follow-up-missiles}{complete proportional moves} until used up.
+}
+
+\section{Missile Attacks}
+\label{rule:missile-attacks}
+
+\addedin{2A}{2A-missile-attacks}{
+    \input{figures/figure-missile-attacks}
+}
+
+\notein{1B}{AWF: FH in the APJ 36 errata has text about a missile attacking if the target enters the missile's position, but this is included in the TSOH errata and incorporated in 1B.}
+
+\CX{
+\paragraph{When Does A Missile Attack?} \changedin{1B}{1B-apj-23-errata and 1B-apj-26-qa}{At the instant a missile starts a proportional move with its target in its 180+ arc and the range (in hexes; 2 levels of altitude equals one hex) is equal to or less than the number of FPs the missile has available in that proportional move, a missile attack is declared.}{\changedin{2A}{2A-missile-attacks}{At the beginning of or during a missile's proportional move, the instant the missile has its target in its 180+ arc and the range (in hexes; 2 altitude levels = 1 hex) is equal to or less than the number of FPs the missile has remaining in that proportional move, a missile attack \emph{must} be declared.}{A missile attacks when it passes through the target hex at its altitude or when is co-altitude with the target, has at least one FP remaining in the proportional move, and the target occupies one of the positions show in Figure~\ref{figure:missile-attacks}.} \addedin{1B}{1B-apj-36-errata}{If the missile finishes arming in the target's location, it attacks.} Should a target aircraft enter the missile's position during its move, it is also immediately attacked.} 
+}{
+\paragraph{When Does A Missile Attack?} 
+A missile attacks its target the instant one of the following conditions are fulfilled:
+\begin{enumerate}
+\item The missile moves to the same position (i.e., map location and altitude) as the target.
+\item The target moves to the same position (i.e., map location and altitude) as the missile.
+\item At the start of or during the missile’s proportional move, the target occupies one of the map locations shown in Figure~\ref{figure:missile-attacks} relative to the missile, the missile has the same altitude as the target, and the missile has at least one FP remaining in its proportional move.
+\end{enumerate}
+}
+
+\AX{
+\paragraph{Manual Decoy Procedure.}\label{rule:manual-decoy-procedure} Some aircraft are equipped with an integrated or pod-mounted defensive decoy system (DDS) that can dispense flares, chaff, or mini-jammers in an attempt to confuse missile seekers (see advanced rule \ref{rule:dds}).
+
+An engaged aircraft (see rule~\ref{rule:engaging-missiles}) equipped with a DDS may manually dispense decoys to attempt to defeat an attack by a sighted missile. Decoys may be dispensed manually even if an automatic decoy program is in effect (see advanced rule~\ref{rule:dds} and below). A non-engaged aircraft may not manually dispense decoy clusters.
+
+% TODO: Also can use decoys with RWR
+% TODO: sighted or individually sighted?
+
+When a sighted missile attacks an engaged aircraft, the aircraft may immediately attempt to dispense one or two decoy clusters of each type of decoy in the DDS. The decision on how many decoy clusters are dispensed is taken before rolling for their success in defending the target. If sufficient decoys of a given type remain, the requested number of decoys are dispensed. If fewer decoys of a given type remain, all remaining decoys of that type are dispensed. 
+
+For example, a DDS has 5 flare clusters and 1 chaff cluster remaining. If the aircraft attempts to dispense 2 clusters manually, then 2 flare clusters and 1 chaff cluster will be dispensed, leaving the DDS with 3 flare clusters and 0 chaff clusters. 
+
+
+The procedure for determining the success of manually dispensed decoys is given by rule~\ref{rule:irm-countermeasures} for IRMs. If the missile is not successfully defeated by the manual decoys or if no manual decoys are deployed, the missile continues with its attack.
+
+Table~\ref{table:missile-data} gives the flare and chaff vulnerability ratings for missiles. The mini-jammer vulnerability rating is the chaff vulnerability rating plus one.
+
+An engaged aircraft attacked by multiple missiles may manually dispense one or two decoy clusters against each eligible attack. However, those manually dispensed to defend against one missile are ineffective against others.
+
+
+}
+
+\CX{
+\paragraph{Procedure.} Roll the die and apply any modifiers. Compare the modified result to the missile's to hit numbers to determine if a hit was achieved, and if so, what kind of hit. If a hit is achieved, roll on \changedin{1C}{1C-tables}{the Damage Tables}{Table~\ref{table:aircraft-damage}} using the appropriate attack rating.
+}{
+\paragraph{Missile Attack Procedure.} Roll the die and apply any modifiers for each attacking missile that is not defeated by manually deployed decoys. Compare the modified result to the hit die rolls for the missile from Table~\ref{table:missile-data} to determine whether the result is a direct hit, a proximity hit, or a miss. A direct hit occurs if the modified roll is equal to or less than the direct hit die roll. If a direct hit does not occur, a proximity hit occurs if the modified roll is equal to or less than the proximity hit die roll. Otherwise, the missile misses. If the missile hits, determine the damage using the procedure described below.
+
+For example, consider an attack by an AIM-9B Sidewinder missile. Table~\ref{table:missile-data} gives hit die rolls of $3-$ for a direct hit and $7-$ for a proximity hit. The missile achieves a direct hit if the modified hit die roll is 3 or less. The missile achieves a proximity hit if the modified hit die roll is 4 to 7. The missile misses if the modified hit die roll is 8 or more.
+}
+
+\addedin{1C}{1C-tables}{
+    \input{tables/table-missile-attack-modifiers}
+}
+
+\CX{
+\paragraph{Roll To Hit Modifiers.} \changedin{1C}{1C-tables}{The Missile Attack Modifiers Table}{Table~\ref{table:missile-attack-modifiers}} lists the modifiers for missile angle off, terrain clutter effects, target considerations, and ECM. For the angle-off to hit modifiers, the missile is always considered to be in the angle-off arc it was in during the proportional move in which the attack was declared. If it is on a line between two arcs, it is considered to be in the arc which favors the defender.
+}{
+\paragraph{Missile Attack Modifiers.} Tables~\ref{table:missile-attack-modifiers} and \ref{table:missile-attack-angle-off-modifiers} summarize the modifiers for missile attacks. In detail, they are:
+\begin{itemize}
+    \item Use the size number from the target’s ADC as a modifier.
+    \item If the target did not engage the missile, apply a modifier of $-1$.
+    \item Apply the modifier from Table \ref{table:missile-attack-angle-off-modifiers} for the missile’s angle-off the target according to its seeker type. A missile is considered to attack from the angle-off arc it was in when it fulfilled the condition to attack. If the missile is on the borderline between two arcs, it is considered to be in the arc that favors the defender.
+    \item Additional modifiers for IRMs are given by rule~\ref{rule:irm-attack-modifiers}.
+    \item Additional modifiers for BRMs, RHMs, and AHMs are given by rule~\ref{rule:rgm-attack-modifiers}.
+    \item There are no other modifiers for optically-guided and laser-guided missiles (OG and LG SAMs).
+\end{itemize}
+
+}
+
+\CX{
+\paragraph{Missile Damage.} The two Attack Rating columns \changedin{1C}{1C-tables}{of the MDT}{in Table~\ref{table:missile-data}} list the attack rating of the missiles for direct and proximity hits respectively. The ratings are used to determine aircraft damage as described in chapter 10. However, a direct hit always gets a minus 2 modifier to the damage roll (warhead blast effects as opposed to just shrapnel from a proximity hit).
+}{
+\paragraph{Missile Damage.} Table~\ref{table:missile-data} gives the attack rating of the missile for direct and proximity hits. The ratings are used to determine aircraft damage according to rule~\ref{rule:aircraft-damage-resolution}. However, a direct hit always gets a $-2$ modifier to the damage die roll to account for the additional effects of the warhead blast above the shrapnel from a proximity hit.
+
+For example, consider an attack by an AIM-9B Sidewinder missile. Table~\ref{table:missile-data} gives attack ratings of 5 for a direct hit and 2 for a proximity hit. If the missile achieves a direct hit, damage is determined with an attack rating of 5 and an additional die roll modifier of $-2$. If the missile achieves a proximity hit, damage is determined with an attack rating of 2 without the additional die roll modifier.
+}
+
+\CX{
+
+\section{Defensively Engaging Missiles}
+\label{rule:engaging-missiles}
+
+An aircraft under attack by one or more missiles may declare itself defensively engaged against any of the missiles which are sighted or to which it has been alerted to by ECM. This declaration is made during the aircraft decisions phase.
+
+\paragraph{Engaged Aircraft Versus Missiles.} An “engaged” aircraft is considered to be actively defending itself against attacking missiles. As such, it is allowed the following benefits during its move:
+
+\begin{itemize}
+
+    \item Idle power may be selected and is automatically effective providing modifiers to IR missile attacks.
+
+    \item Missile decoys (chaff/flare/jammers) may be manually deployed to defeat the missile. Manual decoys may be deployed in addition to any being deployed by a DDS program (see ECM rules).
+
+    \itemdeletedin{2A}{2A-missile-flight}{The target aircraft begins proportional movement first, expending its first FP before the missile expends any FPs.}
+    
+\end{itemize}
+
+\paragraph{Restrictions.} Engaged aircraft are not allowed to make attacks of any sort and may not launch weapons, use “T”-level flight or do damage control while engaged.
+
+\paragraph{Free Aircraft Versus Missiles.} A free aircraft under attack by a missile has either not spotted it, or opted to ignore it, possibly depending on a dispenser program to stop it. As such it has the following disadvantages:
+
+\begin{itemize}
+
+    \itemdeletedin{2A}{2A-missile-flight}{The missile begins proportional movement first expending its FPs before the aircraft does.}
+
+    \item Free aircraft may not manually deploy decoys, although they may gain the benefit of any DDS programs already in operation.
+
+    \item Idle power selected by a free aircraft is only effective against the missile on a die roll of 1 to 4.
+
+    \item The missile is given an additional $-1$ modifier on the to hit roll.
+
+\end{itemize}
+
+Note: Free aircraft are not restricted like engaged aircraft.
+
+\paragraph{Multiple Missile Attacks.} An aircraft that engages one missile, is considered engaged against all missiles currently pursuing it. However, manual decoys may only be employed against missiles which are sighted or to which it is specifically alerted by ECM. Against engaged aircraft, missiles which were not sighted or alerted to are still affected by Idle power and do not get the $-1$ to hit modifier\deletedin{2A}{2A-missile-flight}{ but still move first as if the target were a free aircraft}.
+
+
+}{
+
+\section{Engaging Missiles}
+\label{rule:engaging-missiles}
+
+An aircraft may declare itself defensively engaged against any missiles that are sighted or to which it has been alerted by ECM. This declaration is made during the aircraft decisions phase. An aircraft that engages one missile is considered engaged against all missiles that attack in the same game turn. 
+
+% ISSUE: GLOC? Disorientation? Individually sighted?
+
+\paragraph{Engagement Requirements.} 
+
+A target aircraft may not defensively engage (see rule~\ref{rule:engaging-missiles}) a missile  unless:
+\begin{itemize}
+    \item In the aircraft decisions phase, the missile is individually by the target aircraft, 
+    \item In the aircraft decisions phase, the missile and the target aircraft are individually sighted by an aircraft friendly to the target aircraft and neither are in that aircraft’s restricted arc, or
+    \item The target aircraft has RWR indications of a missile attack (see rule~\ref{rule:rwr}).
+\end{itemize}
+Furthermore, an aircraft whose pilot is suffering from GLOC (see rule~\ref{rule:gloc}), is disoriented (see advanced rule~\ref{rule:disorientation}), or is green (see advanced rule~\ref{rule:crew-ability}) may not defensively engage a missile.
+
+
+\paragraph{Missile Attacks on Engaged Aircraft.} An engaged aircraft is considered to be actively defending itself against attacking missiles. As such, it is allowed the following benefits during its move:
+
+\begin{itemize}
+
+    \item If it selects idle power, it automatically gains the $+1$ hit modifier against attacks by IR missiles. This benefit applies to all IR missile attacks, even those by unsighted missiles or missiles for which it has not been alerted by ECM.
+    
+    \item It may manually deploy decoys (see rule~\ref{rule:manual-decoy-procedure}) to attempt to defeat sighted missiles or missiles to which it has been alerted by ECM.
+    
+\end{itemize}
+
+\showhyphens{sightedy}
+
+However, an engaged aircraft may only deploy manual decoys against sighted missiles or those for which it has been alerted by ECM. 
+
+Against engaged aircraft, missiles that were not sighted or for which it has not been alerted are still affected by idle power and do not get the $-1$ to hit modifier.
+
+\paragraph{Missile Attacks on Non-Engaged Aircraft.} If a missile attacks a non-engaged aircraft, the aircraft suffers the following disadvantages:
+
+\begin{itemize}
+
+    \item It suffers a $-1$ hit modifier in missile attacks.
+
+    % ISSUE: roll for each missile or roll once per turn?
+    \item If it selects idle power, it only gains the $+1$ hit modifier on a roll of $4-$. 
+    
+    \item It may not manually deploy decoys (although it may select a DDS program).
+    
+\end{itemize}
+
+
+\paragraph{Engagement Restrictions.} An engaged aircraft is not allowed to make attacks of any sort, may not launch weapons, may not perform damage control (see advanced rule~\ref{rule:damage-control}), may not carry out radar searches (see rule~\ref{rule:normal-mode-searching}), loses all radar lock-ons (see rule \ref{rule:normal-mode-tracking}), may not illuminate a target (see rule~\ref{rule:target-illumination})
+
+If an aircraft in terrain-following flight (see advanced rule \ref{rule:terrain-following-flight}) engages a missile, it is considered to have left terrain-following flight during the aircraft decisions phase. An engaged aircraft may not enter terrain-following flight.
+
+If an aircraft in a close formation (see advanced rule~\ref{rule:close-formations}) engages a missile, all aircraft in the formation move as if they were engaged (i.e., at the same time as the missile and with all of the restrictions on an engaged aircraft) and the formation is considered to have broken down.
+
+}
+
+\DX{
+\section{Missile Countermeasures}
+
+Aircraft defend against missiles by trying to outmaneuver them (not likely) and by using expendable decoys such as chaff, flares and mini-jammers, and through electronic warfare. A “decoy” in the game, represents a cluster of two to four actual expendables.
+
+\paragraph{Out-Maneuvering Missiles.} If an aircraft reaches a position where a missile cannot move to keep it within its tracking requirements at the end of the turn or proportional movement segment, or if the missile is below maneuver speed and the target is not directly in front of it when an attack is declared, the missile is out-maneuvered and removed from play.
+
+\paragraph{Manual Decoy Dispensing.} Aircraft equipped with decoy dispensing systems (DDS) as part of their ECM suite, or aircraft carrying decoy dispenser pods may manually dispense decoys against an attacking missile if they are defensively engaged against it. Manual decoys may be dispensed even if an automatic decoy program is in effect (see rule 19).
+
+When a sighted missile attacks, the engaged aircraft may immediately expend 1 or 2 decoy clusters of each type of decoy available. Quantities dispensed of each type must be equal (although some types may run out early).
+
+The defender rolls the die once for each decoy dispensed. For Chaff or Flares, if the roll is less than or equal to the missile's appropriate decoy vulnerability number (given \changedin{1C}{1C-tables}{on the MDT}{in Table~\ref{table:missile-data}}), it is decoyed and removed from play. For mini jammers, if the roll is less than or equal to the missile's Chaff Vulnerability plus 1, it is decoyed and removed from play. If the missile is not decoyed, it rolls for its attack.
+
+\paragraph{Automatic Decoy Dispensing.} Decoy dispensers may be used to continuously emit decoys over the course of a game-turn via automatic programs as described in rule 19. A decoy program provides a “Protection Level” number which is used as an attack die roll modifier if it is dispensing decoys to which a missile is vulnerable.
+
+\paragraph{Electronic Warfare.} Radar guided missiles and aircraft radars may be vulnerable to electronic jamming which affects their ability to launch and track, and their attack die rolls. Rule 19 covers electronic warfare in detail.
+}
+
+\begin{advancedrules}
+
+\section{Realistic Missile Speed Attenuation}
+
+\addedin{1C}{1C-tables}{
+    \input{tables/table-missile-speed-attenuation-factor}
+}
+
+\CX{
+
+Missiles use powerful boost motors which accelerate them to top speed within a matter of two to three seconds. After that, most missiles simply glide to their targets rapidly losing speed along the way.  Some have sustainer motors which burn for a short period of time after the booster goes out and these lose speed at a lesser rate. Nevertheless, the speed loss can be dramatic, up to a third of the missile's top speed within the span of a single turn depending on its actions. This rule replaces the generic method for determining missile speeds given in 14.3.
+
+\paragraph{Missile Speed Attenuation Factor.} To realistically account for the high-speed loss that can occur each turn, a Speed Attenuation Factor is applied to the missile's base start speed to get an average speed for the turn. The average speed indicates the number of FPs that the missile has. The average speed is therefore the speed that is listed on the aircraft log and used for the missile's flight.
+
+\paragraph{Missile Base Start Speed.} On the first turn of the missile's flight, the base start speed equals the missile's listed speed \changedin{1C}{1C-tables}{from the MDT}{in Table~\ref{table:missile-data}} plus the speed of the launching aircraft\changedin{2B}{\addedin{1B}{1B-missile-launch-speed}{ in the turn of launch}}{on the turn after launch (i.e., the end speed on the turn of launch)}. On all subsequent game turns, the base start speed is the missile's previous average speed plus any changes for climbing, diving, and maneuvering.
+
+\paragraph{Procedure.} At the beginning of every turn of its flight, including its first, determine a missile's average speed as follows:
+
+\begin{itemize}
+
+    \item Refer to \changedin{1C}{1C-tables}{the Missile Speed Attenuation Table}{Table~\ref{table:missile-speed-attenuation-factor}} and find the altitude band the missile is starting in.
+
+    \item Cross index the band with the game turn of the missile's flight to find the attenuation factor.
+
+    \item Multiply the attenuation factor by the missile's base start speed. Round resulting fractions up at .5 or better, and drop fractions of less than .5.
+
+\end{itemize}
+
+The final result is the missile's average speed for the current turn. Note: \changedin{1C}{1C-tables}{A math saver table is provided in the play aids, which}{Table~\ref{table:missile-speed-math-saver}} does the math for you.
+
+\paragraph{Climbing and Diving Effects On Speed.} At the end of a game turn increase or decrease the missile's speed as given in 14.3 for climbs and dives.
+
+\paragraph{Maneuvering Effects On Speed.} At the end of game turn, reduce the missile's speed by one for each 30 degrees of facing change it accomplished by turning during that turn.
+
+\paragraph{Sustainer Motor Effects.} Some missiles have sustainer motors which provide extra thrust after the missile's booster gives out. This rule replaces the one given in 14.3.
+
+On the first game turn sustainer powered flight, use the missile speed attenuation factor that applies for the altitude band two above that the missile is actually in or the UH band, whichever occurs first, to determine average speed. For each game turn of sustainer powered flight after the first, the speed attenuation factor is 1.0 regardless of its current altitude (meaning no attenuation speed loss applies, though other speed loss effects do). Once the sustainer gives out, normal speed attenuation factors are used.
+
+\paragraph{Minimum, Maneuver, and Maximum Missile Speeds.} \changedin{1C}{1C-tables}{Listed Next to the Missile Speed Attenuation Table is}{Table~\ref{table:missile-speed-limits} gives} the minimum, maneuver and maximum speeds allowed to any missile in a given altitude band. Speed gain above the maximum speed is not allowed, excess speed gain is lost. Any missile with a start speed of less than the minimum listed is considered to stall out and is removed from play. Any missile with a start speed of less than maneuver speed may not turn or perform maneuvers of any sort. It may only fly forward and climb or dive.
+
+}{
+
+Missiles use powerful boost motors to accelerate to top speed within two to three seconds. After that, most missiles glide to their targets and rapidly lose speed. Some have sustainer motors that burn after the booster goes out and lose speed at a lesser rate. Nevertheless, the speed loss can be dramatic, up to a third of the missile’s top speed within a single turn, depending on its actions. This procedures given here replace the simpler methods for determining missile speeds given by rule \ref{rule:missile-flight}.
+
+\paragraph{Missile Speed Attenuation Procedure.}
+Each turn, the average speed of the missile is determined based on its start speed, altitude, and flight time. The average speed is noted in the log. The average speed gives the number of FPs available to a missile and is used for all other purposes, including turn requirements. It is calculated as follows:
+\begin{itemize}
+\item 
+On the first game turn of flight, the missiles’s start speed is its base speed from Table~\ref{table:missile-data} plus the start speed of the launching aircraft in the game turn of launch.
+
+\item
+On the second and subsequent game turns of flight, the missile’s start speed is its average speed from the previous turn decreased according to \ref{rule:missile-flight} for climbing, diving, and turning in the previous game turn.
+
+\item 
+The average speed of a missile during a game turn, including the first game turn, is obtained by multiplying the missile’s start speed by the attenuation factor from Table~\ref{table:missile-speed-attenuation-factor} appropriate for the altitude band of the missile and its game turn of flight. Round any resulting fractions to the nearest whole number, with 0.5 rounding up. Table~\ref{table:missile-speed-math-saver} gives the result of this calculation for all valid start speeds and attenuation factors.
+\end{itemize}
+
+\paragraph{Missile Sustainer Procedure.} Some missiles have sustainer motors that provide extra thrust after the missile’s booster gives out
+
+\begin{itemize}
+    \item On the first game turn of sustainer-powered flight, determine the average speed using the attenuation factor for the altitude band two above the actual band (up to the UH altitude band).
+    
+    \item For each game turn of sustainer-powered flight after the first, determine the average speed using an attenuation factor of 1.0. This means no speed is lost to attenuation, although speed changes from climbing, diving, and turning still apply.
+
+    % ISSUE: Count the first turn after the sustainer burns out turn 1 for attenuation purposes?
+    \item Once the sustainer gives out, the normal speed attenuation procedure is used.
+\end{itemize}
+
+}
+
+\CX{
+\paragraph{Minimum, Maneuver, and Maximum Missile Speeds.} \changedin{1C}{1C-tables}{Listed Next to the Missile Speed Attenuation Table is}{Table~\ref{table:missile-speed-limits} gives} the minimum, maneuver and maximum speeds allowed to any missile in a given altitude band. Speed gain above the maximum speed is not allowed, excess speed gain is lost. Any missile with a start speed of less than the minimum listed is considered to stall out and is removed from play. Any missile with a start speed of less than maneuver speed may not turn or perform maneuvers of any sort. It may only fly forward and climb or dive.
+
+}{
+\section{Missile Speed Limits.} 
+
+Table~\ref{table:missile-speed-limits} gives the minimum, maneuver, and maximum speeds for missiles in a given altitude band. 
+
+If a missile's start speed exceeds the maximum speed for its altitude band, it is immediately reduced to the maximum speed.
+
+If a missile's start speed is less than the minimum speed for its altitude band, it is considered to stall and is removed from play. 
+
+If a missile's start speed is less than the maneuver speed for its altitude band, it may not turn or perform maneuvers. It may only fly forward and climb or dive.
+
+}
+
+\DX{
+\section{Formation Effects on Missile Attacks}
+
+\paragraph{Missiles Versus Close Formations.} Heat seeking missiles launched at a close formation, randomly determine which aircraft is the actual target. Radar, laser, or optically guided missiles target aircraft normally (See following missile rules).
+
+\paragraph{Engaging Missiles.} Aircraft that remain in close formation may not engage missiles. If any aircraft wishes to detach to engage a missile, the close formation is automatically nullified and all must move during the engaged aircraft movement phase and all are restricted from performing actions as if each had engaged the missile (they would all initially be unsure of who the real target is).
+}
+
+\end{advancedrules}

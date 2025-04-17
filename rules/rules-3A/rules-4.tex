@@ -1,0 +1,345 @@
+\rulechapter{Aircraft Data Cards}
+\label{rule:aircraft-data-cards}
+
+\CX{
+This chapter discusses the Aircraft Data Cards (ADCs) and the information presented on them. Each aircraft used in play has its flight and combat capabilities fully defined in game terms in its ADC. A sample ADC is shown \changedin{1C}{1C-figures}{on the following pages}{in Figure~\ref{figure:adc}}.  It is divided into two major panels: The Flight Characteristics panel and the Combat Characteristics panel.
+}{
+This rule discusses aircraft data cards (ADCs) and the information presented on them. Each aircraft used in play has its flight and combat capabilities fully defined in game terms in its ADC. A sample ADC is shown in Figure~\ref{figure:adc}.
+}
+
+\section{Flight Characteristics Panel}
+
+\input{figures/figure-adc}
+
+\CX{
+The flight characteristics panel is the top half of the ADC and it contains information which defines the flying capabilities of the aircraft. This panel is divided into the following sections:
+}{
+The flight characteristics panel is the top half of the ADC and contains information that defines the aircraft's flying capabilities. 
+
+Some of the quantities in the panel are expressed in terms of flight points (FPs), acceleration points (APs), deceleration points (FPs), fuel points, and configuration. These will be explained in detail in rules~\ref{rule:flight-points}, \ref{rule:acceleration-and-deceleration-points}, and \ref{rule:fuel-consumption}. For the time being, it is sufficient to understand that FPs are a measure of an aircraft’s speed, APs and DPs are a measure of its acceleration and deceleration, a fuel point is a measure of fuel weight, and the configuration (CL for clean, $1/2$ for half-dirty, and DT for dirty) is a measure of the weight and drag of external stores.
+
+The flight characteristics panel is divided into the following sections:
+}
+
+\begin{enumerate}
+
+    \item \itemparagraph{Aircraft Type.} 
+    \CX{
+    The upper right corner contains the name most commonly used to identify that type of aircraft. It also shows the number of crew positions on the aircraft.
+    }{
+    The upper right corner contains the name most commonly used to identify that aircraft type. It also shows the number of crew positions on the aircraft.
+    }
+
+    \item \itemparagraph{\CX{Three-View}{Three-View Drawing}.} 
+    \CX{
+    The 3-view drawing is included to familiarize the player with the appearance of the aircraft. The top view will be similar to that used on a corresponding game counter.
+    }{
+    The three-view drawing is included to familiarize the player with the aircraft's appearance. The top view will be similar to that used on a corresponding game counter.
+    }
+
+    \item \itemparagraph{Basic Data.} 
+    \CX{
+    The center of the panel contains the basic information chart which includes:
+    }{
+    The center of the panel contains the basic information chart which includes:
+    }
+    \begin{itemize}
+        \item Cruise Speed: This is the cruise speed of the aircraft \CX{in flight points (FPs)}{in FPs}.
+        \item Climb Speed: The optimum climb speed of the aircraft \CX{shown in FPs}{in FPs}.
+        \item Visibility: \CX{This is a visibility rating number referenced for sighting attempts against the aircraft.}{This is the visibility rating number for sighting attempts against the aircraft. A larger number indicates a more visible aircraft.}See rule~\ref{rule:sighting-aircraft-and-missiles}.)
+        \item Size: \CX{This is the size modifier used as an enemy “to hit" die roll modifier in combat.}{This is the size modifier for to-hit rolls in attacks. A more positive modifier indicates a smaller aircraft.}
+        \item Vulnerability: \CX{This is the vulnerability modifier used as a damage die roll modifier.}{This  is the vulnerability modifier for damage rolls. A more positive modifier indicates a less vulnerable aircraft. See rule~\ref{rule:aircraft-damage-resolution}.}
+        \item Restricted Arc: \CX{This defines the aircraft's angle-off arc into which it can sight enemies only with difficulty.}{This is the arc into which the aircraft can sight only with difficulty. See rule~\ref{rule:sighting-aircraft-and-missiles}.}
+        \item Blind Arc: \CX{This defines the aircraft's angle-off arc into which it cannot sight enemies.}{This is the arc into which the aircraft cannot sight. See rule~\ref{rule:sighting-aircraft-and-missiles}.}
+        \item Internal Fuel: \CX{This is the maximum quantity of internal fuel, in terms of points, that can be carried by the aircraft.}{This is the maximum quantity of internal fuel, in fuel points, that can be carried by the aircraft. See rule~\ref{rule:fuel-consumption}.}
+        \item \CX{Ata Refuel: The yes or no indicates whether or not the aircraft can refuel from aerial tankers in flight.}{ATA Refuel: This indicates whether the aircraft is capable of being refueld in flight by aerial tankers. See rule~\ref{rule:air-to-air-refueling}.}
+        \item Ejection Seat: \CX{This lists the type of egress system carried by the aircraft; either none, early, standard or advanced ejection seats.}{This gives the emergency egress system with which the aircraft is equiped: none or early, standard, or advanced ejection seats. See rule~\ref{rule:ejections-and-bail-outs}.}
+    \end{itemize}
+
+    \item \itemparagraph{Maneuver Costs.} 
+    \CX{
+    The Maneuver Costs Chart shows the cost, in terms of Flight Points and Decel Points, to perform lag rolls, displacement rolls, and vertical rolls. The cost is paid each time one of these maneuvers is performed.
+    }{
+    The maneuver costs chart shows the cost in FPs and DPs to perform lag rolls, displacement rolls, and vertical rolls. The costs are paid each time one of these maneuvers is performed.
+    }
+
+    \item \itemparagraph{Power Chart.} 
+    \CX{
+    The Power Chart indicates the maximum number of Accel Points available to the aircraft in a single game turn when a specific power setting is selected for the aircraft's engines. Three columns appear, one for each possible configuration of the aircraft. \changedin{2A}{2A-idle,2A-spbr,2A-fp-to-dp}{Also shown is the speed loss (in FPs) for selecting idle power and/or speedbrakes, and the fuel points used at each power setting.}{\par Also shown are the decelerations in DPs for selecting idle power and/or speedbrakes. (In earlier ADCs, these rows are labeled “Idle FP” and “Spbr.\ FP”, and the values should be doubled to obtain the corresponding number of DPs.) \par The last column shows the fuel points used at each power setting.}
+
+    Note: The dots to the right of the Power Chart heading indicate the number of engines the aircraft has.
+    }{
+    The power chart indicates the number of APs per game turn available to the aircraft in a single game turn when the power setting for the engines is afterburner, military, or normal (see rule~\ref{rule:engine-thrust}). Three columns appear, one for each possible configuration of the aircraft. 
+
+    It also shows the decelerations in DPs per game turn for selecting idle power (see rule~\ref{rule:engine-thrust}) and speedbrakes (see rule~\ref{rule:speedbrakes}). (In earlier ADCs, these rows are labeled “Idle FP” and “Spbr.\ FP”, and the values should be doubled to obtain the corresponding number of DPs.) 
+
+    The last column shows the fuel points used per game turn at each power setting (see rule~\ref{rule:fuel-consumption}).
+
+    The dots to the right of the power chart heading indicate how many engines the aircraft has.
+
+    The power chart sometimes has notes giving special characteristics of the engines.
+    }
+
+    \item \itemparagraph{Minimum-Maximum Velocity Chart.} 
+    \CX{
+    The Minimum-Maximum Velocity Chart shows the minimum and maximum allowed speeds of the aircraft (in terms of Flight Points) in each altitude band by configuration. The Dive Speed column indicates the maximum speed (in Flight Points) allowed regardless of aircraft's configuration after a turn of Diving flight. The maximum ceiling, in altitude levels, that can be climbed to in each configuration is also indicated here.
+    }{
+    The minimum-maximum velocity chart shows the aircraft’s minimum and maximum allowed speeds in FPs in each altitude band and each configuration. The dive speed column indicates the maximum speed in FPs allowed regardless of the aircraft’s configuration after a game turn of diving flight. The maximum ceiling in altitude levels in each configuration is also given.
+    }
+
+    \item \itemparagraph{Turn Drag Chart.} 
+    \CX{
+    The Turn Drag Chart shows the decel points received by an aircraft each game turn when using one of the listed turn rates. Three columns appear, one for each possible configuration. Appropriate notes are shown for the Turn Drag Chart if necessary.
+    }{
+    The turn drag chart shows the DPs an aircraft receives each game turn when using one of the listed turn rates. Three columns appear, one for each possible configuration. The turn drag chart sometimes has notes, for example, describing slatted or variable-geometry wings.
+    }
+
+    \item \itemparagraph{Climb Capability Chart.} 
+    \CX{
+    The Climb Capability Chart (CCC) shows the maximum number of altitude levels an aircraft can gain in a single game turn at the Sustained Climb decel rate while in afterburner power or any other power in each altitude band for each possible configuration.
+    }{
+    The climb capability chart (CCC) shows the maximum number of altitude levels an aircraft can gain in a single game turn at the sustained climb DP rate according to its power setting and configuration.
+    }
+
+\end{enumerate}
+
+\DX{
+Note: The game terms “configuration”, “accel point”, “decel point”, “flight point", and “angle-off arcs” may seem foreign to you at this moment. Do not be alarmed, each term will be clearly explained and its game function defined in upcoming chapters. Please read on.
+}
+
+\section{Combat Capabilities Panel}
+
+\CX{
+The Combat Capabilities Panel is the lower half of the ADC and contains information about the combat abilities of the aircraft.  The panel is divided into the following sections.
+}{
+The combat capabilities panel is the lower half of the ADC and contains information about the combat abilities of the aircraft. 
+
+Again, some of the terms might seem unfamiliar, but they will be explained later in the appropriate rules.
+
+The combat capabilities panel is divided into the following sections.
+}
+
+\begin{enumerate}[resume]
+
+    \item \itemparagraph{Radar Data.} 
+    \CX{
+    The Radar section indicates the characteristics of the aircraft's radar system. The search and tracking ranges are described in terms of hexes of distance. The functions of radar arcs, ECCM numbers and lock-on numbers are described in the radar rules.
+    }{
+    The radar section indicates the characteristics of the aircraft’s radar system. The search and tracking ranges are given in hexes. The radar ranges, radar arcs, ECCM numbers and lock-on numbers are described in rule~\ref{rule:air-to-air-radar}.
+    }
+
+    \item \itemparagraph{ECM Data.} 
+    \CX{
+    The ECM section shows the types of electronic counter-measures gear, if any, the aircraft carries. ECM gear is identified by type (i.e., RWR = radar warning receiver) and quality. A dash indicates no gear of that type is present. A letter indicates gear is present and also indicates the relative quality of the equipment, (i.e., A = least capable, B and C = improved gear, and D = best). The number after the letter is its capability rating as explained in the ECM rules.
+    }{
+    The ECM section shows the types of electronic counter-measures equipment, if any, the aircraft carries. ECM gear is identified by type (for example, RWR or radar warning receiver) and quality. A dash indicates no equipment of that type is present. A letter indicates gear is present and the relative quality of the equipment, with A being the least capable, B and C being improved, and D being the best. The number after the letter is its capability rating as explained in rule~\ref{rule:electronic-warfare}.
+    }
+
+    \item \itemparagraph{Internal Gun Data.} 
+    \CX{
+    The Internal Gun section shows the characteristics of the aircraft's internal guns if any. The data is fully explained in the gun combat rules (Rule 9).
+    }{
+    The internal gun section shows the characteristics of the aircraft’s internal guns, if any. The data are fully explained in rules~\ref{rule:air-to-air-gun-combat} and \ref{rule:strafing}.
+    }
+
+    \item \itemparagraph{Bomb System.} 
+    \CX{
+    The Bomb System section lists the kind of bombsight carried and the attack die roll modifier it provides when the aircraft does air to ground attacks.
+    }{
+    The bomb system section lists the kind of bomb sight carried and the attack die roll modifier it provides when the aircraft makes air-to-ground attacks (see rule~\ref{rules:bombing-attacks}).
+    }
+
+    \item \itemparagraph{Technology Listing.}
+    \CX{
+    The Technology section lists the kinds of technology, if any, available to the aircraft. The effects on play of having a listed technology is defined in the appropriate rules sections.
+    }{
+    The technology section lists the kinds of technology, if any, available to the aircraft. The effects of technology are defined in the appropriate rules sections.    
+    }
+
+    \item \itemparagraph{Weapons Stations Diagram.} 
+    \CX{
+    The Weapon Stations Diagram identifies (by number) the aircraft's weapons pylons or internal bays. These weapons stations are where bombs, missiles, and other stores are attached to the aircraft. At the start of play, each aircraft should have its load of weapons and stores recorded on paper to facilitate keeping track of changes in the load as weapons are expended.
+    }{
+    The weapon station diagram enumerates the aircraft’s weapons pylons or internal bays. These weapons stations can carry missile, bombs, and other stores. At the start of play, the stores loaded on each aircraft should be recorded to facilitate tracking of changes in the load as stores are expended and jettisoned.
+    }
+
+    \item \itemparagraph{Configuration Points Limits.} 
+    \CX{
+    This section indicates what configuration an aircraft will be in when carrying a given amount of weapons and/or other loads. Every weapon, fuel tank, or store that can be carried is given a point value called its “load point rating” (see the associated weapons tables). These load points represent the weight and drag penalty that the item imposes on an aircraft when carried.
+
+    The sum of the load an aircraft is carrying at any instant, in load points (rounded down), is compared to the limits given for the three possible configurations (CL = clean, 1/2 = half-dirty, DT = Dirty). Where the sum falls within those limits defines the current configuration of the aircraft. See advanced rule 4.3.
+
+    Internal Weapons Bays Note: All weapons or stores carried in an aircraft's internal weapons bay count for only half the normal load value since no drag is imposed on the airplane.
+
+    Basic Rules Note:  Use Only the CL Conf. Data. The term “configuration” refers to the relative load an aircraft is carrying. At the basic level of play aircraft are always considered to be “CL” or “Clean” configured. Players need only refer to the information under the "CL" sections of the ADC. They need not worry about changes in configuration, nor about load points or about information under the “1/2” or “DT” columns.
+    
+    }{
+    This section indicates an aircraft's configuration when carrying a given amount of stores (see rule~\ref{rule:aircraft-configuration}). However, in the basic rules, all aircraft are assumed to be CL configuration.
+    }
+
+    \item \itemparagraph{Load Limit.} 
+    \CX{
+    The load limit shown for the aircraft, in pounds, is the maximum weight of weapons and stores it can carry. All weapons and other stores listed in the game have a weight shown for them in the weapons charts. The aircraft's load may never exceed this amount even if the sum of all its station limits might be higher.
+    }{
+    The load limit shown for the aircraft is the maximum weight in pounds of stores it can carry. All stores in the game have their weight shown in the weapons charts. The aircraft’s load may never exceed this amount, even if the sum of all its station limits is higher.
+    }
+
+    \item \itemparagraph{Station Limits.} 
+    \CX{
+    Each weapons station is limited in the amount of weight it can carry. This section lists each station's weight limit, and the types of ordnance and equipment which can be placed on the station. The types of loads that may be placed on each station are indicated in letter codes (i.e., BB = Ballistic Bombs, RP = Rocket Pods, etc.). The listed codes correspond to the codes given in the weapons tables.
+    }{
+    This section lists the maximum weight and types of stores that each station can carry. The codes for the types of store given in Table~\ref{table:stores}.
+
+    }
+
+    \item \itemparagraph{Notes and Variants.} 
+    \CX{
+    The Notes and Variants section may contain additional comments about the aircraft and its capabilities. When a significant variant aircraft type is available, its differences from the basic ADC are shown.
+    }{
+    This section may contain additional comments about the aircraft and its capabilities. It may also indicate the differences in the capabilities of the aircraft variants.
+    }
+
+    \item \itemparagraph{Victory Points.} 
+    \CX{
+    The number of scenario victory points awarded to the enemy for achieving a level of damage against that aircraft is shown here. The four numbers are for K, C, H, and L damage levels respectively (Killed, Crippled, Heavy, and Light).
+    }{
+    This gives the number of scenario victory points awarded to the enemy according to the level of damage inflicted. The four numbers are for K, C, H, and L damage levels, respectively (see rule~\ref{rule:aircraft-damage-resolution}).
+    }
+
+\end{enumerate}
+
+\AX{
+\section{Aircraft Flight Properties}
+
+\input{tables/table-aircraft-flight-properties}
+
+Some aircraft have special properties that change their flight performance for better or worse. These are summarized in Table~\ref{table:aircraft-flight-properties}. If an aircraft has such a property, it will be mentioned in the notes section of the ADC.
+
+}
+
+\begin{advancedrules}
+
+\section{Aircraft Configuration}
+\label{rule:aircraft-configuration}
+
+\CX{
+An aircraft carrying a load of bombs or other stores under its wings is less streamlined, and significantly heavier than a similar aircraft which is not. As a consequence, its performance will suffer in proportion to the load it carries. This is reflected through the concept of aircraft configuration.
+}{
+An aircraft carrying a load of missiles, bombs, or other stores under its wings is less streamlined and significantly heavier than a similar aircraft that is not. As a consequence, its flight performance will suffer. This is reflected through the concept of aircraft configuration.
+}
+
+\paragraph{Configuration.} 
+\CX{
+Aircraft can be flown in one of three possible game configurations: Clean (CL), Half Dirty (1/2), and Dirty (DT). The actual configuration is determined by the amount of load points carried on the aircraft's weapons stations.  Each Aircraft Data Card indicates the point limits which establish Clean, Half, and Dirty. When adding up the load, first total all points then round any fractions \changedin{1B}{1B-apj-23-errata}{off}{down}.
+}{
+Aircraft can have one of three possible configurations: clean (CL), half-dirty (1/2), and dirty (DT). To determine the configuration total load points of the stores carried on the aircraft's weapons stations, round down any fraction, and compare this to the limits on the ADC for clean, half-dirty, and dirty configurations.
+}
+
+\AX{
+Example: Consider an aircraft with the following configuration limits: CL = 0-8, 1/2 = 9-14, and DT = 15+. If the aircraft is loaded with two triple racks (TRs) and six Mk.82 500~lb HE bombs, it has 11 load points and would be 1/2 configured. (The TRs contribute 1 load point each and the bombs 1.5 points each.) If it also carried a 1200L fuel tank (4 load points), the aircraft would have 15 load points and be DT configured.
+}
+
+\AX{
+\paragraph{Internal Weapons Bays.} All stores carried in an aircraft's internal weapons bay contribute only half their normal load points since no drag is imposed on the aircraft.
+}
+
+\paragraph{Clean (CL).} 
+\CX{
+An aircraft in clean configuration is unencumbered by external ordnance or equipment (it may carry some external equipment, but not enough to produce appreciable drag). Generally, the data cards are rated so that fighters can carry a normal load of missiles without penalty.
+}{
+An aircraft with a clean configuration is unencumbered by external stores; it may carry some, but not enough to produce appreciable drag. Typically, a fighter carrying a normal load of missiles will have a clean configuration.
+}
+
+\paragraph{\CX{Half}{Half-Dirty} (1/2).} 
+\CX{
+An aircraft in half configuration is midway between the lack of drag of Clean and the full drag of Dirty. Usually, adding a drop tank, and/or ECM pods or a small load of bombs is enough to cause a fighter to be half-loaded.
+}{
+An aircraft with a half-dirty configuration is midway between a clean configuration's lack of drag and a dirty configuration's full drag. Usually, adding a drop tank, an ECM pod, or a small load of bombs is enough to make a fighter half-dirty.
+}
+
+\paragraph{Dirty (DT).} 
+\CX{
+An aircraft in Dirty configuration experiences substantial drag from external add-ons. Carrying a large load of ordnance and/or drop tanks will suffice to cause a fighter to be considered Dirty. You will note, that DT configured aircraft have lower speeds, less power, and suffer more Decel penalties while maneuvering than lesser configured aircraft.
+}{
+An aircraft with a dirty configuration suffers substantial drag from external add-ons. Carrying a large load of stores will make a fighter dirty. Aircraft with a dirty configuration have lower speeds, less acceleration at a given power setting, and suffer more deceleration while maneuvering than lesser-configured aircraft.
+}
+
+\paragraph{Changes in Configuration.} 
+\CX{
+An aircraft's configuration is never fixed, and will change during play as weapons are expended in attacks or jettisoned as the situation warrants. Changes in configuration take effect the instant enough load is disposed of to allow the point total to fall within a lesser limit.
+}{
+An aircraft's configuration is not fixed but will change during play as weapons and stores are expended in attacks or jettisoned. Configuration changes take effect immediately when enough stores are disposed of to allow the load point total to fall within a lesser limit.
+}
+
+\CX{
+Changes in configuration effect several aspects of play and are handled as follows:
+}{
+Configuration changes affect several aspects of play and are handled as follows:
+}
+
+\begin{itemize}
+
+    \item \CX{
+    Engine Power Available. Configuration changes can only occur after the power setting is selected, so no increase in Accel is available until the following turn.
+    }{
+    Engine Thrust. As configuration changes can only occur after the power setting is selected, the APs from engine thrust available for a given power setting are determined using the configuration at the start of the game turn.
+    }
+
+    \itemaddedin{2B}{AWF}{Cruise Speed. If idle or normal power is selected, the \CX{cruise speed}{cruise speed (rule~\ref{rule:cruise-speeds})} is modified according to the configuration at the start of a game turn.}
+
+    \item When Turning. \CX{
+    The turn drag decel points an aircraft receives for turning is that for the configuration which existed when the highest turn rate was used that game turn.
+    }{
+    The turn drag deceleration is determined for the configuration when the highest turn rate was used during the game turn.
+    }
+
+    \item When Climbing. \CX{
+    The climb rate allowed is that of the configuration which exists when the aircraft expends its first VFP during the game turn.
+    }{
+    The climb rate is determined for the configuration when the aircraft expends its first VFP during the game turn.
+    }
+    
+    \IAX{Minimum Speed. For the purposes of determining if an aircraft enters stalled flight (see rule \ref{rule:abnormal-flight}), the minimum speed (see rule \ref{rule:speed-limits}) depends on the configuration at the start of a game turn. As the minimum speed is typically lower in cleaner configurations, jettisoning stores can help an aircraft recover from stalled flight.}
+
+
+\end{itemize}
+
+\addedin{1B}{1B-apj-23-errata}{\paragraph{Over-Loading Stations.} 
+\CX{
+An aircraft may overload any of its weapon stations in terms of weight by up to 20\%. However, its maximum turn capability is reduced by one (i.e., from BT to HT) until all overloaded stations are back within limits. Though stations may be overloaded, the aircraft's total load limit may never be exceeded.
+}{
+A weapon station may be overloaded by up to 20\% in weight. However, the aircraft's maximum turn capability is reduced by one (for example, from BT to HT) until all overloaded stations are back within limits. Although individual stations may be overloaded, the aircraft's load limit may never be exceeded.
+}
+}
+
+\addedin{1B}{1B-apj-23-errata}{\paragraph{Symmetric Loading Requirements.} \CX{
+When picking loads for aircraft, the initial weight carried on one wing must be within 20\% of that carried on the other wind unless the total weight on each wing is 10\% or less of the aircraft's load limit.
+}{
+When selecting loads for aircraft, the initial weight carried on one wing must be within 20\% of that carried on the other wing unless the total weight on each wing is 10\% or less of the aircraft's load limit.
+}}
+
+\DX{
+Configuration Example: An aircraft with the following configuration limits: CL = 0-8, 1/2 = 9-14, and DT = 15+; that is loaded with two Triple Racks (TRs) and six Mk.82 500lb HE bombs, is carrying 11 load points and would be 1/2 configured. The TRs are worth one load point each and the bombs are 1.5 points each. If a 1200L fuel tank were added (4 load points), the aircraft would be considered DT configured (15 points total).
+}
+
+\CX{
+\section{Jettisoning Weapons and Stores}
+}{
+\section{Jettisoning Stores}
+}
+\label{rules:jettisoning-stores}
+
+\CX{
+Aircraft may voluntarily jettison weapons and/or stores to change configuration, or may be required to jettison them due to combat damage. If voluntary, the player may selectively choose which weapons/stores, and how many, are jettisoned. If a required action due to damage, enough weapons and/or stores, player's choice, must be jettisoned to allow the aircraft to become CL configured.
+}{
+Aircraft may voluntarily jettison stores to change configuration or may be required to do so due to combat damage. If the action is voluntary, the player may selectively choose the number and type of stores that are jettisoned. If it is required due to damage, the player must select sufficient stores to allow the aircraft to achieve a clean configuration.
+}
+
+\paragraph{Jettison Procedure.} 
+\CX{
+Weapons and/or stores may be jettisoned by simply announcing the act during an aircraft's move. The configuration change takes effect immediately after the aircraft's next expenditure of an FP in movement.
+}{
+Stores may be jettisoned by simply announcing the act during an aircraft's move. The configuration change occurs immediately after the next FP expended by the aircraft.
+}
+
+\end{advancedrules}
