@@ -1,21 +1,10 @@
-\CX{
 \rulechapter{Crew Quality}
 \label{rule:crew-ability}
-}{
-\rulechapter{Crew}
-\label{rule:crew-ability}
-}
 
-\CX{
 This chapter details the effects of crew quality on aircraft operations. This entire chapter is an \emph{ADVANCED RULE}.
-}{
-This advanced rule details the effects of the crew on aircraft operations. A crewmember’s ability is subdivided into quality, attributes, and characteristics, and the implications of these are described in the following sections.
-
-}
 
 \begin{advancedrules}
 
-\CX{
 \section{Quality Levels}
 \paragraph{Crew Quality.} Pilots and other crewmembers are classified into one of four quality levels based on experience and training. These are:
 
@@ -57,99 +46,6 @@ Crew quality, and any applicable attributes or characteristics are given in most
 \end{itemize}
 \end{itemize}
 
-}{
-
-\section{Ability Determination}
-\label{rule:crew-determination}
-
-Some scenarios give crewmembers’ abilities explicitly, and no further action is required.
-
-Other scenarios do not give the crewmembers’ abilities explicitly, but instead give a training standard for each side (excellent, good, average, limited, or poor). In these cases:
-
-\begin{itemize}
-    
-    \item Roll one die for each crewmember and consult Table~\ref{table:crew-quality-generation} to determine their quality. 
-
-    The results of the rolls for quality depend on the training standard.
-
-    \item Roll three dice for each crewmember and consult Table~\ref{table:crew-attributes-generation} to determine their attributes. 
-    
-    The rolls for attributes have no modifiers and the results do not depend on the crew quality.
-    
-    \item For veteran, regular, and novice crew, roll three dice for each crewmember and consult Table~\ref{table:crew-special-characteristics-generation} to determine their characteristics. 
-    
-    The results of the rolls for characteristics depend on the crew quality, and the tactics master roll is modified by $-1$ for excellent training standard and $+1$ for limited or poor training standard. 
-    
-    Green crewmembers cannot have any characteristics and novices cannot be combat heros.
-\end{itemize}
-
-\addedin{1C}{1C-tables}{
-    \input{tables/table-crew-generation}
-}
-
-For example, consider generating a crewmember with average training standard.
-
-\begin{itemize}
-\item Roll one die and consult Table~\ref{table:crew-quality-generation}. If the roll is 1, they are a veteran, if the roll is 2--6, they are a regular, if the roll is 7--9, they are a novice, and if the roll is 10, they are green.
-
-\item Roll one die for eyesight and consult Table~\ref{table:crew-attributes-generation}. If the roll is 1--2, their eyesight is excellent, if the roll is 3--9, their eyesight is average, and if the roll is 10, their eyesight is poor. 
-
-\item Roll one die for fitness and consult Table~\ref{table:crew-attributes-generation}. If the roll is 1--3, their fitness is excellent, if the roll is 4--8, their fitness is average, and if the roll is 9--10, their fitness is poor. 
-
-\item Roll one die for confidence and consult Table~\ref{table:crew-attributes-generation}. If the  roll is 1--2, their confidence is excellent, if the roll is 3--8, their confidence is average, and if the roll is 9--10, their confidence is poor. 
-
-\item Roll one die to detemine if they are a Sierra Hotel pilot and consult Table~\ref{table:crew-special-characteristics-generation}. If the roll is 1, they are Sierra Hotel. 
-
-\item Roll one die to detemine if they are a tactics master and consult Table~\ref{table:crew-special-characteristics-generation}. If they are a veteran, then on a roll of 3 or less they are a tactics master. If they are regular, then on a roll of 2 or less they are a tactics master. If they are a novice, then on a roll of 1 or less they are a tactics master. (If the crewmember's training standard had been excellent, limited, or poor, the roll would have been modified.)
-
-\item Finally, roll one die to determine if they are a combat hero and consult Table~\ref{table:crew-special-characteristics-generation}.  If they are a veteran, then on a roll of 1 or 2 they are a combat hero. If they are regular, then on a roll of 1 they are a combat hero.
-\end{itemize}
-
-\section{Quality}
-\label{rule:crew-quality}
-
-Crewmembers are classified into one of four quality levels based on their experience and training. These are:
-
-\begin{itemize}
-    \item Green: A poor crewmember lacking in ability or with incomplete training.
-    \item Novice: A new crewmember fresh out of normal training, a poor caliber regular crewmember, or a green crewmember starting to improve.
-    \item Regular: An experienced crewmember with good training, who may or may not have seen combat, or an above average novice crewmember.
-    \item Veteran: A well trained crewmember, possibly combat experienced, with superior skills or an older and wiser regular crewmember.
-\end{itemize}
-
-\addedin{1C}{1C-tables}{
-    \input{tables/table-crew-modifiers-summary}
-}
-
-\paragraph{Crewmember Quality Modifiers.} A crewmember's quality may modify the die rolls for entering and recovering from departed flight, avoiding GLOC, gun and rocket attacks, sighting, initiative, radar searches, weapon launches, and avoiding disorientation. These modifiers are summarized in Table~\ref{table:crew-modifiers} and are also given in the rules for these actions and situations. 
-
-In multi-crew aircraft, the quality of the crewmember performing an action are used to determine the appropriate modifiers. The following are some guidelines:
-
-Pilots affect:
-\begin{itemize}
-    \item Initiative;
-    \item Entering and recovering from departed flight;
-    \item Gun and rocket attacks;
-    \item IRM launches;
-    \item The use of auto-track and boresight radar modes; and
-    \item Visual bombing.
-\end{itemize}
-
-Radar operators affect:
-\begin{itemize}
-    \item Normal radar searches;
-    \item BRM, RHM, and AHM launches:
-    \item Guided weapon launches and attacks; and
-    \item Radar bombing.
-\end{itemize}
-
-All crew affect:
-\begin{itemize}
-    \item Sighting attempts.
-\end{itemize}
-}
-
-\CX{
 \section{Aircrew Flight Restriction}
 
 \addedin{1C}{1C-tables}{
@@ -191,69 +87,10 @@ Regular and veteran aircrew are not restricted.
 
 Note: Always check for disorientation immediately after a risky maneuver is performed, and/or at the end of the \changedin{2B}{2B-flight-type-disorientation}{game turn}{flight} if a risky flight type was attempted. Disorientation and its affects are described in chapter 30.
 
-}{
-\paragraph{Flight Restrictions}
-
-\addedin{1C}{1C-tables}{
-    \input{tables/table-crew-quality-restrictions}
-}
-
-Green and novice pilots are restricted in performing certain flight actions as summarized in Table~\ref{table:crew-quality-restrictions} and described in the following.
-
-Green pilots:
-\begin{itemize}
-    \item May not turn at the ET rate (see rule~\ref{rule:turning}).
-    \item May not used terrain-following flight (see rule~\ref{rule:terrain-following-flight}).
-    \item May not attempt vertical reverse (see rule~\ref{rule:vertical-reverses}) or VIFF maneuvers (see rule~\ref{rule:viff-maneuvers}).
-    \item May not engage attacking missiles (see rule~\ref{rule:engaging-missiles}).
-    \item May not use the high pitch rate capabilities of an aircraft (see rule~\ref{rule:aircraft-data-cards}).
-    % ISSUE: does a HRD count as a rolling maneuver?
-    \item Risks disorientation (see rule~\ref{rule:disorientation}) 
-    if they perform a rolling maneuver see rule~\ref{rule:rolling-maneuvers}), a vertical climb (see rule~\ref{rule:vertical-climbs}, or a vertical dive (see rule~\ref{rule:vertical-dives}).
-\end{itemize}
-
-Novice pilots:
-
-\begin{itemize}
-    \item May not attempt vertical reverse maneuvers (see rule \ref{rule:vertical-reverses}).
-    \item May not use the high pitch rate capabilities of an aircraft (see rule~\ref{rule:aircraft-data-cards}).
-   \item Risks disorientation (see rule~\ref{rule:disorientation}) 
-    if they perform a vertical rolling maneuver see rule~\ref{rule:vertical-rolls}).
-\end{itemize}
-
-When a green or novice pilot uses a maneuver with a risk of disorientation, check for disorientation immediately after the maneuver. When a pilot uses a flight type with a risk of disorientation, check for disorientation at the end of the aircraft's flight.
-
-Regular and veteran pilots are not restricted.
-
-}
-
-\CX{
 \paragraph{Crew Quality and Damage Control.} Green pilots may not normally do damage control. Novice pilots must spend two consecutive game turns applying damage control to stop progressive damage\addedin{1B}{1B-apj-39-qa}{, and so there is a risk of progressive damage on the first of these two turns}.
 
 In multi-crew aircraft, a regular or veteran crewman can compensate for a green pilot, allowing damage control to be done as if by novices. Likewise, they can compensate for a novice pilot allowing damage control to be done normally.
-}{
-\paragraph{Damage Control Restrictions.} Green and novice pilots are restricted in performing damage control (see rule~\ref{rule:progressive-damage}) as follows.
 
-Green pilots:
-
-\begin{itemize}
-    \item May not normally do damage control. 
-
-    \item If accompanied by a regular or veteran non-pilot crewmember, may perform damage control like a novice.
-\end{itemize}
-
-Novice pilots:
-    
-\begin{itemize}
-    \item Must spend two consecutive game turns applying damage control to stop progressive damage, and so there is a risk of progressive damage on the first of these two turns.
-
-    \item If accompanied by a regular or veteran non-pilot crewmember, may perform damage control normally.
-\end{itemize}
-
-Regular and veteran pilots are not restricted.
-}
-
-\CX{
 \section{Aircrew Attributes and Special Charateristics}
 \label{rule:crew-attributes}
 \label{rule:crew-characteristics}
@@ -279,130 +116,10 @@ Attributes of aircrew that can affect play are eyesight, fitness, and confidence
     \item SIERRA HOTEL (Shit-Hot) Pilots. These Individuals have the highest levels of confidence and skills in flying due to pure natural ability and/or relentless determined practice. Alternately called “Top-Guns”, “Super-sticks”, “Honchos”, etc. these pilots get a special benefit of having their position of advantage raised one level for purposes of determining order of movement. That is, if they were disadvantaged, they would be considered non-advantaged and so on. An advantaged S.H. pilot is not increased to an unspotted one but would move after all other advantaged aircraft. \addedin{1B}{1B-apj-23-errata}{The benefit of having their position of advantage level increased is optional and should be declared in the aircraft decisions phase of the turn.}
 
 \end{itemize}
-}{
-\section{Attributes}
-\label{rule:crew-attributes}
 
-Crewmember attributes that can affect play are eyesight, fitness, and confidence. In each case, the attribute can be excellent, average, or poor.
-
-\paragraph{Crew Member Attribute Modifiers.} A crewmember's attributes may modify the die rolls for entering departed avoiding, GLOC, sighting, initiative, post-egress fate, and avoiding disorientation. These modifiers are summarized in Table~\ref{table:crew-modifiers} and are also given in the rules for these actions and situations.
-
-\section{Characteristics}
-\label{rule:crew-characteristics}
-
-Crewmember characteristics that can affect play are being Sierra Hotel, a tactics master, or a combat hero.
-
-\paragraph{Sierra Hotel Pilots.} These pilots have the highest confidence and flying skills due to pure natural ability or relentless practice. They are also known as “top guns,” “super-sticks,” or “honchos.” 
-
-Sierra Hotel pilots gain the beneficial die roll modifiers given in Table~\ref{table:crew-modifiers}.
-
-In addition, Sierra Hotel pilots benefit from the option to raise their advantage category raised one level when determining the flight order. For example, if they were disadvantaged, they could be considered neutral. An advantaged Sierra Hotel pilot cannot increase their category to unsighted, but can move after all other advantaged aircraft. The benefit of increasing their position of advantage level is optional and must be declared in the aircraft decisions phase of each game turn.
-
-Being Sierra Hotel gives no advantages to non-pilot crewmembers.
-
-\paragraph{Tactics Masters.} These include crewmembers who have attended special schools such as the USAF and USN fighter weapons schools (“Top Gun”), have been members of the highly trained adversary squadrons, or veterans in Warsaw Pact air forces who have achieved the rating of “sniper pilots.” They also include those rare, gifted aircrew from any country that successfully grasp all the essentials of air combat.
-
-Tactics masters gain the beneficial die roll modifiers given in Table~\ref{table:crew-modifiers}.
-
-\paragraph{Combat Hero.} These are aces or highly decorated crewmembers who have distinguished themselves in combat.
-
-Combat heroes gain the beneficial die roll modifiers given in Table~\ref{table:crew-modifiers}.
-
-In addition, if a combat hero is leading a formation, all other non-hero pilots in that formation have their initiative value increased by one. However, if a combat hero is shot down, all non-hero pilots in their formation (whether they were leading it or not) subsequently have their initiative values reduced by one.
-
-A combat hero can be worth more victory points to the other side if shot down. 
-
-}
-
-\AX{\section{Ability Effects}
-\label{rule:crew-ability-effects}
-
-\paragraph{Departed Flight.} Tables~\ref{table:departed-flight-avoidance} and \ref{table:departed-flight-avoidance} give modifiers for the die rolls to enter and recover from departed flight.
-
-\paragraph{Turn Rates.} Green pilots cannot use the ET turn rate (see rule \ref{rule:turning}).
-
-
-\paragraph{Padlocks.} Table \ref{table:padlocks} gives the number of padlocks according to crew ability (see rule \ref{rule:sighting-aircraft-and-missiles}). Note that these are not cumulative; a veteran who is also a tactics master still can only padlock two targets. 
-
-For example, a multi-crew aircraft with two veteran crewmembers would be able to declare four padlocks (two for the pilot and two for the observer), but a multi-crew aircraft with a veteran pilot and green observer would only be able to declare two (two for the pilot and none for the observer).
-
-\paragraph{Sighting.} Table \ref{table:sighting-additional-modifiers} gives modifiers according to crew ability for aircraft and missile sighting rolls (see rule \ref{rule:sighting-aircraft-and-missiles}). With the exception of the eyesight modifiers, these also apply to VAS sighting rolls (see advanced rule \ref{rule:vas}).
-
-
-
-}
-
-\AX{
-\section{GLOC}
-
-\label{rule:gloc}
-
-When an aircraft turns too sharply, crewmembers may lose consciousness due to G-force effects. This is known as G-induced loss of consciousness or GLOC.
-
-
-\paragraph{When Can GLOC Occur?} 
-GLOC can occur when an aircraft changes facing at the ET rate in the LO, ML, or MH altitude bands. Each crewmember must check for GLOC after each facing change at the ET rate in these bands. At higher altitudes, the G-force of an ET turn is insufficient to cause GLOC.
-
-\input{tables/table-gloc}
-
-\paragraph{GLOC Procedure.} 
-Roll the die once for each crewmember and apply any required modifiers\addedin{1C}{1C-tables}{\ from Table~\ref{table:gloc-avoidance}}. A result of $1-$ results in GLOC. 
-
-\paragraph{GLOC Cycle.} The GLOC check cycle continues with increasing probability of unconsciousness until the aircraft does not use the ET or BT turn rates in a game turn, either explicitly or implicitly by carrying them into the game turn.
-
-\paragraph{GLOC Duration and Recovery.}
-
-If a crewmember has excellent fitness or is in a multi-crew aircraft with another member who is not suffering from GLOC, they may check for an early recovery in the aircraft administrative phases of the game turn in which GLOC occurred and the following game turn. Early recovery requires a roll of $4-$ with no modifiers. All crewmembers recover automatically in the aircraft administrative phase of the second game turn following the one in which GLOC occurred. Table~\ref{table:gloc-recovery} summarizes the procedure for recovery from GLOC.
-
-\paragraph{Effects Of GLOC.} 
-
-A crewmember affected by GLOC is unconscious. The effects depend on which crewmember is unconscious:
-
-\begin{itemize}
-
-    \item\itemparagraph{Unconscious Crewmember.} An unconscious crewmember may not padlock or participate in visual sighting (see rule \ref{rule:visual-sighting}) and may not eject themselves or bale out.
-
-    \item\itemparagraph{Unconscious Pilot.} The aircraft's flight is randomized and controlled by Table~\ref{table:gloc-flight}. If the pilot becomes unconscious when the aircraft still has FPs to use, roll on the table to finish the aircraft's move. Roll the die on subsequent game turns until the pilot recovers or is ejected or the aircraft is destroyed.
-
-    \item\itemparagraph{Unconscious Non-Pilot Crewmember.} The efforts of that crewmember are lost until he recovers. If the unconscious crewmember is normally the radar operator, the radar cannot be used except in auto-track and boresight modes. The bombsight is degraded by one level (but never to less than manual). Multi-crew sighting and any other multi-crew benefits are lost.
-
-    \item\itemparagraph{Ejection.} If the pilot of a multi-crew aircraft suffers GLOC, and randomized flight of the aircraft will result in an inevitable crash, a conscious crewmember can eject themselves and all other crewmembers.
-\end{itemize}
-}
-
-\AX{
-\section{Disorientation}
-\label{rule:disorientation}
-
-\input{tables/table-disorientation}
-
-Pilots can become disoriented. Green and novice pilots risk disorientation if they perform certain maneuvers or select certain flight types, as described in advanced rule~\ref{rule:crew-ability}. Any pilot can become disoriented in adverse weather or at night, according to advanced rule~\ref{rule:flying-at-night}.
-
-\paragraph{Pilot Disorientation.} Anytime an aircraft performs an action which risks disorientation, roll one die and apply appropriate modifiers from Table~\ref{table:disorientation-avoidance}. If the result is $3-$, the pilot becomes disoriented.
-
-\paragraph{Effects of Disorientation.}
-
-\begin{itemize}
-
-    \item\itemparagraph{Padlocks and Sighting.} An unconscious crewmember may not padlock or participate in visual sighting (see rule \ref{rule:visual-sighting}).
-
-    \item\itemparagraph{Flight.} The aircraft's flight is randomized and controlled by Table~\ref{table:gloc-flight}. If the pilot becomes disoriented when the aircraft still has FPs to use, roll on the table to finish the aircraft's move. Roll the die on subsequent game turns until the pilot recovers or is ejected or the aircraft is destroyed.
-
-    \item\itemparagraph{Ejection.} Disoriented crewmembers may eject or bail out normally.
-\end{itemize}
-
-\paragraph{Recovery from Disorientation.}
-A pilot may attempt to recover from disorientation in the stalled aircraft and disoriented pilot phase. Roll one die and apply appropriate modifiers from Table~\ref{table:disorientation-recovery}. If the result is $6-$, the pilot recovers from disorientation and can perform normally.
-
-}
-
-\DX{
 \section{Formation Leader Considerations}
 
 \paragraph{Pilot Quality.} A section or division leader must be of Regular or better quality. Aircraft with at least one veteran in the crew do not suffer the initiative penalty for not being in formation. Green pilots must always begin a general scenario game as a member of a close formation.
-}
-
-\CX{
 
 \section{Campaigns and Crew Experience}
 
@@ -443,64 +160,6 @@ To be considered a “combat” mission, the aircrew in question must have been 
 
 \changedin{1B}{1B-apj-36-errata}{The maximum is excellent confidence and the minimum is poor confidence.}{Confidence cannot be improved above excellent or below poor. “Excess” changes after each mission are lost.}
 
-}{
-
-\section{Campaigns and Crew Development}
-
-Players may wish to create a campaign in which a group of pilots and other crewmembers are created using the procedures in rule~\ref{rule:crew-determination}, and then their combat careers are tracked from mission to mission. The crews members’ ability would develop in response to these experiences.
-
-\paragraph{Quality Development.} 
-
-Crewmembers may improve in quality by participating in combat missions or gaining air-to-air kills and then succeeding in a die roll. 
-
-The improvement is rolled for at the end of each game after the minimum required amount of experience is achieved. If a crewmember fails the die roll for improvement, they may roll again after subsequent missions until they achieve success.
-
-Only missions in which the crewmember engaged in offensive or defensive actions against opposing forces are considered to be combat missions. Attacks against undefended targets (“milk runs”) are not considered to be combat missions for the purpose of improvement.
-
-\begin{itemize}
-
-    \item \itemparagraph{Green to Novice.} After three or more combat missions or one or more air-to-air kills and rolling $8-$.
-
-    \item \itemparagraph{Novice to Regular.} After five or more combat missions as a novice or one or more air-to-air kills as a novice and rolling $6-$.
-
-    \item \itemparagraph{Regular to Veteran.} After five or more combat missions as a regular or one or more air-to-air kills as a regular and rolling $4-$.
-
-\end{itemize}
-
-\paragraph{Attribute Development.} Eyesight and fitness never change during a campaign. However, confidence can go up or down as follows:
-\begin{itemize}
-
-    \item Confidence increases from poor to average or from average to excellent when the crewmember improves in quality or gains an air-to-air kill. 
-
-    \item Confidence decreases from excellent to average or from average to poor when the crewmember is shot down, or their aircraft is damaged to a crippled state. 
-
-\end{itemize}
-
-Confidence cannot be increased above excellent or decreased below poor.
-
-\paragraph{Characteristic Development.}
-
-Crewmembers may gain characteristics by fulfilling certain requirements and then succeeding in a die roll. 
-
-\begin{itemize}
-
-    \item \itemparagraph{Combat Hero.} After gaining five or more air-to-air kills and rolling $9-$.
-
-    % ISSUE: Is the roll performed once? Or each time they gain a kill beyond four?
-
-    \item \itemparagraph{Decorated Combat Hero.} Upon rolling $2-$ after any single mission in which the players collectively feel the crewmember in question performed in an extraordinary manner that deserves a medal. This requirement is vague, but it usually is in real life, too.
-
-    \item \itemparagraph{Tactics Master.} Upon improving to regular or veteran quality and rolling $2-$. This roll is performed once for each of these quality improvements, and if missed after achieving veteran status, it is never attained.
-
-    \item \itemparagraph{Sierra Hotel.} Upon improving in quality to any level and rolling a $1-$. This roll is performed once for each of these quality improvements.
-    
-\end{itemize}
-
-
-\paragraph{Victory Points For Aircrew Losses.} In campaign games V.P.s are awarded to the opposing side for capturing or killing aircrew. An aircrew loss occurs when an aircraft is shot down or destroyed and the crew does not successfully bail out or eject, or if the Post-Egress Fate is to be captured. \changedin{1C}{1C-tables}{The Aircrew V.P.s Table}{Table~\ref{table:crew-vps}} indicates values for lost aircrew.
-}
-
-\CX{
 \section{Ejections and Bailouts}
 \label{rule:ejections-and-bail-outs}
 \label{rule:emergency-egress}
@@ -526,42 +185,5 @@ If an egress attempt falls in a destroyed aircraft, the aircrew is killed.
 \paragraph{Post-Egress Fate.\label{rule:post-egress-fate}} Due to the short time frame of most campaign scenarios or games, the fate of ejected or bailed out crew must be determined in order to see if they can be returned to combat. Once aircrew successfully egress, roll the die at the end of the game to see what their fate is \changedin{1C}{1C-tables}{on the Post-Egress Fate Table}{according to Table~\ref{table:crew-post-egress-fate}}. Apply any required modifiers and read the result.
 
 An aircrew will end up either MIA (missing in action) or as a POW (prisoner of war) or be RESCUED. An MIA aircrew is lost forever (drowned at sea or died on the ground or died in prison). A POW will be repatriated alive after the war ends but is out of the campaign game. Rescued aircrew may be able to re-enter the campaign. Roll one die, the result is the number of campaign days, that aircrew will miss due to injury or rescue delays. After missing the required number of days, the aircrew can be put back on the roster flying missions.
-
-}{
-
-\section{Emergency Egress}
-\label{rule:ejections-and-bail-outs}
-\label{rule:emergency-egress}
-
-\addedin{1C}{1C-tables}{
-    \input{tables/table-crew-ejection}
-}
-
-It is important to know if crewmembers survive events like being shot down in a campaign. In such cases, crewmembers may attempt emergency egress using ejection seats or, if their aircraft is not equipped with this, by bailing out.
-
-\paragraph{Energency Egress Requirements.} Crewmembers suffering from GLOC may not initiate ejection, but any conscious crewmember may initiate ejection for all other crewmembers, conscious or not.
-
-Crewmembers may only bail out of an aircraft if they are not suffering from GLOC and if the aircraft's speed is four or less. They may only bail out of a destroyed aircraft if it is four or more levels above the ground.
-
-\paragraph{Emergency Egress Procedure.} Crewmembers will automatically attempt to egress from an aircraft the instant it is destroyed. Crewmembers may also elect to egress undamaged or damaged aircraft at any point during the aircraft's movement by simply declaring it. The attempt occurs after any proportional moves or attacks by pursuing missiles are resolved. Only one attempt per game turn is allowed.
-
-Roll one die for each crewmember attempting emergency egress, apply appropriate modifiers from Table~\ref{table:crew-egress-modifiers}, and consult Table~\ref{table:crew-egress-success}. If the roll succeeds, the crewmember egresses the aircraft. If the roll fails in an undamaged or damaged aircraft, the crewmember may continue to fly the aircraft and may attempt egress again on subsequent turns. If an egress attempt falls in a destroyed aircraft, the crewmember is killed.
-
-\addedin{1C}{1C-tables}{
-    \input{tables/table-crew-post-egress-fate}
-}
-
-\paragraph{Post-Egress Fate Procedure.\label{rule:post-egress-fate}} 
-For each crewmember who successfully egresses, roll one die, apply appropriate modifiers from Table~\ref{table:crew-post-egress-fate-modifiers}, and consult Table~\ref{table:crew-post-egress-fate}. The result will be one of:
-
-\begin{itemize}
-    \item \itemparagraph{Prisoner of War (POW).} A POW will be repatriated alive after the war ends but is no longer available for the campaign.
-    \item \itemparagraph{Missing in Action (MIA).} An MIA crewmember is killed (perhaps drowned at sea, died on the ground, or died in prison).
-    \item \itemparagraph{Rescued.} A rescued crewmember may be able to re-enter the campaign. Roll one die, the result is the number of campaign days the crewmember will miss due to injury or rescue delays. After missing the required number of days, the crewmember can be put back on the roster flying missions.
-
-\end{itemize}
-
-\paragraph{Victory Points For Crew Losses.} In campaign games VPs are awarded for capturing or killing opposing crewmembers. Table~\ref{table:crew-vps} indicates values for crewmembers that are killed, are MIA, or become POW.
-}
 
 \end{advancedrules}
