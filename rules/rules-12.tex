@@ -1,16 +1,12 @@
 \rulechapter{Order of Flight}
 \label{rule:order-of-flight}
 
-\CX{
 This chapter covers the procedures which determine the order in which aircraft move during the flight phase. In play, aircraft are moved one at a time based on which has a higher initiative and/or position of advantage.
-}{
-This rule covers the procedures which determine the order in which aircraft move during the flight phase. Aircraft are moved one at a time based on their advantage category and initiative score.
-}
 
 \section{Initiative}
 \label{rule:initiative}
 
-\CX{
+
 At the start of each game-turn, each side rolls the die to establish a base Initiative number of from 1 to 10. Each aircraft takes this base number and modifies it for any of the applicable reasons given below. The modified number becomes the individual aircraft's initiative and is noted on the initiative line of the aircraft log.
 
 Within a given category of advantage (as explained below) the aircraft with the lowest initiative number will move first followed by the next lowest numbered aircraft and so on. Whenever multiple aircraft have the same initiative number after modification, each again rolls a die. No modifiers apply and the lower roll moves first.
@@ -31,43 +27,9 @@ Within a given category of advantage (as explained below) the aircraft with the 
 
     \item\itemparagraph{Crew Quality.} See Chapter 18 for the crew quality effects on Initiative.
 \end{itemize}
-}{
-\paragraph{Initiative Procedure.} In the order of flight determination phase of every game turn, each side rolls the die to establish its base initiative. Each aircraft takes its side’s base initiative and modifies it for the reasons given below. The modified number becomes the individual aircraft’s initiative and is noted on the initiative line of the aircraft log.
-
-Within a given advantage category (as explained below), the aircraft with the lowest initiative moves first, followed by the one with the next lowest, and so on. 
-
-Within a given advantage category, if two or more aircraft have the same initiative, each rolls a die again. No modifiers apply. The aircraft with the lowest roll moves first, followed by the one with the next lowest, and so on.
-
-\paragraph{Initiative Modifiers.} Initiative die rolls are modified by the factors listed below and in Table~\ref{table:initiative-modifiers}. All modifiers are cumulative.
-
-\addedin{1C}{1C-tables}{
-    \input{tables/table-initiative}
-}
-
-\begin{itemize}
-
-   \item\itemparagraph{First Kill.} The side which achieves the first aircraft kill in the scenario receives a modifier of $+1$.
-
-    \item\itemparagraph{Most Kills.} The side having the most kills at any point in the scenario receives a modifier of $+1$.
-
-    \item\itemparagraph{Training Standard.} The level of training for the pilot provides a modifier to the initiative roll. The scenario will indicate the training standard.
-
-    \item\itemparagraph{Crew Ability.} If advanced rule~\ref{rule:crew-ability} on crew ability is being used, the quality, attributes, and characteristics of the pilot modify the initiative according to Table~\ref{table:initiative-modifiers}.
-
-	\item\itemparagraph{Formations.} If advanced rules~\ref{rule:crew-ability} on crew ability and \ref{rule:formations} on formations are being used:
-    \begin{itemize}
-        \item An aircraft not in a close or tactical formation receives a $-1$ modifier, unless at least one of its crewmembers is a veteran.
-        \item A winger in a tactical formation with an initiative modifer that is less than that of the formation’s leader may  receives a $+1$ modifier. (reflecting teamwork and radio calls).
-        \item A winger in a tactical formation lead by a combat hero receives a $+1$ modifier.
-        \item If a combat hero is shot down, all pilots in their \emph{original} formation suffer a $-1$ modifier. This modifier applies whether or not the combat hero was the leader of the formation.
-    \end{itemize}
-    All wingers in close formations move at the same time as their leader.
-\end{itemize}
-
-}
 
 
-\CX{
+
 
 \section{Positions of Advantage}
 \label{rule:positions-of-advantage}
@@ -121,90 +83,12 @@ This list is read in order, and an aircraft is categorized by the first situatio
     
 \end{enumerate}
 
-}{
 
-\section{Advantage Categories}
-\label{rule:positions-of-advantage}
-\label{rule:advantage-categories}
-
-An aircraft positioned to the rear of an enemy is often more able to maneuver against, react to, and attack that enemy. The game reflects this ability by the concept of advantage categories, which depend largely on whether an aircraft is controlled and its position relative to opposing aircraft. An aircraft normally moves after those with lower advantage categories, so it benefits from seeing its enemy’s moves before it moves.
-
-\paragraph{Advantage Categories.} Each turn, an aircraft will fall into one of the following advantage categories:
-
-\begin{itemize}
-
-    \item\itemparagraph{Departed.} The aircraft is in departed flight.
-
-    \item\itemparagraph{Stalled.} The aircraft is in stalled flight.
-
-    \item\itemparagraph{Engaged.} The aircraft is actively defending itself against missiles.
-
-    \item\itemparagraph{Disadvantaged.} 
-    The aircraft is sighted, is inferior to at least one enemy aircraft, and is not superior to any enemy aircraft.
-    
-    \item\itemparagraph{Neutral.} This category includes two types of aircraft. 
-    \begin{itemize}
-        \item The aircraft is sighted, it not superior to any enemy aircraft, and is not inferior to any enemy aircraft.
-        \item The aircraft is sighted, is superior to at least one enemy aircraft, and is inferior to at least one enemy aircraft.
-    \end{itemize}
-
-    \item\itemparagraph{Advantaged.} 
-    The aircraft is sighted, is superior to at least one enemy aircraft, and is not inferior to any enemy aircraft.
-
-    \item\itemparagraph{Unsighted but Detected.} The aircraft is not sighted by any enemy aircraft, but is detected by an enemy air-to-air radar.
-
-    \item\itemparagraph{Unsighed and Undetected.} The aircraft is neither sighted nor detected by enemy air-to-air radar.
-
-\end{itemize}
-
-This list appears in order from the lowest advantage category to highest. When determining an aircraft’s advantage category, it is read in order, and the aircraft is categorized by the first situation that applies. 
-
-\paragraph{Free Aircraft.} Any aircraft not departed, stalled, or engaged is termed a “free” aircraft. Only a free aircraft can hold a position of advantage over non-free aircraft. Non-free aircraft cannot hold a position of advantage over any aircraft.
-
-% ISSUE: Should non-free aircraft enter into the determination of advantage? They are going to move first anyway. At the moment, a free aircraft can gain a position of advantage over a non-free aircraft and thereby elevate its advantage category. Perhaps position of advantage should only be determined among the free aircraft.
-
-\paragraph{Superior and Inferior Aircraft.} An aircraft is superior to an enemy aircraft if:
-\begin{itemize}
-    \item It is free.
-    \item The enemy aircraft is in its \arcrange{150}{+} \AY[3A-horizontal-arcs]{horizontal} arc.
-    \item The enemy aircraft does not have the same map location (i.e., the same hex or hex side).
-    \item The horizontal range to the enemy aircraft is no more than 9 hexes.
-    \item The enemy aircraft is no more than 6 altitude levels higher or 9 altitude levels lower.
-\end{itemize}
-
-Additionally, an aircraft in a vertical dive may not be superior to a higher aircraft but may be superior to an aircraft at the same or lower altitude. An aircraft in a vertical climb may be superior to an aircraft at lower, the same, or higher altitude.
-
-A tailing aircraft (see rule~\ref{rule:tailing-enemy-aircraft}) is considered to be superior to the aircraft it is tailing but cannot be superior to any other aircraft. Other aircraft may consider or not the tailing aircraft, as they so desire.
-
-An aircraft is inferior to an enemy aircraft if the enemy is superior to it.
-
-\paragraph{Sierra Hotel Pilots.} If advanced rule~\ref{rule:crew-ability} on crew ability is being used, Sierra Hotel pilots have the option to raise their advantage category raised one level when determining the flight order. For example, if they were disadvantaged, they could be considered neutral. An advantaged Sierra Hotel pilot cannot increase their category to unsighted, but can move after all other advantaged aircraft. The benefit of increasing their position of advantage level is optional and must be declared in the aircraft decisions phase of each game turn.
-
-
-\section{Order Of Flight} 
-
-Aircraft normally move sequentially during the flight phase, and are ordered first by their advantage category and then by their initiative. Advantage categories are considered in the order shown above. For example, all departed aircraft move first, then all stalled aircraft, and so on. Within each advantage category, initiative is used to determine the order of movement of aircraft. Missiles move when their target moves.
-
-The following three exceptions apply to the order of flight:
-
-\begin{enumerate}
-
-    \item\itemparagraph{Illuminating Aircraft.} An aircraft performing radar illumination for a radar-guided missile moves at the same time as the missile’s target regardless of its original category (see rule~\ref{rule:target-illumination}). This may cause a rearrangement of the order of flight to resolve missile shoot-outs when opposing aircraft target and illuminate each other.
-
-    \item\itemparagraph{Tailing Aircraft.} An aircraft tailing another moves immediately after the aircraft it is tailing (see rule~\ref{rule:tailing-enemy-aircraft}).
-
-    \item\itemparagraph{Preempting Aircraft.} Aircraft that have not yet moved in a game turn and which are threatened by an aircraft currently moving may attempt to evade the attacker by defensively preempting (see rule~\ref{rule:defensive-preemptions}).
-    
-\end{enumerate}
-
-
-}
 
 \section{Tailing Enemy Aircraft}
 \label{rule:tailing-enemy-aircraft}
 \label{rule:tailing}
 
-\CX{
 A Free aircraft ending its flight stacked in the same position as an enemy aircraft which has already moved that turn may declare that it is tailing the enemy provided:
 
 \begin{itemize}
@@ -220,30 +104,11 @@ A Free aircraft ending its flight stacked in the same position as an enemy aircr
 \paragraph{Limits on Tailing.} No more than one friendly aircraft may ever tail a given enemy, but the friendly aircraft could in turn be tailed by another enemy which moves later that turn. No more than three aircraft\addedin{2A}{MP in v2.4}{ may be part of a multi-aircraft tailing}.  Multiple tailings in a hex/hexside may occur as long as each pursuer meets this criteria.
 
 \paragraph{Effects On Positions Of Advantage.} The tailing aircraft is considered advantaged over the tailee but is not allowed to disadvantage any other enemy aircraft since it is concentrating on the pursuit. The tailing aircraft moves immediately after the pursued aircraft does regardless of normal initiative numbers. Other aircraft may consider or ignore a tailing aircraft for purposes of determining order of flight depending on what would be more advantageous to them.
-}{
-A free aircraft ending its flight stacked in the same position as an enemy aircraft that has already moved that turn may declare that it is tailing the enemy provided:
 
-\begin{itemize}
-
-    \item Its facing is no more than 60{\deg} different to that of the enemy, and
-    
-    \item Its start speed for the next game turn is not more than 1.0 greater than that of the enemy.
-
-\end{itemize}
-
-\paragraph{Advantages of Tailing.} An aircraft tailing an enemy will not collide with it. It also moves after the enemy (which can help to avoid an overshoot).
-
-\paragraph{Limits on Tailing.} No more than one friendly aircraft may tail a given enemy, but a tailing friendly aircraft can, in turn, be tailed by another enemy aircraft. At most three aircraft may be in such a tailing chain. However, multiple tailings may occur at the same position.
-
-\paragraph{Effects on Advantage Category.} The tailing aircraft is considered to be superior to aircraft it is tailing but cannot be superior to any other aircraft since it is concentrating on the pursuit. Other aircraft may consider or ignore a tailing aircraft when determining their advantage category, as they desire.
-
-\paragraph{Effects on Initiative} If both aircraft have the same advantage category, then the tailing aircraft ignores its normal initiative score and moves immediately after the aircraft it is tailing.
-}
 
 \section{Defensive Preemptions}
 \label{rule:defensive-preemptions}
 
-\CX{
 Due to the rule that allows gunfire during movement, it often happens that aircraft with a higher Initiative, which are waiting to move, get attacked by those supposedly at a disadvantage which are moving first. This rule allows aircraft with the higher Initiative, to react to such threats by preempting the movement of those enemy aircraft.
 
 \paragraph{When Can You Preempt?} An aircraft may pre-empt the normal order of flight once per game-turn by moving before it normally would. This is allowed only when a sighted enemy aircraft, which has a lower Initiative or which is in a lower position of advantage category, is moving or about to move, and is threatening it with gunfire.
@@ -262,65 +127,11 @@ To avoid confusion, the threatening aircraft should first expend an FP and then 
     \item make any attacks or launch weapons and,
     \item may not do any radar work except to use the "Boresight" or "Auto-Track" modes.
 \end{itemize}	
-}{
 
-As gun attacks are allowed during movement, it sometimes happens that an aircraft with a higher advantage category or initiative, while waiting to move, is attacked or threatened by another that has the supposed disadvantage of moving first. The waiting aircraft can react to such attacks or threats by preempting the movement of an aircraft that is moving or about to move.
-
-\paragraph{Threatening and Threatened Aircraft.} An enemy aircraft is threatening if it satisfies all of the following:
-
-\begin{itemize}
-\item It is moving or is about to move,
-\item It has one or more friendly aircraft that have not yet moved in its \arcrange{150}{+} \CY[3A-horizontal-arcs]{horizontal} arc and at a range of no more than six hexes, and
-\item It has not declared a defensive preemption in the current game turn.
-\end{itemize}
-The friendly aircraft involved are threatened.
-
-\paragraph{Preemption Requirements} A threatened aircraft may not preempt a threatening aircraft unless:
-\begin{itemize}
-     \item At the start of the threatening aircraft’s move, it is individually sighted (see rule~\ref{rule:individual-sighting}) by the threatened aircraft,
-     \item At the start of the threatening aircraft’s move, it and the threatened aircraft are individually sighted (see rule~\ref{rule:individual-sighting}) by an aircraft friendly to the threatened aircraft and neither are in that aircraft’s restricted arc, or
-     \item The threatening aircraft has just carried out a gun attack on the threatened aircraft.
-\end{itemize}
-
-\paragraph{Preemption Declarations.}
-If the threatened player thinks they might preempt a threatening aircraft, they should alert the threatening player. A threatened player may declare a preemption in these moments:
-\begin{itemize}
-    \item Before the threatening aircraft has begun moving or
-    \item After each FP used by the threatening aircraft but before a possible gun attack immediately after that FP.
-\end{itemize}
-The threatening player should pause briefly at these moments. In these pauses, the threatened player should simply declare “yes” or “no.” If they declare “yes,” the preemption is executed immediately. Otherwise, the threatening aircraft may use its first FP (in the first case) or carry out a possible gun attack and use its next FP (in the second). This process is repeated until a preemption occurs or the threatening aircraft completes its move.
-
-\paragraph{Preemption Procedure.} To execute a preemption:
-\begin{itemize}
-    \item The threatening aircraft halts its move.
-    \item The threatened aircraft uses half its FPs (rounded up). 
-    \item The threatening aircraft completes its move, making any possible attacks. 
-    \item The threatened aircraft completes its move.
-\end{itemize}
-When both aircraft have finished their moves, the preemption is over.
-
-\paragraph{Preemption Restrictions.} An aircraft that declares a defensive preemption is restricted for the remainder of the current game turn as follows:
-
-\begin{itemize}
-    \item It may not declare or execute another preemption,
-    \item It may not make attacks or launch weapons, and
-    \item It may not use its radar except in boresight or auto-track modes.
-\end{itemize}	
-
-}
 \trainingnote{
-\CX{
 You are now ready to play all guns only Air Combat Scenarios. For more fun, also read the Special Maneuvers of Chapter 13 which allow you more options in how to maneuver your fighters. Use the Sequence of Play but Ignore the AAA, SAM, and Ground Unit Interaction Phases.
-}{
-%\centering
-
-You are now ready to play all of the guns-only air-to-air scenarios. Use the extended sequence of play (Table~\ref{table:expanded-sequence-of-play}), but ignore the AAA, SAM, and ground-unit interaction phases. For more fun, also read the rule~\ref{rule:special-maneuvers}, which allow you more options for maneuvering your fighters. 
-
-
-}
 }
 
-\DX{
 \begin{advancedrules}
 
 \section{Formations and Order of Flight}
@@ -330,4 +141,3 @@ You are now ready to play all of the guns-only air-to-air scenarios. Use the ext
 \paragraph{Order of Flight.} All aircraft in a Close Formation move with and at the same time as their leader. Their leader's order of flight is determined normally. Aircraft in Tactical Formations move individually with their order of flight determined normally.
 
 \end{advancedrules}
-}
