@@ -20,3 +20,4 @@ rules/project.pdf
 rules/project.pdf
 *.fdb_latexmk
 *.xdv
+*.changetags
