@@ -1,101 +1,26 @@
-\CX{
 \rulechapter{Night and Adverse Weather}
-}{
-\rulechapter{Night, Sun, and Weather}
-}
+
 \label{rule:night-and-weather}
 
-\CX{
 This chapter details the effects of various weather phenomena on aircraft flight and combat. This entire chapter is an \emph{ADVANCED RULE}.
-}{
-This rule describes the impact of night, the Sun, and weather on aircraft flight and combat. This entire chapter is an advanced rule.
-}
 
 \begin{advancedrules}
 
-\DX{
-Weather is an important consideration in air combat. Clouds offer concealment from visual and IR guided weapons, contrails give away aircraft positions, night or adverse weather conditions can hinder or limit aircraft flight, or the Sun can dazzle a pilot or draw off an IR missile. The following rules address these factors.
-}
-
-\CX{
+    Weather is an important consideration in air combat. Clouds offer concealment from visual and IR guided weapons, contrails give away aircraft positions, night or adverse weather conditions can hinder or limit aircraft flight, or the Sun can dazzle a pilot or draw off an IR missile. The following rules address these factors.
+    
+    
 \section{Common Weather}
 \silentlyaddedin{1C}{1C-tables}{
     \input{tables/table-weather}
 }
-}{
-\section{Flight Conditions}
-\label{rule:flight-conditions}
 
-\input{tables/table-sun-angle}
-\input{tables/table-weather}
-
-The flight conditions are: whether it is day or night; the position of the Sun during the day; and the presence and altitudes of contrail, haze, and cloud layers.
-
-The flight conditions may be specified by the scenario, agreed on by the players, or generated randomly following the procedures below.
-
-}
 \label{rule:clouds}
 \label{rule:haze}
 \label{rule:stratus-clouds}
 \label{rule:dense-clouds}
 
 
-\AX{
-\paragraph{Day or Night.}
 
-Determine whether the scenario occurs at night by rolling one die and considering the scenario year. The scenario occurs at night on a roll of $1-$ in the 1950s, $2-$ in the 1960s, $3-$ in the 1970s or 1980s, and $4-$ in the 1990s or later.
-
-\paragraph{Sun Position.}
-\label{rule:sun-position}
-
-Determine the time of day of the scenario and the corresponding position of the Sun by rolling one die and consulting Table~\ref{table:sun-angle}. The position has two components: the direction and the angle.
-
-\paragraph{Climate Type.} The climate types are polar, temperate, tropical, and arid. The scenario notes may indicate the appropriate climate type. If not, the players should agree on them considering the geographic zone in which the scenario occurs. The climate types should not be interpreted too strictly; for example, the Korean peninsula experiences a continental climate and can be considered polar in winter and temperate in summer.
-
-\paragraph{Sky Type.} The sky types are clear, broken, or overcast. Determine the sky type by rolling one die and consulting Table~\ref{table:climate-zones} for the appropriate climate type. 
-
-For example, if the climate type is polar, the sky type is clear on a roll of 1 to 4, broken on a roll of 5 to 7, and overcast on a roll of 8 to 10.
-
-\paragraph{Contrail Layer.} Determine the lower altitude of the contrail layer by rolling one die and adding the base contrail altitude level given by Table~\ref{table:climate-zones} for the appropriate climate type. The higher altitude of the contrail layer is the lower altitude plus 25.
-
-For example, if the climate type is polar and the die roll is 7, the contrail layer extends from altitude level 27 to altitude level 52.
-
-\paragraph{Haze and Cloud Layers.} Determine the number and type of haze and cloud layers by rolling one die and consulting Table~\ref{table:haze-and-clouds} for the appropriate sky type. The result may indicate that there is a haze layer (Hz), and if so, its upper altitude band, and the number of stratus cloud layers (SCL) and dense cloud layers (DCL). 
-
-The altitudes of each haze layer or cloud layer are determined as follows:
-
-\begin{itemize}
-
-\item If a haze layer is present, it extends from the altitude level 0 to the top of the indicated altitude band. For example, “ML Hz” means there is a haze layer in the LO and ML altitude bands, extending from altitude level 0 to altitude level 16.
-
-\IDY[3A-cloud-altitudes]{A stratus cloud layer extends over only one altitude level. For each layer, randomly select one of the four stratus cloud counters and then flip it like a coin to show one side. (The counters show altitudes of 8, 11, 16, 18, 23, 27, 28, and 32.)}
-
-\IAY[3A-cloud-altitudes]{A stratus cloud layer extends over only one altitude level. For each stratus cloud layer, roll two dice to determine its altitude:
-\begin{itemize}
-\item If the first result is 1 to 5, the altitude is 4 plus the second result.
-\item If the first result is 6 to 8, the altitude is 14 plus the second result.
-\item If the first result is 9 or 10, the altitude is 24 plus the second result.
-\end{itemize}
-Thus, stratus cloud layers can be between altitude levels 5 and 34. For example, if the first result is 7 and the second is 2, the altitude is 16.
-}
-
-\IDY[3A-cloud-altitudes]{A dense cloud layer can extend over several altitude levels. For each layer, randomly select two of the six dense cloud counters. The first one indicates the lower altitude level, and the second the upper altitude level. (The counters show lower/upper altitudes of 2/25, 3/20, 5/16, 7/15, 9/13, and 11/12.)}
-
-\IAY[3A-cloud-altitudes]{A dense cloud layer may extend over several altitude layers. For each dense cloud layer, roll four dice to determine the lower and upper altitudes:
-\begin{itemize}
-\item The lower altitude is the sum of half of the first result and half of the second, and then rounded down. 
-\item The upper altitude is the sum of the third result, half of the fourth, and 10, and then rounded down.
-\end{itemize}
-
-Thus, the lower altitude can be between levels 1 and 10, and the upper altitude can be between levels 11 and 25. For example, if the results are 7, 2, 3, and 5, the lower altitude is 4, and the upper altitude is 15.}
-
-\end{itemize}
-
-Overlapping or adjacent dense cloud layers merge to form a single, possibly thicker, dense cloud layer. A stratus layer overlapping a dense cloud layer also merges with the dense cloud layer and is ignored. \CY[3A-cloud-altitudes]{A stratus cloud layer adjacent to a dense cloud layer is retained as a separate cloud layer.}{Stratus cloud layers at the same altitude merge to form a single stratus cloud layer. A stratus cloud layer adjacent to a dense cloud layer or another stratus cloud layer is retained as a separate cloud layer.}
-
-}
-
-\DX{
 \paragraph{Contrailing.} Aircraft or missiles at high altitude and high speed can leave contrails in the air. Anytime an aircraft or missile is at a speed of 4.0 or more and within the Contrail Levels, it leaves a contrail.
 
 To determine the contrailing levels, roll one die and add the result to the base contrail level given on \changedin{1C}{1C-tables}{the weather chart}{Table~\ref{table:climate-zones}} for the geographic region of play. The result is the lowest level contrailing occurs. Contrails occur up to 25 levels above the lowest contrail level.
@@ -108,7 +33,7 @@ Any aircraft or missile that is contrailing is automatically sighted, assuming n
 \paragraph{Generating Weather.} The game weather is either given in the scenario notes or can be generated using Tables~\ref{table:climate-zones} and \ref{table:haze-and-clouds}. To generate weather, roll one die and consult the appropriate geographic area of Table~\ref{table:climate-zones}. The result will be either, Clear, Broken, or Overcast skies. Roll again under the appropriate heading in Table~\ref{table:haze-and-clouds} to determine if Haze and/or any Cloud Layers exist.
 }
 
-\paragraph{Haze Layers.}  \DX{If Haze is indicated for some altitude band, it exists in all levels of that band and down to ground level.} Haze reduces visibility. The maximum visual sighting range to and from aircraft in Haze is twice the target's visibility number in hexes. The sighting range to ground units in Haze is halved.
+\paragraph{Haze Layers.} If Haze is indicated for some altitude band, it exists in all levels of that band and down to ground level. Haze reduces visibility. The maximum visual sighting range to and from aircraft in Haze is twice the target's visibility number in hexes. The sighting range to ground units in Haze is halved.
 
 \paragraph{Cloud Layers.} Two types of Cloud Layers may be called for: Stratus and Dense. More than one layer of each type may be called for. When the Weather Table result includes Cloud Layers determine their exact altitudes as follows:
 
@@ -132,7 +57,7 @@ Dense clouds are considered adverse weather for purposes of pilot disorientation
 \paragraph{Sighting/Combat Effects of Cloud Layers.} It is easier to see aircraft against white backgrounds. When looking for aircraft whose altitude level is between the sighting aircraft and the clouds apply the silhouette modifiers given in the sighting table.
 
 Bright sunlight reflecting off clouds can distract IR guided missiles. When launching IR missiles at a “lower” target which is above the highest cloud layer in play, add 3 to the missile's launch roll.
-}
+
 
 \silentlydeletedin{1C}{1C-tables}{
     \input{tables/table-weather}
@@ -141,7 +66,6 @@ Bright sunlight reflecting off clouds can distract IR guided missiles. When laun
 \section{Sun}
 \label{rule:sun}
 
-\CX{
 
 The Sun has always been a factor in air combat. Pilots often try to maneuver so that enemy pilots or AAA gunners are dazzled by the glare. The Sun may also draw off IR guided missiles.
 
@@ -151,11 +75,9 @@ The Sun has always been a factor in air combat. Pilots often try to maneuver so 
 
 \addedin{1B}{1B-apj-36-errata}{The Sun arc is not well-defined for some cases. For example, consider the Sun located to the side of an aircraft on a hexside; a limited arc is only defined off the nose or tail. In that case consider the A/C shifted into the hex closest to the Sun and facing the Sun.}
 
-\DX{
 \paragraph{The Sun Angle.} To be affected by Sun Clutter, a unit must be in some vertical position relative to the target which depends on the time of day. The Sun angle is defined in terms of an Altitude level per hex away ratio. Mutually agree on, or roll the die to determine a time of day. Refer to \changedin{1C}{1C-tables}{the table below}{Table~\ref{table:sun-angle}} to get the Sun Angle ratio.
 
 \input{tables/table-sun-angle}
-}
 
 For Example: To be affected by Sun Clutter in the early morning, an aircraft six levels below a target would have to be West of the target, in its Sun Arc and either 12 or 13 hexes away. Sun Clutter is only possible if the involved aircraft are all above the highest cloud layers and the target is not in Haze.
 
@@ -165,171 +87,6 @@ IR missiles launched in target's Sun Clutter add 3 to the launch roll. IR missil
 
 AAA Units firing from target's Sun Clutter, add 1 to their hit die rolls\addedin{2B}{2B-aaa-sun-clutter}{, unless they are stacked with a FCR or have an integral W-type FCR}.
 
-}{
-
-The Sun has always been a factor in air combat. Pilots often try to maneuver so that enemy pilots or AAA gunners are dazzled by the glare. The Sun may also draw off IR-guided missiles.
-
-\paragraph{Sun Clutter.} 
-A searcher or attacker is said to be in its target's \emph{Sun clutter} if the target is in front of or close to the Sun. Thus, the geometry of Sun clutter depends not only on the geometry of the searcher or attacker and its target but also on the presence and position of the Sun (see rule \ref{rule:flight-conditions}).
-
-More precisely, a searcher or attacker is in the Sun clutter of its target if:
-
-\begin{itemize}
-\item It is day.
-\item The searcher or attacker is above any haze and cloud layers present.
-\item If the Sun is overhead, the searcher or attacker is at a lower altitude than the target, and the horizontal range is 2 or less.
-\item If the Sun is not overhead, the searcher or attacker is within a limited arc that originates on the target and faces directly away from the Sun (so to the west for the dawn/morning and to the east for the afternoon/dusk) and satisfies the altitude requirement. 
-
-At dawn and dusk, the altitude requirement is that the searcher or attacker has to have the same altitude as the target. In the morning and afternoon, the altitude requirements are given in terms of the number of altitude levels that the searcher or attacker has to be below the target for each hex or full two hexes of horizontal range.
-
-A limited arc facing east or west is not defined for hex sides that are not oriented east-west. In these cases, consider the limited arc to originate from the center of the adjacent hex closest to the Sun.
-
-\end{itemize}
-
-For example, to be affected by Sun clutter in the early morning, an aircraft six levels below a target would have to be above any haze and cloud layers present, be west of the target, be in a limited arc centered on the target, and oriented to the west, and be at a horizontal range of either 12 or 13.
-
-\paragraph{Blinding Sighting.} Sun clutter has the following effects on sighting:
-\begin{itemize}
-\item 
-Aircraft in the Sun clutter of a target cannot padlock or participate in searches for the target (see rule \ref{rule:sighting-aircraft-and-missiles}). If a target begins the visual sighting phase in the Sun clutter of all opposing aircraft, it will be unsighted for the rest of the game turn.
-\item
-Ground units in the Sun clutter of a target cannot sight the target.
-\end{itemize}
-
-\paragraph{IRM and IR SAM Launch Modifier.} 
-IRMs and IR SAMs launched from within their target’s Sun clutter have a $+3$ modifier to their launch roll (see rule \ref{rule:irm-launch-modifiers}).
-
-\paragraph{IRM and IR SAM Tracking.} 
-IRMs and IR SAMs that end a proportional move in their target’s Sun clutter may be decoyed by the Sun. Roll one die and subtract 3. If the result is less than or equal to the missile’s flare vulnerability number, the missile ceases to track the target and is removed from play.
-
-\paragraph{AAA Aimed Fire Modifier.} AAA units firing on the target from within its Sun clutter  suffer a $+1$ modifier to their hit die roll for aimed fire, unless they are stacked with a FCR or have an integral W-type FCR.
-
-}
-
-\AX{
-\section{Contrail Layers}
-\label{rule:contrailing}
-\label{rule:contrail-layers}
-
-Contrails dramatically increase the visibility of the aircraft or missile generating them.
-
-\paragraph{Contrails.} If an aircraft or missile is at a speed of 4.0 or more and within the contrail layer, it generates a contrail.
-
-\paragraph{Sighting Effects.} 
-The only effects of contrails are on the visual sighting of aircraft and missiles (see rule \ref{rule:sighting-aircraft-and-missiles}):
-\begin{itemize}
-\item
-During the day, a contrailing aircraft can be sighted automatically to a sighting range of 150.
-
-\item
-During the day, a contrailing missile can be sighted automatically to a sighting range of 90.
-
-\item
-At night, a contrailing aircraft or missile that is \emph{above the highest cloud layer present} can be automatically sighted to a sighting range of 24. 
-
-\item At night, a contrailing aircraft or missile that is \emph{not above the highest cloud layer present} can be automatically sighted to a sighting range of 6.
-\end{itemize}
-
-In all cases, the usual effects of haze and cloud layers on sighting apply.
-}
-
-\AX{
-\section{Haze Layers}
-\label{rule:haze-layers}
-
-Haze layers can absorb or scatter visible light, which reduces contrast and has a negative impact on visual sighting and on sensors or weapons that operate with visible light. On the other hand, in the game, their impact on infrared light and radar is negligible. The precise effects are the following.
-
-\CY[3A-sighting]{
-\paragraph{Maximum Sighting Range.} If either the searcher or target or both are in a haze layer,  the maximum sighting range for an aircraft is twice its visibility number.
-}{
-\paragraph{Sighting Range.} If either the searcher or target or both are in a haze layer, the sighting range for visual sighting and identification (see rule~\ref{rule:visual-sighting}) is considered to be twice the normal range, which reduces both the maximum range to which the target can be sighted and gives more adverse modifiers. This applies to normal visual sighting (air-to-air, air-to-ground, and ground-to-air) and to the use of VAS. It does not apply to the use of IRSTS or TV/IR optics.
-}
-
-\DY[3A-sighting]{
-\itemparagraph{Sighting Roll Modifiers.} If the target is in haze, use the sighting modifier from Table \ref{table:sighting-position-modifiers} in addition to the normal position modifier.
-}
-
-\paragraph{Individual Sighting.} Air-to-air attacks with visually aimed weapons require the target to be individually sighted by the attacker at the start of the attacker's movement (see rule \ref{rule:individual-sighting}). 
-
-Exceptionally and for this purpose only, if a potential target moves first and enters a haze layer, \CY[3A-sighting]{the maximum sighting range is considered to be the normal value of four times the visibility number and not twice the visibility number}{the sighting range is considered to be the actual range and not twice the actual range}. This gives an attacker the ability to follow and attack a target that tries to escape by entering a haze layer.
-
-\paragraph{Adverse Conditions.} At night, an aircraft in a haze layer is considered to be flying in adverse conditions (see rule \ref{rule:adverse-conditions}).
-
-
-\section{Cloud Layers}
-\label{rule:cloud-layers}
-
-Cloud layers can partially or completely block both visible and infrared light, and so have negative impacts on visual sighting and on sensors or weapons that operate with visible or infrared light. On the other hand, in the game, their impact on radar is negligible. The precise effects are the following.
-
-\paragraph{Lines of Sight.} Cloud layers block sight lines and limit visual sighting as follows:
-
-\begin{itemize}
-
-\item
-Aircraft and ground units above or below a stratus cloud layer may not visually sight targets beyond that layer.
-
-\item An aircraft in a stratus cloud layer may sight targets outside the layer, albeit with the modifiers discussed below.
-
-\item A target aircraft or missile in a stratus cloud layer may be sighted by aircraft and ground units outside the layer, albeit with the modifiers discussed below.
-
-\item An aircraft in a stratus layer can sight other aircraft and missiles \emph{in the same layer} to a maximum range of 1.
-
-\item
-Aircraft and ground units in a dense cloud layer may not visually sight targets.
-
-\item 
-Target aircraft, missiles, and ground units in a dense cloud layer may not be visually sighted.
-
-\end{itemize}
-
-As an exception, during the day, an aircraft being tailed (see rule \ref{rule:tailing}) that enters a dense cloud layer continues to be sighted by the tailing aircraft for as long as the latter continues to tail. The tailing aircraft can potentially attack the aircraft being tailed with guns.
-
-The same limitations apply to the use of: VAS; IRSTS; TV/IR optics; IRM and IR, OG, or LG SAM launches; IRM and IR, OG, or LG SAM tracking; AAA units not stacked with a FCR or with integral W-type FCR; RS, RS, BG, or BS weapons; laser designators; and laser spot trackers. 
-
-In particular, aircraft above or below a stratus cloud layer may not launch IRMs at targets beyond that layer, and aircraft in dense cloud layers may not launch IRMs or be the target of IRMs, even with radar assist (see rule \ref{rule:irm-radar}).
-
-\paragraph{Sighting Roll Modifiers.} The following sighting roll modifier can apply:
-
-\begin{itemize}
-
-\item A target aircraft between a cloud layer and the searcher is considered to be seen against clouds for determining the background sighting roll modifier from Table~\ref{table:sighting-position-modifiers}; being seen against clouds takes priority over other background modifiers.
-
-\item A target aircraft in a stratus cloud layer is considered to be seen against clouds for determining the sighting modifier from Table~\ref{table:sighting-position-modifiers}.
-
-\item A target aircraft and missile in a stratus cloud layer can be sighted by other aircraft with a modifier of $+3$. 
-
-\item An aircraft in a stratus cloud layer can sight other aircraft and missiles with a modifier of $+2$.
-
-\IAY[3A-sighting]{If the target is below the highest dense cloud layer, a $+1$ modifier applies (reflecting the poorer light below dense clouds).}
-
-\end{itemize}
-
-When an aircraft in a stratus cloud layer is searching for a target in the same layer, all of the  modifiers for stratus clouds apply.
-
-\paragraph{IRM Launch Modifier.} During the day, if an IRM missile is launched from above the highest cloud layer at a lower target with a horizontal range that is less than twice the difference in altitude levels, a launch roll modifier of $+3$ applies. This modifier represents the effect of the reflection of the Sun off the highest cloud layer.
-
-\paragraph{Missile Tracking.} IRMs and IR/OG/LG SAMs may track and attack aircraft in stratus cloud layers. However, missile fails to track and is removed from play if at the end of any of its proportional moves any of the following conditions occur:
-
-\begin{itemize}
-\item An IRM and IR/LG SAM and its target are in the same stratus cloud layer and the range to the target is more than 1.
-\item An IRM or IR/LG SAM and its target are on opposite sides of a stratus cloud layer
-\item The launcher of an OG/LG SAM and its target are on opposite sides of a stratus cloud layer.
-\item The launcher of an OG SAM and the missile are on opposite sides of a stratus cloud layer.
-\end{itemize}
-
-IRMs and IR/OG/LG SAMs may not track and attack aircraft in dense cloud layers. As an exception, if the target of an IRM or IR SAM enters a dense layer, the missile is allowed to follow during its next proportional move. If it cannot attack during this proportional move, it fails to track and is removed from play.
-
-\paragraph{Individual Sighting.} Air-to-air attacks with visually aimed weapons require the target to be individually sighted by the attacker at the start of the attacker's movement (see rule \ref{rule:individual-sighting}). 
-
-Exceptionally and for this purpose only, if a potential target moves first and crosses to the other side of a stratus cloud layer or enters the same stratus cloud layer as the attacker, that layer is not considered to block visual sighting. This gives an attacker the ability to follow and attack a target that tries to escape by entering or crossing a stratus cloud layer.
-
-\paragraph{Collisions.} As an exception to the usual rule for aircraft collisions (see rule \ref{rule:aircraft-collisions}), in dense cloud layers collisions are possible between an aircraft being tailed and the aircraft tailing it (see rule \ref{rule:tailing}) and also between two friendly aircraft at the same position and not in a close formation.
-
-\paragraph{Adverse Conditions.} At night, an aircraft in a stratus cloud layer or below the highest dense cloud layer is considered to be flying in adverse conditions (see rule \ref{rule:adverse-conditions}).
-
-}
-
-\CX{
 \section{Night and Adverse Weather Flight}
 \label{rule:night-and-adverse-weather-flight}
 \label{rule:adverse-conditions}
@@ -424,89 +181,6 @@ The disorientation die roll is modified for the following:
 
 Aircraft need help in locating targets at night. FACs and target marks have been previously discussed. Other aids for night attack include: illumination flares, TV/IR Optics, and Ground Attack Radar.
 
-}{
-
-\section{Flying at Night and in Adverse Conditions}
-\label{rule:flying-at-night}
-\label{rule:adverse-conditions}
-
-Night and adverse conditions severely limit what a pilot can or will do with his aircraft.
-
-\paragraph{Flying in Clear Night Conditions.}
-
-Clear night conditions exist at night at altitudes outside of stratus layers and above all dense cloud and haze layers. The following restrictions apply to aircraft flying in clear night conditions:
-
-\begin{itemize}
-
-    \item\itemparagraph{Risk of Disorientation.} ET turns, all special maneuvers except slides, vertical climbs, and vertical dives, risk pilot disorientation (see advanced rule \ref{rule:disorientation}).
-
-    \item\itemparagraph{Tailing.} Tailing (see rule \ref{rule:tailing}) is not allowed.
-    
-    \item\itemparagraph{TFF.} TFF is not allowed unless the aircraft has Terrain Following technology or TV/IR optics technology (see advanced rule \ref{rule:tv-ir-optics}).
-
-    \item\itemparagraph{Pilot Quality.} Green pilots (see advanced rule \ref{rule:crew-quality}) may not fly at night.
-
-\end{itemize}
-
-\paragraph{Flying in Adverse Conditions.}
-
-Adverse conditions exist in a dense cloud layer (both during the day and at night), or at night in haze or below the highest dense cloud layer. The following restrictions apply to aircraft in adverse conditions:
-
-\begin{itemize}
-
-    \item\itemparagraph{Maneuvers.} All special maneuvers except slides not allowed.
-
-    \item\itemparagraph{Risk of Disorientation.} HT or greater turns, vertical climbs, and vertical dives risk pilot disorientation (see advanced rule \ref{rule:disorientation}).
-
-    \item\itemparagraph{Tailing.} Tailing (see rule \ref{rule:tailing}) is not allowed.
-
-    \item\itemparagraph{TFF.} TFF is not allowed unless the aircraft has Terrain Following technology or TV/IR optics technology (which confers Terrain Following-A technology). Furthermore, turns of HT/BT/ET or greater in TFF risk collisions with the ground for aircraft with TFF technology of type A/B/C, respectively.
-    
-    Check for fatal ground collisions each time the aircraft changes facing at a rate in excess of the safe limit. On a die roll of 1, the aircraft collides with terrain, killing the crew.
-
-    \item\itemparagraph{Pilot Quality.} Green pilots (see advanced rule \ref{rule:crew-quality}) may not fly in adverse conditions.
-
-\end{itemize}
-
-\section{Combat at Night}
-\label{rule:combat-at-night}
-
-The following limitations apply to combat at night.
-
-\paragraph{Sighting Aircraft.} The maximum sighting ranges and sighting modifiers for aircraft are modified as follows:
-\begin{itemize}
-\item 
-A contrailing aircraft is spotted automatically to a sighting range of 24 if it is above the highest cloud layer and 6 otherwise (see rule \ref{rule:contrail-layers}). 
-\item
-A IR/OG/LG SAM unit equipped with an IR night sight can sight aircraft using AB as if in daylight and other aircraft to a maximum sighting range of 6.
-\item
-Otherwise, the maximum visual sighting range if 6 the aircraft is using AB and 2 if it is not. 
-\item
-Sighting modifiers for \CY[3A-sighting]{paint scheme, relative altitude,}{background} and smoking do not apply at night.
-\end{itemize}
-
-\paragraph{Sighting Missiles.} The maximum sighting ranges and sighting modifiers for missiles are modified as follows:
-\begin{itemize}
-\item 
-A contrailing missile is spotted automatically to a sighting range of 24 if it is above the highest cloud layer and 6 otherwise (see rule \ref{rule:contrail-layers}). 
-\item
-Otherwise, a missile may only be sighted on the turn after launch and on each turn that a sustainer is burning. Its visibility numbers are halved. The modifier for having been launched from a sighted aircraft does not apply.
-\end{itemize}
-
-\paragraph{Identifying Aircraft.} Identifying an aircraft at night requires that the searcher have the same position, facing, and speed as the target.
-
-\paragraph{Aiming.} An aircraft may only carry out visual aiming for ground attacks if the target is illuminated by parachute flares, or the aircraft has TV/IR optics, or the aircraft has a laser spot tracker and is targeting a laser spot.
-
-\paragraph{AAA Fire.} Unless an AAA unit is stacked with a FCR or has an integral W-type FCR, it may only track aircraft for aimed fire within the reduced maximum visual sighting ranges given above and may only conduct plotted fire at one target hex and altitude determined before a game begins.
-
-\paragraph{IR/OG/LG SAMs.} An IR/OG/LG SAM unit may only attempt lock-ons or launches on targets within the reduced maximum visual sighting ranges given above. 
-
-\paragraph{Laser Designators.} Only laser designator types B and C may be used.
-
-}
-
-\CX{
-
 \section{Air to Ground Night and Adverse Weather Attacks}
 
 Aircraft need help in locating targets at night. FACs and target marks have been previously discussed. Other aids for night attack include: illumination flares, TV/IR Optics, and Ground Attack Radar.
@@ -582,91 +256,6 @@ CONGRATULATIONS!! \\
 You have now learned all the rules (it's Miller time)!\\
 You may now play all scenarios.
 }
-
-}{
-
-\section{Illumination Flares}
-\label{rule:illumination-flares}
-
-Aircraft equipped with illumination flare pods (IPs) may drop parachute flare clusters to provide illumination.
-
-\paragraph{Illumination Flare Pods.} Aircraft may carry IPs on any station that can carry an EP. Each IP has four flare clusters.  
-
-\paragraph{Dispensing Flares.} Aircraft with IPs may initiate a flare run. A flare run counts as the allowed air-to-ground attack for the game turn. In a flare run, an aircraft may dispense up to four flare clusters, one per hex, in any hex it passes through in its flight. An aircraft may fly level, climb, dive, turn, and maneuver, but it must not be turning or maneuvering when it actually dispenses flare clusters. It may turn and maneuver between dispensing flare clusters.
-
-\paragraph{Duration.} Parachute flare clusters provide illumination for 10 game turns, including the game turn in which they were dispensed or until they reach ground level, whichever occurs first. They descend one level each odd-numbered game turn, including the game turn on which they were dispensed, if this is odd-numbered.
-
-\paragraph{Effects.} 
-Parachute flare clusters illuminate the hex in which they were dispensed and the six surrounding hexes provided they are no more than 5 altitude levels above the ground level. Ground targets in illuminated hexes may be sighted and attacked by aircraft as if it were day. Parachute flare clusters are distinct from decoy flares and may not be used as such.
-
-\section{TV/IR Optics and Optics Pods}
-\label{rule:tv-ir-optics}
-
-TV/IR optics technology and optics pods (OPs) use TV cameras sensitive to infrared light to allow aircraft to sight and attack at night or in haze.
-
-\paragraph{Visual Sighting.} Aircraft with TV/IR optics technology or an OP may visually sight ground units and may visually attack sighted ground units in their \arcrange{180}{+} arcs within a range of 18 as if it were day. Haze layers do not reduce the maximum visual sighting range for TV/IR optics or OPs. This capability may be used in the day or at night. 
-
-\paragraph{Use with Laser Designators.} Aircraft also equipped with a laser designator (either an integrated one or one in an LP or dual-capable OP/LP pod) may elect to use this capability in any single arc into which they can designate rather than their \arcrange{180}{+} arcs.
-
-\paragraph{Terrain Following Capability.} Aircraft with TV/IR optics technology automatically have type-A terrain-following technology.
-
-\section{Radar Bombing}
-
-Certain aircraft may use their radar to bomb targets that are not visually sighted, albeit with certain restrictions and reduced accuracy.
-
-\paragraph{Air-to-Ground Radar.} An aircraft has an air-to-ground capability if it satisfies one of the following requirements: 
-\begin{itemize}
-\item It has a ground-navigation and ground-attack radar.
-\item It has an air-to-air radar with an arc of \arcrange{150}{+}.
-\item It is a multi-crewed aircraft and has an air-to-air radar with an arc of \arcrange{180}{+}.
-\end{itemize}
-
-Ground-navigation and ground-attack radars have no strength ratings and may never be used in an air-to-air manner. Their lock-on numbers are asterisked.
-
-Air-to-air radars have their ranges halved when used as air-to-ground radars.
-
-\paragraph{Radar-Significant Targets.} The following can potentially be detected by air-to-ground radars:
-
-\begin{itemize}
-
-    \item In any terrain: ground units representing buildings, airport facilities (hangers, shelters, towers), locomotives, trains, POL sites, bridges, docks, piers, and dams.
-
-    \item In clear terrain or on roads and trails: ground units representing vehicles, AAA, artillery, SAMs, and radars.
-
-    \item Naval units.
-
-    \item Aircraft on runways and in shelters.
-
-    \item Isolated urban areas of not greater than 3 hexes in size and not adjacent to built-up areas, built-up area hexes, and runway hexes.
-    
-    \item Any hex with a black navigation point triangle in it.
-
-\end{itemize}
-
-\paragraph{Requirements and Restrictions.} A radar cannot simultaneously be used in the air-to-ground mode and air-to-air mode. If it is used in the air-to-ground mode, all detections and tracks of aircraft are lost. If it is used in the air-to-air mode, all detections and tracks of ground targets are lost. 
-
-The use of radar to detect and track ground targets is governed by the same restrictions as the use of air-to-air radar in normal mode to detect and track aircraft (see rule \ref{rule:air-to-air-radar}). For example, pilot-only aircraft can attempt to detect and lock-on ground targets only if they did not use a HT or harder turn.
-
-\paragraph{Radar Detection Procedure.} If the target unit or hex is in a line of sight, within the aircraft's radar arc and ground-navigation range, roll one die. On a $7-$ the target is detected. Air-to-air radars used in the air-to-ground mode use half of their search range in place of the ground-navigation range.
-
-\paragraph{Radar Tracking Procedure.} Aircraft which also have a ground-attack radar or an air-to-air radar with tracking capability may attempt to track (lock-on) to a detected ground target. The target must be within the ground-attack radar range. Air-to-air radars used in the air-to-ground mode use half their tracking range in place of the ground-attack range. The attempt succeeds on a roll equal to the lock-on number or less.
-
-\paragraph{Radar Bombing Options.} Aircraft may conduct level bombing attacks with BB weapons on detected ground targets. Aircraft with computed or advanced bomb systems may also conduct dive, toss, or laydown bombing attacks with BB weapons on tracked ground targets.
-
-\paragraph{Radar Bombing Procedure.} Attacks are resolved the normal procedures. Normal aiming is required. Modifiers for additional aiming are not applicable. If the target is tracked, then the bomb system modifier is applied, otherwise it is ignored. 
-
-\paragraph{Radar Tracking and Laser Designators.} Aircraft with type-B or type-C laser designators may designate an unsighted but tracked ground target for attacks with laser-guided weapons or aircraft with laser spot trackers.
-
-\trainingnote{
-\centering 
-
-CONGRATULATIONS!
-
-You have now learned all the rules and may now play all scenarios.
-}
-
-}
-
 
 
 \end{advancedrules}
