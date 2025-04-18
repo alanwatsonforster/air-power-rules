@@ -1,1 +1,1 @@
-$xelatex='xelatex -shell-escape';
+$xelatex='xelatex -shell-escape -halt-on-error';

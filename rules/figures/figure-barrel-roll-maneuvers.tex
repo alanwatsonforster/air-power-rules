@@ -1,5 +1,4 @@
 \begin{onecolumnfigure}[tbp]
-\CX{
 \begin{fitwidth}{7.333\standardhexwidth}
 \begin{tikzpicture}
 
@@ -54,74 +53,5 @@
 \end{fitwidth}
 
 \figurecaption{figure:barrel-roll-maneuvers}{Barrel Roll Maneuvers}
-
-}{
-\begin{fitheight}{9.2\standardhexwidth}
-\begin{tikzpicture}
-\scriptsize
-
-    \setfiguresize{-2.6}{-4.6}{+6.1}{+4.6}
-    \drawevenhexgrid{-2}{-4}{9}{9}
-
-    \begin{athex}{-1.00}{-3.50}
-        \drawdashedcounter  {+0.00}{+0.00}{60}
-        \drawdashedcounter  {+0.50}{+0.75}{60}
-        \drawaircraftcounter{+1.00}{+1.50}{60}{F-4}{}{}
-        \drawaircraftcounter{+2.00}{+2.00}{90}{F-4}{}{}
-        \begin{scope}[shift={(105:0.3)},thick,->]
-            \miniathex{+0.50}{+0.75}{\draw (60:0.05) -- (60:0.4);}
-        \end{scope}
-        \begin{scope}[shift={(135:0.3)},thick,->]
-            \miniathex{+2.00}{+2.00}{\draw (90:0.1) -- (90:0.5);}
-        \end{scope}
-        \miniathex{+1.00}{+1.50}{\draw [thick,->] (30:0.35) -- (30:0.65);}
-        \begin{scope}[shift={(315:0.5)},anchor=west]
-            \miniathex{+0.00}{+0.00}{\draw node {start position};}
-            \miniathex{+0.50}{+0.75}{\draw node {preparatory HFP};}
-            \miniathex{+1.00}{+1.50}{\draw node {preparatory HFP};}
-            \miniathex{+2.00}{+2.00}{\draw node {first roll execution};}
-            \miniathex{+2.00}{+3.00}{\draw node {preparatory HFP};}
-            \miniathex{+2.00}{+4.00}{\draw node {preparatory HFP};}
-            \miniathex{+3.00}{+4.50}{\draw node {second roll execution};}
-        \end{scope}
-        \begin{scope}[shift={(345:0.5)},anchor=west]
-            \miniathex{+2.50}{+5.25}{\draw node {preparatory HFP};}
-            \miniathex{+2.00}{+6.00}{\draw node {preparatory HFP};}
-            \miniathex{+2.00}{+7.00}{\draw node {third roll execution};}
-        \end{scope}
-    \end{athex}
-    
-    \begin{athex}{1.00}{-1.50}
-        \drawdashedcounter  {+0.00}{+1.00}{90}
-        \drawaircraftcounter{+0.00}{+2.00}{90}{F-4}{}{}
-        \drawaircraftcounter{+1.00}{+2.50}{120}{F-4}{}{}
-        \begin{scope}[shift={(135:0.3)},thick,->]
-            \miniathex{0.00}{1.00}{\draw (90:0.1) -- (90:0.5);}
-        \end{scope}
-        \begin{scope}[shift={(165:0.3)},thick,->]
-            \miniathex{1.00}{2.50}{\draw (120:0.05) -- (120:0.4);}
-        \end{scope}
-        \begin{scope}[shift={(30:0.2)}]
-            \miniathex{+0.00}{+2.00}{\draw [thick,->] (0:0.25) -- (0:0.65);}
-        \end{scope}
-    \end{athex}
-
-    \begin{athex}{2.00}{1.00}
-        \drawdashedcounter  {-0.50}{+0.75}{120}
-        \drawaircraftcounter{-1.00}{+1.50}{120}{F-4}{}{}
-        \drawaircraftcounter{-1.00}{+2.50}{120}{F-4}{}{}
-        \begin{scope}[shift={(165:0.3)},thick,->]
-            \miniathex{-0.50}{+0.75}{\draw (120:0.05) -- (120:0.4);}
-        \end{scope}
-        \begin{scope}[shift={(45:0.3)},thick,->]
-            \miniathex{-1.00}{+1.50}{\draw (90:0.1) -- (90:0.5);}
-        \end{scope}
-    \end{athex}
-
-\end{tikzpicture}
-\end{fitheight}
-
-\figurecaption{figure:barrel-roll-maneuvers}{A barrel roll executed as a sequence of two lag rolls to the right followed by one displacement roll to the right, each with two preparatory HFPs. Any combination of lag rolls and displacement rolls may make up a barrel roll, but all must be in the same direction. The number of preparatory FPs required before each roll depends on the aircraft speed and other factors.}
-}
 
 \end{onecolumnfigure}

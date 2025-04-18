@@ -144,20 +144,4 @@
     \ifearlierversion{#1}{#4}%
 }
 
-\newcommand{\CX}[3][3A-editing]{\changedin{3A}{#1}{#2}{#3}}
-\newcommand{\AX}[2][3A-editing]{\addedin{3A}{#1}{#2}}
-\newcommand{\DX}[2][3A-editing]{\deletedin{3A}{#1}{#2}}
-\newcommand{\SAX}[2][3A-editing]{\silentlyaddedin{3A}{#1}{#2}}
-\newcommand{\IAX}[2][3A-editing]{\itemaddedin{3A}{#1}{#2}}
-
-\newcommand{\CY}[3][2C]{\changedin{2C}{#1}{#2}{#3}}
-\newcommand{\AY}[2][2C]{\addedin{2C}{#1}{#2}}
-\newcommand{\DY}[2][2C]{\deletedin{2C}{#1}{#2}}
-\newcommand{\SAY}[2][2C]{\silentlyaddedin{2C}{#1}{#2}}
-\newcommand{\IAY}[2][2C]{\itemaddedin{2C}{#1}{#2}}
-\newcommand{\IDY}[2][2C]{\itemdeletedin{2C}{#1}{#2}}
-\newcommand{\RAY}[2][2C]{\tablerowaddedin{2C}{#1}{#2}}
-\newcommand{\RDY}[2][2C]{\tablerowdeletedin{2C}{#1}{#2}}
-
-\newcommand{\CXY}[3]{\CX{#1}{\CY{#2}{#3}}}
 

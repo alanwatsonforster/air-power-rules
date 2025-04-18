@@ -1,5 +1,3 @@
-
-\CX{
 \begin{onecolumntablefloat}
 \begin{onecolumntable}
 \tablecaption{table:missile-launch-modifiers}{Air to Air Missile Launch Modifiers}
@@ -38,50 +36,3 @@ C&\changedin{2B}{2B-missile-launch-modifiers}{$+2$}{$+3$}\\
 \end{tabularx}
 \end{onecolumntable}
 \end{onecolumntablefloat}
-}{
-\begin{twocolumntablefloat}
-\begin{twocolumntable}
-\tablecaption{table:missile-launch-modifiers}{Air-to-Air Missile Launch Modifiers}
-
-\begin{tabularx}{0.9\linewidth}{Xll}
-\toprule
-Description&Modifier&Rule\\
-\midrule
-\multicolumn{3}{c}{All Missiles}\\
-\midrule
-Each turn rate over the launch turn rate&$+2$&\ref{rule:missile-launches}\\
-Missile is launched out-of-envelope&$+3$&\ref{rule:irm-out-of-envelope-launches}$^*$ \& \ref{rule:radar-out-of-envelope-launches}$^*$\\
-\midrule
-\multicolumn{2}{c}{IRMs}\\
-\midrule
-Target is in infrared ground clutter$^1$&$+2$&\ref{rule:irm-launch-modifiers}\\
-Target is lower and above the highest cloud layer&$+3$&\ref{rule:clouds}$^*$
-\\
-Target is in Sun clutter&$+3$&\ref{rule:sun}$^*$\\
-Target is using a flare DDS&$+$PPL (up to flare rating)&\ref{rule:irm-launch-modifiers}$^*$\\
-\midrule
-\multicolumn{2}{c}{BRMs, RHMs, and AHMs}\\
-\midrule
-Missile is snap-fired&$+3$&\ref{rule:snap-firing-missiles}$^*$\\
-\midrule
-\multicolumn{2}{c}{Crew}\\
-\midrule
-Veteran&$-1$&\ref{rule:crew-ability}$^*$\\
-Green&$+1$&\ref{rule:crew-ability}$^*$\\
-Combat hero&$-1$&\ref{rule:crew-characteristics}$^*$\\
-Tactics master&$-1$&\ref{rule:crew-characteristics}$^*$\\
-\midrule
-\multicolumn{2}{c}{Damage}\\
-\midrule
-L or 2L&$+1$&\ref{rule:aircraft-damage-resolution}\\
-H&$+2$&\ref{rule:aircraft-damage-resolution}\\
-C&$+3$&\ref{rule:aircraft-damage-resolution}\\
-\bottomrule
-\end{tabularx}
-\begin{tablenote}{0.9\linewidth}
-$^*$~Advanced rule. $^1$ A target is in infrared ground clutter if the launching aircraft is in the LO or ML altitude bands (altitude levels 0 to 16), the target is lower, and the difference in altitude is more than half the horizontal range (rounded down).
-\end{tablenote}
-\end{twocolumntable}
-\end{twocolumntablefloat}
-}
-

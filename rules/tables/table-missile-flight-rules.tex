@@ -1,6 +1,6 @@
 \begin{onecolumntablefloat}
 \begin{onecolumntable}
-\CX{
+
 \tablecaption{table:missile-flight-rules}{Missile Flight Rules}
 
 \small
@@ -59,58 +59,6 @@
 
 \bottomrule
 \end{tabularx}
-}{
-\tablecaption{table:missile-flight-rules}{Missile Flight Rules Summary}
-\small
-\begin{tabularx}{\linewidth}{X}
-\toprule
-\multicolumn{1}{c}{FPs}\\
-\midrule
-\begin{itemize}[topsep=0pt]
-    \item Move forward, optionally freely losing 1 altitude level.
-    \item Climb 1 or 2 altitude levels.
-    \item Dive 2 or 3 altitude levels. 
-    \item Once per game turn, dive 1 altitude level.
-    \item Slide.
-\end{itemize}\\
-\midrule
-\multicolumn{1}{c}{Manuevers}\\
-\midrule
-\begin{itemize}[topsep=0pt]
-    \item Only SL and VR maneuvers are allowed.
-    \item SL manuevers have the usual preparatory FP requirements.
-    \item A missile can VR whenever it spends more than one FP consecutively climbing or diving. Normally, only one vertical roll is allowed in entire flight, but whenever its target performs one, a missile may perform a corresponding one in the same game turn.
-\end{itemize}\\
-\midrule
-\multicolumn{1}{c}{Restrictions on Climbing and Diving}\\
-\midrule
-\begin{itemize}[topsep=0pt]
-    \item 
-    If a missile's turn ability is not BT/2, ET/2, or ET/3 then it must expend FPs equal to {\onethird} its speed (rounded up) in level flight without free descent before expending VFPs to change altitude in the opposite direction. 
-    \item 
-    If a missile's turn ability is BT/2, ET/2, or ET/3 then it must expend FPs equal to $1/10$ its speed (rounded up) in level flight before expending VFPs to change altitude in the opposite direction. It may use free descent in the level flight.
-    \item Missiles may never dive below their target.
-    \item Missiles may never climb above their target unless they are CG SAMs in their boost phase, TVM SAMs, or have MCG.
-\end{itemize}\\
-\midrule
-\multicolumn{1}{c}{Speed}\\
-\midrule
-\begin{itemize}[topsep=0pt]
-    \item AAM in first turn: add the base speed and the aircraft speed and then multiply by the attenuation factor. If the missile has a sustainer, use the factor for two altitude bands higher.
-    \item SAM in first turn: base speed.
-    \item Subsequent turns: modify speed from the previous turn and then multiply by the attenuation factor. If the sustainer is burning, use a factor of 1.0.
-    \item Speed modifications are:
-    \begin{itemize}
-        \item $+2$ for diving its speed or more in altitude levels.
-        \item $+1$ for diving half its speed or more in altitude levels.
-        \item $-2$ for climbing its speed or more in altitude levels.
-        \item $-1$ for climbing half its speed or more in altitude levels.
-        \item $-1$ for each 30{\deg} facing change by turning.
-    \end{itemize}
-\end{itemize}\\
-\bottomrule
-\end{tabularx}
 
-}
 \end{onecolumntable}
 \end{onecolumntablefloat}
