@@ -1,0 +1,98 @@
+\begin{onecolumntablefloat}[p]
+\begin{onecolumntable}
+\CX{
+\tablecaption{table:supersonic-speed}{Transonic/Supersonic Speed}
+\begin{tabularx}{1.0\linewidth}{Xccc}
+\toprule
+Alt. Band&Low Trans.&High Trans.&Mach One\\
+\midrule
+LO, ML&6.5&7.0&7.5\\
+MH,HI&6.0&6.5&7.0\\
+VH+&5.5&6.0&6.5\\
+\bottomrule
+\end{tabularx}
+}{
+\tablecaption{table:supersonic-speed}{Transonic and Supersonic Speeds}
+\begin{tabularx}{1.0\linewidth}{XCCCC}
+\toprule
+Altitude Bands&Altitude Levels&Low-Transonic Speed&High-Transonic Speed&Mach One\\
+\midrule
+LO \& ML&\phantom{0}0--16&6.5&7.0&7.5\\
+MH \& HI&17--35&6.0&6.5&7.0\\
+VH+&36+&5.5&6.0&6.5\\
+\bottomrule
+\end{tabularx}
+}
+\end{onecolumntable}
+\end{onecolumntablefloat}
+
+\begin{onecolumntablefloat}[p]
+\begin{onecolumntable}
+\CX{
+\tablecaption{table:transonic-and-supersonic-drag}{Transonic/Supersonic Drag Penalty}
+\begin{tabularx}{1.0\linewidth}{Xccc}
+\toprule
+Aircraft Type&Low Trans.&High Trans.&Mach One\\
+\midrule
+LTD&0.0&0.5&1.0\\
+NORMAL&0.5&1.0&1.5\\
+HTD&1.0&1.5&2.0\\
+\bottomrule
+\end{tabularx}
+}{
+\tablecaption{table:transonic-and-supersonic-drag}{Transonic and Supersonic Drag}
+\begin{tabularx}{1.0\linewidth}{LCCC}
+\toprule
+Aircraft Transonic Drag&Low-Transonic Speed&High-Transonic Speed&Mach One\\
+\midrule
+Low&0.0&0.5&1.0\\
+Normal&0.5&1.0&1.5\\
+High&1.0&1.5&2.0\\
+\bottomrule
+\end{tabularx}
+}
+\end{onecolumntable}
+\end{onecolumntablefloat}
+
+\begin{onecolumntablefloat}
+\begin{onecolumntable}
+
+\CX{
+\tablecaption{table:supersonic-penalties}{Supersonic Penalties}
+\begin{tabularx}{\linewidth}{X}
+\toprule
+\begin{itemize}[nosep]
+    \item Add 1 prep to all maneuvers\deletedin{2A}{2A-snap}{ and snap turns}. Climb cap. = 2/3ds
+    \item PSSM aircraft = $+2.0$ decel if any turns \changedin{1B}{1B-apj-23-errata}{or rolls}{and $+2.0$ decel if any rolls} done, and reduce maximum turn rate by one but not to less than HT.
+    \item Normal aircraft = $+1.0$ decel if any turns \changedin{1B}{1B-apj-23-errata}{or rolls}{and $+1.0$ decel if any rolls} done.
+    \item GSSM aircraft = No additional decel for turns or rolls.
+    \item If in Mil.\ pwr., \changedin{1B}{1B-apj-23-errata}{$+1.0$}{$+1.5$} decel per 0.5 speed over High Transonic.
+    \itemdeletedin{2A}{2A-idle and 2A-supersonic-flamed-out}{If in Normal pwer., $+2.0$ decel per 0.5 speed over High Transonic.}
+    \itemdeletedin{2A}{2A-idle and 2A-supersonic-flamed-out}{If in Idle pwr., lose 0.5 more speed than listed on ADC.}
+    \itemaddedin{2A}{2A-supersonic-flamed-out}{If idle or military power selected, automatic flame-out.}
+    \itemaddedin{2A}{2A-idle}{If all engines flamed-out, DPs for idle power from ADC, plus 1 DP for idle power at supersonic speed, plus 1 DP for idle power above cruise speed, plus 2 DP for each 0.5 of speed above high-transonic speed.}
+    \item Takes 3.0 accel to gain 0.5 speed (2.0 if Rapid Accel aircraft).
+\end{itemize}
+\\
+\bottomrule
+\end{tabularx}
+}{
+\tablecaption{table:supersonic-penalties}{Supersonic Penalties}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+\addlinespace
+Idle power&All engines flame out.\\
+\addlinespace
+Normal power&All engines flame out.\\
+\addlinespace
+Turn rate&Reduced by one level for PSSM aircraft, but not to less than HT.\\
+\addlinespace
+Maneuvers&One additional preparatory HFP for all maneuvers. \\
+\addlinespace
+Climb capability&Reduced to {\twothirds}.\\
+\addlinespace
+\bottomrule
+\end{tabularx}
+}
+\end{onecolumntable}
+\end{onecolumntablefloat}

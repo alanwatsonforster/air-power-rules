@@ -1,0 +1,95 @@
+\silentlychangedin{1C}{1C-figures}{
+\begin{onecolumnfigure}[!ht]
+\centering
+\includegraphics[width=\linewidth]{figures/figure-jamming-cells-rules.pdf}
+
+\medskip
+
+\end{onecolumnfigure}
+
+}{
+
+\begin{onecolumnfigure}[t]
+
+\newcommand{\drawjammingcellhex}[2]{
+    \drawhex[fill=black!10]{#1}{#2}
+}
+
+\newcommand{\drawjammingcellaircraft}[3]{
+    \drawaircraftcounter{#1}{#2}{#3}{F-105}{}{}
+}
+
+\newcommand{\drawjammingcellhexandaircraft}[3]{
+    \drawjammingcellhex{#1}{#2}
+    \drawjammingcellaircraft{#1}{#2}{#3}
+}
+
+\begin{fitheight}{11.2\standardhexwidth}
+\begin{tikzpicture}
+
+    \setfiguresize{-0.667*\hexxfactor-0.1}{-0.6}{11.667*\hexxfactor+0.1}{10.6}
+    \drawevenhexgrid{0}{0}{12}{11}
+
+    \drawjammingcellhexandaircraft{1.0}{1.5}{90}
+    \drawjammingcellhexandaircraft{2.0}{1.0}{90}
+    \drawjammingcellhexandaircraft{2.0}{2.0}{90}
+    \drawjammingcellhexandaircraft{3.0}{1.5}{90}
+
+    \drawjammingcellhexandaircraft{5.0}{2.5}{120}
+    \drawjammingcellhexandaircraft{6.0}{3.0}{120}
+    \drawjammingcellhexandaircraft{7.0}{3.5}{120}
+    \drawjammingcellhexandaircraft{8.0}{4.0}{120}
+    
+    \drawjammingcellhexandaircraft{7.0}{1.5}{90}
+    \drawjammingcellhexandaircraft{8.0}{2.0}{90}
+    \drawjammingcellhexandaircraft{9.0}{1.5}{90}
+    \drawjammingcellhexandaircraft{10.0}{2.0}{90}
+    
+    \drawjammingcellhexandaircraft{1.0}{4.5}{120}
+    \drawjammingcellhexandaircraft{1.0}{5.5}{120}
+    \drawjammingcellhexandaircraft{2.0}{5.0}{120}
+    
+    \drawjammingcellhexandaircraft{4.0}{5.0}{90}
+    \drawjammingcellhexandaircraft{5.0}{5.5}{90}
+    \drawjammingcellhexandaircraft{6.0}{5.0}{90}
+    
+    \drawjammingcellhexandaircraft{8.0}{6.0}{90}
+    \drawjammingcellhexandaircraft{9.0}{5.5}{90}
+    \drawjammingcellhexandaircraft{10.0}{5.0}{90}
+    
+    \drawjammingcellhexandaircraft{1.0}{7.5}{120}
+    \drawjammingcellhexandaircraft{2.0}{8.0}{120}
+    
+    \drawjammingcellhexandaircraft{4.0}{8.0}{90}
+    \drawjammingcellhexandaircraft{5.0}{8.5}{90}
+    
+    \drawjammingcellhex{7.0}{8.5}
+    \drawjammingcellhex{8.0}{9.0}
+    \drawjammingcellaircraft{6.5}{8.25}{120}
+    \drawjammingcellaircraft{8.5}{9.25}{120}
+    
+    \drawjammingcellhexandaircraft{10.0}{8.0}{60}
+    \drawjammingcellhexandaircraft{ 9.0}{7.5}{60}
+
+    \draw (0.5,2.60) node [anchor=south west] {Four-Aircraft Cells};
+    \draw (0.5,6.10) node [anchor=south west] {Three-Aircraft Cells};
+    \draw (0.5,8.60) node [anchor=south west] {Two-Aircraft Cells};
+
+\end{tikzpicture}
+\end{fitheight}
+
+\figurecaption{figure:jamming-cell-formations}{Jamming Cell Formations}
+
+\begin{minipage}{\linewidth}
+\addedin{1B}{1B-apj-23-errata}{
+\medskip
+\begin{enumerate}
+    \item To be in a valid Jamming Cell formation, aircraft must be in adjacent hexes (as depicted), with no more than 30 degrees difference in facing and within 1 altitude level of an adjacent aircraft.
+    \item The maximum size of a jamming cell is 4 aircraft. Each aircraft within those parameters has its ECM jammer rating increased by 1.
+\end{enumerate}}
+\end{minipage}
+    
+\end{onecolumnfigure}
+
+}
+

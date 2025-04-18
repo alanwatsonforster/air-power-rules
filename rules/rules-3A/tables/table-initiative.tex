@@ -1,0 +1,140 @@
+\CX{
+
+\begin{onecolumntablefloat}
+\begin{onecolumntable}
+\tablecaption{table:initiative-modifiers}{Initiative Modifiers}
+\begin{tabular}{ll}
+\toprule
+\multicolumn{2}{c}{Training Standard}\\
+\midrule
+Excellent               &$+2$\\
+Good                    &$+1$\\
+Average                 &$+0$\\
+Limited                 &$-1$\\
+Poor                    &$-2$\\
+\midrule
+\multicolumn{2}{c}{Pilot}\\
+\midrule
+Veteran                 &$+1$\\
+Regular                 &$+0$\\
+Novice                  &$-1$\\
+Green                   &$-2$\\
+Sierra Hotel            &$+1$\\
+Tactics master          &$+1$\\
+Combat hero             &$+1$\\
+Excellent confidence    &$+1$\\
+Poor confidence         &$-1$\\
+\midrule
+\multicolumn{2}{c}{Kills}\\
+\midrule
+Side with first kill    &$+1$\\
+Side with most kills    &$+1$\\
+\bottomrule
+\end{tabular}
+\end{onecolumntable}
+\end{onecolumntablefloat}
+
+\begin{onecolumntablefloat}
+\begin{onecolumntable}
+
+\tablecaption{table:advantage}{Advantage Summary}
+
+\begin{tabularx}{\linewidth}{L}
+\toprule
+\begin{itemize}
+\item
+To be advantaged over an aircraft, that aircraft must be in your 150{\deg}+ arc, and no more than:
+\begin{enumerate}[align=left, labelwidth=0.7em, label=\alph*.]
+\item 9 hexes horizontal range
+\item 6 altitude levels higher
+\item 9 altitude levels lower
+\end{enumerate}
+\item 
+An aircraft in a vertical dive may not be advantaged over a higher aircraft.
+\item 
+An aircraft may not be advantaged over another at the same map position.
+\end{itemize}\\[-1ex]
+\bottomrule
+\end{tabularx}
+
+\end{onecolumntable}
+\end{onecolumntablefloat}
+
+}{
+
+\begin{twocolumntablefloat}[t]
+
+\begin{multicols}{2}
+
+\begin{onecolumntable}
+\tablecaption{table:initiative-modifiers}{Initiative Modifiers}
+\begin{tabularx}{1.0\linewidth}{Ll}
+\toprule
+\multicolumn{2}{c}{Kills}\\
+\midrule
+Side with first kill    &$+1$\\
+Side with most kills    &$+1$\\
+\midrule
+\multicolumn{2}{c}{Training Standard}\\
+\midrule
+Excellent               &$+2$\\
+Good                    &$+1$\\
+Average                 &$+0$\\
+Limited                 &$-1$\\
+Poor                    &$-2$\\
+\midrule
+\multicolumn{2}{c}{Pilot$^*$}\\
+\midrule
+Veteran                 &$+1$\\
+Regular                 &$+0$\\
+Novice                  &$-1$\\
+Green                   &$-2$\\
+Excellent confidence    &$+1$\\
+Poor confidence         &$-1$\\
+Sierra Hotel            &$+1$\\
+Tactics master          &$+1$\\
+Combat hero             &$+1$\\
+\midrule
+\multicolumn{2}{c}{Formations$^*$}\\
+\midrule
+Non-veteran not in formation&$-1$\\
+Winger with initiative modifier less than leader&$+1$\\
+Winger lead by combat hero&$+1$\\
+Combat hero in original formation shot down&$-1$\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{1.0\linewidth}
+$^*$~Advanced rule.
+\end{tablenote}
+\end{onecolumntable}
+
+\begin{onecolumntable}
+\tablecaption{table:advantage}{Superior and Inferior Aircraft}
+\begin{tabularx}{\linewidth}{L}
+\toprule
+\begin{itemize}[topsep=0pt]
+\item An aircraft is superior to an enemy aircraft if:
+\begin{itemize}
+    \item It is free.
+    \item The enemy aircraft is in its \arcrange{150}{+} arc.
+    \item The enemy aircraft does not have the same map location (i.e., the same hex or hex side).
+    \item The horizontal range to the enemy aircraft is no more than 9 hexes.
+    \item The enemy aircraft is no more than 6 altitude levels higher or 9 altitude levels lower.
+\end{itemize}
+
+\item An aircraft in a vertical dive may not be superior to a higher aircraft.
+
+\item A tailing aircraft is superior to the aircraft it is tailing but cannot be superior to any other aircraft. Other aircraft may consider or not the tailing aircraft, as they so desire.
+
+\item An aircraft is inferior to an enemy aircraft if the enemy is superior to it.
+\end{itemize}\\
+\bottomrule
+\end{tabularx}
+\end{onecolumntable}
+
+\end{multicols}
+
+\end{twocolumntablefloat}
+
+}
+

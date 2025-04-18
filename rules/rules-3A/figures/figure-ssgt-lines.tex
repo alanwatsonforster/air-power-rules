@@ -1,0 +1,66 @@
+\silentlyaddedin{1C}{1C-figures}{
+
+\begin{twocolumnfigure}[tbp]
+\begin{fitwidth}{0.3\linewidth}
+\begin{tikzpicture}
+    \setfiguresize{-6.1}{-6.7}{6.1}{1.6}
+    \begin{scope}
+        \drawevenhexgrid{-6}{-6}{13}{8}
+        \begin{scope}[very thick,dashed,-|]
+            \draw (0,0) -- (210:6);
+            \draw (0,0) -- (240:6*\hexxfactor);
+            \draw (0,0) -- (270:6);
+            \draw (0,0) -- (300:6*\hexxfactor);
+            \draw (0,0) -- (330:6);
+        \end{scope}
+        \drawaircraftcounter{0.00}{0.00}{90}{F-4}{}{}
+    \end{scope}
+\end{tikzpicture}
+\end{fitwidth}
+\hfil
+\begin{fitwidth}{0.3\linewidth}
+\begin{tikzpicture}
+    \setfiguresize{-6.1}{-6.7}{6.1}{1.6}
+    \begin{scope}[rotate=90]
+        \drawevenhexgrid{-7}{-5.5}{9}{12}
+        \begin{scope}[very thick,dashed,-|]
+            \draw (0,0) -- (120:6*\hexxfactor);
+            \draw (0,0) -- (150:6);
+            \draw (0,0) -- (180:6*\hexxfactor);
+            \draw (0,0) -- (210:6);
+            \draw (0,0) -- (240:6*\hexxfactor);
+        \end{scope}
+        \drawaircraftcounter{0.00}{0.00}{0}{F-4}{}{}
+    \end{scope}
+\end{tikzpicture}
+\end{fitwidth}
+\hfil
+\begin{fitwidth}{0.3\linewidth}
+\begin{tikzpicture}
+    \setfiguresize{-6.1}{-6.7}{6.1}{1.6}
+    \begin{scope}[rotate=90]
+        \drawoddhexgrid{-7}{-5}{9}{12}
+        \begin{scope}[very thick,dashed,-|]
+            \miniathex{-0.333}{+0.000}{\draw (0,0) -- (120:6.333*\hexxfactor);}
+            \miniathex{+0.333}{-0.000}{\draw (0,0) -- (120:6.667*\hexxfactor);}
+            \miniathex{-1.000}{+0.000}{\draw (0,0) -- (150:5);}
+            \draw (0,0) -- (180:6*\hexxfactor);
+            \miniathex{-1.000}{+0.000}{\draw (0,0) -- (210:5);}
+            \miniathex{+0.333}{-0.000}{\draw (0,0) -- (240:6.667*\hexxfactor);}
+            \miniathex{-0.333}{+0.000}{\draw (0,0) -- (240:6.333*\hexxfactor);}
+        \end{scope}
+        \drawaircraftcounter{0.00}{0.00}{0}{F-4}{}{}
+    \end{scope}
+\end{tikzpicture}
+\end{fitwidth}
+
+\CX{
+\figurecaption{figure:ssgt-lines}{SSGT Lines}
+}{
+\figurecaption{figure:ssgt-lines}{SSGT Lines. To gain the benefits of SSGT, an attacker must accumulate FPs on a tracking line, at a range of no more than 6 hexes from the target, and with the target in the field of fire of its guns or in its limited arc. The lines indicate a range of 6 hexes from the targets.}
+
+}
+
+\end{twocolumnfigure}
+
+}

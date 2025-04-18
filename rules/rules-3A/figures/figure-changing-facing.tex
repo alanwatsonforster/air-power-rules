@@ -1,0 +1,48 @@
+\silentlychangedin{1C}{1C-figures}{
+
+\begin{onecolumnfigure}
+\includegraphics[width=0.7\linewidth]{figures/figure-changing-facing.pdf}
+\end{onecolumnfigure}
+
+}{
+\begin{onecolumnfigure}
+
+\begin{fitheight}{4.7\standardhexwidth}
+\begin{tikzpicture}
+
+    \setfiguresize{-2.5}{-0.6}{+2.5}{4.1}
+
+    \drawhexgrid{-2}{0}{5}{4}  
+    
+    \drawaircraftcounter{-1.50}{0.75}{60}{MiG-21}{}{}
+    \drawaircraftcounter{-1.00}{1.50}{60}{MiG-21}{}{}
+    \drawdashedcounter{-0.50}{2.25}{60}
+    \drawaircraftcounter{-1.00}{2.50}{90}{MiG-21}{}{}
+
+    \drawaircraftcounter{1.00}{0.50}{90}{F-4}{}{}
+    \drawaircraftcounter{1.00}{1.50}{90}{F-4}{}{}
+    \drawdashedcounter{1.00}{2.50}{90}
+    \drawaircraftcounter{1.00}{2.50}{120}{F-4}{}{}
+    
+    \begin{scope}[shift={(15:0.3)},thick,->]
+        \miniathex{-1.50}{0.75}{\draw (60:0.05) -- (60:0.4);}
+        \miniathex{-1.00}{1.50}{\draw (60:0.05) -- (60:0.4);}
+    \end{scope}
+    \begin{scope}[shift={(135:0.3)},thick,->]
+        \miniathex{+1.00}{0.50}{\draw (90:0.1) -- (90:0.5);}
+        \miniathex{+1.00}{1.50}{\draw (90:0.1) -- (90:0.5);}
+    \end{scope}
+
+    \miniathex{-0.333}{2.5}{ \draw[thick,->] (-0.1,+0.1) arc (30:60:0.6);}
+
+    \miniathex{+1.000}{2.5}{ \draw[thick,->] (45:0.45) arc (45:75:0.5);}
+
+
+\end{tikzpicture}
+\end{fitheight}
+
+\figurecaption{figure:changing-facing}{\protect\CX{Changing Facing.}{Both aircraft move forward two hexes or hex sides and then change facing by 30{\deg} to the left. The right aircraft changes facing on a hex side, and so shifts to the adjacent hex in the direction of the turn.}}
+
+\end{onecolumnfigure}
+}
+

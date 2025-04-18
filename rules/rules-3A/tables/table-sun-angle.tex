@@ -1,0 +1,67 @@
+\silentlychangedin{1C}{1C-tables}{
+
+\begin{table}[!ht]
+\centering
+SUN ANGLE CHART
+
+\medskip
+\begin{tabular}{llp{4cm}}
+\hline
+Die Roll   &Time of Day        &Sun Angle \\
+\hline
+1          &Dawn	           &0 levels per hex away. \\
+2 to 3     &Early Morning      &1 level per two hexes away. \\
+4	       &Late Morning	   &1 level per hex away. \\
+5 to 6     &Noon	           &Any level below target if within two hexes of target. \\
+7	       &Early Afternoon    &1 level per hex away. \\
+8 to 9     &Late Afternoon     &1 level per two hexes away. \\
+10	       &Dusk	           &0 level per hex away. \\
+\hline
+\end{tabular}
+\end{table}
+
+}{
+
+\CX{
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\tablecaption{table:sun-angle}{Sun Angle}
+\begin{tabular}{lll}
+\toprule
+Die Roll   &Time of Day        &Sun Angle \\
+\midrule
+1          &Dawn	           &0 levels per hex away. \\
+2 to 3     &Early Morning      &1 level per two hexes away. \\
+4	       &Late Morning	   &1 level per hex away. \\
+5 to 6     &Noon	           &Any level below target if within two hexes of target. \\
+7	       &Early Afternoon    &1 level per hex away. \\
+8 to 9     &Late Afternoon     &1 level per two hexes away. \\
+10	       &Dusk	           &0 level per hex away. \\
+\bottomrule
+\end{tabular}
+\end{twocolumntable}
+\end{twocolumntablefloat}
+}{
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\tablecaption{table:sun-angle}{Sun Position Generation}
+\small
+\begin{tabularx}{0.7\linewidth}{lllL}
+\toprule
+Die Roll   &Time of Day        &Sun Direction&Clutter Altitude Requirement \\
+\midrule
+1          &Dawn	           &East&Same altitude. \\
+2 to 3     &Early Morning      &East&1 level per two whole hexes. \\
+4	       &Late Morning	   &East&1 level lower per hex. \\
+5 to 6     &Noon	           &Overhead&Lower altitude and within two hexes. \\
+7	       &Early Afternoon    &West&1 level lower per hex. \\
+8 to 9     &Late Afternoon     &West&1 level lower per two whole hexes. \\
+10	       &Dusk	           &West&Same altitude. \\
+\bottomrule
+\end{tabularx}
+\end{twocolumntable}
+\end{twocolumntablefloat}
+
+}
+
+}

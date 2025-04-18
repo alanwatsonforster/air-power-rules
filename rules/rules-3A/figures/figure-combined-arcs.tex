@@ -1,0 +1,466 @@
+
+
+\newenvironment{combinedarcfigure}{
+    \newcommand{\xmax}{40}
+    \newcommand{\ymax}{20}
+    \newcommand{\ymin}{-\ymax}
+    \begin{scope}[scale=0.4]
+        \foreach \x in {0,...,\xmax} {
+            \draw (\x, \ymin-0.5) node [anchor=north] {$\x$};
+            \draw (\x, \ymax+0.5) node [anchor=south] {$\x$};
+        }
+        \foreach \y in {\ymin,...,-1} {
+            \draw (-0.5, \y) node [anchor=east] {\wbox[r]{$+00$}{$\y$}};
+            \draw (\xmax+0.5, \y) node [anchor=west] {\wbox[r]{$+00$}{$\y$}};
+        }
+        \foreach \y in {0,...,0} {
+            \draw (-0.5, \y) node [anchor=east] {\wbox[r]{$+00$}{$\y$}};
+            \draw (\xmax+0.5, \y) node [anchor=west] {\wbox[r]{$+00$}{$\y$}};
+        }
+        \foreach \y in {1,...,\ymax} {
+            \draw (-0.5, \y) node [anchor=east] {\wbox[r]{$+00$}{$+\y$}};
+            \draw (\xmax+0.5, \y) node [anchor=west] {\wbox[r]{$+00$}{$+\y$}};
+        }
+        \draw (0.5*\xmax,\ymax+2.0) node [anchor=south] {\small Horizontal Range};
+        \draw (0.5*\xmax,\ymin-2.0) node [anchor=north] {\small Horizontal Range};
+        \draw (-3.0,0) node [anchor=south,rotate=90] {\small Altitude Difference};
+        \draw (\xmax+3.0,0) node [anchor=north,rotate=90] {\small Altitude Difference};
+        \clip (-0.2,\ymin-0.2) -- (-0.2,\ymax+0.2) -- (\xmax+0.2,\ymax+0.2) -- (\xmax+0.2,\ymin-0.2) -- cycle;
+}{
+    \end{scope}
+}
+
+\newcommand{\drawgrid}{
+    \draw (0,0) [color=white,fill=white] circle (0.3);
+    \foreach \x in {0,...,\xmax} {
+       \foreach \y in {\ymin,...,\ymax} {
+          \draw [fill,color=black] (\x,\y) circle (0.05);
+       }
+    }
+}
+
+\newcommand{\lowerlimit}[5]{
+    \draw [#1,color=#2,very thick] (#4,#5) -- (2*\xmax+#4,(2*\xmax*#3+#5);
+}
+\newcommand{\upperlimit}[5]{
+    \draw [#1,color=#2,very thick] (#4,#5) -- (2*\xmax+#4,(2*\xmax*#3+#5);
+}
+
+\newenvironment{legend}{
+    \begin{scope}[shift={(\xmax-12.5,0)}]
+        \draw (-0.2,+4.7) [fill=white] rectangle (+11.2,-4.7);
+}{
+    \end{scope}
+}
+
+\newcommand{\legendlineone}[6]{
+    \draw (-0.1,#1)
+        node [color=black,anchor=west] {%
+            \wbox[r]{$+0 <$}{$#4$} $\mbox{FS}$ \wbox[l]{$= +\infty$}{$#5$}
+        };
+    \draw (8.0,#1)
+        node [color=black,anchor=west] {%
+           #6
+        };
+    \draw 
+        [very thick,color=#2,#3](5.0,#1-0.1) -- (7.9,#1-0.1);
+}
+\newcommand{\legendlinetwo}[7]{
+    \draw (-0.1,#1) 
+        node [color=black,anchor=west] {%
+            \wbox[r]{$+0 <$}{$#5$} $\mbox{FS}$ \wbox[l]{$= +\infty$}{$#6$}
+        };
+    \draw (8.0,#1)
+        node [color=black,anchor=west] {%
+           #7
+        };
+    \draw [very thick,color=#2,#3](5.0,#1-0.1) -- (6.4,#1-0.1);
+    \draw [very thick,color=#2,#4](6.6,#1-0.1) -- (7.9,#1-0.1);
+}
+
+\newcommand{\combinedarcnote}{
+    \begin{tablenote}{0.9\textwidth}\footnotesize
+        \begin{itemize}
+            \item Find the lines with the colors corresponding to the flight slope, according to the legend.
+            \item The distant element needs to be above, between, or below the lines, according to the legend.
+            \item For solid lines, the distant element must also be within the horizontal arc.
+            \item For dashed lines, the distant element need not be within the horizontal arc.
+        \end{itemize}
+    \end{tablenote}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{twocolumnfigure}
+
+\begin{tikzpicture}
+\begin{combinedarcfigure}
+
+    \lowerlimit{dashed}{Tpurple}{+7}{+0.07}{-0.07}
+    
+    \lowerlimit{solid}{Tred}{+3}{+0.07}{-0.07}
+    
+    \lowerlimit{solid}{Tgreen}{+1}{+0.07}{-0.07}
+    \upperlimit{solid}{Tgreen}{+3}{-0.07}{+0.07}
+    
+    \lowerlimit{solid}{Torange}{-0}{-0.07}{-0.15}
+    \upperlimit{solid}{Torange}{+1}{-0.07}{+0.07}
+    
+    \upperlimit{solid}{Tblue}{+0.5}{-0.07}{+0.07}
+    \lowerlimit{solid}{Tblue}{-0.5}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Tbrown}{+0}{+0.07}{+0.15}
+    \lowerlimit{solid}{Tbrown}{-1}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Tpink}{-1}{+0.07}{+0.07}
+    \lowerlimit{solid}{Tpink}{-3}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Tolive}{-3}{+0.07}{+0.07}
+    
+    \upperlimit{dashed}{Tcyan}{-7}{+0.07}{+0.07}
+    
+    \drawgrid
+    \begin{legend}
+        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infty}{above}
+        \legendlineone{+3}{Tred   }{solid }{+3 <}{< +\infty}{above}
+        \legendlinetwo{+2}{Tgreen }{solid }{solid }{+1 <}{\le +3}{between}
+        \legendlinetwo{+1}{Torange}{solid }{solid }{0 <}{\le +1}{between}
+        \legendlinetwo{+0}{Tblue  }{solid }{solid }{}{= 0}{between}
+        \legendlinetwo{-1}{Tbrown }{solid }{solid }{0 >}{ \ge -1}{between}
+        \legendlinetwo{-2}{Tpink  }{solid }{solid }{-1 >}{ \ge -3}{between}
+        \legendlineone{-3}{Tolive }{solid }{-3 >}{> +\infty}{below}
+        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infty}{below}
+    \end{legend}
+    
+\end{combinedarcfigure}
+\end{tikzpicture}
+\combinedarcnote
+
+\figurecaption{figure:combined-arcs-a}{Combined arc vertical limits for the limited arc.}
+
+\end{twocolumnfigure}
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{twocolumnfigure}
+
+\begin{tikzpicture}
+\begin{combinedarcfigure}
+
+    \lowerlimit{dashed}{Tpurple}{+3}{+0.07}{-0.07}
+    
+    \lowerlimit{solid}{Tred}{+2}{+0.07}{-0.07}
+    \lowerlimit{dashed}{Tred}{+7}{+0.07}{-0.07}
+    
+    \lowerlimit{solid}{Tgreen}{+0.5}{+0.07}{-0.07}
+    \upperlimit{solid}{Tgreen}{+7}{-0.07}{+0.07}
+    
+    \lowerlimit{solid}{Torange}{-0.5}{-0.07}{-0.07}
+    \upperlimit{solid}{Torange}{+2}{-0.07}{+0.07}
+    
+    \upperlimit{solid}{Tblue}{+1}{-0.07}{+0.07}
+    \lowerlimit{solid}{Tblue}{-1}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Tbrown}{+0.5}{-0.07}{+0.07}
+    \lowerlimit{solid}{Tbrown}{-2}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Tpink}{-0.5}{+0.07}{+0.07}
+    \lowerlimit{solid}{Tpink}{-7}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Tolive}{-2}{+0.07}{+0.07}
+    \upperlimit{dashed}{Tolive}{-7}{+0.07}{+0.07}
+    
+    \upperlimit{dashed}{Tcyan}{-3}{+0.07}{+0.07}
+
+    \drawgrid
+    \begin{legend}
+        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infty}{above}
+        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infty}{above}
+        \legendlinetwo{+2}{Tgreen }{solid }{solid }{+1 <}{\le +3}{between}
+        \legendlinetwo{+1}{Torange}{solid }{solid }{0 <}{\le +1}{between}
+        \legendlinetwo{+0}{Tblue  }{solid }{solid }{}{= 0}{between}
+        \legendlinetwo{-1}{Tbrown }{solid }{solid }{0 >}{ \ge -1}{between}
+        \legendlinetwo{-2}{Tpink  }{solid }{solid }{-1 >}{ \ge -3}{between}
+        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infty}{below}
+        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infty}{below}
+    \end{legend}
+
+\end{combinedarcfigure}
+\end{tikzpicture}
+\combinedarcnote
+
+\figurecaption{figure:combined-arcs-b}{Combined arc vertical limits for the \arcrange{180}{+} arc.}
+
+\end{twocolumnfigure}
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{twocolumnfigure}
+
+\begin{tikzpicture}
+\begin{combinedarcfigure}
+
+    \lowerlimit{dashed}{Tpurple}{+2}{+0.07}{-0.07}
+    
+    \lowerlimit{solid}{Tred}{+1}{+0.07}{-0.07}
+    \lowerlimit{dashed}{Tred}{+3}{+0.07}{-0.07}
+    
+    \lowerlimit{solid}{Tgreen}{+0.0}{+0.07}{-0.15}
+    
+    \lowerlimit{solid}{Torange}{-1}{-0.07}{-0.07}
+    \upperlimit{solid}{Torange}{+3}{-0.07}{+0.07}
+    
+    \upperlimit{solid}{Tblue}{+2}{-0.07}{+0.07}
+    \lowerlimit{solid}{Tblue}{-2}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Tbrown}{+1}{-0.07}{+0.07}
+    \lowerlimit{solid}{Tbrown}{-3}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Tpink}{-0.0}{+0.07}{+0.15}
+    
+    \upperlimit{solid}{Tolive}{-1}{+0.07}{+0.07}
+    \upperlimit{dashed}{Tolive}{-3}{+0.07}{+0.07}
+    
+    \upperlimit{dashed}{Tcyan}{-2}{+0.07}{+0.07}
+
+    \drawgrid
+    \begin{legend}
+        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infty}{above}
+        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infty}{above}
+        \legendlineone{+2}{Tgreen }{solid }{+1 <}{\le +3}{above}
+        \legendlinetwo{+1}{Torange}{solid }{solid }{0 <}{\le +1}{between}
+        \legendlinetwo{+0}{Tblue  }{solid }{solid }{}{= 0}{between}
+        \legendlinetwo{-1}{Tbrown }{solid }{solid }{0 >}{ \ge -1}{between}
+        \legendlineone{-2}{Tpink  }{solid }{-1 >}{ \ge -3}{below}
+        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infty}{below}
+        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infty}{below}
+    \end{legend}
+
+\end{combinedarcfigure}
+\end{tikzpicture}
+\combinedarcnote
+
+\figurecaption{figure:combined-arcs-c}{Combined arc vertical limits for the \arcrange{150}{+} arc.}
+
+\end{twocolumnfigure}
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{twocolumnfigure}
+
+\begin{tikzpicture}
+\begin{combinedarcfigure}
+
+    \lowerlimit{dashed}{Tpurple}{+1}{+0.07}{-0.07}
+    
+    \lowerlimit{solid}{Tred}{+0.5}{+0.07}{-0.07}
+    \lowerlimit{dashed}{Tred}{+2}{+0.07}{-0.07}
+    
+    \lowerlimit{solid}{Tgreen}{-0.5}{-0.07}{-0.07}
+    \lowerlimit{dashed}{Tgreen}{+7}{+0.07}{-0.07}
+    
+    \lowerlimit{solid}{Torange}{-2}{-0.07}{-0.07}
+    \lowerlimit{solid}{Torange}{+7}{-0.07}{+0.07}
+    
+    \upperlimit{solid}{Tblue}{+3}{-0.07}{+0.07}
+    \lowerlimit{solid}{Tblue}{-3}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Tbrown}{+2}{-0.07}{+0.07}
+    \lowerlimit{solid}{Tbrown}{-7}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Tpink}{+0.5}{-0.07}{+0.07}
+    \upperlimit{dashed}{Tpink}{-7}{+0.07}{+0.07}
+    
+    \upperlimit{solid}{Tolive}{-0.5}{+0.07}{+0.07}
+    \upperlimit{dashed}{Tolive}{-2}{+0.07}{+0.07}
+    
+    \upperlimit{dashed}{Tcyan}{-1}{+0.07}{+0.07}
+
+    \drawgrid
+    \begin{legend}
+        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infty}{above}
+        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infty}{above}
+        \legendlinetwo{+2}{Tgreen }{dashed}{solid }{+1 <}{\le +3}{above}
+        \legendlinetwo{+1}{Torange}{solid }{solid }{0 <}{\le +1}{between}
+        \legendlinetwo{+0}{Tblue  }{solid }{solid }{}{= 0}{between}
+        \legendlinetwo{-1}{Tbrown }{solid }{solid }{0 >}{ \ge -1}{between}
+        \legendlinetwo{-2}{Tpink  }{dashed}{solid }{-1 >}{ \ge -3}{below}
+        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infty}{below}
+        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infty}{below}
+    \end{legend}
+
+\end{combinedarcfigure}
+\end{tikzpicture}
+\combinedarcnote
+
+\figurecaption{figure:combined-arcs-d}{Combined arc vertical limits for the \arcrange{120}{+} arc.}
+
+\end{twocolumnfigure}
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{twocolumnfigure}
+
+\begin{tikzpicture}
+\begin{combinedarcfigure}
+
+    \lowerlimit{dashed}{Tcyan}{+1}{+0.07}{-0.07}
+    
+    \lowerlimit{solid}{Tolive}{+0.5}{+0.07}{-0.07}
+    \lowerlimit{dashed}{Tolive}{+2}{+0.07}{-0.07}
+    
+    \lowerlimit{solid}{Tpink}{-0.5}{-0.07}{-0.07}
+    \lowerlimit{dashed}{Tpink}{+7}{+0.07}{-0.07}
+    
+    \lowerlimit{solid}{Tbrown}{-2}{-0.07}{-0.07}
+    \lowerlimit{solid}{Tbrown}{+7}{-0.07}{+0.07}
+    
+    \upperlimit{solid}{Tblue}{+3}{-0.07}{+0.07}
+    \lowerlimit{solid}{Tblue}{-3}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Torange}{+2}{-0.07}{+0.07}
+    \lowerlimit{solid}{Torange}{-7}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Tgreen}{+0.5}{-0.07}{+0.07}
+    \upperlimit{dashed}{Tgreen}{-7}{+0.07}{+0.07}
+    
+    \upperlimit{solid}{Tred}{-0.5}{+0.07}{+0.07}
+    \upperlimit{dashed}{Tred}{-2}{+0.07}{+0.07}
+    
+    \upperlimit{dashed}{Tpurple}{-1}{+0.07}{+0.07}
+
+    \drawgrid
+    \begin{legend}
+        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infty}{below}
+        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infty}{below}
+        \legendlinetwo{+2}{Tgreen }{dashed}{solid }{+1 <}{\le +3}{below}
+        \legendlinetwo{+1}{Torange}{solid }{solid }{0 <}{\le +1}{between}
+        \legendlinetwo{+0}{Tblue  }{solid }{solid }{}{= 0}{between}
+        \legendlinetwo{-1}{Tbrown }{solid }{solid }{0 >}{ \ge -1}{between}
+        \legendlinetwo{-2}{Tpink  }{dashed}{solid }{-1 >}{ \ge -3}{above}
+        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infty}{above}
+        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infty}{above}
+    \end{legend}
+
+\end{combinedarcfigure}
+\end{tikzpicture}
+\combinedarcnote
+
+\figurecaption{figure:combined-arcs-e}{Combined arc vertical limits for the \arcrange{90}{-} arc.}
+
+\end{twocolumnfigure}
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{twocolumnfigure}
+
+\begin{tikzpicture}
+\begin{combinedarcfigure}
+
+    \lowerlimit{dashed}{Tcyan}{+2}{+0.07}{-0.07}
+    
+    \lowerlimit{solid}{Tolive}{+1}{+0.07}{-0.07}
+    \lowerlimit{dashed}{Tolive}{+3}{+0.07}{-0.07}
+    
+    \lowerlimit{solid}{Tpink}{+0.0}{+0.07}{-0.15}
+    
+    \lowerlimit{solid}{Tbrown}{-1}{-0.07}{-0.07}
+    \upperlimit{solid}{Tbrown}{+3}{-0.07}{+0.07}
+    
+    \upperlimit{solid}{Tblue}{+2}{-0.07}{+0.07}
+    \lowerlimit{solid}{Tblue}{-2}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Torange}{+1}{-0.07}{+0.07}
+    \lowerlimit{solid}{Torange}{-3}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Tgreen}{-0.0}{+0.07}{+0.15}
+    
+    \upperlimit{solid}{Tred}{-1}{+0.07}{+0.07}
+    \upperlimit{dashed}{Tred}{-3}{+0.07}{+0.07}
+    
+    \upperlimit{dashed}{Tpurple}{-2}{+0.07}{+0.07}
+
+    \drawgrid
+    \begin{legend}
+        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infty}{below}
+        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infty}{below}
+        \legendlineone{+2}{Tgreen }{solid }{+1 <}{\le +3}{below}
+        \legendlinetwo{+1}{Torange}{solid }{solid }{0 <}{\le +1}{between}
+        \legendlinetwo{+0}{Tblue  }{solid }{solid }{}{= 0}{between}
+        \legendlinetwo{-1}{Tbrown }{solid }{solid }{0 >}{ \ge -1}{between}
+        \legendlineone{-2}{Tpink  }{solid }{-1 >}{ \ge -3}{above}
+        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infty}{above}
+        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infty}{above}
+    \end{legend}
+
+\end{combinedarcfigure}
+\end{tikzpicture}
+\combinedarcnote
+
+\figurecaption{figure:combined-arcs-f}{Combined arc vertical limits for the \arcrange{60}{-} arc.}
+
+\end{twocolumnfigure}
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{twocolumnfigure}
+
+\begin{tikzpicture}
+\begin{combinedarcfigure}
+
+    \lowerlimit{dashed}{Tcyan}{+3}{+0.07}{-0.07}
+    
+    \lowerlimit{solid}{Tolive}{+2}{+0.07}{-0.07}
+    \lowerlimit{dashed}{Tolive}{+7}{+0.07}{-0.07}
+    
+    \lowerlimit{solid}{Tpink}{+0.5}{+0.07}{-0.07}
+    \upperlimit{solid}{Tpink}{+7}{-0.07}{+0.07}
+    
+    \lowerlimit{solid}{Tbrown}{-0.5}{-0.07}{-0.07}
+    \upperlimit{solid}{Tbrown}{+2}{-0.07}{+0.07}
+    
+    \upperlimit{solid}{Tblue}{+1}{-0.07}{+0.07}
+    \lowerlimit{solid}{Tblue}{-1}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Torange}{+0.5}{-0.07}{+0.07}
+    \lowerlimit{solid}{Torange}{-2}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Tgreen}{-0.5}{+0.07}{+0.07}
+    \lowerlimit{solid}{Tgreen}{-7}{-0.07}{-0.07}
+    
+    \upperlimit{solid}{Tred}{-2}{+0.07}{+0.07}
+    \upperlimit{dashed}{Tred}{-7}{+0.07}{+0.07}
+    
+    \upperlimit{dashed}{Tpurple}{-3}{+0.07}{+0.07}
+
+    \drawgrid
+    \begin{legend}
+        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infty}{below}
+        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infty}{below}
+        \legendlinetwo{+2}{Tgreen }{solid }{solid }{+1 <}{\le +3}{between}
+        \legendlinetwo{+1}{Torange}{solid }{solid }{0 <}{\le +1}{between}
+        \legendlinetwo{+0}{Tblue  }{solid }{solid }{}{= 0}{between}
+        \legendlinetwo{-1}{Tbrown }{solid }{solid }{0 >}{ \ge -1}{between}
+        \legendlinetwo{-2}{Tpink  }{solid }{solid }{-1 >}{ \ge -3}{between}
+        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infty}{above}
+        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infty}{above}
+    \end{legend}
+
+\end{combinedarcfigure}
+\end{tikzpicture}
+\combinedarcnote
+
+\figurecaption{figure:combined-arcs-g}{Combined arc vertical limits for the \arcrange{30}{-} arc.}
+
+\end{twocolumnfigure}
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

@@ -1,0 +1,128 @@
+\silentlychangedin{1C}{1C-figures}{
+
+\begin{onecolumnfigure}
+\changedin{1B}{1B-tsoh-errata}{
+\includegraphics[width=0.9\linewidth]{figures/figure-angle-off-facing-hex-corner.pdf}
+}{
+\includegraphics[width=0.9\linewidth]{figures/figure-angle-off-facing-hex-corner-errata.pdf}    
+}
+\end{onecolumnfigure}
+
+}{
+
+\begin{onecolumnfigure}[tbp]
+
+\begin{fitwidth}{9.333\standardhexwidth}
+\begin{tikzpicture}
+    \tiny
+
+    \drawhexgrid{0}{0}{8}{8}
+
+    \miniathex{4.00}{4.00}{
+
+        \begin{scope}[dashed,very thick,->]
+            \draw (0,0) --   (0:10);
+            \draw (0,0) --  (30:10);
+            \draw (0,0) --  (60:10);
+            \draw (0,0) --  (90:10);
+            \draw (0,0) -- (120:10);
+            \draw (0,0) -- (150:10);
+            \draw (0,0) -- (180:10);
+            \draw (0,0) -- (210:10);
+            \draw (0,0) -- (240:10);
+            \draw (0,0) -- (270:10);
+            \draw (0,0) -- (300:10);
+            \draw (0,0) -- (330:10);
+        \end{scope}
+        \miniathex{+1.0}{+1.5}{\draw node [rotate=60, anchor=south] {180{\deg} line};}
+        \miniathex{-1.0}{-1.5}{\draw node [rotate=60, anchor=south] {0{\deg} line};}
+        \miniathex{+3.0}{+0.5}{\draw node {\minitable{c}{Right\\150{\deg}}};}
+        \miniathex{+2.0}{+2.0}{\draw node {\minitable{c}{Right\\180{\deg}}};}
+        \miniathex{+1.0}{+2.5}{\draw node {\minitable{c}{Left\\180{\deg}}};}
+        \miniathex{-1.0}{+2.5}{\draw node {\minitable{c}{Left\\150{\deg}}};}
+        \miniathex{-2.0}{+2.0}{\draw node {\minitable{c}{Left\\120{\deg}}};}
+        \miniathex{-3.0}{+0.5}{\draw node {\minitable{c}{Left\\90{\deg}}};}
+        \miniathex{-3.0}{-0.5}{\draw node {\minitable{c}{Left\\60{\deg}}};}
+        \miniathex{-3.0}{-2.5}{\draw node {\minitable{c}{Left\\30{\deg}}};}
+        \miniathex{-1.0}{-3.5}{\draw node {\minitable{c}{Right\\30{\deg}}};}
+        \miniathex{+1.0}{-2.5}{\draw node {\minitable{c}{Right\\60{\deg}}};}
+        \miniathex{+2.0}{-2.0}{\draw node {\minitable{c}{Right\\90{\deg}}};}
+        \miniathex{+3.0}{-0.5}{\draw node {\minitable{c}{Right\\120{\deg}}};}
+    }
+
+\ifaids
+    \drawaircraftcounter{4.00}{4.00}{60}{F-105}{}{}
+\else
+    \drawaircraftcounter{4.00}{4.00}{60}{F-105}{A}{1}
+    \drawaircraftcounter{5.00}{4.50}{270}{MiG-21}{B}{1}
+    \drawaircraftcounter{2.50}{1.75}{60}{F-105}{C}{1}
+\fi
+
+\end{tikzpicture}
+\end{fitwidth}
+
+\begin{fitwidth}{9.333\standardhexwidth}
+\begin{tikzpicture}
+    \tiny
+    \setfiguresize{-4.1}{-5*\hexxfactor-0.1}{+4.1}{+5*\hexxfactor+0.1}
+    \begin{scope}[rotate=90]
+        \drawhexgrid{0}{0}{8}{8}
+        \begin{scope}[dashed,very thick,->]
+            \draw (0,0) --   (0:10);
+            \draw (0,0) --  (30:10);
+            \draw (0,0) --  (60:10);
+            \draw (0,0) --  (90:10);
+            \draw (0,0) -- (120:10);
+            \draw (0,0) -- (150:10);
+            \draw (0,0) -- (180:10);
+            \draw (0,0) -- (210:10);
+            \draw (0,0) -- (240:10);
+            \draw (0,0) -- (270:10);
+            \draw (0,0) -- (300:10);
+            \draw (0,0) -- (330:10);
+        \end{scope}
+        \miniathex{+2.0}{+0.0}{\draw node [rotate=90, anchor=south] {180{\deg} line};}
+        \miniathex{-2.0}{-0.0}{\draw node [rotate=90, anchor=south] {0{\deg} line};}
+        \miniathex{+4.0}{+1.0}{\draw node {\minitable{c}{Left\\180{\deg}}};}
+        \miniathex{+3.0}{+2.5}{\draw node {\minitable{c}{Left\\150{\deg}}};}
+        \miniathex{+1.0}{+3.5}{\draw node {\minitable{c}{Left\\120{\deg}}};}
+        \miniathex{-1.0}{+3.5}{\draw node {\minitable{c}{Left\\90{\deg}}};}
+        \miniathex{-3.0}{+2.5}{\draw node {\minitable{c}{Left\\60{\deg}}};}
+        \miniathex{-4.0}{+1.0}{\draw node {\minitable{c}{Left\\30{\deg}}};}
+        \miniathex{-4.0}{-1.0}{\draw node {\minitable{c}{Right\\30{\deg}}};}
+        \miniathex{-3.0}{-2.5}{\draw node {\minitable{c}{Right\\60{\deg}}};}
+        \miniathex{-1.0}{-3.5}{\draw node {\minitable{c}{Right\\90{\deg}}};}
+        \miniathex{+1.0}{-3.5}{\draw node {\minitable{c}{Right\\120{\deg}}};}
+        \miniathex{+3.0}{-2.5}{\draw node {\minitable{c}{Right\\150{\deg}}};}
+        \miniathex{+4.0}{-1.0}{\draw node {\minitable{c}{Right\\180{\deg}}};}
+        \ifaids
+            \drawaircraftcounter[90]{+0.00}{+0.00}{60}{F-105}{}{}
+        \else
+            \drawaircraftcounter[90]{+0.00}{+0.00}{0}{F-105}{A}{1}
+            \drawaircraftcounter[90]{+1.00}{-0.50}{210}{MiG-21}{B}{1}
+            \drawaircraftcounter[90]{-3.00}{-0.00}{0}{F-105}{C}{1}
+        \fi
+    \end{scope}
+\end{tikzpicture}
+\end{fitwidth}
+
+\ifaids\else
+\DX{
+\par\bigskip
+
+\begin{minipage}{0.8\linewidth}
+A1 is the reference aircraft.
+
+B1 is in the right 150{\deg} arc.
+
+C1 is on the 0{\deg} line.
+
+\end{minipage}
+}
+\fi
+
+\figurecaption{figure:angle-off-facing-hex-corner}{Angle-Off Arcs --- Facing Hex Corner}
+
+\end{onecolumnfigure}
+}
+

@@ -1,0 +1,97 @@
+\CX{
+
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\tablecaption{table:climate-zones}{Weather Generation: Geographic Area}
+\begin{tabularx}{0.7\linewidth}{l*{4}{C}}
+\toprule
+Sky Type     &Far North/South    &Middle\break Regions &Desert\break Areas &Tropical\break Areas  \\
+\midrule
+Clear        &\phantom{0}1 to 4\phantom{0} &\phantom{0}1 to 5\phantom{0} &\phantom{0}1 to 8\phantom{0} &\phantom{0}1 to 6\phantom{0} \\
+Broken       &\phantom{0}5 to 7\phantom{0} &\phantom{0}6 to 8\phantom{0} &\phantom{0}9 to 10           &7                            \\
+Overcast     &\phantom{0}8 to 10\phantom{} &\phantom{0}9 to 10\phantom{} &NA                           &\phantom{0}8 to 10\phantom{} \\
+Contrail Alt.&20                 &25             &30           &25              \\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.7\linewidth}
+\deletedin{1C}{1C-tables}{(roll one die for sky condition)}
+\end{tablenote}
+\end{twocolumntable}
+\end{twocolumntablefloat}
+
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\tablecaption{table:haze-and-clouds}{Weather Generation: Actual Weather}
+\begin{tabularx}{0.7\linewidth}{lLLL}
+\toprule
+Die Roll    &Clear      &Broken         &Overcast               \\
+\midrule
+    1	    &LO Hz      &LO Hz, 3 Str.  &LO Hz, 3 Str., 1 Dns.   \\
+    2       &ML Hz      &ML Hz, 1 Dns.  &LO Hz, 3 Str., 1 Dns.   \\
+    3	    &1 Str.     &ML Hz, 1 Dns.  &LO Hz, 2 Str., 2 Dns.   \\
+    4	    &1 Str.     &1 Str., 1 Dns. &1 Str., 3 Dns.         \\
+    5	    &2 Str.     &2 Str., 1 Dns. &2 Str., 2 Dns.         \\
+    6	    &---        &3 Str,         &2 Str., 2 Dns.          \\
+    7       &---        &4 Str.	        &2 Str., 2 Dns.         \\
+    8  	    &---        &HI Hz, 1 Str.	&ML Hz., 1 Dns.	        \\
+    9	    &---        &LO Hz, 1 Str.  &2 Dns.                 \\
+   10	    &---	    &2 Str.	        &1 Dns.	                \\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.7\linewidth}
+\deletedin{1C}{1C-tables}{(roll die to determine haze and cloud layers)}
+\end{tablenote}
+\end{twocolumntable}
+\end{twocolumntablefloat}
+
+}{
+
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\tablecaption{table:climate-zones}{Weather Generation: Climate Type}
+\small
+\begin{tabularx}{0.7\linewidth}{l*{4}{C}}
+\toprule
+&\multicolumn{4}{c}{Climate Type}\\
+\cmidrule{2-5}
+&Polar    &Temperate &Tropical &Arid  \\
+\midrule
+Clear        &\phantom{0}1 to 4\phantom{0} &\phantom{0}1 to 5\phantom{0} &\phantom{0}1 to 6\phantom{0} &\phantom{0}1 to 8\phantom{0} \\
+Broken       &\phantom{0}5 to 7\phantom{0} &\phantom{0}6 to 8\phantom{0} &7                            &\phantom{0}9 to 10\\
+Overcast     &\phantom{0}8 to 10\phantom{} &\phantom{0}9 to 10\phantom{} &\phantom{0}8 to 10\phantom{} &---\\
+\midrule
+Base Contrail Altitude&20                 &25             &30           &25              \\
+\bottomrule
+\end{tabularx}
+\end{twocolumntable}
+\end{twocolumntablefloat}
+
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\tablecaption{table:haze-and-clouds}{Weather Generation: Sky Type}
+\small
+\begin{tabularx}{0.7\linewidth}{lCCC}
+\toprule
+Die Roll&\multicolumn{3}{c}{Sky Type}\\
+\cmidrule{2-4}
+&Clear&Broken&Overcast\\
+\midrule
+    1	    & LO Hz & LO Hz + 3 SCL          & LO Hz + 3 SCL + 1 DCL \\
+    2       & ML Hz & ML Hz + 1 DCL          & LO Hz + 3 SCL + 1 DCL \\
+    3	    & 1 SCL & ML Hz + 1 DCL          & LO Hz + 2 SCL + 2 DCL \\
+    4	    & 1 SCL & 1 SCL + 1 DCL          & 1 SCL + 3 DCL \\
+    5	    & 2 SCL & 2 SCL + 1 DCL          & 2 SCL + 2 DCL \\
+    6	    & ---   & 3 SCL                  & 2 SCL + 2 DCL \\
+    7       & ---   & 4 SCL                  & 2 SCL + 3 DCL \\
+    8  	    & ---   & HI Hz + 1 SCL          & ML Hz + 1 DCL \\
+    9	    & ---   & LO Hz + 1 SCL          & 2 DCL \\
+   10	    & ---   & 2 SCL                  & 1 DCL\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.7\linewidth}
+Hz = haze, SCL = stratus cloud layer, and DCL = dense cloud layer.
+\end{tablenote}
+\end{twocolumntable}
+\end{twocolumntablefloat}
+
+}

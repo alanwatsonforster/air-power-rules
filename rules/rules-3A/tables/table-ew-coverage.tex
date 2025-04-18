@@ -1,0 +1,53 @@
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\centering
+
+\tablecaption{table:ew-coverage}{RWR and Internal DJM/AJM Detectable and Jammable Frequencies}
+\small
+\begin{tabularx}{\linewidth}{c*{22}{@{ }C@{}}}
+\toprule
+\multirow{3}{*}{\minitable{c}{RWR or\\Jammer\\Type}}&
+\multicolumn{12}{c}{Detectable and Jammable Radar Frequencies}&
+\multicolumn{8}{c}{RWR Also Detects}
+\\
+\cmidrule(lr){2-13}
+\cmidrule(l){14-21}
+&
+\multicolumn{3}{c}{EWR}&
+\multicolumn{4}{c}{FCR}&
+\multicolumn{5}{c}{TTR}&
+\multicolumn{4}{c}{SAM Launches}&
+&
+&
+\multirow[t]{2}{*}[3ex]{}&
+\multirow[t]{2}{*}[3ex]{}\\
+\cmidrule(rl){2-4}
+\cmidrule(rl){5-8}
+\cmidrule(rl){9-13}
+\cmidrule(rl){14-17}
+&
+\vertical{LF}&\vertical{MF}&\vertical{HF}&
+\vertical{LF}&\vertical{HF}&\vertical{VF}&\vertical{MW}&
+\vertical{LF}&\vertical{MF}&\vertical{HF}&\vertical{VF}&\vertical{MW}&
+\vertical{BR}&\vertical{CG}&\vertical{CW}&\vertical{TVM}&
+\vertical{Air Search}&
+\vertical{Air Lock}&
+\vertical{Tgt. Ilum.}&
+\vertical{AHM Active}\\
+\midrule
+A&X&---&---&X&X&---&---&X&X&X&---&---&X&X&---&---&---&\changedin{2A}{2A-ew-coverage}{X}{---}&\changedin{2A}{2A-ew-coverage}{---}{X}&---\\
+B&X&X&X&X&X&\changedin{2A}{2A-ew-coverage}{X}{---}&---&X&X&X&---&---&X&X&---&---&---&X&X&---\\
+C&X&X&X&X&X&X&X&X&X&X&X&---&X&X&X&---&X&X&X&X\\
+D&X&X&X&X&X&X&X&X&X&X&X&X&X&X&X&X&X&X&X&X\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{\linewidth}
+Notes
+\begin{enumerate}
+    \item “X” indicates that radar operating in that frequency is detectable to RWR and vulnerable to DJMs and AJMs.
+    \item DJM and AJM pods have their frequency capabilities listed in the external stores tables under EPs.
+    \item Internal DJMs A and B cannot break CW or TVM lock-ons. Internal DJM C cannot break TVM lock-ons.
+\end{enumerate}
+\end{tablenote}
+\end{twocolumntable}
+\end{twocolumntablefloat}

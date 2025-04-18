@@ -1,0 +1,46 @@
+\CX{
+\begin{onecolumntablefloat}
+\begin{onecolumntable}
+\tablecaption{table:irm-seeker-field-of-view}{IR Seeker Field of View Limits for Launch}
+\medskip
+\begin{tabularx}{\linewidth}{X}
+\toprule
+\begin{enumerate}
+    \item Regular FOV = As Limited radar arc
+    \item Uncaged FOV = 180+ angle-off arcs
+    \item Uncaged FOV with Helmet sight = 150+ angle-off arcs
+    \item Uncaged FOV with radar assist = lesser of 150+ or radar arc
+    \item Uncaged FOV with VAS assist (M, A only) = 180+ arcs
+    \item IRSTS Assisted FOV = Same as IRSTS system
+    \medskip
+    \item[--] If target one of several in unassisted Uncaged FOV a roll of $8-$ is required for seeker lock-on; $9-$ with helmet sights. Modifier of $+1$ to roll for each aircraft the seeker must look past.
+\end{enumerate}
+\\
+\bottomrule
+\end{tabularx}
+\end{onecolumntable}
+\end{onecolumntablefloat}
+}{
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\tablecaption{table:irm-seeker-field-of-view}{IRM Field-of-View Requirements for Launch}
+\medskip
+\begin{tabularx}{0.6\linewidth}{lccXl}
+\toprule
+Seeker&Limits&Assist&Field-of-View&Rule\\
+\midrule
+A/M/I/E&Caged&---&Limited&\ref{rule:irm-launch-requirements}\\
+A/M/I&Uncaged&---&\arcrange{180}{+}&\ref{rule:irm-launch-requirements}\\
+A/M/I&Uncaged&HMS&\arcrange{150}{+}&\ref{rule:irm-hms}$^*$\\
+A/M/I&Uncaged&Radar&Lesser of \arcrange{150}{+} and radar&\ref{rule:irm-radar}$^*$\\
+A/M&Uncaged&VAS&\arcrange{180}{+}&\ref{rule:irm-vas}$^*$\\
+A/M/I/E&Any&IRSTS-A&Limited&\ref{rule:irm-irsts}$^*$\\
+A/M/I/E&Any&IRSTS-B&\arcrange{180}{+}&\ref{rule:irm-irsts}$^*$\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.6\linewidth}
+$^*$~Advanced rule.
+\end{tablenote}
+\end{twocolumntable}
+\end{twocolumntablefloat}
+}

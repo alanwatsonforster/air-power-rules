@@ -1,0 +1,119 @@
+\CX{
+
+\begin{onecolumntablefloat}
+\begin{onecolumntable}
+\tablecaption{table:sighting-rules-summary}{Sighting Rules Summary}
+\begin{tabularx}{\linewidth}{p{12em}X}
+\toprule
+\multicolumn{2}{c}{Maximum Sighting Ranges}\\
+\midrule
+by Eyeball&$4 \times \mbox{aircraft Vis.\ No.}$\\
+by V.A.S. &$6 \times \mbox{aircraft Vis.\ No.}$\\
+by V.A.S.\ with radar assist&$10 \times \mbox{aircraft Vis.\ No.}$\\
+at Night&2 hexes\\
+at Night in A/B&6 hexes\\
+\midrule
+\multicolumn{2}{c}{Target I.D. Ranges}\\
+\midrule
+by Eyeball&$2 \times \mbox{aircraft Vis.\ No.}$\\
+by V.A.S. &$4 \times \mbox{aircraft Vis.\ No.}$\\
+at Night&Same position, facing and speed required.\\
+With Tgt.\ I.D. radar technology available&2d turn of Lock\\
+\midrule
+\multicolumn{2}{c}{Padlocking (PL)}\\
+\midrule
+\multicolumn{2}{p{24em}}{
+One PL allowed per aircraft.\newline
+Two PLs if multi-crew aircraft.\newline
+No PLs allowed into blind arcs.\newline
+No PLs by Novices or Greens.\newline
+1 extra PL per Vet.\ or Tac.\ Mstr.\newline
+No PLs if in Target Sun Arc.
+}\\
+\bottomrule
+\end{tabularx}
+\end{onecolumntable}
+\end{onecolumntablefloat}
+
+}
+{
+
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+\tablecaption{table:maximum-sighting-range}{Maximum Sighting and Identification Ranges}
+\small
+\begin{tabularx}{0.7\linewidth}{llLl}
+\toprule
+Target&Process&Range$^a$&Rule\\
+\midrule
+\multicolumn{4}{c}{\wbox[l]{Identification during the Day}{Sighting during the Day}}\\
+\midrule
+Aircraft&Visual&$\mbox{visibility} \times 4$&\ref{rule:sighting-aircraft-and-missiles}\\
+\RDY[3A-sighting]{Aircraft&Visual in haze&$\mbox{visibility} \times 2$&\ref{rule:haze-layers}$^*$}
+Aircraft&VAS &$\mbox{visibility} \times 6$&\ref{rule:vas}$^*$\\
+Aircraft&VAS with radar assist&$\mbox{visibility} \times 10$&\ref{rule:vas}$^*$\\
+Aircraft, contrailing&Visual$^b$&150&\ref{rule:contrail-layers}$^*$\\
+Aircraft, in same SCL as searcher&Visual&1&\ref{rule:cloud-layers}\\
+Missile&Visual&$\mbox{visibility} \times 4$&\ref{rule:sighting-aircraft-and-missiles}\\
+Missile, contrailing&Visual$^b$&90&\ref{rule:contrail-layers}$^*$\\
+Missile, in same SCL as searcher&Visual&1&\ref{rule:cloud-layers}\\
+\midrule
+\multicolumn{4}{c}{\wbox[l]{Identification during the Day}{Sighting at Night}}\\
+\midrule
+Aircraft&Visual&2&\ref{rule:combat-at-night}$^*$\\
+Aircraft, using AB&Visual&6&\ref{rule:combat-at-night}$^*$\\
+Aircraft&IRSTS lock-on and HUD&Twice normal&\ref{rule:irsts}$^*$\\
+Aircraft, contrailing above clouds&Visual$^b$&24&\ref{rule:contrail-layers}$^*$\\
+Aircraft, contrailing below clouds&Visual$^b$&6&\ref{rule:contrail-layers}$^*$\\
+Aircraft, in same SCL as searcher&Visual&1&\ref{rule:cloud-layers}\\
+Missile&Visual&$\mbox{visibility} \times 2$&\ref{rule:combat-at-night}$^*$\\
+Missile, contrailing above clouds&Visual$^b$&24&\ref{rule:contrail-layers}$^*$\\
+Missile, contrailing below clouds&Visual$^b$&6&\ref{rule:contrail-layers}$^*$\\
+Missile, in same SCL as searcher&Visual&1&\ref{rule:cloud-layers}\\
+\midrule
+\multicolumn{4}{c}{\wbox[l]{Identification during the Day}{Identification during the Day}}\\
+\midrule
+Aircraft&Visual$^b$&$\mbox{visibility} \times 2$&\ref{rule:limited-intelligence}$^*$\\
+Aircraft&VAS$^b$&$\mbox{visibility} \times 4$&\ref{rule:limited-intelligence}$^*$\\
+Aircraft&VAS$^c$&$\mbox{visibility} \times 10$&\ref{rule:limited-intelligence}$^*$\\
+\midrule
+\multicolumn{4}{c}{\wbox[l]{Identification during the Day}{Identification at Night}}\\
+\midrule
+Aircraft&Visual$^d$&0&\ref{rule:combat-at-night}$^*$\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.7\linewidth}
+$^*$~Advanced rule. $^a$~If searching visually for higher targets during the day, count each 4 levels difference in altitude as 1 hex of range.\AY[3A-sighting]{ If the searcher, target, or both are in haze (see advanced rule \ref{rule:haze-layers}), consider the sighting range to be twice the normal range.} $^b$~Succeeds automatically. $^c$~Succeeds on roll of $7-$. $^d$~Identification at night requires the same position, facing, and speed as the target.  
+\end{tablenote}
+\end{twocolumntable}
+
+\vspace{\floatsep}
+
+\begin{onecolumntable}
+\small
+\tablecaption{table:padlocks}{Padlocks}
+\begin{tabularx}{0.8\linewidth}{Xcl}
+\toprule
+Crewmember&Padlocks&Rule\\
+\midrule
+Pilot&1&\ref{rule:sighting-aircraft-and-missiles}\\
+Observer&1&\ref{rule:sighting-aircraft-and-missiles}\\
+\midrule
+Veteran or tactics master&2&\ref{rule:crew-quality}$^*$\\
+Novice or green&0&\ref{rule:crew-quality}$^*$\\
+Unconscious&0&\ref{rule:gloc}$^*$\\
+Disoriented&0&\ref{rule:disorientation}$^*$\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.8\linewidth}
+$^*$~Advanced rule.
+\end{tablenote}
+\end{onecolumntable}
+
+\end{twocolumntablefloat}
+
+
+
+
+
+}
