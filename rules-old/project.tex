@@ -388,7 +388,7 @@ Version 3A contains unauthoritaive major changes.
 
     \itemtag{3A-speedbrakes} DPs from speedbrakes must be chosen at the start of flight, just like APs from engine thrust.
     
-    \itemtag{3A-turn-drag} Each turn now gives DPs when it is declared. Sustained turns are gone.
+    \itemtag{3A-turn-drag} Each turn now gives DPs when it is declared. Sustained turns and the additional drag for more than one turn per game turn are gone.
     
     The turn drag given by ADCs for earlier versions of these rules can be updated as follows: take half of the old turn drag and add 0.5 for normal aircraft, 0.25 for aircraft with the low bleed rate (LBR) property, or 0.75 for aircraft with the high bleed rate (HBR) property. This is equivalent to averaging the old turn drag over two turns.
     
@@ -396,14 +396,15 @@ Version 3A contains unauthoritaive major changes.
 
     We average the old DPs per game turn for supersonic turns over two turns.
 
+    \itemtag{3A-roll-drag} Each displacement, lag, or vertical roll now gives the DPs in the ADC when it is declared. The additional drag for more than one roll per game turn is gone.
+    
+    The roll drag on the ADC is not changed from previous version. This is somewhat inconsistent with the approach taken for turns, were we average the old turn drag over two turns, and for supersonic rolls, where we average the old roll drag over two rolls. However, roll drags are typically close to 1.0, so the difference is small.
+    
+    We average the old DPs per game turn for supersonic rolls over two rolls.
+
     % WORKING HERE
     
     
-    \itemtag{3A-rolls} Each roll now gives the DPs in the ADC when it is declared. The additional drag for more than one roll is gone.
-    
-    The turn drag for rolls is the same as on the previous version. This is somewhat inconsistent with the approach taken for turns, were we average the old turn drag over two turns, and for supersonic rolls, where we average the old roll drag over two rolls.
-    
-    We average the old DPs per game turn for supersonic rolls over two rolls.
     
     \itemtag{3A-vertical-attacks} The $+1$ same-location vertical attack modifier also applies if the attacker is in level flight and the target is climbing or diving.
     
