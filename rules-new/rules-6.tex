@@ -24,7 +24,7 @@ In the game, aircraft engines produce thrust in terms of accel points; how many 
 \begin{itemize}
     \item\itemparagraph{Idle.} \changedin{2A}{2A-idle}{This is the minimum setting that will keep a jet engine functioning; it provides no accel points, but on the turn in which Idle power is selected, the aircraft start speed is immediately reduced by the FP amount shown on the power chart. (This is the only game action that will change an aircraft's speed within the same game turn before it moves.)}{Idle power is the minimum setting that will keep a jet engine functioning. Selecting idle power incurs the DPs for the aircraft's configuration given in the idle power row of the power chart on the ADC.}
 
-    \addedin{2A}{2A-idle,2A-fp-to-dp}{
+    \addedin{2A}{2A-idle/2A-fp-to-dp}{
     (In earlier ADCs, the idle power row is labeled “Idle FP” rather than “Idle Dec.”, and the values should be doubled to obtain the corresponding number of DPs.)
     }
 
@@ -379,7 +379,7 @@ If the aircraft recovers, it may resume normal flight. Its start speed is its mi
 \section{Speedbrakes}
 \label{rule:speedbrakes}
 
-\changedin{2A}{2A-spbr,2A-fp-to-dp}{
+\changedin{2A}{2A-spbr/2A-fp-to-dp}{
 
 Most jet aircraft are equipped with speedbrakes. Speedbrakes may be applied once per game turn, at any point in an aircraft's flight, to burn off FPs.  Speedbrakes (when applied) expend FPs up to the amount listed on the speedbrake (SPBR) row of the power chart of the ADC without actually moving the aircraft.
 
@@ -448,11 +448,11 @@ An aircraft flying at M1 or faster is in supersonic flight and is subject to the
 
     \itemaddedin{2A}{2A-supersonic-flame-out}{An aircraft that selects idle or normal power suffers an automatic and immediate flame-out.}
 
-    \itemaddedin{2A}{2A-idle and 2A-supersonic-flamed-out}{An aircraft that has all of its engines flamed-out incurs the normal DPs for idle power, plus 1 additional DP for idle power at supersonic speed, plus 1 additional DP for idle power above cruise speed, plus 2 additional DPs for each 0.5 of speed above high-transonic speed.}
+    \itemaddedin{2A}{2A-idle/2A-supersonic-flame-out}{An aircraft that has all of its engines flamed-out incurs the normal DPs for idle power, plus 1 additional DP for idle power at supersonic speed, plus 1 additional DP for idle power above cruise speed, plus 2 additional DPs for each 0.5 of speed above high-transonic speed.}
     
-    \itemdeletedin{2A}{2A-supersonic-flamed-out}{\notein{1B}{FH in the APJ 36 errata states: “Aircraft at supersonic speeds may not select idle power.” However, we need to keep this rule, for example, to deal with aircraft that flame-out at supersonice speed. It is superseded in 2A anyway.} An aircraft selecting Idle power loses 0.5 FPs of speed over that listed on the Power Setting Chart. In addition, \changedin{1B}{1B-apj-23-errata}{the aircraft is subject to the normal 1.0 decel point for being over cruise speed while at idle power}{it suffers decel penalties as if it were in Normal power.}.}
+    \itemdeletedin{2A}{2A-supersonic-flame-out}{\notein{1B}{FH in the APJ 36 errata states: “Aircraft at supersonic speeds may not select idle power.” However, we need to keep this rule, for example, to deal with aircraft that flame-out at supersonice speed. It is superseded in 2A anyway.} An aircraft selecting Idle power loses 0.5 FPs of speed over that listed on the Power Setting Chart. In addition, \changedin{1B}{1B-apj-23-errata}{the aircraft is subject to the normal 1.0 decel point for being over cruise speed while at idle power}{it suffers decel penalties as if it were in Normal power.}.}
 
-    \itemdeletedin{2A}{2A-supersonic-flamed-out}{An aircraft in Normal power receives 2.0 Decel per 0.5 FP of speed over High Transonic. In addition, the aircraft gets 1.0 Decel for flying at greater than cruise speed.}
+    \itemdeletedin{2A}{2A-supersonic-flame-out}{An aircraft in Normal power receives 2.0 Decel per 0.5 FP of speed over High Transonic. In addition, the aircraft gets 1.0 Decel for flying at greater than cruise speed.}
 
     \item An aircraft in Military power receives \changedin{1B}{1B-apj-23-errata}{1.0}{1.5} decel per 0.5 FP of speed over High Transonic.
 
