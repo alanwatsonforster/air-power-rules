@@ -1,6 +1,5 @@
 %!TEX root = ./rules-working.tex
 %LTeX: enabled=false
-
 \rulechapter{Air to Air Radar}
 \label{rule:air-to-air-radar}
 
@@ -156,12 +155,72 @@ An aircraft with Look Down Technology can ignore all Look Down Limitations and m
 
 % ISSUE: This differs from the statement about limited look-down technology in the radar search requirements section.
 
+\changedin{3A}{3A-combined-arcs}{
 \section{Radar Vertical Limits}
+}{
+\section{Combined Arcs}
+}
+
+\label{rule:vertical-limits}
+\label{rule:combined-arcs}
 \label{rule:radar-vertical-limits}
+
+\changedin{3A}{3A-combined-arcs}{
 
 \paragraph{Aircraft Nose Attitude.} An aircraft radar arc is limited in its vertical arc as well as its horizontal arc. \changedin{1C}{1C-tables}{The Radar Vertical Limits Table}{Table~\ref{table:radar-vertical-limits}} defines the vertical limits to radar arcs in terms of allowed altitude differences between searcher and target based on searcher's flight profile for the game turn. \addedin{1B}{1B-apj-23-errata}{Aircraft in unloaded dives use the steep dive vertical limits. }The listed UP limit is a factor used to determine the number of levels above the searcher the target can be for each hex away it is. The listed DOWN limit is a factor used to determine the number of levels below the searcher the target can be for each hex away it is. \addedin{1B}{1B-apj-36-errata}{Any fractions that result after using \changedin{1C}{1C-tables}{the Radar Vertical Limits Table}{Table~\ref{table:radar-vertical-limits}} are dropped (i.e., the result does not favor the searcher).}
 
 For example, an aircraft in a zoom climb with a 180+ arc radar can search for or track higher targets up to 5 levels higher for each hex away they are (“$\times5$”). It cannot search for lower targets as its Down limit is “$\times0$” meaning the allowed down difference per hex of range the target is away is zero. Thus, a target 10 hexes away could be as much as 50 levels above the searcher but not lower. The target could be at the same level.
+
+}{
+
+Aircraft and missile sensors have fields that are limited not just horizontally but also vertically. The \emph{combined arcs} described here extend the rule on horizontal arcs to include appropriate vertical limits.
+
+Combined arcs are used to determine if a target is in the field of:
+\begin{itemize} 
+\item VAS (rule~\ref{rule:vas}),
+\item IRSTS (rule~\ref{rule:irsts}),
+\item missile seekers (rule~\ref{rule:air-to-air-missiles}), 
+\item air-to-air radar (rule~\ref{rule:air-to-air-radar}), and
+\item laser designators (rule~\ref{rule:laser-guided-weapons}).
+\end{itemize}
+They are also used to determine if the target satisfies the aspect requirements for IRM launches (rule~\ref{rule:irm-launch-requirements}). They are not used elsewhere.
+
+\paragraph{Flight Slope.}
+
+The \emph{flight slope} characterizes the vertical orientation of the reference element just as its facing characterizes its horizontal orientation.
+
+The flight slope is calculated over a number of FPs (defined below) as the number of altitude levels gained divided by the number of HFPs expended. 
+
+The flight slope will be positive if the element gains altitude, zero if it maintains altitude, and negative if it loses altitude. For purely vertical flight with no HFPs, the flight slope will be positive infinity ($+\infty$) for climbing or negative infinity ($-\infty$) for diving.
+
+For an aircraft and missile prior to launch, determine the flight slope by considering all of the FPs expended by the aircraft or by the missile’s launching aircraft in the previous flight phase. 
+
+For a missile in flight, if the previous proportional move had two or more FPs, determine the flight slope by considering them all. Otherwise, if the previous proportional move only had one FP and was the first one of the missile’s flight, determine the flight slope from that FP and the last FP of the launching aircraft prior to launch. Otherwise, determine the flight slope from the missile’s last two FPs.
+
+For example, if an aircraft executes level flight with four HFPs and no free descent, its flight slope is 0. If it executes the same but with free descent, its flight slope is $-1/4 = -0.25$. If it executes a zoom climb with three HFPs and four VFPs, gaining seven altitude levels, its flight slope is $+7/3 \approx 2.33$. If it executes a vertical dive with no HFPs and six VFPs, losing twelve altitude levels, its flight slope is $-12/0 = -\infty$.
+
+\paragraph{Combined Arcs Procedure.}
+
+\input{tables/table-combined-arcs}
+
+Cross-reference the arc and the flight slope in Table~\ref{table:vertical-limit-factors}. Note that there is one column for the flight slope for forward arcs (the limited, \arcrange{180}{+}, \arcrange{150}{+}, and \arcrange{120}{+} arcs) and another for rearward arcs (the \arcrange{30}{-},  \arcrange{60}{-}, and  \arcrange{90}{-} arcs). The entries in the table are one or two numerical vertical limit factors indicating upper ($\le$) or lower ($\ge$) limits. The factors themselves are either in parentheses or not in parentheses.
+
+\begin{itemize}
+
+\item
+The factors not in parentheses are \emph{mixed} vertical limit factors. They are multiplied by the horizontal range from the reference to the target element, rounded up if lower limits and rounded down if upper limits, and then give the \emph{maximum} number of levels that the target aircraft can be above ($\le$) or below ($\ge$) the reference aircraft and still be within the combined arc. 
+
+In these cases, the target aircraft must also be in the corresponding horizontal arc to be within the combined arc.
+
+\item
+The factors in parentheses are \emph{pure} vertical limit factors. They are multiplied by the horizontal range from the reference to the target element and then give the \emph{minimum} number of levels that the target aircraft can be above ($\ge$) or below ($\le$) the reference aircraft and still be in the combined arc. 
+
+In these cases, the target aircraft \emph{need not} be in the corresponding horizontal arc; it can be in \emph{any} horizontal arc.
+
+\end{itemize}
+
+If Table~\ref{table:vertical-limit-factors} gives one factor, the target element is within the combined arc if it satisfies the corresponding conditions. If Table~\ref{table:vertical-limit-factors} gives two factors, they will be combined with “and” or “or.” In the case of “and,” the target element is within the combined arc if it satisfiers both of the corresponding conditions. In the case of “or,” the target element is within the combined arc if it satisfies either of the corresponding conditions.
+}
 
 \section{Special Radar Modes}
 \label{rule:special-radar-modes}
