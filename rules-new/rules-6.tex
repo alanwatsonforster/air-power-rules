@@ -243,7 +243,7 @@ An aircraft must maintain a minimum speed, or it will stall. The MMVC shows the 
 \CX{
 \paragraph{Maximum Allowed Speed.} The Minimum-Maximum Velocity Chart shows the maximum allowed speed for the aircraft by altitude band and configuration for level or climbing flight. The Dive Speed column indicates the maximum speed allowed (regardless of configuration) after a turn of diving.
 
-\paragraph{Acceleration Limits.} If an aircraft is in level or climbing flight, Accel points that would push it beyond its maximum speed on the MMVC (for the altitude band in which it ends its flight) are unusable and ignored. If an aircraft in level or climbing flight is at its maximum speed, up to 1.5 Accel points \addedin{2B}{2B-raa}{(1.0 for RA aircraft) }may be carried forward; excess Accel are lost (because they would accelerate the aircraft beyond its maximum speed).
+\paragraph{Acceleration Limits.} If an aircraft is in level or climbing flight, Accel points that would push it beyond its maximum speed on the MMVC (for the altitude band in which it ends its flight) are unusable and ignored. If an aircraft in level or climbing flight is at its maximum speed, up to 1.5 Accel points \addedin{2B}{2B-raa-fp-carry}{(1.0 for RA aircraft) }may be carried forward; excess Accel are lost (because they would accelerate the aircraft beyond its maximum speed).
 
 If an aircraft is in diving flight, it may use accel points to accelerate beyond the maximum speed on the MMVC up to the indicated dive speed (for the altitude band in which it ends its flight); configuration has no effect on dive speed. If an aircraft in diving flight is at its dive speed, up to 1.5 accel points \addedin{2B}{2B-ra-speed-limits}{(1.0 for RA aircraft) }may be carried forward; excess accel points are lost (because they would accelerate the aircraft beyond its dive speed.)
 
@@ -317,7 +317,7 @@ An aircraft in stalled flight does not change its map location or facing, but lo
 
 \CX{
 \paragraph{Ending A Stall.} 
-An aircraft will exit stalled flight at the beginning of the first turn in which its start speed is no longer less than its current minimum speed (which may have changed from the original stall speed due to altitude loss, or configuration change). Upon exiting the stall, the aircraft may only perform level flight or diving flight. It may go directly into a vertical dive if desired. \addedin{1B}{1B-apj-34-qa}{Any carried half FP is lost.} \addedin{2B}{2B-stalled}{The aircraft has a wings-level attitude.}
+An aircraft will exit stalled flight at the beginning of the first turn in which its start speed is no longer less than its current minimum speed (which may have changed from the original stall speed due to altitude loss, or configuration change). Upon exiting the stall, the aircraft may only perform level flight or diving flight. It may go directly into a vertical dive if desired. \addedin{1B}{1B-apj-34-qa}{Any carried half FP is lost.} \addedin{2B}{2B-stall-recovery}{The aircraft has a wings-level attitude.}
 }{
 \paragraph{Recovering from Stalled Flight.} 
 An aircraft will exit stalled flight at the beginning of the first game turn in which its start speed is no longer less than its current minimum speed (which may have changed from the original minimum speed due to altitude loss). Upon exiting the stall, the aircraft may only perform level flight or diving flight. It may go directly into a vertical dive if desired. Any carried half FP is lost. The aircraft has a wings-level attitude.
@@ -367,7 +367,7 @@ The aircraft's speed does not change while in departed flight, and all APs and D
 \CX{
 During the Stalled Aircraft phase of each turn, each departed aircraft checks to see if it recovers from departed flight. Roll a die and apply any appropriate modifiers\addedin{1C}{1C-tables}{\ according to Table~\ref{table:departed-flight-recovery}}. If the result is 6 or less, the aircraft recovers; otherwise, it remains in departed flight.
 
-If the aircraft recovers, it may resume normal flight. Start speed is automatically minimum speed (from the MMVC) or the speed at which it departed (whichever is greater). On the turn of recovery, an aircraft may only choose diving flight (vertical dives are allowed). Exception: a High Pitch Rate capable aircraft may choose level flight. \addedin{1B}{1B-apj-35-qa}{The aircraft recovers to a wings level attitude.} \addedin{1B}{1B-apj-34-qa}{Any carried half FP is lost.} \addedin{2B}{2B-departed}{Any carried APs or DPs are lost.}
+If the aircraft recovers, it may resume normal flight. Start speed is automatically minimum speed (from the MMVC) or the speed at which it departed (whichever is greater). On the turn of recovery, an aircraft may only choose diving flight (vertical dives are allowed). Exception: a High Pitch Rate capable aircraft may choose level flight. \addedin{1B}{1B-apj-35-qa}{The aircraft recovers to a wings level attitude.} \addedin{1B}{1B-apj-34-qa}{Any carried half FP is lost.} \addedin{2B}{2B-departures}{Any carried APs or DPs are lost.}
 }{
 During the stalled aircraft phase of each game turn, each departed aircraft checks to see if it recovers from departed flight. Roll a die and apply any appropriate modifiers\addedin{1C}{1C-tables}{\ from Table~\ref{table:departed-flight-recovery}}. If the ADC notes that an aircraft has fly-by-wire controls, it gains a modifier of $-2$. If the result is $6-$, the aircraft recovers; otherwise, it remains in departed flight.
 
@@ -466,7 +466,7 @@ An aircraft flying at M1 or faster is in supersonic flight and is subject to the
 
 \end{itemize}
 
-\addedin{1B}{1B-apj-36-errata}{The supersonic \addedin{2B}{2B-supersonic}{turning and }maneuver costs and penalties depend on the aircraft's supersonic status at the start of a \addedin{2B}{2B-supersonic}{turn or }maneuver.}
+\addedin{1B}{1B-apj-36-errata}{The supersonic \addedin{2B}{2B-when-supersonic}{turning and }maneuver costs and penalties depend on the aircraft's supersonic status at the start of a \addedin{2B}{2B-when-supersonic}{turn or }maneuver.}
 \addedin{2B}{2B-when-supersonic}{For other purposes, an aircraft is supersonic if its speed is greater than or equal to the M1 speed in the altitude band in which it started the game turn.}
 
 }{

@@ -115,7 +115,7 @@ An aircraft must maintain a minimum speed or it will stall. The Minimum-Maximum 
 
 \paragraph{Maximum Allowed Speed.} The Minimum-Maximum Velocity Chart shows the maximum allowed speed for the aircraft by altitude band and configuration for level or climbing flight. The Dive Speed column indicates the maximum speed allowed (regardless of configuration) after a turn of diving.
 
-\paragraph{Acceleration Limits.} If an aircraft is in level or climbing flight, Accel points that would push it beyond its maximum speed on the MMVC (for the altitude band in which it ends its flight) are unusable and ignored. If an aircraft in level or climbing flight is at its maximum speed, up to 1.5 Accel points \addedin{2B}{2B-raa}{(1.0 for RA aircraft) }may be carried forward; excess Accel are lost (because they would accelerate the aircraft beyond its maximum speed).
+\paragraph{Acceleration Limits.} If an aircraft is in level or climbing flight, Accel points that would push it beyond its maximum speed on the MMVC (for the altitude band in which it ends its flight) are unusable and ignored. If an aircraft in level or climbing flight is at its maximum speed, up to 1.5 Accel points \addedin{2B}{2B-raa-fp-carry}{(1.0 for RA aircraft) }may be carried forward; excess Accel are lost (because they would accelerate the aircraft beyond its maximum speed).
 
 If an aircraft is in diving flight, it may use accel points to accelerate beyond the maximum speed on the MMVC up to the indicated dive speed (for the altitude band in which it ends its flight); configuration has no effect on dive speed. If an aircraft in diving flight is at its dive speed, up to 1.5 accel points \addedin{2B}{2B-ra-speed-limits}{(1.0 for RA aircraft) }may be carried forward; excess accel points are lost (because they would accelerate the aircraft beyond its dive speed.)
 
@@ -145,7 +145,7 @@ If the Start speed for an aircraft is less than its minimum allowed speed at the
 Aircraft in stalled flight may not change map location or facing. An aircraft in stalled flight loses altitude levels equal to its start speed FPs plus one for each turn it remains stalled (round 0.5 up). The aircraft receives 0.5 accel points per altitude level lost on the first game turn of the stall (in subsequent game turns, it receives 1.0 Accel points per altitude level lost). Accel points may also be received from the aircraft power setting.
 
 \paragraph{Ending A Stall.} 
-An aircraft will exit stalled flight at the beginning of the first turn in which its start speed is no longer less than its current minimum speed (which may have changed from the original stall speed due to altitude loss, or configuration change). Upon exiting the stall, the aircraft may only perform level flight or diving flight. It may go directly into a vertical dive if desired. \addedin{1B}{1B-apj-34-qa}{Any carried half FP is lost.} \addedin{2B}{2B-stalled}{The aircraft has a wings-level attitude.}
+An aircraft will exit stalled flight at the beginning of the first turn in which its start speed is no longer less than its current minimum speed (which may have changed from the original stall speed due to altitude loss, or configuration change). Upon exiting the stall, the aircraft may only perform level flight or diving flight. It may go directly into a vertical dive if desired. \addedin{1B}{1B-apj-34-qa}{Any carried half FP is lost.} \addedin{2B}{2B-stall-recovery}{The aircraft has a wings-level attitude.}
 
 \paragraph{Configuration Effects.}
 Configuration has an effect on stall speed. An aircraft may jettison external stores in order to reduce its configuration from DT to 1/2 or CL, or from 1/2 to CL. This change in configuration may change the aircraft's stall speed helping it to recover sooner.
@@ -168,7 +168,7 @@ Aircraft speed cannot be changed while in departed flight and all accel/decel po
 \paragraph{Recovering From Departed Flight.} 
 During the Stalled Aircraft phase of each turn, each departed aircraft checks to see if it recovers from departed flight. Roll a die and apply any appropriate modifiers\addedin{1C}{1C-tables}{\ according to Table~\ref{table:departed-flight-recovery}}. If the result is 6 or less, the aircraft recovers; otherwise, it remains in departed flight.
 
-If the aircraft recovers, it may resume normal flight. Start speed is automatically minimum speed (from the MMVC) or the speed at which it departed (whichever is greater). On the turn of recovery, an aircraft may only choose diving flight (vertical dives are allowed). Exception: a High Pitch Rate capable aircraft may choose level flight. \addedin{1B}{1B-apj-35-qa}{The aircraft recovers to a wings level attitude.} \addedin{1B}{1B-apj-34-qa}{Any carried half FP is lost.} \addedin{2B}{2B-departed}{Any carried APs or DPs are lost.}
+If the aircraft recovers, it may resume normal flight. Start speed is automatically minimum speed (from the MMVC) or the speed at which it departed (whichever is greater). On the turn of recovery, an aircraft may only choose diving flight (vertical dives are allowed). Exception: a High Pitch Rate capable aircraft may choose level flight. \addedin{1B}{1B-apj-35-qa}{The aircraft recovers to a wings level attitude.} \addedin{1B}{1B-apj-34-qa}{Any carried half FP is lost.} \addedin{2B}{2B-departures}{Any carried APs or DPs are lost.}
 
 \begin{advancedrules}
 
@@ -236,7 +236,7 @@ An aircraft flying at M1 or faster is in supersonic flight and is subject to the
 
 \end{itemize}
 
-\addedin{1B}{1B-apj-36-errata}{The supersonic \addedin{2B}{2B-supersonic}{turning and }maneuver costs and penalties depend on the aircraft's supersonic status at the start of a \addedin{2B}{2B-supersonic}{turn or }maneuver.}
+\addedin{1B}{1B-apj-36-errata}{The supersonic \addedin{2B}{2B-when-supersonic}{turning and }maneuver costs and penalties depend on the aircraft's supersonic status at the start of a \addedin{2B}{2B-when-supersonic}{turn or }maneuver.}
 \addedin{2B}{2B-when-supersonic}{For other purposes, an aircraft is supersonic if its speed is greater than or equal to the M1 speed in the altitude band in which it started the game turn.}
 
 \paragraph{Poor Supersonic Maneuvering Aircraft (PSSM).} Some aircraft, usually early delta-wing designs without tails or canards, maneuver poorly when at supersonic speeds due to shifts in their aerodynamic center of lift.  Such aircraft are noted on their ADC. They are penalized as follows when Supersonic:
