@@ -387,16 +387,17 @@ Version 3A contains unauthoritaive major changes.
     \itemtag{3A-AP-carry-at-speed-limits} Aircraft whose speed is equal to their maximum speed or maximum dive speed carry no APs forward. Aircraft that suffer a speed fade-back or whose speed it reduced to their dive speed carry neither APs not DPs forward.
 
     \itemtag{3A-speedbrakes} DPs from speedbrakes must be chosen at the start of flight, just like APs from engine thrust.
-
-    % WORKING HERE
     
-    \itemtag{3A-turns} Each turn now gives DPs when it is declared. Sustained turns are gone.
+    \itemtag{3A-turn-drag} Each turn now gives DPs when it is declared. Sustained turns are gone.
     
     The turn drag given by ADCs for earlier versions of these rules can be updated as follows: take half of the old turn drag and add 0.5 for normal aircraft, 0.25 for aircraft with the low bleed rate (LBR) property, or 0.75 for aircraft with the high bleed rate (HBR) property. This is equivalent to averaging the old turn drag over two turns.
     
     Subsonic EZ turns still have zero drag, since at most speeds an aircraft can only execute at most one per game turn and so would not accrue the old penalty for sustained turns.
 
     We average the old DPs per game turn for supersonic turns over two turns.
+
+    % WORKING HERE
+    
     
     \itemtag{3A-rolls} Each roll now gives the DPs in the ADC when it is declared. The additional drag for more than one roll is gone.
     
