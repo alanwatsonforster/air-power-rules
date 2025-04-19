@@ -24,13 +24,9 @@
     \newcommand{\earlierversion}{2A}
     \newcommand{\earlierversions}{1A1B1C1D2A}
 }{}
-\IfStrEq{\thisversion}{2C}{
+\IfStrEq{\thisversion}{3A}{
     \newcommand{\earlierversion}{2B}
     \newcommand{\earlierversions}{1A1B1C1D2A2B}
-}{}
-\IfStrEq{\thisversion}{3A}{
-    \newcommand{\earlierversion}{2C}
-    \newcommand{\earlierversions}{1A1B1C1D2A2B2C}
 }{}
 
 % These commands compare their first argument to \thisversion. If their first argument is an equal to, earlier than, or later than \thisversion, they evaluate their second argument. The first argument will normally be the version in which a change was made. The commands should be read as "if the change was made in this, in an earlier, or in a later version, then evaluate the second argument."
