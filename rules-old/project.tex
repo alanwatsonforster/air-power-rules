@@ -222,7 +222,7 @@ Version 2B contains nonauthoritative minor changes, normally to clarify existing
 \begin{itemize}
     \itemtag{2B-credits} Additions to the credits.
     
-    \itemtag{2B-missile-counters} I have explicitly stated that each missile counter represents a single missile.
+    \itemtag{2B-missile-counters} Explicitly state that each missile counter represents a single missile.
 
     \itemtag{2B-directions} ENE, ESE, WSW, and WNW are used in preference to NE, SE, SW, and NW. The original directions fall evenly between two 30{\deg} facings, whereas the new  ones are unambiguously closer to one.
 
@@ -230,20 +230,20 @@ Version 2B contains nonauthoritative minor changes, normally to clarify existing
 
     \itemtag{2B-collisions} Potential collisions from head-on attacks are resolved after the attack. Other collisions are resolved at the end of the flight phase.
 
-    \itemtag{2B-range} I have written a rule to clarify how to calculate range when counters are on hex sides. The new rule gives the correct result, for example, when two counters are on hex sides on the opposite sides of a hex.
+    \itemtag{2B-range} Clarify how to calculate range when counters are on hex sides. The new rule gives the correct result, for example, when two counters are on hex sides on the opposite sides of a hex.
     
-    \itemtag{2B-closeness} I have defined closeness in terms of range. This is important since it is possible to define closeness in other terms, for example, taking into account half hexes and odd altitude level differences.
+    \itemtag{2B-closeness} Define closeness in terms of range. This is important since it is possible to define closeness in other terms, for example, taking into account half hexes and odd altitude level differences.
 
-    \itemtag{2B-fractions} Explicitly, the fractions table is used for:
+    \itemtag{2B-fractions} State explicitly, the fractions table is used for:
     \begin{itemize}
         \item Determining the number of HFPs and VFPs required by a given flight type.
         \item Engine thrust.
         \item SSGT requirements
         \item Aiming requirements and modifiers
     \end{itemize}
-    The values in the table are explained (round to nearest unless one half). In all other cases, the conventional mathematical meaning is used.
+    Explain the values in the table (round to nearest unless one half). In all other cases, the conventional mathematical meaning is used.
 
-    \itemtag{2B-fractions-of-half} We sometimes need to take $1/3$ or $2/3$ of 0.5 in order to determine the reduced thrust at high altitude. I have added appropriate entries to the fractions table.
+    \itemtag{2B-fractions-of-half} Add appropriate entries to the fractions table for fractions of 05. These are sometimes needed to determine the reduced thrust at high altitude.
 
     \itemtag{2B-ground-fac-marking} The text of the original rules states that ground FACs mark targets in the AAA planning phase. This phase does not exist. The extended sequence of play indicates that this occurs during the visual sighting phase. I have changed the text of the rules to match this.
 
@@ -251,11 +251,11 @@ Version 2B contains nonauthoritative minor changes, normally to clarify existing
 
     \itemtag{2B-military} Aircraft can select 0.0 APs when using military power. This gives no acceleration, but allows them to maintain a steady speed above cruise speed
     
-    \itemtag{2B-propeller-aircraft} I’ve added rules for the HT and FT settings. The only difference is the fuel consumption. I’ve also noted that propeller aircraft never suffer flame outs.
+    \itemtag{2B-propeller-aircraft} Add rules for the HT and FT settings of propeller aircraft. The only difference is the fuel consumption. Note that propeller aircraft never suffer flame outs.
     
     \itemtag{2B-raa-fp-carry}{RAA aircraft can carry up to 1.0 APs.}
     
-    \itemtag{2B-when-supersonic} Purposes other than turns or maneuvers, an aircraft is supersonic if its speed is greater than or equal to the M1 speed in the altitude band in which it started the game turn.
+    \itemtag{2B-when-supersonic} For purposes other than turns or maneuvers, an aircraft is supersonic if its speed is greater than or equal to the M1 speed in the altitude band in which it started the game turn.
 
     \itemtag{2B-stall-recovery} Aircraft recover from a stall to a wings-level attitude.
 
@@ -271,7 +271,7 @@ Version 2B contains nonauthoritative minor changes, normally to clarify existing
 
     \itemtag{2B-steep-climb} An SC must use at least one VFP.
 
-    \itemtag{2B-unloaded-dives} The UD rules in version 2A gives no advantage over an SD. I have changed the rule so that all FPs are HFPs, one altitude level is lost if half of the FPs are spent unloaded, and two if all are spent unloaded. This gives one additional HFP over an otherwise similar SD.    
+    %\itemtag{XX-unloaded-dives} The UD rules in version 2A gives no advantage over an SD. I have changed the rule so that all FPs are HFPs, one altitude level is lost if half of the FPs are spent unloaded, and two if all are spent unloaded. This gives one additional HFP over an otherwise similar SD.    
 
     \itemtag{2B-free-descent} After a VC, an aircraft in level flight must expend 1/3 of its FPs (not speed) before taking a free descent. This is for consistency with other similar limits on flight, which are in terms of FPs.
 
@@ -492,6 +492,11 @@ Version 3A contains unauthoritative major changes. Again, these changes have bee
     
     % \end{itemize}
 
+\end{itemize}
+
+The following are known deficiencies of version 3A:
+\begin{itemize}
+\item UD rules.
 \end{itemize}
 
 
