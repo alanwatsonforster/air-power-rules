@@ -49,9 +49,19 @@ If more than one aircraft, including friendlies, are in an UNCAGED FOV, the firi
 
 \paragraph{Flare Program Procedure.} If a DDS program is in use and includes flares, then a die roll modifier equal to the lesser of the Program Protection Level (PPL) of the flares or the flare vulnerability rating of the missile is used as a positive modifier to the attack die roll. Note: A flare PPL also provides a modifier to IRM launch rolls equal to the program's PPL (see rule 19) or the missile's flare vulnerability rating whichever is less.
 
-\paragraph{Ground Clutter.}\label{rule:irm-ground-clutter} Ground Clutter interferes with an IR missile's ability to track targets. Add 2 to the launch roll if the firing aircraft is in the LO or ML altitude band and fires IR missiles at a “lower” target. A lower target by definition, is one more than one altitude level lower than the firer for each two hexes of horizontal range it is away. Example: a target 7 hexes away is lower if it is more than 3 altitude levels below the firer.
-
+\paragraph{Ground Clutter.}\label{rule:irm-ground-clutter} Ground Clutter interferes with an IR missile's ability to track targets. 
+Add 2 to the launch roll if the firing aircraft is in the LO or ML altitude band and fires IR missiles at a “lower” target. A lower target by definition, is one more than one altitude level lower than the firer for each two hexes of horizontal range it is away. Example: a target 7 hexes away is lower if it is more than 3 altitude levels below the firer.
+\changedin{3A}{3A-irm-ground-clutter}{
 If a missile dives in its proportional move (meaning it loses 2 or more altitude levels by any means) to attack target in the LO altitude band, add 2 to the hit die roll. If a missile attacks a target in “T” level flight (rule 20) add 1 to the hit roll. This can be cumulative with the above modifiers.
+}{
+The ground clutter attack modifier applies to IRM attacks if:
+\begin{enumerate}
+    \item[(a)] The target is the LO altitude band at the moment the missile attack is declared.
+    \item[(b)] The flight slope since launch or since the last climbing VFP (whichever is later) is $-1$ or steeper (more negative).
+\end{enumerate}
+
+If a missile attacks a target at the same altitude level in one of the six positions in Figure~\ref{figure:missile-attacks}, for the purposes of the flight slope it counts as expending an HFP. If a missile attacks a target one altitude level below in one of the  six positions in Figure~\ref{figure:missile-attacks}, for the purposes of the flight slope it counts as expending an HFP and losing one altitude level.
+}
 
 \trainingnote{
 You may now play all guns and heat seeking missile only combat scenarios! Ignore the AAA, SAM and Ground Unit Interaction Phases of the SOP.
