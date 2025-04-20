@@ -243,7 +243,7 @@ Version 2B contains nonauthoritative minor changes, normally to clarify existing
     \end{itemize}
     Explain the values in the table (round to nearest unless one half). In all other cases, the conventional mathematical meaning is used.
 
-    \itemtag{2B-fractions-of-half} Add appropriate entries to the fractions table for fractions of 05. These are sometimes needed to determine the reduced thrust at high altitude.
+    \itemtag{2B-fractions-of-half} Add appropriate entries to the fractions table for fractions of 0.5. These are sometimes needed to determine the reduced thrust at high altitude.
 
     \itemtag{2B-ground-fac-marking} The text of the original rules states that ground FACs mark targets in the AAA planning phase. This phase does not exist. The extended sequence of play indicates that this occurs during the visual sighting phase. I have changed the text of the rules to match this.
 
@@ -275,35 +275,45 @@ Version 2B contains nonauthoritative minor changes, normally to clarify existing
 
     \itemtag{2B-free-descent} After a VC, an aircraft in level flight must expend 1/3 of its FPs (not speed) before taking a free descent. This is for consistency with other similar limits on flight, which are in terms of FPs.
 
-    \itemtag{2B-half-vfps} The rules in section 8.4 on half VFPs seem to be incompatible with the rules in 5.4. Perhaps they are left over from when speedbrakes eliminated FPs? I have deleted this rule.
+    \itemtag{2B-half-vfps} Eliminate the rules in section 8.4 on half VFPs as they are incompatible with the rules in 5.4.
     
-    \itemtag{2B-recovery} I have changed the rules for recovery for ET turns to be that the aircraft must not turn at the ET rate and must not prepare for or execute rolling maneuvers. This allows slides and eliminates the potentially confusing reference to being wings level.
+    \itemtag{2B-recovery} Change the rules for recovery for ET turns to be that the aircraft must not turn at the ET rate and must not prepare for or execute rolling maneuvers. This allows slides and eliminates the potentially confusing reference to being wings level.
 
     \itemtag{2B-vertical-attacks} If an aircraft has not yet moved, use its flight type from the previous turn for determining the vertical attack modifier.
     
-    \itemtag{2B-same-hex-or-hex-side} All references to the “same hex” in gun attacks have been changed to the “same hex or hex-side”.
+    \itemtag{2B-same-hex-or-hex-side} Change all references to “the same hex” in gun attacks to “the same hex or hex-side”.
 
-    \itemtag{2B-head-on-attacks} I have changed the rule for head-on attacks to include all the prerequisites except sighting. (If you are being fired at, you will probably notice.) A head-on attack and any response are resolved simultaneously. If the target has not moved, its flight type from the previous game turn is used to determine vertical limits and same-location vertical modifiers.
+    \itemtag{2B-head-on-attacks} Change the rule for head-on attacks to include all the prerequisites except sighting. (If you are being fired at, you will probably notice.) A head-on attack and any response are resolved simultaneously. If the target has not moved, its flight type from the previous game turn is used to determine vertical limits and same-hex vertical modifiers.
 
-    \itemtag{2B-angle-off-on-hex-side} I have changed the angle-off diagram for an aircraft on a hex side so that the boundaries between the arcs radiate from the aircraft. The previous version makes sense in the context of the Genie scatter diagram, where one wants the lines to trace valid locations, but not for simply determining geometry.
+    \itemtag{2B-angle-off-on-hex-side} Change the angle-off diagram for an aircraft on a hex side so that the boundaries between the arcs radiate from the aircraft. The previous version makes sense in the context of the Genie scatter diagram, where one wants the lines to trace valid locations, but not for simply determining geometry.
 
-    \itemtag{2B-rocket-restrictions} I have applied the errata to the restrictions to rocket attacks on aircraft at different altitudes to those applied to gun attacks (“An aircraft \emph{in level flight} may fire at a target in another hex only if it is at the same altitude level or at an adjacent altitude level”).
+    \itemtag{2B-rocket-restrictions} Apply the errata for gun attacks (“An aircraft \emph{in level flight} may fire at a target in another hex only if it is at the same altitude level or at an adjacent altitude level”) to rocket attacks too.
 
-    \itemtag{2B-rocket-modifiers} The TSOH sheets say all gun attack modifiers apply to rocket attacks, but the TSOH rules after APJ 23 errata exclude snapshots (obviously) and damage. I am going to include damage, for simplicity.
+    \itemtag{2B-rocket-modifiers} Include damage modifiers for rocket attacks. The TSOH sheets say all gun attack modifiers apply to rocket attacks, but the TSOH rules after APJ 23 errata exclude snapshots (obviously) and damage.
     
     \itemtag{2B-optional-damage-tables} The actual damage (and not the cumulative damage) is used to determine the appropriate section of the optional damage table.
     
     \itemtag{2B-damage-control-restrictions} The only climbing flight allowed during damage control is an SC without AB. The only diving flight allowed during damage control is a SD without AB and at most 2 VFPs
 
-    \itemtag{2B-sighting-higher} The TSOH errata are slightly inconsistent on whether the rule that four levels of altitude count as one hex of range when sighting a higher target applies just to aircraft (page 2) or also to missiles (page 3) and whether it only applies in daylight (page 2) or all of the time. I assume it applies to both aircraft and missiles, but only in daylight.
+    \itemtag{2B-sighting-higher} Clarify that the rule that four altitude levels is one hex of range applies for sighting higher aircraft or missiles during daylight.  
     
-    \itemtag{2B-sighting-and-other-detections} The version 1A rules give a $-1$ modifier for a RWR detection, but not other types of detections. In 2B this is changed to be a $-1$ modifier for any type of detection or lock-on.
+    The TSOH errata are slightly inconsistent on whether the rule that four levels of altitude count as one hex of range when sighting a higher target applies just to aircraft (page 2) or also to missiles (page 3) and whether it only applies in daylight (page 2) or all of the time.
     
-    \itemtag{2B-sighting-and-hud} The version 1A rules give a $-1$ modifier for an IRSTS lock-on and HUD interface technology, but not for a radar lock-on. In 2B this is changed to be a $-1$ modifier for any type of lock-on with HUD interface technology.
+    \itemtag{2B-sighting-and-other-detections} Allow a $-1$ modifier for any type of detection or lock-on. 
+    
+    The version 1A rules give a $-1$ modifier for a RWR detection, but not other types of detections. This is odd, since a RWR is likely to be less precise than the other types of detections.
+    
+    \itemtag{2B-sighting-and-hud} Allow a $-1$ modifier for any type of lock-on with HUD interface technology. 
+    
+    The version 1A rules give a $-1$ modifier for an IRSTS lock-on and HUD interface technology, but not for a radar lock-on. This seems to be inconsistent.
 
-    \itemtag{2B-sighting-and-engaging-missiles} The TSOH rules give requirements for engaging missiles include the missile being sighted (a) by the target when the missile starts its move or (b) by a friendly aircraft when the defender starts its move. However, the decision to engage or not occurs in the aircraft decisions phase, not the flight phase. I have changed both requirements to be “in the aircraft decisions phase.”
+    \itemtag{2B-sighting-and-engaging-missiles} For engaging, require that the missile be sighted in the aircraft decisions phase.
+    
+    The TSOH rules give requirements for engaging missiles include the missile being sighted (a) by the target when the missile starts its move or (b) by a friendly aircraft when the defender starts its move. However, the decision to engage or not occurs in the aircraft decisions phase, not the flight phase. 
 
-    \itemtag{2B-sighting-and-pre-emption} The sighting restrictions in the original rules state that a defender can preempt a moving aircraft if both are sighted by a third aircraft at the start of the \emph{defender's} movement. I have changed this to the start of the \emph{attacker's} movement.
+    \itemtag{2B-sighting-and-pre-emption} Allow preemption if a third aircraft sights the defender and attacker at the start of the \emph{attacker's} movement.
+    
+    The sighting restrictions in the original rules state that a defender can preempt a moving aircraft if both are sighted by a third aircraft at the start of the \emph{defender's} movement. Since preemption occurs during the attacker's movement, this does not make sense.
 
     \itemtag{2B-padlocking-ground-units} Aircraft can padlock ground units.
 
@@ -315,33 +325,35 @@ Version 2B contains nonauthoritative minor changes, normally to clarify existing
     
     \itemtag{2B-irsts} IRSTS detections are lost if any lock-on succeeds (i.e., IRSTS does not have a capability similar to TWS.) IRSTS detections and lock-ons are maintained provided the target satisfies the arc and range requirements at the start of the radar phase and, for single pilot aircraft, provided the pilot does not use radar.
 
-    \itemtag{2B-same-location-advantage} Change 1B-apj-23-errata added that aircraft “in the same hex” do not have any effect on the other's advantage. I have changed “hex” to “map location” to include hex sides.
+    \itemtag{2B-same-hex-advantage} State that aircraft at the same hex or hex-side have no effect on each other's advantage.  
     
-    \itemtag{2B-declaring-preemptions} The rule on preemptions has been rewritten to make it clear that an aircraft can preempt a moving aircraft before each FP, including the first.
-
-    \itemtag{2B-no-double-preemptions} Add text to explicitly state that a preempting aircraft may not itself be preempted. There is no point, since a preempting aircraft cannot make gun attacks, but making this statement is clearer.
-
-    \itemtag{2B-limited-arcs} I changed the limited arcs to be consistent with each other. See the discussion in the airpower.io group starting on 28 February 2024.
-
-    \itemtag{2B-maneuver-consecutive} I have added a statement that FPs for maneuvers must be consecutive.
-
-    \itemtag{2B-maneuver-carry} I have added a statement that preparatory FPs for maneuvers can be carried from one turn to the next.
+    The 1B-apj-23-errata added that aircraft “in the same hex” do not have any effect on the other's advantage, and this change adds “hex-side” too.
     
-    \itemtag{2B-additional-HFPs-for-slides} I have added the statement that additional preparatory FPs for slides must be HFPs.
-    
-    \itemtag{2B-slides-VFPs}{I have added that the use of a VFP implicitly aborts a slide maneuver.}
+    \itemtag{2B-declaring-preemptions} Rewrite the rule on preemptions to make it clear that an aircraft can preempt a moving aircraft before each FP, including the first.
 
-    \itemtag{2B-roll-hfp-cost} All displacement and lag rolls cost 1 HFP to execute.
+    \itemtag{2B-no-double-preemptions} Add text to explicitly state that a preempting aircraft may not itself be preempted. This is not a rule change, since a preempting aircraft cannot make gun attacks, but making this statement is clearer.
+
+    \itemtag{2B-limited-arcs} Change the limited arcs to be consistent with each other. See the discussion in the airpower.io group starting on 28 February 2024.
+
+    \itemtag{2B-maneuver-consecutive} Require that FPs for maneuvers be consecutive.
+
+    \itemtag{2B-maneuver-carry} Allow that preparatory FPs for maneuvers to be carried from one turn to the next.
+    
+    \itemtag{2B-additional-HFPs-for-slides} Require that additional preparatory FPs for slides be HFPs.
+    
+    \itemtag{2B-slides-VFPs} Note that use of a VFP implicitly aborts a slide maneuver.
+
+    \itemtag{2B-roll-hfp-cost} State that all displacement and lag rolls cost 1 HFP to execute.
 
     This is not a change in the rules per se; in the first-edition rules displacement and lag rolls cost 1 HFP to execute. However, the v2.4 rules state that the FP cost is specified on the ADC and the first-edition ADCs of some aircraft, including the F-14, indicate that the cost of 1.5 HFPs. This doesn't fit well into more modern rules that assume that whole FPs are expended. These ADCs should be modified to give a cost of 1.0 HFPs.
     
-    \itemtag{2B-viff-vertical-pitch} I have added that when a VIFF vertical pitch is used to enter a vertical dive from a vertical climb, all the HFPs must be used before any VFPs. This parallels the requirement for using a HRD to enter a vertical dive from a zoom or sustained climb.
+    \itemtag{2B-viff-vertical-pitch} Require that when a VIFF vertical pitch is used to enter a vertical dive from a vertical climb, all the HFPs must be used before any VFPs. This parallels the requirement for using a HRD to enter a vertical dive from a zoom or sustained climb.
 
-    \itemtag{2B-missile-launch-modifiers} In the missile launch modifier table, I have changed the launch modifier for a critically damaged aircraft from $+2$ to $+3$ to match the damage tables.
+    \itemtag{2B-missile-launch-modifiers} In the missile launch modifier table, change the launch modifier for a critically damaged aircraft from $+2$ to $+3$ to match the damage tables.
     
-    \itemtag{2B-launch-restrictions} I have changed the restriction on missile launches from “firing guns during its last FP” to “firing guns or rockets after its last FP.”
+    \itemtag{2B-launch-restrictions} Change the restriction on missile launches from “firing guns during its last FP” to “firing guns or rockets after its last FP.”
 
-    \itemtag{2B-follow-up-missiles} I have slightly changed how the FPs regained by a follow-on missile are assigned. I have stated that they are added to the initial complete proportional segments rather than the initial proportional segments. This is relevant when the missile has a life of only one game turn; we do not want an additional FP added to the incomplete proportional moves with the launch delay.
+    \itemtag{2B-follow-up-missiles} Change how the FPs regained by a follow-on missile are assigned so that they are added to the initial complete proportional segments rather than the initial proportional segments. This is relevant when the missile has a life of only one game turn; we do not want an additional FP added to the incomplete proportional moves with the launch delay.
     
     \itemtag{2B-missile-launch-speed} The aircraft speed used to determine a missile's initial speed is its end speed on the turn of launch.
     
@@ -351,17 +363,17 @@ Version 2B contains nonauthoritative minor changes, normally to clarify existing
     
     \itemtag{2B-uncaged-lock-up} The roll to determine whether an uncaged IRM lock-up succeeds is made after declaring missile launches. If all declared launches fail, as usual one additional launch may be attempted.
 
-    \itemtag{2B-irm-vertical-fov} I have added that the vertical limits for the limited, \arcrange{180}{+}, and \arcrange{150}{+} arcs are used according to the horizontal field-of-view.
+    \itemtag{2B-irm-vertical-fov} For IRMs, the vertical limits for the limited, \arcrange{180}{+}, and \arcrange{150}{+} arcs are used according to the horizontal field-of-view.
 
-    \itemtag{2B-irm-envelopes} The rules on out-of-envelope IRM launches state that type A seekers may be launched at “large” targets, but I have changed this to “not large” targets (those with a visibility of less than 10), as this makes more sense from the context.
+    \itemtag{2B-irm-envelopes} Change the rules on out-of-envelope IRM launches state that type A seekers may be launched at “not large” targets (those with a visibility of less than 10), instead of large” targets, as this makes more sense from the context.
 
-    \itemtag{2B-radar-requirements} I have changed the requirement for radar work from “made an air-to-air gun attack” to “made an air-to-air gun or rocket attack”.
+    \itemtag{2B-radar-requirements} Change the requirement for radar work from not having made “an air-to-air gun attack” to not having made “an air-to-air gun or rocket attack”.
     
-    \itemtag{2B-limited-look-down} In the first edition rules, are two incompatible statements on the capabilities of radar with of limited look-down. Section 16.3 states that they can potentially detect aircraft from levels 5 to 10 from above provided the target is closer to the radar than to the ground. Section 16.4 states that they can do this from levels 2 to 10. I have adopted the latter.
+    %\itemtag{XX-limited-look-down} In the first edition rules, are two incompatible statements on the capabilities of radar with of limited look-down. Section 16.3 states that they can potentially detect aircraft from levels 5 to 10 from above provided the target is closer to the radar than to the ground. Section 16.4 states that they can do this from levels 2 to 10. I have adopted the latter.
 
-    \itemtag{2B-declaring-special-radar-modes} I have changed the text that states that boresight and auto-track modes are declared “when an aircraft begins its flight” to “in the aircraft decisions phase” (following the expanded sequence of play).
+    %\itemtag{XX-declaring-special-radar-modes} I have changed the text that states that boresight and auto-track modes are declared “when an aircraft begins its flight” to “in the aircraft decisions phase” (following the expanded sequence of play).
 
-    \itemtag{2B-auto-track-selection} I have added that a visually sighted aircraft may be selected for detection in auto-track mode of a $7-$ (in accordance with the charts). If the roll fails, no detection occurs.
+    %\itemtag{XX-auto-track-selection} I have added that a visually sighted aircraft may be selected for detection in auto-track mode of a $7-$ (in accordance with the charts). If the roll fails, no detection occurs.
     
     \item{2B-multiple-dds} If an aircraft has two or more DDS systems (e.g., one integrated and the other in a pod), each can have their own DDS program and any combination of them can be turned on or off each game turn, provided other requirements are met.
 
@@ -442,7 +454,7 @@ Version 3A contains unauthoritative major changes. Again, these changes have bee
     
     We average the old DPs per game turn for supersonic rolls over two rolls.
 
-    \itemtag{3A-vertical-attacks} The $+1$ same-location vertical attack modifier also applies if the attacker is in level flight and the target is climbing or diving.
+    \itemtag{3A-vertical-attacks} The $+1$ same-hex vertical attack modifier also applies if the attacker is in level flight and the target is climbing or diving.
 
     \itemtag{3A-head-on-attacks} A non-moving target may declare a head-on attack even if the moving aircraft does not.
     
@@ -497,6 +509,11 @@ Version 3A contains unauthoritative major changes. Again, these changes have bee
 The following are known deficiencies of version 3A:
 \begin{itemize}
 \item UD rules.
+\item Radar rules.
+\item Radar-guided missiles.
+\item Weather.
+\item Electronic warfare.
+\item All aspects of air-to-ground and ground-to-air combat.
 \end{itemize}
 
 
