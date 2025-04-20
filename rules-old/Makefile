@@ -14,6 +14,8 @@ all					:	project.pdf						\
 						rules-version-2A-changes.pdf	\
 						rules-version-2B.pdf			\
 						rules-version-2B-changes.pdf	\
+						rules-version-3A.pdf			\
+						rules-version-3A-changes.pdf	\
 
 clean				:
 	rm -f project.pdf rules-working.pdf rules-version-*.pdf external/*

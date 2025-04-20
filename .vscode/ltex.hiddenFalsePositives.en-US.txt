@@ -1,0 +1,23 @@
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThis project aims to produce updated and rewritten rules for .\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QAt the time of writing, there are several sets of rules available: The original rules were published in 1987 in and and extended by and .\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QAt the time of writing, there are several sets of rules available: The original rules were published in 1987 in and and extended by and .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QAt the time of writing, there are several sets of rules available: The original rules were published in 1987 in and and extended by and .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QAt the time of writing, there are several sets of rules available: The original rules were published in 1987 in and and extended by and .\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qstyle.tex\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThe first-edition rules, with official errata, were published in 1992 in .\\E$"}
+{"rule":"COMMA_COMPOUND_SENTENCE_2","sentence":"^\\QThere are two sets of errata: one page provided with and four pages published in 24.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QVersion 2A incorporates second-edition changes from , email messages from JD Webster, and Malcolm Pipe's second-edition rules.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QVersion 2A incorporates second-edition changes from , email messages from JD Webster, and Malcolm Pipe's second-edition rules.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QVersion 3B is a rewrite.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q1B-tsoh-errata All changes in the single sheet of errata included with .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThese appear as external stores in .\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qand were published in GDW's house style, with the main text is set in \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-)[0-9]+\\Q and the page having two columns with a rule between the columns and below the header.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qfollowed this style to a large degree, but appears to have been set in \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-)[0-9]+$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QHowever, I have replaced the san serif font with a serif font designed for readability.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QAfter considering several options, I have chosen the \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-)[0-9]+\\Q font, based on the URW Century Schoolbook font and adapted for LaTeX by the GUST foundry as part of the TeX Gyre project.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QMove the rule on loss of thrust with altitude to the section on speed.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QIf the aircraft has 4 FPs, then does it mean the missile moves 4, 4, 3, and 3 FPs before each aircraft FP and then 3 FPs after the last aircraft FP?\\E$"}
+{"rule":"STARS_AND_STEPS","sentence":"^\\QAn aircraft with a speed of 9.5 or more is supersonic and requires at least three preparatory FPs for each slide, so declaring and completing two slide maneuvers requires at least 12 FPs (4 FPs for the first, 4 FPs waiting, and 4 FPs for the second).\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThus, the limit does not seem to have been updated in the change from to .\\E$"}
+{"rule":"CD_NN","sentence":"^\\QIn the v2.4 rules, RWR-C+/D+ gives a +1 modifier to missile attacks and towed jammers give a +1 or +2 modifier to BRM/RHM/AHM attacks.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIn the v2.4 rules, RWR-C+/D+ gives a +1 modifier to missile attacks and towed jammers give a +1 or +2 modifier to BRM/RHM/AHM attacks.\\E$"}
