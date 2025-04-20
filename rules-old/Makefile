@@ -4,6 +4,7 @@
 	latexmk -xelatex $<
 
 all					:	project.pdf						\
+						rules-working.pdf				\
 						rules-version-1A.pdf			\
 						rules-version-1B.pdf			\
 						rules-version-1B-changes.pdf	\
@@ -15,4 +16,4 @@ all					:	project.pdf						\
 						rules-version-2B-changes.pdf	\
 
 clean				:
-	rm -f project.pdf rules-version-*.pdf
+	rm -f project.pdf rules-working.pdf rules-version-*.pdf external/*
