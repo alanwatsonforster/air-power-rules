@@ -21,3 +21,4 @@
 {"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThus, the limit does not seem to have been updated in the change from to .\\E$"}
 {"rule":"CD_NN","sentence":"^\\QIn the v2.4 rules, RWR-C+/D+ gives a +1 modifier to missile attacks and towed jammers give a +1 or +2 modifier to BRM/RHM/AHM attacks.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIn the v2.4 rules, RWR-C+/D+ gives a +1 modifier to missile attacks and towed jammers give a +1 or +2 modifier to BRM/RHM/AHM attacks.\\E$"}
+{"rule":"CD_NN","sentence":"^\\QAny such attacks would presumably be at 1:4 odds (since the primary attack is at 1:2 odds and the odds for secondary attacks are normally reduced by a factor of 3) and with a +3 modifier.\\E$"}
