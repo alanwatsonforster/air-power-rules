@@ -52,6 +52,33 @@ In other cases, multiply by the fraction and round as directed.
 
 \addedin{1B}{1B-apj-36-errata}{\paragraph{Speed Requirements Split Between Game Turns.} Some game activities, like ground-attack aiming, are measured in fractions of an aircraft's speed. If such a period extends between two game-turns, the highest speed in either game-turn is used to compute the completion requirements in the second turn.}
 
+
+\addedin{3A}{3A-fp-stages}{
+\paragraph{FP Stages.}
+
+The activities around the expenditure of each FP occur in stages the following order:
+\begin{enumerate}
+\item Preemption Stage. Any other aircraft threatened by the moving aircraft can declare and execute a preemption.
+\item AAA Tracking Stage. If the moving aircraft is within tracking range of any AAA units, any of these may declare that they are tracking the aircraft during the following FP.
+\item SSGT Tracking Stage. The moving aircraft may declare that this FP will count towards SSGT of a specified target aircraft.
+\item Aiming Stage. The moving aircraft may declare that this FP will count towards aiming requirements of a specified ground unit.
+\item Declaration Stage. The moving aircraft can declare or stop a turn or a maneuver. Declaring a turn implicitly sets the bank.
+\item Expenditure Stage. The moving aircraft expends an HFP or VFP to change position (i.e., map location and altitude) and possibly facing. It may also simultaneously change position or facing by completing a turn, completing a maneuver, using free descent, or using descent from unloaded HFPs.
+\item Bank Stage. If not turning, the moving aircraft may set its bank according to the rules.
+\item Jettison Stores Stage. The moving aircraft may jettison external stores. 
+\item Missile Attack Stage. If the moving aircraft has the same position as a missile of which it is a target, the missile attacks.
+\item Air-to-Air Attack Stage. The moving aircraft may carry out an air-to-air gun and rocket attack. If the moving aircraft carried out a head-on attack, the target aircraft may simultaneously return fire. 
+\item Air-to-Ground and Ground-to-Air Attack Stage. 
+\begin{enumerate}
+\item[11a.] The moving aircraft may declare an air-to-ground attack. 
+\item[11b.] AAA units may declare attacks on the moving aircraft.
+\item[11c.] Attacks are resolved simultaneously.
+\end{enumerate}
+\item Head-On Collision Stage. If the moving aircraft carried out a head-on attack, check for collision.
+\item Emergency Egress Stage. Crew may bail out or eject.
+\end{enumerate}
+}
+
 \section{Types of Flight}
 
 At the start of an aircraft's move, it must commit itself to one of the following three general types of flight: Level, Climbing or Diving. Write the appropriate code in the flight type line of the aircraft log. This represents the aircraft committing its nose to remain level, to move up, or to move down for the game turn. The flight type may not be changed until the next turn. Only one type of flight may be performed each turn and some restrictions may apply when switching from one type to another between turns.
@@ -80,32 +107,6 @@ Note: No matter how the FPs are mixed, the aircraft will only be moved horizonta
 
 \paragraph{Abnormal Flight.} 
 Two other types of flight are possible. These are Stalled and Departed Flight (see rule 6.4).  An aircraft in abnormal flight may not select Level, Climbing, or Diving flight until recovered from the abnormal condition.
-
-\addedin{3A}{3A-fp-stages}{
-\paragraph{FP Stages.}
-
-The activities around the expenditure of each FP occur in stages the following order:
-\begin{enumerate}
-\item Preemption Stage. Any other aircraft threatened by the moving aircraft can declare and execute a preemption.
-\item AAA Tracking Stage. If the moving aircraft is within tracking range of any AAA units, any of these may declare that they are tracking the aircraft during the following FP.
-\item SSGT Tracking Stage. The moving aircraft may declare that this FP will count towards SSGT of a specified target aircraft.
-\item Aiming Stage. The moving aircraft may declare that this FP will count towards aiming requirements of a specified ground unit.
-\item Declaration Stage. The moving aircraft can declare or stop a turn or a maneuver. Declaring a turn implicitly sets the bank.
-\item Expenditure Stage. The moving aircraft expends an HFP or VFP to change position (i.e., map location and altitude) and possibly facing. It may also simultaneously change position or facing by completing a turn, completing a maneuver, using free descent, or using descent from unloaded HFPs.
-\item Bank Stage. If not turning, the moving aircraft may set its bank according to the rules.
-\item Jettison Stores Stage. The moving aircraft may jettison external stores. 
-\item Missile Attack Stage. If the moving aircraft has the same position as a missile of which it is a target, the missile attacks.
-\item Air-to-Air Attack Stage. The moving aircraft may carry out an air-to-air gun and rocket attack. If the moving aircraft carried out a head-on attack, the target aircraft may simultaneously return fire. 
-\item Air-to-Ground and Ground-to-Air Attack Stage. 
-\begin{enumerate}
-\item[11a.] The moving aircraft may declare an air-to-ground attack. 
-\item[11b.] AAA units may declare attacks on the moving aircraft.
-\item[11c.] Attacks are resolved simultaneously.
-\end{enumerate}
-\item Head-On Collision Stage. If the moving aircraft carried out a head-on attack, check for collision.
-\item Emergency Egress Stage. Crew may bail out or eject.
-\end{enumerate}
-}
 
 \begin{advancedrules}
 
