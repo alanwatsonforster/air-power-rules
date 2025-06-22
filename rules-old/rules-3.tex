@@ -12,7 +12,7 @@ This chapter describes how the map hexes are utilized to position counters durin
 Each aircraft and missile counter has a position which is defined by its map location, facing, and altitude.
 
 \begin{itemize}
-    \item \itemparagraph{Map Location.} With respect to the hexgrid, aircraft and missiles may be located wholly within a hex or on one of the lines between two hexes (commonly called a hexside). When located on a hexside, the game counter must face parallel to that hexside as illustrated \changedin{1C}{1C-figures}{below}{in Figure~\ref{figure:map-location}}. \deletedin{2B}{2B-range}{\addedin{1B}{1B-apj-23-errata}{When determining range when one or both aircraft are on hexsides, count only the full hexes between them. Take the shortest number of hexes.}}
+    \item \itemparagraph{Map Location.} With respect to the hexgrid, aircraft and missiles may be located wholly within a hex or on one of the lines between two hexes (commonly called a hexside). When located on a hexside, the game counter must face parallel to that hexside as illustrated \changedin{1C}{1C-figures}{below}{in Figure~\ref{figure:map-location-for-aircraft-and-missiles}}. \deletedin{2B}{2B-range}{\addedin{1B}{1B-apj-23-errata}{When determining range when one or both aircraft are on hexsides, count only the full hexes between them. Take the shortest number of hexes.}}
 
     \item \itemparagraph{Facing.} This is the horizontal direction in which an aircraft or missile is flying. Use the silhouette on the counter to show facing by pointing the nose of the aircraft or missile in one of the twelve possible directions. Each direction differs by 30 degrees and has a corresponding compass heading associated with it (i.e., N = North, SSE = South South-East, etc.). In the scenario booklets, next to the map layout diagrams, there will be a compass arrow indicating which direction relative to the hexgrid that is North. \changedin{1C}{1C-figures}{See diagram below.}{See Figure~\ref{figure:facing}.}
 
@@ -22,10 +22,16 @@ Each aircraft and missile counter has a position which is defined by its map loc
 \end{itemize}
 
 
-
+\changedin{3A}{3A-ship-facing}{
 \paragraph{Ground and Naval Unit Counters.}
 Ground combat units and naval units have their positions defined simply by map location. They are always placed wholly within hexes and never on hexsides. Ground units never consider facing\addedin{1B}{1B-apj-23-errata}{ (except heavy AAA units under advanced rule 24.5)}, but large naval units must be faced in specific directions as for aircraft and missiles.
+}{
+\paragraph{Ground Unit Counters.}
+Each ground unit counter has a position which is defined simply by its map location. They are always placed wholly within hexes and never on hexsides. Ground units never consider facing (except heavy AAA units under advanced rule 24.5). See Figure~\ref{figure:map-location-for-ground-units}.
 
+\paragraph{Ship Counters.}
+Each ship counter has a position which is defined by its map location and facing. They are always placed wholly within hexes and never on hexsides. Use the silhouette on the counter to show facing by pointing the bow of the ship in one of the six possible directions towards adjacent hexes. Unlike aircraft and missiles, ships cannot face towards hexsides. See Figure~\ref{figure:map-location-for-ships}.
+}
 
 \input{figures/figure-map-location}
 

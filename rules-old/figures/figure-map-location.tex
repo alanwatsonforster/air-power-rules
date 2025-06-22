@@ -11,7 +11,6 @@
 \end{tikzpicture}
 \end{fitheight}
 
-
 \figurecaption{figure:map-location}{The hex grid defines a set of map locations at the center of each hex and at the center of each hex side. The map locations are shown here with dots.}
 
 \vspace{\floatsep}
@@ -35,9 +34,49 @@
 \end{tikzpicture}
 \end{fitheight}
 
-
-\figurecaption{figure:aircraft-map-location}{Map Location.}
+\figurecaption{figure:map-location-for-aircraft-and-missiles}{\protect\changedin{3A}{3A-ship-facing}{Map Location.}{Position for Aircraft and Missiles. Aircraft A and B have valid positions, whereas aircraft C and D do not, as C is not within a hex or on a hexside and D is on a hexside but not facing parallel to it.}}
 
 }
+
+\addedin{3A}{3A-ship-facing}{
+
+
+\vspace{\floatsep}
+
+\begin{fitheight}{3.2\standardhexwidth}
+\begin{tikzpicture}
+    \setfiguresize{-2.5}{-1.6}{+2.5}{+1.6}
+    \drawevenhexgrid{-2}{-1}{5}{3}
+    \drawgroundunitcounter{-1.00}{+0.50}{45}{A}{}
+    \drawgroundunitcounter{-1.00}{-0.50}{150}{B}{}
+    \drawgroundunitcounter{+0.67}{+0.00}{0}{C}{}
+    \drawgroundunitcounter{+1.50}{+0.75}{120}{D}{}
+    \miniathex{-2.00}{+0.00}{\node {\scriptsize Valid};}
+    \miniathex{+2.00}{+0.00}{\node {\scriptsize Invalid};}
+\end{tikzpicture}
+\end{fitheight}
+
+\figurecaption{figure:map-location-for-ground-units}{Position for Ground Units. Units A and B have valid positions, whereas units C and D do not, as they are not within hexes. Facing is irrelvant for ground units (except heavy AAA units under advanced rule 24.5).}
+
+\vspace{\floatsep}
+
+\begin{fitheight}{3.2\standardhexwidth}
+\begin{tikzpicture}
+    \setfiguresize{-2.5}{-1.6}{+2.5}{+1.6}
+    \drawevenhexgrid{-2}{-1}{5}{3}
+    \drawshipcounter{-1.00}{+0.50}{90}{A}{}
+    \drawshipcounter{-1.00}{-0.50}{150}{B}{}
+    \drawshipcounter{+0.67}{+0.00}{0}{C}{}
+    \drawshipcounter{+1.50}{+0.75}{120}{D}{}
+    \drawshipcounter{+2.00}{-1.00}{120}{E}{}
+    \miniathex{-2.00}{+0.00}{\node {\scriptsize Valid};}
+    \miniathex{+2.00}{+0.00}{\node {\scriptsize Invalid};}
+\end{tikzpicture}
+\end{fitheight}
+
+\figurecaption{figure:map-location-for-ships}{Position for Ships. Ships A and B have positions, whereas ships C, D, and E do not, as C and D are not within hexes and E is not faced towards an adjacent hex.}
+
+}
+
 
 \end{onecolumnfigure}

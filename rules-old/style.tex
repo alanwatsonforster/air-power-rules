@@ -491,6 +491,40 @@ minus \fontdimen4\font}
     \end{athex}
 }
 
+\newcommand{\drawgroundunitcounter}[6][0]{
+    % The optional first argument is the current rotation of the
+    % picture. It is necessary since Tikz rotates text with respect to
+    % the original rotation, not the current rotation.
+    \begin{athex}{#2}{#3}
+        \begin{scope}[rotate=#4-45]
+            \draw[fill=white] (-0.3,-0.3) rectangle (0.3,0.3);
+            \begin{scope}[rotate=0,shift={(0,-0.05)}]
+                \draw (-0.15,-0.10) -- (-0.15,+0.10) -- (+0.15,+0.10) -- (+0.15,-0.10) -- cycle;
+                \draw (-0.15,-0.10) -- (+0.15,+0.10);
+                \draw (-0.15,+0.10) -- (+0.15,-0.10);
+            \end{scope}
+            \node [anchor=north west,rotate=#4-45+#1] at (-0.35,+0.35) {\tiny #5};
+            \node [anchor=south east,rotate=#4-45+#1] at (+0.35,-0.35) {\tiny #6};
+        \end{scope}
+    \end{athex}
+}
+
+\newcommand{\drawshipcounter}[6][0]{
+    % The optional first argument is the current rotation of the
+    % picture. It is necessary since Tikz rotates text with respect to
+    % the original rotation, not the current rotation.
+    \begin{athex}{#2}{#3}
+        \begin{scope}[rotate=#4-45]
+            \draw[fill=white] (-0.3,-0.3) rectangle (0.3,0.3);
+            \begin{scope}[rotate=-45]
+                \draw [fill=black!50] (-0.07,-0.15) -- (-0.07,+0.05) -- (0.0, +0.20) -- (+0.07,+0.05) -- (+0.07,-0.15) -- cycle;
+            \end{scope}
+            \node [anchor=north west,rotate=#4-45+#1] at (-0.35,+0.35) {\tiny #5};
+            \node [anchor=south east,rotate=#4-45+#1] at (+0.35,-0.35) {\tiny #6};
+        \end{scope}
+    \end{athex}
+}
+
 \newcommand{\drawcounter}[6][0]{
     % The optional first argument is the current rotation of the
     % picture. It is necessary since Tikz rotates text with respect to
