@@ -1,0 +1,43 @@
+%!TEX root = ./rules-working.tex
+%LTeX: enabled=true
+\begin{twocolumntablefloat}
+\addedin{3A}{3A-ship-movement}{
+
+\tablecaption{table:ship-movement}{Ship Movement and Turning}
+    
+\begin{tabularx}{0.7\linewidth}{llCCCCC}
+\toprule
+Type&Size&\multicolumn{2}{c}{Maximum}&Maximum&\multicolumn{2}{c}{Turn}\\
+&&\multicolumn{2}{c}{Speed}&Speed&\multicolumn{2}{c}{Cadence}\\
+&&\multicolumn{2}{c}{Increase}&Decrease&\multicolumn{2}{c}{Numerator}\\
+\cmidrule{3-4}
+\cmidrule{6-7}
+&&Up to 1/2 Max Speed&1/2 Max Speed or More&&Normal&Hard\\
+\midrule
+Warship       & Large  & 0.5 & 0.25\phantom{} & 1.0 & \phantom{0}80 & \phantom{0}60 \\
+              & Medium & 1.0 & 0.5\phantom{0} & 1.5 & \phantom{0}60 & \phantom{0}40 \\
+              & Small  & 1.0 & 0.5\phantom{0} & 1.5 & \phantom{0}40 & \phantom{0}20 \\
+Merchant Ship & Large  & 0.5 & 0.25\phantom{} & 0.5 & \phantom{}160 & \phantom{}140 \\
+              & Medium & 0.5 & 0.25\phantom{} & 0.5 & \phantom{}160 & \phantom{}100 \\
+              & Small  & 0.5 & 0.25\phantom{} & 0.5 & \phantom{0}80 & \phantom{0}60 \\
+\bottomrule
+\end{tabularx}
+
+\smallskip
+
+\begin{tablenote}{0.7\linewidth}
+    \small
+    \begin{itemize}
+        \item The maximum speed increase or decrease are in knots per game turn. 
+
+        \item The move cadence of a ship is 87 divided by its speed in knots and rounded to the nearest integer with halves rounded up. A ship must move forward one hex if the number of game turns since it last did so (or since the start of the game if it has not yet done so), including the current game turn, is equal to or more than its current move cadence.
+        
+        \item The turn cadence of a ship is the turn cadence numerator, from the table, divided by its speed in knots and rounded to the nearest integer with halves rounded up. A ship may complete a turn if the number of game turns since it declared the turn, including the current game turn, is equal to or more than its current turn cadence. When a ship completes a turn, it changes facing by 60 degrees in the declared direction. A ship must have and maintain at least 5 knots for a normal turn and 10 knots for a hard turn. A turning ship may not increase its speed. 
+        
+        \item An anchored ship always has a speed of 0 knots and may not move or turn. A crippled ship may not increase its speed, must decrease its speed at half the maximum rate until it reaches 0 knots, and may not turn.
+
+    \end{itemize}
+\end{tablenote}
+
+}
+\end{twocolumntablefloat}
