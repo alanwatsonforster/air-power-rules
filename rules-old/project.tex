@@ -359,7 +359,9 @@ Version 2B contains nonauthoritative minor changes, normally to clarify existing
 
     \itemtag{2B-follow-up-missiles} Change how the FPs regained by a follow-on missile are assigned so that they are added to the initial complete proportional segments rather than the initial proportional segments. This is relevant when the missile has a life of only one game turn; we do not want an additional FP added to the incomplete proportional moves with the launch delay.
     
-    \itemtag{2B-missile-launch-speed} The aircraft speed used to determine a missile's initial speed is its end speed on the turn of launch.
+    \itemtag{2B-missile-launch-speed} When the advanced rule on missile speed is used, the aircraft speed used to determine a missile's initial speed is its end speed on the game turn of launch or, equivalently, its start speed on the game turn after launch. 
+    
+    This is in contradiction to 1B-missile-launch-speed, but is consistent with the basic rules which determine modifiers to the base speed of the missile according to the start speed of the aircraft on the game turn after launch.
     
     \itemtag{2B-slower-missile} If the missile is slower than the aircraft, in each proportional move the missile moves 1 FP and the aircraft moves 1 or more FPs. Calculate the number of FPs for the aircraft in the same way as for a missile when the missile is faster.
     
