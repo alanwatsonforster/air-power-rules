@@ -3,7 +3,11 @@
 
 \rulechapter{Air to Ground Combat}
 
-This chapter discusses ground and naval units and how they are targets of air attacks. Ground units range from army troops and vehicles, to anti-aircraft gun and missile sites, to ships at sea. Fourteen types of ground units and various naval units are identified by these rules. The specific types are shown in the Ground Units Table below.
+\addedin{1C}{1C-table}{
+    \input{tables/table-ground-units.tex}
+}
+
+This chapter discusses ground and naval units and how they are targets of air attacks. Ground units range from army troops and vehicles, to anti-aircraft gun and missile sites, to ships at sea. Fourteen types of ground units and various naval units are identified by these rules. The specific types are shown in \changedin{1C}{1C-table}{the Ground Units Table below}{Table \ref{table:ground-units}}.
 
 \section{Ground Unit Counters}
 
@@ -11,6 +15,7 @@ Each ground unit counter or marker is printed with information which helps playe
 
 \paragraph{Terrain.} It may be necessary to identify the type of terrain a ground unit is in. Each land unit is in the terrain type that covers the largest fraction of a hex. Naval units are always on water. Different terrain types can be identified from the Terrain Effects Chart.
 
+\deletedin{1C}{1C-tables}{
 \begin{tabularx}{\linewidth}{lcP}
 \multicolumn{3}{c}{\bfseries Ground Units Table}\\[1ex]
 \toprule
@@ -19,12 +24,12 @@ Unit&Size&Description\\
 Infantry        &Platoon    &Thirty to fifty soldiers.\\
 Armor           &Platoon    &Three to five armored vehicles.\\
 Artillery	    &Battery	&Three to six guns and crews.\\
-Inf. SAM	    &Section	&Four to eight soldiers with one or shoulder-fired SAMs.\\
+Inf.\ SAM	    &Section	&Four to eight soldiers with one or shoulder-fired SAMs.\\
 SAM	            &Battery    &A grouping of SAM launchers with a tracking radar or optical system.\\
-Mob.SAM	        &Section	&One or two vehicle-mounted SAMs.\\
+Mob.\ SAM	        &Section	&One or two vehicle-mounted SAMs.\\
 FAC	            &Section	&A forward air control team with two vehicles and radios.\\
 AAA	            &Battery	&Three to six antiaircraft guns.\\
-Mob. AAA	    &Section	&Two AAA guns mounted on vehicles.\\
+Mob.\ AAA	    &Section	&Two AAA guns mounted on vehicles.\\
 Transport	    &Platoon	&Four to six Trucks.\\
 Radar	        &Platoon	&One or more radars providing early warning (EWR), fire control (FCR), or target tracking (TTR) functions.\\
 CCU	            &HQ	        &A Command and Control Unit that coordinates air defense activities.\\
@@ -35,6 +40,7 @@ Navy Ship	    &One Vessel	&A frigate, cruiser, or standard merchant sized ship o
 Capital Ship	&One Vessel	&A battleship, carrier, or supertanker sized ship.\\
 \bottomrule
 \end{tabularx}
+}
 
 
 \paragraph{Ground Unit Movement.} The scale of the game turn used when aircraft are in play is such that ground units will not normally move more than one or two hexes during an entire game. The scenario will specify if, when and how often ground units may move (always one hex at a time).
