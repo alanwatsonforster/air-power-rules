@@ -2,4 +2,179 @@
 %LTeX: enabled=false
 
 \rulechapter{Air to Ground Combat}
-[Text not yet incorporated.]
+
+This chapter discusses ground and naval units and how they are targets of air attacks. Ground units range from army troops and vehicles, to anti-aircraft gun and missile sites, to ships at sea. Fourteen types of ground units and various naval units are identified by these rules. The specific types are shown in the Ground Units Table below.
+
+\section{Ground Unit Counters}
+
+Each ground unit counter or marker is printed with information which helps players identify it and its functions. The Ground Unit Identification Chart in the play aides shows the information format for each type of unit. The uses of the information are addressed in the individual rules.
+
+\paragraph{Terrain.} It may be necessary to identify the type of terrain a ground unit is in. Each land unit is in the terrain type that covers the largest fraction of a hex. Naval units are always on water. Different terrain types can be identified from the Terrain Effects Chart.
+
+\begin{tabularx}{\linewidth}{lcP}
+\multicolumn{3}{c}{\bfseries Ground Units Table}\\[1ex]
+\toprule
+Unit&Size&Description\\
+\midrule
+Infantry        &Platoon    &Thirty to fifty soldiers.\\
+Armor           &Platoon    &Three to five armored vehicles.\\
+Artillery	    &Battery	&Three to six guns and crews.\\
+Inf. SAM	    &Section	&Four to eight soldiers with one or shoulder-fired SAMs.\\
+SAM	            &Battery    &A grouping of SAM launchers with a tracking radar or optical system.\\
+Mob.SAM	        &Section	&One or two vehicle-mounted SAMs.\\
+FAC	            &Section	&A forward air control team with two vehicles and radios.\\
+AAA	            &Battery	&Three to six antiaircraft guns.\\
+Mob. AAA	    &Section	&Two AAA guns mounted on vehicles.\\
+Transport	    &Platoon	&Four to six Trucks.\\
+Radar	        &Platoon	&One or more radars providing early warning (EWR), fire control (FCR), or target tracking (TTR) functions.\\
+CCU	            &HQ	        &A Command and Control Unit that coordinates air defense activities.\\
+Mobile CCU	    &HQ	        &A CCU mounted on vehicles.\\
+Dummy Site	    &NA	        &A dummy marker indistinguishable (on its front) from a real unit.\\
+Small Ship	    &One Vessel	&A boat, gunboat, patrol-craft or similar small ship.\\
+Navy Ship	    &One Vessel	&A frigate, cruiser, or standard merchant sized ship or tanker.\\
+Capital Ship	&One Vessel	&A battleship, carrier, or supertanker sized ship.\\
+\bottomrule
+\end{tabularx}
+
+
+\paragraph{Ground Unit Movement.} The scale of the game turn used when aircraft are in play is such that ground units will not normally move more than one or two hexes during an entire game. The scenario will specify if, when and how often ground units may move (always one hex at a time).
+
+\paragraph{Ground Unit to Ground Unit Combat.} Some scenarios may involve ground units fighting each other. If this is the case, the scenario will specify if, when and how often ground units may fire on one another. The following are the rules for conducting ground unit combat.
+\begin{itemize}
+
+    \item Each eligible unit may attack once during a turn of combat. The attack may be directed at any one enemy unit in its line of sight within a range of 3 hexes. (Exception: artillery does not require a line of sight and has a range of 6).
+
+    \item Combat is considered to occur simultaneously, and results are not implemented until all units have fired.
+    
+    \item Only Infantry platoons, armored vehicle platoons, artillery and Lt.\ or Med.\ AAA units are allowed to fire in ground combat. Any unit may be attacked.
+
+    \item Ground combat is resolved on the Air-To-Ground Attack Table. Suppression results are ignored. Each unit fires individually using its Final Attack Strength (FAS). Units may not combine their fire into a single attack, however, any number of units may fire on a single enemy in a combat turn.
+
+    \item The FAS of a ground unit is equal to its unmodified defense strength. Attacked units use their defense strength modified normally by terrain or other factors.
+
+    \item Ground combat die rolls have the following modifiers:
+    \begin{enumerate}
+        \item[a)] Armor firing = $-1$
+        \item[b)] Per hex of range over one= $+1$
+        \item[c)] Same hex attack = $-2$
+    \end{enumerate}
+
+    Note: Case b) does not apply to artillery.
+
+    Note: Naval vessels will have any necessary combat rules given for them in the scenarios. 
+
+\end{itemize}
+
+\section{Attacking Ground Units}
+
+Aircraft may attack ground units with guns, air to ground rockets, bombs or air to surface missiles.
+Attack Parameters. To perform an air to ground attack, an aircraft must:
+\begin{enumerate}
+    \item[a)] be on a line of approach (LOA) to the target,
+    \item[b)] accomplish aiming,
+    \item[c)] and reach a valid release point on that LOA for the kind of ordnance being employed.
+\end{enumerate}
+
+\paragraph{Line of Approach.} An aircraft is on a line of approach to a target hex if a line extended forward along the aircraft's flightpath passes through the center of the hex containing the target. The line of approach diagram below and in the play aids illustrates this concept. 
+
+\begin{centering}
+
+{\bfseries Lines of Approach}
+
+\includegraphics[width=0.7\linewidth]{figures/figure-lines-of-approach.pdf}
+
+\end{centering}
+
+\paragraph{Aiming.} An aircraft aims its weapons by approaching a sighted target along a LOA in level or diving flight. It must maintain its approach for a specified period of time ax pressed in terms of FPs expanded in flight while on the LOA. The Aiming Time Table shows the time required (which depends on the type of bombsight used).
+
+\begin{tabularx}{\linewidth}{lP}
+\multicolumn{2}{c}{\bfseries Aiming Table}\\[1ex]
+\toprule
+Bombsight Type  &Minimum Aiming (in FPs)\\
+\midrule
+Manual 	        &2/3 aircraft’s speed (round down)\\
+Ballistic	    &1/2 aircraft’s speed (round down)\\
+Computed	    &1/3 aircraft’s speed (round down)\\
+Advanced	    &1/3 aircraft’s speed (round down)\\
+\bottomrule
+\end{tabularx}
+
+\begin{itemize}
+\item Minimum aiming is at least 1 FP while on a LOA.
+\item If full aiming not accomplished, apply a modifier of +3 to the attack die roll.
+\item If full aiming is accomplished, apply the bombsight modifier from the aircraft's ADC.
+\end{itemize}
+
+\paragraph{Aiming Limits.} A minimum of one FP must be expended while aiming to make any kind of ground attack. Aircraft that attack without completing aiming for the type of sight they have, suffer a +3 modifier to their die roll on the Air-To-Ground Attack Table. Aiming must be done while wings level. FPs expended for aiming cannot be used a prep-moves or counted toward turning. Beginning to aim aborts any turns or maneuvers in progress.  Aircraft must recover from ET turns before aiming can commence.
+
+\paragraph{Aiming Duration.} Aiming at a target may be continued from game turn to game turn. Beneficial modifiers apply for tracking time above and beyond the minimum required by the aircraft sights. Once an attack is executed, all aiming modifiers accrued up to that time are lost, and subsequent attacks (even against the same target) require that start over. The maximum modifier that can be accrued for extra tracking time is $-2$ ($-1$ for each 1/3 of speed spent beyond normal aiming requirements.)
+
+\paragraph{Release Points.} Release point charts are provided in the play aids for Level bombing, dive bombing and rocketry. There are two columns in each of the bombing charts; one for high drag weapons and one for low drag weapons.
+
+The proper release point for the type of attack in progress is determined by cross indexing the horizontal range from the target with the type of attack. The result will be a range of altitude levels. The attacking aircraft must be at one of those levels at that distance from the target to be at a proper release point. Attacks made from other than a proper release point automatically miss.
+
+\paragraph{Attack Procedure.} An attack may be declared after the expenditure of any FP while in the appropriate attack parameters, assuming minimal aiming was accomplished.
+
+\paragraph{Attack Restrictions.} An aircraft may make only one ground attack per game turn. An attack normally affects only the target of the attack even if other units are in the same hex.
+
+An aircraft may not make an air to air gun attack against enemy aircraft in the same game turn in which it makes an air to ground attack. When an aircraft makes a ground attack it may not launch air to air missiles or do air radar searches or attempt lock-ons in that same game-turn.
+
+\paragraph{Attack Resolution.} Ground attacks are resolved using a Final Attack Strength (FAS) for the weapons used and the Air To Ground Attack Table as follows:
+\begin{itemize}
+\item Determine the FAS involved using the FAS Calculation Chart which is based on the number of weapons dropped or fired in the attack and their listed attack strengths.
+\item Compare the FAS to the Target Defense Strength (TDS) to create an attack ratio (FAS: TDS). This ratio is then rounded down to one of the ratios on the Air To Ground Attack Table.
+\item Roll the die and modify as required. At the intersection of the ratio column and the modified die roll row is an attack result, which is implemented against the target.
+\end{itemize}
+
+FAS Example: The FAS of cluster bombs is the sum of the dropped bomb's individual attack strengths. Four weapons released at once, each with an attack strength of 4.0, would provide an FAS of sixteen. If the target's defense strength were five; The FAS:TDS ratio would be three to one (3:1) and the die would be rolled referencing the 3:1 column of the Air to Ground Attack Table.
+
+\paragraph{Combat Results.} There are five possible results of any ground attack, these are:
+\begin{itemize}
+    \item “-": No effect, the target survives unscathed or with insignificant damage.
+    \item “S”: Suppressed, the target lakes cover and may not function, move or attack aircraft for the rest of the current game turn and through the following game turn. Place a "Suppression" marker on them immediately. At the end of the current turn, flip the marker to the "Suppression Removal" side. At the end of the following game-turn, remove the marker.
+    \item “D”: Target Damaged and Suppressed. Place a hit marker and a suppression marker on the target. This represents about a third of the unit's men, vehicles, and/or guns being put out of action. Damage is permanent. Damaged units may resume functioning when unsuppressed. Being damaged imposes modifiers to units firing on aircraft and may impose other restrictions on the unit. When a ground unit or target lakes a total of three hits, it is eliminated.
+    \item “2D”: Target Damaged Twice. The target is damaged to the equivalent of two hits and suppressed as above. If it was already damaged from before, it would now be eliminated.
+    \item “K”: Killed, the target is destroyed outright.
+\end{itemize}
+
+Exceptions:  Any ground unit or target marker with an asterisk by its defense strength is eliminated after only two hits.
+
+\paragraph{Ground Attack Modifiers.} The following is a summary of the most commonly required die roll modifiers:
+\begin{itemize}
+    \item Range to target: Use the modifier listed on the release point chart next to the release point used.
+    \item Bombsights: If aiming was completed, use the bombsight modifier listed on the ADC. If not completed, a +3 modifier applies to the attack.
+    \item Damage to Attacker: +1 if attacker "L" damaged, +2 if "H" damaged, +3 if "C" damaged.
+    \item Tracking Time: For each 1/3rd of an aircraft's speed in FPs expended as additional aiming beyond the minimum required, a -1 is applied. Up to a maximum of -3 may be accrued by extra aiming.
+\end{itemize}
+
+All these, and other modifiers explained in later rules are summarized in the Ground Attack Modifiers Table. All modifiers are cumulative.
+
+\paragraph{Terrain Effects.} Targets in certain terrain may have their defense strengths modified or cause modifiers to be applied to the attack roll of an aircraft as indicated on the terrain effects chart. Targets in entrenchments have their defense strengths doubled and targets in bunkers have their defense strength quadrupled.
+
+\paragraph{Target Type Effects.} Targets are also classified as being SOFT or HARD. Any ground unit or target with an underlined defense strength is considered to be a HARD target (armored). All weapons have an attack strength for each type of target. Use the appropriate attack strength listed for each type of target in the external stores tables for each type of weapon.
+
+%Ordinance Effectiveness Considerations:  CBUs, napalm, fire weapons, and rockets of less than 200mm have a “0” attack strength against runways, roads, dams, piers, rail lines, hardened A/C shelters, and steel/concrete bridges.  HE bombs with an attack strength less than 1.0 have a “0” attack strength against hardened A/C shelters and steel/concrete bridges. 
+
+\begin{advancedrules}
+
+\section{Collateral Damage}
+
+\paragraph{Multiple Targets.} If more than one possible ground target is in a hex under attack, the attacker must specify the actual target being aimed at. This becomes the primary target, all others are secondary targets. Secondary targets are subject to possible damage from attacks on the primary one.
+
+A primary target is attacked normally. Secondary targets are attacked using one-third or two-thirds (depending on the type of weapons used as indicated on the FAS computation table) of the FAS applied to the primary target (adjusted for soft/ hard target types). Roll separately for each attack on secondary targets and apply a +3 modifier.  No other modifier applies to attacks on a secondary target.
+
+\section{Formation Effects on Ground Attacks}
+
+\paragraph{Combat Restrictions.} The formation leader is not restricted. Wingmen in close formation are restricted as follows:
+\begin{itemize}
+    \item A pilot only aircraft may not make any air to ground attacks unless performing Formation Bombing/ Rocket Attacks.
+    \item In multi-crew aircraft; if a weapons officer is present, the aircraft may do air to ground attacks using BB, BG, BS, ARM, ASM, RS, or RG weapons.
+\end{itemize}
+
+Aircraft that begin the turn as wingmen but intend to detach may participate in the visual sighting phase if the intent to detach is declared then. On the turn an aircraft detaches, attacks and weapons launches, other than those allowed to multi-crewed aircraft in close formation, may not be done.
+
+\paragraph{Formation Air to Ground Attacks.} Whenever the leader of a close formation makes a Bombing attack using BB or BG class weapons, any wingmen in the formation carrying identical weapons may also attack the same target. All the weapons dropped by the formation are totaled into one attack. Only the leader's bombing and aiming modifiers are used. The modifier for each three BB class weapons in a ripple is determined only from the leader's weapons.
+
+Formation Rocket Attacks using RK, RP, and RPT type weapons may be made in a similar fashion except that only half the value of each wingman's rockets is added in.
+
+\end{advancedrules}
