@@ -1,0 +1,75 @@
+%!TEX root = ../rules-working.tex
+%LTeX: enabled=false
+
+\silentlychangedin{1C}{1C-figures}{
+
+\begin{onecolumnfigure}
+
+\includegraphics[width=0.7\linewidth]{figures/figure-lines-of-approach.pdf}
+
+\begin{centering}
+
+{\bfseries Lines of Approach}\end{centering}    
+
+\end{onecolumnfigure}
+
+}{
+
+\begin{onecolumnfigure}[tbp]
+
+\begin{minipage}[t]{1.0\linewidth}
+\begin{fitheight}{5.2\standardhexwidth}
+\begin{tikzpicture}
+    \tiny
+    %setfiguresize{-4.1}{-5*\hexxfactor-0.1}{+4.1}{+5*\hexxfactor+0.1}
+    %\setfiguresize{-4.67*\hexxfactor-0.1}{-4.5-0.1}{+4.67*\hexxfactor+0.1}{+4.5+0.1}
+    \setfiguresize{-5.1}{-2.6}{+5.1}{+2.6}
+    \begin{scope}
+
+        \drawhex{-2.0}{-1.0}
+        \drawhex{-2.0}{+0.0}
+        \drawhex{-2.0}{+1.0}
+        \drawhex{-1.0}{-1.5}
+        \drawhex{-1.0}{-0.5}
+        \drawhex{-1.0}{+0.5}
+        \drawhex{-1.0}{+1.5}
+        \drawhex{+0.0}{-2.0}
+        \drawhex{+0.0}{-1.0}
+        \drawhex{+0.0}{+0.0}
+        \drawhex{+0.0}{+1.0}
+        \drawhex{+0.0}{+2.0}
+        \drawhex{+1.0}{-1.5}
+        \drawhex{+1.0}{-0.5}
+        \drawhex{+1.0}{+0.5}
+        \drawhex{+1.0}{+1.5}
+        \drawhex{+2.0}{-1.0}
+        \drawhex{+2.0}{+0.0}
+        \drawhex{+2.0}{+1.0}
+
+        \begin{scope}[very thick,<-]
+            \draw (0:0.5) --   (0:2);
+            \draw (30:0.5) --  (30:2);
+            \draw (60:0.5) --  (60:2);
+            \draw (90:0.5) --  (90:2);
+            \draw (120:0.5) -- (120:2);
+            \draw (150:0.5) -- (150:2);
+            \draw (180:0.5) -- (180:2);
+            \draw (210:0.5) -- (210:2);
+            \draw (240:0.5) -- (240:2);
+            \draw (270:0.5) -- (270:2);
+            \draw (300:0.5) -- (300:2);
+            \draw (330:0.5) -- (330:2);
+        \end{scope}
+
+        \drawgroundunitcounter{0.00}{0.00}{45}{}{}{}
+        \drawaircraftcounter{2.00}{-1.00}{150}{F-4}{}{}
+    \end{scope}
+\end{tikzpicture}
+\end{fitheight}
+\end{minipage}
+
+\figurecaption{figure:lines-of-approach}{Lines of Approach}
+
+\end{onecolumnfigure}
+}
+
