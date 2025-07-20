@@ -11,16 +11,8 @@
   margin=1cm
 ]{geometry}
 
-% Use TeX Gyre Schola for text and math.
-
-%\usepackage[T1]{fontenc}
-\usepackage{unicode-math}
-\setmainfont[
-	BoldFont = texgyreschola-bold.otf,
-	BoldItalicFont = texgyreschola-bolditalic.otf,
-	ItalicFont = texgyreschola-italic.otf
-]{texgyreschola-regular.otf}
-\setmathfont{texgyreschola-math.otf}
+\usepackage[usefilenames]{plex-otf}
+\renewcommand*\familydefault{\sfdefault}
 
 \usepackage{titletoc}
 \usepackage{fancyhdr}
