@@ -8,20 +8,20 @@
 \toprule
 \multicolumn{2}{c}{IRMs and IR SAMs}\\
 \midrule
-Target in Afterburner Power&$-3$\\
-Target in Military Power&$-1$\\
-Target in Idle Power&$+1$\\
-Missile must lose 2 or more levels during proportional move of attack against tgt.\ in LO alt.\ band (ground clutter)&$+2$\\
-Target in Terrain Following Flight&$+1$\\
-Lesser of Flare PPL or missile Flare Vulnerability no.&$+$\\
+Target in Afterburner Power&\minus{3}\\
+Target in Military Power&\minus{1}\\
+Target in Idle Power&\plus{1}\\
+Missile must lose 2 or more levels during proportional move of attack against tgt.\ in LO alt.\ band (ground clutter)&\plus{2}\\
+Target in Terrain Following Flight&\plus{1}\\
+Lesser of Flare PPL or missile Flare Vulnerability no.&\plus{}\\
 \midrule
 \multicolumn{2}{c}{BRMs, RHMs, AHMs, \& BR, CG, CW and TVM SAMs}\\
 \midrule
-DJM rating $-$ missile ECCM$+$\\
-Lesser of Chaff PPL or missile Chaff Vulnerability&$+$\\
-Lesser of Mini-jammer PPL or Chaff Vulnerability $+$ 1&$+$\\
-Ground clutter (air to air missiles only) = $6 - \mbox{target Altitude above terrain} - \mbox{missile ECCM}$.&$+$\\
-Listed “T” level modifier (SAMs only, if applicable)&$+$\\
+DJM rating \minus{} missile ECCM\plus{}\\
+Lesser of Chaff PPL or missile Chaff Vulnerability&\plus{}\\
+Lesser of Mini-jammer PPL or Chaff Vulnerability \plus{} 1&\plus{}\\
+Ground clutter (air to air missiles only) = $6 - \mbox{target Altitude above terrain} - \mbox{missile ECCM}$.&\plus{}\\
+Listed “T” level modifier (SAMs only, if applicable)&\plus{}\\
 \midrule
 \multicolumn{2}{c}{OG and LG SAMs}\\
 \midrule
@@ -29,8 +29,8 @@ Listed “T” level modifier (SAMs only, if applicable)&$+$\\
 \midrule
 \multicolumn{2}{c}{All Missiles}\\
 \midrule
-Target aircraft size modifier from ADC&$+/-$\\
-Target did not engage the missile&$-1$\\
+Target aircraft size modifier from ADC&\plus{/-}\\
+Target did not engage the missile&\minus{1}\\
 \bottomrule
 \end{tabularx}
 
@@ -55,29 +55,29 @@ Description&Modifier&Rule\\
 \multicolumn{2}{c}{All Missiles}\\
 \midrule
 Target size modifier&From ADC&\ref{rule:aircraft-data-cards}\\
-Target did not engage the missile&$-1$&\ref{rule:engaging-missiles}\\
+Target did not engage the missile&\minus{1}&\ref{rule:engaging-missiles}\\
 \midrule
 \multicolumn{2}{c}{IRMs and IR SAMs}\\
 \midrule
-Target using afterburner power&$-3$&\ref{rule:engine-thrust}\\
-Target using military power&$-1$&\ref{rule:engine-thrust}\\
-Target using idle power&$+1$&\ref{rule:engine-thrust}\\
-Target in infrared ground clutter$^1$&$+2$&\ref{rule:irm-attack-modifiers}\\
-Target in terrain-following flight&$+1$&\ref{rule:irm-attack-modifiers}\\
-Target using flare DDS&$+$PPL (up to flare rating)&\ref{rule:irm-attack-modifiers}$^*$\\
-Target using IR jammer&From jammer data&\ref{rule:irm-attack-modifiers}$^*$\\
+Target using afterburner power&\minus{3}&\ref{rule:engine-thrust}\\
+Target using military power&\minus{1}&\ref{rule:engine-thrust}\\
+Target using idle power&\plus{1}&\ref{rule:engine-thrust}\\
+Target in infrared ground clutter$^1$&\plus{2}&\ref{rule:irm-attack-modifiers}\\
+Target in terrain-following flight&\plus{1}&\ref{rule:irm-attack-modifiers}\\
+Target using flare DDS&\plus{}PPL (up to flare rating)&\ref{rule:irm-attack-modifiers}\asteriskmark\\
+Target using IR jammer&From jammer data&\ref{rule:irm-attack-modifiers}\asteriskmark\\
 \midrule
 \multicolumn{2}{c}{BRMs, RHMs, AHMs, and BR/CG/CW/TVM SAMs}\\
 \midrule
-DJM rating in excess of missile ECCM rating&$+$&\ref{rule:deceptive-jammers}$^*$\\
-Target using chaff DDS&$+$PPL (up to chaff rating)&\ref{rule:dds}$^*$\\
-Target using mini-jammer DDS&$+$PPL (up to chaff rating plus one)&\ref{rule:dds}$^*$\\
+DJM rating in excess of missile ECCM rating&\plus{}&\ref{rule:deceptive-jammers}\asteriskmark\\
+Target using chaff DDS&\plus{}PPL (up to chaff rating)&\ref{rule:dds}\asteriskmark\\
+Target using mini-jammer DDS&\plus{}PPL (up to chaff rating plus one)&\ref{rule:dds}\asteriskmark\\
 Target in radar ground clutter (BRM/RHM/AHM only)$^2$&$6 - \mbox{altitude AGL} - \mbox{ECCM rating}$&\ref{rule:rgm-attack-modifiers}\\
-Target in terrain-following flight (SAMs only)&$+$&\ref{rule:terrain-following-flight} \& \ref{rule:sams}\\
+Target in terrain-following flight (SAMs only)&\plus{}&\ref{rule:terrain-following-flight} \& \ref{rule:sams}\\
 \bottomrule
 \end{tabularx}
 \begin{tablenote}{0.9\linewidth}
-$^*$~Advanced rule. $^1$ A target is in infrared ground clutter if it is in the LO altitude band (altitude levels 0 to 7) and two or more levels lower than the missile at the start of the missile's proportional move prior to its attack. $^2$ A target is in radar ground clutter if it is no more than 5 altitude levels above the ground and either lower than the illuminating aircraft (for BRMs and RHMs) or   two or more levels lower than the missile at the start of the missile's proportional move prior to its attack. (for AHMs). The modifier is 6 minus the target altitude above the ground level minus the missile ECCM rating. If the modifier is negative, it is ignored.
+\asteriskmark~Advanced rule. $^1$ A target is in infrared ground clutter if it is in the LO altitude band (altitude levels 0 to 7) and two or more levels lower than the missile at the start of the missile's proportional move prior to its attack. $^2$ A target is in radar ground clutter if it is no more than 5 altitude levels above the ground and either lower than the illuminating aircraft (for BRMs and RHMs) or   two or more levels lower than the missile at the start of the missile's proportional move prior to its attack. (for AHMs). The modifier is 6 minus the target altitude above the ground level minus the missile ECCM rating. If the modifier is negative, it is ignored.
 \end{tablenote}
 \end{twocolumntable}
 \end{twocolumntablefloat}
@@ -94,12 +94,12 @@ $^*$~Advanced rule. $^1$ A target is in infrared ground clutter if it is in the 
 \cmidrule(lr){2-13}
 &E&I&M&A&BR&RH&AH&CG&CW&TVM&OG&LG\\
 \midrule
-0 line        &$-1$&$-1$&$-1$&$-2$&$+0$&$-1$&$-2$&$-1$&$-1$&$-1$&$+0$&$-1$\\
-30 arcs       &$+0$&$+0$&$+0$&$+0$&$+0$&$+0$&$+0$&$+0$&$+0$&$+0$&$+0$&$+0$\\
-60 arcs       &$+1$&$+0$&$+0$&$+0$&$+1$&$+0$&$+0$&$+0$&$+0$&$+0$&$+1$&$+0$\\
-90/120 arcs   &$+3$&$+2$&$+2$&$+2$&$+3$&$+3$&$+2$&$+2$&$+3$&$+2$&$+3$&$+2$\\
-150 arcs      &$+4$&$+3$&$+2$&$+2$&$+5$&$+2$&$+2$&$+2$&$+2$&$+1$&$+2$&$+2$\\
-180 arcs, line&$+5$&$+4$&$+3$&$+1$&$+5$&$+1$&$+1$&$+1$&$+1$&$+1$&$+1$&$+1$\\
+0 line        &\minus{1}&\minus{1}&\minus{1}&\minus{2}&\plus{0}&\minus{1}&\minus{2}&\minus{1}&\minus{1}&\minus{1}&\plus{0}&\minus{1}\\
+30 arcs       &\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}\\
+60 arcs       &\plus{1}&\plus{0}&\plus{0}&\plus{0}&\plus{1}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{1}&\plus{0}\\
+90/120 arcs   &\plus{3}&\plus{2}&\plus{2}&\plus{2}&\plus{3}&\plus{3}&\plus{2}&\plus{2}&\plus{3}&\plus{2}&\plus{3}&\plus{2}\\
+150 arcs      &\plus{4}&\plus{3}&\plus{2}&\plus{2}&\plus{5}&\plus{2}&\plus{2}&\plus{2}&\plus{2}&\plus{1}&\plus{2}&\plus{2}\\
+180 arcs, line&\plus{5}&\plus{4}&\plus{3}&\plus{1}&\plus{5}&\plus{1}&\plus{1}&\plus{1}&\plus{1}&\plus{1}&\plus{1}&\plus{1}\\
 \bottomrule
 \end{tabularx}
 \end{twocolumntable}

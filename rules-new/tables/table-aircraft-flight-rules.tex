@@ -12,10 +12,10 @@
 
 \heading{Accel/Decel}
 \begin{enumerate}[nosep]
-    \item Each 2.0 accel accumulated = $+0.5$ speed normally.
-    \item Each 1.5 accel = $+0.5$ speed for Rapid Accel aircraft.
-    \item If speed $\ge$ Mach 1, each 3.0 accel = $+0.5$ speed for normal aircraft and each 2.0 = $+0.5$ for Rapid Accel aircraft.
-    \item Each 2.0 Decel accumulated = $-0.5$ speed always.
+    \item Each 2.0 accel accumulated = \plus{0.5} speed normally.
+    \item Each 1.5 accel = \plus{0.5} speed for Rapid Accel aircraft.
+    \item If speed $\ge$ Mach 1, each 3.0 accel = \plus{0.5} speed for normal aircraft and each 2.0 = \plus{0.5} for Rapid Accel aircraft.
+    \item Each 2.0 Decel accumulated = \minus{0.5} speed always.
 \end{enumerate}
 
 \heading{Level Flight}
@@ -89,7 +89,7 @@
     \item If start speed is less than climb speed, then halve CCC value (retain fractions).
     \item If CCC value is < than 1.0, only one VFP may be used in game-turn and it gains only the fractional altitude level.
     \item If CCC value >= 1.0 but <= 2.0, up to 2/3s of the FPs may be VFPs. The first VFP gains any listed fraction (or 1 if no fractions listed), and the rest gain one altitude level each.
-    \item If CCC value is > 2.0, up to 2/3s of the FPs may be VFPs. The first VFP gains 1.0 level $+$ any fraction and the rest may gain 1.0 or 2.0 altitude levels each.
+    \item If CCC value is > 2.0, up to 2/3s of the FPs may be VFPs. The first VFP gains 1.0 level \plus{} any fraction and the rest may gain 1.0 or 2.0 altitude levels each.
     \itemaddedin{2A}{2A-super-climbs}{If CCC value >= 6.0, one of the VFPs after the first can gain 1, 2, or 3 altitude levels.}
     \item If enough VFPs exist, an aircraft may climb more levels than listed on the CCC. However, the extra levels climbed cause decel as if zoom climbing.
     \item Only EZ turns and Slide maneuvers allowed.
@@ -196,7 +196,7 @@
     \item Roll die to find number of facing changes in that direction.
     \item Altitude loss = start speed (round 0.5 up) + 2.0; increase altitude loss by 2.0 per additional turn of departed flight.
     \item Power has no effect, all accel/decel = 0 whole departed.
-    \item Recovery is via recovery roll ($6-$ including modifiers).
+    \item Recovery is via recovery roll (\minusafter{6} including modifiers).
     \item Upon recovery aircraft must enter diving flight (vertical dives allowed). High Pitch Rate aircraft may recover to level flight.
     \item Upon recovery, start speed reverts to higher of Minimum speed or speed at which departure occurred.
 \end{enumerate}

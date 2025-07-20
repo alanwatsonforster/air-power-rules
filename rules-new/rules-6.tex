@@ -80,7 +80,7 @@ Example: An aircraft accumulating 6.0 accel points and 3.0 decel has a net accel
 \paragraph{Speed Loss.} 
 Subtract 0.5 from the aircraft's current speed for each 2.0 decel points left. Any unused decel points (up to 1.5) are carried forward to the next game turn and will be added to any decel points received in that turn.
 
-Example: An aircraft accumulating 2.5 accel and 5.0 decel has a net accel of $-2.5$, or in other terms has 2.5 decel left over. Two of those decel are used to reduce its speed by 0.5. The remaining 0.5 decel is carried to the next game turn.
+Example: An aircraft accumulating 2.5 accel and 5.0 decel has a net accel of \minus{2.5}, or in other terms has 2.5 decel left over. Two of those decel are used to reduce its speed by 0.5. The remaining 0.5 decel is carried to the next game turn.
 
 \paragraph{Maximum Deceleration.} 
 \CX{
@@ -305,7 +305,7 @@ If the Start speed for an aircraft is less than its minimum allowed speed at the
 If the start speed of an aircraft is less than its minimum speed, it enters stalled flight. 
 
 \paragraph{Entering Departed Flight.} 
-Each game turn including the one in which it enters stalled flight, all aircraft in stalled flight must check to see if they enter departed flight. In the stalled aircraft phase, roll the die once for each stalled aircraft and apply any appropriate modifiers \changedin{1C}{1C-tables}{(see play aid tables)}{from Table~\ref{table:departed-flight-avoidance}}. If the ADC notes that an aircraft has fly-by-wire controls, it gains a modifier of $+2$. On a result of $5-$, the aircraft enters departed flight; otherwise, it remains in stalled flight.
+Each game turn including the one in which it enters stalled flight, all aircraft in stalled flight must check to see if they enter departed flight. In the stalled aircraft phase, roll the die once for each stalled aircraft and apply any appropriate modifiers \changedin{1C}{1C-tables}{(see play aid tables)}{from Table~\ref{table:departed-flight-avoidance}}. If the ADC notes that an aircraft has fly-by-wire controls, it gains a modifier of \plus{2}. On a result of \minusafter{5}, the aircraft enters departed flight; otherwise, it remains in stalled flight.
 }
 
 \paragraph{Stalled Flight Procedure.} 
@@ -369,7 +369,7 @@ During the Stalled Aircraft phase of each turn, each departed aircraft checks to
 
 If the aircraft recovers, it may resume normal flight. Start speed is automatically minimum speed (from the MMVC) or the speed at which it departed (whichever is greater). On the turn of recovery, an aircraft may only choose diving flight (vertical dives are allowed). Exception: a High Pitch Rate capable aircraft may choose level flight. \addedin{1B}{1B-apj-35-qa}{The aircraft recovers to a wings level attitude.} \addedin{1B}{1B-apj-34-qa}{Any carried half FP is lost.} \addedin{2B}{2B-departures}{Any carried APs or DPs are lost.}
 }{
-During the stalled aircraft phase of each game turn, each departed aircraft checks to see if it recovers from departed flight. Roll a die and apply any appropriate modifiers\addedin{1C}{1C-tables}{\ from Table~\ref{table:departed-flight-recovery}}. If the ADC notes that an aircraft has fly-by-wire controls, it gains a modifier of $-2$. If the result is $6-$, the aircraft recovers; otherwise, it remains in departed flight.
+During the stalled aircraft phase of each game turn, each departed aircraft checks to see if it recovers from departed flight. Roll a die and apply any appropriate modifiers\addedin{1C}{1C-tables}{\ from Table~\ref{table:departed-flight-recovery}}. If the ADC notes that an aircraft has fly-by-wire controls, it gains a modifier of \minus{2}. If the result is \minusafter{6}, the aircraft recovers; otherwise, it remains in departed flight.
 
 If the aircraft recovers, it may resume normal flight. Its start speed is its minimum speed or the speed at which it departed, whichever is greater. On the turn of recovery, an aircraft may only choose diving flight, including a vertical dive, unless it is an HPR aircraft, in which case it can also choose level flight. The aircraft recovers to a wings-level attitude. Any carried half FP is lost. Any carried APs or DPs are lost.
 }
@@ -577,7 +577,7 @@ For other purposes, an aircraft is in supersonic flight if its speed is greater 
 An aircraft's cruise speed depends on its configuration:
 \begin{itemize}
     \item If its configuration is CL, use the cruise speed given on its ADC.
-    \item If its configuration is $1/2$, use the cruise speed on its ADC reduced by 0.5. 
+    \item If its configuration is 1/2, use the cruise speed on its ADC reduced by 0.5. 
     \item If its configuration is DT, use the cruise speed on its ADC reduced by 1.0.
 \end{itemize} 
 
@@ -632,11 +632,11 @@ Propeller aircraft may increase their power settings without limit or risk. Jet 
 
 \paragraph{Flame-Out Procedure.} 
 \CX{
-\changedin{2A}{2A-supersonic-flame-out}{If an aircraft meets one of the above conditions}{In the first case, the flame-out is automatic. In the other cases}, roll a die for each engine at the start of its move. A flame-out occurs on a roll of 4 or less. Apply a die roll modifier of $-1$ for each turn an aircraft has been above its ceiling. If a flame-out is called for on the damage tables, it occurs automatically.
+\changedin{2A}{2A-supersonic-flame-out}{If an aircraft meets one of the above conditions}{In the first case, the flame-out is automatic. In the other cases}, roll a die for each engine at the start of its move. A flame-out occurs on a roll of 4 or less. Apply a die roll modifier of \minus{1} for each turn an aircraft has been above its ceiling. If a flame-out is called for on the damage tables, it occurs automatically.
 
 Note: The number of engines an aircraft has is indicated on the Power Chart by dots to the right of the chart title. One dot per engine is used.
 }{
-If the flame-out is caused by damage or supersonic speeds, the flame-out is automatic.  In the other cases, at the start of the aircraft's move, roll a die for each engine. A flame-out occurs on a roll of $4-$. In the last case, apply a die roll modifier of $-1$ for each game turn that an aircraft has been above its ceiling. The power chart in the ADC indicates the number of engines an aircraft has by dots. One dot is used per engine.
+If the flame-out is caused by damage or supersonic speeds, the flame-out is automatic.  In the other cases, at the start of the aircraft's move, roll a die for each engine. A flame-out occurs on a roll of \minusafter{4}. In the last case, apply a die roll modifier of \minus{1} for each game turn that an aircraft has been above its ceiling. The power chart in the ADC indicates the number of engines an aircraft has by dots. One dot is used per engine.
 }
 \CX{
 \paragraph{Effects of Flame-Out.} 
@@ -659,7 +659,7 @@ A pilot can attempt to relight a flamed-out engine in any game turn following th
 \paragraph{Relight Procedure.}
 If an aircraft fulfills the requirements, in the Aircraft Administrative Phase, roll a die for each engine that flamed out on a prior game turn and has not accumulated three failed attempts.
 
-The first attempt succeeds on a die roll of $2-$, and the second and third attempts succeed on a die roll of $4-$. 
+The first attempt succeeds on a die roll of \minusafter{2}, and the second and third attempts succeed on a die roll of \minusafter{4}. 
 
 If the attempt is successful, the engine can function normally again. It is considered to be in idle power for the purposes of changing power in the following game turn (see rule \ref{rule:rapid-power-response}) and has its number of restart failures reset to zero. 
 

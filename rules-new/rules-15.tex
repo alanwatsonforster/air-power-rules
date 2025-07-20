@@ -42,7 +42,7 @@ To launch IRMs, the firing aircraft must:
 
 If more than one aircraft, including friendlies, are in a LIMITED FOV, the closest aircraft is automatically locked-up. If several aircraft are equally close, randomly determine by die roll which was actually locked-up AFTER the missile is launched.
 
-If more than one aircraft, including friendlies, are in an UNCAGED FOV, the firing player chooses the intended target and rolls a die. If the target is the nearest aircraft, the lock-up succeeds on a roll of 8 or less. If other aircraft in the FOV are equally near, or if the target is not the closest, then the die roll is modified by a cumulative $+1$ for every closer or equally near aircraft. If successful, missiles may be fired normally. If the lock-up attempt fails, missiles may not be launched.
+If more than one aircraft, including friendlies, are in an UNCAGED FOV, the firing player chooses the intended target and rolls a die. If the target is the nearest aircraft, the lock-up succeeds on a roll of 8 or less. If other aircraft in the FOV are equally near, or if the target is not the closest, then the die roll is modified by a cumulative \plus{1} for every closer or equally near aircraft. If successful, missiles may be fired normally. If the lock-up attempt fails, missiles may not be launched.
 
 \addedin{1b}{1B-apj-27-qa/1B-apj-37-qa}{A separate roll is made for each missile fired after it is successfully launched.}
 
@@ -105,7 +105,7 @@ An IRM seeker can be caged (fixed) or uncaged (able to swivel to acquire or trac
     
     If more than one aircraft is equally close, randomly determine by die roll which one was actually locked-up and therefore is the target \emph{after} the missile is launched. A separate roll is made for each missile launched.
 
-    \item If more than one aircraft, including friendlies, is in the field of view of an uncaged missile, the target is declared, and then a die is rolled, and the lock-up succeeds on a roll of $8-$. The die roll is modified by  $+1$ for every aircraft within the field-of-view that is closer than the target or equally close. If the lock-up is succeeds, missiles may be fired normally. If the lock-up attempt fails, missiles may not be launched.
+    \item If more than one aircraft, including friendlies, is in the field of view of an uncaged missile, the target is declared, and then a die is rolled, and the lock-up succeeds on a roll of \minusafter{8}. The die roll is modified by  \plus{1} for every aircraft within the field-of-view that is closer than the target or equally close. If the lock-up is succeeds, missiles may be fired normally. If the lock-up attempt fails, missiles may not be launched.
 
 \end{itemize}
 
@@ -118,7 +118,7 @@ An IRM seeker can be caged (fixed) or uncaged (able to swivel to acquire or trac
 In addition to the general missile launch modifiers given in rule~\ref{rule:missile-launch-modifiers}, the following modifiers apply to IRMs:
 
 \begin{itemize}
-    \item If an IRM is at a target in infrared ground clutter, it suffers a $+2$ modifier.
+    \item If an IRM is at a target in infrared ground clutter, it suffers a \plus{2} modifier.
 
     Infrared ground clutter is caused by heat emission from the ground, which interferes with an IRM seeker's ability to track targets. 
 
@@ -126,9 +126,9 @@ In addition to the general missile launch modifiers given in rule~\ref{rule:miss
 
     For example, if the launching aircraft is at altitude level 12 (in the ML band) and the horizontal range to the target is 7 hexes, the target will be in ground clutter if it is at altitude level 8 or lower.
 
-    \item If an IRM is launched above the highest cloud layer at a lower target during daylight, it suffers a $+3$ launch modifier (see advanced rule \ref{rule:clouds}).
+    \item If an IRM is launched above the highest cloud layer at a lower target during daylight, it suffers a \plus{3} launch modifier (see advanced rule \ref{rule:clouds}).
 
-    \item If an IRM is launched into Sun clutter, it suffers a $+3$ launch modifier (see advanced rule~\ref{rule:sun}).
+    \item If an IRM is launched into Sun clutter, it suffers a \plus{3} launch modifier (see advanced rule~\ref{rule:sun}).
 
     \item If an IRM is launched at a target with an active DDS program, it suffers a launch modifier equal to the smaller of the DDS flare PPL and the missile flare vulnerability rating (see advanced rule~\ref{rule:dds}).
 \end{itemize}
@@ -171,7 +171,7 @@ If an aircraft is equipped with an internal DDS (see advanced rule~\ref{rule:dds
 
 \paragraph{Manual Flare Decoy Procedure.} This procedure is used if an engaged aircraft manually dispenses flare decoy clusters to defend against an attack by an IRM (see rule~\ref{rule:missile-attacks}). Roll the die once for each flare decoy cluster dispensed. If the result is less than or equal to the missile's flare vulnerability rating, the missile is successfully decoyed and cannot attempt to hit the target. It is immediately removed from play. Table~\ref{table:missile-data} gives the flare vulnerability ratings for missiles. If the missile is not successfully defeated by the decoys, it continues with its attack.
 
-For example, consider an AA-2 Atoll attacking an aircraft with a DDS that contains 8 flare clusters. If the aircraft engages the missile, it can manually dispense 2 flare clusters (plus 2 of any other type of decoy in the DDS). The flare vulnerability of the AA-2 is 6, so each flare cluster defeats the missile on a die roll of $6-$.
+For example, consider an AA-2 Atoll attacking an aircraft with a DDS that contains 8 flare clusters. If the aircraft engages the missile, it can manually dispense 2 flare clusters (plus 2 of any other type of decoy in the DDS). The flare vulnerability of the AA-2 is 6, so each flare cluster defeats the missile on a die roll of \minusafter{6}.
 
 \paragraph{Flare Protective Programs.} If a DDS protective program is in use and includes flares, then a die roll modifier is applied to the launch die roll (see rule~\ref{rule:irm-launch-modifiers}) and to the attack die roll (see rule~\ref{rule:irm-attack-modifiers}).
 }
@@ -183,19 +183,19 @@ For example, consider an AA-2 Atoll attacking an aircraft with a DDS that contai
 In addition to the general missile attack modifiers given by rule~\ref{rule:missile-attacks}, the following modifiers apply to IRMs:
 
 \begin{itemize}
-    \item If the target is using afterburner, military, or idle power (see rule~\ref{rule:engine-thrust}), apply a modifier of $-3$, $-1$, or $+1$ respectively. 
+    \item If the target is using afterburner, military, or idle power (see rule~\ref{rule:engine-thrust}), apply a modifier of \minus{3}, \minus{1}, or \plus{1} respectively. 
     
-    If the target does not engage the missile but does select idle power, the modifier is $-1$ on a die roll of $4-$ and $+0$ otherwise.
+    If the target does not engage the missile but does select idle power, the modifier is \minus{1} on a die roll of \minusafter{4} and \plus{0} otherwise.
 
-    \item If the target is in infrared ground clutter, apply a modifier of $+2$. 
+    \item If the target is in infrared ground clutter, apply a modifier of \plus{2}. 
     
     A target is in infrared ground clutter if it is in the LO altitude band (altitude levels 0 to 7) and two or more levels below the missile’s altitude at the start of the proportional move in which the missile attacks.
 
-    \item If the target is in terrain-following flight (see rule~\ref{rule:terrain-following-flight}), apply a modifier of $+1$.
+    \item If the target is in terrain-following flight (see rule~\ref{rule:terrain-following-flight}), apply a modifier of \plus{1}.
 
     \item If the target has an active DDS dispensing flares (see advanced rule~\ref{rule:dds}), apply the lesser of the flare PPL and the missile flare vulnerability rating given in Table~\ref{table:missile-data} as a modifier. 
     
-    For example, consider an AIM-9D missile attacking an aircraft using an active DDS. \ref{table:missile-data} gives a flare vulnerability rating of 5. If the target’s flare PPL is 3, the modifier is $+3$ (limited by the PPL), but if the target’s flare PPL is 6, the modifier is $+5$ (limited by the flare vulnerability rating).
+    For example, consider an AIM-9D missile attacking an aircraft using an active DDS. \ref{table:missile-data} gives a flare vulnerability rating of 5. If the target’s flare PPL is 3, the modifier is \plus{3} (limited by the PPL), but if the target’s flare PPL is 6, the modifier is \plus{5} (limited by the flare vulnerability rating).
 
     \item If the target has an IRM jamming pod (see advanced rule~\ref{rule:infrared-jammers}), apply the modifier that is appropriate for the arc of the missile attack.
 \end{itemize}
@@ -261,7 +261,7 @@ The simple vertical limits given above in the launch requirements (rule
 
 The earliest infrared seekers were caged before launch, and so lock-up required the aircraft maneuver to point the missile almost directly at the target. Later generations allowed the seeker to be uncaged before launch and scan a wider field for targets. Various technologies have been developed to assist the lock-up by directing the seeker to search in specific directions, and these are described in this advanced rule.
 
-\paragraph{Helmet-Mounted Sights (HMS) Technology.}\label{rule:irm-hms} Modern aircraft can be equipped with helmet-mounted sights (see the technology section of the ADC). A HMS allows a pilot launching an uncaged IRM to attempt a lock-up against any one sighted enemy aircraft in the launching aircraft's \arcrange{150}{+} arc, significantly expanding the uncaged missile's launch field-of-view. The lock-up succeeds on an unmodified roll of $9-$, regardless of any closer or equally close aircraft. If the lock-up attempt falls, the missile may not be launched.
+\paragraph{Helmet-Mounted Sights (HMS) Technology.}\label{rule:irm-hms} Modern aircraft can be equipped with helmet-mounted sights (see the technology section of the ADC). A HMS allows a pilot launching an uncaged IRM to attempt a lock-up against any one sighted enemy aircraft in the launching aircraft's \arcrange{150}{+} arc, significantly expanding the uncaged missile's launch field-of-view. The lock-up succeeds on an unmodified roll of \minusafter{9}, regardless of any closer or equally close aircraft. If the lock-up attempt falls, the missile may not be launched.
 
 \paragraph{Radar-Assisted Seeker Lock-Ups.}\label{rule:irm-radar} In the aircraft decisions phase, an aircraft may tie its uncaged IRMs to its radar (see  rule~\ref{rule:air-to-air-radar}). The launch field-of-view of the missile is the narrower of the field-of-view of the radar and the \arcrange{150}{+} arc. The aircraft may then lock-up its missiles on any target in the launch field of view with a radar lock-on. The lock-ups succeed automatically, regardless of other aircraft in the missile's field-of-view. IRMs may be fired against unsighted targets this way.
 
@@ -315,7 +315,7 @@ Note: With these rules it is possible to lock-up and launch at targets beyond th
 
 
 
-\paragraph{IRM Launches Inside Minimum Envelope Range.} An IRM may be launched at a target inside its minimum envelope range. However, range 0 launches are not allowed and range 1 launches for IRMs that are not instant-arming automatically fail. The launch die roll has a modifier of $+3$.
+\paragraph{IRM Launches Inside Minimum Envelope Range.} An IRM may be launched at a target inside its minimum envelope range. However, range 0 launches are not allowed and range 1 launches for IRMs that are not instant-arming automatically fail. The launch die roll has a modifier of \plus{3}.
 
 \paragraph{IRM Launches Beyond Maximum Envelope Range.}
 IRMs with type A seekers can lock-up and launch at targets beyond their usual maximum envelope ranges:
@@ -323,7 +323,7 @@ IRMs with type A seekers can lock-up and launch at targets beyond their usual ma
 \item If a target qualifies for a reduced envelope (see advanced rule~\ref{rule:expanded-and-reduced-irm-envelopes} above), an IRM with a type A seeker may be launched up to the normal maximum envelope range.
 \item If a target qualifies for neither a reduced nor an expanded envelope (see advanced rule~\ref{rule:expanded-and-reduced-irm-envelopes} above), an IRM with a type A seeker may be launched at up to 1.5 times the normal maximum envelope range (rounding up)
 \end{itemize}
-In both cases, the launch die roll has a modifier of $+3$. Firing beyond the envelope can result in launches at targets that exceed the missile's range.
+In both cases, the launch die roll has a modifier of \plus{3}. Firing beyond the envelope can result in launches at targets that exceed the missile's range.
 
 
 

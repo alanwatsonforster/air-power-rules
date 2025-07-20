@@ -8,12 +8,12 @@
 \begin{tabular}{lcccccccc}
 \toprule
 Visual Range in Hexes&0--3&4--6&7--9&10--12&13--15&16--20&21--30&31+\\
-Die Roll Modifier&$-2$&$-1$&$+0$&$+1$&$+2$&$+3$&$+5$&$+8$\\
+Die Roll Modifier&\minus{2}&\minus{1}&\plus{0}&\plus{1}&\plus{2}&\plus{3}&\plus{5}&\plus{8}\\
 \midrule
 \\
 \midrule
 V.A.S. Range in Hexes&0--20&21--30&31--40&41--50&51--60&61--70&71--80&81+\\
-Die Roll Modifier&$+0$&$+1$&$+2$&$+3$&$+4$&$+5$&$+6$&$+8$\\
+Die Roll Modifier&\plus{0}&\plus{1}&\plus{2}&\plus{3}&\plus{4}&\plus{5}&\plus{6}&\plus{8}\\
 \bottomrule
 \end{tabular}
 \begin{tablenote}{0.75\linewidth}
@@ -29,11 +29,11 @@ Die Roll Modifier&$+0$&$+1$&$+2$&$+3$&$+4$&$+5$&$+6$&$+8$\\
 \toprule
 Target Aircraft Position&Lower&Level&Higher&In Haze&In Stratus&Silh,\ by Cloud\\
 \midrule
-Silver          &$-2$&$-1$&$-1$&$+1$&$+3$&$-1$\\
-Uncamouflaged   &$-1$&$+0$&$+0$&$+1$&$+3$&$-1$\\
-Camouflaged     &$+1$&$+0$&$-1$&$+0$&$+3$&$-2$\\
-Low Vis.\ Gray  &$+0$&$+1$&$+1$&$+2$&$+3$&$-1$\\
-Aircraft Smoking&$-1$&$-2$&$-2$&NA&NA&NA\\
+Silver          &\minus{2}&\minus{1}&\minus{1}&\plus{1}&\plus{3}&\minus{1}\\
+Uncamouflaged   &\minus{1}&\plus{0}&\plus{0}&\plus{1}&\plus{3}&\minus{1}\\
+Camouflaged     &\plus{1}&\plus{0}&\minus{1}&\plus{0}&\plus{3}&\minus{2}\\
+Low Vis.\ Gray  &\plus{0}&\plus{1}&\plus{1}&\plus{2}&\plus{3}&\minus{1}\\
+Aircraft Smoking&\minus{1}&\minus{2}&\minus{2}&NA&NA&NA\\
 \bottomrule
 \end{tabular}
 \end{twocolumntable}
@@ -45,31 +45,31 @@ Aircraft Smoking&$-1$&$-2$&$-2$&NA&NA&NA\\
 \begin{tabularx}{\linewidth}{Xl}
 \toprule
 Number of aircraft searching:\\
-\quad 1 or 2&$+0$\\
-\quad 3 or 4&$-1$\\
-\quad 5 or 8&$-2$\\
-\quad 9+    &$-3$\\
-\textchangedin{2A}{2A-missile-sighting}{Tgt.\ is just launched Missile or SAM$^*$}{Target is a missile with a normal boost or sustainer motor burning}&$-3$\\
-\tablerowaddedin{2A}{2A-missile-sighting}{\textaddedin{2A}{2A-missile-sighting}{Target is a missile with a smokeless boost or sustainer motor burning}&\textaddedin{2A}{2A-missile-sighting}{$-1$}}
-\tablerowaddedin{2A}{2A-missile-sighting}{\textaddedin{2A}{2A-missile-sighting}{Target is a missile just launched from a spotted aircraft}&\textaddedin{2A}{2A-missile-sighting}{$-2$}}
-\textchangedin{2A}{2A-missile-sighting}{Tgt.\ is aircraft which just launched Missile$^*$}{Target just launched a missile that was spotted}&\changedin{2A}{2A-missile-sighting}{$-3$}{$-2$}\\
-\tablerowdeletedin{3A}{3A-searcher}{Tgt.\ is in all searcher's Restricted Arcs&$+2$}
-\tablerowaddedin{3A}{3A-searcher}{Target in searcher's restricted arcs&$+2$}
-Searcher is Looking out of Stratus&$+2$\\
-Searcher is Veteran and Tactics Master&$-2$\\
-Searcher is Veteran or Tactics Master&$-1$\\
-Multi-crew aircraft Searching&$-1$\\
-\changedin{2B}{2B-sighting-and-hud}{\changedin{1B}{1B-apj-25-qa/1B-apj-34-qa}{Hud Interface Technology used}{Searcher has HUD Interface Technology}}{Searcher has radar or IRSTS lock-on and HUD interface technology}&$-1$\\
-Searcher has \changedin{2B}{2B-sighting-and-other-detections}{RWR indications}{detection or lock-on from radar, IRSTS, or RWR}&$-1$\\
-Has Poor Eyes&$+1$\\
-Has Good Eyes&$-1$\\
-is Novice&$+1$\\
-is Green&$+2$\\
-Target using DDS Flare program&$+$PPL No.\\
+\quad 1 or 2&\plus{0}\\
+\quad 3 or 4&\minus{1}\\
+\quad 5 or 8&\minus{2}\\
+\quad 9+    &\minus{3}\\
+\textchangedin{2A}{2A-missile-sighting}{Tgt.\ is just launched Missile or SAM\asteriskmark}{Target is a missile with a normal boost or sustainer motor burning}&\minus{3}\\
+\tablerowaddedin{2A}{2A-missile-sighting}{\textaddedin{2A}{2A-missile-sighting}{Target is a missile with a smokeless boost or sustainer motor burning}&\textaddedin{2A}{2A-missile-sighting}{\minus{1}}}
+\tablerowaddedin{2A}{2A-missile-sighting}{\textaddedin{2A}{2A-missile-sighting}{Target is a missile just launched from a spotted aircraft}&\textaddedin{2A}{2A-missile-sighting}{\minus{2}}}
+\textchangedin{2A}{2A-missile-sighting}{Tgt.\ is aircraft which just launched Missile\asteriskmark}{Target just launched a missile that was spotted}&\changedin{2A}{2A-missile-sighting}{\minus{3}}{\minus{2}}\\
+\tablerowdeletedin{3A}{3A-searcher}{Tgt.\ is in all searcher's Restricted Arcs&\plus{2}}
+\tablerowaddedin{3A}{3A-searcher}{Target in searcher's restricted arcs&\plus{2}}
+Searcher is Looking out of Stratus&\plus{2}\\
+Searcher is Veteran and Tactics Master&\minus{2}\\
+Searcher is Veteran or Tactics Master&\minus{1}\\
+Multi-crew aircraft Searching&\minus{1}\\
+\changedin{2B}{2B-sighting-and-hud}{\changedin{1B}{1B-apj-25-qa/1B-apj-34-qa}{Hud Interface Technology used}{Searcher has HUD Interface Technology}}{Searcher has radar or IRSTS lock-on and HUD interface technology}&\minus{1}\\
+Searcher has \changedin{2B}{2B-sighting-and-other-detections}{RWR indications}{detection or lock-on from radar, IRSTS, or RWR}&\minus{1}\\
+Has Poor Eyes&\plus{1}\\
+Has Good Eyes&\minus{1}\\
+is Novice&\plus{1}\\
+is Green&\plus{2}\\
+Target using DDS Flare program&\plus{}PPL No.\\
 \bottomrule
 \end{tabularx}
 \begin{tablenote}{0.9\linewidth}
-\deletedin{2A}{2A-missile-sighting}{$^*$~does not apply to smokeless missiles.}
+\deletedin{2A}{2A-missile-sighting}{\asteriskmark~does not apply to smokeless missiles.}
 
 NOTE: All modifiers are cumulative. Disoriented or GLOC aircrew may not search.
 \end{tablenote}

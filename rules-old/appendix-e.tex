@@ -17,27 +17,27 @@ The determination of whether the distant element is within the combined arc then
 For example, consider an aircraft at an altitude of 10 attempting to detect another at a horizontal range of 5 hexes using radar with an \arcrange{180}{+} arc.
 \begin{itemize}
 \item
-If the aircraft has a flight slope of 0, Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of $-1.0$ and $+1.0$. 
+If the aircraft has a flight slope of 0, Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of \minus{1.0} and \plus{1.0}. 
 
 We see that the target is within the combined arc of the radar if it has an altitude of 5 to 15 inclusive and is within the \arcrange{180}{+} horizontal arc.
 
 \item
-If the aircraft has a flight slope of more than 0 but no more than 1 ($0 < \mbox{FS} \le 1$), Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of $-0.5$ and $+2.0$. 
+If the aircraft has a flight slope of more than 0 but no more than 1 (\binaryrelation{0 }{<}{ \mbox{FS} \le 1}), Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of \minus{0.5} and \plus{2.0}. 
 
 We see that the target is within the field of the radar if it has an altitude of 8 to 20 inclusive and is within the \arcrange{180}{+} horizontal arc.
 
 \item
-If the aircraft has a flight slope of more than 1 but no more than 3 ($1 < \mbox{FS} \le 3$), Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of $+0.5$ and $+7.0$. 
+If the aircraft has a flight slope of more than 1 but no more than 3 (\binaryrelation{1 }{<}{ \mbox{FS} \le 3}), Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of \plus{0.5} and \plus{7.0}. 
 
 We see that the target is within the field of the radar if it has an altitude of 12 to 45 inclusive and is within the \arcrange{180}{+} horizontal arc.
 
 \item
-If the aircraft has a flight slope of more than 3 but that is still finite ($3 < \mbox{FS} < +\infty$), Table~\ref{table:vertical-limit-factors} gives one mixed factor (without parentheses) of $+2.0$ and one pure factor (with parentheses) of $(+7)$.
+If the aircraft has a flight slope of more than 3 but that is still finite (\binaryrelation{3 < \mbox{FS} }{<}{ +\infinity}), Table~\ref{table:vertical-limit-factors} gives one mixed factor (without parentheses) of \plus{2.0} and one pure factor (with parentheses) of (\plus{+7}).
 
 We see that the target is within the field of the radar if it either has an altitude of 20 or more and is within the \arcrange{180}{+} horizontal arc or if it has an altitude of at least 45 and is at any horizontal position.
 
 \item
-If the aircraft in a pure vertical climb ($\mbox{FS} = +\infty$), Table~\ref{table:vertical-limit-factors} gives only one pure factor (with parentheses) of $(+3)$.
+If the aircraft in a pure vertical climb (\binaryrelation{\mbox{FS} }{=}{ +\infinity}), Table~\ref{table:vertical-limit-factors} gives only one pure factor (with parentheses) of (\plus{+3}).
 
 We see that target is within the field of the radar if it has an altitude of at least 25 and is at any horizontal position.
 

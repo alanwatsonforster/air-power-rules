@@ -372,7 +372,7 @@ If the reference element and the distant aircraft had the same speeds, then the 
 
 Ranges of horizontal arcs are used for restricted or blind regions for sighting, sensor fields of view, and determining advantage. If a range is given as an arc followed by a plus sign, it consists of those arcs and all more forward arcs. If a range is given as an arc followed by a minus sign, it consists of those arcs and all more rearward arcs. Ranges specified in this way consist of both the left and right arcs.
 
-For example, a blind arc given as $\arcrange{60}{-}$ consists the \arc{30} and \arc{60} arcs and a radar search field given as $\arcrange{150}{+}$ consists of the \arc{150} and \arc{180} arcs. 
+For example, a blind arc given as \arcrange{60}{-} consists the \arc{30} and \arc{60} arcs and a radar search field given as \arcrange{150}{+} consists of the \arc{150} and \arc{180} arcs. 
 
 \paragraph{Lower Horizontal Arcs.}
 \label{rule:lower-angle-off-arcs}
@@ -424,13 +424,13 @@ The \emph{flight slope} characterizes the vertical orientation of the reference 
 
 The flight slope is calculated over a number of FPs (defined below) as the number of altitude levels gained divided by the number of HFPs expended. 
 
-The flight slope will be positive if the element gains altitude, zero if it maintains altitude, and negative if it loses altitude. For purely vertical flight with no HFPs, the flight slope will be positive infinity ($+\infty$) for climbing or negative infinity ($-\infty$) for diving.
+The flight slope will be positive if the element gains altitude, zero if it maintains altitude, and negative if it loses altitude. For purely vertical flight with no HFPs, the flight slope will be positive infinity (\plus{\infinity}) for climbing or negative infinity (\minus{\infinity}) for diving.
 
 For an aircraft and missile prior to launch, determine the flight slope by considering all of the FPs expended by the aircraft or by the missile’s launching aircraft in the previous flight phase. 
 
 For a missile in flight, if the previous proportional move had two or more FPs, determine the flight slope by considering them all. Otherwise, if the previous proportional move only had one FP and was the first one of the missile’s flight, determine the flight slope from that FP and the last FP of the launching aircraft prior to launch. Otherwise, determine the flight slope from the missile’s last two FPs.
 
-For example, if an aircraft executes level flight with four HFPs and no free descent, its flight slope is 0. If it executes the same but with free descent, its flight slope is $-1/4 = -0.25$. If it executes a zoom climb with three HFPs and four VFPs, gaining seven altitude levels, its flight slope is $+7/3 \approx 2.33$. If it executes a vertical dive with no HFPs and six VFPs, losing twelve altitude levels, its flight slope is $-12/0 = -\infty$.
+For example, if an aircraft executes level flight with four HFPs and no free descent, its flight slope is 0. If it executes the same but with free descent, its flight slope is \minus{1/4 = -0.25}. If it executes a zoom climb with three HFPs and four VFPs, gaining seven altitude levels, its flight slope is \plus{7/3 \approx 2.33}. If it executes a vertical dive with no HFPs and six VFPs, losing twelve altitude levels, its flight slope is \minus{12/0 = -\infinity}.
 
 \paragraph{Combined Arcs Procedure.}
 

@@ -6,139 +6,6 @@
 
 \tablecaption{table:vertical-limit-factors}{Vertical Limit Factors}
 
-%\begin{tabularx}{0.8\linewidth}{r@{ FS }lRLRLRLRL}
-%\toprule
-%\multicolumn{2}{c}{Flight Slope (FS)}&
-%\multicolumn{2}{c}{Limited}&
-%\multicolumn{2}{c}{\arcrange{180}{+}}&
-%\multicolumn{2}{c}{\arcrange{150}{+}}&
-%\multicolumn{2}{c}{\arcrange{120}{+}}\\
-%\midrule
-%           &$= +\infty$&
-%    \multicolumn{2}{c}{$(+7)$}  &
-%    \multicolumn{2}{c}{$(+3)$}  &
-%    \multicolumn{2}{c}{$(+2)$}  &
-%    \multicolumn{2}{c}{$(+1)$}  \\
-%$+3 <$     &$< +\infty$&
-%    $+3.0$&$+\infty$            &
-%    $+2.0$&$(+7)$               &
-%    $+1.0$&$(+3)$               &
-%    $+0.5$&$(+2)$               \\
-%$+1 <$     &$\le +3$   &
-%    $+1.0$&$+3.0$               &
-%    $+0.5$&$+7.0$               &
-%    $+0.0$&$+\infty$            &
-%    $-0.5$&$(+7)$                \\
-%$0 <$      &$\le +1$   &
-%    $+0.0$&$+1.0$               &
-%    $-0.5$&$+2.0$               &
-%    $-1.0$&$+3.0$               &
-%    $-2.0$&$+7.0$               \\
-%           &$= 0$      &
-%    $-0.5$&$+0.5$               &
-%    $-1.0$&$+1.0$               &
-%    $-2.0$&$+2.0$               &
-%    $-3.0$&$+3.0$               \\
-%$-1\le$    &$<0$       &
-%    $-1.0$&$+0.0$               &
-%    $-2.0$&$+0.5$               &
-%    $-3.0$&$+1.0$               &
-%    $-7.0$&$+2.0$               \\
-%$-3 \le$   &$<-1$      &
-%    $-3.0$&$-1.0$               &
-%    $-7.0$&$-0.5$               &
-%    \wbox[l]{$+0.0$}{$-\infty$}&$+0.0$            &
-%    $(-7)$&$+0.5$               \\
-%$-\infty <$&$<-3$      &
-%    \wbox[l]{$+0.0$}{$-\infty$}&$-3.0$            &
-%    $(-7)$&$-2.0$               &
-%    $(-3)$&$-1.0$               &
-%    $(-2)$&$-0.5$               \\
-%           &$= -\infty$&
-%    \multicolumn{2}{c}{$(-7)$}  &
-%    \multicolumn{2}{c}{$(-3)$}  &
-%    \multicolumn{2}{c}{$(-2)$}  &
-%    \multicolumn{2}{c}{$(-1)$}  \\
-%\bottomrule
-%\end{tabularx}
-%
-%\smallskip
-%
-%\begin{tablenote}{0.8\linewidth}\small
-%\begin{itemize}
-%
-%\item
-%Flight slope (FS) = altitude levels gained divided by HFPs.
-%
-%\item
-%Multiply the vertical limit factors by the horizontal range to determine the allowed altitude difference. After multiplication, lower limits are rounded up and upper limits are rounded down. 
-%
-%\item
-%Factors without parentheses are mixed and require the distant element to also be within the corresponding horizontal arc. Factors with parentheses are pure and do not require the distant element to be with the corresponding horizontal arc. 
-%
-%\item
-%If two mixed factors are given, the first is for the lower limit and the second for the upper limit. If a mixed and a pure factor are given, then they are both either lower limits ($\mbox{FS} > 0$) or upper limits ($\mbox{FS} < 0$). If only a single pure factor is given, it is either a lower limit ($\mbox{FS} > 0$) or an upper limit ($\mbox{FS} < 0$).
-%\end{itemize}
-%\end{tablenote}
-
-%\small
-%\begin{tabularx}{0.9\linewidth}{r@{ FS }lR@{ }c@{ }LR@{ }c@{ }LR@{ }c@{ }LR@{ }c@{ }L}
-%\toprule
-%\multicolumn{2}{c}{Flight Slope (FS)}&
-%\multicolumn{3}{c}{Limited}&
-%\multicolumn{3}{c}{\arcrange{180}{+}}&
-%\multicolumn{3}{c}{\arcrange{150}{+}}&
-%\multicolumn{3}{c}{\arcrange{120}{+}}\\
-%\midrule
-%           &$= +\infty$&
-%    \multicolumn{3}{c}{$\ge(+7)$}  &
-%    \multicolumn{3}{c}{$\ge(+3)$}  &
-%    \multicolumn{3}{c}{$\ge(+2)$}  &
-%    \multicolumn{3}{c}{$\ge(+1)$}  \\
-%$+3 <$     &$< +\infty$&
-%    \multicolumn{3}{c}{$\ge+3.0$}      &
-%    $\ge+2.0$&or &$\ge(+7)$            &
-%    $\ge+1.0$&or &$\ge(+3)$            &
-%    $\ge+0.5$&or &$\ge(+2)$            \\
-%$+1 <$     &$\le +3$   &
-%    $\ge+1.0$&and&$\le+3.0$            &
-%    $\ge+0.5$&and&$\le+7.0$            &
-%    \multicolumn{3}{c}{$\ge+0.0$}      &
-%    $\ge-0.5$&or&$\ge(+7)$             \\
-%$0 <$      &$\le +1$   &
-%    $\ge+0.0$&and&$\le+1.0$            &
-%    $\ge-0.5$&and&$\le+2.0$            &
-%    $\ge-1.0$&and&$\le+3.0$            &
-%    $\ge-2.0$&and&$\le+7.0$            \\
-%           &$= 0$      &
-%    $\ge-0.5$&and&$\le+0.5$            &
-%    $\ge-1.0$&and&$\le+1.0$            &
-%    $\ge-2.0$&and&$\le+2.0$            &
-%    $\ge-3.0$&and&$\le+3.0$            \\
-%$0 >$       &$\ge -1$       &
-%    $\le+0.0$&and&$\ge-1.0$            &
-%    $\le+0.5$&and&$\ge-2.0$            &
-%    $\le+1.0$&and&$\ge-3.0$            &
-%    $\le+2.0$&and&$\ge-7.0$            \\
-%$-1 >$     &$\ge -3$      &
-%    $\le-1.0$&and&$\ge-3.0$            &
-%    $\le-0.5$&and&$\ge-7.0$            &
-%    \multicolumn{3}{c}{$\le+0.0$}      &
-%    $\le+0.5$&or &$\le(-7)$            \\
-%$-3 >$&$>-\infty$      &
-%    \multicolumn{3}{c}{$\le-3.0$}      &
-%    $\le-2.0$&or &$\le(-7)$            &
-%    $\le-1.0$&or &$\le(-3)$            &
-%    $\le-0.5$&or &$\le(-2)$            \\
-%           &$= -\infty$&
-%    \multicolumn{3}{c}{$\le(-7)$}  &
-%    \multicolumn{3}{c}{$\le(-3)$}  &
-%    \multicolumn{3}{c}{$\le(-2)$}  &
-%    \multicolumn{3}{c}{$\le(-1)$}  \\
-%\midrule
-%\bottomrule
-%\end{tabularx}
-
 \footnotesize
 \begin{tabularx}{0.9\linewidth}{r@{ FS }lR@{ }c@{ }LR@{ }c@{ }LR@{ }c@{ }LR@{ }c@{ }Lr@{ FS }l}
 \toprule
@@ -149,60 +16,60 @@
 \multicolumn{3}{c}{\arcrange{120}{+} and \arcrange{90}{-}}&
 \multicolumn{2}{c}{\minitable{c}{Flight Slope (FS)\\for Rearward Arcs}}\\
 \midrule
-           &$= +\infty$&
-    \multicolumn{3}{c}{$\ge(+7)$}  &
-    \multicolumn{3}{c}{$\ge(+3)$}  &
-    \multicolumn{3}{c}{$\ge(+2)$}  &
-    \multicolumn{3}{c}{$\ge(+1)$}  &
-            &$=-\infty$\\
-$+3 <$     &$< +\infty$&
-    \multicolumn{3}{c}{$\ge+3.0$}      &
-    $\ge+2.0$&or &$\ge(+7)$            &
-    $\ge+1.0$&or &$\ge(+3)$            &
-    $\ge+0.5$&or &$\ge(+2)$            &
-$-3 >$     &$> -\infty$\\
-$+1 <$     &$\le +3$   &
-    $\ge+1.0$&and&$\le+3.0$            &
-    $\ge+0.5$&and&$\le+7.0$            &
-    \multicolumn{3}{c}{$\ge+0.0$}      &
-    $\ge-0.5$&or&$\ge(+7)$             &
-$-1 >$     &$\ge -3$   \\
-$0 <$      &$\le +1$   &
-    $\ge+0.0$&and&$\le+1.0$            &
-    $\ge-0.5$&and&$\le+2.0$            &
-    $\ge-1.0$&and&$\le+3.0$            &
-    $\ge-2.0$&and&$\le+7.0$            &
-$0 >$       &$\ge -1$  \\
-           &$= 0$      &
-    $\ge-0.5$&and&$\le+0.5$            &
-    $\ge-1.0$&and&$\le+1.0$            &
-    $\ge-2.0$&and&$\le+2.0$            &
-    $\ge-3.0$&and&$\le+3.0$            &
-           &$= 0$      \\
-$0 >$       &$\ge -1$       &
-    $\le+0.0$&and&$\ge-1.0$            &
-    $\le+0.5$&and&$\ge-2.0$            &
-    $\le+1.0$&and&$\ge-3.0$            &
-    $\le+2.0$&and&$\ge-7.0$            &
-$0 <$      &$\le +1$   \\
-$-1 >$     &$\ge -3$      &
-    $\le-1.0$&and&$\ge-3.0$            &
-    $\le-0.5$&and&$\ge-7.0$            &
-    \multicolumn{3}{c}{$\le+0.0$}      &
-    $\le+0.5$&or &$\le(-7)$            &
-$+1 <$     &$\le +3$   \\
-$-3 >$&$>-\infty$      &
-    \multicolumn{3}{c}{$\le-3.0$}      &
-    $\le-2.0$&or &$\le(-7)$            &
-    $\le-1.0$&or &$\le(-3)$            &
-    $\le-0.5$&or &$\le(-2)$            &
-$+3 <$     &$< +\infty$\\
-           &$= -\infty$&
-    \multicolumn{3}{c}{$\le(-7)$}  &
-    \multicolumn{3}{c}{$\le(-3)$}  &
-    \multicolumn{3}{c}{$\le(-2)$}  &
-    \multicolumn{3}{c}{$\le(-1)$}  &
-            &$=+\infty$\\
+           &= \plus{\infinity}&
+    \multicolumn{3}{c}{\greaterthanorequaltobefore{(\plus{7})}}  &
+    \multicolumn{3}{c}{\greaterthanorequaltobefore{(\plus{3})}}  &
+    \multicolumn{3}{c}{\greaterthanorequaltobefore{(\plus{2})}}  &
+    \multicolumn{3}{c}{\greaterthanorequaltobefore{(\plus{1})}}  &
+            &= \minus{\infinity}\\
+\plus{3} <     &\lessthanbefore{\plus{\infinity}}&
+    \multicolumn{3}{c}{\greaterthanorequaltobefore{\plus{3.0}}}      &
+    \greaterthanorequaltobefore{\plus{2.0}}&or &\greaterthanorequaltobefore{(\plus{7})}            &
+    \greaterthanorequaltobefore{\plus{1.0}}&or &\greaterthanorequaltobefore{(\plus{3})}            &
+    \greaterthanorequaltobefore{\plus{0.5}}&or &\greaterthanorequaltobefore{(\plus{2})}            &
+\minus{3} >     &\greaterthanbefore{\minus{\infinity}}\\
+\plus{1} <     &\lessthanorequaltobefore{\plus{3}}   &
+    \greaterthanorequaltobefore{\plus{1.0}}&and&\lessthanorequaltobefore{\plus{3.0}}            &
+    \greaterthanorequaltobefore{\plus{0.5}}&and&\lessthanorequaltobefore{\plus{7.0}}            &
+    \multicolumn{3}{c}{\greaterthanorequaltobefore{\plus{0.0}}}      &
+    \greaterthanorequaltobefore{\minus{0.5}}&or&\greaterthanorequaltobefore{(\plus{7})}             &
+\minus{1 >}     &\greaterthanorequaltobefore{\minus{3}}   \\
+0 <      &\lessthanorequaltobefore{\plus{1}}   &
+    \greaterthanorequaltobefore{\plus{0.0}}&and&\lessthanorequaltobefore{\plus{1.0}}            &
+    \greaterthanorequaltobefore{\minus{0.5}}&and&\lessthanorequaltobefore{\plus{2.0}}            &
+    \greaterthanorequaltobefore{\minus{1.0}}&and&\lessthanorequaltobefore{\plus{3.0}}            &
+    \greaterthanorequaltobefore{\minus{2.0}}&and&\lessthanorequaltobefore{\plus{7.0}}            &
+0 >       &\greaterthanorequaltobefore{\minus{1}}  \\
+           &= 0      &
+    \greaterthanorequaltobefore{\minus{0.5}}&and&\lessthanorequaltobefore{\plus{0.5}}            &
+    \greaterthanorequaltobefore{\minus{1.0}}&and&\lessthanorequaltobefore{\plus{1.0}}            &
+    \greaterthanorequaltobefore{\minus{2.0}}&and&\lessthanorequaltobefore{\plus{2.0}}            &
+    \greaterthanorequaltobefore{\minus{3.0}}&and&\lessthanorequaltobefore{\plus{3.0}}            &
+           &= 0      \\
+0 >       &\greaterthanorequaltobefore{\minus{1}}       &
+    \lessthanorequaltobefore{\plus{0.0}}&and&\greaterthanorequaltobefore{\minus{1.0}}            &
+    \lessthanorequaltobefore{\plus{0.5}}&and&\greaterthanorequaltobefore{\minus{2.0}}            &
+    \lessthanorequaltobefore{\plus{1.0}}&and&\greaterthanorequaltobefore{\minus{3.0}}            &
+    \lessthanorequaltobefore{\plus{2.0}}&and&\greaterthanorequaltobefore{\minus{7.0}}            &
+0 <      &\lessthanorequaltobefore{\plus{1}}   \\
+\minus{1 >}     &\greaterthanorequaltobefore{\minus{3}}      &
+    \lessthanorequaltobefore{\minus{1.0}}&and&\greaterthanorequaltobefore{\minus{3.0}}            &
+    \lessthanorequaltobefore{\minus{0.5}}&and&\greaterthanorequaltobefore{\minus{7.0}}            &
+    \multicolumn{3}{c}{\lessthanorequaltobefore{\plus{0.0}}}      &
+    \lessthanorequaltobefore{\plus{0.5}}&or &\lessthanorequaltobefore{(\minus{7})}            &
+\plus{1} <     &\lessthanorequaltobefore{\plus{3}}   \\
+\minus{3 >}&>\minus{\infinity}      &
+    \multicolumn{3}{c}{\lessthanorequaltobefore{\minus{3.0}}}      &
+    \lessthanorequaltobefore{\minus{2.0}}&or &\lessthanorequaltobefore{(\minus{7})}            &
+    \lessthanorequaltobefore{\minus{1.0}}&or &\lessthanorequaltobefore{(\minus{3})}            &
+    \lessthanorequaltobefore{\minus{0.5}}&or &\lessthanorequaltobefore{(\minus{2})}            &
+\plus{3} <     &\lessthanbefore{\plus{\infinity}}\\
+           &= \minus{\infinity}&
+    \multicolumn{3}{c}{\lessthanorequaltobefore{(\minus{7})}}  &
+    \multicolumn{3}{c}{\lessthanorequaltobefore{(\minus{3})}}  &
+    \multicolumn{3}{c}{\lessthanorequaltobefore{(\minus{2})}}  &
+    \multicolumn{3}{c}{\lessthanorequaltobefore{(\minus{1})}}  &
+            &= \plus{\infinity}\\
 \bottomrule
 \end{tabularx}
 
@@ -217,7 +84,7 @@ Flight slope (FS) = altitude levels gained divided by HFPs.
 \item Forward arcs are the limited, \arcrange{180}{+}, \arcrange{150}{+}, and \arcrange{120}{+} arcs. Rearward arcs are the \arcrange{30}{-},  \arcrange{60}{-}, and  \arcrange{90}{-} arcs. 
 
 \item
-Multiply the vertical limit factors by the horizontal range to determine the allowed altitude difference. After multiplication, lower limits ($\ge$) are rounded up and upper limits $(\le$) are rounded down. 
+Multiply the vertical limit factors by the horizontal range to determine the allowed altitude difference. After multiplication, lower limits (≥) are rounded up and upper limits (≤) are rounded down. 
 
 \item
 Factors without parentheses are mixed and require the distant element to also be within the corresponding horizontal arc. Factors with parentheses are pure and do not require the distant element to be with the corresponding horizontal arc. 

@@ -57,14 +57,14 @@ Many of the rules are modified by aircraft properties. The body of this document
 This section briefly lists what I consider to be the major changes between {\AirSup} and {\AirPow}. These  typically introduce new game mechanics, eliminate old ones, or drastically change the practice of an existing one. The main body of the text gives more detailed descriptions of these changes.
 
 \begin{itemize}
-    \item If an aircraft changes from level flight to climbing of diving flight, it must expend at least one HFP before expending a VFP. If it changes from climbing flight to diving flight or vice versa, it must expend $1/2$ of its speed as HFPs before expending a VFP.
+    \item If an aircraft changes from level flight to climbing of diving flight, it must expend at least one HFP before expending a VFP. If it changes from climbing flight to diving flight or vice versa, it must expend 1/2 of its speed as HFPs before expending a VFP.
     \item Increasing speed by 0.5 requires 2 APs at subsonic speeds and 3 APs at supersonic speeds. Decreasing speed by 0.5 requires 2 DPs. Any remaining APs and DPs are carried into the next game-turn.
     \item Selecting idle power no longer immediately reduces the start speed. Using speedbrakes no longer eliminates FPs. Instead, both simply contribute DPs.
     \item The procedure for sustained climbs is now quite similar to the one for zoom climbs, except for determining the number of levels gained per VFP and the number of DPs.
     \item Unloaded dives are now a type of diving flight, but the rule as written offers no apparent advantage over a steep dive.
-    \item On the turn after a vertical dive, an aircraft must select diving flight, and at least $1/2$ of its FPs must be VFPs.
-    \item After a turn or a maneuver, the negative effects persist until FPs equal to $1/2$ the aircraft's speed have been expended, turning at a lower rate and neither maneuvering nor preparing for a maneuver.
-    \item Preparatory FPs equal to $1/3$ of the aircraft's speed are required before a lag or displacement roll.
+    \item On the turn after a vertical dive, an aircraft must select diving flight, and at least 1/2 of its FPs must be VFPs.
+    \item After a turn or a maneuver, the negative effects persist until FPs equal to 1/2 the aircraft's speed have been expended, turning at a lower rate and neither maneuvering nor preparing for a maneuver.
+    \item Preparatory FPs equal to 1/3 of the aircraft's speed are required before a lag or displacement roll.
     \item A half-roll and dive can be used to enter: a vertical dive from level flight; a vertical dive from a zoom or sustained climb if the aircraft speed is 4.0 or less; and a steep dive from a vertical climb.
     \item Snap turns are no longer permitted.
 \end{itemize}
@@ -99,7 +99,7 @@ There are no significant changes.
 
 \paragraph{Speedbrakes} Speedbrakes do not eliminate FPs but rather simply give DPs. See below.
 
-\paragraph{Changing Flight Type} This is a new rule to represent the time required to change the pitch of an aircraft. If an aircraft chooses climbing or diving flight and used level flight on the previous game-turn, at least one HFP must be expended before the first VFP. If an aircraft chooses climbing or diving flight and used the opposite on the previous game-turn, then HFPs equal to $1/2$ of the aircraft's speed, rounded down, must be expended before the first VFP. 
+\paragraph{Changing Flight Type} This is a new rule to represent the time required to change the pitch of an aircraft. If an aircraft chooses climbing or diving flight and used level flight on the previous game-turn, at least one HFP must be expended before the first VFP. If an aircraft chooses climbing or diving flight and used the opposite on the previous game-turn, then HFPs equal to 1/2 of the aircraft's speed, rounded down, must be expended before the first VFP. 
 
 \subsection{Rule 6: Changing Speed}
 
@@ -127,11 +127,11 @@ For example, if a subsonic aircraft has 3.5 APs, its speed increases by 0.5, and
 
 For example, if an aircraft starts to turn in one game-turn but does not change facing, carries the turn into the next game-turn, and then does change facing, it gains DPs in both game-turns.
 
-\paragraph{Sustained Turns} In sustained turns, for each facing change after the first, the aircraft gains 1 DP for each $30\deg$ of facing change. 
+\paragraph{Sustained Turns} In sustained turns, for each facing change after the first, the aircraft gains 1 DP for each \degrees{0} of facing change. 
 
-For example, an aircraft that performs two facing changes of 60 degrees each would receive 2 DPs for sustained turning (since the second turn has two $30\deg$ facing changes).
+For example, an aircraft that performs two facing changes of 60 degrees each would receive 2 DPs for sustained turning (since the second turn has two \degrees{0} facing changes).
 
-\paragraph{Tighter Turns} If an aircraft is slow enough and turns at a sufficiently hard rate, the turn chart allows it to change facing by $90\deg$ per FP. 
+\paragraph{Tighter Turns} If an aircraft is slow enough and turns at a sufficiently hard rate, the turn chart allows it to change facing by \degrees{0} per FP. 
 
 \subsection{Rule 8: Changing Altitude}
 
@@ -143,19 +143,19 @@ For example, an aircraft that performs two facing changes of 60 degrees each wou
 \hline
 Flight Type&Condition& VFPs & HFPs & Levels per VFP& AP/DP per Level\\
 \hline
-ZC& $\CC ≤ 2$           &$≥1$                   &$≥1/3$ of FPs   &1                            &1.0\\
-  & $2 < \CC < 6$       &$≥1$                   &$≥1/3$ of FPs   &1 or 2                       &1.0\\
-  & $6 ≤ \CC$           &$≥1$                   &$≥1/3$ of FPs   &1, 2, or 3 on one and 1 or 2 on rest         &1.0\\
-SC& $\CC < 1$           &1                      &All FPs except 1&CC                           &0.5\\
-  & $1 ≤ \CC ≤ 2$       &$≥1$ and $≤2/3$ of FPs &$≥1/3$ of FPs   &$\CC-1$ on first and 1 on rest &0.5 to CC and then 1.0\\
-  & $2 < \CC < 6$       &$≥1$ and $≤2/3$ of FPs &$≥1/3$ of FPs   &1 or 2                       &0.5 to CC and then 1.0\\
-  & $6 < \CC$           &$≥1$ and $≤2/3$ of FPs &$≥1/3$ of FPs   &1, 2, or 3 on one and 1 or 2 on rest&0.5 to CC and then 1.0\\
-VC&First game-turn      &$2/3$ of FPs           &$1/3$ of FPs    &1 or 2                       &1.5\\
-  &Subsequent game-turns&$≥2/3$ of FPs          &$≤1/3$ of FPs   &1 or 2                       &1.5\\
+ZC& \binaryrelation{\CC }{≤}{ 2}           &≥1                   &≥1/3 of FPs   &1                            &1.0\\
+  & \binaryrelation{2 < \CC }{<}{ 6}       &≥1                   &≥1/3 of FPs   &1 or 2                       &1.0\\
+  & \binaryrelation{6 }{≤}{ \CC}           &≥1                   &≥1/3 of FPs   &1, 2, or 3 on one and 1 or 2 on rest         &1.0\\
+SC& \binaryrelation{\CC }{<}{ 1}           &1                      &All FPs except 1&CC                           &0.5\\
+  & \binaryrelation{1 ≤ \CC }{≤}{ 2}       &≥1 and ≤2/3 of FPs &≥1/3 of FPs   &\binaryminus{\CC}{1} on first and 1 on rest &0.5 to CC and then 1.0\\
+  & \binaryrelation{2 < \CC }{<}{ 6}       &≥1 and ≤2/3 of FPs &≥1/3 of FPs   &1 or 2                       &0.5 to CC and then 1.0\\
+  & \binaryrelation{6 }{<}{ \CC}           &≥1 and ≤2/3 of FPs &≥1/3 of FPs   &1, 2, or 3 on one and 1 or 2 on rest&0.5 to CC and then 1.0\\
+VC&First game-turn      &2/3 of FPs           &1/3 of FPs    &1 or 2                       &1.5\\
+  &Subsequent game-turns&≥2/3 of FPs          &≤1/3 of FPs   &1 or 2                       &1.5\\
 \hline
-SD&                     &$≥1$                   &$≥1/3$ of FPs   &1 or 2                       &1.0\\
-VD&First game-turn      &$2/3$ of FPs           &$1/3$ of FPs    &2 or 3                       &1.0\\
-  &Subsequent game-turns&$≥2/3$ of FPs          &$≤1/3$ of FPs   &2 or 3                       &1.0\\
+SD&                     &≥1                   &≥1/3 of FPs   &1 or 2                       &1.0\\
+VD&First game-turn      &2/3 of FPs           &1/3 of FPs    &2 or 3                       &1.0\\
+  &Subsequent game-turns&≥2/3 of FPs          &≤1/3 of FPs   &2 or 3                       &1.0\\
 \hline
 \end{tabular}
 \end{table*}
@@ -181,7 +181,7 @@ For example, if an aircraft has a CC of 2 and gains 4 levels, it will incur 3.0 
 
 \paragraph{Superclimbs} If an aircraft with a CC of 6 or more performs a zoom climb or sustained climb, it may use one of its VFPs to gain 3 levels.
 
-\paragraph{Supersonic Climbs} If an aircraft climbs at supersonic speed, its CC is reduced to $2/3$ of the normal value.
+\paragraph{Supersonic Climbs} If an aircraft climbs at supersonic speed, its CC is reduced to 2/3 of the normal value.
 
 \paragraph{Steep Dives} There is no requirement to lose at least two levels. Each level lost incurs 1.0 APs.
 
@@ -189,13 +189,13 @@ For example, if an aircraft has a CC of 2 and gains 4 levels, it will incur 3.0 
 
 \paragraph{Vertical Dives} On the first game-turn of a vertical dive, 1/3 of the FPs are HFPs and the remainder are VFPs. On subsequent game-turns of a vertical dive, at most 1/3 of the FPs can be HFPs, but all of the FPs may be VFPs.
 
-\paragraph{Recovery from a Vertical Dive} If an aircraft performed a vertical dive on the previous turn and has a speed of 2.0 or less, it may select level flight. Otherwise, it must choose diving flight. If it chooses a steep dive, at least $1/2$ of its FPs (rounding down) must be VFPs.
+\paragraph{Recovery from a Vertical Dive} If an aircraft performed a vertical dive on the previous turn and has a speed of 2.0 or less, it may select level flight. Otherwise, it must choose diving flight. If it chooses a steep dive, at least 1/2 of its FPs (rounding down) must be VFPs.
 
 \paragraph{Free Descent} Gradual descent in level flight is now called free descent. It can occur after any FP.
 
 \subsection{Rule 9: Air-to-Air Gun Combat}
 
-\paragraph{Head-On Gun Attacks} Aircraft may return fire to attacks when both aircraft are on the $180\deg$ line of the other, provided the aircraft returning fire does not exceed 2 gun attacks per game-turn, is not using or recovering from an ET, and satisfies the higher/lower target restrictions.
+\paragraph{Head-On Gun Attacks} Aircraft may return fire to attacks when both aircraft are on the \degrees{0} line of the other, provided the aircraft returning fire does not exceed 2 gun attacks per game-turn, is not using or recovering from an ET, and satisfies the higher/lower target restrictions.
 
 \paragraph{Snap Shots} The modifier for a snap shot is +1.
 
@@ -207,17 +207,17 @@ This procedure is also used for initiative and sighting, with the aircraft poten
 
 \paragraph{Aborting Attacks} After calculating the modified to-hit roll, a player may choose to abort an attack. This uses no ammunition but does use one of the aircraft's two gun attacks for the turn.
 
-\paragraph{Recovery} If an aircraft performs turning flight or a rolling maneuver, the restrictions and modifiers associated with that turn last until the end of a recovery period. The recovery period starts as soon as the aircraft stops turning flight and lasts until it has expended $1/2$ of its speed (rounded down) at a lower turn rate and neither maneuvering nor preparing for maneuvering. 
+\paragraph{Recovery} If an aircraft performs turning flight or a rolling maneuver, the restrictions and modifiers associated with that turn last until the end of a recovery period. The recovery period starts as soon as the aircraft stops turning flight and lasts until it has expended 1/2 of its speed (rounded down) at a lower turn rate and neither maneuvering nor preparing for maneuvering. 
 
 If an aircraft is recovering from an ET, it cannot conduct gun attacks and cannot accumulate FPs for SSGT. If an aircraft is recovering from a lesser turn rate or a rolling maneuver, it can conduct gun attacks with the corresponding gunsight turn rate modifier and accumulate FPs for SSGT. For gunsight modifiers, a rolling maneuver counts as a BT turn.
 
 For example, an aircraft has a speed of 7. On its first FP, it turns at the ET rate and then stops turning. The recovery period lasts 3 FPs. The aircraft cannot conduct gun attacks or begin to accumulate FPs for SSGT after expending its fourth FP. If, on its first FP, it turns at the BT rate, then it may immediately conduct gun attacks and begin to accumulate FPs for SSGT. However, attacks, before it has expended its fourth FP, will be with the gunsight modifier for the BT rate.
 
-\paragraph{SSGT} For an FP to count for SSGT, the attacker must be in the $60\deg$ arc of the target, must be on an SSGT tracking line,  must have the target in its limited arc, and must be within 6 hexes of the target. For each $1/3$ of its speed expended as FPs while tracking, the aircraft gains a $-1$ modifier. The maximum SSGT modifier is $-2$.
+\paragraph{SSGT} For an FP to count for SSGT, the attacker must be in the \degrees{0} arc of the target, must be on an SSGT tracking line,  must have the target in its limited arc, and must be within 6 hexes of the target. For each 1/3 of its speed expended as FPs while tracking, the aircraft gains a \minus{1} modifier. The maximum SSGT modifier is \minus{2}.
 
-\paragraph{Vertical Modifiers} If an aircraft in climbing or diving flight conducts an attack on an aircraft in level flight, it suffers a $+1$ modifier. If an aircraft in climbing flight conducts an attack on an aircraft in diving flight or vice versa, it suffers a $+2$ modifier.
+\paragraph{Vertical Modifiers} If an aircraft in climbing or diving flight conducts an attack on an aircraft in level flight, it suffers a \plus{1} modifier. If an aircraft in climbing flight conducts an attack on an aircraft in diving flight or vice versa, it suffers a \plus{2} modifier.
 
-\paragraph{Gun Pods} If an aircraft achieves a hit with its internal guns and one or more external gun pods or with two or more external guns, the effective damage rating is the highest of those that hit and is increased by $+1$ for each additional hit.
+\paragraph{Gun Pods} If an aircraft achieves a hit with its internal guns and one or more external gun pods or with two or more external guns, the effective damage rating is the highest of those that hit and is increased by \plus{1} for each additional hit.
 
 \subsection{Rule 10: Aircraft Damage}
 
@@ -312,7 +312,7 @@ attack.\\
 
 \paragraph{Initiative Rolls} Each side makes one initiative roll and uses the result for all of its aircraft.
 
-\paragraph{Advantage} The rules for advantage are slightly different. For an aircraft to be advantaged over another aircraft, it needs the other aircraft to be: in its $150\deg$ or {180\deg} arcs; within 9 hexes; not more than 6 levels above; and not more than 9 levels below. Aircraft in vertical climbs cannot be advantaged over aircraft at the same level or lower. Aircraft in vertical dives cannot be advantages over aircraft at the same level or higher. Aircraft in the same hex or hexside, regardless of altitude, have no effect on each other for advantage, unless one is tailing the other.
+\paragraph{Advantage} The rules for advantage are slightly different. For an aircraft to be advantaged over another aircraft, it needs the other aircraft to be: in its \degrees{0} or {180\deg} arcs; within 9 hexes; not more than 6 levels above; and not more than 9 levels below. Aircraft in vertical climbs cannot be advantaged over aircraft at the same level or lower. Aircraft in vertical dives cannot be advantages over aircraft at the same level or higher. Aircraft in the same hex or hexside, regardless of altitude, have no effect on each other for advantage, unless one is tailing the other.
 
 \paragraph{Defensive Preemptions} An aircraft may preempt the normal order of flight once per game-turn by moving before it usually would. This is allowed only when a sighted enemy aircraft, which has a lower initiative or is in a lower position of advantage category, is moving or about to move, and is threatening it with gunfire. The full procedure is described in section 12.4.
 
@@ -322,11 +322,11 @@ attack.\\
 
 \paragraph{Supersonic Effects} If an aircraft is supersonic, 1 additional preparatory FP is required.
 
-\paragraph{Rolling Maneuvers} The preparatory requirement for lag and displacement roll maneuvers is $1/3$ of the aircraft's speed. If more than one lag, displacement, or vertical roll is executed in a game-turn, the aircraft incurs 1.0 additiona DP for each roll after the first.
+\paragraph{Rolling Maneuvers} The preparatory requirement for lag and displacement roll maneuvers is 1/3 of the aircraft's speed. If more than one lag, displacement, or vertical roll is executed in a game-turn, the aircraft incurs 1.0 additiona DP for each roll after the first.
 
 \paragraph{High-Altitude Rolls} An aircraft executing a rolling maneuver in the EH or higher bands risks a maneuvering departure.
 
-\paragraph{Half-Roll and Dive Maneuver} An HRD maneuver may be used to: enter a vertical dive from level flight; enter a vertical dive from a zoom or sustained climb if the aircraft start speed is 4.0 or less; enter a steep dive from a vertical climb. When an HRD maneuver is used to enter a vertical dive from a zoom or sustained climb, the aircraft must expend only $1/3$ of its FPs as HTPs (not $1/2$) before expending the remainder as VFPs.
+\paragraph{Half-Roll and Dive Maneuver} An HRD maneuver may be used to: enter a vertical dive from level flight; enter a vertical dive from a zoom or sustained climb if the aircraft start speed is 4.0 or less; enter a steep dive from a vertical climb. When an HRD maneuver is used to enter a vertical dive from a zoom or sustained climb, the aircraft must expend only 1/3 of its FPs as HTPs (not 1/2) before expending the remainder as VFPs.
 
 \paragraph{Snap Turns} Snap turns are no longer permitted.
 
@@ -340,15 +340,15 @@ attack.\\
 
 \paragraph{HBR} Aircraft with high bleed rate:
 \begin{itemize}
-    \item Incur 1.5 DPs (instead of 1.0) for each change of facing of $30\deg$ after the first facing change in a sustained turn.
+    \item Incur 1.5 DPs (instead of 1.0) for each change of facing of \degrees{0} after the first facing change in a sustained turn.
 \end{itemize}
 
 \paragraph{HPR} Aircraft with high pitch rate:
 \begin{itemize}
-    \item Need only expend $1/3$ of their speed as FPs before expending a VFP when changing from climbing to diving flight or vice versa.
+    \item Need only expend 1/3 of their speed as FPs before expending a VFP when changing from climbing to diving flight or vice versa.
     \item May enter a vertical climb from level flight if its speed is less than 4.0.
     \item May select level flight after a vertical dive, provided its speed is 3.0 or less.
-    \item Need only expend $1/3$ of its FPs as VFPs if it selects a steep dive after a vertical dive.
+    \item Need only expend 1/3 of its FPs as VFPs if it selects a steep dive after a vertical dive.
     \item May select level flight after recovering from a maneuvering departure.
 \end{itemize}
 
@@ -361,7 +361,7 @@ attack.\\
 
 \paragraph{LBR} Aircraft with low bleed rate:
 \begin{itemize}
-    \item Incur 0.5 DPs (instead of 1.0) for each change of facing of $30\deg$ after the first facing change in a sustained turn.
+    \item Incur 0.5 DPs (instead of 1.0) for each change of facing of \degrees{0} after the first facing change in a sustained turn.
 \end{itemize}
 
 \paragraph{LTD} Aircraft with low transonic drag:

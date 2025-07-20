@@ -18,15 +18,15 @@ The {\Harpoon} game and its many supplements are a great source of data on warsh
     \item If the DP value is 240 or more, subtract 240, divide by 150, add 6, and round to the nearest integer, rounding halves up.
 \end{itemize}
 That is,
-$$
+\begin{equation}
 \mbox{Hull} = \left\{
     \begin{array}{ll}
-        $[DP/40]$&\quad \mbox{if $\mbox{DP} < 240$ and}\\
-        $[(DP-240)/150 + 6]$&\quad \mbox{if $\mbox{DP} \ge 240$,}\\
+        [\binarydivide{DP}{40}]&\quad \mbox{if \binaryrelation{DP}{<}{240} and}\\\relax
+        [\binaryplus{\binarydivide{(\binaryminus{DP}{240})}{150}}{6}]&\quad \mbox{if \binaryrelation{DP}{≥}{240},}\\
     \end{array}
 \right.
-$$
-in which $[x]$ means round to the nearest integer, rounding halves up.
+\end{equation}
+in which [{\itshape x}] means round {\itshape x} to the nearest integer, rounding halves up.
 \item \itemparagraph{Sink.} Small, medium, and large warships have sink values of 8, 10, and 12, respectively. Small, medium, and large merchant ships have sink values of 6, 8, and 10, respectively.
 \item \itemparagraph{Jam and Decoys.} 1st, 2nd, and 3rd generation jammers and decoys in {\Harpoon} correspond to jammer and decoy values of 1, 2, and 3, respectively.
 \item \itemparagraph{Radars.} 

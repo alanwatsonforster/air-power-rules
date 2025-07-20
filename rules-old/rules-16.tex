@@ -169,7 +169,7 @@ An aircraft with Look Down Technology can ignore all Look Down Limitations and m
 
 \paragraph{Aircraft Nose Attitude.} An aircraft radar arc is limited in its vertical arc as well as its horizontal arc. \changedin{1C}{1C-tables}{The Radar Vertical Limits Table}{Table~\ref{table:radar-vertical-limits}} defines the vertical limits to radar arcs in terms of allowed altitude differences between searcher and target based on searcher's flight profile for the game turn. \addedin{1B}{1B-apj-23-errata}{Aircraft in unloaded dives use the steep dive vertical limits. }The listed UP limit is a factor used to determine the number of levels above the searcher the target can be for each hex away it is. The listed DOWN limit is a factor used to determine the number of levels below the searcher the target can be for each hex away it is. \addedin{1B}{1B-apj-36-errata}{Any fractions that result after using \changedin{1C}{1C-tables}{the Radar Vertical Limits Table}{Table~\ref{table:radar-vertical-limits}} are dropped (i.e., the result does not favor the searcher).}
 
-For example, an aircraft in a zoom climb with a 180+ arc radar can search for or track higher targets up to 5 levels higher for each hex away they are (“$\times5$”). It cannot search for lower targets as its Down limit is “$\times0$” meaning the allowed down difference per hex of range the target is away is zero. Thus, a target 10 hexes away could be as much as 50 levels above the searcher but not lower. The target could be at the same level.
+For example, an aircraft in a zoom climb with a 180+ arc radar can search for or track higher targets up to 5 levels higher for each hex away they are (“\multiplybefore{5}”). It cannot search for lower targets as its Down limit is “\multiplybefore{0}” meaning the allowed down difference per hex of range the target is away is zero. Thus, a target 10 hexes away could be as much as 50 levels above the searcher but not lower. The target could be at the same level.
 
 }{
 
@@ -191,29 +191,29 @@ The \emph{flight slope} characterizes the vertical orientation of the reference 
 
 The flight slope is calculated over a number of FPs (defined below) as the number of altitude levels gained divided by the number of HFPs expended. 
 
-The flight slope will be positive if the element gains altitude, zero if it maintains altitude, and negative if it loses altitude. For purely vertical flight with no HFPs, the flight slope will be positive infinity ($+\infty$) for climbing or negative infinity ($-\infty$) for diving.
+The flight slope will be positive if the element gains altitude, zero if it maintains altitude, and negative if it loses altitude. For purely vertical flight with no HFPs, the flight slope will be positive infinity (\plus{\infinity}) for climbing or negative infinity (\minus{\infinity}) for diving.
 
 For an aircraft and missile prior to launch, determine the flight slope by considering all of the FPs expended by the aircraft or by the missile’s launching aircraft in the previous flight phase. 
 
 For a missile in flight, if the previous proportional move had two or more FPs, determine the flight slope by considering them all. Otherwise, if the previous proportional move only had one FP and was the first one of the missile’s flight, determine the flight slope from that FP and the last FP of the launching aircraft prior to launch. Otherwise, determine the flight slope from the missile’s last two FPs.
 
-For example, if an aircraft executes level flight with four HFPs and no free descent, its flight slope is 0. If it executes the same but with free descent, its flight slope is $-1/4 = -0.25$. If it executes a zoom climb with three HFPs and four VFPs, gaining seven altitude levels, its flight slope is $+7/3 \approx 2.33$. If it executes a vertical dive with no HFPs and six VFPs, losing twelve altitude levels, its flight slope is $-12/0 = -\infty$.
+For example, if an aircraft executes level flight with four HFPs and no free descent, its flight slope is 0. If it executes the same but with free descent, its flight slope is \binaryrelation{\minus{1/4}}{=}{\minus{0.25}}. If it executes a zoom climb with three HFPs and four VFPs, gaining seven altitude levels, its flight slope is \binaryrelation{\plus{7/3}}{≈}{2.33}. If it executes a vertical dive with no HFPs and six VFPs, losing twelve altitude levels, its flight slope is \binaryrelation{\minus{12/0}}{=}{\minus{\infinity}}.
 
 \paragraph{Combined Arcs Procedure.}
 
 \input{tables/table-combined-arcs}
 
-Cross-reference the arc and the flight slope in Table~\ref{table:vertical-limit-factors}. Note that there is one column for the flight slope for forward arcs (the limited, \arcrange{180}{+}, \arcrange{150}{+}, and \arcrange{120}{+} arcs) and another for rearward arcs (the \arcrange{30}{-},  \arcrange{60}{-}, and  \arcrange{90}{-} arcs). The entries in the table are one or two numerical vertical limit factors indicating upper ($\le$) or lower ($\ge$) limits. The factors themselves are either in parentheses or not in parentheses.
+Cross-reference the arc and the flight slope in Table~\ref{table:vertical-limit-factors}. Note that there is one column for the flight slope for forward arcs (the limited, \arcrange{180}{+}, \arcrange{150}{+}, and \arcrange{120}{+} arcs) and another for rearward arcs (the \arcrange{30}{-},  \arcrange{60}{-}, and  \arcrange{90}{-} arcs). The entries in the table are one or two numerical vertical limit factors indicating upper (≤) or lower (≥) limits. The factors themselves are either in parentheses or not in parentheses.
 
 \begin{itemize}
 
 \item
-The factors not in parentheses are \emph{mixed} vertical limit factors. They are multiplied by the horizontal range from the reference to the target element, rounded up if lower limits and rounded down if upper limits, and then give the \emph{maximum} number of levels that the target aircraft can be above ($\le$) or below ($\ge$) the reference aircraft and still be within the combined arc. 
+The factors not in parentheses are \emph{mixed} vertical limit factors. They are multiplied by the horizontal range from the reference to the target element, rounded up if lower limits and rounded down if upper limits, and then give the \emph{maximum} number of levels that the target aircraft can be above (≤) or below (≥) the reference aircraft and still be within the combined arc. 
 
 In these cases, the target aircraft must also be in the corresponding horizontal arc to be within the combined arc.
 
 \item
-The factors in parentheses are \emph{pure} vertical limit factors. They are multiplied by the horizontal range from the reference to the target element and then give the \emph{minimum} number of levels that the target aircraft can be above ($\ge$) or below ($\le$) the reference aircraft and still be in the combined arc. 
+The factors in parentheses are \emph{pure} vertical limit factors. They are multiplied by the horizontal range from the reference to the target element and then give the \emph{minimum} number of levels that the target aircraft can be above (≥) or below (≤) the reference aircraft and still be in the combined arc. 
 
 In these cases, the target aircraft \emph{need not} be in the corresponding horizontal arc; it can be in \emph{any} horizontal arc.
 
@@ -229,13 +229,13 @@ If Table~\ref{table:vertical-limit-factors} gives one factor, the target element
 
 \paragraph{Procedure.} \changedin{XX}{XX-declaring-special-radar-modes}{Announce Boresight mode when the aircraft begins its flight.}{Announce boresight mode in the aircraft decisions phase.} All previous contacts and lock-ons are lost. Normal radar search is not allowed. The aircraft's effective radar arc becomes a Limited arc (regardless of the aircraft's normal radar arc). In the Air Radar Search and Lock-On Phase, the closest visually sighted aircraft within a range equal to the radar's TRACKING strength in hexes in the limited arc is automatically detected. If two or more aircraft are equally close, randomly determine which is detected. Jamming has no effect on this detection. Boresight mode detection occurs even if the aircraft violated the normal radar use maneuver restrictions.
 
-One Boresight Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. An aircraft without Look-Down Technology may use boresight mode to detect and lock-on to low level visually sighted targets. In this case, the automatic contact and lock-on attempt is allowed, and the lock-on can be maintained as long as the difference between target level and ground level is more than the searcher and target altitude level difference. The lock-on die roll is subject to a Boresight Look Down Modifier of $-2$. \addedin{1B}{1B-apj-22-qa/1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for boresight mode.}
+One Boresight Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. An aircraft without Look-Down Technology may use boresight mode to detect and lock-on to low level visually sighted targets. In this case, the automatic contact and lock-on attempt is allowed, and the lock-on can be maintained as long as the difference between target level and ground level is more than the searcher and target altitude level difference. The lock-on die roll is subject to a Boresight Look Down Modifier of \minus{2}. \addedin{1B}{1B-apj-22-qa/1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for boresight mode.}
 
 \paragraph{Auto-Track Radar Mode.}\label{rule:auto-track-mode} Auto-Track Radar mode allows an aircraft to automatically detect and then lock-on a target. Only aircraft with Auto-Track Technology may use this mode. \addedin{1C}{1C-tables}{Table~\ref{table:radar-auto-track-mode} summarizes auto-track mode.}
 
 \paragraph{Procedure.} \changedin{XX}{XX-declaring-special-radar-modes}{Announce Auto-Track when the aircraft begins its flight.}{Announce Auto-Track in the aircraft decisions phase.} All previous contacts and lock-ons are lost. Normal radar search is not allowed. The aircraft's effective radar arc becomes the 180{\deg} arc (regardless of the aircraft's normal radar arc). In the Air Radar Search and Lock-On Phase, the closest aircraft at a range of no more than the radar's SEARCH strength in hexes in the 180{\deg} arc is automatically detected.
 
-One Auto-Track Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. Auto-Track will ignore all friendly aircraft with IFF on. A visually sighted enemy aircraft may be selected for detection and lock-on \addedin{XX}{XX-auto-track-selection}{on a $7-$} even if it was not the closest as long as it meets the range and 180{\deg} arc requirements. \addedin{1B}{1B-apj-22-qa/1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for auto-track mode.}
+One Auto-Track Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. Auto-Track will ignore all friendly aircraft with IFF on. A visually sighted enemy aircraft may be selected for detection and lock-on \addedin{XX}{XX-auto-track-selection}{on a \minusafter{7}} even if it was not the closest as long as it meets the range and 180{\deg} arc requirements. \addedin{1B}{1B-apj-22-qa/1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for auto-track mode.}
 
 \addedin{1B}{1B-apj-37-qa}{BJMs and AJMs have no impact on auto-track radar detections, but do impact lock-on attempts.}
 

@@ -43,9 +43,9 @@
 \multicolumn{1}{c}{Missile Speed Changes}\\
 
 \begin{enumerate}
-    \item If missile gained altitude over turn, $-1$ to speed for each set of alt.\ levels climbed equal to half or less of missile's speed.
-    \item If missile lost altitude over turn, $+1$ to speed for each set of alt.\ levels dived equal to half or more of missile's speed.
-    \itemaddedin{1B}{1B-apj-23-errata/1B-apj-24-play-aids}{If missile changed facing by turning, $-1$ to speed for each 30 degrees of facing change done.}
+    \item If missile gained altitude over turn, \minus{1} to speed for each set of alt.\ levels climbed equal to half or less of missile's speed.
+    \item If missile lost altitude over turn, \plus{1} to speed for each set of alt.\ levels dived equal to half or more of missile's speed.
+    \itemaddedin{1B}{1B-apj-23-errata/1B-apj-24-play-aids}{If missile changed facing by turning, \minus{1} to speed for each 30 degrees of facing change done.}
 \end{enumerate}\\
 
 \multicolumn{1}{c}{Missile Speed Determination}\\
@@ -101,11 +101,11 @@
     \item Subsequent turns: modify speed from the previous turn and then multiply by the attenuation factor. If the sustainer is burning, use a factor of 1.0.
     \item Speed modifications are:
     \begin{itemize}
-        \item $+2$ for diving its speed or more in altitude levels.
-        \item $+1$ for diving half its speed or more in altitude levels.
-        \item $-2$ for climbing its speed or more in altitude levels.
-        \item $-1$ for climbing half its speed or more in altitude levels.
-        \item $-1$ for each 30{\deg} facing change by turning.
+        \item \plus{2} for diving its speed or more in altitude levels.
+        \item \plus{1} for diving half its speed or more in altitude levels.
+        \item \minus{2} for climbing its speed or more in altitude levels.
+        \item \minus{1} for climbing half its speed or more in altitude levels.
+        \item \minus{1} for each 30{\deg} facing change by turning.
     \end{itemize}
 \end{itemize}\\
 \bottomrule

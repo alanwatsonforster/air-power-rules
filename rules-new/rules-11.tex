@@ -157,15 +157,15 @@ If no friendly aircraft can participate, the unsighted target remains unsighted.
     
     To participate, an aircraft must be within maximum visual sighting range of the target, must not have the target in its blind arc, and must have an unblocked line of sight.
 
-    \item \itemparagraph{Restricted Arc.} If the target is in the restricted arcs of \CY[3A-sighting]{\emph{all} of the participants}{the searcher}, apply a $+2$ modifier.
+    \item \itemparagraph{Restricted Arc.} If the target is in the restricted arcs of \CY[3A-sighting]{\emph{all} of the participants}{the searcher}, apply a \plus{2} modifier.
     \item \itemparagraph{Target is Smoker.} 
-    \CY[3A-sighting]{If the target is a smoker, apply the modifiers from Table~\ref{table:sighting-position-modifiers} for altitude of the target relative to the searcher.}{If a target aircraft is a smoker and lower than the searcher, apply a $-1$ modifier. If it is a smoker and level with or higher than the searcher, apply a $-2$ modifier.} 
+    \CY[3A-sighting]{If the target is a smoker, apply the modifiers from Table~\ref{table:sighting-position-modifiers} for altitude of the target relative to the searcher.}{If a target aircraft is a smoker and lower than the searcher, apply a \minus{1} modifier. If it is a smoker and level with or higher than the searcher, apply a \minus{2} modifier.} 
     
     Aircraft can be smokers in two different circumstances. Some aircraft are noted on their power charts as being smokers when they use military power. Also, some results on the optional damage tables cause an aircraft to become a smoker regardless of their power setting.
-    \item \itemparagraph{Missile Motor.} If the target is a missile whose boost or sustainer motor burned in the previous game turn, apply a $-3$ modifier for a normal motor and a $-1$ modifier for a smokeless motor.
-    \item \itemparagraph{Missile Launch.} If the target is a missile launched from a sighted aircraft in the previous game turn or an aircraft that launched a sighted missile in the previous game turn, apply a $-2$ modifier. (For these modifiers, it is important to attempt to sight missiles before aircraft.)
-    \item \itemparagraph{Searcher is Multi-Crew.} If the searcher is a multi-crew aircraft, apply a $-1$ modifier.
-    \item\itemparagraph{Searcher has Detection.} If the searcher has a radar detection (or lock-on) of the target, apply a $-1$ modifier.
+    \item \itemparagraph{Missile Motor.} If the target is a missile whose boost or sustainer motor burned in the previous game turn, apply a \minus{3} modifier for a normal motor and a \minus{1} modifier for a smokeless motor.
+    \item \itemparagraph{Missile Launch.} If the target is a missile launched from a sighted aircraft in the previous game turn or an aircraft that launched a sighted missile in the previous game turn, apply a \minus{2} modifier. (For these modifiers, it is important to attempt to sight missiles before aircraft.)
+    \item \itemparagraph{Searcher is Multi-Crew.} If the searcher is a multi-crew aircraft, apply a \minus{1} modifier.
+    \item\itemparagraph{Searcher has Detection.} If the searcher has a radar detection (or lock-on) of the target, apply a \minus{1} modifier.
 
 \end{itemize}
 
@@ -302,7 +302,7 @@ There exists a blocked line of sight between the aircraft and target if:
 
 Note: Aircraft deliberately flying so that terrain is blocking a line of sight between them and a ground unit, are using “Terrain Masking”.
 
-\paragraph{Effects of Camouflage.} Ground units may be camouflaged as a result of being in certain terrain types, or if designated as camouflaged in the scenario instructions. The sighting range of a camouflaged ground unit is half its normal range. Also, sighting is no longer automatic. When sighting a camouflaged unit, roll the die. On a 5 or less it is spotted. A \changedin{1E}{AWF}{minus 2}{$-2$} modifier applies to the roll if the target is marked by a FAC with smoke, or by laser if the sighting aircraft has laser spot tracker technology. Any crew quality or eyesight modifiers also apply unless VAS is used.
+\paragraph{Effects of Camouflage.} Ground units may be camouflaged as a result of being in certain terrain types, or if designated as camouflaged in the scenario instructions. The sighting range of a camouflaged ground unit is half its normal range. Also, sighting is no longer automatic. When sighting a camouflaged unit, roll the die. On a 5 or less it is spotted. A \changedin{1E}{AWF}{minus 2}{\minus{2}} modifier applies to the roll if the target is marked by a FAC with smoke, or by laser if the sighting aircraft has laser spot tracker technology. Any crew quality or eyesight modifiers also apply unless VAS is used.
 
 \paragraph{Effects of Activity by Camouflaged Units.}  Any camouflaged AAA or SAM units which fired or launched missiles on the previous game turn may be sighted out to normal range with a die roll as above.
 
@@ -324,7 +324,7 @@ If an aircraft has HUD interface technology and has a radar or IRSTS lock-on (se
 \begin{itemize}
 
 \item\itemparagraph{Sighting Roll Modifier.}
-Apply a $-1$ modifier to the sighting roll, in addition to the $-1$ modifier for having a detection or track. This modifier is applied only once regardless of how many different types of lock-ons the searcher has for the target.
+Apply a \minus{1} modifier to the sighting roll, in addition to the \minus{1} modifier for having a detection or track. This modifier is applied only once regardless of how many different types of lock-ons the searcher has for the target.
 
 \item\itemparagraph{Maximum Sighting Range.} The maximum sighting range at night is doubled (see advanced rule \ref{rule:combat-at-night}).
 
@@ -456,7 +456,7 @@ Some scenarios allow players to employ aircraft types unknown to their opponent 
 
     \item Automatically, when its range to a VAS-equipped friendly aircraft is no more than 4 times its visibility number, and it is in the \arcrange{180}{+} arc \AY[3A-combined-arcs]{combined} of that aircraft.
 
-    \item On a roll of $7-$, when its range to a VAS-equipped friendly aircraft is no more than 10 times its visibility number, and it is in the \arcrange{180}{+} \AY[3A-combined-arcs]{combined} arc of that aircraft.
+    \item On a roll of \minusafter{7}, when its range to a VAS-equipped friendly aircraft is no more than 10 times its visibility number, and it is in the \arcrange{180}{+} \AY[3A-combined-arcs]{combined} arc of that aircraft.
 
     \item Automatically, when it begins its second turn with a radar lock-on from an aircraft with Target ID technology.
 
@@ -492,7 +492,7 @@ Furthermore, generic AAA and SAM site counters (mobile and static types) may be 
 }
 \label{rule:sighting-facs}
 
-Forward Air Controllers identify targets and direct ground attacks for pilots. A FAC may be ground-based or airborne. A FAC marks a ground target with smoke or with a laser spot. An attack on a marked target receives a \changedin{1E}{AWF}{minus 1}{$-1$} die roll modifier.
+Forward Air Controllers identify targets and direct ground attacks for pilots. A FAC may be ground-based or airborne. A FAC marks a ground target with smoke or with a laser spot. An attack on a marked target receives a \changedin{1E}{AWF}{minus 1}{\minus{1}} die roll modifier.
 
 \paragraph{Ground FAC.} A ground FAC is a vehicle-mounted observer on the ground. A Ground FAC automatically sees any enemy ground units (camouflaged or not) within six hexes provided LOS is not blocked. It sees units in adjacent hexes even if LOS is blocked.
 
@@ -500,7 +500,7 @@ Each Ground FAC may mark one enemy unit (which it can see) during the \changedin
 
 \paragraph{Airborne FAC.} An airborne FAC is in an aircraft flying over the target area. The aircraft can usually carry smoke rocket pods for marking targets, and some may be equipped with laser designators. An Airborne FAC sights ground targets using normal Visual Sighting but is better at sighting camouflaged units.
 
-In order to mark a target, the airborne FAC must initially sight the target just as other aircraft do. Due to special training a FAC may always try to sight camouflaged targets out to their normal sighting range using a modified roll of 5 or less, and at or inside half range, on a modified roll of 8 or less. Once sighted by a FAC, a camouflaged target is considered to remain sighted to that FAC for the rest of the game (he has marked it on his grid-map). A FAC that searches for a “detected” camouflaged unit gets a $-2$ modifier to his die roll.
+In order to mark a target, the airborne FAC must initially sight the target just as other aircraft do. Due to special training a FAC may always try to sight camouflaged targets out to their normal sighting range using a modified roll of 5 or less, and at or inside half range, on a modified roll of 8 or less. Once sighted by a FAC, a camouflaged target is considered to remain sighted to that FAC for the rest of the game (he has marked it on his grid-map). A FAC that searches for a “detected” camouflaged unit gets a \minus{2} modifier to his die roll.
 
 \paragraph{Laser Spots.} Airborne FACs with laser designators may mark targets with laser spots as described in Chapter 27.
 
@@ -529,6 +529,6 @@ Hidden units which fire on or launch missiles at aircraft are immediately “det
 
 \paragraph{Close Formations Restrictions.} Wingmen in close formations may not padlock enemy aircraft, nor be counted for the multiple searching aircraft modifier. They may not be the reference aircraft either. They are concentrating on holding formation on the leader. Aircraft in tactical formations have no sighting restrictions.
 
-\paragraph{Close Formation Effects.} Any sighting attempts against aircraft in a close formation are done treating the close formation as a single entity. The sighting number of the largest aircraft in the formation is used and a \changedin{1E}{AWF}{minus 1}{$-1$} modifier is applied to the sighting roll for each two aircraft in the formation. Success indicates all aircraft in the formation are spotted.
+\paragraph{Close Formation Effects.} Any sighting attempts against aircraft in a close formation are done treating the close formation as a single entity. The sighting number of the largest aircraft in the formation is used and a \changedin{1E}{AWF}{minus 1}{\minus{1}} modifier is applied to the sighting roll for each two aircraft in the formation. Success indicates all aircraft in the formation are spotted.
 }
 \end{advancedrules}

@@ -9,20 +9,20 @@
     \newcommand{\ymin}{-\ymax}
     \begin{scope}[scale=0.4]
         \foreach \x in {0,...,\xmax} {
-            \draw (\x, \ymin-0.5) node [anchor=north] {$\x$};
-            \draw (\x, \ymax+0.5) node [anchor=south] {$\x$};
+            \draw (\x, \ymin-0.5) node [anchor=north] {\x};
+            \draw (\x, \ymax+0.5) node [anchor=south] {\x};
         }
         \foreach \y in {\ymin,...,-1} {
-            \draw (-0.5, \y) node [anchor=east] {\wbox[r]{$+00$}{$\y$}};
-            \draw (\xmax+0.5, \y) node [anchor=west] {\wbox[r]{$+00$}{$\y$}};
+            \draw (-0.5, \y) node [anchor=east] {\wbox[r]{\plus{00}}{\y}};
+            \draw (\xmax+0.5, \y) node [anchor=west] {\wbox[r]{\plus{00}}{\y}};
         }
         \foreach \y in {0,...,0} {
-            \draw (-0.5, \y) node [anchor=east] {\wbox[r]{$+00$}{$\y$}};
-            \draw (\xmax+0.5, \y) node [anchor=west] {\wbox[r]{$+00$}{$\y$}};
+            \draw (-0.5, \y) node [anchor=east] {\wbox[r]{\plus{00}}{\y}};
+            \draw (\xmax+0.5, \y) node [anchor=west] {\wbox[r]{\plus{00}}{\y}};
         }
         \foreach \y in {1,...,\ymax} {
-            \draw (-0.5, \y) node [anchor=east] {\wbox[r]{$+00$}{$+\y$}};
-            \draw (\xmax+0.5, \y) node [anchor=west] {\wbox[r]{$+00$}{$+\y$}};
+            \draw (-0.5, \y) node [anchor=east] {\wbox[r]{\plus{00}}{\plus{\y}}};
+            \draw (\xmax+0.5, \y) node [anchor=west] {\wbox[r]{\plus{00}}{\plus{\y}}};
         }
         \draw (0.5*\xmax,\ymax+2.0) node [anchor=south] {\small Horizontal Range};
         \draw (0.5*\xmax,\ymin-2.0) node [anchor=north] {\small Horizontal Range};
@@ -59,7 +59,7 @@
 \newcommand{\legendlineone}[6]{
     \draw (-0.1,#1)
         node [color=black,anchor=west] {%
-            \wbox[r]{$+0 <$}{$#4$} $\mbox{FS}$ \wbox[l]{$= +\infty$}{$#5$}
+            \wbox[r]{\triperelation{\plus{0}{<}}{#4} $\mbox{FS}$ \wbox[l]{$= +\infinity$}{$#5$}
         };
     \draw (8.0,#1)
         node [color=black,anchor=west] {%
@@ -71,7 +71,7 @@
 \newcommand{\legendlinetwo}[7]{
     \draw (-0.1,#1) 
         node [color=black,anchor=west] {%
-            \wbox[r]{$+0 <$}{$#5$} $\mbox{FS}$ \wbox[l]{$= +\infty$}{$#6$}
+            \wbox[r]{\plus{0 <}}{$#5$} $\mbox{FS}$ \wbox[l]{$= +\infinity$}{$#6$}
         };
     \draw (8.0,#1)
         node [color=black,anchor=west] {%
@@ -125,15 +125,15 @@
     
     \drawgrid
     \begin{legend}
-        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infty}{above}
-        \legendlineone{+3}{Tred   }{solid }{+3 <}{< +\infty}{above}
+        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infinity}{above}
+        \legendlineone{+3}{Tred   }{solid }{+3 <}{< +\infinity}{above}
         \legendlinetwo{+2}{Tgreen }{solid }{solid }{+1 <}{\le +3}{between}
         \legendlinetwo{+1}{Torange}{solid }{solid }{0 <}{\le +1}{between}
         \legendlinetwo{+0}{Tblue  }{solid }{solid }{}{= 0}{between}
         \legendlinetwo{-1}{Tbrown }{solid }{solid }{0 >}{ \ge -1}{between}
         \legendlinetwo{-2}{Tpink  }{solid }{solid }{-1 >}{ \ge -3}{between}
-        \legendlineone{-3}{Tolive }{solid }{-3 >}{> +\infty}{below}
-        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infty}{below}
+        \legendlineone{-3}{Tolive }{solid }{-3 >}{> +\infinity}{below}
+        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infinity}{below}
     \end{legend}
     
 \end{combinedarcfigure}
@@ -179,15 +179,15 @@
 
     \drawgrid
     \begin{legend}
-        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infty}{above}
-        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infty}{above}
+        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infinity}{above}
+        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infinity}{above}
         \legendlinetwo{+2}{Tgreen }{solid }{solid }{+1 <}{\le +3}{between}
         \legendlinetwo{+1}{Torange}{solid }{solid }{0 <}{\le +1}{between}
         \legendlinetwo{+0}{Tblue  }{solid }{solid }{}{= 0}{between}
         \legendlinetwo{-1}{Tbrown }{solid }{solid }{0 >}{ \ge -1}{between}
         \legendlinetwo{-2}{Tpink  }{solid }{solid }{-1 >}{ \ge -3}{between}
-        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infty}{below}
-        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infty}{below}
+        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infinity}{below}
+        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infinity}{below}<
     \end{legend}
 
 \end{combinedarcfigure}
@@ -231,15 +231,15 @@
 
     \drawgrid
     \begin{legend}
-        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infty}{above}
-        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infty}{above}
+        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infinity}{above}
+        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infinity}{above}
         \legendlineone{+2}{Tgreen }{solid }{+1 <}{\le +3}{above}
         \legendlinetwo{+1}{Torange}{solid }{solid }{0 <}{\le +1}{between}
         \legendlinetwo{+0}{Tblue  }{solid }{solid }{}{= 0}{between}
         \legendlinetwo{-1}{Tbrown }{solid }{solid }{0 >}{ \ge -1}{between}
         \legendlineone{-2}{Tpink  }{solid }{-1 >}{ \ge -3}{below}
-        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infty}{below}
-        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infty}{below}
+        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infinity}{below}
+        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infinity}{below}
     \end{legend}
 
 \end{combinedarcfigure}
@@ -285,15 +285,15 @@
 
     \drawgrid
     \begin{legend}
-        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infty}{above}
-        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infty}{above}
+        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infinity}{above}
+        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infinity}{above}
         \legendlinetwo{+2}{Tgreen }{dashed}{solid }{+1 <}{\le +3}{above}
         \legendlinetwo{+1}{Torange}{solid }{solid }{0 <}{\le +1}{between}
         \legendlinetwo{+0}{Tblue  }{solid }{solid }{}{= 0}{between}
         \legendlinetwo{-1}{Tbrown }{solid }{solid }{0 >}{ \ge -1}{between}
         \legendlinetwo{-2}{Tpink  }{dashed}{solid }{-1 >}{ \ge -3}{below}
-        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infty}{below}
-        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infty}{below}
+        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infinity}{below}
+        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infinity}{below}
     \end{legend}
 
 \end{combinedarcfigure}
@@ -339,15 +339,15 @@
 
     \drawgrid
     \begin{legend}
-        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infty}{below}
-        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infty}{below}
+        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infinity}{below}
+        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infinity}{below}
         \legendlinetwo{+2}{Tgreen }{dashed}{solid }{+1 <}{\le +3}{below}
         \legendlinetwo{+1}{Torange}{solid }{solid }{0 <}{\le +1}{between}
         \legendlinetwo{+0}{Tblue  }{solid }{solid }{}{= 0}{between}
         \legendlinetwo{-1}{Tbrown }{solid }{solid }{0 >}{ \ge -1}{between}
         \legendlinetwo{-2}{Tpink  }{dashed}{solid }{-1 >}{ \ge -3}{above}
-        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infty}{above}
-        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infty}{above}
+        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infinity}{above}
+        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infinity}{above}
     \end{legend}
 
 \end{combinedarcfigure}
@@ -391,15 +391,15 @@
 
     \drawgrid
     \begin{legend}
-        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infty}{below}
-        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infty}{below}
+        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infinity}{below}
+        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infinity}{below}
         \legendlineone{+2}{Tgreen }{solid }{+1 <}{\le +3}{below}
         \legendlinetwo{+1}{Torange}{solid }{solid }{0 <}{\le +1}{between}
         \legendlinetwo{+0}{Tblue  }{solid }{solid }{}{= 0}{between}
         \legendlinetwo{-1}{Tbrown }{solid }{solid }{0 >}{ \ge -1}{between}
         \legendlineone{-2}{Tpink  }{solid }{-1 >}{ \ge -3}{above}
-        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infty}{above}
-        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infty}{above}
+        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infinity}{above}
+        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infinity}{above}
     \end{legend}
 
 \end{combinedarcfigure}
@@ -445,15 +445,15 @@
 
     \drawgrid
     \begin{legend}
-        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infty}{below}
-        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infty}{below}
+        \legendlineone{+4}{Tpurple}{dashed}{}{= +\infinity}{below}
+        \legendlinetwo{+3}{Tred   }{dashed}{solid}{+3 <}{< +\infinity}{below}
         \legendlinetwo{+2}{Tgreen }{solid }{solid }{+1 <}{\le +3}{between}
         \legendlinetwo{+1}{Torange}{solid }{solid }{0 <}{\le +1}{between}
         \legendlinetwo{+0}{Tblue  }{solid }{solid }{}{= 0}{between}
         \legendlinetwo{-1}{Tbrown }{solid }{solid }{0 >}{ \ge -1}{between}
         \legendlinetwo{-2}{Tpink  }{solid }{solid }{-1 >}{ \ge -3}{between}
-        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infty}{above}
-        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infty}{above}
+        \legendlinetwo{-3}{Tolive }{dashed}{solid }{-3 >}{> +\infinity}{above}
+        \legendlineone{-4}{Tcyan  }{dashed}{}{= -\infinity}{above}
     \end{legend}
 
 \end{combinedarcfigure}

@@ -163,7 +163,7 @@ An aircraft with Look Down Technology can ignore all Look Down Limitations and m
 
 \paragraph{Aircraft Nose Attitude.} An aircraft radar arc is limited in its vertical arc as well as its horizontal arc. \changedin{1C}{1C-tables}{The Radar Vertical Limits Table}{Table~\ref{table:radar-vertical-limits}} defines the vertical limits to radar arcs in terms of allowed altitude differences between searcher and target based on searcher's flight profile for the game turn. \addedin{1B}{1B-apj-23-errata}{Aircraft in unloaded dives use the steep dive vertical limits. }The listed UP limit is a factor used to determine the number of levels above the searcher the target can be for each hex away it is. The listed DOWN limit is a factor used to determine the number of levels below the searcher the target can be for each hex away it is. \addedin{1B}{1B-apj-36-errata}{Any fractions that result after using \changedin{1C}{1C-tables}{the Radar Vertical Limits Table}{Table~\ref{table:radar-vertical-limits}} are dropped (i.e., the result does not favor the searcher).}
 
-For example, an aircraft in a zoom climb with a 180+ arc radar can search for or track higher targets up to 5 levels higher for each hex away they are (“$\times5$”). It cannot search for lower targets as its Down limit is “$\times0$” meaning the allowed down difference per hex of range the target is away is zero. Thus, a target 10 hexes away could be as much as 50 levels above the searcher but not lower. The target could be at the same level.
+For example, an aircraft in a zoom climb with a 180+ arc radar can search for or track higher targets up to 5 levels higher for each hex away they are (“\multiplybefore{5}”). It cannot search for lower targets as its Down limit is “\multiplybefore{0}” meaning the allowed down difference per hex of range the target is away is zero. Thus, a target 10 hexes away could be as much as 50 levels above the searcher but not lower. The target could be at the same level.
 
 \section{Special Radar Modes}
 \label{rule:special-radar-modes}
@@ -172,13 +172,13 @@ For example, an aircraft in a zoom climb with a 180+ arc radar can search for or
 
 \paragraph{Procedure.} \changedin{2B}{2B-declaring-special-radar-modes}{Announce Boresight mode when the aircraft begins its flight.}{Announce boresight mode in the aircraft decisions phase.} All previous contacts and lock-ons are lost. Normal radar search is not allowed. The aircraft's effective radar arc becomes a Limited arc (regardless of the aircraft's normal radar arc). In the Air Radar Search and Lock-On Phase, the closest visually sighted aircraft within a range equal to the radar's TRACKING strength in hexes in the limited arc is automatically detected. If two or more aircraft are equally close, randomly determine which is detected. Jamming has no effect on this detection. Boresight mode detection occurs even if the aircraft violated the normal radar use maneuver restrictions.
 
-One Boresight Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. An aircraft without Look-Down Technology may use boresight mode to detect and lock-on to low level visually sighted targets. In this case, the automatic contact and lock-on attempt is allowed, and the lock-on can be maintained as long as the difference between target level and ground level is more than the searcher and target altitude level difference. The lock-on die roll is subject to a Boresight Look Down Modifier of $-2$. \addedin{1B}{1B-apj-22-qa/1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for boresight mode.}
+One Boresight Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. An aircraft without Look-Down Technology may use boresight mode to detect and lock-on to low level visually sighted targets. In this case, the automatic contact and lock-on attempt is allowed, and the lock-on can be maintained as long as the difference between target level and ground level is more than the searcher and target altitude level difference. The lock-on die roll is subject to a Boresight Look Down Modifier of \minus{2}. \addedin{1B}{1B-apj-22-qa/1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for boresight mode.}
 
 \paragraph{Auto-Track Radar Mode.}\label{rule:auto-track-mode} Auto-Track Radar mode allows an aircraft to automatically detect and then lock-on a target. Only aircraft with Auto-Track Technology may use this mode. \addedin{1C}{1C-tables}{Table~\ref{table:radar-auto-track-mode} summarizes auto-track mode.}
 
 \paragraph{Procedure.} \changedin{2B}{2B-declaring-special-radar-modes}{Announce Auto-Track when the aircraft begins its flight.}{Announce Auto-Track in the aircraft decisions phase.} All previous contacts and lock-ons are lost. Normal radar search is not allowed. The aircraft's effective radar arc becomes the 180{\deg} arc (regardless of the aircraft's normal radar arc). In the Air Radar Search and Lock-On Phase, the closest aircraft at a range of no more than the radar's SEARCH strength in hexes in the 180{\deg} arc is automatically detected.
 
-One Auto-Track Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. Auto-Track will ignore all friendly aircraft with IFF on. A visually sighted enemy aircraft may be selected for detection and lock-on \addedin{2B}{2B-auto-track-selection}{on a $7-$} even if it was not the closest as long as it meets the range and 180{\deg} arc requirements. \addedin{1B}{1B-apj-22-qa/1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for auto-track mode.}
+One Auto-Track Mode lock-on attempt is allowed against the detected target even if the aircraft violated the normal radar use maneuver restrictions. Auto-Track will ignore all friendly aircraft with IFF on. A visually sighted enemy aircraft may be selected for detection and lock-on \addedin{2B}{2B-auto-track-selection}{on a \minusafter{7}} even if it was not the closest as long as it meets the range and 180{\deg} arc requirements. \addedin{1B}{1B-apj-22-qa/1B-apj-39-qa}{In multi-crew aircraft, the crew quality modifiers for the pilot are used for auto-track mode.}
 
 \addedin{1B}{1B-apj-37-qa}{BJMs and AJMs have no impact on auto-track radar detections, but do impact lock-on attempts.}
 
@@ -394,7 +394,7 @@ An aircraft may search for up to four separate undetected targets each game turn
 
 For each target, in Table~\ref{table:radar-searches} find the row corresponding to the radar search strength, move right to the column that is equal to or more than the range, and then move up to determine the detection die roll. Then roll the die and apply appropriate modifiers. The target is detected if the modified die roll is equal to or less than the detection die roll. Otherwise, it is not. To determine the detection die roll, 
 
-For example, an aircraft with a search strength of 12 and a maximum detection range of 48 is searching for two aircraft, one at a range of 27 hexes (9 miles) and the other at a range of 40 hexes (13.3 miles). In Table~\ref{table:radar-searches}, we see that the detection die roll is $9-$ for the first and $7-$ for the second.
+For example, an aircraft with a search strength of 12 and a maximum detection range of 48 is searching for two aircraft, one at a range of 27 hexes (9 miles) and the other at a range of 40 hexes (13.3 miles). In Table~\ref{table:radar-searches}, we see that the detection die roll is \minusafter{9} for the first and \minusafter{7} for the second.
 
 \addedin{1C}{1C-tables}{
     \input{tables/table-radar}
@@ -403,7 +403,7 @@ For example, an aircraft with a search strength of 12 and a maximum detection ra
 \paragraph{Normal Mode Search Modifiers.} Tables~\ref{table:radar-search-and-lock-on-modifiers} and \ref{table:ew-decoy-ppl-effectiveness} summarize the die-roll modifiers for normal mode searches. In detail, they are:
 \begin{itemize}
     \item Apply the size modifier from the target’s ADC.
-    \item If the target is using IFF, apply a $-2$ modifier.
+    \item If the target is using IFF, apply a \minus{2} modifier.
     \item If the target is using a chaff DDS, determine the base modifier from Table~\ref{table:ew-decoy-ppl-effectiveness} (using the PPL level to determine the row and the radar arc to determine the column), multiply the radar ECCM rating by one half and round this product up, and then subtract the product from the base modifier. If the result is positive, apply it as a modifier.
     \item If the target is using a mini-jammer DDS, determine and apply the modifier from Table~\ref{table:ew-decoy-ppl-effectiveness}.
     \item If the target is using a BJM in noise mode and the radar is in a jammed arc or if another aircraft is using a BJM in noise mode and both the target and the radar are in a jammed arc, use the BJM rating as a base modifier. From this base modifier, subtract the radar ECCM rating. If the result is positive, apply it as a modifier.
@@ -445,7 +445,7 @@ If a tracking attempt fails, the aircraft maintains all previous radar detection
 \paragraph{Normal Mode Tracking Modifiers.} Table~\ref{table:radar-search-and-lock-on-modifiers} summarizes the die-roll modifiers for normal mode tracking attempts. The modifiers for tracking are a subset of those for searches. In detail, they are:
 
 \begin{itemize}
-    \item If the target is using IFF, apply a $-2$ modifier.
+    \item If the target is using IFF, apply a \minus{2} modifier.
 
     \item If the target is using a chaff DDS, determine the base modifier from Table~\ref{table:ew-decoy-ppl-effectiveness} (using the PPL level to determine the row and the radar arc to determine the column), multiply the radar ECCM rating by one half and round this product up, and then subtract the product from the base modifier. If the result is positive, apply it as a modifier.
 
@@ -506,7 +506,7 @@ An aircraft's radar is limited vertically arc as well as horizontally. This adva
 
 \paragraph{Vertical Limits Procedure.} Table~\ref{table:radar-vertical-limits} defines the vertical limits to radar arcs for each flight type. The two factors given in the table should be multipled by the horizontal range to the target, and rounded down, to give the maximum allowed difference in altitude between the searcher and the target for that arc.
 
-For example, a searching aircraft in a zoom climb with a \arcrange{180}{+} arc has a potential radar target in its horizontal arc at a range of 8 hexes. Table~\ref{table:radar-vertical-limits} gives the factors for this combination of flight type and radar arc as $+5$ and $+0$. Thus, if the target were between 0 and 40 altitude levels higher than the searcher, it would be within the vertical limits. If the target were lower than the searcher or more than 40 altitude levels higher, it would not be within the vertical limits.
+For example, a searching aircraft in a zoom climb with a \arcrange{180}{+} arc has a potential radar target in its horizontal arc at a range of 8 hexes. Table~\ref{table:radar-vertical-limits} gives the factors for this combination of flight type and radar arc as \plus{5} and \plus{0}. Thus, if the target were between 0 and 40 altitude levels higher than the searcher, it would be within the vertical limits. If the target were lower than the searcher or more than 40 altitude levels higher, it would not be within the vertical limits.
 
 \section{Boresight Mode} 
 \label{rule:boresight-mode}
@@ -580,7 +580,7 @@ Alternatively, it may choose to continue to use boresight mode. If it has only a
 
 When using boresight mode, an aircraft with no look-down technology can elect to be treated as if it had limited look-down technology and thus gain the ability to detect and track aircraft that would otherwise be in ground clutter. This decision is made just before the search procedure. 
 
-If an aircraft uses this option, its tracking attempt die roll is subject to a modifier of $-2$. 
+If an aircraft uses this option, its tracking attempt die roll is subject to a modifier of \minus{2}. 
 
 \section{Auto-Track Mode}
 \label{rule:auto-track-mode} 
@@ -622,7 +622,7 @@ An aircraft with its radar in auto-track mode can perform an auto-track search a
 One of two procedures may be chosen for the search:
 \begin{enumerate}
 \item The closest target may be automatically detected. If two or more aircraft are equally close, randomly determine which is detected. Auto-track mode ignores friendly aircraft with their IFF on.
-\item Alternatively, any one \emph{sighted} target may be detected on a roll of $7-$ with no modifiers.
+\item Alternatively, any one \emph{sighted} target may be detected on a roll of \minusafter{7} with no modifiers.
 \end{enumerate}
 
 Chaff and jamming do not affect this detection. 
@@ -654,7 +654,7 @@ Alternatively, it may choose to continue to use auto-track mode. If it has only 
 
 When using auto-track mode, an aircraft with no look-down technology can elect to be treated as if it had limited look-down technology and thus gain the ability to detect and track aircraft that would otherwise be in ground clutter. This decision is made just before the search procedure. 
 
-If an aircraft uses this option, its tracking attempt die roll is subject to a modifier of $-2$. 
+If an aircraft uses this option, its tracking attempt die roll is subject to a modifier of \minus{2}. 
 
 
 \AX{
@@ -668,9 +668,9 @@ Although IRSTS operates passively, it is in many ways similar to radar in that i
 
 \paragraph{IRSTS Types.} Three types of IRSTS exist: 
 \begin{itemize}
-    \item IRSTS-A (early) covers the limited \CY[3A-combined-arcs]{arc}{combined arc (see rule \ref{rule:combined-arcs})} and successfully locks-on on a roll of $6-$.
-    \item IRSTS-B (modern) covers the \arcrange{180}{+} \CY[3A-combined-arcs]{arc}{combined arcs (see rule \ref{rule:combined-arcs})} and successfully locks-on on a roll of $8-$.
-    \item IRSTS-C (advanced) covers the \arcrange{150}{+} \CY[3A-combined-arcs]{arc}{combined arcs (see rule \ref{rule:combined-arcs})} and successfully locks-on on a roll of $8-$.
+    \item IRSTS-A (early) covers the limited \CY[3A-combined-arcs]{arc}{combined arc (see rule \ref{rule:combined-arcs})} and successfully locks-on on a roll of \minusafter{6}.
+    \item IRSTS-B (modern) covers the \arcrange{180}{+} \CY[3A-combined-arcs]{arc}{combined arcs (see rule \ref{rule:combined-arcs})} and successfully locks-on on a roll of \minusafter{8}.
+    \item IRSTS-C (advanced) covers the \arcrange{150}{+} \CY[3A-combined-arcs]{arc}{combined arcs (see rule \ref{rule:combined-arcs})} and successfully locks-on on a roll of \minusafter{8}.
     
 \end{itemize}
 
@@ -682,7 +682,7 @@ Although IRSTS operates passively, it is in many ways similar to radar in that i
 
 \paragraph{IRSTS Lock-On.} An IRSTS-A/B may attempt to lock-on either the nearest detected target or the target with the highest fuel point use. For this purpose, the fuel use is doubled if the IRSTS is used in the target’s \arcrange{30}{-} \AY[3A-combined-arcs]{combined} arc. An IRSTS-C may attempt to lock-on up to six of the detected targets, with no restrictions on closeness or fuel usage.
 
-For each target, roll the die. The lock-on succeeds on a roll of $6-$ for an IRSTS-A and $8-$ for an IRSTS-B/C. 
+For each target, roll the die. The lock-on succeeds on a roll of \minusafter{6} for an IRSTS-A and \minusafter{8} for an IRSTS-B/C. 
 
 After the lock-on attempts are resolved, if any succeeded, the aircraft loses all other IRSTS detections.
 
@@ -692,9 +692,9 @@ After the lock-on attempts are resolved, if any succeeded, the aircraft loses al
 An IRSTS can provide a \emph{detection} of the target aircraft but does not by itself \emph{sight} the target. Nevertheless, an IRSTS can aid in subsequent sighting attempts. 
 
 \begin{itemize}
-\item If an searcher has an IRSTS detection or track of a target aircraft, they gain a $-1$ sighting roll modifier. (This modifier can also be gained by having a radar detector or track or a RWR detection; it is applied only once regardless of the number of different types of detections or tracks the searcher has.)
+\item If an searcher has an IRSTS detection or track of a target aircraft, they gain a \minus{1} sighting roll modifier. (This modifier can also be gained by having a radar detector or track or a RWR detection; it is applied only once regardless of the number of different types of detections or tracks the searcher has.)
 \item
-If an searcher has an IRSTS track of a target aircraft of a target aircraft in their \arcrange{180}{+} \CY[3A-combined-arcs]{arcs}{combined arcs} and also has HUD interface technology (see rule \ref{rule:hud}), they gain an additional $-1$ sighting roll modifier.  (This modifier can also be gained by having a radar track; it is applied only once regardless of the number of different types of tracks the searcher has.) Furthermore, the maximum sighting range at night for visual searches is doubled (see advanced rule \ref{rule:combat-at-night}).
+If an searcher has an IRSTS track of a target aircraft of a target aircraft in their \arcrange{180}{+} \CY[3A-combined-arcs]{arcs}{combined arcs} and also has HUD interface technology (see rule \ref{rule:hud}), they gain an additional \minus{1} sighting roll modifier.  (This modifier can also be gained by having a radar track; it is applied only once regardless of the number of different types of tracks the searcher has.) Furthermore, the maximum sighting range at night for visual searches is doubled (see advanced rule \ref{rule:combat-at-night}).
 \end{itemize}
 
 \paragraph{IRSTS Assist for IRMs.} An aircraft may launch IRMs at a locked-on target even if it is not sighted. An IRSTS-B/C allows IRMs to be launched at locked-on targets as if IRM uncage technology were available, even if the fighter does not have that technology.

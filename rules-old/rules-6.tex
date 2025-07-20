@@ -52,7 +52,7 @@ Example: An aircraft accumulating 6.0 accel points and 3.0 decel has a net accel
 \paragraph{Speed Loss.} 
 Subtract 0.5 from the aircraft's current speed for each 2.0 decel points left. Any unused decel points (up to 1.5) are carried forward to the next game turn and will be added to any decel points received in that turn.
 
-Example: An aircraft accumulating 2.5 accel and 5.0 decel has a net accel of $-2.5$, or in other terms has 2.5 decel left over. Two of those decel are used to reduce its speed by 0.5. The remaining 0.5 decel is carried to the next game turn.
+Example: An aircraft accumulating 2.5 accel and 5.0 decel has a net accel of \minus{2.5}, or in other terms has 2.5 decel left over. Two of those decel are used to reduce its speed by 0.5. The remaining 0.5 decel is carried to the next game turn.
 
 \paragraph{Maximum Deceleration.} 
 Regardless of the number of decel points accumulated in a turn, no aircraft can end up with a start speed of less than 0.0. When an aircraft's speed reaches 0.0, all remaining Decel points are ignored and considered lost.
@@ -67,7 +67,7 @@ The sum of the aircraft's current speed plus any speed gain or loss at the end o
 
 \paragraph{Rapid Accel Aircraft.} An aircraft noted on its ADC as being Rapid Accel capable is considered to be an exceptionally clean design which speeds up quicker than normal. This kind of aircraft receives a speed increase of 0.5 FP for each 1.5 accel points instead of each 2.0. It decelerates normally.
 
-Example: A rapid accel aircraft gaining 6.0 accel points and 2.0 decel points in a turn, would gain 1.0 of speed. Its net accel is 4.0 ($6.0 - 2.0$). Each 1.5 of Accel gains 0.5 speed so 3.0 Accel is good for the 1.0 speed increase and the left over 1.0 Accel would be carried to the next game turn.
+Example: A rapid accel aircraft gaining 6.0 accel points and 2.0 decel points in a turn, would gain 1.0 of speed. Its net accel is 4.0 (\binaryrelation{6.0}{2.0}). Each 1.5 of Accel gains 0.5 speed so 3.0 Accel is good for the 1.0 speed increase and the left over 1.0 Accel would be carried to the next game turn.
 
 Reminder:  Do not confuse Accel and Decel points with \changedin{1B}{1B-apj-23-errata}{speed}{flight} points. They are separate things.
 
@@ -278,7 +278,7 @@ An aircraft flying at M1 or faster is in supersonic flight and is subject to the
 An aircraft's cruise speed depends on its configuration:
 \begin{itemize}
     \item If its configuration is CL, use the cruise speed given on its ADC.
-    \item If its configuration is $1/2$, use the cruise speed on its ADC reduced by 0.5. 
+    \item If its configuration is 1/2, use the cruise speed on its ADC reduced by 0.5. 
     \item If its configuration is DT, use the cruise speed on its ADC reduced by 1.0.
 \end{itemize} 
 
@@ -310,7 +310,7 @@ Propeller aircraft may increase their power settings without limit or risk. Jet 
 \addedin{2B}{2B-propeller-aircraft}{Propeller aircraft never suffer flame-outs.}
 
 \paragraph{Flame-Out Procedure.} 
-\changedin{2A}{2A-supersonic-flame-out}{If an aircraft meets one of the above conditions}{In the first case, the flame-out is automatic. In the other cases}, roll a die for each engine at the start of its move. A flame-out occurs on a roll of 4 or less. Apply a die roll modifier of $-1$ for each turn an aircraft has been above its ceiling. If a flame-out is called for on the damage tables, it occurs automatically.
+\changedin{2A}{2A-supersonic-flame-out}{If an aircraft meets one of the above conditions}{In the first case, the flame-out is automatic. In the other cases}, roll a die for each engine at the start of its move. A flame-out occurs on a roll of 4 or less. Apply a die roll modifier of \minus{1} for each turn an aircraft has been above its ceiling. If a flame-out is called for on the damage tables, it occurs automatically.
 
 Note: The number of engines an aircraft has is indicated on the Power Chart by dots to the right of the chart title. One dot per engine is used.
 
@@ -328,7 +328,7 @@ One attempt is allowed per engine per turn beginning on the game-turn following 
 
 Each time an engine is flamed out, a pilot can attempt to relight it three times. These attempts may occur in the aircraft administrative phase of any game turn following the one in which the flame-out occurred and in which the aircraft is not in abnormal flight and satisfies the requirements for damage control. 
 
-The first attempt succeeds on $2-$ and the second and third on $4-$. If the third attempt fails, the engine is permanently flamed out.
+The first attempt succeeds on \minusafter{2} and the second and third on \minusafter{4}. If the third attempt fails, the engine is permanently flamed out.
 
 }
 

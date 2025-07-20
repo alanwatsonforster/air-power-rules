@@ -20,7 +20,7 @@
 \multicolumn{1}{c}{3}&
 \multicolumn{1}{c}{2}&
 \multicolumn{1}{c}{1}&
-\multicolumn{1}{c}{$0-$}\\
+\multicolumn{1}{c}{\minusafter{0}}\\
 \midrule
 \phantom{0}3& 6& 8& 9&10&11&12&13&---&14&---&\phantom{0}15+\\
 \phantom{0}6&12&15&18&20&22&24&26&28&29&30&\phantom{0}31+\\
@@ -61,15 +61,15 @@ Above = Maximum Range in Hexes for Each Column
 \begin{tabularx}{\linewidth}{X}
 \toprule
 \begin{enumerate}
-    \item AJM \# $-$ Air Radar or EWR ECCM.
-    \item BJM \# $-$ Air Radar or EWR ECCM.
-    \item \changedin{1B}{1B-apj-23-errata/1B-apj-24-play-aids}{CHAFF PPL Effectiveness No.}{Chaff PPL Eff.\ No.\ $-$ $1/2$ radar ECCM (round \addedin{1B}{1B-apj-36-errata}{product }up).}
+    \item AJM \# \minus{} Air Radar or EWR ECCM.
+    \item BJM \# \minus{} Air Radar or EWR ECCM.
+    \item \changedin{1B}{1B-apj-23-errata/1B-apj-24-play-aids}{CHAFF PPL Effectiveness No.}{Chaff PPL Eff.\ No.\ \minus{} 1/2 radar ECCM (round \addedin{1B}{1B-apj-36-errata}{product }up).}
     \item Mini-Jammer PPL Effectiveness No.
     \item Aircraft Size Modifier from ADC.
-    \itemdeletedin{1B}{1B-apj-23-errata/1B-apj-24-play-aids}{$+4$ if aircraft has Stealth Technology.}
-    \itemaddedin{1B}{1B-apj-23-errata/1B-apj-24-play-aids}{$-2$ if target aircraft IFF on.}
-    \item Tactics Master or Veteran = $-1$ ($-2$ if both).
-    \item Novice = $+1$, Green = $+2$
+    \itemdeletedin{1B}{1B-apj-23-errata/1B-apj-24-play-aids}{\plus{4} if aircraft has Stealth Technology.}
+    \itemaddedin{1B}{1B-apj-23-errata/1B-apj-24-play-aids}{\minus{2} if target aircraft IFF on.}
+    \item Tactics Master or Veteran = \minus{1} (\minus{2} if both).
+    \item Novice = \plus{1}, Green = \plus{2}
 \end{enumerate}
 \\
 \bottomrule
@@ -85,8 +85,8 @@ Above = Maximum Range in Hexes for Each Column
 \begin{tabularx}{\linewidth}{X}
 \toprule
 \begin{enumerate}
-    \item $-2$ if target IFF on
-    \item Chaff PPL Eff.\ No.\ $-$ $1/2$ radar ECCM (round up).
+    \item \minus{2} if target IFF on
+    \item Chaff PPL Eff.\ No.\ \minus{} 1/2 radar ECCM (round up).
     \item Mini-Jammer PPL Effectiveness No.
 \end{enumerate}
 \\
@@ -107,9 +107,9 @@ ECM Type & Die Roll Modifiers\\
 \midrule
 CHAFF&Decoy Effectiveness No.\\
 Mini-Jammer&Decoy Effectiveness No.\\
-AJM&AJM No. $-$ Air Radar ECCM\\
-BJM Noise&BJM No. $-$ Air Radar ECCM\\
-\multicolumn{2}{l}{Radar using Boresight for lookdown $+2$}\\
+AJM&AJM No. \minus{} Air Radar ECCM\\
+BJM Noise&BJM No. \minus{} Air Radar ECCM\\
+\multicolumn{2}{l}{Radar using Boresight for lookdown \plus{2}}\\
 \bottomrule
 \end{tabularx}
 \end{onecolumntable}
@@ -150,7 +150,7 @@ ECM Type&Break Lock Die Roll Number\\
 \midrule
 CHAFF&Decoy Effectiveness No.\\
 MINI-JAMMER&Decoy Effectiveness No.\\
-DJM&DJM $-$ Air Radar ECCM\\
+DJM&DJM \minus{} Air Radar ECCM\\
 \bottomrule
 \end{tabular}
 \end{onecolumntable}
@@ -207,10 +207,10 @@ Note: Boresight and Auto-Track Modes allow maneuver restrictions to be ignored b
 \multicolumn{1}{c}{\multirow{2}{*}{\minitable{c}{Vertical\\Climb}}}\\
 \\
 \midrule
-Limited&$-2$, $-9$&$-0.5$, $-3$&$+0.5$, $-0.5$&$+2$, $+0$&$+4$, $+0.5$&$+9$, $+2$\\
-180+&$-1$, $-X$&$-0$, $-5$&$+1$, $-1$&$+3$, $-0.5$&$+5$, $+0$&$+X$, $+1$\\
-150+&$-0.5$, $-X$&$-0$, $-8$&$+2$, $-2$&$+4$, $-1$&$+8$, $+0$&$+X$, $+0.5$\\
-120+&$-0$, $-X$&$+0.5$, $-X$&$+4$, $-4$&$+6$, $-2$&$+X$, $-0.5$&$+X$, $+0$\\
+Limited&\minus{2}, \minus{9}&\minus{0.5}, \minus{3}&\plus{0.5}, \minus{0.5}&\plus{2}, \plus{0}&\plus{4}, \plus{0.5}&\plus{9}, \plus{2}\\
+180+&\minus{1}, \minus{X}&\minus{0}, \minus{5}&\plus{1}, \minus{1}&\plus{3}, \minus{0.5}&\plus{5}, \plus{0}&\plus{X}, \plus{1}\\
+150+&\minus{0.5}, \minus{X}&\minus{0}, \minus{8}&\plus{2}, \minus{2}&\plus{4}, \minus{1}&\plus{8}, \plus{0}&\plus{X}, \plus{0.5}\\
+120+&\minus{0}, \minus{X}&\plus{0.5}, \minus{X}&\plus{4}, \minus{4}&\plus{6}, \minus{2}&\plus{X}, \minus{0.5}&\plus{X}, \plus{0}\\
 \bottomrule
 \end{tabularx}
 \begin{tablenote}{0.8\linewidth}

@@ -95,9 +95,9 @@ The modifiers for the hit die roll are described here and summarized in Table~\r
 
     \item\itemparagraph{Snap Shot.} 
     \CX{
-    If the attack was a Snap Shot, apply a modifier of $+1$.
+    If the attack was a Snap Shot, apply a modifier of \plus{1}.
     }{
-    If the attack is a snap shot, apply a modifier of $+1$.
+    If the attack is a snap shot, apply a modifier of \plus{1}.
     }
 
     \CY[3A-horizontal-arcs]{
@@ -123,17 +123,17 @@ The modifiers for the hit die roll are described here and summarized in Table~\r
     \CY[3A-vertical-attacks]{
     A climbing or diving aircraft firing at a target in the same map location  (i.e., the same hex or hex side) may be subject to a vertical-attack modifier. 
     
-    If the attacker is climbing and the target is diving or if the attacker is diving and the target is climbing, the modifier is $+2$. 
+    If the attacker is climbing and the target is diving or if the attacker is diving and the target is climbing, the modifier is \plus{2}. 
 
-    If the attacker is climbing or diving and the target is in level flight\AY[3A-vertical-attacks]{ or if the attacker is in level flight and the target is climbing or diving}, the modifier is $+1$.
+    If the attacker is climbing or diving and the target is in level flight\AY[3A-vertical-attacks]{ or if the attacker is in level flight and the target is climbing or diving}, the modifier is \plus{1}.
     
     If both the attacker and target are both in level flight, both climbing, or both diving, there is no modifier.
     }{
     If an aircraft fires at a target in the same map location (i.e., the same hex or hex side) may be subject to a vertical-attack modifier. 
     
-    If the attacker is climbing and the target is diving or if the attacker is diving and the target is climbing, the modifier is $+2$. 
+    If the attacker is climbing and the target is diving or if the attacker is diving and the target is climbing, the modifier is \plus{2}. 
     
-    If the attacker is climbing or diving and the target is in level flight or if the attacker is in level flight and the target is climbing or diving, the modifier is $+1$. 
+    If the attacker is climbing or diving and the target is in level flight or if the attacker is in level flight and the target is climbing or diving, the modifier is \plus{1}. 
     
     If both the attacker and target are both in level flight, both climbing, or both diving, there is no modifier.
     }
@@ -256,14 +256,14 @@ A gun pod places aircraft machine guns or cannons in an external, detachable con
 
 \paragraph{Multiple Guns Firing.} 
 \CX{
-If the aircraft is firing both internal guns and pods or more than one pod, a single die roll is used for each attack. The roll is compared to all the to hit numbers of each of the guns firing. Of those that hit, the highest damage rating available is used, and it is increased by $+1$ for each additional gun of those fired that hit.
+If the aircraft is firing both internal guns and pods or more than one pod, a single die roll is used for each attack. The roll is compared to all the to hit numbers of each of the guns firing. Of those that hit, the highest damage rating available is used, and it is increased by \plus{1} for each additional gun of those fired that hit.
 }{
-If the aircraft is firing internal guns and pods or more than one pod, a single die roll is used for the attack. The roll is compared to the hit die rolls of each gun firing. The damage rating is the highest of the guns that hit and is increased by $+1$ for each additional gun that hits.
+If the aircraft is firing internal guns and pods or more than one pod, a single die roll is used for the attack. The roll is compared to the hit die rolls of each gun firing. The damage rating is the highest of the guns that hit and is increased by \plus{1} for each additional gun that hits.
 }
 
 \DX{
 \addedin{1B}{1B-apj-23-errata}{\paragraph{Vertical Attack Modifier.} 
-The same hex $+2$ Vertical Attack Modifier only applies if the target uses climbing or diving flight and the firer uses the opposite (i.e., diving aircraft attacking a climbing aircraft). A diving attacker firing on a diving target and a climbing attacker firing on a climbing target in the same hex are not subject to the vertical attack modifier. A climbing or diving attacker firing on a level target is subject to a reduced Vertical Attack Modifier of $+1$.}\addedin{2B}{2B-vertical-attacks}{ For aircraft that have not yet moved, use the flight type from the previous turn to determine the modifier.}
+The same hex \plus{2} Vertical Attack Modifier only applies if the target uses climbing or diving flight and the firer uses the opposite (i.e., diving aircraft attacking a climbing aircraft). A diving attacker firing on a diving target and a climbing attacker firing on a climbing target in the same hex are not subject to the vertical attack modifier. A climbing or diving attacker firing on a level target is subject to a reduced Vertical Attack Modifier of \plus{1}.}\addedin{2B}{2B-vertical-attacks}{ For aircraft that have not yet moved, use the flight type from the previous turn to determine the modifier.}
 }
 
 \addedin{1B}{1B-apj-23-errata}{\paragraph{Aborting Gun Shots.} 
@@ -288,7 +288,7 @@ If a gun attack is declared but then cannot possibly hit (for example, if radar 
 
 For example, an aircraft directly behind the target aircraft and facing in the same direction has a zero-deflection shot (\arc{0} angle-off). An aircraft making a head-on attack is facing in the opposite direction to the target (\arc{180} of angle-off).
 
-\paragraph{Angle-Off Arcs.} Angle-off is described in \arc{30} arcs to the left or right of the target per the hex grid.  \changedin{1C}{1C-figures}{The Angle Off Diagrams}{Figure~\ref{figure:angle-off}} illustrate the arcs relative to the target aircraft. An attacker will be clearly in an arc or directly on one of the lines defining the border of two arcs. If it is on one of the borderlines, it is in the arc it would fall into if the faster of the target or attacker were moved forward one hex.\addedin{1B}{1B-apj-36-errata}{\ If moving the faster aircraft forward one hex/hexside results in it completely leaving both bordering arcs, consider it in the arc it moved through.}\addedin{1B}{1B-apj-36-errata}{\ Use aircraft speed, not FPs, to determine which one is faster. Use both aircraft's speeds from the start of the turn. If one has flown its full turn, do not use its new speed for next turn; that isn't formally computed until the Aircraft Administrative Phase.}\addedin{1B}{1B-apj-28-qa}{All aircraft are considered faster than ground units.} If the attacker would remain on the line (if moved forward), it is in the arc that benefits the attacker.\addedin{1B}{1B-apj-28-qa}{(In sighting attempts, the arc that benefits the aircraft being sighted. For initiative purposes, the arc that benefits the aircraft being considered for potential disadvantage.)} In the case of same hex \deletedin{1B}{1B-apj-36-errata}{(range 0/same altitude) }attacks, the aircraft is in the angle off arc that equates to its heading difference from the target at the instant it fires.\addedin{1B}{1B-apj-36-errata}{\ When determining angle-off for same hex attacks the 180 arc modifier is never used; a head-on shot uses the 180 line modifier and a shot 30 degrees off head-on uses the 150 arc modifier.} For diving and climbing same hex attacks against lower or higher targets respectively, both angle-off and \changedin{1B}{1B-apj-23-errata}{a $+2$ vertical attack modifier}{possibly a vertical attack modifier may} apply.
+\paragraph{Angle-Off Arcs.} Angle-off is described in \arc{30} arcs to the left or right of the target per the hex grid.  \changedin{1C}{1C-figures}{The Angle Off Diagrams}{Figure~\ref{figure:angle-off}} illustrate the arcs relative to the target aircraft. An attacker will be clearly in an arc or directly on one of the lines defining the border of two arcs. If it is on one of the borderlines, it is in the arc it would fall into if the faster of the target or attacker were moved forward one hex.\addedin{1B}{1B-apj-36-errata}{\ If moving the faster aircraft forward one hex/hexside results in it completely leaving both bordering arcs, consider it in the arc it moved through.}\addedin{1B}{1B-apj-36-errata}{\ Use aircraft speed, not FPs, to determine which one is faster. Use both aircraft's speeds from the start of the turn. If one has flown its full turn, do not use its new speed for next turn; that isn't formally computed until the Aircraft Administrative Phase.}\addedin{1B}{1B-apj-28-qa}{All aircraft are considered faster than ground units.} If the attacker would remain on the line (if moved forward), it is in the arc that benefits the attacker.\addedin{1B}{1B-apj-28-qa}{(In sighting attempts, the arc that benefits the aircraft being sighted. For initiative purposes, the arc that benefits the aircraft being considered for potential disadvantage.)} In the case of same hex \deletedin{1B}{1B-apj-36-errata}{(range 0/same altitude) }attacks, the aircraft is in the angle off arc that equates to its heading difference from the target at the instant it fires.\addedin{1B}{1B-apj-36-errata}{\ When determining angle-off for same hex attacks the 180 arc modifier is never used; a head-on shot uses the 180 line modifier and a shot 30 degrees off head-on uses the 150 arc modifier.} For diving and climbing same hex attacks against lower or higher targets respectively, both angle-off and \changedin{1B}{1B-apj-23-errata}{a \plus{2} vertical attack modifier}{possibly a vertical attack modifier may} apply.
 
 
 \paragraph{Other Angle-Off Arc Functions.}  \changedin{1C}{1C-figures}{The Angle Off Diagrams in the play aids}{Figures~\ref{figure:angle-off}} are also used to define radar and visual spotting arcs, aircraft restricted and blind sighting arcs, jamming arcs, and for determining missile attack modifiers.
@@ -348,7 +348,7 @@ Angle-off arcs are used for other purposes, including determining:
 \label{rule:ranges-of-angle-off-arcs}
 Ranges of angle-off arcs are used for restricted or blind regions for sighting, sensor fields, and determining advantage. If a range is given as an arc followed by a plus sign, it consists of those arcs and all more forward arcs. If a range is given as an arc followed by a minus sign, it consists of those arcs and all more rearward arcs. Ranges specified in this way consist of both the left and right arcs.
 
-For example, a blind arc given as $\arcrange{60}{-}$ consists the \arc{30} and \arc{60} arcs and a radar search field given as $\arcrange{150}{+}$ consists of the \arc{150} and \arc{180} arcs. 
+For example, a blind arc given as \arcrange{60}{-} consists the \arc{30} and \arc{60} arcs and a radar search field given as \arcrange{150}{+} consists of the \arc{150} and \arc{180} arcs. 
 
 \paragraph{Angle-Off Procedure for Restricted and Blind Arcs.}
 In this case, the sighting aircraft takes the target's place, and the potentially sighted element takes the attacker's place. 
@@ -459,9 +459,9 @@ The roll to hit is modified as for air to air gunnery, except that the snap shot
 
 \paragraph{Collision Course Attack (CCA) Technology.} Aircraft designers fitted some American and Canadian fighters with auto-pilot guidance systems which utilized an early computer linked to the interceptor's radar. The computer figured rocket ballistics and if the radar was tracking a target, it could guide the fighter to a release point and automatically launch the rockets. This concept freed the fighter from having to use pursuit curves to get in to gunnery parameters and was called “collision course” guidance as the interceptor could now theoretically attack from any angle.
 
-To qualify for the CCA to hit modifier, the attacking aircraft must start a game-turn with an air to air lock-on to the target and must not do \changedin{1B}{1B-apj-34-qa}{TT}{HT} or greater turns, any maneuvers except slides, or utilize climbs or dives of more than one altitude level up to the point of executing the rocket attack. If it meets this criteria, a $-2$ is applied to the hit roll.
+To qualify for the CCA to hit modifier, the attacking aircraft must start a game-turn with an air to air lock-on to the target and must not do \changedin{1B}{1B-apj-34-qa}{TT}{HT} or greater turns, any maneuvers except slides, or utilize climbs or dives of more than one altitude level up to the point of executing the rocket attack. If it meets this criteria, a \minus{2} is applied to the hit roll.
 
-\paragraph{Rocket Damage Modifiers.} Rockets, because of their large warheads, receive $-2$ to the damage table roll just like direct missile hits.
+\paragraph{Rocket Damage Modifiers.} Rockets, because of their large warheads, receive \minus{2} to the damage table roll just like direct missile hits.
 
 \paragraph{Rocket Attack Restrictions.} Rocket attacks are restricted as follows:
 
@@ -512,13 +512,13 @@ To qualify for the CCA to hit modifier, the attacking aircraft must start a game
 
 \end{itemize}
 
-\paragraph{Rocket Attack Procedure.} The attacking aircraft declares its target and the number of rocket factors fired. Consult Table~\ref{table:air-to-air-rocket-attacks}. Cross-index the range and the number of the rocket factors to obtain the hit die roll. Roll the die and modify the result as appropriate. If the result is equal to or less than the hit die roll, the attack has produced a hit. If the rockets hit, they damage the target according to rule ~\ref{rule:aircraft-damage-resolution}. The attack rating depends on the number of factors fired and is given in Table~\ref{table:air-to-air-rocket-attacks}. Because of their large warheads, rockets receive $-2$ modifier to the damage roll, just like direct missile hits.
+\paragraph{Rocket Attack Procedure.} The attacking aircraft declares its target and the number of rocket factors fired. Consult Table~\ref{table:air-to-air-rocket-attacks}. Cross-index the range and the number of the rocket factors to obtain the hit die roll. Roll the die and modify the result as appropriate. If the result is equal to or less than the hit die roll, the attack has produced a hit. If the rockets hit, they damage the target according to rule ~\ref{rule:aircraft-damage-resolution}. The attack rating depends on the number of factors fired and is given in Table~\ref{table:air-to-air-rocket-attacks}. Because of their large warheads, rockets receive \minus{2} modifier to the damage roll, just like direct missile hits.
 
 \paragraph{Rocket Attack Modifiers.} 
 The die roll to hit is modified as for air to air gunnery, except that the snap shot modifier does not apply and the CC rocket attack modifier may apply:
 
 \begin{itemize}
-    \item \itemparagraph{CC Rocket Attack.} If the attacker satisfies the requirements for a CC rocket attack, apply a modifier of $-2$.
+    \item \itemparagraph{CC Rocket Attack.} If the attacker satisfies the requirements for a CC rocket attack, apply a modifier of \minus{2}.
 \end{itemize}
 
 \paragraph{Collision-Course (CC) Rocket Attacks.} Some American and Canadian interceptors were fitted with “collision-course guidance” systems that linked their auto-pilot, rockets, and radar to an early computer. If the radar was tracking a target, the computer could guide the fighter and automatically launch the rockets at the target. This theoretically freed the fighter from the need to use pursuit curves to get into gunnery parameters and allowed the interceptor to attack from any angle.
@@ -531,7 +531,7 @@ To qualify for the CC rocket attack hit modifier, the attacking aircraft must ha
     \item prepare for or perform any maneuvers except slides, or
     \item climb or dive more than one altitude level.
 \end{itemize}
-If it meets these criteria, apply a $-2$ modifier to the hit die roll.
+If it meets these criteria, apply a \minus{2} modifier to the hit die roll.
 }
 
 \addedin{1C}{1C-tables}{
@@ -579,7 +579,7 @@ If it meets these criteria, apply a $-2$ modifier to the hit die roll.
 }
 
 \CX{
-\paragraph{Steady State Gunsight Tracking (SSGT).} Gunsights are optimized for rear quarter attacks. Any aircraft attacking from the \arc{60} or less angle-off arc may track its target and achieve improved probabilities for hits. \changedin{1B}{1B-apj-23-errata}{The firing aircraft must expend FPs while on a tracking line (see Tracking diagram).}{The firing aircraft must expend FPs while on a tracking line (see \changedin{1C}{1C-figures}{Tracking Diagram}{Figure~\ref{figure:ssgt-lines}})\addedin{1B}{1B-apj-36-errata}{ within six hexes of the target, and} with the target \addedin{1B}{1B-apj-37-qa}{in the field of fire of its guns or }in its limited arc.} \addedin{1B}{1B-apj-23-qa/1B-apj-36-errata}{During the Recovery Period following an ET an aircraft may not accumulate FPs for SSGT, but it may do so during recovery from lesser turn rates.} \addedin{1B}{1B-apj-36-errata}{VFPs as well as HFPs may be used to obtain SSGT. An aircraft may be turning while accumulating SSGT, and SSGT is not lost merely if the aircraft turns.} \changedin{1B}{1B-apj-23-errata}{For each 1/3 (round down) of the aircraft's speed (in full FPs) expended on a tracking line, modify the Roll To Hit by $-1$.}{For each 1/3 of the aircraft's speed expended on the tracking line (use the 1/3-2/3 conversion table), modify the Roll to Hit by $-1$.}  A maximum modifier of $-2$ is allowed for SSGT; tracking may not begin until the firing aircraft is within six hexes range of the target.
+\paragraph{Steady State Gunsight Tracking (SSGT).} Gunsights are optimized for rear quarter attacks. Any aircraft attacking from the \arc{60} or less angle-off arc may track its target and achieve improved probabilities for hits. \changedin{1B}{1B-apj-23-errata}{The firing aircraft must expend FPs while on a tracking line (see Tracking diagram).}{The firing aircraft must expend FPs while on a tracking line (see \changedin{1C}{1C-figures}{Tracking Diagram}{Figure~\ref{figure:ssgt-lines}})\addedin{1B}{1B-apj-36-errata}{ within six hexes of the target, and} with the target \addedin{1B}{1B-apj-37-qa}{in the field of fire of its guns or }in its limited arc.} \addedin{1B}{1B-apj-23-qa/1B-apj-36-errata}{During the Recovery Period following an ET an aircraft may not accumulate FPs for SSGT, but it may do so during recovery from lesser turn rates.} \addedin{1B}{1B-apj-36-errata}{VFPs as well as HFPs may be used to obtain SSGT. An aircraft may be turning while accumulating SSGT, and SSGT is not lost merely if the aircraft turns.} \changedin{1B}{1B-apj-23-errata}{For each 1/3 (round down) of the aircraft's speed (in full FPs) expended on a tracking line, modify the Roll To Hit by \minus{1}.}{For each 1/3 of the aircraft's speed expended on the tracking line (use the 1/3-2/3 conversion table), modify the Roll to Hit by \minus{1}.}  A maximum modifier of \minus{2} is allowed for SSGT; tracking may not begin until the firing aircraft is within six hexes range of the target.
 \addedin{1B}{1B-apj-23-errata}{SSGT must be started anew each game turn. Taking a shot during a move does not cancel or stop the aircraft from doing SSGT.}
 
 \addedin{1B}{1B-apj-23-errata}{A target that defensively pre-empts nullifies the attacker's SSGT up to that point. When the attacker resumes moving following a pre-emption, SSGT may be started anew.}
@@ -591,7 +591,7 @@ Steady-state gunsight tracking (SSGT) of a target from the rear allows the attac
 \paragraph{SSGT Procedure.}
  To benefit from SSGT, an aircraft must accumulate FPs consecutively while on a tracking line (see Figure~\ref{figure:ssgt-lines}), at a range of no more than six hexes from the target, and with the target in the field of fire of its guns or in its limited horizontal arc. Both VFPs and HFPs count for SSGT. FPs used for an ET turn, unloaded FPs, or FPs used to prepare for or execute a rolling maneuver do not count for SSGT, and neither do FPs used for the recovery periods after an ET turn or an unloaded FP. FPs used for or to recover from turns at lesser turn rates do count. Attacking or turning during a move does not interrupt the accumulation of FPs.
 
-\paragraph{SSGT Modifiers.} When attacking with guns or rockets, an aircraft gains a $-1$ modifier of each 1/3 of its speed (round down) in accumulated FPs. The maximum modifier is $-2$. 
+\paragraph{SSGT Modifiers.} When attacking with guns or rockets, an aircraft gains a \minus{1} modifier of each 1/3 of its speed (round down) in accumulated FPs. The maximum modifier is \minus{2}. 
 
 \paragraph{Starting and Stopping SSGT.}
 An aircraft must start accumulating FPs for SSGT from zero each game turn. Any SSGT modifiers and accumulated FPs are lost at the end of a game turn. 
