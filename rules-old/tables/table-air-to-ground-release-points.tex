@@ -1,0 +1,102 @@
+%!TEX root = ./rules-working.tex
+%LTeX: enabled=true
+\addedin{1C}{1C-tables}{
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+        
+\tablecaption{table:air-to-ground-release-points}{Air-to-Ground Release Points}
+
+\small
+\begin{tabularx}{1.0\linewidth}{CCCCCCCCCCCC}
+\toprule
+\multicolumn{2}{c}{ATG Rockets}&\multicolumn{5}{c}{Level Bombing}&\multicolumn{5}{c}{Dive Bombing}\\
+\cmidrule(lr){1-2}
+\cmidrule(lr){3-7}
+\cmidrule(lr){8-12}
+&&&\multicolumn{2}{c}{Low Drag}&\multicolumn{2}{c}{High Drag}&&\multicolumn{2}{c}{Low Drag}&\multicolumn{2}{c}{High Drag}\\
+\cmidrule(lr){4-5}
+\cmidrule(lr){6-7}
+\cmidrule(lr){9-10}
+\cmidrule(lr){11-12}
+Range in Hexes&Allowed Levels&
+Range in Hexes&Allowed Levels&Die Roll Modifier&Allowed Levels&Die Roll Modifier&
+Range in Hexes&Allowed Levels&Die Roll Modifier&Allowed Levels&Die Roll Modifier\\
+\midrule
+0       &---
+&
+0       &---                                &---
+        &\wbox{00}{T}--\wbox[l]{00}{2}      &\minus{1}
+&
+0       &\wbox{00}{1}--\wbox[l]{00}{3}      &\minus{2}
+        &\wbox{00}{1}--\wbox[l]{00}{3}      &\minus{1}
+\\
+1       &\wbox{00}{T}--\wbox[l]{00}{4\asteriskmark}
+&
+1       &\wbox{00}{1}--\wbox[l]{00}{2}      &\plus{0}
+        &\wbox{00}{3}--\wbox[l]{00}{6}      &\plus{0}
+&
+1       &\wbox{00}{4}--\wbox[l]{00}{6}      &\minus{1}
+        &\wbox{00}{4}--\wbox[l]{00}{8}      &\plus{0}
+\\
+2       &\wbox{00}{1}--\wbox[l]{00}{8}
+&
+2       &\wbox{00}{3}--\wbox[l]{00}{4}      &\plus{0}
+        &\wbox{00}{7}--\wbox[l]{00}{10}     &\plus{1}
+&
+2       &\wbox{00}{7}--\wbox[l]{00}{10}     &\plus{0}
+        &\wbox{00}{9}--\wbox[l]{00}{14}     &\plus{2}
+\\
+3       &\wbox{00}{2}--\wbox[l]{00}{12}
+&
+3       &\wbox{00}{5}--\wbox[l]{00}{6}      &\plus{1}
+        &\wbox{00}{11}--\wbox[l]{00}{14}    &\plus{2}
+&
+3       &\wbox{00}{11}--\wbox[l]{00}{12}    &\plus{1}
+        &\wbox{00}{15}--\wbox[l]{00}{20}    &\plus{4}
+\\
+4       &\wbox{00}{2}--\wbox[l]{00}{10}
+&
+4       &\wbox{00}{7}--\wbox[l]{00}{8}      &\plus{2}
+        &\wbox{00}{15}--\wbox[l]{00}{18}    &\plus{3}
+&
+4       &\wbox{00}{13}--\wbox[l]{00}{15}    &\plus{2}
+        &---                                &---
+\\
+5       &\wbox{00}{3}--\wbox[l]{00}{10}
+&
+5       &\wbox{00}{9}--\wbox[l]{00}{10}     &\plus{3}
+        &\wbox{00}{19}--\wbox[l]{00}{24}    &\plus{5}
+&
+5       &\wbox{00}{16}--\wbox[l]{00}{20}    &\plus{4}
+        &---                                &---
+\\
+6       &\wbox{00}{4}--\wbox[l]{00}{9}
+&
+6--7    &\wbox{00}{11}--\wbox[l]{00}{15}    &\plus{5}
+        &\wbox{00}{25}--\wbox[l]{00}{32}    &\plus{7}
+&
+6--7    &---                                &---
+        &---                                &---
+\\
+7       &\wbox{00}{4}--\wbox[l]{00}{7}
+&
+8--9    &\wbox{00}{16}--\wbox[l]{00}{25}    &\plus{7}
+        &\wbox{00}{33}--\wbox[l]{00}{40}    &\plus{9}
+&
+8--9    &---                                &---
+        &---                                &---
+\\
+8       &\wbox{00}{4}--\wbox[l]{00}{5}
+&
+10--12  &\wbox{00}{26}--\wbox[l]{00}{40}    &\plus{8}
+        &---                                &---
+&
+10--12  &---                                &---
+        &---                                &---
+\\
+\bottomrule
+\end{tabularx}
+
+\end{twocolumntable}
+\end{twocolumntablefloat}
+}

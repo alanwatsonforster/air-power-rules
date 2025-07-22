@@ -1,0 +1,29 @@
+%!TEX root = ./rules-working.tex
+%LTeX: enabled=true
+\addedin{1C}{1C-tables}{
+\begin{twocolumntablefloat}
+\begin{twocolumntable}
+
+\tablecaption{table:air-to-ground-attack-results}{Air-to-Ground Attack Results}
+\begin{tabularx}{0.9\linewidth}{CCCCCCCCCCCCCC}
+\toprule
+&\multicolumn{13}{c}{FAS -- Defense Strength Odds Ratio}\\
+\cmidrule{2-14}
+Die Roll&1--4 or less&1--3&1--2&1--1&1.5--1&2--1&3--1&4--1&5--1&6--1&8--1&10--1&12--1 or more\\
+\midrule
+\wbox[l]{000}{\minusafter{0}}  &S  &D  &2D &K  &K  &K  &K  &K  &K  &K  &K  &K  &K  \\
+\wbox[l]{000}{1}               &S  &D  &2D &2D &K  &K  &K  &K  &K  &K  &K  &K  &K  \\
+\wbox[l]{000}{2}               &S  &S  &D  &D  &2D &2D &K  &K  &K  &K  &K  &K  &K  \\
+\wbox[l]{000}{3}               &---&S  &S  &D  &2D &2D &2D &2D &K  &K  &K  &K  &K  \\
+\wbox[l]{000}{4}               &---&S  &S  &S  &D  &2D &2D &2D &2D &K  &K  &K  &K  \\
+\wbox[l]{000}{5}               &---&---&S  &S  &D  &D  &D  &2D &2D &2D &K  &K  &K  \\
+\wbox[l]{000}{6}               &---&---&---&S  &S  &D  &D  &D  &2D &2D &2D &K  &K  \\
+\wbox[l]{000}{7}               &---&---&---&---&S  &S  &D  &D  &D  &2D &2D &2D &K  \\
+\wbox[l]{000}{8}               &---&---&---&---&S  &S  &D  &D  &D  &D  &2D &2D &K  \\
+\wbox[l]{000}{9}               &---&---&---&---&---&S  &S  &D  &D  &D  &D  &2D &2D \\
+\wbox[l]{000}{\plusafter{10}}  &---&---&---&---&---&---&S  &S  &S  &D  &D  &2D &2D \\
+\bottomrule
+\end{tabularx}
+\end{twocolumntable}
+\end{twocolumntablefloat}
+}
