@@ -526,15 +526,15 @@ minus \fontdimen4\font}
     % picture. It is necessary since Tikz rotates text with respect to
     % the original rotation, not the current rotation.
     \begin{athex}{#2}{#3}
-        \begin{scope}[rotate=#4-45]
+        \begin{scope}[rotate=#4-90]
             \draw[fill=white] (-0.3,-0.3) rectangle (0.3,0.3);
             \begin{scope}[rotate=0,shift={(0,0.10)}]
                 \draw (-0.15,-0.10) -- (-0.15,+0.10) -- (+0.15,+0.10) -- (+0.15,-0.10) -- cycle;
                 \draw (-0.15,-0.10) -- (+0.15,+0.10);
                 \draw (-0.15,+0.10) -- (+0.15,-0.10);
             \end{scope}
-            \node [anchor=south west,rotate=#4-45+#1] at (-0.35,-0.35) {\tiny #5};
-            \node [anchor=south east,rotate=#4-45+#1] at (+0.35,-0.35) {\tiny #6};
+            \node [anchor=south west,rotate=#4-90+#1] at (-0.35,-0.35) {\tiny #5};
+            \node [anchor=south east,rotate=#4-90+#1] at (+0.35,-0.35) {\tiny #6};
         \end{scope}
     \end{athex}
 }
