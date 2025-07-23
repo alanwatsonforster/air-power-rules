@@ -1,0 +1,27 @@
+%!TEX root = ../rules-working.tex
+%LTeX: enabled=false
+\addedin{1C}{1C-tables}{
+\begin{onecolumntablefloat}
+\begin{onecolumntable}
+\tablecaption{table:sam-break-lock}{SAM Break Lock Die Roll}
+
+\begin{tabularx}{1.0\linewidth}{llL}
+\toprule
+SAM Type        &ECM Type       &Break-Lock Die Roll\\
+\midrule
+BR/CG           &DJM-A/B/C/D    &\binaryminus{DJM rating}{TTR ECCM}\\
+CW              &DJM-C/D        &\binaryminus{DJM rating}{TTR ECCM}\\
+TVM             &DJM-D          &\binaryminus{DJM rating}{TTR ECCM}\\
+BR/CG/CW/TVM    &CH             &CH effectiveness\\
+BR/CG/CW/TVM    &MJ             &MJ effectiveness\\
+BR/CG           &AJM            &\binaryminus{1/2 AJM rating}{TTR ECCM}\\
+CW/TVM          &AJM            &---\\
+OG/LG           &FL             &1 if any FL PPL is in effect\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{1.0\linewidth}
+    Round up all half values. Some DJM-A/B and some AJM pods may be noted as effective against CW and TTR SAMs, see EP tables.
+\end{tablenote}
+\end{onecolumntable}
+\end{onecolumntablefloat}
+}

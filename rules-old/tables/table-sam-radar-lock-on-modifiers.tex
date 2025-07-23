@@ -1,0 +1,29 @@
+%!TEX root = ../rules-working.tex
+%LTeX: enabled=false
+\addedin{1C}{1C-tables}{
+\begin{onecolumntablefloat}
+\begin{onecolumntable}
+\tablecaption{table:sam-radar-lock-on-modifiers}{SAM Unit Radar Lock-On Modifiers}
+
+\begin{tabularx}{1.0\linewidth}{lL}
+\toprule
+Modifier&Condition\\
+\midrule
+\minus{2}   &Target IFF is on.\\
+\plus{2}    &CCU is inoperative.\\
+\minus{3}   &Pass-down received.\\
+\binaryminus{AJM rating}{TTR ECCM}
+            &Target AJM is on.\\
+\binaryminus{BJM rating}{TTR ECCM}
+            &BJM noise in effect.\\
+CH or MJ effectiveness    
+            &Target DDS program on.\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{1.0\linewidth}
+    If multiple BJMs are in play, consider only the most effective one against the radar.
+\end{tablenote}
+\end{onecolumntable}
+\end{onecolumntablefloat}
+}
+

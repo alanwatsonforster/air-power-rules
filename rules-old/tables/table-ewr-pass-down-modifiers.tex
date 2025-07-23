@@ -1,0 +1,27 @@
+%!TEX root = ../rules-working.tex
+%LTeX: enabled=false
+\addedin{1C}{1C-tables}{
+\begin{onecolumntablefloat}
+\begin{onecolumntable}
+\tablecaption{table:ewr-pass-down-modifiers}{EWR Pass-Down Modifiers}
+
+\begin{tabularx}{1.0\linewidth}{LL}
+\toprule
+Modifier&Condition\\
+\midrule
+\minus{2}   &Target IFF is on.\\
+CH or MJ effectiveness     
+            &Target DDS program on.\\
+\binaryminus{AJM rating}{EWR ECCM}
+            &Target AJM is on.\\
+\binaryminus{BJM rating}{EWR ECCM}
+            &BJM noise in effect.\\
+\bottomrule
+\end{tabularx}
+\begin{tablenote}{0.9\linewidth}
+    If multiple BJMs are in play, consider only the most effective one against the radar.
+\end{tablenote}
+\end{onecolumntable}
+\end{onecolumntablefloat}
+}
+

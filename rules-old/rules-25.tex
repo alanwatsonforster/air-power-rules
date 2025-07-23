@@ -18,7 +18,9 @@ Surface to Air Missile (SAM) units consist of one or more self-contained launch 
 
 \begin{itemize}
 
-    \item\itemparagraph{Launches.} SAMs are launched in the SAM Interaction Phase and not the air to air missile launch phase. A launch roll is used as for air to air missiles. When successfully launched, missiles are placed in the launch unit's hex with any initial facing desired.
+    \input{tables/table-sam-launch-modifiers.tex}
+
+    \item\itemparagraph{Launches.} SAMs are launched in the SAM Interaction Phase and not the air to air missile launch phase. A launch roll is used as for air to air missiles\addedin{1C}{1C-tables}{ with modifiers according to Table \ref{table:sam-launch-modifiers}}. When successfully launched, missiles are placed in the launch unit's hex with any initial facing desired.
 
     \item\itemparagraph{Boosted Flight.} On the game turn of launch only, SAMs have a booster phase during which the missile is accelerating and/or being gathered under guidance control. The missile is not armed nor can it began maneuvering until a number of FPs have been expended in boosted flight equal to the amount listed under “boost” on the SAM missile data table.
 
@@ -65,11 +67,13 @@ Surface to Air Missile (SAM) units consist of one or more self-contained launch 
 
 \section{Early Warning Radars and SAM Target Passdowns}
 
-\paragraph{Early Warning Radar (EWR).} EWRs assist SAM units in achieving lock-ons. If an EWR is part of an Integrated Air Defense System (IADS), it may provide radar passdowns to units in the IADS. If EWR is integral to the SAM unit, it may provide radar passdowns to its own Target Tracking Radar (TTR). The scenario defines the radar passdown chain of command. A scenario may indicate that a CCU counter may also be required to conduct pass-downs.
+\input{tables/table-ewr-pass-down-modifiers.tex}
+
+    \paragraph{Early Warning Radar (EWR).} EWRs assist SAM units in achieving lock-ons. If an EWR is part of an Integrated Air Defense System (IADS), it may provide radar passdowns to units in the IADS. If EWR is integral to the SAM unit, it may provide radar passdowns to its own Target Tracking Radar (TTR). The scenario defines the radar passdown chain of command. A scenario may indicate that a CCU counter may also be required to conduct pass-downs.
 
 \paragraph{Passdown Procedure.} An EWR may attempt one passdown to each unit in its IADS per game turn. A single target may be passed down to one or more different SAM units or different targets may be passed to different units.
 
-EWRs perform a passdown by announcing the EWR detected target and the unit it is being passed to. Roll the ten-sided die and apply any applicable modifiers. A result of 7 or less indicates success. A successful passdown provides a \minus{3} modifier to the SAM unit's lock-on attempt.
+EWRs perform a passdown by announcing the EWR detected target and the unit it is being passed to. Roll the ten-sided die and apply any applicable modifiers\addedin{1C}{1C-tables}{ from Table \ref{table:ewr-pass-down-modifiers}}. A result of 7 or less indicates success. A successful passdown provides a \minus{3} modifier to the SAM unit's lock-on attempt.
 
 \paragraph{EWR Target Detection.} EWRs detect aircraft using the same procedure as aircraft radars except they use the EWR line of the Radar Table. Any aircraft within the line of sight of an operating EWR (not jammed, suppressed or shut down) is an eligible target as EWRs have a 360° sweep.  
 
@@ -87,7 +91,9 @@ The Seeker head type is used exactly as for air to air missiles. IR SAMs must me
 
 \paragraph{Target Acquisition And Launch.} All IR SAM units are quick reaction types. In order to launch missiles in the SAM Interaction Phase, they must have previously acquired seeker Optical lock-ons to the target.
 
-\paragraph{Seeker Lock-on Procedure.} If a target is visually sighted and within maximum lock on range (two altitude levels difference equals a hex of range), roll the die during either or both lock-on times of the SAM interaction phase.
+\paragraph{Seeker Lock-on Procedure.} 
+\input{tables/table-sam-optical-lock-on-modifiers.tex}
+If a target is visually sighted and within maximum lock on range (two altitude levels difference equals a hex of range), roll the die during either or both lock-on times of the SAM interaction phase\addedin{1C}{1C-tables}{ and apply approriate modifiers from Table \ref{table:sam-optical-lock-on-modifiers}}.
 
 One lock-on attempt is allowed per launcher or launch vehicle in the unit. Each may only maintain one lock-on at a time. A result equal to or less than the optical lock-on number given on the counter means target acquisition (lock-on) has occurred. A lock-on is retained until the fine of sight is broken or the aircraft is further away than the maximum lock-on range.
 
@@ -100,9 +106,11 @@ Radar Guided Surface-to-Air Missiles consist of those with the following guidanc
 
 \paragraph{Target Tracking Radars (TTRs).} All radar guided SAM units utilize TTRs to lock-on to targets and guide their missiles. The presence of a TTR with the unit is indicated by the inclusion of a radar frequency code on the front of the counter and a radar lock-on number on the back of the counter across from any optical lock-on numbers.
 
-\paragraph{TTR Lock-Ons.} TTR lock-on attempts are allowed at the appropriate lock-on times of the SAM interaction phase, assuming the radar is not stand-off jammed or suppressed by previous attacks. There must be a line of sight to the target (meaning it is not terrain masked per Rule \ref{rule:line-of-sight}) although it need not be sighted, and the target must be within tracking range of the TTR.
+\paragraph{TTR Lock-Ons.} 
+\input{tables/table-sam-radar-lock-on-modifiers.tex}
+TTR lock-on attempts are allowed at the appropriate lock-on times of the SAM interaction phase, assuming the radar is not stand-off jammed or suppressed by previous attacks. There must be a line of sight to the target (meaning it is not terrain masked per Rule \ref{rule:line-of-sight}) although it need not be sighted, and the target must be within tracking range of the TTR.
 
-Roll the die and modify the roll as required for the presence of active and barrage jamming taking into account the SAM unit's missile's ECCM rating. A result less than or equal to the lock-on number on the counter means the target has been locked-on to.               
+Roll the die and modify the roll as required\addedin{1C}{1C-tables}{ from Table \ref{table:sam-radar-lock-on-modifiers}} for the presence of active and barrage jamming taking into account the SAM unit's missile's ECCM rating. A result less than or equal to the lock-on number on the counter means the target has been locked-on to.               
 
 \paragraph{EW Jamming Effects.} TTRs blinded by BJM stand-off attacks may not attempt lock-ons. Aircraft with AJMs and aircraft in the protected arcs of BJMs used in the noise mode, get to use the jamming number as a modifier to the die roll of any lock-on attempts made against them. The modifier may be reduced to zero by the ECCM capability of the SAM unit TTR.
 
@@ -136,7 +144,9 @@ Whenever a target of a HOJ missile elects to stop using its BJM (announced in th
 
 Additionally, the TTR must maintain a lock-on (HOJ SAMs excepted) and the missile must end each game turn no further from the target than when it started.
 
-\paragraph{Breaking TTR Lock-Ons.} TTR lock-ons can be broken as follows during the SAM interaction Phase:
+\paragraph{Breaking TTR Lock-Ons.} 
+\input{tables/table-sam-break-lock.tex}
+TTR lock-ons can be broken as follows during the SAM interaction Phase:
 
 \begin{itemize}
     \item When target has a CHAFF PPL present and a break lock roll succeeds against BR, CG, CW, and TVM SAM units.
@@ -152,6 +162,8 @@ Additionally, the TTR must maintain a lock-on (HOJ SAMs excepted) and the missil
     \item If the SAM player opts to break lock, or shuts down the radar (see rule \ref{rule:arms}).
 
 \end{itemize}
+
+\addedin{1C}{1C-tables}{The break-lock rolls are given in Table \ref{table:sam-break-lock}.}
 
 %Towed decoy adds +1 to ECM rating to break TTR lock-ons if DJM/AJM, internal or podded, is ECM effective against the radar type as specified above.
 
@@ -181,9 +193,9 @@ To be brought under guidance, the original launch unit must obtain a lock-on to 
 
 Optical and/or laser guided SAMs are those with OG or LG guidance codes. Some radar guided SAMs have optical back­up modes.
 
-OG/LG Target Acquisition. Like IR SAMs, OG and LG SAMs must have an optical lock-on to the target. To obtain an optical lock-on, the target must be sighted and within the maximum lock-on range of the missile. For man portable OG missiles, the max lock-on range is listed, for others which use TV and sometimes IR optics systems, the lock-on range is six times the aircraft's visibility number.
+\paragraph{OG/LG Target Acquisition.} Like IR SAMs, OG and LG SAMs must have an optical lock-on to the target. To obtain an optical lock-on, the target must be sighted and within the maximum lock-on range of the missile. For man portable OG missiles, the max lock-on range is listed, for others which use TV and sometimes IR optics systems, the lock-on range is six times the aircraft's visibility number.
 
-The die is rolled as for IR SAM lock-ons except the lock­on modifiers will include the V.A.S. range modifiers on the sighting tables when attempting locks with non-Infantry OG/ LG type SAMs.
+The die is rolled as for IR SAM lock-ons\changedin{1C}{1C-tables}{ except the lock­on modifiers will include}{ with approriate modifiers from Table \ref{table:sam-optical-lock-on-modifiers} and with} the V.A.S.\ range modifiers on the sighting tables when attempting locks with non-Infantry OG/LG type SAMs.
 
 \paragraph{Guidance Requirements.} Optical and laser guided SAMs are basically short ranged line of sight weapons. Most OG SAMs are tracked via a flare in the rear of the missile. Therefore, they must stay in the line of sight of the optical target tracker. Laser guided SAMs ride a laser beam pointed at the target, targeting reflected laser energy off the aircraft. Both are therefore treated as having to meet the same tracking requirements as BR type radar guided SAMs.
 
