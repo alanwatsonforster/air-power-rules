@@ -1,0 +1,33 @@
+%!TEX root = ../rules-working.tex
+%LTeX: enabled=false
+\addedin{1C}{1C-tables}{
+\begin{onecolumntablefloat}
+\begin{onecolumntable}
+\tablecaption{table:random-aaa}{Random AAA Fire}
+
+\begin{tabularx}{0.9\linewidth}{lL}
+\toprule
+\multicolumn{2}{c}{Aimed Fire Attempt Roll}\\
+\midrule
+Range to Target A/C&Die Roll to Fire\\
+\midrule
+Short           & 8 or less\\
+Medium          & 6 or less\\
+Long            & 4 or less\\
+\midrule
+\multicolumn{2}{c}{Plotted Fire Procedure}\\
+\midrule
+\multicolumn{2}{@{}l@{}}{
+\begin{tablenote}{0.9\linewidth}
+\begin{itemize}
+    \item Target A/C is one nearest heavy AAA unit.
+    \item Roll one die referencing random plotted fire diagram.
+    \item Roll die twice; subtract 2d roll from first for altitude difference in levels from target altitude.
+\end{itemize}
+\end{tablenote}
+}\\[-0.5ex]
+\bottomrule
+\end{tabularx}
+\end{onecolumntable}
+\end{onecolumntablefloat}
+}

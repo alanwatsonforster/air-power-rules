@@ -251,7 +251,7 @@ minus \fontdimen4\font}
 \let\originaltitle\title
 \renewcommand{\title}[1]{\originaltitle{\bfseries\Large\MakeUppercase{#1}}}
 \let\originalauthor\author
-\renewcommand{\author}[1]{\originalauthor{\itshape\normalsize{#1}}}
+\renewcommand{\author}[1]{\originalauthor{\parbox{0.5\linewidth}{\centering\itshape\normalsize #1}}}
 \let\originaldate\date
 \renewcommand{\date}[1]{\originaldate{\normalsize{#1}}}
 

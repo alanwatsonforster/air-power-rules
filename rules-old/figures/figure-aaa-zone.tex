@@ -1,0 +1,41 @@
+%!TEX root = ../rules-working.tex
+%LTeX: enabled=false
+
+\addedin{1C}{1C-figures}{
+
+\begin{onecolumnfigure}
+
+\begin{fitheight}{5.2\standardhexwidth}
+\begin{tikzpicture}
+    \setfiguresize{-2.5}{-2.6}{+2.5}{+2.6}
+    \drawevenhexgrid{-2}{-2}{5}{5}
+    \begin{scope}[xscale=\hexxfactor,ultra thick,black]
+        \draw 
+            (-1.333,+0.000) -- 
+            (-1.667,+0.500) -- 
+            (-1.333,+1.000) --
+            (-0.667,+1.000) --
+            (-0.333,+1.500) --
+            (+0.333,+1.500) --
+            (+0.667,+1.000) -- 
+            (+1.333,+1.000) --
+            (+1.667,+0.500) --
+            (+1.333,+0.000) --
+            (+1.667,-0.500) --
+            (+1.333,-1.000) --
+            (+0.667,-1.000) --
+            (+0.333,-1.500) --
+            (-0.333,-1.500) --
+            (-0.667,-1.000) --
+            (-1.333,-1.000) --
+            (-1.667,-0.500) --
+            cycle;
+    \end{scope}
+    \node at (0,0) [align=center] {Target\\Hex};
+\end{tikzpicture}
+\end{fitheight}
+
+\figurecaption{figure:aaa-zone}{AAA Barage and Plotted Fire Zone of Effect}
+
+\end{onecolumnfigure}
+}
