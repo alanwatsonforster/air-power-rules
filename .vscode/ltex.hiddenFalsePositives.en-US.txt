@@ -22,14 +22,4 @@
 {"rule":"CD_NN","sentence":"^\\QIn the v2.4 rules, RWR-C+/D+ gives a +1 modifier to missile attacks and towed jammers give a +1 or +2 modifier to BRM/RHM/AHM attacks.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIn the v2.4 rules, RWR-C+/D+ gives a +1 modifier to missile attacks and towed jammers give a +1 or +2 modifier to BRM/RHM/AHM attacks.\\E$"}
 {"rule":"CD_NN","sentence":"^\\QAny such attacks would presumably be at 1:4 odds (since the primary attack is at 1:2 odds and the odds for secondary attacks are normally reduced by a factor of 3) and with a +3 modifier.\\E$"}
-{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QAt the time of writing, several sets of rules are available: The original rules were published in 1987 in and .\\E$"}
-{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThese were then extended in and .\\E$"}
-{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThe original rules were published in 1987 in and .\\E$"}
-{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThe first-edition rules were published in 1992 in .\\E$"}
-{"rule":"COMMA_COMPOUND_SENTENCE_2","sentence":"^\\QThere are two sets of official errata: one page provided with and four pages published in 24.\\E$"}
-{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QVersion 1A corresponds to the original first-edition (i.e., ) rules without the official errata.\\E$"}
-{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QVersion 1B This version incorporates errata taken from authoritative sources, such as the published errata, the “Q&A” columns by J.D. Webster in , other public statements by J.D. Webster, and Felix Hack's article in 36.\\E$"}
-{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QVersion 1C This version has corrected and redrawn diagrams, corrected tables, and incorporates both into the body of the text in addition to the play aid sheets.\\E$"}
-{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QVersion 2A This version incorporates second-edition changes from , email messages from JD Webster, and Malcolm Pipe's second-edition rules.\\E$"}
 {"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QVersion 2A This version incorporates second-edition changes from , email messages from JD Webster, and Malcolm Pipe's second-edition rules.\\E$"}
-{"rule":"WHITESPACE_RULE","sentence":"^\\QSchola has a version for math, which is useful for text like “1 ≤  ≤ 2”.\\E$"}

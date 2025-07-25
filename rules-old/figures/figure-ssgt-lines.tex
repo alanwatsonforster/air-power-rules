@@ -1,7 +1,7 @@
 %!TEX root = ../rules-working.tex
 %LTeX: enabled=false
 
-\silentlyaddedin{1C}{1C-figures}{
+\silentlyaddedin{1B}{1B-figures}{
 
 \begin{twocolumnfigure}[tbp]
 \begin{fitwidth}{0.3\linewidth}
@@ -9,13 +9,23 @@
     \setfiguresize{-6.1}{-6.7}{6.1}{1.6}
     \begin{scope}
         \drawevenhexgrid{-6}{-6}{13}{8}
-        \begin{scope}[very thick,dashed,-|]
-            \draw (0,0) -- (210:6);
-            \draw (0,0) -- (240:6*\hexxfactor);
-            \draw (0,0) -- (270:6);
-            \draw (0,0) -- (300:6*\hexxfactor);
-            \draw (0,0) -- (330:6);
-        \end{scope}
+        \silentlychangedin{2B}{2B-ssgt-figure}{
+            \begin{scope}[very thick,dashed]
+                \draw (0,0) -- (210:4.5);
+                \draw (0,0) -- (240:5.75*\hexxfactor);
+                \draw (0,0) -- (270:5.0);
+                \draw (0,0) -- (300:5.75*\hexxfactor);
+                \draw (0,0) -- (330:5.0);
+            \end{scope}
+        }{
+            \begin{scope}[very thick,dashed,-|]
+                \draw (0,0) -- (210:6);
+                \draw (0,0) -- (240:6*\hexxfactor);
+                \draw (0,0) -- (270:6);
+                \draw (0,0) -- (300:6*\hexxfactor);
+                \draw (0,0) -- (330:6);
+            \end{scope}
+        }
         \drawaircraftcounter{0.00}{0.00}{90}{F-4}{}{}
     \end{scope}
 \end{tikzpicture}
@@ -26,13 +36,23 @@
     \setfiguresize{-6.1}{-6.7}{6.1}{1.6}
     \begin{scope}[rotate=90]
         \drawevenhexgrid{-7}{-5.5}{9}{12}
-        \begin{scope}[very thick,dashed,-|]
-            \draw (0,0) -- (120:6*\hexxfactor);
-            \draw (0,0) -- (150:6);
-            \draw (0,0) -- (180:6*\hexxfactor);
-            \draw (0,0) -- (210:6);
-            \draw (0,0) -- (240:6*\hexxfactor);
-        \end{scope}
+        \silentlychangedin{2B}{2B-ssgt-figure}{
+            \begin{scope}[very thick,dashed]
+                \draw (0,0) -- (120:5.0*\hexxfactor);
+                \draw (0,0) -- (150:4.0);
+                \draw (0,0) -- (180:5.0*\hexxfactor);
+                \draw (0,0) -- (210:4.0);
+                \draw (0,0) -- (240:5.0*\hexxfactor);
+            \end{scope}
+        }{
+            \begin{scope}[very thick,dashed,-|]
+                \draw (0,0) -- (120:6*\hexxfactor);
+                \draw (0,0) -- (150:6);
+                \draw (0,0) -- (180:6*\hexxfactor);
+                \draw (0,0) -- (210:6);
+                \draw (0,0) -- (240:6*\hexxfactor);
+            \end{scope}
+        }
         \drawaircraftcounter{0.00}{0.00}{0}{F-4}{}{}
     \end{scope}
 \end{tikzpicture}
@@ -43,15 +63,27 @@
     \setfiguresize{-6.1}{-6.7}{6.1}{1.6}
     \begin{scope}[rotate=90]
         \drawoddhexgrid{-7}{-5}{9}{12}
-        \begin{scope}[very thick,dashed,-|]
-            \miniathex{-0.333}{+0.000}{\draw (0,0) -- (120:6.333*\hexxfactor);}
-            \miniathex{+0.333}{-0.000}{\draw (0,0) -- (120:6.667*\hexxfactor);}
-            \miniathex{-1.000}{+0.000}{\draw (0,0) -- (150:5);}
-            \draw (0,0) -- (180:6*\hexxfactor);
-            \miniathex{-1.000}{+0.000}{\draw (0,0) -- (210:5);}
-            \miniathex{+0.333}{-0.000}{\draw (0,0) -- (240:6.667*\hexxfactor);}
-            \miniathex{-0.333}{+0.000}{\draw (0,0) -- (240:6.333*\hexxfactor);}
-        \end{scope}
+        \silentlychangedin{2B}{2B-ssgt-figure}{
+            \begin{scope}[very thick,dashed]
+                \miniathex{-0.333}{+0.000}{\draw (0,0) -- (120:5.333*\hexxfactor);}
+                \miniathex{+0.333}{-0.000}{\draw (0,0) -- (120:5.667*\hexxfactor);}
+                \miniathex{-1.000}{+0.000}{\draw (0,0) -- (150:3.75);}
+                \draw (0,0) -- (180:5.33*\hexxfactor);
+                \miniathex{-1.000}{+0.000}{\draw (0,0) -- (210:3.75);}
+                \miniathex{+0.333}{-0.000}{\draw (0,0) -- (240:5.667*\hexxfactor);}
+                \miniathex{-0.333}{+0.000}{\draw (0,0) -- (240:5.333*\hexxfactor);}
+            \end{scope}
+        }{
+            \begin{scope}[very thick,dashed,-|]
+                \miniathex{-0.333}{+0.000}{\draw (0,0) -- (120:6.333*\hexxfactor);}
+                \miniathex{+0.333}{-0.000}{\draw (0,0) -- (120:6.667*\hexxfactor);}
+                \miniathex{-1.000}{+0.000}{\draw (0,0) -- (150:5);}
+                \draw (0,0) -- (180:6*\hexxfactor);
+                \miniathex{-1.000}{+0.000}{\draw (0,0) -- (210:5);}
+                \miniathex{+0.333}{-0.000}{\draw (0,0) -- (240:6.667*\hexxfactor);}
+                \miniathex{-0.333}{+0.000}{\draw (0,0) -- (240:6.333*\hexxfactor);}
+            \end{scope}            
+        }
         \drawaircraftcounter{0.00}{0.00}{0}{F-4}{}{}
     \end{scope}
 \end{tikzpicture}

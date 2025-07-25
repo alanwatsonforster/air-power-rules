@@ -4,20 +4,22 @@
 \rulechapter{Changing Aircraft Altitude}
 \label{rule:changing-aircraft-altitude}
 
-\notein{1B}{FH in APJ 36 has: “Rules 8.1, 8.2, \& 8.3: Climb/dive requirements, such as in vertical climbs/dives and in pulling out of vertical dives, are based on speed, not FPs.” I can't see what needs changing in the rules.}
+\notein{1C}{FH in APJ 36 has: “Rules 8.1, 8.2, \& 8.3: Climb/dive requirements, such as in vertical climbs/dives and in pulling out of vertical dives, are based on speed, not FPs.” I can't see what needs changing in the rules.}
 
 This chapter details the procedures involved in changing aircraft altitudes.
 
 \paragraph{Climbs or Dives Only.} 
 An aircraft may either climb or dive in a turn, but it may not do both.  When climbing or diving, a portion of the aircraft's FPs are spent as Vertical Flight Points (VFPs); the rest are used as Horizontal Flight Points (HFPs). As an aircraft changes altitude during flight, mark the number of altitude levels gained or lost on the Aircraft Log. At the end of the aircraft's flight use this record to determine the aircraft's new start altitude for the next turn.
 
-\paragraph{Altitude Structure.} In the game, the atmosphere is divided into 1,000-foot levels. These altitude levels are further grouped into altitude bands, each several levels thick. Aircraft and missile performance vary within each altitude band. An aircraft's altitude at the beginning of a turn is noted on the Start Altitude line of the aircraft log. A missile's altitude at the beginning of a turn is noted on the Missile Notes line of the launching aircraft's aircraft log. An aircraft may not climb higher than its ceiling. The altitude structure is depicted \changedin{1C}{1C-tables}{below:}{in Table~\ref{table:altitude-bands}.}
+\paragraph{Altitude Structure.} In the game, the atmosphere is divided into 1,000-foot levels. These altitude levels are further grouped into altitude bands, each several levels thick. Aircraft and missile performance vary within each altitude band. An aircraft's altitude at the beginning of a turn is noted on the Start Altitude line of the aircraft log. A missile's altitude at the beginning of a turn is noted on the Missile Notes line of the launching aircraft's aircraft log. An aircraft may not climb higher than its ceiling. The altitude structure is depicted \changedin{1B}{1B-tables}{below:}{in Table~\ref{table:altitude-bands}.}
 
-\input {tables/table-altitude-bands}
+\addedin{1B}{1B-tables}{
+    \input{tables/table-altitude-bands}
+}
 
 \paragraph{Vertical Flight Points.} 
 
-FPs spent to gain or lose altitude levels are called Vertical Flight Points (VFPs). VFPs vary in the amount of altitude increase or decrease provided depending on the specific type of climb or dive used. VFPs are usually available as 1/3 or 2/3 of the total FPs; \changedin{1C}{1C-tables}{the 1/3-2/3 Table}{Table~\ref{table:fractions}} is a quick reference to the accepted proportions of VFPs to FPs available for most aircraft speeds. VFPs are only spent as full FPs. When \changedin{1C}{1C-tables}{the 1/3-2/3 Table}{Table~\ref{table:fractions}} provides half VFPs, they are ignored. \notein{1B}{AWF: APJ 21 QA, APJ 22 QA, and APJ 23 QA have comments on this, but they are superseded by the following change in the APJ 23 errata.}\changedin{1B}{1B-apj-23-errata}{A single VFP will never gain or lose more than two altitude levels.}{A single VFP will normally never gain or lose more than two altitude levels. (\changedin{2A}{2A-super-climbs}{The exception is in vertical dives where up to three levels may be lost per VFP.}{The exceptions are vertical dives, where up to three levels may be lost per VFP, and aircraft with CC values of 6.0 or more, which in zoom and sustained climbs can use one VFP to gain three levels.})}
+FPs spent to gain or lose altitude levels are called Vertical Flight Points (VFPs). VFPs vary in the amount of altitude increase or decrease provided depending on the specific type of climb or dive used. VFPs are usually available as 1/3 or 2/3 of the total FPs; \changedin{1B}{1B-tables}{the 1/3-2/3 Table}{Table~\ref{table:fractions}} is a quick reference to the accepted proportions of VFPs to FPs available for most aircraft speeds. VFPs are only spent as full FPs. When \changedin{1B}{1B-tables}{the 1/3-2/3 Table}{Table~\ref{table:fractions}} provides half VFPs, they are ignored. \notein{1C}{AWF: APJ 21 QA, APJ 22 QA, and APJ 23 QA have comments on this, but they are superseded by the following change in the APJ 23 errata.}\changedin{1C}{1C-apj-23-errata}{A single VFP will never gain or lose more than two altitude levels.}{A single VFP will normally never gain or lose more than two altitude levels. (\changedin{2A}{2A-super-climbs}{The exception is in vertical dives where up to three levels may be lost per VFP.}{The exceptions are vertical dives, where up to three levels may be lost per VFP, and aircraft with CC values of 6.0 or more, which in zoom and sustained climbs can use one VFP to gain three levels.})}
 
 \section{Climbing Flight}
 \label{rule:climbing-flight}
@@ -31,13 +33,13 @@ A zoom climb is a maneuvering climb in which the aircraft gains altitude more fr
 
 \begin{itemize}
 
-    \item\itemparagraph{ZC Procedure:} Declare climbing flight and note ZC as flight type on the Aircraft Log. At least 1/3 of FPs must be HFPs\changedin{1B}{1B-apj-21-qa}{; the remainder may be VFPs.}{. At least one and at most 2/3 of the FPs may be VFPs.}
+    \item\itemparagraph{ZC Procedure:} Declare climbing flight and note ZC as flight type on the Aircraft Log. At least 1/3 of FPs must be HFPs\changedin{1C}{1C-apj-21-qa}{; the remainder may be VFPs.}{. At least one and at most 2/3 of the FPs may be VFPs.}
 
-    \item\itemparagraph{ZC Altitude Gain:} ZC VFPs produce an altitude gain based on the Climb Capability Chart. Refer to the CCC on the ADC and find the appropriate configuration, power setting, and altitude band. If the climb capability is 2.0 or less, \changedin{2A}{2A-super-climbs}{one}{each} VFP produces a gain of 1 altitude level; if the climb capability is more than 2.0\addedin{2A}{2A-super-climbs}{\ but less than 6.0}, \changedin{2A}{2A-super-climbs}{one}{each} VFP produces a gain of \changedin{1B}{1B-apj-23-errata}{1}{1 or 2} altitude levels\addedin{2A}{2A-super-climbs}{; and if the climb capability is 6.0 or more, one of the VFPs produces a gain of 1, 2, or 3 altitude levels and the rest produce a gain or 1 or 2 altitude levels}.
+    \item\itemparagraph{ZC Altitude Gain:} ZC VFPs produce an altitude gain based on the Climb Capability Chart. Refer to the CCC on the ADC and find the appropriate configuration, power setting, and altitude band. If the climb capability is 2.0 or less, \changedin{2A}{2A-super-climbs}{one}{each} VFP produces a gain of 1 altitude level; if the climb capability is more than 2.0\addedin{2A}{2A-super-climbs}{\ but less than 6.0}, \changedin{2A}{2A-super-climbs}{one}{each} VFP produces a gain of \changedin{1C}{1C-apj-23-errata}{1}{1 or 2} altitude levels\addedin{2A}{2A-super-climbs}{; and if the climb capability is 6.0 or more, one of the VFPs produces a gain of 1, 2, or 3 altitude levels and the rest produce a gain or 1 or 2 altitude levels}.
 
     \item\itemparagraph{ZC Restrictions:} Aircraft in a Zoom Climb may not use the ET turn rate.
 
-    \item\itemparagraph{ZC Decel Points:} \changedin{2A}{2A-zoom-climbs}{In the first turn of \changedin{1B}{1B-apj-36-errata}{a Zoom Climb, the aircraft}{climbing flight, an aircraft in a ZC} receives 1.0 decel point per altitude level gained; on \changedin{1B}{1B-apj-36-errata}{subsequent consecutive turns of ZC, the aircraft}{the second or subsequent consecutive turns of climbing flight, an aircraft in a ZC} receives 1.5 decel points per altitude level gained.}{An aircraft in a ZC receives 1.0 DP per altitude level gained.}
+    \item\itemparagraph{ZC Decel Points:} \changedin{2A}{2A-zoom-climbs}{In the first turn of \changedin{1C}{1C-apj-36-errata}{a Zoom Climb, the aircraft}{climbing flight, an aircraft in a ZC} receives 1.0 decel point per altitude level gained; on \changedin{1C}{1C-apj-36-errata}{subsequent consecutive turns of ZC, the aircraft}{the second or subsequent consecutive turns of climbing flight, an aircraft in a ZC} receives 1.5 decel points per altitude level gained.}{An aircraft in a ZC receives 1.0 DP per altitude level gained.}
 
 \end{itemize}
 
@@ -53,8 +55,8 @@ A sustained climb relies on maximum power and full lift and is the most efficien
     \item\itemparagraph{SC Altitude Gain:} SC VFPs produce an altitude gain based on the Climb Capability Chart. Refer to the CCC and find the appropriate configuration, power setting, and altitude band. \changedin{2A}{2A-super-climbs}{Three}{Four} cases may apply:
     \begin{enumerate}
         \item If the climb capability value is a fraction, only 1 VFP is allowed, the rest are HFPs. The VFP gains only the fractional altitude level.
-        \item If the \changedin{1B}{1B-apj-21-qa/1B-apj-23-errata}{value is 1.0 to 1.5}{CCC value is 1.0 to 2.0}, then up to 2/3ds the FPs may be VFPs and the first VFP gains \changedin{1B}{1B-apj-36-errata}{any fraction}{either any fraction or 1 level} and the rest gain 1 level each. \addedin{1B}{1B-apj-38-qa}{(For example, if the aircraft has a climb capability of 1.5, the first VFP used in a game turn gains only the 0.5 level, and any others gain 1.0 level each.)}
-        \item If the \changedin{2A}{2A-super-climbs}{\changedin{1B}{1B-apj-21-qa/1B-apj-23-errata}{value is 2.0 or more}{CCC value is greater than 2.0}}{climb capability is greater than 2.0 but less than 6.0}, then up to 2/3ds the FPs may be VFPs and \changedin{1B}{1B-apj-34-qa}{each may gain 1 or 2 levels}{the first gains 1 level plus any fraction and the rest gain 1 or 2 levels each}.
+        \item If the \changedin{1C}{1C-apj-21-qa/1B-apj-23-errata}{value is 1.0 to 1.5}{CCC value is 1.0 to 2.0}, then up to 2/3ds the FPs may be VFPs and the first VFP gains \changedin{1C}{1C-apj-36-errata}{any fraction}{either any fraction or 1 level} and the rest gain 1 level each. \addedin{1C}{1C-apj-38-qa}{(For example, if the aircraft has a climb capability of 1.5, the first VFP used in a game turn gains only the 0.5 level, and any others gain 1.0 level each.)}
+        \item If the \changedin{2A}{2A-super-climbs}{\changedin{1C}{1C-apj-21-qa/1B-apj-23-errata}{value is 2.0 or more}{CCC value is greater than 2.0}}{climb capability is greater than 2.0 but less than 6.0}, then up to 2/3ds the FPs may be VFPs and \changedin{1C}{1C-apj-34-qa}{each may gain 1 or 2 levels}{the first gains 1 level plus any fraction and the rest gain 1 or 2 levels each}.
         \itemaddedin{2A}{2A-super-climbs}{If the climb capability is 6.0 or more, then up to {\twothirds} of the FPs may be VFPs. The first VFP gains 1 level plus any fraction, one of the others gains 1, 2, or 3 altitude levels, and the rest gain 1 or 2 altitude levels each.}
     \end{enumerate}
     \addedin{2B}{2B-steep-climb}{At least one FP must be a VFP.}
@@ -65,11 +67,11 @@ A sustained climb relies on maximum power and full lift and is the most efficien
 
     \item\itemparagraph{SC Restrictions:} Aircraft in a sustained climb may only use EZ turn rates \deletedin{2A}{2A-snap}{(snap turning prohibited)} and may only use slide maneuvers.
 
-    \item\itemparagraph{SC Decel Points:} 0.5 Decel points are incurred for each altitude level gained in a sustained climb until the sustained climb limit is reached and then decel is accumulated as if zoom climbing\addedin{2A}{2A-zoom-climbs}{\ at 1.0 DP per altitude level}. \notein{1B}{AWF: the TSOH errata calls for the clarification on decel for fraction gains to be added to the text on sustained climbs. I have added it below to the text of partial altitude gains.}
+    \item\itemparagraph{SC Decel Points:} 0.5 Decel points are incurred for each altitude level gained in a sustained climb until the sustained climb limit is reached and then decel is accumulated as if zoom climbing\addedin{2A}{2A-zoom-climbs}{\ at 1.0 DP per altitude level}. \notein{1C}{AWF: the TSOH errata calls for the clarification on decel for fraction gains to be added to the text on sustained climbs. I have added it below to the text of partial altitude gains.}
 
-    \notein{1B}{FH in APJ 36 states: “Excess altitude levels gained in sustained climb cost 1.5 decel per level if \emph{any} kind of climbing flight was performed on the previous turn.” The corresponding change has been made above for ZCs, and so is implied by the phrase "as if zoom climbing" here.}
+    \notein{1C}{FH in APJ 36 states: “Excess altitude levels gained in sustained climb cost 1.5 decel per level if \emph{any} kind of climbing flight was performed on the previous turn.” The corresponding change has been made above for ZCs, and so is implied by the phrase "as if zoom climbing" here.}
 
-    \addedin{1B}{1B-apj-36-errata}{For purposes of computing SC decel, 
+    \addedin{1C}{1C-apj-36-errata}{For purposes of computing SC decel, 
     on the turn an aircraft attains a whole altitude level by accumulating fractional climbs, its climb capability has any fraction rounded up to the next whole number. Otherwise, its climb capability has any fraction rounded down.}
 
 \end{itemize}
@@ -97,7 +99,7 @@ A vertical climb gains altitude quickly but at great cost in energy; no wing lif
 
 \subsection{Additional Considerations}
 
-\paragraph{Partial Altitude Gains.} The CCC at times indicates fractional altitude gains. You will have noticed that the climb charts sometimes allow fractional gains in altitude levels. Some aircraft may require more than one turn of climbing flight to gain an altitude level. An aircraft's starting altitude is always the last full altitude level it climbed to. \addedin{1B}{1B-apj-23-errata}{Decel for climbs is only incurred for each full level climbed through. With fractional climbs, only incur decel when enough turns of climbing have passed to gain a full level.}
+\paragraph{Partial Altitude Gains.} The CCC at times indicates fractional altitude gains. You will have noticed that the climb charts sometimes allow fractional gains in altitude levels. Some aircraft may require more than one turn of climbing flight to gain an altitude level. An aircraft's starting altitude is always the last full altitude level it climbed to. \addedin{1C}{1C-apj-23-errata}{Decel for climbs is only incurred for each full level climbed through. With fractional climbs, only incur decel when enough turns of climbing have passed to gain a full level.}
 
 \paragraph{Altitude Carry.} If an aircraft's total altitude change during flight included a fractional amount, the fraction is carried forward to the next game-turn to be added to any further climbing. Note this on the climb notes line of the log sheet. Fractional gains may be carried and added only as long as the aircraft continues to climb from turn to turn. The moment an aircraft chooses level or diving flight, any fractional climb carry is lost. Climb carry is ignored when determining an aircraft's altitude for spotting, combat or any other purposes.
 
@@ -106,7 +108,7 @@ A vertical climb gains altitude quickly but at great cost in energy; no wing lif
 \section{Diving Flight}
 \label{rule:diving-flight}
 
-An aircraft in diving flight selects one of three types of dive: Steep Dive, Unloaded Dive, or Vertical Dive. Diving flight is handled in a manner similar to climbing flight. \changedin{1B}{1B-apj-21-qa/1B-apj-36-errata}{For purposes of maintaining dive speeds (rule 6), at least two or more altitude levels must be lost in a game turn through diving flight.}{
+An aircraft in diving flight selects one of three types of dive: Steep Dive, Unloaded Dive, or Vertical Dive. Diving flight is handled in a manner similar to climbing flight. \changedin{1C}{1C-apj-21-qa/1B-apj-36-errata}{For purposes of maintaining dive speeds (rule 6), at least two or more altitude levels must be lost in a game turn through diving flight.}{
 
 For purposes of maintaining dive speeds (rule 6), at least two or more altitude levels must be lost in a game turn through diving flight. Aircraft that dive fewer than 2 altitude levels in a turn do not use dive speed as their maximum speed, and may accordingly be forced to perform a Speed Fadeback.}
 
@@ -117,13 +119,13 @@ A steep dive is a maneuvering dive in which some of the aircraft's acceleration 
 
 \begin{itemize}
 
-    \item\itemparagraph{SD Procedure:} Declare diving flight and note SD as flight type on the aircraft log. At least 1/3 of FPs must be HFPs. \changedin{1B}{1B-apj-21-qa}{The rest may be VFPs.}{At least one and at most 2/3 of the FPs may be VFPs.}
+    \item\itemparagraph{SD Procedure:} Declare diving flight and note SD as flight type on the aircraft log. At least 1/3 of FPs must be HFPs. \changedin{1C}{1C-apj-21-qa}{The rest may be VFPs.}{At least one and at most 2/3 of the FPs may be VFPs.}
 
     \item\itemparagraph{SD Altitude Loss:} 1 or 2 altitude levels may be lost per VFP expended.
 
     \item\itemparagraph{SD Restrictions:} There are no restrictions to maneuvering the aircraft while in a steep dive.
 
-    \item\itemparagraph{SD Accel Points:} \changedin{2A}{2A-steep-dives}{On the first turn of \changedin{1B}{1B-apj-36-errata}{steep diving, the aircraft}{diving flight, an aircraft in a SD} receives 0.5 accel points per altitude level lost; on \changedin{1B}{1B-apj-36-errata}{subsequent turns of continued diving, it}{the second or subsequent consecutive turns of diving flight, an aircraft in a SD} receives 1.0 accel points per altitude level lost.}{An aircraft in a SD receives 1.0 AP per altitude level lost.}
+    \item\itemparagraph{SD Accel Points:} \changedin{2A}{2A-steep-dives}{On the first turn of \changedin{1C}{1C-apj-36-errata}{steep diving, the aircraft}{diving flight, an aircraft in a SD} receives 0.5 accel points per altitude level lost; on \changedin{1C}{1C-apj-36-errata}{subsequent turns of continued diving, it}{the second or subsequent consecutive turns of diving flight, an aircraft in a SD} receives 1.0 accel points per altitude level lost.}{An aircraft in a SD receives 1.0 AP per altitude level lost.}
 
 \end{itemize}
 
@@ -138,9 +140,9 @@ An unloaded dive is used to rapidly gain acceleration. The aircraft dives to mat
 
     \item\itemparagraph{UD Limits:} All unloaded \changedin{2A}{2A-unloaded-dives}{HFPs}{FPs} must be expended in a continuous series. They may be spent at the beginning, end or in the middle of the aircraft's flight. The rest of the HFPs may be expended normally for maneuvering purpose. \changedin{2A}{2A-unloaded-dives}{Unloaded HFPs may not be counted toward any turning or maneuvering requirements.}{Unloaded FPs may not be used for turning flight or for preparing for or executing any maneuver except a slide.}
 
-    \item\itemparagraph{UD Restrictions:} An aircraft spending unloaded HFPs may not conduct any attacks, aim, track targets or launch weapons. \addedin{1B}{1B-apj-36-errata}{Recovery Periods also apply to the prohibition from conducting combat actions and radar work following unloaded dives. If you unload at the beginning of turn and then expend sufficient FPs to meet the recovery period after the last unloaded FP is spent, then you may still launch missiles, conduct attacks or radar work that turn.}
+    \item\itemparagraph{UD Restrictions:} An aircraft spending unloaded HFPs may not conduct any attacks, aim, track targets or launch weapons. \addedin{1C}{1C-apj-36-errata}{Recovery Periods also apply to the prohibition from conducting combat actions and radar work following unloaded dives. If you unload at the beginning of turn and then expend sufficient FPs to meet the recovery period after the last unloaded FP is spent, then you may still launch missiles, conduct attacks or radar work that turn.}
 
-     \item\itemparagraph{UD Accel Points:} \changedin{2A}{2A-unloaded-dives}{On the first turn of \changedin{1B}{1B-apj-36-errata}{ an UD, the aircraft}{diving flight, an aircraft in a UD} receives 0.5 accel points per altitude level lost; on \changedin{1B}{1B-apj-36-errata}{subsequent turns of continued diving, it}{the second or subsequent consecutive turns of diving flight, an aircraft in a UD} receives 1.0 accel point per altitude level lost.}{An aircraft in a UD receives 1.0 AP per altitude level lost.}
+     \item\itemparagraph{UD Accel Points:} \changedin{2A}{2A-unloaded-dives}{On the first turn of \changedin{1C}{1C-apj-36-errata}{ an UD, the aircraft}{diving flight, an aircraft in a UD} receives 0.5 accel points per altitude level lost; on \changedin{1C}{1C-apj-36-errata}{subsequent turns of continued diving, it}{the second or subsequent consecutive turns of diving flight, an aircraft in a UD} receives 1.0 accel point per altitude level lost.}{An aircraft in a UD receives 1.0 AP per altitude level lost.}
 
 \end{itemize}
 
@@ -153,7 +155,7 @@ A vertical dive sends an aircraft nearly straight down; altitude is lost quickly
 
 \begin{itemize}
 
-    \itemaddedin{1B}{1B-apj-21-qa/1B-apj-22-qa/1B-apj-23-errata}{\itemparagraph{VD Prerequisites.} To enter a VD, the aircraft must have used diving flight the turn before (exception: the Half Roll and Dive maneuver allows VDs to be entered from level flight, see rule 13.3.5).}
+    \itemaddedin{1C}{1C-apj-21-qa/1B-apj-22-qa/1B-apj-23-errata}{\itemparagraph{VD Prerequisites.} To enter a VD, the aircraft must have used diving flight the turn before (exception: the Half Roll and Dive maneuver allows VDs to be entered from level flight, see rule 13.3.5).}
 
     \item\itemparagraph{VD Procedure:} Declare diving flight and note VD on the Aircraft Log. If this is the first turn of vertical diving, 1/3 of the FPs must be HFPs and the rest VFPs. If this is the second or subsequent turn of consecutive vertical dives, then no more than 1/3 of the FPs can be HFPs but all can be VFPs.
 
@@ -163,8 +165,8 @@ A vertical dive sends an aircraft nearly straight down; altitude is lost quickly
 
     \item\itemparagraph{VD Recovery:} Due to the difficulty of pulling out of vertical dives, the following applies:
     \begin{enumerate}
-        \item[a)] When a steep or unloaded dive immediately follows a vertical one, half the aircraft's \changedin{1B}{1B-apj-23-errata}{speed}{FPs} (round down) must be VFPs or unloaded HFPs as appropriate.
-        \item[b)]  In the case of a High Pitch Rate aircraft, only 1/3 has to be VFPs or unloaded HFPs. Exception: A High Pitch Rate aircraft whose start speed after vertically diving is 3.0 or less may use level flight following a vertical dive. \addedin{1B}{1B-original-play-aids}{Other aircraft whose start speed is 2.0 or less may use level flight.}
+        \item[a)] When a steep or unloaded dive immediately follows a vertical one, half the aircraft's \changedin{1C}{1C-apj-23-errata}{speed}{FPs} (round down) must be VFPs or unloaded HFPs as appropriate.
+        \item[b)]  In the case of a High Pitch Rate aircraft, only 1/3 has to be VFPs or unloaded HFPs. Exception: A High Pitch Rate aircraft whose start speed after vertically diving is 3.0 or less may use level flight following a vertical dive. \addedin{1C}{1C-original-play-aids}{Other aircraft whose start speed is 2.0 or less may use level flight.}
     \end{enumerate}
 
     \item\itemparagraph{VD Accel Points:} Aircraft in a vertical dive gain 1 Accel point per altitude level lost.
@@ -174,7 +176,7 @@ A vertical dive sends an aircraft nearly straight down; altitude is lost quickly
 \section{Free Descent}
 \label{rule:free-descent}
 
-\paragraph{Level Flight Free Descents.} An aircraft in level flight may choose free descent and lose one altitude level during the game-turn. \changedin{1B}{1B-apj-36-errata}{This descent}{If a vertical climb was used in the preceding turn, this descent may not occur until after the aircraft has expended HFPs equal to 1/3 of its \changedin{2B}{2B-free-descent}{speed}{HFPs} (according to the 1/3-2/3 chart). Otherwise, it} may be selected to take place after the expenditure of any HFP during the game-turn. No Accel points are received. No other restrictions apply.
+\paragraph{Level Flight Free Descents.} An aircraft in level flight may choose free descent and lose one altitude level during the game-turn. \changedin{1C}{1C-apj-36-errata}{This descent}{If a vertical climb was used in the preceding turn, this descent may not occur until after the aircraft has expended HFPs equal to 1/3 of its \changedin{2B}{2B-free-descent}{speed}{HFPs} (according to the 1/3-2/3 chart). Otherwise, it} may be selected to take place after the expenditure of any HFP during the game-turn. No Accel points are received. No other restrictions apply.
 
 \trainingnote{
 \centering
@@ -188,7 +190,7 @@ The sequence of play is still not required.
 \deletedin{2B}{2B-half-vfps}{
 \section{Using Half VFPs}
 
-\notein{1B}{FH in APJ 36 states “If an A/C has a fractional speed and a 0.5 FP carry available, it must use the carry to create a full HFP or VFP.” I don't see what needs changing in the text of the rules.}
+\notein{1C}{FH in APJ 36 states “If an A/C has a fractional speed and a 0.5 FP carry available, it must use the carry to create a full HFP or VFP.” I don't see what needs changing in the text of the rules.}
 
 In normal practice, VFPs are spent only as full FPs. When the 1/3-2/3 Table allots half VFPs, the aircraft may either:
 
@@ -196,9 +198,9 @@ In normal practice, VFPs are spent only as full FPs. When the 1/3-2/3 Table allo
 
     \item Carry the half VFP forward to the next turn as a generic half FP.	
 
-    \item Mate the half VFP to a previously carried half FP to create a full VFP \addedin{1B}{1B-apj-23-errata}{or HFP} and use it.
+    \item Mate the half VFP to a previously carried half FP to create a full VFP \addedin{1C}{1C-apj-23-errata}{or HFP} and use it.
 
-    \itemdeletedin{1B}{1B-apj-23-errata}{Steal a half VFP from the alloted HFPs to create a full VFP, and carry the remaining half HFP forward to the next turn.}
+    \itemdeletedin{1C}{1C-apj-23-errata}{Steal a half VFP from the alloted HFPs to create a full VFP, and carry the remaining half HFP forward to the next turn.}
 
 \end{itemize}
 }

@@ -1,7 +1,7 @@
 %!TEX root = ../rules-working.tex
 %LTeX: enabled=false
 
-\silentlychangedin{1C}{1C-figures}{
+\silentlychangedin{1B}{1B-figures}{
 
 \begin{onecolumnfigure}[h!]
 \includegraphics[width=\linewidth]{figures/figure-game-map.pdf}
@@ -32,8 +32,10 @@
     \drawmegahex{18}{+11.0}
     \drawmegahex{18}{+16.0}
     \drawhexgrid{0}{0}{17}{13}
-    \drawaircraftcounter{10}{10}{60}{MiG-21}{B}{}
-    \drawaircraftcounter{7}{5.5}{30}{F-4}{A}{}
+    \silentlyaddedin{1C}{1C-apj-23-errata}{
+        \drawaircraftcounter{10}{10}{60}{MiG-21}{B}{}
+        \drawaircraftcounter{7}{5.5}{30}{F-4}{A}{}
+    }
 \end{tikzpicture}
 \end{fitwidth}
 

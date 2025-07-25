@@ -68,6 +68,8 @@
 
 % Basic spacing.
 
+\sloppy
+
 \setlength{\columnsep}{2em}
 
 \setlength{\parindent}{0em}
@@ -300,7 +302,7 @@ minus \fontdimen4\font}
         \begin{table}[tp]
         \centering
     \else
-        \silentlychangedin{1C}{1C-tables}{
+        \silentlychangedin{1B}{1B-tables}{
             \begin{table}[h!]
         }{
             \begin{table}[#1]
@@ -347,7 +349,7 @@ minus \fontdimen4\font}
         \centering
         \begin{minipage}{0.5\linewidth}
     \else
-        \silentlychangedin{1C}{1C-figures}{
+        \silentlychangedin{1B}{1B-figures}{
             \begin{figure}[h!]
         }{
             \begin{figure}[#1]
@@ -387,13 +389,13 @@ minus \fontdimen4\font}
 % and the play aids. Others only in the play aids.
 
 \newcommand{\tablecaption}[2]{
-    \silentlychangedin{1C}{1C-tables}{
+    \silentlychangedin{1B}{1B-tables}{
         #2
     }{
         \ifaids
-            \textaddedin{1C}{1C-tables}{Table~\ref{#1}: #2}
+            \textaddedin{1B}{1B-tables}{Table~\ref{#1}: #2}
         \else
-            \textaddedin{1C}{1C-tables}{\caption{#2\label{#1}}}
+            \textaddedin{1B}{1B-tables}{\caption{#2\label{#1}}}
         \fi
     }
     \par
@@ -401,11 +403,11 @@ minus \fontdimen4\font}
 }
 
 \newcommand{\tablecaptioncontinued}[2]{
-    \silentlychangedin{1C}{1C-tables}{
+    \silentlychangedin{1B}{1B-tables}{
         #2 (continued)
         \par
     }{
-        \textaddedin{1C}{1C-tables}{Table~\ref{#1} (continued): #2}
+        \textaddedin{1B}{1B-tables}{Table~\ref{#1} (continued): #2}
         \par
     }
     \medskip
@@ -415,9 +417,9 @@ minus \fontdimen4\font}
     \ifaids
         \par
         \medskip
-        \textaddedin{1C}{1C-figures}{Figure~\ref{#1}: #2}
+        \textaddedin{1B}{1B-figures}{Figure~\ref{#1}: #2}
     \else
-        \textaddedin{1C}{1C-figures}{\caption{#2\label{#1}}}
+        \textaddedin{1B}{1B-figures}{\caption{#2\label{#1}}}
     \fi
 }
 

@@ -3,45 +3,17 @@
 
 \rulechapter{Air to Ground Combat}
 
-\addedin{1C}{1C-table}{
+\addedin{1B}{1B-tables}{
     \input{tables/table-ground-units.tex}
 }
 
-This chapter discusses ground and naval units and how they are targets of air attacks. Ground units range from army troops and vehicles, to anti-aircraft gun and missile sites, to ships at sea. Fourteen types of ground units and various naval units are identified by these rules. The specific types are shown in \changedin{1C}{1C-table}{the Ground Units Table below}{Table \ref{table:ground-units}}.
+This chapter discusses ground and naval units and how they are targets of air attacks. Ground units range from army troops and vehicles, to anti-aircraft gun and missile sites, to ships at sea. Fourteen types of ground units and various naval units are identified by these rules. The specific types are shown in \changedin{1B}{1B-tables}{the Ground Units Table below}{Table \ref{table:ground-units}}.
 
 \section{Ground Unit Counters}
 
 Each ground unit counter or marker is printed with information which helps players identify it and its functions. The Ground Unit Identification Chart in the play aides shows the information format for each type of unit. The uses of the information are addressed in the individual rules.
 
 \paragraph{Terrain.} It may be necessary to identify the type of terrain a ground unit is in. Each land unit is in the terrain type that covers the largest fraction of a hex. Naval units are always on water. Different terrain types can be identified from the Terrain Effects Chart.
-
-\deletedin{1C}{1C-tables}{
-\begin{tabularx}{\linewidth}{lcP}
-\multicolumn{3}{c}{\bfseries Ground Units Table}\\[1ex]
-\toprule
-Unit&Size&Description\\
-\midrule
-Infantry        &Platoon    &Thirty to fifty soldiers.\\
-Armor           &Platoon    &Three to five armored vehicles.\\
-Artillery	    &Battery	&Three to six guns and crews.\\
-Inf.\ SAM	    &Section	&Four to eight soldiers with one or shoulder-fired SAMs.\\
-SAM	            &Battery    &A grouping of SAM launchers with a tracking radar or optical system.\\
-Mob.\ SAM	        &Section	&One or two vehicle-mounted SAMs.\\
-FAC	            &Section	&A forward air control team with two vehicles and radios.\\
-AAA	            &Battery	&Three to six antiaircraft guns.\\
-Mob.\ AAA	    &Section	&Two AAA guns mounted on vehicles.\\
-Transport	    &Platoon	&Four to six Trucks.\\
-Radar	        &Platoon	&One or more radars providing early warning (EWR), fire control (FCR), or target tracking (TTR) functions.\\
-CCU	            &HQ	        &A Command and Control Unit that coordinates air defense activities.\\
-Mobile CCU	    &HQ	        &A CCU mounted on vehicles.\\
-Dummy Site	    &NA	        &A dummy marker indistinguishable (on its front) from a real unit.\\
-Small Ship	    &One Vessel	&A boat, gunboat, patrol-craft or similar small ship.\\
-Navy Ship	    &One Vessel	&A frigate, cruiser, or standard merchant sized ship or tanker.\\
-Capital Ship	&One Vessel	&A battleship, carrier, or supertanker sized ship.\\
-\bottomrule
-\end{tabularx}
-}
-
 
 \paragraph{Ground Unit Movement.} The scale of the game turn used when aircraft are in play is such that ground units will not normally move more than one or two hexes during an entire game. The scenario will specify if, when and how often ground units may move (always one hex at a time).
 
@@ -81,35 +53,17 @@ Attack Parameters. To perform an air to ground attack, an aircraft must:
     \item[c)] and reach a valid release point on that LOA for the kind of ordnance being employed.
 \end{enumerate}
 
-\paragraph{Line of Approach.} An aircraft is on a line of approach to a target hex if a line extended forward along the aircraft's flightpath passes through the center of the hex containing the target. \changedin{1C}{1C-figures}{The line of approach diagram below and in the play aids}{Figure \ref{figure:lines-of-approach}} illustrates this concept. 
+\paragraph{Line of Approach.} An aircraft is on a line of approach to a target hex if a line extended forward along the aircraft's flightpath passes through the center of the hex containing the target. \changedin{1B}{1B-figures}{The line of approach diagram below and in the play aids}{Figure \ref{figure:lines-of-approach}} illustrates this concept. 
 
-\input{figures/figure-lines-of-approach.tex}
+\addedin{1B}{1B-figures}{
+    \input{figures/figure-lines-of-approach.tex}
+}
 
-\addedin{1C}{1C-tables}{
+\addedin{1B}{1B-tables}{
     \input{tables/table-aiming.tex}
 }
 
-\paragraph{Aiming.} An aircraft aims its weapons by approaching a sighted target along a LOA in level or diving flight. It must maintain its approach for a specified period of time expressed in terms of FPs expanded in flight while on the LOA. \changedin{1C}{1C-tables}{The Aiming Time Table}{Table \ref{table:aiming}} shows the time required (which depends on the type of bombsight used).
-
-\deletedin{1C}{1C-tables}{
-\begin{tabularx}{\linewidth}{lP}
-\multicolumn{2}{c}{\bfseries Aiming Table}\\[1ex]
-\toprule
-Bombsight Type  &Minimum Aiming (in FPs)\\
-\midrule
-Manual 	        &2/3 aircraft’s speed (round down)\\
-Ballistic	    &1/2 aircraft’s speed (round down)\\
-Computed	    &1/3 aircraft’s speed (round down)\\
-Advanced	    &1/3 aircraft’s speed (round down)\\
-\bottomrule
-\end{tabularx}
-
-\begin{itemize}
-\item Minimum aiming is at least 1 FP while on a LOA.
-\item If full aiming not accomplished, apply a modifier of \plus{3} to the attack die roll.
-\item If full aiming is accomplished, apply the bombsight modifier from the aircraft's ADC.
-\end{itemize}
-}
+\paragraph{Aiming.} An aircraft aims its weapons by approaching a sighted target along a LOA in level or diving flight. It must maintain its approach for a specified period of time expressed in terms of FPs expanded in flight while on the LOA. \changedin{1B}{1B-tables}{The Aiming Time Table}{Table \ref{table:aiming}} shows the time required (which depends on the type of bombsight used).
 
 \paragraph{Aiming Limits.} A minimum of one FP must be expended while aiming to make any kind of ground attack. Aircraft that attack without completing aiming for the type of sight they have, suffer a +3 modifier to their die roll on the Air-To-Ground Attack Table. Aiming must be done while wings level. FPs expended for aiming cannot be used a prep-moves or counted toward turning. Beginning to aim aborts any turns or maneuvers in progress.  Aircraft must recover from ET turns before aiming can commence.
 
@@ -120,7 +74,7 @@ Advanced	    &1/3 aircraft’s speed (round down)\\
 \paragraph{Release Points.}
 \label{rule:release-points} 
 \input{tables/table-air-to-ground-release-points.tex}
-\changedin{1C}{1C-tables}{
+\changedin{1B}{1B-tables}{
 Release point charts are provided in the play aids for Level bombing, dive bombing and rocketry.
 There are two columns in each of the bombing charts; one for high drag weapons and one for low drag weapons.
 }{
@@ -139,14 +93,14 @@ An aircraft may not make an air to air gun attack against enemy aircraft in the 
 \input{tables/table-air-to-ground-fas-computation.tex}
 \input{tables/table-air-to-ground-attack-results.tex}
 \input{tables/table-air-to-ground-attack-modifiers.tex}
-Ground attacks are resolved using a Final Attack Strength (FAS) for the weapons used and \changedin{1C}{1C-tables}{the Air To Ground Attack Table}{Table \ref{table:air-to-ground-attack-results}} as follows:
+Ground attacks are resolved using a Final Attack Strength (FAS) for the weapons used and \changedin{1B}{1B-tables}{the Air To Ground Attack Table}{Table \ref{table:air-to-ground-attack-results}} as follows:
 \begin{itemize}
-\item Determine the FAS involved using \changedin{1C}{1C-tables}{the FAS Calculation Chart}{Table \ref{table:air-to-ground-fas-computation}} which is based on the number of weapons dropped or fired in the attack and their listed attack strengths.
-\item Compare the FAS to the Target Defense Strength (TDS) to create an attack ratio (FAS: TDS). This ratio is then rounded down to one of the ratios on \changedin{1C}{1C-tables}{the Air To Ground Attack Table}{Table \ref{table:air-to-ground-attack-results}}.
+\item Determine the FAS involved using \changedin{1B}{1B-tables}{the FAS Calculation Chart}{Table \ref{table:air-to-ground-fas-computation}} which is based on the number of weapons dropped or fired in the attack and their listed attack strengths.
+\item Compare the FAS to the Target Defense Strength (TDS) to create an attack ratio (FAS: TDS). This ratio is then rounded down to one of the ratios on \changedin{1B}{1B-tables}{the Air To Ground Attack Table}{Table \ref{table:air-to-ground-attack-results}}.
 \item Roll the die and modify as required. At the intersection of the ratio column and the modified die roll row is an attack result, which is implemented against the target.
 \end{itemize}
 
-FAS Example: The FAS of cluster bombs is the sum of the dropped bomb's individual attack strengths. Four weapons released at once, each with an attack strength of 4.0, would provide an FAS of sixteen. If the target's defense strength were five; The FAS:TDS ratio would be three to one (3:1) and the die would be rolled referencing the 3:1 column of \changedin{1C}{1C-tables}{the Air To Ground Attack Table}{Table \ref{table:air-to-ground-attack-results}}.
+FAS Example: The FAS of cluster bombs is the sum of the dropped bomb's individual attack strengths. Four weapons released at once, each with an attack strength of 4.0, would provide an FAS of sixteen. If the target's defense strength were five; The FAS:TDS ratio would be three to one (3:1) and the die would be rolled referencing the 3:1 column of \changedin{1B}{1B-tables}{the Air To Ground Attack Table}{Table \ref{table:air-to-ground-attack-results}}.
 
 \paragraph{Combat Results.} There are five possible results of any ground attack, these are:
 \begin{itemize}
@@ -167,7 +121,7 @@ Exceptions:  Any ground unit or target marker with an asterisk by its defense st
     \item Tracking Time: For each 1/3rd of an aircraft's speed in FPs expended as additional aiming beyond the minimum required, a -1 is applied. Up to a maximum of -3 may be accrued by extra aiming.
 \end{itemize}
 
-All these, and other modifiers explained in later rules are summarized in \changedin{1C}{1C-tables}{the Ground Attack Modifiers Table}{Table \ref{table:air-to-ground-attack-modifiers}}. All modifiers are cumulative.
+All these, and other modifiers explained in later rules are summarized in \changedin{1B}{1B-tables}{the Ground Attack Modifiers Table}{Table \ref{table:air-to-ground-attack-modifiers}}. All modifiers are cumulative.
 
 \paragraph{Terrain Effects.} Targets in certain terrain may have their defense strengths modified or cause modifiers to be applied to the attack roll of an aircraft as indicated on the terrain effects chart. Targets in entrenchments have their defense strengths doubled and targets in bunkers have their defense strength quadrupled.
 
