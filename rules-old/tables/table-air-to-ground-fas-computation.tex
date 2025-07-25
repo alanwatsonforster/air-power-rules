@@ -1,10 +1,12 @@
 %!TEX root = ./rules-working.tex
 %LTeX: enabled=true
+
 \addedin{1B}{1B-tables}{
 \begin{twocolumntablefloat}
 \begin{twocolumntable}
 
 \tablecaption{table:air-to-ground-fas-computation}{Air-to-Ground FAS Computation}
+
 \begin{tabularx}{1.0\linewidth}{lLl}
 \toprule
 Condition&Weapon Types&Modifier\\
@@ -15,6 +17,18 @@ Multiple Weapons&Guns&Sum the all attack ratings of all guns and GPs fired.\\
 &RK Volley&2/3 sum of attack strengths (round up)\\
 &BBs, BGs, Fire, Napalm&2/3 sum as above\\
 &FAE&1/2 sum of attack strengths (round up)\\
+\tablerowaddedin{1C}{1C-original-play-aids}{%
+Infantry in open (not in bunkers or buildings)&
+Napalm, Fire&Multiply by 1.5
+}%
+\tablerowaddedin{1C}{1C-original-play-aids}{%
+Damaged POL, buildings, or urban hexes&
+Napalm, Fire, and Incendiary&Multiply by 2.0
+}%
+\tablerowaddedin{1C}{1C-original-play-aids}{%
+Runways, roads, bridges, dams, pier, and rail lines&
+CBU, Napalm, and Fire&Zero attack strength
+}%
 Versus Secondary Targets\asteriskmark&
 CBUs, Fire, Napalm, and RP salvoes of 4 or more pods&2/3 FAS used on primary target\\
 &All others&1/3 FAS used on primary target\\
