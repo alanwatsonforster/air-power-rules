@@ -60,7 +60,7 @@ Only Light and Medium AAA units may use barrage fire. Designate during the AAA I
 
 \paragraph{Zone Of Effect.} Barraging units have a zone of affect about them for the entire game turn. This zone consists of the hex the unit is in plus the six adjacent hexes and the hexsides forming them,\addedin{1B}{1C-figures}{ as shown in Figure \ref{figure:aaa-zone},} from the ground level up to the maximum altitude above the unit the weapon can reach.
 
-Aircraft which fly into this zone of effect (whether friendly or enemy) must check for chance hits. Roll the die once for each FP expended in the zone. On a roll of 1 a chance hit occurs. Resolve this hit immediately using an attack rating of 1 for Lt. AAA and small arms, and a 2 for Medium AAA on the damage tables. If more than one zone of effect overlaps a hex, each zone is rolled for separately.
+Aircraft which fly into this zone of effect (whether friendly or enemy) must check for chance hits. Roll the die once \changedin{1C}{1C-apj-36-errata}{for each FP expended}{after each FP expended that ends} in the zone. On a roll of 1 a chance hit occurs. Resolve this hit immediately using an attack rating of 1 for Lt.\ AAA and small arms, and a 2 for Medium AAA on the damage tables. If more than one zone of effect overlaps a hex, each zone is rolled for separately.
 
 \paragraph{Ammo Effects.} AAA units which use this tactic run out of ammo at the end of the game-turn. Flip the barrage marker to the out of ammo side to reflect this. They may not fire again until they are resupplied. During the End Of Turn Admin Phase of each game-turn (including the current one) roll one die for each out of ammo unit. On a 2 or less, it is resupplied.
 
@@ -72,17 +72,17 @@ Plotted fire represents the use of preplanned area flak barrages. Plotted fire c
 
 \paragraph{Plotted Fire Procedure.} During the AAA Interaction Phase, a target hex and altitude is secretly noted for each AAA unit using plotted fire.
 
-In the Ground Unit Interaction Phase of the game-turn, the target hex and altitude are revealed. A plotted fire zone of effect is considered to now exist in the target hex and the six adjacent hexes and any hexsides that form them\addedin{1B}{1C-figures}{ as shown in Figure \ref{figure:aaa-zone},} this at the plotted altitude, plus or minus two levels.
+In the Ground Unit Interaction Phase of the game-turn, the target hex and altitude are revealed. A plotted fire zone of effect is considered to now exist in the target hex and the six adjacent hexes and any hexsides that form them\addedin{1B}{1C-figures}{ as shown in Figure \ref{figure:aaa-zone},} this at the plotted altitude, plus or minus two levels. \addedin{1C}{1C-apj-36-errata}{It is possible for parts of a plotted fire zone to extend beyond the normal maximum range/altitude of the gun.}
 
-Any and all aircraft, friendly or enemy, that are caught in the plotted fire zone are immediately subject to one attack. Resolve the attack as if by aimed fire but with an additional + 1 modifier to the hit roll. If plotted fire cannot normally hit due to modifiers, the target is not attacked but is still subject to chance hits during its movement next game-turn.
+Any and all aircraft, friendly or enemy, that are caught in the plotted fire zone are immediately subject to one attack. Resolve the attack as if by aimed fire but with an additional \plus{1} modifier to the hit roll. If plotted fire cannot normally hit due to modifiers, the target is not attacked but is still subject to chance hits during its movement next game-turn.
 
-\paragraph{Plotted Fire Marker.} The plotted fire zone's location is noted by placing an area fire marker in the plotted target hex. The fire zone remains in effect from the current Ground Unit Interaction Phase to the next turn's Ground Unit interaction Phase. Any aircraft which later expends flight points in a plotted fire zone, must check for chance hits for each FP so expended, as for barrage fire.
+\paragraph{Plotted Fire Marker.} The plotted fire zone's location is noted by placing an area fire marker in the plotted target hex. The fire zone remains in effect from the current Ground Unit Interaction Phase to the next turn's Ground Unit interaction Phase. Any aircraft which later expends flight points in a plotted fire zone, must check for chance hits  \changedin{1C}{1C-apj-36-errata}{for each FP so expended}{after each FP expended that ends in the zone}, as for barrage fire. \addedin{1C}{1C-apj-36-errata}{When rolling for chance hits from plotted fire zones, all fire at the same hex/altitude counts creates one zone, and therefore results in one die roll, but the concentrated fire die roll modifiers are used. Plotted fire zones that overlap but are not targeted at the same hex/altitude create separate die rolls for the main attack and also for chance hits.}
 
 \paragraph{Concentrated Fire.} More than one AAA unit of the same or different types (heavy or medium) may be plotted to the same target hex/altitude. In this case, only one attack per plane caught in the zone is still allowed. Use the least accurate AAA unit's to hit numbers but allow a \minus{1} to hit modifier for each firing unit over one. If a hit is scored, the highest maximum attack rating of all the AAA units involved is utilized to determine actual attack rating.
 
 \addedin{1C}{1C-apj-23}{
 \paragraph{Plotted Fire Damage.}
-Chance hits of Heavy AAA in a plotted fire zone have an attack rating of 2.  Regular hits achieved when plotted fire is revealed and resolved use the regular die roll procedure to determine attack rating.
+\changedin{1C}{1C-apj-36-errata}{Chance hits of Heavy AAA in a plotted fire zone have an attack rating of 2.}{If at least one Heavy AAA unit contributed to the \changedin{2B}{2B-heavy-barrage-fire}{barrage}{plotted-fire} zone, use an attack rating of 2 for chance hits.} Regular hits achieved when plotted fire is revealed and resolved use the regular die roll procedure to determine the attack rating.
 }
 
 \section{Fire Control Radars (FCRs)}
@@ -132,6 +132,8 @@ Maneuvering aircraft are more difficult targets for AAA guns. A good strike pilo
 
     \item If the AAA range was medium or long; the aircraft must be in an HT or greater turn rate or just have faced due to an HT or greater turn rate or must be prepping for, or executing maneuvers as above.
 \end{itemize}
+
+\addedin{1C}{1C-apj-23-errata/1C-apj-36-errata}{When jinking turns may not be stretched out with extra FPs before changing facing. Reversing the angle of bank when going directly from one turn to another still constitutes jinking if the aircraft is shot at while reversing.} \addedin{1C}{1C-apj-36-errata}{In this case, the new turn need not qualify for jinking.}
 
 \paragraph{Jinking Effect.} A jinking aircraft which is hit by AIMED or PLOTTED AAA fire is allowed an immediate die roll to negate the hit; meaning the gunners actually missed. Roll a die before any attack rating or damage is determined.
 
