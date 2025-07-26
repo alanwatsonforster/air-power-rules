@@ -24,11 +24,9 @@ Surface to Air Missile (SAM) units consist of one or more self-contained launch 
 
     \item\itemparagraph{Boosted Flight.} On the game turn of launch only, SAMs have a booster phase during which the missile is accelerating and/or being gathered under guidance control. The missile is not armed nor can it began maneuvering until a number of FPs have been expended in boosted flight equal to the amount listed under “boost” on the SAM missile data table.
 
-    While in the booster phase, the missile may only expend FPs to move forward and/or gain altitude. Aircraft may not be attacked by missiles in boosted flight. The missile is armed immediately upon completing boosted flight and may then commence flying normally. They may also opt to turn immediately once they are armed as for air to air missiles.
+    While in the booster phase, the missile may only expend FPs to move forward and/or gain altitude. Aircraft may not be attacked by missiles in boosted flight. The missile is armed immediately upon \changedin{1C}{1C-apj-23-errata}{expending the first FP after completing boosted flight}{completing boosted flight} and may then commence flying normally. They may also opt to turn immediately once they are armed as for air to air missiles.
 
-    \item\itemparagraph{Speed.} A SAM missile's start speed is always equal to its listed speed on the first turn of launch and on each turn of sustainer flight. SAMs do not use the speed attenuation tables and factors until the first game turn of unpowered flight. This is different than for air to air missiles which must take into account the varying aircraft launch speeds. 
-    
-    %On each turn of sustainer-powered flight the SAM’s speed attenuation factor is 1.0, but SAMs are still subject to speed loss from turns, maneuvers, climbs, etc.
+    \item\itemparagraph{Speed.} A SAM missile's start speed is always equal to its listed speed on the first turn of launch and on each turn of sustainer flight. SAMs do not use the speed attenuation tables and factors until the first game turn of unpowered flight. This is different than for air to air missiles which must take into account the varying aircraft launch speeds. \addedin{1C}{1C-apj-23-errata}{On each turn of sustainer-powered flight the SAM’s speed attenuation factor is 1.0, but SAMs are still subject to speed loss from turns, maneuvers, climbs, etc.}
 
 \end{itemize}
 
@@ -61,9 +59,11 @@ Surface to Air Missile (SAM) units consist of one or more self-contained launch 
 
 \end{itemize}
 
-\paragraph{Damage Effects On SAM Units.} SAM units may not launch or guide missiles while suppressed. Each “D” hit on a SAM unit destroys half of any remaining ready missiles and reloads (round up) if it does not also destroy the unit. Radar SAM units may be disabled if an ARM hit destroys their radar (see Rule \ref{rule:radar-guided-sams}).
+\paragraph{Damage Effects On SAM Units.} SAM units may not launch or guide missiles while suppressed. Each “D” hit on a SAM unit destroys half of any remaining \deletedin{1C}{1C-apj-23-errata}{ready missiles}{missiles} and reloads (round up) if it does not also destroy the unit. Radar SAM units may be disabled if an ARM hit destroys their radar (see Rule \ref{rule:radar-guided-sams}).
 
-%\paragraph{SAM Minimum Altitude Capability.}  SAMs may not be launched or guided at targets within less than the listed number of levels to the ground.  If the SAM data table lists a “T”, then the SAM can be fired at targets in TFF.  If there is a “+N” modifier next to the “T”, then that modifier applies to any missile attack die rolls to targets in TFF.
+\addedin{1C}{1C-apj-23-errata}{
+\paragraph{SAM Minimum Altitude Capability.}  SAMs may not be launched or guided at targets within less than the listed number of levels to the ground.  If the SAM data table lists a “T”, then the SAM can be fired at targets in TFF.  If there is a “+N” modifier next to the “T”, then that modifier applies to any missile attack die rolls to targets in TFF.
+}
 
 \section{Early Warning Radars and SAM Target Passdowns}
 
@@ -75,11 +75,9 @@ Surface to Air Missile (SAM) units consist of one or more self-contained launch 
 
 EWRs perform a passdown by announcing the EWR detected target and the unit it is being passed to. Roll the ten-sided die and apply any applicable modifiers\addedin{1B}{1B-tables}{ from Table \ref{table:ewr-pass-down-modifiers}}. A result of 7 or less indicates success. A successful passdown provides a \minus{3} modifier to the SAM unit's lock-on attempt.
 
-\paragraph{EWR Target Detection.} EWRs detect aircraft using the same procedure as aircraft radars except they use the EWR line of the Radar Table. Any aircraft within the line of sight of an operating EWR (not jammed, suppressed or shut down) is an eligible target as EWRs have a 360° sweep.  
+\paragraph{EWR Target Detection.} \addedin{1C}{1C-apj-23-errata}{EWRs perform radar searches in the Air Radar Search Phase. \changedin{2B}{2B-ewr-eccm}{In TSOH}{Unless otherwise specified in the scenario notes}, the ECCM rating of an EWR is 0.} EWRs detect aircraft using the same procedure as aircraft radars except they use the EWR line of \changedin{1B}{1B-tables}{the Radar Table}{Table \ref{table:radar-contact}}. Any aircraft within the line of sight of an operating EWR (not jammed, suppressed or shut down) is an eligible target as EWRs have a 360° sweep.  
 
-% EWRs perform radar searches in the Air Radar Search Phase.  
 
-% ECCM is “0”.
 
 \paragraph{Radar Horizon.} Aircraft in TFF may not be detected or locked onto by radars until within 20 hexes of an “MTI” (Moving Target Indicator) capable EWR or “T” level capable SAM unit having a line of sight to them. The detection range is increased to 60 hexes if radar is elevated (on higher terrain than the aircraft or on a ship’s mast or high tower).
 
@@ -148,22 +146,37 @@ Additionally, the TTR must maintain a lock-on (HOJ SAMs excepted) and the missil
 \input{tables/table-sam-break-lock.tex}
 TTR lock-ons can be broken as follows during the SAM interaction Phase:
 
+\changedin{1C}{1C-apj-23-errata}{
 \begin{itemize}
-    \item When target has a CHAFF PPL present and a break lock roll succeeds against BR, CG, CW, and TVM SAM units.
+    \item When target has a CHAFF PPL present and a break lock roll succeeds against CG and BR SAM units.
 
-    \item When target has a MINI-JAMMER PPL present and a break lock die roll succeeds against BR, CG, CW, and TVM SAM units.
+    \item When target has a MINI-JAMMER PPL present and a break lock die roll succeeds against CG, CW, and TVM SAM units.
 
-    \item When target is equipped with a DJM working in the SAM unit TTR's frequency and a break lock die roll succeeds (BR, CG, CW, and TVM SAM units as noted). 
-
-    %\item When target is equipped with an AJM working in the SAM unit TTR's frequency and a break lock die roll succeeds (BR and CG SAM units only). 
+    \item When target is equipped with a DJM working in the SAM unit TTR's frequency and a break lock die roll succeeds. 
 
     \item When the SAM TTR is jammed by a stand-off Jamming attack.
     
     \item If the SAM player opts to break lock, or shuts down the radar (see rule \ref{rule:arms}).
 
 \end{itemize}
+}{
+\begin{itemize}
+    \item When target is equipped with a DJM of the appropriate type working in the SAM unit TTR's frequency and a break lock die roll succeeds (BR, CG, CW, and TVM SAM units). 
 
-\addedin{1B}{1B-tables}{The break-lock rolls are given in Table \ref{table:sam-break-lock}.}
+    \item When target has a CHAFF PPL present and a break lock roll succeeds (BR, CG, CW, and TVM SAM units).
+
+    \item When target has a MINI-JAMMER PPL present and a break lock die roll succeeds (BR, CG, CW, and TVM SAM units).
+
+    \item When target is equipped with an AJM working in the SAM unit TTR's frequency and a break lock die roll succeeds (BR and CG SAM units). 
+
+    \item When the SAM TTR is jammed by a stand-off Jamming attack.
+    
+    \item If the SAM player opts to break lock, or shuts down the radar (see rule \ref{rule:arms}).
+
+\end{itemize}
+}
+
+\addedin{1B}{1B-tables}{The break-lock rolls and the type restrictions are given in Table \ref{table:sam-break-lock}.}
 
 %Towed decoy adds +1 to ECM rating to break TTR lock-ons if DJM/AJM, internal or podded, is ECM effective against the radar type as specified above.
 

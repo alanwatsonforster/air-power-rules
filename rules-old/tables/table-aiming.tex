@@ -5,18 +5,19 @@
 \begin{onecolumntable}
 \tablecaption{table:aiming}{Aiming}
 
-\begin{tabularx}{0.9\linewidth}{lP}
+\begin{tabularx}{0.7\linewidth}{lP}
 \toprule
 Bombsight Type  &Minimum Aiming (in FPs)\\
 \midrule
-Manual 	        &2/3 aircraft's speed (round down)\\
-Ballistic	    &1/2 aircraft's speed (round down)\\
-Computed	    &1/3 aircraft's speed (round down)\\
-Advanced	    &1/3 aircraft's speed (round down)\\
+Manual 	        &2/3 aircraft's \changedin{1C}{1C-apj-23-errata}{FPs}{speed}\\
+Ballistic	    &1/2 aircraft's \changedin{1C}{1C-apj-23-errata}{FPs}{speed}\\
+Computed	    &1/3 aircraft's \changedin{1C}{1C-apj-23-errata}{FPs}{speed}\\
+Advanced	    &1/3 aircraft's \changedin{1C}{1C-apj-23-errata}{FPs}{speed}\\
 \bottomrule
 \end{tabularx}
-\begin{tablenote}{0.9\linewidth}
+\begin{tablenote}{0.7\linewidth}
 \begin{itemize}
+\item Always round down fractions.
 \item Minimum aiming is at least 1 FP while on a LOA.
 \item If full aiming not accomplished, apply a modifier of \plus{3} to the attack die roll.
 \item If full aiming is accomplished, apply the bombsight modifier from the aircraft's ADC.
