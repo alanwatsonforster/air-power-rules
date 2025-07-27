@@ -172,7 +172,7 @@ Aircraft can be augmented by television and optical equipment to enhance the air
 
 \begin{itemize}
 
-    \item attempt to sight one eligible target already detected by radar (but not locked on) in the searcher's 180{\deg} angle off arcs and within 10 times the target's visibility number, or
+    \item attempt to sight one eligible target already detected by radar (but not locked on) in the searcher's \arcplus{180} angle off arcs and within 10 times the target's visibility number, or
 
     \item visually search in the limited radar arc within 6 times the target's visibility number for one eligible target (whether previously detected or not).
 
@@ -185,7 +185,7 @@ Ignore multi-crew and HUD interface modifiers. The VAS range modifiers are used 
 \paragraph{Radar/VAS Interface.} An aircraft equipped with VAS may (upon establishing a radar lock) automatically sight one of the locked targets in the next Visual Sighting Phase if it is:
 
 \begin{itemize}
-    \item in the searcher's 180{\deg} angle off arc and,
+    \item in the searcher's \arcplus{180} angle off arc and,
     \item within 10 times the target's visibility number.
 \end{itemize}
 
@@ -199,15 +199,15 @@ An Infrared Search and Track System is capable of passively detecting and tracki
 
 \paragraph{IRSTS Types.} \changedin{2A}{2A-irsts-c}{Two types of IRSTS systems exist: A (Early) and B (Advanced)}{Three types of IRSTS systems exist: A (Early), B (Modern), and C (Advanced)}. IRSTS is used in the Radar Search and Lock-On Phase. A single pilot aircraft may use radar or IRSTS in this phase, a multi-crew aircraft may do both. \addedin{1C}{1C-apj-25-qa}{Unlike radar, there are no maneuver-related restrictions on the use of IRSTS.}
 
-\paragraph{Detection.} IRSTS detects heat based on fuel consumption: Detection range equals four times the fuel used number (based on the Fuel column of the Power Chart for the current power setting)\addedin{2A}{2A-irsts-c}{ for IRSTS-A and B and six times the fuel used number for IRSTS-C}. The range is doubled if the IRSTS is in the target's 30{\deg} arc or less. The target is detected if it is in detection range.
+\paragraph{Detection.} IRSTS detects heat based on fuel consumption: Detection range equals four times the fuel used number (based on the Fuel column of the Power Chart for the current power setting)\addedin{2A}{2A-irsts-c}{ for IRSTS-A and B and six times the fuel used number for IRSTS-C}. The range is doubled if the IRSTS is in the target's \arcminus{30} arc. The target is detected if it is in detection range.
 
 \begin{itemize}
     \item IRSTS-A operates in the limited radar arc of an aircraft.
-    \item IRSTS-B operates in the 180{\deg} arc of an aircraft.
-    \itemaddedin{2A}{2A-irsts-c} IRSTS-C operates in the 150{\deg} arc of an aircraft.
+    \item IRSTS-B operates in the \arcplus{180} arc of an aircraft.
+    \itemaddedin{2A}{2A-irsts-c} IRSTS-C operates in the \arcplus{150} arc of an aircraft.
 \end{itemize}
 
-\paragraph{IRSTS Lock-on.} \changedin{2A}{2A-irsts-c}{One lock-on attempt is allowed}{An IRSTS-A and B can attempt one lock-on} against the nearest detected target or the target with the highest fuel point use (and consequently the largest IR signature); double the value as seen from 30{\deg} arc or less. \addedin{2A}{2A-irsts-c}{An IRSTS-C can attempt to lock-on up to \addedin{2B}{2B-irsts-c}{any }six detected targets.} Roll the die. On a 6 or less for type A or 8 or less for type B\addedin{2A}{2A-irsts-c}{ and C}, the target is locked-up. \addedin{2B}{2B-irsts}{After the lock-on attempts are resolved, if any succeeded, the aircraft loses all other IRSTS detections.}
+\paragraph{IRSTS Lock-on.} \changedin{2A}{2A-irsts-c}{One lock-on attempt is allowed}{An IRSTS-A and B can attempt one lock-on} against the nearest detected target or the target with the highest fuel point use (and consequently the largest IR signature); double the value as seen from \arcminus{30} arc. \addedin{2A}{2A-irsts-c}{An IRSTS-C can attempt to lock-on up to \addedin{2B}{2B-irsts-c}{any }six detected targets.} Roll the die. On a 6 or less for type A or 8 or less for type B\addedin{2A}{2A-irsts-c}{ and C}, the target is locked-up. \addedin{2B}{2B-irsts}{After the lock-on attempts are resolved, if any succeeded, the aircraft loses all other IRSTS detections.}
 
 \addedin{2B}{2B-irsts}{
 \paragraph{Maintaining IRSTS Detections and Lock-Ons.} IRSTS detections or lock-ons are maintained provided the target satisfies the arc and range requirements for detection at the start of each subsequent Radar Search and Lock-On Phase and, if the aircraft has a single pilot, provided the pilot does not use radar.

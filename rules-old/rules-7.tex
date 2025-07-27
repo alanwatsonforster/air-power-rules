@@ -5,7 +5,7 @@
 
 This chapter discusses the procedures for changing an aircraft's direction by turning.
 
-Aircraft change facing by turning. Facing changes usually occur in 30 degree increments. To execute a turn, an aircraft must first fly a certain distance forward and then it may change facing by 30 degrees to the left or right depending on which way it was turning. The distance it must fly before changing facing is dependent on its speed, altitude band, and rate of turn as described below. An aircraft may change facing as often as possible within a single game turn depending on its selected turn rate.
+Aircraft change facing by turning. Facing changes usually occur in \degrees{30} increments. To execute a turn, an aircraft must first fly a certain distance forward and then it may change facing by 30 degrees to the left or right depending on which way it was turning. The distance it must fly before changing facing is dependent on its speed, altitude band, and rate of turn as described below. An aircraft may change facing as often as possible within a single game turn depending on its selected turn rate.
 
 \section{Turning}
 \label{rule:turning}
@@ -25,7 +25,7 @@ An aircraft may begin turning at any point in its flight. When the first FP is s
 \end{itemize}
 
 Next consult \changedin{1B}{1B-tables}{the Integrated Turn Charts}{Table~\ref{table:turn}} and cross index the selected turn rate with the aircraft's current speed (rounded down). \notein{1C}{FH in APJ 36 states: “A/C speed, not FPs, is used on the Integrated Turn Charts.” However, the text already states that it is speed. I have not incorporated this.}
-Be sure to use the chart corresponding to the altitude band the aircraft is in. If an “NA” is encountered, that combination of turn rate and speed is not allowed. If a number appears, that is the minimum number of FPs that the aircraft must expend in flight before changing facing. If a 60 or 90 appears, that indicates the aircraft may change facing by up to 60 or 90 degrees respectively for each FP expended inflight that game turn. \addedin{2A}{2A-sustained}{A 60 or 90 degree turn is considered one facing change except for purposes of sustained turning decel.}
+Be sure to use the chart corresponding to the altitude band the aircraft is in. If an “NA” is encountered, that combination of turn rate and speed is not allowed. If a number appears, that is the minimum number of FPs that the aircraft must expend in flight before changing facing. If a 60 or 90 appears, that indicates the aircraft may change facing by up to 60 or 90 degrees respectively for each FP expended inflight that game turn. \addedin{2A}{2A-sustained}{A \degrees{60} or \degrees{90} turn is considered one facing change except for purposes of sustained turning decel.}
 
 Changing facing does not cost any FPs; it is the end result of having begun to turn and having used the specified number of FPs (or more) in flight while turning. A turn consists of all the FPs used prior to changing the aircraft's facing plus the act of facing itself. If an aircraft is on a hexside at the time of facing, shift it to the adjacent hex (in the direction the aircraft is turning) and then change its facing as shown \changedin{1B}{1B-figures}{below}{in Figure~\ref{figure:changing-facing}}. 
 
@@ -74,9 +74,9 @@ Turning creates drag, which causes deceleration. Each time an aircraft declares 
 
 If the turn requirement is 60 or 90, the aircraft is carrying out out a multiple turn. If the turn requirement is 60, the aircraft may declare and execute one or two turns for each FP expended. If the turn requirement is 90, the aircraft may declare and execute one, two, or three turns for each FP expended.
 
-Each executed turn gives a change of facing of 30{\deg}, so in many ways, declaring and executing multiple turns is equivalent to moving one FP and then changing facing by 60{\deg} or 90{\deg}. 
+Each executed turn gives a change of facing of \degrees{30}, so in many ways, declaring and executing multiple turns is equivalent to moving one FP and then changing facing by \degrees{60} or \degrees{90}. 
 
-Nevertheless, in these cases the aircraft is actually executing multiple turns each corresponding to a change of facing of 30{\deg}, and this distinction is important for calculating the total drag. That is, declaring and executing two turns (changing facing by a total of 60{\deg}) gives turn drag for two turns, and doing so for three turns (changing facing by a total of 90{\deg}) gives turn drag for three turns.
+Nevertheless, in these cases the aircraft is actually executing multiple turns each corresponding to a change of facing of \degrees{30}, and this distinction is important for calculating the total drag. That is, declaring and executing two turns (changing facing by a total of \degrees{60}) gives turn drag for two turns, and doing so for three turns (changing facing by a total of \degrees{90}) gives turn drag for three turns.
 
 The aircraft may expend additional FPs before the first facing change.
 
@@ -123,7 +123,7 @@ An aircraft noted as having a high bleed rate loses speed faster than others in 
 \deletedin{2A}{2A-snap}{
 \section{Snap Turning}
 
-\notein{1C}{ISSUE: JDW states in APJ 22 that a snap turn can also be carried out at the ET rate (in order to gain a 60 or 90 degree turn), but I'm not sure how to incorporate this here.}
+\notein{1C}{ISSUE: JDW states in APJ 22 that a snap turn can also be carried out at the ET rate (in order to gain a \degrees{60} or \degrees{90} turn), but I'm not sure how to incorporate this here.}
 
 A snap turn represents an aircraft using its instantaneous maximum angle of attack (as opposed to smoothly increasing its angle of attack). A Snap Turn allows an aircraft to immediately change facing without meeting the normal turning requirements.
 
