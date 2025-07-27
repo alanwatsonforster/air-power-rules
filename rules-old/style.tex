@@ -1,7 +1,6 @@
 %!TEX root = ./rules-working.tex
 %LTeX: enabled=false
 
-
 % Use the full page with 1 cm margins.
 
 \usepackage[
@@ -14,36 +13,50 @@
 \usepackage[usefilenames]{plex-otf}
 \renewcommand*\familydefault{\sfdefault}
 
-\usepackage{unicode-math}
-\setmathfont{IBMPlexMath-Regular}
+% These are the corresponding Unicode characters.
+\newcommand{\textplus}{+}
+\renewcommand{\textminus}{−}
+\newcommand{\textdegrees}{°}
+\newcommand{\textmultiplication}{×}
+\newcommand{\textdivision}{÷}
+\newcommand{\textplusorminus}{±}
+\newcommand{\textlessthanorequal}{≤}
+\newcommand{\textgreaterthanorequal}{≥}
+\newcommand{\textinfinity}{∞}
 
-\newcommand{\plus}[1]{+#1}
-\newcommand{\plusafter}[1]{#1+}
-\newcommand{\binaryplus}[2]{#1~+~#2}
+\newcommand{\plus}[1]{\textplus#1}
+\newcommand{\plusafter}[1]{#1\textplus}
+\newcommand{\binaryplus}[2]{\mbox{#1 \textplus #2}}
 
-\newcommand{\minus}[1]{−#1}
-\newcommand{\minusafter}[1]{#1−}
-\newcommand{\binaryminus}[2]{#1~−~#2}
+\newcommand{\minus}[1]{\textminus#1}
+\newcommand{\minusafter}[1]{#1\textminus}
+\newcommand{\binaryminus}[2]{\mbox{#1 \textminus #2}}
 
-\newcommand{\binaryplusorminus}[2]{#1~±~#2}
+\newcommand{\binaryplusorminus}[2]{#1~\textplusorminus~#2}
 
-\newcommand{\multiplybefore}[1]{×#1}
-\newcommand{\multiplyafter}[1]{#1×}
-\newcommand{\binarymultiply}[2]{#1~×~#2}
+\newcommand{\multiplybefore}[1]{\textmultiplication#1}
+\newcommand{\multiplyafter}[1]{#1\textmultiplication}
+\newcommand{\binarymultiply}[2]{\mbox{#1 \textmultiplication #2}}
 
-\newcommand{\binarydivide}[2]{#1~/~#2}
+\newcommand{\binarydivide}[2]{\mbox{#1\textdivision #2}}
 
 \newcommand{\lessthanbefore}[1]{<#1}
-\newcommand{\lessthanorequaltobefore}[1]{≤#1}
+\newcommand{\lessthanorequaltobefore}[1]{\textlessthanorequal#1}
 \newcommand{\greaterthanbefore}[1]{>#1}
-\newcommand{\greaterthanorequaltobefore}[1]{>#1}
+\newcommand{\greaterthanorequaltobefore}[1]{\textgreaterthanorequal#1}
 
 \newcommand{\binaryrelation}[3]{#1~#2~#3}
 \newcommand{\triperelation}[5]{#1~#2~#3~#4~#5}
 
-\newcommand{\infinity}{∞}
+\newcommand{\degrees}[1]{#1\textdegrees}
 
-\newcommand{\degrees}[1]{#1 degrees}
+\newcommand{\arc}[1]{\degrees{#1}}
+\newcommand{\arcplus}[1]{\plusafter{\degrees{#1}}}
+\newcommand{\arcminus}[1]{\minusafter{\degrees{#1}}}
+\newcommand{\arcborder}[2]{\degrees{#1}/\degrees{#2}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \newcommand{\superscript}[1]{$^{\textrm\scriptsize #1}$}
 
@@ -473,12 +486,6 @@ minus \fontdimen4\font}
 \newcommand{\advancedruletext}{\tablenotetext{*}{Advanced rule.\space}}
 
 \newcommand{\tablespace}{\\[-0.5ex]}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newcommand{\arc}[1]{\mbox{#1{\deg}}}
-\newcommand{\arcrange}[2]{\mbox{$#1{\deg}\!#2$}}
-\newcommand{\arcborder}[2]{\mbox{$#1{\deg}/#2{\deg}$}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

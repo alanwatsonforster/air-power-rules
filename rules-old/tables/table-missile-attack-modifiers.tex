@@ -15,15 +15,15 @@ Target in Military Power&\minus{1}\\
 Target in Idle Power&\plus{1}\\
 Missile must lose 2 or more levels during proportional move of attack against tgt.\ in LO alt.\ band (ground clutter)&\plus{2}\\
 Target in Terrain Following Flight&\plus{1}\\
-Lesser of Flare PPL or missile Flare Vulnerability no.&\plus{}\\
+Lesser of Flare PPL or missile Flare Vulnerability no.&\textplus\\
 \midrule
 \multicolumn{2}{c}{BRMs, RHMs, AHMs, \& BR, CG, CW and TVM SAMs}\\
 \midrule
-DJM rating \minus{} missile ECCM\plus{}\\
-Lesser of Chaff PPL or missile Chaff Vulnerability&\plus{}\\
-Lesser of Mini-jammer PPL or Chaff Vulnerability \plus{} 1&\plus{}\\
-Ground clutter (air to air missiles only) = ≤6 - \mbox{target Altitude above terrain} - \mbox{missile ECCM}≤.&\plus{}\\
-Listed “T” level modifier (SAMs only, if applicable)&\plus{}\\
+\binaryminus{DJM rating}{missile ECCM}&\textplus\\
+Lesser of Chaff PPL or missile Chaff Vulnerability&\textplus\\
+Lesser of Mini-jammer PPL or \binaryplus{Chaff Vulnerability}{1}&\textplus\\
+Ground clutter (air to air missiles only) = \binaryminus{\binaryminus{6}{target Altitude above terrain}}{missile ECCM}&\textplus\\
+Listed “T” level modifier (SAMs only, if applicable)&\textplus\\
 \midrule
 \multicolumn{2}{c}{OG and LG SAMs}\\
 \midrule
@@ -31,7 +31,7 @@ Listed “T” level modifier (SAMs only, if applicable)&\plus{}\\
 \midrule
 \multicolumn{2}{c}{All Missiles}\\
 \midrule
-Target aircraft size modifier from ADC&\plus{/-}\\
+Target aircraft size modifier from ADC&\textplusorminus\\
 Target did not engage the missile&\minus{1}\\
 \bottomrule
 \end{tabularx}
@@ -39,7 +39,7 @@ Target did not engage the missile&\minus{1}\\
 \medskip
 
 \begin{tablenote}{\linewidth}
-Reminder: \binaryrelation{\mbox{Max launch range for \changedin{1C}{1C-apj-23-errata/1C-apj-24-play-aids}{RHM/AHM}{RHM}} }{=}{ 3 \times \mbox{radar Track Str.\ \#}}.
+Reminder: Max launch range for \changedin{1C}{1C-apj-23-errata/1C-apj-24-play-aids}{RHM/AHM}{RHM} = \binarymultiply{3}{radar Track Str.\ \#}.
 \end{tablenote}
 \end{onecolumntable}
 \end{onecolumntablefloat}
@@ -55,12 +55,12 @@ Reminder: \binaryrelation{\mbox{Max launch range for \changedin{1C}{1C-apj-23-er
 \cmidrule(lr){2-13}
 &E&I&M&A&BR&RH&AH&CG&CW&TVM&OG&LG\\
 \midrule
-0 line        &\minus{1}&\minus{1}&\minus{1}&\minus{2}&\plus{0}&\minus{1}&\minus{2}&\minus{1}&\minus{1}&\minus{1}&\plus{0}&\minus{1}\\
-30 arcs       &\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}\\
-60 arcs       &\plus{1}&\plus{0}&\plus{0}&\plus{0}&\plus{1}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{1}&\plus{0}\\
-90/120 arcs   &\plus{3}&\plus{2}&\plus{2}&\plus{2}&\plus{3}&\plus{3}&\plus{2}&\plus{2}&\plus{3}&\plus{2}&\plus{3}&\plus{2}\\
-150 arcs      &\plus{4}&\plus{3}&\plus{2}&\plus{2}&\plus{5}&\plus{2}&\plus{2}&\plus{2}&\plus{2}&\plus{1}&\plus{2}&\plus{2}\\
-180 arcs, line&\plus{5}&\plus{4}&\plus{3}&\plus{1}&\plus{5}&\plus{1}&\plus{1}&\plus{1}&\plus{1}&\plus{1}&\plus{1}&\plus{1}\\
+\arc{0} line        &\minus{1}&\minus{1}&\minus{1}&\minus{2}&\plus{0}&\minus{1}&\minus{2}&\minus{1}&\minus{1}&\minus{1}&\plus{0}&\minus{1}\\
+\arc{30} arcs       &\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}\\
+\arc{60} arcs       &\plus{1}&\plus{0}&\plus{0}&\plus{0}&\plus{1}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{0}&\plus{1}&\plus{0}\\
+\arc{90}/\arc{120} arcs   &\plus{3}&\plus{2}&\plus{2}&\plus{2}&\plus{3}&\plus{3}&\plus{2}&\plus{2}&\plus{3}&\plus{2}&\plus{3}&\plus{2}\\
+\arc{150} arcs      &\plus{4}&\plus{3}&\plus{2}&\plus{2}&\plus{5}&\plus{2}&\plus{2}&\plus{2}&\plus{2}&\plus{1}&\plus{2}&\plus{2}\\
+\arc{180} arcs, line&\plus{5}&\plus{4}&\plus{3}&\plus{1}&\plus{5}&\plus{1}&\plus{1}&\plus{1}&\plus{1}&\plus{1}&\plus{1}&\plus{1}\\
 \bottomrule
 \end{tabularx}
 \end{twocolumntable}

@@ -208,9 +208,9 @@ Note: Boresight and Auto-Track Modes allow maneuver restrictions to be ignored b
 \\
 \midrule
 Limited&\minus{2}, \minus{9}&\minus{0.5}, \minus{3}&\plus{0.5}, \minus{0.5}&\plus{2}, \plus{0}&\plus{4}, \plus{0.5}&\plus{9}, \plus{2}\\
-\arcrange{180}{+}&\minus{1}, \minus{X}&\minus{0}, \minus{5}&\plus{1}, \minus{1}&\plus{3}, \minus{0.5}&\plus{5}, \plus{0}&\plus{X}, \plus{1}\\
-\arcrange{150}{+}&\minus{0.5}, \minus{X}&\minus{0}, \minus{8}&\plus{2}, \minus{2}&\plus{4}, \minus{1}&\plus{8}, \plus{0}&\plus{X}, \plus{0.5}\\
-\arcrange{120}{+}&\minus{0}, \minus{X}&\plus{0.5}, \minus{X}&\plus{4}, \minus{4}&\plus{6}, \minus{2}&\plus{X}, \minus{0.5}&\plus{X}, \plus{0}\\
+\arcplus{180}&\minus{1}, \minus{X}&\minus{0}, \minus{5}&\plus{1}, \minus{1}&\plus{3}, \minus{0.5}&\plus{5}, \plus{0}&\plus{X}, \plus{1}\\
+\arcplus{150}&\minus{0.5}, \minus{X}&\minus{0}, \minus{8}&\plus{2}, \minus{2}&\plus{4}, \minus{1}&\plus{8}, \plus{0}&\plus{X}, \plus{0.5}\\
+\arcplus{120}&\minus{0}, \minus{X}&\plus{0.5}, \minus{X}&\plus{4}, \minus{4}&\plus{6}, \minus{2}&\plus{X}, \minus{0.5}&\plus{X}, \plus{0}\\
 \bottomrule
 \end{tabularx}
 \begin{tablenote}{0.8\linewidth}
@@ -246,7 +246,7 @@ Note: The radar vertical limits are given as altitude levels per hex or horizont
 \begin{tabularx}{\linewidth}{X}
 \toprule
 \begin{enumerate}
-    \item Radar Arc = \arcrange{180}{+} unless normally it's limited; in which case it remains limited.
+    \item Radar Arc = \arcplus{180} unless normally it's limited; in which case it remains limited.
     \item Max Range = Search Strength No.
     \item Nearest target in radar arc is automatically detected.
     \item If nearest aircraft was a friendly with IFF on, it may be ignored and next nearest is automatically contacted etc.
