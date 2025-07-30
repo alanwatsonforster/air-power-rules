@@ -122,6 +122,7 @@ An aircraft noted as having a high bleed rate loses speed faster than others in 
 
 \deletedin{2A}{2A-snap}{
 \section{Snap Turning}
+\label{rule:snap-turning}
 
 \notein{1C}{ISSUE: JDW states in APJ 22 that a snap turn can also be carried out at the ET rate (in order to gain a \degrees{60} or \degrees{90} turn), but I'm not sure how to incorporate this here.}
 
@@ -178,7 +179,7 @@ As the angle of attack on an aircraft's wing increases, so does the speed at whi
     \input{tables/table-turn-minimum-speed}
 }
 
-If an aircraft has turn carry brought forward to the next game turn, and the new start speed for the aircraft is less than the Minimum Turn Speed required, a Maneuvering Departure automatically occurs. If not using advanced rule 7.7, consider the aircraft to enter regular departed flight.
+If an aircraft has turn carry brought forward to the next game turn, and the new start speed for the aircraft is less than the Minimum Turn Speed required, a Maneuvering Departure automatically occurs. If not using advanced rule \ref{rule:maneuvering-departures}, consider the aircraft to enter regular departed flight.
 
 \section{G Induced Loss of Consciousness}
 \label{rule:gloc}
@@ -199,7 +200,7 @@ Roll the die once for each crewman and apply any required modifiers\addedin{1B}{
     \item Second or subsequent GLOC roll in a GLOC cycle = \minus{1} (cumulative)
     \item Non-pilot crewmember checking = \minus{1}
     \item Canted seat in aircraft = \plus{1}
-    \item Crewmember fitness (variable) = \plus{/-1} (See Chapter 18)
+    \item Crewmember fitness (variable) = \plus{/-1} (See rule \ref{rule:crew-ability})
 \end{itemize}
 }
 

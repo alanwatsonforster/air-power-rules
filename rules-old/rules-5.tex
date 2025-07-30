@@ -27,7 +27,7 @@ As an aircraft is maneuvered, it might change altitude and/or accumulate accel a
 The speed of an aircraft is always expressed in terms of Flight Points (FPs), each of which equates to 100 mph of speed. An aircraft with a speed of 5.5 would be traveling at 550 mph. Flight Points are expended to move an aircraft across the game map and/or to change altitude.  An aircraft must expend all whole FPs available to it each game turn. Any unused 0.5 FP remaining can be ignored. An FP may be either a horizontal FP or a vertical FP depending on how it is used.
 
 \paragraph{Horizontal Flight Points.} 
-FPs expended to move horizontally across the map are called Horizontal Flight Points (HFPs). One HFP is spent to move an aircraft forward one hex or hexside. It may only fly onto a hexside if it faces parallel to that hexside (see 3.1).
+FPs expended to move horizontally across the map are called Horizontal Flight Points (HFPs). One HFP is spent to move an aircraft forward one hex or hexside. It may only fly onto a hexside if it faces parallel to that hexside (see rule \ref{rule:position}).
 
 \paragraph{Vertical Flight Points.} 
 FPs expended to gain or lose altitude levels are called Vertical Flight Points (VFPs). The amount of altitude levels gained or lost with the expenditure of each VFP varies with the exact type of climb or dive in use.  The amount of FPs that may be VFPs in a game turn also depends on the exact type of climbing or diving flight chosen.
@@ -110,7 +110,8 @@ Note: No matter how the FPs are mixed, the aircraft will only be moved horizonta
 
 
 \paragraph{Abnormal Flight.} 
-Two other types of flight are possible. These are Stalled and Departed Flight (see rule 6.4).  An aircraft in abnormal flight may not select Level, Climbing, or Diving flight until recovered from the abnormal condition.
+Two other types of flight are possible. These are Stalled and Departed Flight (see rule \ref{rule:abnormal-flight}
+).  An aircraft in abnormal flight may not select Level, Climbing, or Diving flight until recovered from the abnormal condition.
 
 \begin{advancedrules}
 
@@ -141,6 +142,7 @@ If an aircraft chooses Diving or Climbing flight, and in the previous game turn 
 If an aircraft continues a climbing or diving type of flight from one turn to the next, then its HFPs and VFPs may be expended in any order.
 
 \section{Formation Flying}
+\label{rule:formations}
 
 A formation is in effect when one or more aircraft fly and/or operate together as a unit while in close proximity to each other. Formations usually allow for better teamwork.
 

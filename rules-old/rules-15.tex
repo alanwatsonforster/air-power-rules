@@ -15,7 +15,7 @@ To launch IRMs, the firing aircraft must:
 \begin{enumerate}
     \item Have a sighted target in the missile seeker's field of view\addedin{1B}{1B-tables}{\ according to Table~\ref{table:irm-seeker-field-of-view}} and be within the launch angle off limits of the missile's seeker head \changedin{1B}{1B-tables}{(see below)}{according to Table~\ref{table:irm-seeker-limits}}. \addedin{3A}{3A-irm-launch-arcs}{If the launching aircraft is on a border line between two arcs, consider it to be in the arc that it would be in if the faster element moved forwards. If it is still on the border line, consider it to be in the wider arc (the one closer to the \arc{120} arc).}
     \item Obtain a seeker lock-up while within the minimum and maximum ranges given on the MDT under the missile's launch envelope for the type of shot (front, side, or rear).
-    \item Not have violated the missile launch restrictions of rule 14.2.
+    \item Not have violated the missile launch restrictions of rule \ref{rule:missile-launches}.
 \end{enumerate}
 
 \paragraph{Seeker Head Field Of View (FOV).} IRMs can only lock-up targets in their FOV\addedin{1B}{1B-tables}{\ according to Table~\ref{table:irm-seeker-field-of-view}}. IR seeker heads normally have an FOV equal to a limited radar arc (see \changedin{1B}{1B-figures}{limited radar arc diagram on play aid reference sheet}{Figure~\ref{figure:limited-arcs}}). If turning left or right or banked left or right, the FOV can optionally be considered equal to the firer’s 180{deg} left or right arc as appropriate. \addedin{1C}{1C-apj-23-errata}{The option to treat a limited arc FOV as a left of right \arc{180} arc for missiles mounted on aircraft in left or right banks or turns is also applicable to all other uses of limited arcs in the rules (radar, BRM, SAM, ARM or otherwise).}
@@ -42,17 +42,18 @@ If more than one aircraft, including friendlies, are in an UNCAGED FOV, the firi
 \paragraph{IRM Tracking Requirements.} Once launched, all IRMs have an uncaged FOV. At the end of every game turn, and at the end of each proportional move for the missile, the target must still be in the missile's FOV otherwise the missile loses its lock-up and becomes unguided. At the instant a missile becomes unguided it is removed from play.
 
 \section{IRM Countermeasures}
+\label{rule:irm-countermeasures}
 
-\paragraph{Flare Decoys.} If an aircraft is equipped with an internal DDS, or is carrying a DDS pod, then it can be equipped with flare decoys to be used against attacking missiles. Flares may be dispensed either through automatic programs as described in rule 19, or manually if the aircraft engages an attacking missile (rule 14.6).
+\paragraph{Flare Decoys.} If an aircraft is equipped with an internal DDS, or is carrying a DDS pod, then it can be equipped with flare decoys to be used against attacking missiles. Flares may be dispensed either through automatic programs as described in rule \ref{rule:electronic-warfare}, or manually if the aircraft engages an attacking missile (rule \ref{rule:missile-countermeasures}).
 
 \paragraph{Manual Flare Procedure.} When a missile declares an attack, but before it rolls to hit, an aircraft with a DDS system may declare using flares and “pop” one or two flare clusters. For each flare popped, roll one die; if the result of either roll is equal to or less than the missile's flare vulnerability rating, the missile is decoyed and removed from play. When a flare is popped, it is used up even if it is the second of two popped and the first decoyed the missile. When the aircraft has expended all of its flares, it can no longer decoy IRMs.
 
-\paragraph{Flare Program Procedure.} If a DDS program is in use and includes flares, then a die roll modifier equal to the lesser of the Program Protection Level (PPL) of the flares or the flare vulnerability rating of the missile is used as a positive modifier to the attack die roll. Note: A flare PPL also provides a modifier to IRM launch rolls equal to the program's PPL (see rule 19) or the missile's flare vulnerability rating whichever is less.
+\paragraph{Flare Program Procedure.} If a DDS program is in use and includes flares, then a die roll modifier equal to the lesser of the Program Protection Level (PPL) of the flares or the flare vulnerability rating of the missile is used as a positive modifier to the attack die roll. Note: A flare PPL also provides a modifier to IRM launch rolls equal to the program's PPL (see rule \ref{rule:electronic-warfare}) or the missile's flare vulnerability rating whichever is less.
 
 \paragraph{Ground Clutter.}\label{rule:irm-ground-clutter} Ground Clutter interferes with an IR missile's ability to track targets. 
 Add 2 to the launch roll if the firing aircraft is in the LO or ML altitude band and fires IR missiles at a “lower” target. A lower target by definition, is one more than one altitude level lower than the firer for each two hexes of horizontal range it is away. Example: a target 7 hexes away is lower if it is more than 3 altitude levels below the firer.
 \changedin{3A}{3A-irm-ground-clutter}{
-If a missile dives in its proportional move (meaning it loses 2 or more altitude levels by any means) to attack target in the LO altitude band, add 2 to the hit die roll. If a missile attacks a target in “T” level flight (rule 20) add 1 to the hit roll. This can be cumulative with the above modifiers.
+If a missile dives in its proportional move (meaning it loses 2 or more altitude levels by any means) to attack target in the LO altitude band, add 2 to the hit die roll. If a missile attacks a target in “T” level flight (rule \ref{rule:terrain-following-flight}) add 1 to the hit roll. This can be cumulative with the above modifiers.
 }{
 The ground clutter attack modifier applies to IRM attacks if:
 \begin{enumerate}
@@ -72,7 +73,7 @@ You may now play all guns and heat seeking missile only combat scenarios! Ignore
 \section{Realistic Seeker Head Vertical Field of View Limits}
 \label{rule:irm-realistic-vertical-limits}
 
-Rather than just allowing aircraft that climbed or dived to launch at targets an unlimited distance above or below respectively, a more realistic set of seeker head limits can be simulated by using the Radar Vertical Limits Table (see 16.5) to define the vertical FOV limits for caged and uncaged seekers as follows:
+Rather than just allowing aircraft that climbed or dived to launch at targets an unlimited distance above or below respectively, a more realistic set of seeker head limits can be simulated by using \changedin{1B}{1B-tables}{the Radar Vertical Limits Table}{Table \ref{table:radar-vertical-limits}} (see rule \ref{rule:radar-vertical-limits}) to define the vertical FOV limits for caged and uncaged seekers as follows:
 
 \begin{itemize}
 
@@ -80,7 +81,7 @@ Rather than just allowing aircraft that climbed or dived to launch at targets an
 
     \item Use the \arc{180} radar arc Vertical Limits Tables described for uncaged IRMs\itemaddedin{2B}{2B-irm-vertical-fov}{ and other situations with a \arc{180} horizontal arc}.
 
-    \itemaddedin{2B}{2B-irm-vertical-fov} Use the \arc{150} radar arc Vertical Limits Tables for uncaged seekers used with HMS and other situations with a \arc{150} horizontal arc.
+    \itemaddedin{2B}{2B-irm-vertical-fov}{Use the \arc{150} radar arc Vertical Limits Tables for uncaged seekers used with HMS and other situations with a \arc{150} horizontal arc.}
 
 \end{itemize}
 
@@ -95,7 +96,7 @@ Rather than just allowing aircraft that climbed or dived to launch at targets an
 \label{rule:irm-vas}
 \label{rule:irm-irsts}
 
-\paragraph{Radar Assist.} Uncaged IR missiles may be slaved to an aircraft's radar (declare in the Aircraft Decisions Phase). If the firing aircraft currently has a radar lock-on (see rule 16) to the intended target, the missiles may be automatically locked-up to it without rolling and regardless of how many aircraft are currently in the missile's FOV. IR missiles may be fired at night against otherwise unsighted targets using radar assist. This is an exception to the rule requiring targets to be sighted.
+\paragraph{Radar Assist.} Uncaged IR missiles may be slaved to an aircraft's radar (declare in the Aircraft Decisions Phase). If the firing aircraft currently has a radar lock-on (see rule \ref{rule:radar-tracking-and-lock-ons}) to the intended target, the missiles may be automatically locked-up to it without rolling and regardless of how many aircraft are currently in the missile's FOV. IR missiles may be fired at night against otherwise unsighted targets using radar assist. This is an exception to the rule requiring targets to be sighted.
 
 \paragraph{VAS Assist.} Type “M” and “A” seeker head equipped missiles, if uncaged, may be slaved to the VAS system and automatically lock-up a VAS spotted target as above in radar assist. Declare in the Aircraft Decisions Phase.
 

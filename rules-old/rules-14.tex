@@ -102,7 +102,7 @@ Aircraft attempting to launch any type of missile are restricted as follows:
 
 \begin{itemize}
 
-    \item An aircraft that turned at ET may not launch a missile unless the recovery period described in chapter 9 has been met.
+    \item An aircraft that turned at ET may not launch a missile unless the recovery period described in rule \ref{rule:recovery-periods} has been met.
 
     \item An aircraft that fired its \changedin{2B}{2B-launch-restrictions}{guns during}{guns or rockets after} its last FP that turn may not launch missiles.
 
@@ -160,7 +160,7 @@ If the proportion includes leftover FPs, for example, say the \changedin{3A}{3A-
 \deletedin{3A}{3A-fps-for-proportional-moves}{If an aircraft's speed includes a fraction; say it is 4.5 instead of 5.0, round it up to simplify determining proportions but use its actual speed when moving. This would give the same result as in the above paragraph (5 into 17). The difference comes in the execution of the segments. The moves would be 4 for 1, 4 for 1, 3 for 1, 3 for 1, and then 3 for the aircraft's half FP.}
 
 \deletedin{2A}{2A-spbr}{
-\paragraph{Speedbrake Effects on Proportional Moves (adv. rule 6.5)} When engaged in proportional movement with attacking missiles, speedbrakes (when applied) can only use up the last available FP to be expended. Or, stated another way, when engaged in proportional flight with attacking missiles, if the aircraft still has at least one full FP to expend it must do so each on every proportional move whether speedbrakes have been used yet or not.
+\paragraph{Speedbrake Effects on Proportional Moves.} (Adv.\@ rule \ref{rule:speedbrakes}.) When engaged in proportional movement with attacking missiles, speedbrakes (when applied) can only use up the last available FP to be expended. Or, stated another way, when engaged in proportional flight with attacking missiles, if the aircraft still has at least one full FP to expend it must do so each on every proportional move whether speedbrakes have been used yet or not.
 }
 
 \addedin{2B}{2B-slower-missile}{If the missile is slower than the aircraft, in each proportional move the missile moves 1 FP and the aircraft moves 1 or more FPs. Calculate the number of FPs for the aircraft in the same way as for a missile when the missile is faster.}
@@ -211,7 +211,7 @@ The missile tracking requirements (on arcs and range to the target) must be sati
 }
 
 \deletedin{2A}{2A-snap}{
-\paragraph{Instant Snap Turning (adv. rule 7.3).} Instant arming missiles, (indicated by an asterisk \changedin{1B}{1B-tables}{on the MDT}{in Table~\ref{table:missile-data}}) may begin maneuvering and attack immediately after launch. They are also allowed to immediately snap turn without prep-moving with their first FP or any FP later in their flight so long as no turns, maneuvers, or switches between climbs and dives have yet commenced. If they elect to snap-turn later in their flight, after any turns, maneuvers, or switches have occurred, they must prep-move for the snap-turn normally.
+\paragraph{Instant Snap Turning.} (Adv.\@ rule \ref{rule:snap-turning}.) Instant arming missiles, (indicated by an asterisk \changedin{1B}{1B-tables}{on the MDT}{in Table~\ref{table:missile-data}}) may begin maneuvering and attack immediately after launch. They are also allowed to immediately snap turn without prep-moving with their first FP or any FP later in their flight so long as no turns, maneuvers, or switches between climbs and dives have yet commenced. If they elect to snap-turn later in their flight, after any turns, maneuvers, or switches have occurred, they must prep-move for the snap-turn normally.
 
 Non-instant arming missiles may also snap-turn as their first maneuvering actions, but only after becoming armed. This is allowed as above, with their first FP following becoming armed, or later as long as no turns, maneuvers, or switches between climbs and dives have yet occurred or commenced. As above, if they elect to snap turn later in their flight they must prep-turn normally.
 }
@@ -322,7 +322,7 @@ For the angle-off to hit modifiers, the missile is always considered to be in th
 If a free aircraft under attack by an IRM selects idle power and fails the roll to obtain the corresponding modifier, it uses the modifier for normal power (i.e., \plus{0}). A free aircraft under attack by an IRM can select normal power and automatically gain the corresponding modifier. If an aircraft was using idle power at the moment it became the target of an IRM and continues to use idle power until the missile attacks, then it gains the \plus{1} modifier for idle power whether or not it engages the missile.
 }
 
-\paragraph{Missile Damage.} The two Attack Rating columns \changedin{1B}{1B-tables}{of the MDT}{in Table~\ref{table:missile-data}} list the attack rating of the missiles for direct and proximity hits respectively. The ratings are used to determine aircraft damage as described in chapter 10. However, a direct hit always gets a minus 2 modifier to the damage roll (warhead blast effects as opposed to just shrapnel from a proximity hit).
+\paragraph{Missile Damage.} The two Attack Rating columns \changedin{1B}{1B-tables}{of the MDT}{in Table~\ref{table:missile-data}} list the attack rating of the missiles for direct and proximity hits respectively. The ratings are used to determine aircraft damage as described in rule \ref{rule:aircraft-damage}. However, a direct hit always gets a minus 2 modifier to the damage roll (warhead blast effects as opposed to just shrapnel from a proximity hit).
 
 \section{Defensively Engaging Missiles}
 \label{rule:engaging-missiles}
@@ -362,20 +362,21 @@ Note: Free aircraft are not restricted like engaged aircraft.
 \paragraph{Multiple Missile Attacks.} An aircraft that engages one missile, is considered engaged against all missiles currently pursuing it. However, manual decoys may only be employed against missiles which are sighted or to which it is specifically alerted by ECM. Against engaged aircraft, missiles which were not sighted or alerted to are still affected by Idle power and do not get the \minus{1} to hit modifier\deletedin{2A}{2A-missile-flight}{ but still move first as if the target were a free aircraft}.
 
 \section{Missile Countermeasures}
+\label{rule:missile-countermeasures}
 
 Aircraft defend against missiles by trying to outmaneuver them (not likely) and by using expendable decoys such as chaff, flares and mini-jammers, and through electronic warfare. A “decoy” in the game, represents a cluster of two to four actual expendables.
 
 \paragraph{Out-Maneuvering Missiles.} If an aircraft reaches a position where a missile cannot move to keep it within its tracking requirements at the end of the turn or proportional movement segment, or if the missile is below maneuver speed and the target is not directly in front of it when an attack is declared, the missile is out-maneuvered and removed from play.
 
-\paragraph{Manual Decoy Dispensing.} Aircraft equipped with decoy dispensing systems (DDS) as part of their ECM suite, or aircraft carrying decoy dispenser pods may manually dispense decoys against an attacking missile if they are defensively engaged against it. Manual decoys may be dispensed even if an automatic decoy program is in effect (see rule 19).
+\paragraph{Manual Decoy Dispensing.} Aircraft equipped with decoy dispensing systems (DDS) as part of their ECM suite, or aircraft carrying decoy dispenser pods may manually dispense decoys against an attacking missile if they are defensively engaged against it. Manual decoys may be dispensed even if an automatic decoy program is in effect (see rule \ref{rule:electronic-warfare}).
 
 When a sighted missile attacks, the engaged aircraft may immediately expend 1 or 2 decoy clusters of each type of decoy available. Quantities dispensed of each type must be equal (although some types may run out early).
 
 The defender rolls the die once for each decoy dispensed. For Chaff or Flares, if the roll is less than or equal to the missile's appropriate decoy vulnerability number (given \changedin{1B}{1B-tables}{on the MDT}{in Table~\ref{table:missile-data}}), it is decoyed and removed from play. For mini jammers, if the roll is less than or equal to the missile's Chaff Vulnerability plus 1, it is decoyed and removed from play. If the missile is not decoyed, it rolls for its attack.
 
-\paragraph{Automatic Decoy Dispensing.} Decoy dispensers may be used to continuously emit decoys over the course of a game-turn via automatic programs as described in rule 19. A decoy program provides a “Protection Level” number which is used as an attack die roll modifier if it is dispensing decoys to which a missile is vulnerable.
+\paragraph{Automatic Decoy Dispensing.} Decoy dispensers may be used to continuously emit decoys over the course of a game-turn via automatic programs as described in rule \ref{rule:electronic-warfare}. A decoy program provides a “Protection Level” number which is used as an attack die roll modifier if it is dispensing decoys to which a missile is vulnerable.
 
-\paragraph{Electronic Warfare.} Radar guided missiles and aircraft radars may be vulnerable to electronic jamming which affects their ability to launch and track, and their attack die rolls. Rule 19 covers electronic warfare in detail.
+\paragraph{Electronic Warfare.} Radar guided missiles and aircraft radars may be vulnerable to electronic jamming which affects their ability to launch and track, and their attack die rolls. Rule \ref{rule:electronic-warfare} covers electronic warfare in detail.
 
 \begin{advancedrules}
 

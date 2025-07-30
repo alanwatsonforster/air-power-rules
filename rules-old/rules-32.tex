@@ -56,7 +56,7 @@ The Ship Data Tables list the characteristics and values for each class of ship 
 
     FCRs, if any, specify the gun system they are attached to.
 
-    \item \itemparagraph{Gun Directors.} This shows the maximum range (as a multiple of aircraft size in hexes) that ship's AAA can engage aircraft and missiles/rockets without radar direction.  If no gun director value is given, use the visual range criteria given for land-based AAA in Rule 24.3.
+    \item \itemparagraph{Gun Directors.} This shows the maximum range (as a multiple of aircraft size in hexes) that ship's AAA can engage aircraft and missiles/rockets without radar direction.  If no gun director value is given, use the visual range criteria given for land-based AAA in rule \ref{rule:aaa-and-aircraft-sighting}.
 
     \item \itemparagraph{AAA.} This lists the number and values of all AAA sites on board the ship. 
 
@@ -166,7 +166,7 @@ Each “D”, “2D” and “K” combat result corresponds to 1, 2, and 3 hits
 
 The effects of suppression never apply to naval vessels. 
 
-\paragraph{ARMs Versus Naval Radar.}  An ARM may attack only one radar aboard a naval vessel.  Naval vessels defend against ARMs as for any other weapon; however, if they shut down one radar, they must shut down all radars onboard.  If the ship's radars are shut down, Home on Jam capable ARMs may continue their attack if the target vessel is employing jamming.   Any “K” result will destroy the target radar (in addition to inflicting 3 hits on the vessel), and any other result may disable it as per the Target Radar Loss rules (see Chapter 26).  The Target Memory option may never be used against Naval Targets (Exception: Ships with a current movement of 0 (e.g., docked in port) can be attacked via Target Memory).
+\paragraph{ARMs Versus Naval Radar.}  An ARM may attack only one radar aboard a naval vessel.  Naval vessels defend against ARMs as for any other weapon; however, if they shut down one radar, they must shut down all radars onboard.  If the ship's radars are shut down, Home on Jam capable ARMs may continue their attack if the target vessel is employing jamming.   Any “K” result will destroy the target radar (in addition to inflicting 3 hits on the vessel), and any other result may disable it as per the Target Radar Loss rules (see rule \ref{rule:arms}).  The Target Memory option may never be used against Naval Targets (Exception: Ships with a current movement of 0 (e.g., docked in port) can be attacked via Target Memory).
 
 
 \paragraph{Critical Damage.} For each hit obtained against a naval vessel, the attacker must roll one die on the Table \ref{table:naval-critical-damage} and apply the result.  (Example: A 2D result would allow two critical rolls.)   If this results in a SAM, AAA or radar being disabled and more than one system is available, the actual system affected is determined randomly.
@@ -212,7 +212,7 @@ Air to Surface Missiles (ASMs) are cruise missiles capable of homing in on their
 
 \paragraph{ASM Launch.} The aircraft must be in level flight with wings level, recovered from any BT or greater turn and not turning or maneuvering at the end of its flight.  ASMs are launched in the Air-to-Air Missile Phase.
 
-TV and IR ASMs must be aimed at the target as for smart weapons and may not be launched at unsighted targets unless using the datalink pod rules (see 28.1).  ARH and IRH ASMs do not require aiming, do not have to be on a LOA, and may be launched at unsighted targets.  An aircraft launching ASMs may not launch other missile types.  Up to two ASMs may be launched in a turn, provided they are of the same type.  A launch roll is required as for other missiles.
+TV and IR ASMs must be aimed at the target as for smart weapons and may not be launched at unsighted targets unless using the datalink pod rules (see rule \ref{rule:data-link-pods}).  ARH and IRH ASMs do not require aiming, do not have to be on a LOA, and may be launched at unsighted targets.  An aircraft launching ASMs may not launch other missile types.  Up to two ASMs may be launched in a turn, provided they are of the same type.  A launch roll is required as for other missiles.
 
 
 \paragraph{ASM Movement.} ASMs have a first turn flight speed equal to their listed cruise speed plus half the launch aircraft's speed.  On subsequent turns they fly at cruise speed.  It costs an ASM one VFP to climb one or two altitude levels, or dive two or three altitude levels.   An ASM may descend one level per HFP, and changing between flight types is handled as for air-to-air missiles.  No maneuvers are allowed except for slides, though ASMs in a terminal dive may vertically roll once, after spending any two or more consecutive VFPs.  ASMs turn like air-to-air missiles, though they may not turn except while in their terminal phase, or as allowed by their guidance mode.  ASM turning is unaffected by T-level flight.
@@ -232,7 +232,7 @@ TV and IR ASMs must be aimed at the target as for smart weapons and may not be l
 
     For an ASM using search pattern mode, course changes are determined by its search pattern program.  The program is chosen prior to launch from those listed in Table \ref{table:asm-search-patterns}. The table gives a choice of two patterns and an eight turn program of movement for each. On each turn of the search, the movement indicated for that program is carried out.  If after eight turns of search the ASM has not entered its terminal phase or run out of Time of Flight, it repeats the search pattern over again.  If a searching missile enters terminal phase and then has its lock broken, it resumes its search from turn one of the program.
 
-    An S on the Search Pattern Table indicates a game turn of straight flight.  An L or R indicates the missile should turn 30° Left or Right during that turn of flight.
+    An S on Table \ref{table:asm-search-patterns} indicates a game turn of straight flight.  An L or R indicates the missile should turn 30° Left or Right during that turn of flight.
 
     \input{tables/table-asm-search-patterns.tex}
 
@@ -255,7 +255,7 @@ TV and IR ASMs must be aimed at the target as for smart weapons and may not be l
 
 \end{itemize}
 
-\paragraph{TV/IR Guidance.} TV and IR ASMs may only attack the targets listed in Chapter 28.  After launch, they guide toward the target like smart weapons. If an INAV capable TV/IR ASM is launched at an unsighted target, the launch aircraft need not be on a LOA (although the offset aimpoint procedure must still be completed, see Rule 23.1.3).  However, if the missile is not on a LOA at the moment it comes within sighting range of the target, it is removed from play.
+\paragraph{TV/IR Guidance.} TV and IR ASMs may only attack the targets listed in rule \ref{rule:smart-weapons}.  After launch, they guide toward the target like smart weapons. If an INAV capable TV/IR ASM is launched at an unsighted target, the launch aircraft need not be on a LOA (although the offset aimpoint procedure must still be completed, see rule \ref{rule:offset-aimpoint-bombing}).  However, if the missile is not on a LOA at the moment it comes within sighting range of the target, it is removed from play.
 
 \paragraph{ARH/IRH Terminal Guidance.} For ARH and IRH ASMs, if a target is within the ASMs terminal guidance range AND its seeker lock-on arc in the Air Radar Phase, the missile must immediately attempt a lock-on against it.  If this is obtained, the missile enters its terminal phase and will self-guide to the target like an AHM air-to-air missile.  An ASM is allowed to use its turning ability on all game-turns while it is in terminal phase.
 
@@ -271,7 +271,8 @@ In the case of anti-ship missiles, if more than one possible target is within th
 
 \paragraph{ASM Attacks.} ASMs resolve their attack upon entering the target's hex at the same altitude.  If the target is a ground target, resolve the attack as for smart or guided weapons, applying modifiers only for odds ratio, terrain, datalink (if any) and smart guidance.
 
-ASMs attacking naval targets must first roll a die, modifying for jamming and decoys (see Rule 28.4).  If the roll is equal to or less than the missile's listed To-Hit roll, it hits the target; otherwise it misses and is removed from play. 
+ASMs attacking naval targets must first roll a die, modifying for jamming and decoys (see rule \ref{rule:asms}
+).  If the roll is equal to or less than the missile's listed To-Hit roll, it hits the target; otherwise it misses and is removed from play. 
 
 A hit allows a roll on the Table \ref{table:asm-hits}, applying the listed die modifiers.  The results are applied as hits to the target.
 

@@ -41,7 +41,7 @@ Once an aircraft switches to tracking mode it loses contact with all detected ai
 
 \paragraph{Search Example:} An aircraft with a search strength of 12 and a maximum detection range of 48 is looking for two aircraft, one 27 hexes away (9 miles) and another 40 hexes (13.3 miles) away. Entering at the strength line we move right stopping at the second column. This column's range equals 30 which is higher than 27. Looking at the top of the column, we see that we need to roll 9 or less to make contact. Continuing further right two columns, we find the range listing of 42 which is higher than 40 and the die roll required is 7 or less.
 
-\paragraph{Electronic Warfare and ECCM.} The effects of jamming are fully described in rule 19, but generally, the presence of jamming will cause modifiers to the detection die roll. Aircraft radars may have an ECCM (electronic counter-countermeasures) rating on the ADC which is used to counter jamming modifiers.
+\paragraph{Electronic Warfare and ECCM.} The effects of jamming are fully described in rule \ref{rule:electronic-warfare}, but generally, the presence of jamming will cause modifiers to the detection die roll. Aircraft radars may have an ECCM (electronic counter-countermeasures) rating on the ADC which is used to counter jamming modifiers.
 
 \section{Radar Tracking and Lock-Ons}
 \label{rule:radar-tracking-and-lock-ons}
@@ -136,7 +136,7 @@ For example, if the ground is at level 0, and a target aircraft is at level 6, a
 
 \deletedin{XX}{XX-limited-look-down}{Note: Aircraft with Look-Down Technology ignore this limit. Aircraft with Limited Look-Down Technology ignore the horizontal range aspect of this limit.}
 
-\paragraph{Nose Attitude Limits.} An aircraft which climbs cannot search for or track lower targets, and an aircraft which dives cannot search for or track higher targets. An aircraft which flies level cannot search for and track targets which are more than one altitude level above or below for each two hexes of range away they are. Note: Advanced rule 16.5 introduces more specific limits.
+\paragraph{Nose Attitude Limits.} An aircraft which climbs cannot search for or track lower targets, and an aircraft which dives cannot search for or track higher targets. An aircraft which flies level cannot search for and track targets which are more than one altitude level above or below for each two hexes of range away they are. Note: Advanced rule \ref{rule:vertical-limits} introduces more specific limits.
 
 \begin{advancedrules}
 
@@ -243,6 +243,6 @@ One Auto-Track Mode lock-on attempt is allowed against the detected target even 
 
 \paragraph{Radar Searches.} Enemy radar searches are done against the Close formation as a single entity. If the formation contains 3 or 4 aircraft, apply a modifier of -1. If radar contacted, all aircraft in the close formation are contacted.
 
-\paragraph{Radar Lock-Ons.} For air radar and SAM TTR lock-ons (see Chapter 25 for SAM rules), randomly determine which aircraft in the close formation is locked up. Exception: an aircraft radar of \arcplus{120} or \arcplus{150} arc ability with a search strength of 40 or more, or a SAM TTR of VF or MW frequency is powerful enough to distinguish individual aircraft in the formation and may choose which aircraft is locked up normally.
+\paragraph{Radar Lock-Ons.} For air radar and SAM TTR lock-ons (see rule \ref{rule:sams} for SAM rules), randomly determine which aircraft in the close formation is locked up. Exception: an aircraft radar of \arcplus{120} or \arcplus{150} arc ability with a search strength of 40 or more, or a SAM TTR of VF or MW frequency is powerful enough to distinguish individual aircraft in the formation and may choose which aircraft is locked up normally.
 
 \end{advancedrules}
