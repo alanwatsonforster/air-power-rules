@@ -431,13 +431,13 @@ minus \fontdimen4\font}
     \medskip
 }
 
-\newcommand{\figurecaption}[2]{
+\newcommand{\figurecaption}[3][]{
     \ifaids
         \par
         \medskip
-        \textaddedin{1B}{1B-figures}{Figure~\ref{#1}: #2}
+        \textaddedin{1B}{1B-figures}{Figure~\ref{#2}: #3 {\normalfont #1}}
     \else
-        \textaddedin{1B}{1B-figures}{\caption{#2\label{#1}}}
+        \textaddedin{1B}{1B-figures}{\caption{#3\label{#2} {\normalfont #1}}}
     \fi
 }
 
