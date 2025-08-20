@@ -87,14 +87,12 @@
         \iflaterversion{#1}{\item #3}%
     }
     \newcommand{\tablerowaddedin}[3]{%
-        \added{\scriptsize Next row added:\endnote{Added in #2.}}\\
-        \ifthisversion{#1}{#3\\}%
+        \ifthisversion{#1}{\added{\scriptsize Next row added:\endnote{Added in #2.}}\\#3\\}%
         \ifearlierversion{#1}{#3\\}%
         \ignorespaces
     }
     \newcommand{\tablerowdeletedin}[3]{%
-        \deleted{\scriptsize Next row deleted:\endnote{Deleted in #2.}}\\
-        \ifthisversion{#1}{#3\\}%
+        \ifthisversion{#1}{\deleted{\scriptsize Next row deleted:\endnote{Deleted in #2.}}\\#3\\}%
         \iflaterversion{#1}{#3\\}%
         \ignorespaces
     }
