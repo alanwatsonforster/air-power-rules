@@ -62,10 +62,10 @@ Damage efects that limit engine settings or reduce engine power begin on the nex
 \section{Cumulative Damage Effects}
 
 \addedin{1B}{1B-tables}{
-    \input{tables/table-cummulative-damage}
+    \input{tables/table-cumulative-damage}
 }
 
-\paragraph{Cumulative Damage.} At the end of a scenario, an aircraft's damage level for purposes of victory points equals the highest level of damage it has sustained. When an aircraft is repeatedly hit, it can accumulate several hits of one or more types. These multiple hits are cumulative and sufficient hits of a lesser type will equal a worse level of damage as follows\addedin{1B}{1B-tables}{\ and as shown in Table~\ref{table:cummulative-damage}}:
+\paragraph{Cumulative Damage.} At the end of a scenario, an aircraft's damage level for purposes of victory points equals the highest level of damage it has sustained. When an aircraft is repeatedly hit, it can accumulate several hits of one or more types. These multiple hits are cumulative and sufficient hits of a lesser type will equal a worse level of damage as follows\addedin{1B}{1B-tables}{\ and as shown in Table~\ref{table:cumulative-damage}}:
 
 \begin{itemize}
     \item 3L = H. Three cumulative L hits equal an H hit. The aircraft's level of damage is now at least H.
@@ -73,7 +73,17 @@ Damage efects that limit engine settings or reduce engine power begin on the nex
     \item C + H = K. Any H or C hit, or cumulative hits eqating to an H or C hit, on an already Cripped aircraft destroy it.
 \end{itemize}
 
+\changedin{2B}{2B-cumulative-damage}{
 For example, if an aircraft was hit twice before and had H and L hits. Its damage level is considered H. On this turn, it is hit again and receives a 2L. Since 3L = H, the aircraft damage becomes 2H. And since 2H = C, the aircraft damage level becomes C. It is now Crippled.
+}{
+For example:
+\begin{itemize}
+    \item An aircraft is hit a first time and suffers L damage. For the purposes of victory points its damage is considered to be L.
+    \item It is then hit a second time and suffers L damage again. Its cumulative damage is 2L. For the purposes of victory points its damage is still considered to be L. 
+    \item It is hit a third time and suffers 2L damage. Its cumulative damage is \binaryplus{H}{L} (since 3L = H). For the purposes of victory points its damage is considered to be H. 
+    \item It is hit a fourth time and suffers 2L damage again. Its cumulative damage is C (since 3L = H and 2H = C). For the purposes of victory points its damage is considered to be C. 
+\end{itemize} 
+}
 
 
 \trainingnote{
