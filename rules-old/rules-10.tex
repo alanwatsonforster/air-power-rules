@@ -108,9 +108,11 @@ An aircraft's damage can worsen or spread if not contained by Damage Control (fo
 
 Consult \changedin{1B}{1B-tables}{the progressive damage table}{Table~\ref{table:progressive-damage}}, if the die roll is less than or equal to the number given next to the aircraft's current damage level, then the aircraft's damage increases to the next higher level.
 
-\paragraph{Damage Control.} Performing damage control involves the crew activating back-up electrical, fuel transfer, and hydraulic systems and/or shutting down damaged ones and/or fighting fires. Damage Control essentially stabilizes the aircraft's current damage level so that it will not progress. Aircraft which perform Damage Control negate progressive damage and do not check for it until they suffer a new hit.
+\paragraph{Damage Control.} Performing damage control involves the crew activating back-up electrical, fuel transfer, and hydraulic systems and/or shutting down damaged ones and/or fighting fires. Damage Control essentially stabilizes the aircraft's current damage level so that it will not progress. Aircraft which \addedin{3X}{3X-aborting-damage-control}{ successfully }perform Damage Control negate progressive damage and do not check for it until they suffer a new hit.
 
-\paragraph{Damage Control Procedure.} Declare the intent to perform damage control at the start of the aircraft's move. Fly the aircraft normally within the following restrictions:
+\paragraph{Damage Control Procedure.} 
+
+\changedin{3X}{3X-aborting-damage-control}{Declare the intent to perform damage control at the start of the aircraft's move. Fly the aircraft normally within}{An aircraft may declare at the start of its move that it is performing damage control. While performing damage control, it must obey} the following restrictions:
 
 \begin{itemize}
     \item No attacks or weapons launches are allowed.
@@ -124,7 +126,11 @@ Consult \changedin{1B}{1B-tables}{the progressive damage table}{Table~\ref{table
     \item Terrain Following flight is not allowed.
 \end{itemize}
 
-Once an aircraft completes its flight without violating the above restrictions, damage control is automatically completed. An aircraft damaged before moving may not perform damage control in the game-turn it was hit. It may perform damage control on any subsequent turn. Previous damage control is nullified when an aircraft is hit anew.
+\changedin{3X}{3X-aborting-damage-control}{Once an aircraft completes its flight without violating the above restrictions, damage control is automatically completed.}{If the aircraft performs damage control during its entire move, damage control automatically succeeds.
+
+The aircraft may declare that is aborting damage control before any of its FPs (see rule \ref{rule:fp-stages}). After this, the aircraft may complete its move without regard for the previous restrictions, but damage control automatically fails.\par
+}
+An aircraft damaged before moving may not perform damage control in the game-turn it was hit. It may perform damage control on any subsequent turn. Previous damage control is nullified when an aircraft is hit anew.
 
 \section{Optional Aircraft Damage Tables}
 
