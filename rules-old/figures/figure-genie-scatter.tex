@@ -17,7 +17,7 @@
     \setfiguresize{-2.6}{-2.6}{+2.6}{+2.6}
     \begin{scope}
         \drawevenhexgrid{-2}{-2}{5}{5}
-        \begin{scope}[dashed,very thick, ->]
+        \begin{scope}[dashed,very thick, ->,every node/.style={solid,minimum size=0.5cm, draw=black!50, fill=white}]
             \draw (0,0) --   (90:1.5) node [anchor=270] {1};
             \draw (0,0) --   (60:1.5) node [anchor=240] {2};
             \draw (0,0) --   (30:1.5) node [anchor=210] {3};
@@ -43,7 +43,7 @@
         \changedin{2B}{2B-genie-scatter-figure}{
             \node at (0,0) [draw,fill=white] {Diagram Missing in Original};
         }{
-            \begin{scope}[dashed,very thick,->]
+            \begin{scope}[dashed,very thick,->,every node/.style={solid,minimum size=0.5cm, draw=black!50, fill=white}]
                 \draw (0,0) --   (0:1.5) node [anchor=270] {1};
                 \draw (0,0) -- (330:1.5) node [anchor=240] {2};
                 \draw (0,0) -- (300:1.5) node [anchor=210] {3};
@@ -67,9 +67,9 @@
     \setfiguresize{-2.6}{-2.6}{+2.6}{+2.6}
     \begin{scope}[rotate=90]
         \drawoddhexgrid{-2}{-1.5}{5}{5}
-        \begin{scope}[dashed,very thick,->]
+        \begin{scope}[dashed,very thick,->,every node/.style={solid,minimum size=0.5cm, draw=black!50, fill=white}]
             \draw (0,0) --    (0:1.7) node [anchor=270] {1};
-            \draw (0:1.000*\hexxfactor) -- +(330:1.0) node [anchor=240] {2};
+            \draw (0:1.000*\hexxfactor) -- (1.7,-0.5) node [anchor=240] {2};
             \draw (0:0.333*\hexxfactor) --  +(300:1.2) node [anchor=210] {3};
             \draw (0,0) --  (270:1.5) node [anchor=180] {4};
             \draw (180:0.333*\hexxfactor) --  +(240:1.2) node [anchor=150] {5};
@@ -77,7 +77,7 @@
             \draw (180:0.333*\hexxfactor) --  +(120:1.2) node [anchor=30 ] {7};
             \draw (0,0) --   (90:1.5) node [anchor=0  ] {8};
             \draw (0:0.333*\hexxfactor) --  +(60:1.2) node [anchor=330] {9};
-            \draw (0:1*\hexxfactor) -- +(30:1.0) node [anchor=300] {10};
+            \draw (0:1*\hexxfactor) -- (1.7,+0.5) node [anchor=300] {10};
         \end{scope}
         \drawaircraftcounter[90]{+0.00}{+0.00}{0}{F-105}{}{}
         %\drawdotathex{0}{0}
@@ -85,7 +85,7 @@
 \end{tikzpicture}
 \end{fitheight}
 
-\figurecaption{figure:genie-scatter}{AIR-2 Genie Scatter}
+\figurecaption[A first die roll determines the scatter direction. A second die roll, halved and rounded down, determines the scatter distance in hexes.]{figure:genie-scatter}{AIR-2 Genie Scatter.}
 
 \end{twocolumnfigure}
 }
