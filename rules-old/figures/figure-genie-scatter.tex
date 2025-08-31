@@ -29,8 +29,11 @@
             \draw (0,0) --  (150:1.5) node [anchor=330] {9};
             \draw (0,0) --  (120:1.5) node [anchor=300] {10};
         \end{scope}
-        \drawaircraftcounter[0]{+0.00}{+0.00}{90}{F-105}{}{}
-        %\drawdotathex{0}{0}
+        \silentlychangedin{2B}{2B-genie-scatter-counter}{
+            \drawaircraftcounter[0]{+0.00}{+0.00}{90}{F-105}{}{}
+        }{
+            \drawarrowcounter{0}{0}{90}
+        }
      \end{scope}
 \end{tikzpicture}
 \end{fitheight}
@@ -55,8 +58,11 @@
                 \draw (0,0) --  (60:1.5) node [anchor=330] {9};
                 \draw (0,0) --  (30:1.5) node [anchor=300] {10};
             \end{scope}
-            \drawaircraftcounter[90]{+0.00}{+0.00}{0}{F-105}{}{}
-            %\drawdotathex{0}{0}
+            \silentlychangedin{2B}{2B-genie-scatter-counter}{
+                \drawaircraftcounter[90]{+0.00}{+0.00}{0}{F-105}{}{}
+            }{
+                \drawarrowcounter{0}{0}{0}
+            }
         }
     \end{scope}
 \end{tikzpicture}
@@ -79,13 +85,16 @@
             \draw (0:0.333*\hexxfactor) --  +(60:1.2) node [anchor=330] {9};
             \draw (0:1*\hexxfactor) -- (1.7,+0.5) node [anchor=300] {10};
         \end{scope}
-        \drawaircraftcounter[90]{+0.00}{+0.00}{0}{F-105}{}{}
-        %\drawdotathex{0}{0}
+        \silentlychangedin{2B}{2B-genie-scatter-counter}{
+            \drawaircraftcounter[90]{+0.00}{+0.00}{0}{F-105}{}{}
+        }{
+            \drawarrowcounter{0}{0}{0}
+        }
     \end{scope}
 \end{tikzpicture}
 \end{fitheight}
 
-\figurecaption[A first die roll determines the scatter direction. A second die roll, halved and rounded down, determines the scatter distance in hexes.]{figure:genie-scatter}{AIR-2 Genie Scatter.}
+\figurecaption[The counter represents the position and facing of the Genie at the end of its move. A first die roll determines the scatter direction. A second die roll, halved and rounded down, determines the scatter distance in hexes.]{figure:genie-scatter}{AIR-2 Genie Scatter.}
 
 \end{twocolumnfigure}
 }
