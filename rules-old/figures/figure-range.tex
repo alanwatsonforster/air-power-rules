@@ -13,14 +13,14 @@
     \drawhex{+1}{-0.5}
     \drawhex{+1}{+0.5}
 
-    \drawdotathex[black!50]{+0.00}{0.00}
+    \drawdotathex[black,thin,fill=white]{+0.00}{0.00}
 
-    \drawdotathex[black!50,thin,fill=white]{+0.00}{+0.50}
-    \drawdotathex[black!50,thin,fill=white]{+0.50}{+0.25}
-    \drawdotathex[black!50,thin,fill=white]{+0.50}{-0.25}
-    \drawdotathex[black!50,thin,fill=white]{+0.00}{-0.50}    
-    \drawdotathex[black!50,thin,fill=white]{-0.50}{-0.25}
-    \drawdotathex[black!50,thin,fill=white]{-0.50}{+0.25}
+    \drawdotathex[black!40]{+0.00}{+0.50}
+    \drawdotathex[black!40]{+0.50}{+0.25}
+    \drawdotathex[black!40]{+0.50}{-0.25}
+    \drawdotathex[black!40]{+0.00}{-0.50}    
+    \drawdotathex[black!40]{-0.50}{-0.25}
+    \drawdotathex[black!40]{-0.50}{+0.25}
 
     \drawdotathex[black!100]{+0.00}{+1.00}
     \drawdotathex[black!100]{+0.50}{+0.75}
@@ -55,14 +55,14 @@
         \drawhex{+1}{+0.5}
     }
 
-    \drawdotathex[black!50]{+0.00}{0.00}
+    \drawdotathex[black,thin,fill=white]{+0.00}{0.00}
 
-    \drawdotathex[black!50,thin,fill=white]{+0.00}{+0.50}
-    \drawdotathex[black!50,thin,fill=white]{+0.50}{+0.25}
-    \drawdotathex[black!50,thin,fill=white]{+0.50}{-0.25}
-    \drawdotathex[black!50,thin,fill=white]{+0.00}{-0.50}    
-    \drawdotathex[black!50,thin,fill=white]{-0.50}{-0.25}
-    \drawdotathex[black!50,thin,fill=white]{-0.50}{+0.25}
+    \drawdotathex[black!40]{+0.00}{+0.50}
+    \drawdotathex[black!40]{+0.50}{+0.25}
+    \drawdotathex[black!40]{+0.50}{-0.25}
+    \drawdotathex[black!40]{+0.00}{-0.50}    
+    \drawdotathex[black!40]{-0.50}{-0.25}
+    \drawdotathex[black!40]{-0.50}{+0.25}
 
     \drawdotathex[black!100]{+0.00}{+1.00}
     \drawdotathex[black!100]{+0.50}{+0.75}
@@ -81,7 +81,7 @@
 \end{tikzpicture}
 \end{fitheight}
 
-\figurecaption{figure:range}{Horizontal range. The map locations shown with black dots are one full hex from the central map locations shown with a gray dot. The map locations shown with open dots are less than one full hex from the central map locations. When determining horizontal ranges, if the last step is less than one full hex, it is ignored.}
+\figurecaption[The map locations shown with black dots are one full hex from the central map locations shown with an open dot. The map locations shown with gray dots are less than one full hex from the central map locations. When determining horizontal ranges, if the last step is less than one full hex, it is ignored.]{figure:range}{Horizontal Range.}
 
 \vspace{\floatsep}
 
@@ -99,7 +99,6 @@
 \end{tikzpicture}
 \end{fitheight}
 
-\figurecaption{figure:range-example}{Examples of horizontal range. The horizontal range from A to B is 4 hexes, from B to C is 3 hexes, from C to D is 1 hex, from C to E is 2 hexes, from D to E is 2 hexes, from E to F is 1 hex, from E to G is 0 hexes, and from F to G is 1 hex.
-}
+\figurecaption[The horizontal range from A to B is 4 hexes, from B to C is 3 hexes, from C to D is 1 hex, from C to E is 2 hexes, from D to E is 2 hexes, from E to F is 1 hex, from E to G is 0 hexes, and from F to G is 1 hex.]{figure:range-example}{Examples of Horizontal Range.}
 
 \end{onecolumnfigure}
