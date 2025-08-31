@@ -1,7 +1,7 @@
 .SUFFIXES			:	.tex .pdf
 
 .tex.pdf			:
-	latexmk -xelatex $<
+	latexmk -gg -xelatex $<
 
 all					:	project.pdf						\
 						rules-working.pdf				\
@@ -18,4 +18,5 @@ all					:	project.pdf						\
 						rules-version-3A-changes.pdf	\
 
 clean				:
+	latexmk -c
 	rm -f project.pdf rules-working.pdf rules-version-*.pdf external/*
