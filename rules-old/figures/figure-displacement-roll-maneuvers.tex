@@ -3,12 +3,12 @@
 
 \begin{onecolumnfigure}
 
-\begin{fitwidth}{11.333\standardhexwidth}
+\begin{fitheight}{4.9\standardhexwidth}
 \begin{tikzpicture}
 
 \scriptsize
 
-    \drawhexgrid{0}{0}{10}{3}
+    \drawhexgrid{0}{0}{10}{4}
 
     \begin{athex}{1.00}{-0.50}
         \drawdashedcounter  {+0.00}{+1.00}{90}
@@ -44,7 +44,7 @@
             \miniathex{+2.00}{+2.00}{\draw (60:0.05) -- (60:0.4);}
         \end{scope}
         \miniathex{+1.00}{+1.50}{\draw [thick,->] (30:0.35) -- (30:0.65);}
-        \begin{scope}[shift={(315:0.5)},anchor=west]
+        \begin{scope}[shift={(0.5,-0.3)},anchor=west,every node/.style={minimum height=0.45cm,draw=black!50,fill=white}]
             \miniathex{+0.50}{+0.75}{\draw node {start position};}
             \miniathex{+1.00}{+1.50}{\draw node {preparatory HFP};}
             \miniathex{+2.00}{+2.00}{\draw node {roll execution};}
@@ -53,8 +53,8 @@
     \end{athex}
 
 \end{tikzpicture}
-\end{fitwidth}
+\end{fitheight}
 
-\figurecaption{figure:displacement-roll-maneuvers}{Displacement Roll Maneuvers.}
+\figurecaption[The figure shows the execution of displacement roll maneuvers to the right after a a single preparatory HFP. More preparatory FPs may be required.]{figure:displacement-roll-maneuvers}{Displacement Roll Maneuvers.}
 
 \end{onecolumnfigure}

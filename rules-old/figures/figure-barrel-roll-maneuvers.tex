@@ -7,7 +7,7 @@
 
 \scriptsize
 
-    \drawhexgrid{0}{0}{6}{5}
+    \drawhexgrid{0}{0}{7}{6}
 
     \begin{athex}{0.00}{0.00}
         \drawdashedcounter  {+0.50}{+0.75}{60}
@@ -17,16 +17,14 @@
             \miniathex{+0.50}{+0.75}{\draw (60:0.05) -- (60:0.4);}
         \end{scope}
         \miniathex{+1.00}{+1.50}{\draw [thick,->] (30:0.35) -- (30:0.65);}
-        \begin{scope}[shift={(315:0.5)},anchor=west]
+        \begin{scope}[shift={(0.5,-0.3)},anchor=west,every node/.style={minimum height=0.45cm,draw=black!50,fill=white}]
             \miniathex{+0.50}{+0.75}{\draw node {start position};}
             \miniathex{+1.00}{+1.50}{\draw node {preparatory HFP};}
             \miniathex{+2.00}{+2.00}{\draw node {first roll execution};}
             \miniathex{+2.00}{+3.00}{\draw node {preparatory HFP};}
             \miniathex{+3.00}{+3.50}{\draw node {second roll execution};}
-            \miniathex{+3.00}{+4.25}{\draw node {preparatory HFP};}
-            \miniathex{+3.00}{+5.00}{\draw node {third roll execution};}
-        \end{scope}
-        \begin{scope}[shift={(345:0.5)},anchor=west]
+            \miniathex{+1.35}{+4.15}{\draw node [anchor=east] {preparatory HFP};}
+            \miniathex{+3.00}{+4.50}{\draw node {third roll execution};}
         \end{scope}
     \end{athex}
 
@@ -55,6 +53,6 @@
 \end{tikzpicture}
 \end{fitwidth}
 
-\figurecaption{figure:barrel-roll-maneuvers}{Barrel Roll Maneuvers.}
+\figurecaption[The figure shows an example of a barrel roll consisting of three lag rolls to the right each with one preparatory HFP. Displacement rolls may also form part of barrel rolls. More preparatory FPs may be required.]{figure:barrel-roll-maneuvers}{Barrel Roll Example.}
 
 \end{onecolumnfigure}
