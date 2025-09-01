@@ -1,48 +1,36 @@
 %!TEX root = ./rules-working.tex
-%LTeX: enabled=false
+%LTeX: enabled=true
 
-\appendixchapter{Combined Arcs Graphical Procedure.}
+\appendixchapter{Converting Harpoon Ship Data}
+\label{appendix:converting-harpoon-ship-data}
 
-The combined arcs procedure can be carried out graphically using Figures \ref{figure:combined-arcs-a} to \ref{figure:combined-arcs-g}. Determine the flight slope of the reference aircraft. Then, on the appropriate figure for the arc, find the position that corresponds to the horizontal range to the distant element and its altitude relative to the reference element. Next, consult the legend and find the line or lines whose color corresponds to the flight slope and whether the distant element needs to be above, between, or below the lines.
-
-The determination of whether the distant element is within the combined arc then depends on whether there are one or two lines and whether they are solid or dashed:
+The {\Harpoon} game and its many supplements are a great source of data on warships and auxiliaries. This appendix describes a procedure to convert {\Harpoon} ship data to {\AirPow} ship data. The procedure gives a first approximation, which should then be refined.
 
 \begin{itemize}
-    \item For two solid lines: the distant element is within the combined arc if it lies between the solid lines and is within the horizontal arc.
-    \item For one solid line: the distant element is within the combined arc if it is above/below the line and is within the horizontal arc.
-    \item For one solid line and one dashed line: the distant element is within the combined arc if it is be above/below the solid line and is within the horizontal arc or if it is above/below the dashed line.
-    \item For one dashed line: the distant element is within the combined arc if it is above/below the dashed line.
-\end{itemize}
-
-For example, consider an aircraft at an altitude of 10 attempting to detect another at a horizontal range of 5 hexes using radar with an \arcplus{180} arc.
+\item \itemparagraph{Size and Type.} These are the same in {\AirPow} and {\Harpoon}.
+\item \itemparagraph{Maximum Speed.} This is the same in {\AirPow} and {\Harpoon}.
+\item \itemparagraph{VPs.} There is no procedure to determine VPs.
+\item \itemparagraph{Defense Strength.} Small, medium, and large warships have defense strengths of 4, 5, and 6, respectively. Small, medium, and large merchant ships have defense strengths of 3, 4, and 5, respectively. Steel and aluminum ships are hard targets and wooden ships are soft targets.
+\item \itemparagraph{Spotting Range.} Small, medium, and large ships have spotting ranges of 24, 36, and 48, respectively.
+\item \itemparagraph{Hull.} The hull value is calculated from the {\Harpoon} damage point (DP) value as follows:
 \begin{itemize}
-\item
-If the aircraft has a flight slope of 0, Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of \minus{1.0} and \plus{1.0}. 
-
-We see that the target is within the combined arc of the radar if it has an altitude of 5 to 15 inclusive and is within the \arcplus{180} horizontal arc.
-
-\item
-If the aircraft has a flight slope of more than 0 but no more than 1 (\binaryrelation{0 }{<}{ \mbox{FS} \le 1}), Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of \minus{0.5} and \plus{2.0}. 
-
-We see that the target is within the field of the radar if it has an altitude of 8 to 20 inclusive and is within the \arcplus{180} horizontal arc.
-
-\item
-If the aircraft has a flight slope of more than 1 but no more than 3 (\binaryrelation{1 }{<}{ \mbox{FS} \le 3}), Table~\ref{table:vertical-limit-factors} gives two mixed factors (without parentheses) of \plus{0.5} and \plus{7.0}. 
-
-We see that the target is within the field of the radar if it has an altitude of 12 to 45 inclusive and is within the \arcplus{180} horizontal arc.
-
-\item
-If the aircraft has a flight slope of more than 3 but that is still finite (\binaryrelation{3 < \mbox{FS} }{<}{ \plus{\textinfinity}}), Table~\ref{table:vertical-limit-factors} gives one mixed factor (without parentheses) of \plus{2.0} and one pure factor (with parentheses) of (\plus{+7}).
-
-We see that the target is within the field of the radar if it either has an altitude of 20 or more and is within the \arcplus{180} horizontal arc or if it has an altitude of at least 45 and is at any horizontal position.
-
-\item
-If the aircraft in a pure vertical climb (\binaryrelation{\mbox{FS} }{=}{ \plus{\textinfinity}}), Table~\ref{table:vertical-limit-factors} gives only one pure factor (with parentheses) of (\plus{+3}).
-
-We see that target is within the field of the radar if it has an altitude of at least 25 and is at any horizontal position.
-
+    \item If the DP value is less than 240, divide by 40 and round to the nearest integer, rounding halves up.
+    \item If the DP value is 240 or more, subtract 240, divide by 150, add 6, and round to the nearest integer, rounding halves up.
 \end{itemize}
-
-% This file contains \clearpages to avoid exceeding memory limits, so input it at the end of the chapter.
-\input{figures/figure-combined-arcs}
-
+That is,
+\begin{equation}
+\mbox{Hull} = \left\{
+    \begin{array}{ll}
+        [\binarydivide{DP}{40}]&\quad \mbox{if \binaryrelation{DP}{<}{240} and}\\\relax
+        [\binaryplus{\binarydivide{(\binaryminus{DP}{240})}{150}}{6}]&\quad \mbox{if \binaryrelation{DP}{≥}{240},}\\
+    \end{array}
+\right.
+\end{equation}
+in which [{\itshape x}] means round {\itshape x} to the nearest integer, rounding halves up.
+\item \itemparagraph{Sink.} Small, medium, and large warships have sink values of 8, 10, and 12, respectively. Small, medium, and large merchant ships have sink values of 6, 8, and 10, respectively.
+\item \itemparagraph{Jam and Decoys.} 1st, 2nd, and 3rd generation jammers and decoys in {\Harpoon} correspond to jammer and decoy values of 1, 2, and 3, respectively.
+\item \itemparagraph{Radars.} 
+\item \itemparagraph{Gun Directors.} 
+\item \itemparagraph{AAA.} 
+\item \itemparagraph{SAM.} 
+\end{itemize}
