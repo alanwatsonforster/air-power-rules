@@ -9,8 +9,8 @@
     
 
 \footnotesize
-\setlength{\tabcolsep}{0.8em}
-\begin{tabularx}{\linewidth}{Lccccclllccccccccccccc}
+\setlength{\tabcolsep}{0.7em}
+\begin{tabularx}{\linewidth}{Lccccclllrcccccccccccc}
 \toprule
 &
 \multicolumn{5}{c}{Aircraft Data}&
@@ -33,9 +33,9 @@ Type&
 \multicolumn{1}{c}{\vertical{Ground Unit Data}}&
 \multicolumn{1}{c}{\vertical{Type}}&
 \multicolumn{1}{c}{\vertical{Arc}}&
-\vertical{Ammunition}&
+\multicolumn{1}{c}{\vertical{Ammunition}}&
 \vertical{Hit}&
-\vertical{Damage}&
+\vertical{AtA/AtG Damage}&
 \vertical{Bomb System}&
 \vertical{DDS}&
 \vertical{IRM Suppression}&
@@ -52,6 +52,11 @@ Type&
 \multicolumn{22}{c}{US Helicopters}\\
 \midrule
 
+\tablerowaddedin{2A}{2A-helicopter-hh-53c}{HH-53C&
+N&6&\plus{0}&\plus{2}&---&4-12&
+\binarymultiply{7.62 mm GAU-2}{3}&LSD/RSD/RD&8&1/1/1&\phantom{**}2/2**\phantom{}&
+---&---&\plus{0}&---&---&---&---&---&---&---
+}
 
 AH-1J Cobra&
 Y&4&\plus{1}&\plus{1}&\arcminus{30}&5-8&
@@ -116,7 +121,7 @@ Ballistic&\binarymultiply{A}{1}&\plus{0}&---&---&---&---&---&---&---
 \\
 
 \midrule
-\multicolumn{22}{c}{Generic Helicopters}\\
+\multicolumn{22}{c}{Generic Helicopters\addedin{2A}{2A-helicopter-door-guns}{ and Door Guns}}\\
 \midrule
 
 Scout/Utility&
@@ -137,17 +142,35 @@ Heavy Lift&
 ---&\binarymultiply{A}{1}&\plus{2}&---&---&---&---&---&---&---
 \\
 
+\tablerowaddedin{2A}{2A-helicopter-door-guns}{
+Door LMG&
+&&&&&&
+7.62 mm LMG&LSD, RSD, or RD&10&1/1/1&\phantom{**}1/1**\phantom{}
+}
+\tablerowaddedin{2A}{2A-helicopter-door-guns}{
+Door HMG&
+&&&&&&
+.50 cal HMG&LSD, RSD, or RD&10&1/1/1&\phantom{**}2/1**\phantom{}
+}
+\tablerowaddedin{2A}{2A-helicopter-door-guns}{
+Door Minigun&
+&&&&&&
+7.62 mm Minigun&LSD, RSD, or RD&8&1/1/1&\phantom{**}2/2**\phantom{}
+}
+
 \bottomrule
 \end{tabularx}
 \begin{tablenote}{\linewidth}
 \begin{itemize}
 
+    \itemdeletedin{2A}{2A-helicopter-door-guns}{Some helicopters may have side-door gunners with LMGs. These can fire into the \arc{60}/\arc{90}/\arc{120}/\arc{150} arcs. They have 10 ammunition, hit rolls of 2/--/--, and damage ratings of 1/1**.}
+
+    \itemdeletedin{2A}{2A-helicopter-door-guns}{The arc for a side-door gun (LSD/RSD) is \arc{60}/\arc{90}/\arc{120}/\arc{150}. The arc for a rear-door gun (RD) is \arcminus{60}.}
+
     \item Ballistic bomb systems have a \minus{1} modifier. Computed bomb systems have a \minus{2} modifier.
 
     \item The IRM suppression modifier is applied to IRM attack rolls.
-
-    \item Some helicopters may have side-door gunners with LMGs. These can fire into the \arc{60}/\arc{90}/\arc{120}/\arc{150} arcs. They have 10 ammunition, hit rolls of 2/--/--, and damage ratings of 1/1**.
-
+    
     \item For attack helicopters, typical weapon loads are:
     \begin{itemize}
         \item AH-1J: Four RPs or two RPs and four TOW RGs. Additionally, may carry two AIM-9 IRMs or four Stinger IRM.
