@@ -34,23 +34,30 @@ FPs expended to gain or lose altitude levels are called Vertical Flight Points (
 
 Note: To clarify; both HFPs and VFPs will be available to be expended within a single game turn only when an aircraft elects to climb or dive during its move.
 
+\addedin{2R}{2R-expending-fps}{
+\paragraph{Expending Flight Points.}
+Some game activities require that an aircraft expend a certain number of FPs. These include changing facing, preparing to execute a maneuvers, recovery, aiming, and tracking. For these purposes, an FP is considered to have been expended as soon as the aircraft finishes the movement associated with that FP and before any immediately subsequent turn completions or attacks.
+}
+
+
 \silentlyaddedin{1B}{1B-tables}{
     \input{tables/table-fractions}
 }
 
+\addedin{2B}{2B-fractions}{The number of FPs that must be expended is often given as a fraction of the speed of the aircraft or the number of FPs available to it in the current game turn. 
+In many cases, multiply by the fraction and round as directed. However, Table~\ref{table:fractions} is used to determine:
+\begin{itemize}
+\item the number of HFPs and VFPs required by a given flight type;
+\item SSGT requirements;
+\item aiming requirements and modifiers; and
+\item the reduction in engine thrust at high altitude.
+\end{itemize}
+With the exception of the special case for 0.5, the values in the table follow the rule \emph{round to nearest but retain halves}. That is, round down if the fraction is less than 0.5; round up if the fraction is more than 0.5; and do not round if the fraction is 0.5.
+
+}
+
 \addedin{1C}{1C-apj-36-errata}{When an expenditure of 2/3 of an aircraft's speed (or FPs) is required, use the 2/3 entry from \changedin{1B}{1B-tables}{the chart}{Table~\ref{table:fractions}}, not \binarymultiply{2}{1/3}. Drop all fractions read off the chart.}
 
-\addedin{2B}{2B-fractions}{Table~\ref{table:fractions} is used for:
-\begin{itemize}
-\item Determining the number of HFPs and VFPs required by a given flight type.
-\item Engine thrust.
-\item SSGT requirements
-\item Aiming requirements and modifiers
-\end{itemize}
-The values in the table follow the rule: round down if the fraction is less than 0.5; round up if the fraction is more than 0.5; and do not round if the fraction is 0.5.
-
-In other cases, multiply by the fraction and round as directed.
-}
 
 \addedin{1C}{1C-apj-36-errata}{\paragraph{Speed Requirements Split Between Game Turns.} Some game activities, like ground-attack aiming, are measured in fractions of an aircraft's speed. If such a period extends between two game-turns, the highest speed in either game-turn is used to compute the completion requirements in the second turn.}
 
@@ -59,16 +66,27 @@ In other cases, multiply by the fraction and round as directed.
 \paragraph{FP Stages.}
 \label{rule:fp-stages}
 
-The activities around the expenditure of each FP occur in stages the following order:
+The activities around the expenditure of each FP occur in stages in the following order:
 \begin{enumerate}
 \itemaddedin{3R}{3R-aborting-damage-control}{Aborting Damage Control Stage. If the moving aircraft is performing damage control, it may declare that it is aborting this. If does not, then for this FP it must fly within the restrictions applicable to damage control and in particular may not attack (see rule \ref{rule:progressive-damage}). If it does, it is no longer bound by these restrictions.}
 \item Preemption Stage. Any other aircraft threatened by the moving aircraft can declare and execute a preemption.
-\item AAA Tracking Stage. If the moving aircraft is within tracking range of any AAA units, any of these may declare that they are tracking the aircraft during the following FP.
-\item SSGT Tracking Stage. The moving aircraft may declare that this FP will count towards SSGT of a specified target aircraft.
-\item Aiming Stage. The moving aircraft may declare that this FP will count towards aiming requirements of a specified ground unit.
+
+\item SSGT Tracking Stage. The moving aircraft may declare that it will start SSGT of a specified target aircraft.
+FPs subsquently expended by the moving aircraft then count towards the tracking requirement.
+
+\item AAA Tracking Stage. If the moving aircraft is within tracking range of any AAA units, any of these may declare that they are tracking the aircraft. FPs subsquently expended by the moving aircraft then count towards the tracking requirement.
+
+\item Aiming Stage. The moving aircraft may declare that it will start aiming at a specified ground unit.
+FPs subsquently expended by the moving aircraft then count towards the aiming requirement.
+
 \item Declaration Stage. The moving aircraft can declare or stop a turn or a maneuver. Declaring a turn implicitly sets the bank.
-\item Expenditure Stage. The moving aircraft expends an HFP or VFP to change position (i.e., map location and altitude) and possibly facing. It may also simultaneously change position or facing by completing a turn, completing a maneuver, using free descent, or using descent from unloaded HFPs. \addedin{3W}{3W-recovery}{For the purposes of recovery, aiming, and tracking, the FP is considered to have been expended as soon as the movement ends.}
-\item Bank Stage. If not turning, the moving aircraft may set its bank according to the rules.
+
+\item Expenditure Stage. The moving aircraft may expend an FP to change position (map location and altitude) either by normal movement or by executing a maneuver. Some maneuvers also change facing. For the purposes turn requirement, preparation for maneuvers, recovery, aiming, tracking, the FP is considered to have been expended at the end of this stage. 
+
+\item Bank Stage. If the moving aircraft is not turning, it may set its bank according to the rules.
+
+\item Turn Completion Stage. If the moving aircraft is turning and has expended FPs at least equal to the turn requirement, it may complete the turn and change facing.
+
 \item Jettison Stores Stage. The moving aircraft may jettison external stores. 
 \item Missile Attack Stage. If the moving aircraft has the same position as a missile of which it is a target, the missile attacks.
 \item Air-to-Air Attack Stage. The moving aircraft may carry out an air-to-air gun and rocket attack. If the moving aircraft carried out a head-on attack, the target aircraft may simultaneously return fire. 
