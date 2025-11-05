@@ -34,9 +34,9 @@ FPs expended to gain or lose altitude levels are called Vertical Flight Points (
 
 Note: To clarify; both HFPs and VFPs will be available to be expended within a single game turn only when an aircraft elects to climb or dive during its move.
 
-\addedin{2R}{2R-expending-fps}{
+\addedin{2W}{2W-expending-fps}{
 \paragraph{Expending Flight Points.}
-Some game activities require that an aircraft expend a certain number of FPs. These include changing facing, preparing to execute a maneuvers, recovery, aiming, and tracking. For these purposes, an FP is considered to have been expended as soon as the aircraft finishes the movement associated with that FP and before any immediately subsequent turn completions or attacks.
+Some game activities require that an aircraft expend a certain number of FPs. These include changing facing, preparing to execute a maneuvers, recovery, aiming, and tracking. For these purposes, an FP is considered to have been expended as soon as the aircraft begins the movement associated with that FP and before any immediately subsequent turn completions or attacks.
 }
 
 
@@ -52,7 +52,7 @@ In many cases, multiply by the fraction and round as directed. However, Table~\r
 \item aiming requirements and modifiers; and
 \item the reduction in engine thrust at high altitude.
 \end{itemize}
-With the exception of the special case for 0.5, the values in the table follow the rule \emph{round to nearest but retain halves}. That is, round down if the fraction is less than 0.5; round up if the fraction is more than 0.5; and do not round if the fraction is 0.5.
+The values in the table for 1/3 follow the rule \emph{round to nearest but retain halves}. That is, round down if the fraction is less than 0.5; round up if the fraction is more than 0.5; and do not round if the fraction is 0.5. The values in the table for 2/3 are the whole minus the value for 1/3.
 
 }
 
@@ -81,11 +81,9 @@ FPs subsquently expended by the moving aircraft then count towards the aiming re
 
 \item Declaration Stage. The moving aircraft can declare or stop a turn or a maneuver. Declaring a turn implicitly sets the bank.
 
-\item Expenditure Stage. The moving aircraft may expend an FP to change position (map location and altitude) either by normal movement or by executing a maneuver. Some maneuvers also change facing. For the purposes turn requirement, preparation for maneuvers, recovery, aiming, tracking, the FP is considered to have been expended at the end of this stage. 
+\item Movement Stage. The moving aircraft may expend an FP to change position (map location and altitude) either by normal movement or by executing a maneuver. Some maneuvers also change facing. If the moving aircraft is turning and has expended FPs at least equal to the turn requirement (including the current one), it may complete the turn and change facing. If the moving aircraft is not turning, it may set its bank according to the rules. 
 
-\item Bank Stage. If the moving aircraft is not turning, it may set its bank according to the rules.
-
-\item Turn Completion Stage. If the moving aircraft is turning and has expended FPs at least equal to the turn requirement, it may complete the turn and change facing.
+For the purposes of expending FPs to fulfill turn requirements, preparations for maneuvers, recovery, aiming, and tracking, the FP is considered to have been expended as soon as the aircraft starts to move.
 
 \item Jettison Stores Stage. The moving aircraft may jettison external stores. 
 \item Missile Attack Stage. If the moving aircraft has the same position as a missile of which it is a target, the missile attacks.
