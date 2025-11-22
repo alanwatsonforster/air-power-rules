@@ -323,9 +323,9 @@ Version 2B contains nonauthoritative minor changes, normally to clarify existing
 
         \itemtag{2B-steep-climb} An SC must use at least one VFP.
 
-        \itemtag{2B-unloaded-dives} The rules for unloading in version 2A gives no advantage over an SD. I have changed the rule so that all FPs are HFPs, one altitude level is lost if half of the FPs are spent unloaded, and two if all are spent unloaded. This gives one additional HFP over an otherwise similar SD.
+        \itemtag{2B-unloaded-dives} The rule for unloaded dives in version 2A is unsatisfactory as it does not give unloaded dives any advantage over steep dives in terms of acceleration or horizontal distance. Indeed, a steep dive is better since one VFP can lose two altitude levels, whereas in an unloaded dive, each VFP can only lose one altitude level. For example, consider an aircraft with six FPs. If it uses an unloaded dive, it can have either four HFPs and lose two levels or five HFPs and lose one level. If it uses a steep dive, it can have five HTPs and lose two levels, giving the horizontal distance of the first unloaded option with the acceleration of the second.
 
-        For example, consider an aircraft with 6 FPs that unloads for all of them. With the rule in 2A for unloading, it could used 4 HFPs, 2 VFPs, and lose two levels. With a SD it could use 5 HFPs, one VFP, and still loses two levels. With the rule in 2B for unloading, it could use 6 HFPs and lose two levels.
+        Therefore, I have changed the unloaded dive rule so that all FPs are HFPs, but that if the aircraft loses a level if it unloads for at least half its FPs and loses another if it unloads for all its FPs. These loses are similar to those from free descent, in that they occur during HFPs. With this rule, an aircraft with sox FPs can have six HFPs and lose two levels, which does give an advantage over a steep dive.
 
         \itemtag{2B-free-descent} After a VC, an aircraft in level flight must expend 1/3 of its FPs (not speed) before taking a free descent. This is for consistency with other similar limits on flight, which are in terms of FPs.
 
@@ -447,7 +447,7 @@ Version 2B contains nonauthoritative minor changes, normally to clarify existing
 
         %\itemtag{XX-auto-track-selection} I have added that a visually sighted aircraft may be selected for detection in auto-track mode of a \minusafter{7} (in accordance with the charts). If the roll fails, no detection occurs.
 
-    \item{2B-multiple-dds} If an aircraft has two or more DDS systems (e.g., one integrated and the other in a pod), each can have their own DDS program and any combination of them can be turned on or off each game turn, provided other requirements are met.
+    \itemtag{2B-multiple-dds} If an aircraft has two or more DDS systems (e.g., one integrated and the other in a pod), each can have their own DDS program and any combination of them can be turned on or off each game turn, provided other requirements are met.
 
         \itemtag{2B-flight-type-disorientation} I have changed the moment at which disorientation is determined for risky flight types from the end of the game turn to the end of flight. This allows disorientation to interfere with missile launches and radar work.
 
@@ -491,19 +491,19 @@ Version 2B contains nonauthoritative minor changes, normally to clarify existing
 
 Version 2R is an internal version. It contains unauthoritative major changes intended for version 2B but currently under review.
 
-\begin{itemize}
+%\begin{itemize}
 
-        \itemtage{2R-unloaded-dives} The rule for unloaded dives in version 2A is unsatisfactory as it does not give unloaded dives any advantage over steep dives in terms of acceleration or horizontal distance. Indeed, a steep dive is better since one VFP can lose two altitude levels, whereas in an unloaded dive, each VFP can only lose one altitude level. For example, consider an aircraft with six FPs. If it uses an unloaded dive, it can have either four HFPs and lose two levels or five HFPs and lose one level. If it uses a steep dive, it can have five HTPs and lose two levels, giving the horizontal distance of the first unloaded option with the acceleration of the second.
 
-        Therefore, I have changed the unloaded dive rule so that all FPs are HFPs, but that if the aircraft loses a level if it unloads for at least half its FPs and loses another if it unloads for all its FPs. These loses are similar to those from free descent, in that they occur during HFPs.
-
-\end{itemize}
+%\end{itemize}
 
 \subsection{Version 2W}
 
 Version 2W is an internal version. It contains unauthoritative major changes intended for version 2B but currently being worked on.
 
 \begin{itemize}
+
+    \itemtag{2W-ground-unit-identification} 
+    Clarify that aircraft can attempt to identify ground and naval units in the same game turn in which they are first sighted.
 
         \itemtag{2W-expending-fps} Clarify an FP is considered to have been expended as soon as the aircraft finishes the movement associated with that FP and before any immediately subsequent turn completions or attacks.
 
