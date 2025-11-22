@@ -144,29 +144,19 @@
     continuous Diving, each level dive gains 1.0 accel.}
     \itemaddedin{2A}{2A-steep-dives}{1.0 AP per level.}
 \end{enumerate}
-
+\deletedin{2A}{2A-unloaded-dives}{
 \subheading{Unloaded Dives}
 
-%\changedin{2W}{2B-unloaded-dives}{
 \begin{enumerate}[nosep]
-    \item \changedin{2R}{2A-unloaded-dives}{All FPs are HFPs.}{One or two FPs are VFPs. The rest are HFPs.}
-    \item \changedin{2R}{2A-unloaded-dives}{At least 1 HFP must be expended with the aircraft “unloaded”. More than 1 and up to all may be expended “unloaded”.}{The first VFP may only be used after half of the HFPs have been expended with the aircraft unloaded. The second VPF may only be used after all of the HFPs have been expended with the aircraft unloaded.}
-    \item \changedin{2R}{2A-unloaded-dives}{Each HFP expended while unloaded moves the aircraft forward one hex/hexside and loses it one altitude level.}{The aircraft loses 1 level on each VFP.}
-    \item \changedin{2R}{2A-unloaded-dives}{The aircraft gains accel as if Steep Diving.}{The aircraft gains 1.0 AP per level lost.}
+    \item All FPs are HFPs.
+    \item At least 1 HFP must be expended with the aircraft “unloaded”. More than 1 and up to all may be expended “unloaded”.
+    \item Each HFP expended while unloaded moves the aircraft forward one hex/hexside and loses it one altitude level
+    \item The aircraft gains accel as if Steep Diving.
     \item The aircraft may not make any attacks, guide weapons or aim while unloaded.
-    \item \changedin{2R}{2A-unloaded-dives}{FPs done while unloaded may not be used for turning or prep-moving.}{Unloaded FPs may not be used for turning flight or for preparing or executing any maneuver except a slide.}
-    \item All unloaded \changedin{2R}{2A-unloaded-dives}{HFPs}{FPs} done in a single game-turn must be done in one continuous string.
+    \item FPs done while unloaded may not be used for turning or prep-moving.
+    \item All unloaded HFPs done in a single game-turn must be done in one continuous string.
 \end{enumerate}
-%}{
-%\begin{enumerate}[nosep]
-%    \item All FPs are HFPs.
-%    \item At least half of the HFPs (round down) must be expended with the aircraft “unloaded”. All unloaded HFPs must be consecutive.
-%    \item The aircraft loses on altitude level after half of the HFPs (round down) have expended unloaded. If all of the HFPS are expended unloaded, the aircraft loses another altitude level after the last HFP.
-%    \item The aircraft gains 1.0 AP per level lost.
-%    \item The aircraft may not make any attacks, aim, track targets, launch or guide weapons or use radar while unloaded and until it completes a recovery period.
-%    \item Unloaded FPs may not be used for turning flight or for preparing or executing any maneuver except a slide.
-%\end{enumerate}
-%}
+}
 
 \subheading{Vertical Dives}
 
@@ -182,6 +172,34 @@
     \item[--] If case 8 does not apply, diving flight must follow vertical dive.
     \item When Steep or Unloaded dives follow a vertical dive; at least half an aircraft's FPs (round down) must be expended as VFPs or Unloaded HFPs; except High Pitch Rate aircraft need only expend 1/3 FPs as VFPs or unloaded HFPs.
 \end{enumerate}
+
+\addedin{2A}{2A-unloaded-dives}{
+
+\heading{Unloading}
+
+\changedin{2B}{2B-unloaded-dives}{
+\begin{enumerate}[nosep]
+    \item Level flight. One or two FPs are VFPs. The rest are HFPs.
+    \item The first VFP may only be used after half of the HFPs have been expended with the aircraft unloaded. The second VPF may only be used after all of the HFPs have been expended with the aircraft unloaded.
+    \item The aircraft loses 1 level on each VFP.
+    \item The aircraft gains 1.0 AP per level lost.
+    \item The aircraft may not make any attacks, guide weapons or aim while unloaded.
+    \item Unloaded FPs may not be used for turning flight or for preparing or executing any maneuver except a slide.
+    \item All unloaded FPs done in a single game-turn must be done in one continuous string.
+    \item If all FPs are unloaded, the aircraft ends the turn in a steep dive.
+\end{enumerate}
+}{
+\begin{enumerate}[nosep]
+    \item Level flight. All FPs are HFPs.
+    \item All unloaded FPs in a game turn must be consecutive.
+    \item During the FP in which it expends unloaded FPs equal to half of its total FPs (round up), it loses one altitude level. 
+    \item If all of its FPs are unloaded, the aircraft loses another altitude level in its last FP and is considered to end in a steep dive.
+    \item The aircraft gains 1.0 AP per level lost.
+    \item The aircraft may not make any attacks, aim, track, launch or guide weapons, or use radar while unloaded and until it completes a recovery period.
+    \item Unloaded FPs may not be used for turning flight or for preparing or executing any maneuver except a slide. An unloaded FP aborts a turn or maneuver.
+\end{enumerate}
+}
+}
 
 \heading{Stalled Flight}
 
