@@ -23,7 +23,7 @@ Each ground unit counter or marker is printed with information which helps playe
     \item Each eligible unit may attack once during a turn of combat. The attack may be directed at any one enemy unit in its line of sight within a range of 3 hexes. (Exception: artillery does not require a line of sight and has a range of 6).
 
     \item Combat is considered to occur simultaneously, and results are not implemented until all units have fired.
-    
+
     \item Only Infantry platoons, armored vehicle platoons, artillery and Lt.\ or Med.\ AAA units are allowed to fire in ground combat. Any unit may be attacked.
 
     \item Ground combat is resolved on the Air-To-Ground Attack Table. Suppression results are ignored. Each unit fires individually using its Final Attack Strength (FAS). Units may not combine their fire into a single attack, however, any number of units may fire on a single enemy in a combat turn.
@@ -31,15 +31,15 @@ Each ground unit counter or marker is printed with information which helps playe
     \item The FAS of a ground unit is equal to its unmodified defense strength. Attacked units use their defense strength modified normally by terrain or other factors.
 
     \item Ground combat die rolls have the following modifiers:
-    \begin{enumerate}
+        \begin{enumerate}
         \item[a)] Armor firing = \minus{1}
-        \item[b)] Per hex of range over one= \plus{1}
-        \item[c)] Same hex attack = \minus{2}
-    \end{enumerate}
+    \item[b)] Per hex of range over one= \plus{1}
+\item[c)] Same hex attack = \minus{2}
+\end{enumerate}
 
-    Note: Case b) does not apply to artillery.
+Note: Case b) does not apply to artillery.
 
-    Note: Naval vessels will have any necessary combat rules given for them in the scenarios. 
+Note: Naval vessels will have any necessary combat rules given for them in the scenarios.
 
 \end{itemize}
 
@@ -50,23 +50,22 @@ Aircraft may attack ground units with guns, air to ground rockets, bombs or air 
 \paragraph{Attack Parameters.}
 To perform an air to ground attack, an aircraft must:
 \begin{enumerate}
-    \item[a)] be on a line of approach (LOA) to the target,
-    \item[b)] accomplish aiming,
-    \item[c)] and reach a valid release point on that LOA for the kind of ordnance being employed.
+\item[a)] be on a line of approach (LOA) to the target,
+\item[b)] accomplish aiming,
+\item[c)] and reach a valid release point on that LOA for the kind of ordnance being employed.
 \end{enumerate}
 
-\paragraph{Line of Approach.} An aircraft is on a line of approach to a target hex if a line extended forward along the aircraft's flightpath passes through the center of the hex containing the target. \changedin{1B}{1B-figures}{The line of approach diagram below and in the play aids}{Figure \ref{figure:lines-of-approach}} illustrates this concept. 
+\paragraph{Line of Approach.} An aircraft is on a line of approach to a target hex if a line extended forward along the aircraft's flightpath passes through the center of the hex containing the target. \changedin{1B}{1B-figures}{The line of approach diagram below and in the play aids}{Figure \ref{figure:lines-of-approach}} illustrates this concept.
 
 \addedin{1B}{1B-figures}{
-    \input{figures/figure-lines-of-approach.tex}
+\input{figures/figure-lines-of-approach.tex}
 }
 
 \addedin{1B}{1B-tables}{
-    \input{tables/table-aiming.tex}
+\input{tables/table-aiming.tex}
 }
 
 \paragraph{Aiming.} An aircraft aims its weapons by approaching a sighted target along a LOA in level or diving flight. It must maintain its approach for a specified period of time expressed in terms of FPs expended in flight while on the LOA. \changedin{1B}{1B-tables}{The Aiming Time Table}{Table \ref{table:aiming}} shows the time required (which depends on the type of bombsight used). \addedin{1C}{1C-apj-36-errata}{Use Table~\ref{table:fractions} when calculating {\onethird} and {\twothirds} of speed for the requirements for manual, computed, and advanced bomb sights and round down when calculating the requirements for ballistic bomb sights.}
-
 
 \addedin{2W}{2W-expending-fps}{
 For example, an aircraft in level flight with a speed of 5.5 declares that it is aiming at a ground unit. It it has a manual bombsight, it needs to move at least four hexes before attacking in order to have completed aiming. If it has a ballistic, computed, and advanced bombsight it needs to move at least two.
@@ -74,17 +73,14 @@ For example, an aircraft in level flight with a speed of 5.5 declares that it is
 
 \paragraph{Aiming Limits.} A minimum of one FP must be expended while aiming to make any kind of ground attack. Aircraft that attack without completing aiming for the type of sight they have, suffer a \plus{3} modifier to their die roll on the Air-To-Ground Attack Table. Aiming must be done while wings level. FPs expended for aiming cannot be used a prep-moves or counted toward turning. Beginning to aim aborts any turns or maneuvers in progress.  \addedin{1C}{1C-apj-23-errata}{Aircraft must recover from ET turns before aiming can commence.}
 
-
-
-\paragraph{Aiming Duration.} Aiming at a target may be continued from game turn to game turn.  \changedin{2B}{2B-aiming-modifiers}{Beneficial modifiers apply for tracking time above and beyond the minimum required by the aircraft sights. \addedin{1C}{1C-apj-23-errata}{The maximum modifier that can be accrued for extra tracking time is \minus{2} (\minus{1} for each 1/3 of speed spent beyond normal aiming requirements.) }}{Beneficial modifiers can apply for aiming for more FPs than the minimum required by the aircraft's bomb sights. The attack roll has a \minus{1} modifier if the number of additional FPs is at least 1/3 of the aircraft's speed but less than 2/3 of its speed. The attack roll has a \minus{2} modifier if the number of additional FPs is at least 2/3 of the aircraft's speed. Determine these fractions using Table \ref{table:fractions}. FPs that count towards satisfying the aiming requirements do not count towards gaining these modifiers. }Once an attack is executed, all aiming modifiers accrued up to that time are lost, and subsequent attacks (even against the same target) require that start over. 
-
+\paragraph{Aiming Duration.} Aiming at a target may be continued from game turn to game turn.  \changedin{2B}{2B-aiming-modifiers}{Beneficial modifiers apply for tracking time above and beyond the minimum required by the aircraft sights. \addedin{1C}{1C-apj-23-errata}{The maximum modifier that can be accrued for extra tracking time is \minus{2} (\minus{1} for each 1/3 of speed spent beyond normal aiming requirements.) }}{Beneficial modifiers can apply for aiming for more FPs than the minimum required by the aircraft's bomb sights. The attack roll has a \minus{1} modifier if the number of additional FPs is at least 1/3 of the aircraft's speed but less than 2/3 of its speed. The attack roll has a \minus{2} modifier if the number of additional FPs is at least 2/3 of the aircraft's speed. Determine these fractions using Table \ref{table:fractions}. FPs that count towards satisfying the aiming requirements do not count towards gaining these modifiers. }Once an attack is executed, all aiming modifiers accrued up to that time are lost, and subsequent attacks (even against the same target) require that start over.
 
 \addedin{2W}{2W-expending-fps}{
 For example, an aircraft in level flight with a speed of 6.0 declares that it is aiming at a ground unit. It has a a computed bombsight, so after moving two hexes has completed aiming. If it attacks now or after moving another hex (a total of two or three since it declared it was aiming), it will not gain an aiming modifier. If it attacks after moving another two or three hexes (a total of four or five since it declared it was aiming), it will gain a \minus{1} aiming modifier. If it attacks after moving four or more hexes (a total of six or more since it declared it was aiming), it will gain a \minus{2} aiming modifier.
 }
 
 \paragraph{Release Points.}
-\label{rule:release-points} 
+\label{rule:release-points}
 \input{tables/table-air-to-ground-release-points.tex}
 \changedin{1B}{1B-tables}{
 Release point charts are provided in the play aids for Level bombing, dive bombing and rocketry.
@@ -101,7 +97,7 @@ The proper release point for the type of attack in progress is determined by cro
 
 An aircraft may not make an air to air gun attack against enemy aircraft in the same game turn in which it makes an air to ground attack. When an aircraft makes a ground attack it may not launch air to air missiles or do air radar searches or attempt lock-ons in that same game-turn.
 
-\paragraph{Attack Resolution.} 
+\paragraph{Attack Resolution.}
 \input{tables/table-air-to-ground-fas-computation.tex}
 \input{tables/table-air-to-ground-attack-results.tex}
 \input{tables/table-air-to-ground-attack-modifiers.tex}
@@ -116,21 +112,21 @@ FAS Example: The FAS of cluster bombs is the sum of the dropped bomb's individua
 
 \paragraph{Combat Results.} There are five possible results of any ground attack, these are:
 \begin{itemize}
-    \item “-": No effect, the target survives unscathed or with insignificant damage.
-    \item “S”: Suppressed, the target takes cover and may not function, move or attack aircraft for the rest of the current game turn and through the following game turn.\addedin{1C}{1C-apj-12-qa}{ The radar of suppressed units is considered to be inoperable.} Place a “Suppression” marker on them immediately. At the end of the current turn, flip the marker to the “Suppression Removal” side. At the end of the following game-turn, remove the marker.
-    \item “D”: Target Damaged and Suppressed. Place a hit marker and a suppression marker on the target. This represents about a third of the unit's men, vehicles, and/or guns being put out of action. Damage is permanent. Damaged units may resume functioning when unsuppressed.\addedin{1C}{1C-apj-12-qa}{ In particular, the radar of damaged units operate normally when unsuppressed (although see rule \ref{rule:arms} for possible damage from ARM weapons).} Being damaged imposes modifiers to units firing on aircraft and may impose other restrictions on the unit. When a ground unit or target lakes a total of three hits, it is eliminated. 
-    \item “2D”: Target Damaged Twice. The target is damaged to the equivalent of two hits and suppressed as above. If it was already damaged from before, it would now be eliminated.
-    \item “K”: Killed, the target is destroyed outright.
+\item “-": No effect, the target survives unscathed or with insignificant damage.
+\item “S”: Suppressed, the target takes cover and may not function, move or attack aircraft for the rest of the current game turn and through the following game turn.\addedin{1C}{1C-apj-12-qa}{ The radar of suppressed units is considered to be inoperable.} Place a “Suppression” marker on them immediately. At the end of the current turn, flip the marker to the “Suppression Removal” side. At the end of the following game-turn, remove the marker.
+\item “D”: Target Damaged and Suppressed. Place a hit marker and a suppression marker on the target. This represents about a third of the unit's men, vehicles, and/or guns being put out of action. Damage is permanent. Damaged units may resume functioning when unsuppressed.\addedin{1C}{1C-apj-12-qa}{ In particular, the radar of damaged units operate normally when unsuppressed (although see rule \ref{rule:arms} for possible damage from ARM weapons).} Being damaged imposes modifiers to units firing on aircraft and may impose other restrictions on the unit. When a ground unit or target lakes a total of three hits, it is eliminated.
+\item “2D”: Target Damaged Twice. The target is damaged to the equivalent of two hits and suppressed as above. If it was already damaged from before, it would now be eliminated.
+\item “K”: Killed, the target is destroyed outright.
 \end{itemize}
 
 Exceptions:  Any ground unit or target marker with an asterisk by its defense strength is eliminated after only two hits.
 
 \paragraph{Ground Attack Modifiers.} The following is a summary of the most commonly required die roll modifiers:
 \begin{itemize}
-    \item Range to target: Use the modifier listed on the release point chart next to the release point used.
-    \item Bombsights: If aiming was completed, use the bombsight modifier listed on the ADC. If not completed, a +3 modifier applies to the attack.
-    \item Damage to Attacker: +1 if attacker "L" damaged, +2 if "H" damaged, +3 if "C" damaged.
-    \item Tracking Time: For each 1/3rd of an aircraft's speed in FPs expended as additional aiming beyond the minimum required, a -1 is applied. Up to a maximum of -3 may be accrued by extra aiming.
+\item Range to target: Use the modifier listed on the release point chart next to the release point used.
+\item Bombsights: If aiming was completed, use the bombsight modifier listed on the ADC. If not completed, a +3 modifier applies to the attack.
+\item Damage to Attacker: +1 if attacker "L" damaged, +2 if "H" damaged, +3 if "C" damaged.
+\item Tracking Time: For each 1/3rd of an aircraft's speed in FPs expended as additional aiming beyond the minimum required, a -1 is applied. Up to a maximum of -3 may be accrued by extra aiming.
 \end{itemize}
 
 All these, and other modifiers explained in later rules are summarized in \changedin{1B}{1B-tables}{the Ground Attack Modifiers Table}{Table \ref{table:air-to-ground-attack-modifiers}}. All modifiers are cumulative.
@@ -141,7 +137,7 @@ All these, and other modifiers explained in later rules are summarized in \chang
 
 \addedin{1C}{1C-apj-23-errata}{
 \paragraph{Ordinance Effectiveness Considerations.}
-CBUs, napalm, fire weapons, and rockets of less than 200mm have a 0 attack strength against runways, roads, dams, piers, rail lines, hardened A/C shelters, and steel/concrete bridges.  HE bombs with an attack strength less than 1.0 have a 0 attack strength against hardened A/C shelters and steel/concrete bridges. 
+CBUs, napalm, fire weapons, and rockets of less than 200mm have a 0 attack strength against runways, roads, dams, piers, rail lines, hardened A/C shelters, and steel/concrete bridges.  HE bombs with an attack strength less than 1.0 have a 0 attack strength against hardened A/C shelters and steel/concrete bridges.
 }
 
 \begin{advancedrules}
@@ -157,8 +153,8 @@ A primary target is attacked normally. Secondary targets are attacked using one-
 
 \paragraph{Combat Restrictions.} The formation leader is not restricted. Wingmen in close formation are restricted as follows:
 \begin{itemize}
-    \item A pilot only aircraft may not make any air to ground attacks unless performing Formation Bombing/ Rocket Attacks.
-    \item In multi-crew aircraft; if a weapons officer is present, the aircraft may do air to ground attacks using BB, BG, BS, ARM, ASM, RS, or RG weapons.
+\item A pilot only aircraft may not make any air to ground attacks unless performing Formation Bombing/ Rocket Attacks.
+\item In multi-crew aircraft; if a weapons officer is present, the aircraft may do air to ground attacks using BB, BG, BS, ARM, ASM, RS, or RG weapons.
 \end{itemize}
 
 Aircraft that begin the turn as wingmen but intend to detach may participate in the visual sighting phase if the intent to detach is declared then. On the turn an aircraft detaches, attacks and weapons launches, other than those allowed to multi-crewed aircraft in close formation, may not be done.

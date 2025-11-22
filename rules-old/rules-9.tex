@@ -9,7 +9,6 @@ This chapter details how to conduct gun and rocket attacks against other aircraf
 \section{Air to Air Gunnery}
 \label{rule:air-to-air-gun-combat}
 
-
 An aircraft equipped with guns may conduct one or two gun attacks per game turn. It may attack at any point during its move, but at least one FP (HFP or VFP) must be expended before each shot. The Internal Gun Data section on the Combat Characteristics panel of the ADC provides basic information about internal guns on an aircraft. If the aircraft has been fitted with a gun pod, \changedin{1B}{1B-tables}{the Gun Pod Weapons Table}{Table~\ref{table:stores-GP}} shows the basic information.
 
 \paragraph{Range.}
@@ -17,7 +16,7 @@ All aircraft guns have a range of two hexes unless noted otherwise on the ADC. \
 
 \addedin{1C}{1C-apj-36-errata}{The procedure used to obtain horizontal range in Air to Air Gunnery is not the same as in the rest of the game; use \changedin{1B}{1B-figures}{the Legal Target Positions Diagram on the Play Aids Diagrams: Page 1}{Figure~\ref{figure:air-to-air-gun-attacks}}. \changedin{1B}{1B-figures}{The hollow triangle represents the target occupying the same hex or hex-side as the firer, though it could be at a different altitude.}{If the target occupies the same hex or hex-side as the firer, the horizontal range is 0.} Such a situation would result in a range 0 shot if the altitude difference were 1 or 0.}
 
-\paragraph{Gun Attack Procedure.} 
+\paragraph{Gun Attack Procedure.}
 
 The Roll To Hit entry (in the Internal Gun Data section of the ADC) for the aircraft shows the basic die roll number required to hit the target at ranges 0, 1, and 2. Roll the die, and modify the result as required. Compare the final result to the hit numbers. A hit is achieved if the modified roll is less than or equal to the hit number.
 
@@ -25,7 +24,7 @@ The Roll To Hit entry (in the Internal Gun Data section of the ADC) for the airc
     \input{figures/figure-air-to-air-gun-attacks}
 }
 
-\paragraph{Die Roll Modifiers.} 
+\paragraph{Die Roll Modifiers.}
 
 The roll to hit is modified by a variety of circumstances. The possible modifiers are summarized here and in \changedin{1B}{1B-tables}{the play aid tables}{Table~\ref{table:air-to-air-gun-and-rocket-modifiers}}:
 
@@ -35,31 +34,31 @@ The roll to hit is modified by a variety of circumstances. The possible modifier
 
 \begin{itemize}
 
-    \item\itemparagraph{Target Size.} 
-    The Size number on the ADC is used directly as a die roll modifier.
+    \item\itemparagraph{Target Size.}
+        The Size number on the ADC is used directly as a die roll modifier.
 
-    \item\itemparagraph{Snap Shot.} 
-    If the attack was a Snap Shot, apply a modifier of \plus{1}.
+    \item\itemparagraph{Snap Shot.}
+        If the attack was a Snap Shot, apply a modifier of \plus{1}.
 
     \item\itemparagraph{Deflection (Angle-Off).}
-    The best shots occur when an attacker is directly behind his opponent; at other angles, the target aircraft is harder to hit. \changedin{1B}{1B-tables}{Consult the Angle-Off Table and apply the listed modifiers (see rule \ref{rule:angle-off})}{Determine the angle-off (see rule \ref{rule:angle-off}) and apply the modifiers given in Table~\ref{table:air-to-air-gun-and-rocket-modifiers}.}
+        The best shots occur when an attacker is directly behind his opponent; at other angles, the target aircraft is harder to hit. \changedin{1B}{1B-tables}{Consult the Angle-Off Table and apply the listed modifiers (see rule \ref{rule:angle-off})}{Determine the angle-off (see rule \ref{rule:angle-off}) and apply the modifiers given in Table~\ref{table:air-to-air-gun-and-rocket-modifiers}.}
 
-    \itemaddedin{1C}{1C-apj-23-errata}{
-    \itemparagraph{Vertical Attack.} 
-    Climbing or diving aircraft firing at targets in the same \changedin{2B}{2B-same-hex-or-hex-side}{hex}{hex or hex-side} at the same or at different altitudes may be subject to Vertical Attack Modifiers.
-    }
+        \itemaddedin{1C}{1C-apj-23-errata}{
+            \itemparagraph{Vertical Attack.}
+            Climbing or diving aircraft firing at targets in the same \changedin{2B}{2B-same-hex-or-hex-side}{hex}{hex or hex-side} at the same or at different altitudes may be subject to Vertical Attack Modifiers.
+        }
 
-    \item\itemparagraph{Attacker Damage.} 
-    See rule \ref{rule:aircraft-damage} for the effects of aircraft damage on firing aircraft.
+    \item\itemparagraph{Attacker Damage.}
+        See rule \ref{rule:aircraft-damage} for the effects of aircraft damage on firing aircraft.
 
     \item
-    \itemparagraph{Gunsight Effects.} Apply the die roll modifier if the firing aircraft is currently turning or has faced by turning during the game-turn at one of the rates listed. The modifier for the highest turn rate used up to that point or carried over into that game-turn up to the instant of attack must be used. If an ET turn rate was used, attacks are not normally allowed (see recovery period below).
+        \itemparagraph{Gunsight Effects.} Apply the die roll modifier if the firing aircraft is currently turning or has faced by turning during the game-turn at one of the rates listed. The modifier for the highest turn rate used up to that point or carried over into that game-turn up to the instant of attack must be used. If an ET turn rate was used, attacks are not normally allowed (see recovery period below).
 
-    \item\itemparagraph{Steady State Gunsight Tracking.} 
-    See the advanced SSGT rules below. Apply the appropriate modifier for tracking time on the target.
+    \item\itemparagraph{Steady State Gunsight Tracking.}
+        See the advanced SSGT rules below. Apply the appropriate modifier for tracking time on the target.
 
-    \item\itemparagraph{Radar Ranging.} 
-    See the Advanced Ranging rules below. If ranging is successful, apply the appropriate modifier.
+    \item\itemparagraph{Radar Ranging.}
+        See the Advanced Ranging rules below. If ranging is successful, apply the appropriate modifier.
 
     \item\itemparagraph{Pilot Quality (rule \ref{rule:crew-ability}).} Better trained pilots shoot better while poorly trained or inexperienced pilots shoot worse. Apply modifiers for pilot quality/characteristics.
 
@@ -81,9 +80,9 @@ The roll to hit is modified by a variety of circumstances. The possible modifier
 
 \newpage
 
-\paragraph{Recovery Period Exception.} 
+\paragraph{Recovery Period Exception.}
 \label{rule:recovery-periods}
-Aircraft may fire after using ET turns and/or need only apply turn rate modifiers for turning done after a recovery period has elapsed. The “recovery period” is completed if an aircraft has expended at least half its \changedin{1C}{1C-apj-36-errata}{FPs}{speed} (round down) while turning at a rate less than ET \changedin{2B}{2B-recovery}{and/or while wings level and not turning, not maneuvering or not prep-moving for maneuvers}{and not preparing for or executing rolling maneuvers} prior to firing.\addedin{1C}{1C-apj-21-qa}{ The recovery period includes the first FP expended after the completion of a turn. Low Roll Rate aircraft do not have to spend one FP to roll wings level prior to beginning a recovery period.} \addedin{2W}{2W-expending-fps}{For example, if an aircraft has a speed of 6 and turns at the ET rate on its first FP, it can recover by expending its second, third, and fourth FPs without turning at the ET rate or maneuvering, and can then attack immediately after its fourth FP. }The recovery period represents the time it takes for the gunsight or pilot to recover from the effects of high G forces. 
+Aircraft may fire after using ET turns and/or need only apply turn rate modifiers for turning done after a recovery period has elapsed. The “recovery period” is completed if an aircraft has expended at least half its \changedin{1C}{1C-apj-36-errata}{FPs}{speed} (round down) while turning at a rate less than ET \changedin{2B}{2B-recovery}{and/or while wings level and not turning, not maneuvering or not prep-moving for maneuvers}{and not preparing for or executing rolling maneuvers} prior to firing.\addedin{1C}{1C-apj-21-qa}{ The recovery period includes the first FP expended after the completion of a turn. Low Roll Rate aircraft do not have to spend one FP to roll wings level prior to beginning a recovery period.} \addedin{2W}{2W-expending-fps}{For example, if an aircraft has a speed of 6 and turns at the ET rate on its first FP, it can recover by expending its second, third, and fourth FPs without turning at the ET rate or maneuvering, and can then attack immediately after its fourth FP. }The recovery period represents the time it takes for the gunsight or pilot to recover from the effects of high G forces.
 
 \addedin{1C}{1C-apj-36-errata}{ Recovery periods and their effects do extend across into subsequent game-turns. For example, an aircraft ET faced on its last FP of the previous turn. It would not be able to fire cannons or begin aiming, etc., until the FP after the one which equates to half its speed (rounded down) is expended.}
 
@@ -98,20 +97,20 @@ A snap shot is a short gun burst. It uses half the normal ammunition, but has a 
 
 \paragraph{Head On Gun Attacks.} If both the attacker and target directly face each other with the attacker on the \arcline{180} line shown in \changedin{1B}{1B-figures}{the Angle-Off Diagram}{Figure~\ref{figure:angle-off}}, the attack is a Head-on Attack. A target aircraft waiting to move (or having already finished its move) may return fire in response to head-on attacks provided it does not exceed the 2 shot per game turn limit\changedin{2B}{2B-head-on-attacks}{, the higher/lower target restrictions, and the ET turn rate prohibition}{\ and satisfies all of the normal prerequisites except the sighting requirement}. \addedin{3A}{3A-head-on-attacks}{The non-moving aircraft can declare an attack even if the moving aircraft does not.} \addedin{1C}{1C-apj-36-errata}{An aircraft that has not flown yet may \emph{not} respond to a head-on attack if it performed an ET or roll at the end of the previous game-turn or it is carrying an ET turn or roll. Gunsight modifiers apply if it is carrying a turn or performed a turn at the end of the previous game-turn.}
 
-\paragraph{Ammunition.} 
+\paragraph{Ammunition.}
 The Internal Gun Data section shows the number of shots allowed for the aircraft gun. Each shot represents 2 seconds of firing and expends 1 ammo point. A snap shot (a 1 second burst) may be taken instead and uses up a half point of ammo.
 
-\paragraph{Gun Pods.} 
+\paragraph{Gun Pods.}
 A gun pod places aircraft machine guns or cannon in an external, detachable container. If the Station Limits section of the ADC permits, an aircraft may carry a gun pod as part of its external load. \changedin{1B}{1B-tables}{The External Stores Table}{Table \ref{table:stores-GP}} shows the types of gun pods available. An aircraft may carry more than one gun pod; if it does, they must be of the same type. If loaded on wing stations, they must be carried symmetrically in pairs; each pod must be on the same weapon station as the pod on the opposite wing.
 
-\paragraph{Multiple Guns Firing.} 
+\paragraph{Multiple Guns Firing.}
 If the aircraft is firing both internal guns and pods or more than one pod, a single die roll is used for each attack. The roll is compared to all the to hit numbers of each of the guns firing. Of those that hit, the highest damage rating available is used, and it is increased by \plus{1} for each additional gun of those fired that hit.
 
-\addedin{1C}{1C-apj-23-errata}{\paragraph{Vertical Attack Modifier.} 
+\addedin{1C}{1C-apj-23-errata}{\paragraph{Vertical Attack Modifier.}
 The same \changedin{2B}{2B-same-hex-or-hex-side}{hex}{hex or hex-side} \plus{2} Vertical Attack Modifier only applies if the target uses climbing or diving flight and the firer uses the opposite (i.e., diving aircraft attacking a climbing aircraft). A diving attacker firing on a diving target and a climbing attacker firing on a climbing target in the same \changedin{2B}{2B-same-hex-or-hex-side}{hex}{hex or hex-side} are not subject to the vertical attack modifier. A climbing or diving attacker firing on a level target \addedin{3A}{3A-vertical-attacks}{or a level attacker firing on a climbing or diving target }in the same \changedin{2B}{2B-same-hex-or-hex-side}{hex}{hex or hex-side} is subject to a reduced Vertical Attack Modifier of \plus{1}.}\addedin{2B}{2B-vertical-attacks}{ For aircraft that have not yet moved, use the flight type from the previous turn to determine the modifier.}
 
-\addedin{1C}{1C-apj-23-errata}{\paragraph{Aborting Gun Shots.} 
-A player that declares a shot and who discovers that he cannot possibly hit due to various modifiers or lack there-of (radar ranging die roll failed in example), may elect not to fire, saving his ammo but this still uses up one of the two allowed shot opportunities per turn. In a similar vein, the decision to employ a snap shot versus a full shot may be made after reviewing the odds.
+\addedin{1C}{1C-apj-23-errata}{\paragraph{Aborting Gun Shots.}
+    A player that declares a shot and who discovers that he cannot possibly hit due to various modifiers or lack there-of (radar ranging die roll failed in example), may elect not to fire, saving his ammo but this still uses up one of the two allowed shot opportunities per turn. In a similar vein, the decision to employ a snap shot versus a full shot may be made after reviewing the odds.
 }
 
 \section{Angle-Off}
@@ -121,13 +120,11 @@ A player that declares a shot and who discovers that he cannot possibly hit due 
     \input{figures/figure-angle-off}
 }
 
-
 \paragraph{Concept.} Angle-off (another term for deflection) is the angle “off” the target's tail. It is used to define eligibility for attack modifiers and other functions. \changedin{1B}{1B-figures}{The Angle Off Diagrams}{Figure~\ref{figure:angle-off}} show the various angles of approach to an aircraft. \changedin{1B}{1B-figures}{Two diagrams are used: one for target aircraft in a hex; the other for target aircraft on a hex side.}{The appropriate figure is used according to whether the target aircraft is in a hex facing a hex side, in a hex facing a hex corner, or on a hex side.} In each case, the target aircraft defines the Line of Flight.\addedin{1C}{1C-apj-36-errata}{\ Though not formally arcs, the \arcline{0} and \arcline{180} lines are at times treated as such.} The Line of Flight extending ahead of the target aircraft is the \arcline{180} Line; the Line of Flight extending behind the target aircraft is the \arcline{0} Line.\addedin{1C}{1C-apj-36-errata}{\ To qualify for \arcline{0} and \arcline{180} line modifiers, attackers have to be pointing straight down those lines.}
 
 For example, an aircraft directly behind the target aircraft and facing in the same direction has a zero-deflection shot (\arcline{0} angle-off). An aircraft making a head-on attack is facing in the opposite direction to the target (\arcline{180} of angle-off).
 
 \paragraph{Angle-Off Arcs.} Angle-off is described in \arc{30} arcs to the left or right of the target per the hex grid.  \changedin{1B}{1B-figures}{The Angle Off Diagrams}{Figure~\ref{figure:angle-off}} illustrate the arcs relative to the target aircraft. An attacker will be clearly in an arc or directly on one of the lines defining the border of two arcs. If it is on one of the borderlines, it is in the arc it would fall into if the faster of the target or attacker were moved forward one hex.\addedin{1C}{1C-apj-36-errata}{\ If moving the faster aircraft forward one hex or hex-side results in it completely leaving both bordering arcs, consider it in the arc it moved through.}\addedin{1C}{1C-apj-36-errata}{\ Use aircraft speed, not FPs, to determine which one is faster. Use both aircraft's speeds from the start of the turn. If one has flown its full turn, do not use its new speed for next turn; that isn't formally computed until the Aircraft Administrative Phase.}\addedin{1C}{1C-apj-28-qa}{All aircraft are considered faster than ground units.} If the attacker would remain on the line (if moved forward), it is in the arc that benefits the attacker.\addedin{1C}{1C-apj-28-qa}{ (In sighting attempts, the arc that benefits the aircraft being sighted. For initiative purposes, the arc that benefits the aircraft being considered for potential disadvantage.)} In the case of same \changedin{2B}{2B-same-hex-or-hex-side}{hex}{hex or hex-side} \deletedin{1C}{1C-apj-36-errata}{(range 0/same altitude) }attacks, the aircraft is in the \changedin{3A}{3A-same-hex-arcs}{angle off arc that equates to its heading difference from the target at the instant it fires}{same arc it would be it were moved straight backwards one hex. This notional backwards movement uses the facing for any previously completed turn or maneuver}.\addedin{1C}{1C-apj-36-errata}{\ When determining angle-off for same \changedin{2B}{2B-same-hex-or-hex-side}{hex}{hex or hex-side} attacks the \arc{180} arc modifier is never used; a head-on shot uses the \arcline{180} line modifier and a shot 30 degrees off head-on uses the \arc{150} arc modifier.} \changedin{3A}{3A-vertical-attacks}{For diving and climbing same \changedin{2B}{2B-same-hex-or-hex-side}{hex}{hex or hex-side} attacks against lower or higher targets respectively}{For same hex or hex-side attacks}, both angle-off and \changedin{1C}{1C-apj-23-errata}{a \plus{2} vertical attack modifier}{possibly a vertical attack modifier may} apply.
-
 
 \paragraph{Other Angle-Off Arc Functions.}  \changedin{1B}{1B-figures}{The Angle Off Diagrams in the play aids}{Figures~\ref{figure:angle-off}} are also used to define radar and visual spotting arcs, aircraft restricted and blind sighting arcs, jamming arcs, and for determining missile attack modifiers.
 
@@ -141,133 +138,130 @@ For example, an aircraft directly behind the target aircraft and facing in the s
 
 \begin{advancedrules}
 
-\section{Air to Air Rocketry}
+    \section{Air to Air Rocketry}
 
-\label{rule:air-to-air-rocket-combat}
+    \label{rule:air-to-air-rocket-combat}
 
-Before the advent of guided missiles, aircraft designers worked to provide Interceptors with a weapon that out ranged the defensive guns of long ranged bombers and that had sufficient power to knock the bomber down. The solution most came up with was to utilize clusters of unguided rockets fired from retractable packs or pods attached to the wings. The rockets were to be fired in shotgun like blasts. The concept was never tested in battle and it never proved satisfactory in practice. Intercept geometry was difficult to attain and the rockets proved to be inaccurate. As soon as guided missiles became available, air to air rocketry faded from the scene. Nevertheless, they were, for a short time at least, the primary anti-bomber weapon of the early 1950's Cold War period.
+    Before the advent of guided missiles, aircraft designers worked to provide Interceptors with a weapon that out ranged the defensive guns of long ranged bombers and that had sufficient power to knock the bomber down. The solution most came up with was to utilize clusters of unguided rockets fired from retractable packs or pods attached to the wings. The rockets were to be fired in shotgun like blasts. The concept was never tested in battle and it never proved satisfactory in practice. Intercept geometry was difficult to attain and the rockets proved to be inaccurate. As soon as guided missiles became available, air to air rocketry faded from the scene. Nevertheless, they were, for a short time at least, the primary anti-bomber weapon of the early 1950's Cold War period.
 
-\paragraph{Air To Air Rocket Factors.} The ADC shows if an aircraft can carry rockets (and if so, how many). Each factor represents 10 to 15 rockets fired in volley.
+    \paragraph{Air To Air Rocket Factors.} The ADC shows if an aircraft can carry rockets (and if so, how many). Each factor represents 10 to 15 rockets fired in volley.
 
-\paragraph{Range.} To declare a rocket attack, the firing aircraft must have a target in its limited radar arc and be within four hexes (count each two full altitude levels as one additional hex of range). Rocket attacks may not be done at range zero.
+    \paragraph{Range.} To declare a rocket attack, the firing aircraft must have a target in its limited radar arc and be within four hexes (count each two full altitude levels as one additional hex of range). Rocket attacks may not be done at range zero.
 
-\paragraph{Procedure.} The attacking aircraft declares its target and indicates the number of rocket factors being fired. \changedin{1B}{1B-tables}{The Air To Air Rocketry Table}{Table~\ref{table:air-to-air-rocket-attacks}} is consulted. At the intersection of the range column and the rocket factors row is the base die roll to hit. Roll the ten-sided die and modify the result as appropriate; if the result is equal to or less than the base die roll to hit, the attack has produced a hit. The rocket factors entry also shows the Attack Rating for that number of rockets being fired. This Attack Rating is used on \changedin{1B}{1B-tables}{the Damage Tables}{Table~\ref{table:aircraft-damage}} if a hit occurs.
+    \paragraph{Procedure.} The attacking aircraft declares its target and indicates the number of rocket factors being fired. \changedin{1B}{1B-tables}{The Air To Air Rocketry Table}{Table~\ref{table:air-to-air-rocket-attacks}} is consulted. At the intersection of the range column and the rocket factors row is the base die roll to hit. Roll the ten-sided die and modify the result as appropriate; if the result is equal to or less than the base die roll to hit, the attack has produced a hit. The rocket factors entry also shows the Attack Rating for that number of rockets being fired. This Attack Rating is used on \changedin{1B}{1B-tables}{the Damage Tables}{Table~\ref{table:aircraft-damage}} if a hit occurs.
 
-\paragraph{Rocket Attack Modifiers.} 
-\changedin{2B}{2B-rocket-modifiers}{The roll to hit is modified as for air to air gunnery, however only the following modifiers apply:
+    \paragraph{Rocket Attack Modifiers.}
+    \changedin{2B}{2B-rocket-modifiers}{The roll to hit is modified as for air to air gunnery, however only the following modifiers apply:
 
-\begin{itemize}
-    \item Target Size.
-    \item Deflection (Angle-Off).
-    \item Gunsight Effects.
-    \item SSGT.
-    \item Radar Ranging.
-    \item Collision Course Attack (CCA) Technology.
-    \itemaddedin{1C}{1C-apj-23-errata}{Pilot Quality}.
-\end{itemize}
-}{
-The roll to hit is modified as for air to air gunnery, except that the snap shot modifier obviously does not apply and the CCA modifier may apply.
-}
+        \begin{itemize}
+            \item Target Size.
+            \item Deflection (Angle-Off).
+            \item Gunsight Effects.
+            \item SSGT.
+            \item Radar Ranging.
+            \item Collision Course Attack (CCA) Technology.
+                \itemaddedin{1C}{1C-apj-23-errata}{Pilot Quality}.
+        \end{itemize}
+    }{
+        The roll to hit is modified as for air to air gunnery, except that the snap shot modifier obviously does not apply and the CCA modifier may apply.
+    }
 
-\paragraph{Collision Course Attack (CCA) Technology.} Aircraft designers fitted some American and Canadian fighters with auto-pilot guidance systems which utilized an early computer linked to the interceptor's radar. The computer figured rocket ballistics and if the radar was tracking a target, it could guide the fighter to a release point and automatically launch the rockets. This concept freed the fighter from having to use pursuit curves to get in to gunnery parameters and was called “collision course” guidance as the interceptor could now theoretically attack from any angle.
+    \paragraph{Collision Course Attack (CCA) Technology.} Aircraft designers fitted some American and Canadian fighters with auto-pilot guidance systems which utilized an early computer linked to the interceptor's radar. The computer figured rocket ballistics and if the radar was tracking a target, it could guide the fighter to a release point and automatically launch the rockets. This concept freed the fighter from having to use pursuit curves to get in to gunnery parameters and was called “collision course” guidance as the interceptor could now theoretically attack from any angle.
 
-To qualify for the CCA to hit modifier, the attacking aircraft must start a game-turn with an air to air lock-on to the target and must not do \changedin{1C}{1C-apj-34-qa}{TT}{HT} or greater turns, any maneuvers except slides, or utilize climbs or dives of more than one altitude level up to the point of executing the rocket attack. If it meets this criteria, a \minus{2} is applied to the hit roll.
+    To qualify for the CCA to hit modifier, the attacking aircraft must start a game-turn with an air to air lock-on to the target and must not do \changedin{1C}{1C-apj-34-qa}{TT}{HT} or greater turns, any maneuvers except slides, or utilize climbs or dives of more than one altitude level up to the point of executing the rocket attack. If it meets this criteria, a \minus{2} is applied to the hit roll.
 
-\paragraph{Rocket Damage Modifiers.} Rockets, because of their large warheads, receive \minus{2} to the damage table roll just like direct missile hits.
+    \paragraph{Rocket Damage Modifiers.} Rockets, because of their large warheads, receive \minus{2} to the damage table roll just like direct missile hits.
 
-\paragraph{Rocket Attack Restrictions.} Rocket attacks are restricted as follows:
+    \paragraph{Rocket Attack Restrictions.} Rocket attacks are restricted as follows:
 
-\begin{itemize}
+    \begin{itemize}
 
-    \item An aircraft may not fire rockets at unspotted aircraft.
+        \item An aircraft may not fire rockets at unspotted aircraft.
 
-    \item A climbing aircraft may not fire rockets at an aircraft at a lower altitude.
+        \item A climbing aircraft may not fire rockets at an aircraft at a lower altitude.
 
-    \item A diving aircraft may not fire rockets at an aircraft at a higher altitude.
+        \item A diving aircraft may not fire rockets at an aircraft at a higher altitude.
 
-    \item An aircraft may not fire at a target at zero range.
+        \item An aircraft may not fire at a target at zero range.
 
-    \item An aircraft \addedin{2B}{2B-rocket-restrictions}{in level flight} may fire at a target in another hex only if it is at the same altitude level or at an adjacent altitude level.
+        \item An aircraft \addedin{2B}{2B-rocket-restrictions}{in level flight} may fire at a target in another hex only if it is at the same altitude level or at an adjacent altitude level.
 
-    \item An aircraft may not fire while in, or just after having faced from, an HT, BT, or ET turn.
+        \item An aircraft may not fire while in, or just after having faced from, an HT, BT, or ET turn.
 
-    \item An aircraft may not fire while prepping for or executing other than slide maneuvers.
+        \item An aircraft may not fire while prepping for or executing other than slide maneuvers.
 
-\end{itemize}
+    \end{itemize}
 
-\addedin{1B}{1B-tables}{
-    \input{tables/table-rocket-attack}
-}
+    \addedin{1B}{1B-tables}{
+        \input{tables/table-rocket-attack}
+    }
 
-\paragraph{Air To Ground Rockets in The Air-To-Air Role.} Aircraft equipped with air to ground rockets or rocket pods may fire them in the air to air role. The conversion is as follows:
+    \paragraph{Air To Ground Rockets in The Air-To-Air Role.} Aircraft equipped with air to ground rockets or rocket pods may fire them in the air to air role. The conversion is as follows:
 
-\begin{itemize}
-    \item Each 10 single RKs are equal to one air-to-air rocket factor.	
-    \item \notein{1C}{AWF: JDW comments on these changes in APJ 22 QA.}\changedin{1C}{1C-apj-23-errata}{One small rocket pod is equal to one air-to-air rocket factor.}{A small rocket pod, with 7 or fewer rockets, is equal to 1/2 an air-to-air rocket factor.}
-    \item \changedin{1C}{1C-apj-23-errata}{One medium or large rocket pod is equal to two air-to-air rocket factors.}{A medium rocket pod, with 19 or fewer rockets, is equal to one air-to-air rocket factor.}
-    \itemaddedin{1C}{1C-apj-23-errata}{A large rocket pod, with 20 or more rockets, is equal to two air-to-air rocket factors.}
-\end{itemize}
+    \begin{itemize}
+        \item Each 10 single RKs are equal to one air-to-air rocket factor.
+        \item \notein{1C}{AWF: JDW comments on these changes in APJ 22 QA.}\changedin{1C}{1C-apj-23-errata}{One small rocket pod is equal to one air-to-air rocket factor.}{A small rocket pod, with 7 or fewer rockets, is equal to 1/2 an air-to-air rocket factor.}
+        \item \changedin{1C}{1C-apj-23-errata}{One medium or large rocket pod is equal to two air-to-air rocket factors.}{A medium rocket pod, with 19 or fewer rockets, is equal to one air-to-air rocket factor.}
+            \itemaddedin{1C}{1C-apj-23-errata}{A large rocket pod, with 20 or more rockets, is equal to two air-to-air rocket factors.}
+    \end{itemize}
 
-\paragraph{Air to Air rockets in the Air to Ground Role.} Each point of aerial rockets equals 2 soft attack strength factors and one hard attack strength factor.
+    \paragraph{Air to Air rockets in the Air to Ground Role.} Each point of aerial rockets equals 2 soft attack strength factors and one hard attack strength factor.
 
+    \section{Additional Gun and Rocket Attack Modifiers}
 
-\section{Additional Gun and Rocket Attack Modifiers}
+    \silentlyaddedin{1B}{1B-figures}{
+        \input{figures/figure-ssgt-lines}
+    }
 
-\silentlyaddedin{1B}{1B-figures}{
-    \input{figures/figure-ssgt-lines}
-}
+    \paragraph{Steady State Gunsight Tracking (SSGT).} Gunsights are optimized for rear quarter attacks. Any aircraft attacking from the \arc{60} or less angle-off arc may track its target and achieve improved probabilities for hits. \changedin{1C}{1C-apj-23-errata}{The firing aircraft must expend FPs while on a tracking line (see Tracking diagram).}{The firing aircraft must expend FPs while on a tracking line (see \changedin{1B}{1B-figures}{Tracking Diagram}{Figure~\ref{figure:ssgt-lines}})\addedin{1C}{1C-apj-36-errata}{ within six hexes of the target, and} with the target \addedin{1C}{1C-apj-37-qa}{in the field of fire of its guns or }in its limited arc.} \addedin{1C}{1C-apj-23-qa/1C-apj-36-errata}{During the Recovery Period following an ET an aircraft may not accumulate FPs for SSGT, but it may do so during recovery from lesser turn rates.} \addedin{1C}{1C-apj-36-errata}{VFPs as well as HFPs may be used to obtain SSGT. An aircraft may be turning while accumulating SSGT, and SSGT is not lost merely if the aircraft turns.} \changedin{2B}{2B-ssgt}{\changedin{1C}{1C-apj-23-errata}{For each 1/3 (round down) of the aircraft's speed (in full FPs) expended on a tracking line, modify the Roll To Hit by \minus{1}.}{For each 1/3 of the aircraft's speed expended on the tracking line (use the 1/3-2/3 conversion table), modify the Roll to Hit by \minus{1}.}  A maximum modifier of \minus{2} is allowed for SSGT; tracking may not begin until the firing aircraft is within six hexes range of the target.}{The hit roll has a \minus{1} modifier if the number of FPs accumulated for SSGT is at least 1/3 of the aircraft's speed but less than 2/3 of the aircraft's speed. The hit roll has a \minus{2} modifier if the number of FPs accumulated is at least 2/3 of the aircraft's speed. Determine these fractions using Table \ref{table:fractions}.}
+    \addedin{1C}{1C-apj-23-errata}{SSGT must be started anew each game turn. Taking a shot during a move does not cancel or stop the aircraft from doing SSGT.}
 
-\paragraph{Steady State Gunsight Tracking (SSGT).} Gunsights are optimized for rear quarter attacks. Any aircraft attacking from the \arc{60} or less angle-off arc may track its target and achieve improved probabilities for hits. \changedin{1C}{1C-apj-23-errata}{The firing aircraft must expend FPs while on a tracking line (see Tracking diagram).}{The firing aircraft must expend FPs while on a tracking line (see \changedin{1B}{1B-figures}{Tracking Diagram}{Figure~\ref{figure:ssgt-lines}})\addedin{1C}{1C-apj-36-errata}{ within six hexes of the target, and} with the target \addedin{1C}{1C-apj-37-qa}{in the field of fire of its guns or }in its limited arc.} \addedin{1C}{1C-apj-23-qa/1C-apj-36-errata}{During the Recovery Period following an ET an aircraft may not accumulate FPs for SSGT, but it may do so during recovery from lesser turn rates.} \addedin{1C}{1C-apj-36-errata}{VFPs as well as HFPs may be used to obtain SSGT. An aircraft may be turning while accumulating SSGT, and SSGT is not lost merely if the aircraft turns.} \changedin{2B}{2B-ssgt}{\changedin{1C}{1C-apj-23-errata}{For each 1/3 (round down) of the aircraft's speed (in full FPs) expended on a tracking line, modify the Roll To Hit by \minus{1}.}{For each 1/3 of the aircraft's speed expended on the tracking line (use the 1/3-2/3 conversion table), modify the Roll to Hit by \minus{1}.}  A maximum modifier of \minus{2} is allowed for SSGT; tracking may not begin until the firing aircraft is within six hexes range of the target.}{The hit roll has a \minus{1} modifier if the number of FPs accumulated for SSGT is at least 1/3 of the aircraft's speed but less than 2/3 of the aircraft's speed. The hit roll has a \minus{2} modifier if the number of FPs accumulated is at least 2/3 of the aircraft's speed. Determine these fractions using Table \ref{table:fractions}.}
-\addedin{1C}{1C-apj-23-errata}{SSGT must be started anew each game turn. Taking a shot during a move does not cancel or stop the aircraft from doing SSGT.}
+    \addedin{1C}{1C-apj-23-errata}{A target that defensively pre-empts nullifies the attacker's SSGT up to that point. When the attacker resumes moving following a pre-emption, SSGT may be started anew.}
 
-\addedin{1C}{1C-apj-23-errata}{A target that defensively pre-empts nullifies the attacker's SSGT up to that point. When the attacker resumes moving following a pre-emption, SSGT may be started anew.}
+    \addedin{2W}{2W-expending-fps}{
+        For example, an aircraft with a speed of 4.5 declares that it is tracking another aircraft. If it expends one FP and attacks, it will not gain a modifier for tracking. If it expends two FPs and attacks, it will gain a \minus{1} modifier. If it expends three or more FPs and attacks, it will gain a \minus{2} modifier.
+    }
 
-\addedin{2W}{2W-expending-fps}{
-For example, an aircraft with a speed of 4.5 declares that it is tracking another aircraft. If it expends one FP and attacks, it will not gain a modifier for tracking. If it expends two FPs and attacks, it will gain a \minus{1} modifier. If it expends three or more FPs and attacks, it will gain a \minus{2} modifier.
-}
+    \paragraph{Radar Ranging (RR).} An aircraft with radar ranging uses its radar to compute precise range and modify gunsight position for best hit probabilities. The Radar line of the Internal Gun Data section of the ADC shows the type of RR available (if any). There are three types:
 
-\paragraph{Radar Ranging (RR).} An aircraft with radar ranging uses its radar to compute precise range and modify gunsight position for best hit probabilities. The Radar line of the Internal Gun Data section of the ADC shows the type of RR available (if any). There are three types:
+    \begin{itemize}
 
-\begin{itemize}
+        \item RE (Regular). The attacker must \changedin{1C}{1C-apj-22-qa}{be in SSGT}{have accumulated at least 1 FP of SSGT} in order to get RR benefits.
 
-\item RE (Regular). The attacker must \changedin{1C}{1C-apj-22-qa}{be in SSGT}{have accumulated at least 1 FP of SSGT} in order to get RR benefits.
+        \item CA (Computer Assisted). The attacker may use CA Radar Ranging with or without SSGT when firing from the \arc{90} angle-off or less.
 
-\item CA (Computer Assisted). The attacker may use CA Radar Ranging with or without SSGT when firing from the \arc{90} angle-off or less.
+        \item IG (Integrated Gun Ballistics). The attacker may fire from any angle, with or without SSGT.
 
-\item IG (Integrated Gun Ballistics). The attacker may fire from any angle, with or without SSGT.
+    \end{itemize}
 
-\end{itemize}
+    \paragraph{RR Procedure.} Ranging is automatic if the firer already has a radar lock-on to the target and meets the arc/SSGT requirements. Otherwise, once the arc/SSGT requirements are met, roll the die. If the result is less than or equal to the radar lock-on number listed in the radar section of the data card, ranging is successful and the ranging modifier is applied.
 
-\paragraph{RR Procedure.} Ranging is automatic if the firer already has a radar lock-on to the target and meets the arc/SSGT requirements. Otherwise, once the arc/SSGT requirements are met, roll the die. If the result is less than or equal to the radar lock-on number listed in the radar section of the data card, ranging is successful and the ranging modifier is applied.
+    Having previous radar contact or lock-ons is not a prerequisite for ranging nor are previous contacts and locks lost when ranging. Radar ranging, once achieved is maintained for any second shots at the same target in that game-turn. If not achieved for the first shot, it may be rolled for again prior to the second shot at the same target. Radar ranging does not carry forward to the next game turn or to different targets in the same game turn.
 
-Having previous radar contact or lock-ons is not a prerequisite for ranging nor are previous contacts and locks lost when ranging. Radar ranging, once achieved is maintained for any second shots at the same target in that game-turn. If not achieved for the first shot, it may be rolled for again prior to the second shot at the same target. Radar ranging does not carry forward to the next game turn or to different targets in the same game turn.
+    \section{Formation Restrictions on Gun and Rocket Combat}
 
+    \paragraph{Close Formations.} The wingmen aircraft in a close formation may not fire cannons or rockets at air to air targets. They are too busy holding formation with the formation leader.
 
-\section{Formation Restrictions on Gun and Rocket Combat}
+    \paragraph{Tactical Formations.} There are no restrictions on wingmen of Tactical formations.
 
-\paragraph{Close Formations.} The wingmen aircraft in a close formation may not fire cannons or rockets at air to air targets. They are too busy holding formation with the formation leader.
+    \section{Nuclear Rockets (AIR-2 Genie)}
+    \label{rule:air-to-air-nuclear-rockets}
+    \label{rule:genie}
 
-\paragraph{Tactical Formations.} There are no restrictions on wingmen of Tactical formations.
+    \silentlyaddedin{1B}{1B-figures}{
+        \input{figures/figure-genie-scatter}
+    }
 
+    In an attempt to compensate for the general inaccuracy of air to air rocketry, the AIR-2 Genie was developed by the USAF. It was large, unwieldly, but featured a nuclear warhead.
 
-\section{Nuclear Rockets (AIR-2 Genie)}
-\label{rule:air-to-air-nuclear-rockets}
-\label{rule:genie}
+    \paragraph{Genie Launch.} To launch a Genie, an aircraft must have a radar lock-on to the target and end its move wings level (not turning or maneuvering). Roll for a successful launch in the Air to Air Missile Launch Phase. A die roll less than or equal to the launch number of the Genie indicates a successful launch, otherwise the Genie fails due to a dud motor or warhead and is removed from play.
 
-\silentlyaddedin{1B}{1B-figures}{
-    \input{figures/figure-genie-scatter}
-}
+    \paragraph{Genie Flight.} The Genie is unguided. It does not turn or maneuver. It simply flies forward for its entire movement expending its FPs as HFPs unless the firer climbed or dived on the turn of launch, in which case the Genie must also climb or dive expending the same proportion of FPs as VFPs that the launcher did. Each VFP expended must gain or lose a full two levels of altitude.
 
-In an attempt to compensate for the general inaccuracy of air to air rocketry, the AIR-2 Genie was developed by the USAF. It was large, unwieldly, but featured a nuclear warhead.
+    \paragraph{Genie Scatter.} The Genie wasn't very accurate, it had a big warhead though. After completing the Genie's flight, and after all aircraft have moved for the turn, the Genie’s position will be shifted randomly by rolling a die twice and consulting \changedin{1B}{1B-figures}{the scatter diagram below}{Figure~\ref{figure:genie-scatter}}. \addedin{1C}{1C-apj-23-errata}{The \deletedin{2B}{2B-genie-scatter-counter}{aircraft }counter in the diagram represents the Genie's start position and facing from which the scattering is determined. }The first roll indicates scatter direction. The second roll's result is halved (drop fractions) and that is the number of hexes the Genie is shifted in the direction previously determined. \deletedin{1B}{1B-figures}{See Genie Scatter diagram in play aids.}
 
-\paragraph{Genie Launch.} To launch a Genie, an aircraft must have a radar lock-on to the target and end its move wings level (not turning or maneuvering). Roll for a successful launch in the Air to Air Missile Launch Phase. A die roll less than or equal to the launch number of the Genie indicates a successful launch, otherwise the Genie fails due to a dud motor or warhead and is removed from play.
+    \paragraph{Nuclear Attack.} After shifting the Genie, roll the die; on a 10 the warhead is a dud. On anything else, it explodes creating a nuclear blast zone that extends out to a range of six hexes in every direction (count two altitude levels as 1 hex). All aircraft, friendly or enemy, in the same position as an exploding Genie are vaporized along with their crews. Other aircraft elsewhere in the zone are automatically hit. The attack rating is 12 minus 2 for each hex of range from the point of detonation.
 
-\paragraph{Genie Flight.} The Genie is unguided. It does not turn or maneuver. It simply flies forward for its entire movement expending its FPs as HFPs unless the firer climbed or dived on the turn of launch, in which case the Genie must also climb or dive expending the same proportion of FPs as VFPs that the launcher did. Each VFP expended must gain or lose a full two levels of altitude.
-
-\paragraph{Genie Scatter.} The Genie wasn't very accurate, it had a big warhead though. After completing the Genie's flight, and after all aircraft have moved for the turn, the Genie’s position will be shifted randomly by rolling a die twice and consulting \changedin{1B}{1B-figures}{the scatter diagram below}{Figure~\ref{figure:genie-scatter}}. \addedin{1C}{1C-apj-23-errata}{The \deletedin{2B}{2B-genie-scatter-counter}{aircraft }counter in the diagram represents the Genie's start position and facing from which the scattering is determined. }The first roll indicates scatter direction. The second roll's result is halved (drop fractions) and that is the number of hexes the Genie is shifted in the direction previously determined. \deletedin{1B}{1B-figures}{See Genie Scatter diagram in play aids.}
-
-\paragraph{Nuclear Attack.} After shifting the Genie, roll the die; on a 10 the warhead is a dud. On anything else, it explodes creating a nuclear blast zone that extends out to a range of six hexes in every direction (count two altitude levels as 1 hex). All aircraft, friendly or enemy, in the same position as an exploding Genie are vaporized along with their crews. Other aircraft elsewhere in the zone are automatically hit. The attack rating is 12 minus 2 for each hex of range from the point of detonation.
-
-For example, an aircraft four hexes away is attacked with a rating of 4 (\binaryminus{12}{(\binarymultiply{2}{4~hexes})} = 4).
+    For example, an aircraft four hexes away is attacked with a rating of 4 (\binaryminus{12}{(\binarymultiply{2}{4~hexes})} = 4).
 
 \end{advancedrules}

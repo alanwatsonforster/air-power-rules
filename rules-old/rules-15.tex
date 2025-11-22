@@ -50,74 +50,74 @@ If more than one aircraft, including friendlies, are in an UNCAGED FOV, the firi
 
 \paragraph{Flare Program Procedure.} If a DDS program is in use and includes flares, then a die roll modifier equal to the lesser of the Program Protection Level (PPL) of the flares or the flare vulnerability rating of the missile is used as a positive modifier to the attack die roll. Note: A flare PPL also provides a modifier to IRM launch rolls equal to the program's PPL (see rule \ref{rule:electronic-warfare}) or the missile's flare vulnerability rating whichever is less.
 
-\paragraph{Ground Clutter.}\label{rule:irm-ground-clutter} Ground Clutter interferes with an IR missile's ability to track targets. 
+\paragraph{Ground Clutter.}\label{rule:irm-ground-clutter} Ground Clutter interferes with an IR missile's ability to track targets.
 Add 2 to the launch roll if the firing aircraft is in the LO or ML altitude band and fires IR missiles at a “lower” target. A lower target by definition, is one more than one altitude level lower than the firer for each two hexes of horizontal range it is away. Example: a target 7 hexes away is lower if it is more than 3 altitude levels below the firer.
 \changedin{3A}{3A-irm-ground-clutter}{
-If a missile dives in its proportional move (meaning it loses 2 or more altitude levels by any means) to attack target in the LO altitude band, add 2 to the hit die roll. If a missile attacks a target in “T” level flight (rule \ref{rule:terrain-following-flight}) add 1 to the hit roll. This can be cumulative with the above modifiers.
+    If a missile dives in its proportional move (meaning it loses 2 or more altitude levels by any means) to attack target in the LO altitude band, add 2 to the hit die roll. If a missile attacks a target in “T” level flight (rule \ref{rule:terrain-following-flight}) add 1 to the hit roll. This can be cumulative with the above modifiers.
 }{
-The ground clutter attack modifier applies to IRM attacks if:
-\begin{enumerate}
-    \item[(a)] The target is the LO altitude band at the moment the missile attack is declared.
-    \item[(b)] The flight slope since launch or since the last climbing VFP (whichever is later) is \minus{1} or steeper (more negative).
-\end{enumerate}
+    The ground clutter attack modifier applies to IRM attacks if:
+    \begin{enumerate}
+        \item[(a)] The target is the LO altitude band at the moment the missile attack is declared.
+        \item[(b)] The flight slope since launch or since the last climbing VFP (whichever is later) is \minus{1} or steeper (more negative).
+    \end{enumerate}
 
-If a missile attacks a target at the same altitude level in one of the six positions in Figure~\ref{figure:missile-attacks}, for the purposes of the flight slope it counts as expending an HFP. If a missile attacks a target one altitude level below in one of the  six positions in Figure~\ref{figure:missile-attacks}, for the purposes of the flight slope it counts as expending an HFP and losing one altitude level.
+    If a missile attacks a target at the same altitude level in one of the six positions in Figure~\ref{figure:missile-attacks}, for the purposes of the flight slope it counts as expending an HFP. If a missile attacks a target one altitude level below in one of the  six positions in Figure~\ref{figure:missile-attacks}, for the purposes of the flight slope it counts as expending an HFP and losing one altitude level.
 }
 
 \trainingnote{
-You may now play all guns and heat seeking missile only combat scenarios! Ignore the AAA, SAM and Ground Unit Interaction Phases of the SOP.
+    You may now play all guns and heat seeking missile only combat scenarios! Ignore the AAA, SAM and Ground Unit Interaction Phases of the SOP.
 }
 
 \begin{advancedrules}
 
-\section{Realistic Seeker Head Vertical Field of View Limits}
-\label{rule:irm-realistic-vertical-limits}
+    \section{Realistic Seeker Head Vertical Field of View Limits}
+    \label{rule:irm-realistic-vertical-limits}
 
-Rather than just allowing aircraft that climbed or dived to launch at targets an unlimited distance above or below respectively, a more realistic set of seeker head limits can be simulated by using \changedin{1B}{1B-tables}{the Radar Vertical Limits Table}{Table \ref{table:radar-vertical-limits}} (see rule \ref{rule:radar-vertical-limits}) to define the vertical FOV limits for caged and uncaged seekers as follows:
+    Rather than just allowing aircraft that climbed or dived to launch at targets an unlimited distance above or below respectively, a more realistic set of seeker head limits can be simulated by using \changedin{1B}{1B-tables}{the Radar Vertical Limits Table}{Table \ref{table:radar-vertical-limits}} (see rule \ref{rule:radar-vertical-limits}) to define the vertical FOV limits for caged and uncaged seekers as follows:
 
-\begin{itemize}
+    \begin{itemize}
 
-    \item Use the limited radar arc Vertical Limits for a caged seeker head\itemaddedin{2B}{2B-irm-vertical-fov}{ and other situations with a limited horizontal arc}.
+        \item Use the limited radar arc Vertical Limits for a caged seeker head\itemaddedin{2B}{2B-irm-vertical-fov}{ and other situations with a limited horizontal arc}.
 
-    \item Use the \arc{180} radar arc Vertical Limits Tables described for uncaged IRMs\itemaddedin{2B}{2B-irm-vertical-fov}{ and other situations with a \arc{180} horizontal arc}.
+        \item Use the \arc{180} radar arc Vertical Limits Tables described for uncaged IRMs\itemaddedin{2B}{2B-irm-vertical-fov}{ and other situations with a \arc{180} horizontal arc}.
 
-    \itemaddedin{2B}{2B-irm-vertical-fov}{Use the \arc{150} radar arc Vertical Limits Tables for uncaged seekers used with HMS and other situations with a \arc{150} horizontal arc.}
+            \itemaddedin{2B}{2B-irm-vertical-fov}{Use the \arc{150} radar arc Vertical Limits Tables for uncaged seekers used with HMS and other situations with a \arc{150} horizontal arc.}
 
-\end{itemize}
+    \end{itemize}
 
-\section{Helmet-Mounted Sights}
-\label{rule:irm-hms}
+    \section{Helmet-Mounted Sights}
+    \label{rule:irm-hms}
 
-\paragraph{Helmet Mounted Sights (HMS) Technology.} Modern aircraft can be equipped with helmet mounted sights (see scenario notes or the technology section of the ADC). HMS allows a pilot firing uncaged IR missiles to attempt lock­up against any one sighted enemy aircraft in the firer's \arc{150} to \arc{180} arcs (essentially expanding the uncaged missile's FOV). The lock-up succeeds on an unmodified roll of 9 or less regardless of any closer or equally near aircraft. If the lock-up attempt falls, missiles may not be launched.
+    \paragraph{Helmet Mounted Sights (HMS) Technology.} Modern aircraft can be equipped with helmet mounted sights (see scenario notes or the technology section of the ADC). HMS allows a pilot firing uncaged IR missiles to attempt lock­up against any one sighted enemy aircraft in the firer's \arc{150} to \arc{180} arcs (essentially expanding the uncaged missile's FOV). The lock-up succeeds on an unmodified roll of 9 or less regardless of any closer or equally near aircraft. If the lock-up attempt falls, missiles may not be launched.
 
-\section{IRM Seeker Lock-Up Assistance Methods}
-\label{rule:irm-seeker-lock-up-assistance-methods}
-\label{rule:irm-radar}
-\label{rule:irm-vas}
-\label{rule:irm-irsts}
+    \section{IRM Seeker Lock-Up Assistance Methods}
+    \label{rule:irm-seeker-lock-up-assistance-methods}
+    \label{rule:irm-radar}
+    \label{rule:irm-vas}
+    \label{rule:irm-irsts}
 
-\paragraph{Radar Assist.} Uncaged IR missiles may be slaved to an aircraft's radar (declare in the Aircraft Decisions Phase). If the firing aircraft currently has a radar lock-on (see rule \ref{rule:radar-tracking-and-lock-ons}) to the intended target, the missiles may be automatically locked-up to it without rolling and regardless of how many aircraft are currently in the missile's FOV. IR missiles may be fired at night against otherwise unsighted targets using radar assist. This is an exception to the rule requiring targets to be sighted.
+    \paragraph{Radar Assist.} Uncaged IR missiles may be slaved to an aircraft's radar (declare in the Aircraft Decisions Phase). If the firing aircraft currently has a radar lock-on (see rule \ref{rule:radar-tracking-and-lock-ons}) to the intended target, the missiles may be automatically locked-up to it without rolling and regardless of how many aircraft are currently in the missile's FOV. IR missiles may be fired at night against otherwise unsighted targets using radar assist. This is an exception to the rule requiring targets to be sighted.
 
-\paragraph{VAS Assist.} Type “M” and “A” seeker head equipped missiles, if uncaged, may be slaved to the VAS system and automatically lock-up a VAS spotted target as above in radar assist. Declare in the Aircraft Decisions Phase.
+    \paragraph{VAS Assist.} Type “M” and “A” seeker head equipped missiles, if uncaged, may be slaved to the VAS system and automatically lock-up a VAS spotted target as above in radar assist. Declare in the Aircraft Decisions Phase.
 
-\paragraph{IRSTS Assist.} Any IR missile may be slaved to an IRSTS system (declare in the Aircraft Decisions Phase) and may automatically lock-up any target the IRSTS system is locked onto as above in radar assist. A Type B IRSTS lock-on allows missiles to be fired at targets in the firer's \arc{180} arcs even if the missile normally would not have an FOV that wide (i.e., non-uncaged missiles). This, along with HMS technology, are the only exceptions to the missile FOV requirements.
+    \paragraph{IRSTS Assist.} Any IR missile may be slaved to an IRSTS system (declare in the Aircraft Decisions Phase) and may automatically lock-up any target the IRSTS system is locked onto as above in radar assist. A Type B IRSTS lock-on allows missiles to be fired at targets in the firer's \arc{180} arcs even if the missile normally would not have an FOV that wide (i.e., non-uncaged missiles). This, along with HMS technology, are the only exceptions to the missile FOV requirements.
 
-\section{Expanded and Reduced IRM Envelopes}
+    \section{Expanded and Reduced IRM Envelopes}
 
-\paragraph{Expanded/Reduced Envelopes.} The listed missile envelopes are for fighter sized targets at normal or military power. Larger or hotter targets may be acquired from greater distances, while targets at idle power may be more difficult to acquire. The following rules reflect this:
+    \paragraph{Expanded/Reduced Envelopes.} The listed missile envelopes are for fighter sized targets at normal or military power. Larger or hotter targets may be acquired from greater distances, while targets at idle power may be more difficult to acquire. The following rules reflect this:
 
-\begin{itemize}
+    \begin{itemize}
 
-    \item Any target with a visibility number of 10 or more, or any target using AB power, or which has a fuel usage number greater than 5 for its chosen power setting increases an IRM's existing lock-on envelope by 50\% (round up).
+        \item Any target with a visibility number of 10 or more, or any target using AB power, or which has a fuel usage number greater than 5 for its chosen power setting increases an IRM's existing lock-on envelope by 50\% (round up).
 
-    \item Any target using idle power reduces an IRM's lock-on envelope to 2/3d's normal amount (round up). Exception: for a large (Vis \plusafter{10}) target in idle, use the normal missile envelope.
+        \item Any target using idle power reduces an IRM's lock-on envelope to 2/3d's normal amount (round up). Exception: for a large (Vis \plusafter{10}) target in idle, use the normal missile envelope.
 
-\end{itemize}
+    \end{itemize}
 
-\paragraph{Out Of Envelope IRM Launches.}\label{rule:irm-out-of-envelope-launches} An IRM may be launched inside its minimum range with a launch roll modifier of +3, except range 0 launches are not allowed and range 1 launches for IRMs that do not instantly arm automatically fail.
+    \paragraph{Out Of Envelope IRM Launches.}\label{rule:irm-out-of-envelope-launches} An IRM may be launched inside its minimum range with a launch roll modifier of +3, except range 0 launches are not allowed and range 1 launches for IRMs that do not instantly arm automatically fail.
 
-Type “A” seekers may still be launched at extended range, as defined above, at \changedin{2B}{2B-irm-envelopes}{large targets}{targets with visibility of less than 10} or those which are not in AB power or which do not meet the fuel use parameters given above by accepting the +3 out of envelope launch roll modifier. If the target is at idle power, extended range out of envelope shots are those over 2/3rds the listed range up to the original listed range.
+    Type “A” seekers may still be launched at extended range, as defined above, at \changedin{2B}{2B-irm-envelopes}{large targets}{targets with visibility of less than 10} or those which are not in AB power or which do not meet the fuel use parameters given above by accepting the +3 out of envelope launch roll modifier. If the target is at idle power, extended range out of envelope shots are those over 2/3rds the listed range up to the original listed range.
 
-Note: With these rules it is possible to lock-up and launch at targets beyond the missile's flight range capabilities resulting in wasted shots.
+    Note: With these rules it is possible to lock-up and launch at targets beyond the missile's flight range capabilities resulting in wasted shots.
 
 \end{advancedrules}

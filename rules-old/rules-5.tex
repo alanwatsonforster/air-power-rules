@@ -9,16 +9,15 @@
 
 An aircraft is flown, in game turns, by moving it horizontally across the game maps and tracking its changes in speed and altitude on an Aircraft Log Sheet.\addedin{1B}{1B-tables}{\ The aircraft flight rules are summarized in Table~\ref{table:aircraft-flight-rules-summary} and detailed in the following chapters.} An aircraft is allowed to move and make changes in altitude by expending Flight Points (FPs). Generally, one flight point moves the aircraft one hex on the map, or up or down one or more levels of altitude. The speed of an aircraft determines how many flight points it has each turn.
 
-
 \section{The Aircraft Log}
 \label{rule:aircraft-log-sheets}
 
 An aircraft log sheet is used to record the starting speed and altitude of an aircraft each turn. Different actions an aircraft may take will affect its speed and altitude from one turn to the next. The different lines on the log provide spaces to record these actions and to calculate resultant changes in speed and altitude. A pad of generic aircraft log sheets is provided with each game. One log should be used for each aircraft in play. A log sheet is divided into 15 columns, enough to record 15 turns of play (about the average length of a game). If you run short you may make copies of the sheets. Where applicable, the various rules sections which follow will provide additional information on using the log sheet.
 
-\paragraph{Set Up Information.} 
+\paragraph{Set Up Information.}
 When a scenario is set up, each aircraft must be given a start altitude level, and speed. These are noted in lines 1 and 2 of column one of the log sheets. Any scenarios provided in the game will establish these values in their set up instructions. If you create your own scenarios, you will have to decide on these values yourself. Once aircraft and any other required counters are placed on the maps, and the start speeds and altitudes are noted, play may commence.
 
-\paragraph{Using The Log Sheet.} 
+\paragraph{Using The Log Sheet.}
 As an aircraft is maneuvered, it might change altitude and/or accumulate accel and decel points. The accumulation of accel and/or decel Points may cause changes in the aircraft's speed so spaces are provided on the log to record these points. Spaces are also provided to calculate changes in an aircraft's speed and/or altitude. The final altitude and speed at the end of one game turn becomes the new start speed and altitude for the next game turn.
 
 \section{Flight Points}
@@ -26,93 +25,88 @@ As an aircraft is maneuvered, it might change altitude and/or accumulate accel a
 
 The speed of an aircraft is always expressed in terms of Flight Points (FPs), each of which equates to 100 mph of speed. An aircraft with a speed of 5.5 would be traveling at 550 mph. Flight Points are expended to move an aircraft across the game map and/or to change altitude.  An aircraft must expend all whole FPs available to it each game turn. Any unused 0.5 FP remaining can be ignored. An FP may be either a horizontal FP or a vertical FP depending on how it is used.
 
-\paragraph{Horizontal Flight Points.} 
+\paragraph{Horizontal Flight Points.}
 FPs expended to move horizontally across the map are called Horizontal Flight Points (HFPs). One HFP is spent to move an aircraft forward one hex or hexside. It may only fly onto a hexside if it faces parallel to that hexside (see rule \ref{rule:position}).
 
-\paragraph{Vertical Flight Points.} 
+\paragraph{Vertical Flight Points.}
 FPs expended to gain or lose altitude levels are called Vertical Flight Points (VFPs). The amount of altitude levels gained or lost with the expenditure of each VFP varies with the exact type of climb or dive in use.  The amount of FPs that may be VFPs in a game turn also depends on the exact type of climbing or diving flight chosen.
 
 Note: To clarify; both HFPs and VFPs will be available to be expended within a single game turn only when an aircraft elects to climb or dive during its move.
 
 \addedin{2W}{2W-expending-fps}{
-\paragraph{Expending Flight Points.}
-Some game activities require that an aircraft expend a certain number of FPs. These include changing facing, preparing to execute a maneuvers, recovery, aiming, and tracking. For these purposes, an FP is considered to have been expended as soon as the aircraft begins the movement associated with that FP.
+    \paragraph{Expending Flight Points.}
+    Some game activities require that an aircraft expend a certain number of FPs. These include changing facing, preparing to execute a maneuvers, recovery, aiming, and tracking. For these purposes, an FP is considered to have been expended as soon as the aircraft begins the movement associated with that FP.
 }
-
 
 \silentlyaddedin{1B}{1B-tables}{
     \input{tables/table-fractions}
 }
 
-\addedin{2B}{2B-fractions}{The number of FPs that must be expended is often given as a fraction of the speed of the aircraft or the number of FPs available to it in the current game turn. 
-In many cases, multiply by the fraction and round as directed. However, Table~\ref{table:fractions} is used to determine:
-\begin{itemize}
-\item the number of HFPs and VFPs required by a given flight type;
-\item SSGT requirements;
-\item aiming requirements and modifiers; and
-\item the reduction in engine thrust at high altitude.
-\end{itemize}
-The values in the table for 1/3 follow the rule \emph{round to nearest but retain halves}. That is, round down if the fraction is less than 0.5; round up if the fraction is more than 0.5; and do not round if the fraction is 0.5. The values in the table for 2/3 are the whole minus the value for 1/3.
+\addedin{2B}{2B-fractions}{The number of FPs that must be expended is often given as a fraction of the speed of the aircraft or the number of FPs available to it in the current game turn.
+    In many cases, multiply by the fraction and round as directed. However, Table~\ref{table:fractions} is used to determine:
+    \begin{itemize}
+        \item the number of HFPs and VFPs required by a given flight type;
+        \item SSGT requirements;
+        \item aiming requirements and modifiers; and
+        \item the reduction in engine thrust at high altitude.
+    \end{itemize}
+    The values in the table for 1/3 follow the rule \emph{round to nearest but retain halves}. That is, round down if the fraction is less than 0.5; round up if the fraction is more than 0.5; and do not round if the fraction is 0.5. The values in the table for 2/3 are the whole minus the value for 1/3.
 
 }
 
 \addedin{1C}{1C-apj-36-errata}{When an expenditure of 2/3 of an aircraft's speed (or FPs) is required, use the 2/3 entry from \changedin{1B}{1B-tables}{the chart}{Table~\ref{table:fractions}}, not \binarymultiply{2}{1/3}. Drop all fractions read off the chart.}
 
-
 \addedin{1C}{1C-apj-36-errata}{\paragraph{Speed Requirements Split Between Game Turns.} Some game activities, like ground-attack aiming, are measured in fractions of an aircraft's speed. If such a period extends between two game-turns, the highest speed in either game-turn is used to compute the completion requirements in the second turn.}
 
-
 \addedin{2W}{2W-fp-stages}{
-\paragraph{FP Stages.}
-\label{rule:fp-stages}
+    \paragraph{FP Stages.}
+    \label{rule:fp-stages}
 
-The activities around the expenditure of each FP occur in stages in the following order:
-\begin{enumerate}
-\itemaddedin{3R}{3R-aborting-damage-control}{Aborting Damage Control Stage. If the moving aircraft is performing damage control, it may declare that it is aborting this. If does not, then for this FP it must fly within the restrictions applicable to damage control and in particular may not attack (see rule \ref{rule:progressive-damage}). If it does, it is no longer bound by these restrictions.}
-\item Preemption Stage. Any other aircraft threatened by the moving aircraft can declare and execute a preemption.
+    The activities around the expenditure of each FP occur in stages in the following order:
+    \begin{enumerate}
+            \itemaddedin{3R}{3R-aborting-damage-control}{Aborting Damage Control Stage. If the moving aircraft is performing damage control, it may declare that it is aborting this. If does not, then for this FP it must fly within the restrictions applicable to damage control and in particular may not attack (see rule \ref{rule:progressive-damage}). If it does, it is no longer bound by these restrictions.}
+        \item Preemption Stage. Any other aircraft threatened by the moving aircraft can declare and execute a preemption.
 
-\item SSGT Tracking Stage. The moving aircraft may declare that it will start SSGT of a specified target aircraft.
-FPs subsquently expended by the moving aircraft then count towards the tracking requirement.
+        \item SSGT Tracking Stage. The moving aircraft may declare that it will start SSGT of a specified target aircraft.
+            FPs subsquently expended by the moving aircraft then count towards the tracking requirement.
 
-\item AAA Tracking Stage. If the moving aircraft is within tracking range of any AAA units, any of these may declare that they are tracking the aircraft. FPs subsquently expended by the moving aircraft then count towards the tracking requirement.
+        \item AAA Tracking Stage. If the moving aircraft is within tracking range of any AAA units, any of these may declare that they are tracking the aircraft. FPs subsquently expended by the moving aircraft then count towards the tracking requirement.
 
-\item Aiming Stage. The moving aircraft may declare that it will start aiming at a specified ground unit.
-FPs subsquently expended by the moving aircraft then count towards the aiming requirement.
+        \item Aiming Stage. The moving aircraft may declare that it will start aiming at a specified ground unit.
+            FPs subsquently expended by the moving aircraft then count towards the aiming requirement.
 
+        \item Movement Stage.
 
-\item Movement Stage. 
+            \begin{enumerate}
+                \item The moving aircraft can declare a turn or a maneuver or stop one. Declaring a turn implicitly sets the bank.
 
-\begin{enumerate}
-\item The moving aircraft can declare a turn or a maneuver or stop one. Declaring a turn implicitly sets the bank.
+                \item The moving aircraft may expend an FP to change position (map location and altitude). For the purposes of expending FPs to fulfill turn requirements, preparations for maneuvers, recovery, aiming, and tracking, the FP is considered to have been expended as soon as the aircraft starts to move.
 
-\item The moving aircraft may expend an FP to change position (map location and altitude). For the purposes of expending FPs to fulfill turn requirements, preparations for maneuvers, recovery, aiming, and tracking, the FP is considered to have been expended as soon as the aircraft starts to move.
+                \item If the moving aircraft is turning and has expended FPs at least equal to the turn requirement (including the current one), it may complete the turn and change facing.
 
-\item If the moving aircraft is turning and has expended FPs at least equal to the turn requirement (including the current one), it may complete the turn and change facing. 
+                \item If the moving aircraft is not turning, it may set its bank according to the rules.
 
-\item If the moving aircraft is not turning, it may set its bank according to the rules. 
+            \end{enumerate}
 
-\end{enumerate}
-
-
-\item Jettison Stores Stage. The moving aircraft may jettison external stores. 
-\item Missile Attack Stage. If the moving aircraft has the same position as a missile of which it is a target, the missile attacks.
-\item Air-to-Air Attack Stage. The moving aircraft may carry out an air-to-air gun and rocket attack. If the moving aircraft carried out a head-on attack, the target aircraft may simultaneously return fire. 
-\item Air-to-Ground and Ground-to-Air Attack Stage. 
-\begin{enumerate}
-\item[11a.] The moving aircraft may declare an air-to-ground attack. 
-\item[11b.] AAA units may declare attacks on the moving aircraft.
-\item[11c.] Attacks are resolved simultaneously.
-\end{enumerate}
-\item Head-On Collision Stage. If the moving aircraft carried out a head-on attack, check for collision.
-\item Emergency Egress Stage. Crew may bail out or eject.
-\end{enumerate}
+        \item Jettison Stores Stage. The moving aircraft may jettison external stores.
+        \item Missile Attack Stage. If the moving aircraft has the same position as a missile of which it is a target, the missile attacks.
+        \item Air-to-Air Attack Stage. The moving aircraft may carry out an air-to-air gun and rocket attack. If the moving aircraft carried out a head-on attack, the target aircraft may simultaneously return fire.
+        \item Air-to-Ground and Ground-to-Air Attack Stage.
+            \begin{enumerate}
+                \item[11a.] The moving aircraft may declare an air-to-ground attack.
+                \item[11b.] AAA units may declare attacks on the moving aircraft.
+                \item[11c.] Attacks are resolved simultaneously.
+            \end{enumerate}
+        \item Head-On Collision Stage. If the moving aircraft carried out a head-on attack, check for collision.
+        \item Emergency Egress Stage. Crew may bail out or eject.
+    \end{enumerate}
 }
 
 \section{Types of Flight}
 
 At the start of an aircraft's move, it must commit itself to one of the following three general types of flight: Level, Climbing or Diving. Write the appropriate code in the flight type line of the aircraft log. This represents the aircraft committing its nose to remain level, to move up, or to move down for the game turn. The flight type may not be changed until the next turn. Only one type of flight may be performed each turn and some restrictions may apply when switching from one type to another between turns.
 
-\paragraph{Level Flight.} 
+\paragraph{Level Flight.}
 In level flight, all FPs must be expended as HFPs (for example, HHHHHH). The code for Level Flight is "LVL". Level flight is assumed if allowed and not otherwise specified by a player when he begins to move an aircraft.
 
 Example Of Level Flight: An aircraft has a speed of 3.0. The player moves the aircraft through three hexes as shown \changedin{1B}{1B-figures}{below}{in Figure~\ref{figure:level-flight}.}\deletedin{1B}{1B-figures}{\addedin{1C}{1C-apj-23-errata}{\ [The diagram actually shows the left aircraft moving four hexes/hexsides. This is in error.]}} Its turn is over when it has finished moving.
@@ -121,10 +115,10 @@ Example Of Level Flight: An aircraft has a speed of 3.0. The player moves the ai
     \input{figures/figure-level-flight}
 }
 
-\paragraph{Climbing Flight.} 
+\paragraph{Climbing Flight.}
 In climbing flight, the aircraft selects a specific type, either a Sustained, Zoom, or Vertical climb, and determines the altitude gain in levels allowed for each VFP expended. A mix of HFPs and VFPs can then be expended subject to the limits outlined in the Climbing rules of section 8.
 
-\paragraph{Diving Flight.} 
+\paragraph{Diving Flight.}
 In diving flight, the aircraft selects a specific type, either an Unloaded, Steep, or Vertical Dive, and determines the altitude loss in levels allowed for each VFP expended. As with Climbing flight, the Diving Flight rules include limits on how many of each type of FP may be expended in a turn depending on the type of dive but some mix of HFPs and VFPs can be expended.
 
 \paragraph{Expending Mixed FPs.}
@@ -135,81 +129,80 @@ HHHHVVV, or VVVHHHH, or HHVVHVH, or in any other order desired.
 
 Note: No matter how the FPs are mixed, the aircraft will only be moved horizontally four hexes as all other FPs will be used to change altitude.
 
-
-\paragraph{Abnormal Flight.} 
+\paragraph{Abnormal Flight.}
 Two other types of flight are possible. These are Stalled and Departed Flight (see rule \ref{rule:abnormal-flight}
 ).  An aircraft in abnormal flight may not select Level, Climbing, or Diving flight until recovered from the abnormal condition.
 
 \begin{advancedrules}
 
-\section{Half Flight Points}
-\label{rule:half-fps}
+    \section{Half Flight Points}
+    \label{rule:half-fps}
 
-\notein{1C}{FH in APJ 36 states “If an A/C has a fractional speed and a 0.5 FP carry available, it must use the carry to create a full HFP or VFP.” I don't see what needs changing in the text of the rules.}
+    \notein{1C}{FH in APJ 36 states “If an A/C has a fractional speed and a 0.5 FP carry available, it must use the carry to create a full HFP or VFP.” I don't see what needs changing in the text of the rules.}
 
-Rather than ignoring left over half flight points, they may take into account as explained below.
+    Rather than ignoring left over half flight points, they may take into account as explained below.
 
-\paragraph{Half FPs.} 
-Any 0.5 VFP or 0.5 HFP not spent during a game turn is carried forward to the next game turn as a generic half FP. This is noted in the 0.5 FP Carry line of the Aircraft Log of the coming game turn. The existence of a carried half FP does not change the aircraft's new start speed for the next turn, but, if the new start speed has a half FP in it, it will marry up with any carried half FP to provide another whole FP.
+    \paragraph{Half FPs.}
+    Any 0.5 VFP or 0.5 HFP not spent during a game turn is carried forward to the next game turn as a generic half FP. This is noted in the 0.5 FP Carry line of the Aircraft Log of the coming game turn. The existence of a carried half FP does not change the aircraft's new start speed for the next turn, but, if the new start speed has a half FP in it, it will marry up with any carried half FP to provide another whole FP.
 
-For example, an aircraft with a start speed of 6.5 having a carried 0.5 FP in the Carry line of the Aircraft Log has 7.0 FPs to expend that game turn. For all applicable game purposes, its speed is still 6.5. If a 0.5 FP carry cannot be mated to a half FP in the start speed, it may be carried forward again (and again) until used. When used, it is gone.
+    For example, an aircraft with a start speed of 6.5 having a carried 0.5 FP in the Carry line of the Aircraft Log has 7.0 FPs to expend that game turn. For all applicable game purposes, its speed is still 6.5. If a 0.5 FP carry cannot be mated to a half FP in the start speed, it may be carried forward again (and again) until used. When used, it is gone.
 
-\section{FP Expenditure Restrictions}
-\label{rule:changing-flight-type}
+    \section{FP Expenditure Restrictions}
+    \label{rule:changing-flight-type}
 
-To reflect the distance traveled forward while an aircraft is raising or lowering its nose, before any altitude change can occur, use the following restrictions.
+    To reflect the distance traveled forward while an aircraft is raising or lowering its nose, before any altitude change can occur, use the following restrictions.
 
-\paragraph{After Level Flight.} 
-If an aircraft chooses Diving or Climbing flight, and in the previous game turn it used Level flight, the first FP used in the current game turn must be an HFP. The remaining FPs may be mixed normally.
+    \paragraph{After Level Flight.}
+    If an aircraft chooses Diving or Climbing flight, and in the previous game turn it used Level flight, the first FP used in the current game turn must be an HFP. The remaining FPs may be mixed normally.
 
-\paragraph{After Climbing or Diving:} 
-If an aircraft chooses Diving or Climbing flight, and in the previous game turn it used the opposite (i.e., last turn = climb, this turn = dive), then HFPs equal to at least 1/2 the aircraft's speed (round down) must be expended before any VFPs can be used (representing distance flown while reversing nose attitude). Exception: High Pitch Rate capable aircraft need only expend HFPs equal to 1/3 their speed (round down) before using VFPs.
+    \paragraph{After Climbing or Diving:}
+    If an aircraft chooses Diving or Climbing flight, and in the previous game turn it used the opposite (i.e., last turn = climb, this turn = dive), then HFPs equal to at least 1/2 the aircraft's speed (round down) must be expended before any VFPs can be used (representing distance flown while reversing nose attitude). Exception: High Pitch Rate capable aircraft need only expend HFPs equal to 1/3 their speed (round down) before using VFPs.
 
-\paragraph{Same Flight Type.}
-If an aircraft continues a climbing or diving type of flight from one turn to the next, then its HFPs and VFPs may be expended in any order.
+    \paragraph{Same Flight Type.}
+    If an aircraft continues a climbing or diving type of flight from one turn to the next, then its HFPs and VFPs may be expended in any order.
 
-\section{Formation Flying}
-\label{rule:formations}
+    \section{Formation Flying}
+    \label{rule:formations}
 
-A formation is in effect when one or more aircraft fly and/or operate together as a unit while in close proximity to each other. Formations usually allow for better teamwork.
+    A formation is in effect when one or more aircraft fly and/or operate together as a unit while in close proximity to each other. Formations usually allow for better teamwork.
 
-\paragraph{Formation Types.} Two types of formations are possible: Close and Tactical. Close formations are designated by stacking aircraft in the same hex. Tactical formations exist whenever certain spacing conditions are met.
+    \paragraph{Formation Types.} Two types of formations are possible: Close and Tactical. Close formations are designated by stacking aircraft in the same hex. Tactical formations exist whenever certain spacing conditions are met.
 
-\paragraph{Formation Size.} Formations can be of the following sizes:
+    \paragraph{Formation Size.} Formations can be of the following sizes:
 
-\begin{itemize}
-    \item Section (or Element): Two aircraft; one is the leader and the other is the wingman.
-    \item Division (or Flight): Three or four aircraft. One is the leader, and the others are wingmen. Alternately, a division may consist of two sections.
-\end{itemize}
+    \begin{itemize}
+        \item Section (or Element): Two aircraft; one is the leader and the other is the wingman.
+        \item Division (or Flight): Three or four aircraft. One is the leader, and the others are wingmen. Alternately, a division may consist of two sections.
+    \end{itemize}
 
-\paragraph{Formation Leaders.} Each formation must have a designated leader. Leaders are chosen at the start of play or indicated in the scenarios.  If not defined in the scenarios, one division leader is allowed for each four jets in play, and one section leader for each two jets. A division leader doubles as a section leader. During play, formations may split or form according to the leaders available.
+    \paragraph{Formation Leaders.} Each formation must have a designated leader. Leaders are chosen at the start of play or indicated in the scenarios.  If not defined in the scenarios, one division leader is allowed for each four jets in play, and one section leader for each two jets. A division leader doubles as a section leader. During play, formations may split or form according to the leaders available.
 
-\paragraph{Loss of Formation Leaders.} Wingmen always begin play as part of a particular formation. If their original formation leader is lost and no other qualified leader in that formation exists, that formation is dissolved. The former wingmen may join other formations by moving into formation parameters on those leaders. They will not get the initiative benefits but do avoid any penalty for not being in formation.
+    \paragraph{Loss of Formation Leaders.} Wingmen always begin play as part of a particular formation. If their original formation leader is lost and no other qualified leader in that formation exists, that formation is dissolved. The former wingmen may join other formations by moving into formation parameters on those leaders. They will not get the initiative benefits but do avoid any penalty for not being in formation.
 
-\subsection{Close Formations}
-\label{rule:close-formations}
+    \subsection{Close Formations}
+    \label{rule:close-formations}
 
-Up to four aircraft may stack together in the same hex at the same altitude as a close formation. The close formation stack is moved as a single entity when it is the formation leader's time to move. All aircraft in the slack fly exactly as the leader does and must maintain the same speed, altitude and facing as the leader.
+    Up to four aircraft may stack together in the same hex at the same altitude as a close formation. The close formation stack is moved as a single entity when it is the formation leader's time to move. All aircraft in the slack fly exactly as the leader does and must maintain the same speed, altitude and facing as the leader.
 
-\paragraph{Forming Close Formations.} A close formation may be formed prior to the beginning of a scenario (during set up), or in the Aircraft Admin Phase of a game turn whenever two, three, or four friendly aircraft end up in the same position with the same exact facing, speed and altitude.
+    \paragraph{Forming Close Formations.} A close formation may be formed prior to the beginning of a scenario (during set up), or in the Aircraft Admin Phase of a game turn whenever two, three, or four friendly aircraft end up in the same position with the same exact facing, speed and altitude.
 
-\paragraph{Splitting Close Formations.} A close formation may split up by declaring the intent to detach airplanes from the stack when it moves. Aircraft which detach are left in the starting hex while the rest of the formation executes its flight. The detached aircraft are then flown.
+    \paragraph{Splitting Close Formations.} A close formation may split up by declaring the intent to detach airplanes from the stack when it moves. Aircraft which detach are left in the starting hex while the rest of the formation executes its flight. The detached aircraft are then flown.
 
-For example, a four-plane division wishes to split into two sections. Two airplanes (one being a section leader) detach and are left in place while the original division leader and his remaining wingman move. The two detached aircraft may now move elsewhere as a close formation, or split up individually.
+    For example, a four-plane division wishes to split into two sections. Two airplanes (one being a section leader) detach and are left in place while the original division leader and his remaining wingman move. The two detached aircraft may now move elsewhere as a close formation, or split up individually.
 
-A close formation may contain aircraft of differing types or configurations. When an aircraft in the formation is unable to match the leader's moves or speeds, it must detach itself from the formation. Close formations may place restrictions on the activities of wingmen and on the maneuverability of the leader.
+    A close formation may contain aircraft of differing types or configurations. When an aircraft in the formation is unable to match the leader's moves or speeds, it must detach itself from the formation. Close formations may place restrictions on the activities of wingmen and on the maneuverability of the leader.
 
-\subsection{Tactical Formations}
+    \subsection{Tactical Formations}
 
-A tactical formation exists anytime a designated formation leader and his wingmen meet the following parameters:
+    A tactical formation exists anytime a designated formation leader and his wingmen meet the following parameters:
 
-\begin{itemize}
-    \item When they are within six hexes of each other,
-    \item and within three altitude levels of each other,
-    \item and the wingmen’s' facings are no more than \degrees{60} different from the leader's facing (left or right),
-    \item and the leader is not in the wingman's blind arc.
-\end{itemize}
+    \begin{itemize}
+        \item When they are within six hexes of each other,
+        \item and within three altitude levels of each other,
+        \item and the wingmen’s' facings are no more than \degrees{60} different from the leader's facing (left or right),
+        \item and the leader is not in the wingman's blind arc.
+    \end{itemize}
 
-Tactical formations can be formed or broken at any time during play by simply flying the aircraft into or out of these established parameters. A tactical formation cannot have more than four aircraft in it. There are no maneuver or combat restrictions in a tactical formation.
+    Tactical formations can be formed or broken at any time during play by simply flying the aircraft into or out of these established parameters. A tactical formation cannot have more than four aircraft in it. There are no maneuver or combat restrictions in a tactical formation.
 
 \end{advancedrules}
