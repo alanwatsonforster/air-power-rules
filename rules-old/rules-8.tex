@@ -207,9 +207,20 @@ It moves ahead two HFPs, descends 1 level with a VFP, moves ahead another two HF
 An aircraft may unload in level flight.
 As usual for level flight, all of its FPs are HFPs, but some of these may be \emph{unloaded}.
 It may begin and end unloaded FPs at any point, but all of its unloaded FPs in a game turn must be consecutive.
-During the FP in which it expends unloaded FPs equal to half of its total FPs (round up), it loses one altitude level.
-If it unloads for all of its FPs, during its last FP it loses a second altitude level and ends the game turn in a steep dive.
-It receives 1.0 accel point per altitude level lost.
+
+\changedin{2B}{2B-unloading-and-one-fp}{
+
+    During the FP in which the aircraft expends unloaded FPs equal to half of its total FPs (round up), it loses one altitude level. If it unloads for all of its FPs, during its last FP it loses a second altitude level and ends the game turn in a steep dive.
+
+}{
+
+    If the aircraft has more than one FP, then during the FP in which it expends unloaded FPs equal to half of its total FPs (round up), it loses one altitude level. If it unloads for all of its FPs, during its last FP it loses a second altitude level and ends the game turn in a steep dive.
+
+    If the aircraft has only one FP and unloads, during its FP it may lose one altitude level or two altitude levels. If it loses two, it ends the game turn in a steep dive.
+
+}
+
+The aircraft receives 1.0 accel point per altitude level lost.
 
 An aircraft may not use an unloaded FP for turning flight and may not prepare for or execute any maneuver other than a slide.
 If it unloads while in turning flight or while preparing for a maneuver other than a slide, it implicitly aborts the turn or maneuver.
@@ -229,7 +240,6 @@ It gains 2.0 accel points and ends the turn in a steep dive.
 Since it ends the game turn in a steep dive, it could choose a vertical dive on the following game turn.
 
 }
-
 
 }
 
