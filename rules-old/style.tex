@@ -199,19 +199,28 @@ minus \fontdimen4\font}
 }
 
 \makeatletter
-\renewcommand\section{%
+\renewcommand
+\section{%
     \@startsection{section}{1}%
-        {\z@}%
-        {-1.0ex \@plus 1.0ex \@minus -0.2ex}%
-        {1.0ex \@plus 0.2ex}%
-        {\normalfont\Large\bfseries\raggedright}%
+    {\z@}%
+    {-1.5ex \@plus 1.0ex \@minus -0.2ex}%
+    {1.0ex \@plus 0.2ex}%
+    {\normalfont\Large\bfseries\raggedright}%
+}
+\renewcommand
+\subsection{%
+    \@startsection{subsection}{2}%
+    {\z@}%
+    {-1.0ex \@plus 1.0ex \@minus -0.2ex}%
+    {1.0ex \@plus 0.2ex}%
+    {\normalfont\large\bfseries\raggedright}%
 }
 \renewcommand\paragraph{%
     \@startsection{paragraph}{4}%
-        {\z@}%
-        {\parskip}%
-        {-\interwordspace}%
-        {\normalfont\normalsize\bfseries}%
+    {\z@}%
+    {\parskip}%
+    {-\interwordspace}%
+    {\normalfont\normalsize\bfseries}%
 }
 \makeatother
 
