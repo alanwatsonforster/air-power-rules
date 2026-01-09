@@ -27,26 +27,32 @@
 \newcommand{\plus}[1]{\textplus#1}
 \newcommand{\plusafter}[1]{#1\textplus}
 \newcommand{\binaryplus}[2]{\mbox{#1\space\textplus\space#2}}
+\newcommand{\tightbinaryplus}[2]{\mbox{#1\textplus#2}}
 
 \newcommand{\minus}[1]{\textminus#1}
 \newcommand{\minusafter}[1]{#1\textminus}
 \newcommand{\binaryminus}[2]{\mbox{#1\space\textminus\space#2}}
+\newcommand{\tightbinaryminus}[2]{\mbox{#1\textminus#2}}
 
 \newcommand{\binaryplusorminus}[2]{#1~\textplusorminus~#2}
 
 \newcommand{\multiplybefore}[1]{\textmultiplication#1}
 \newcommand{\multiplyafter}[1]{#1\textmultiplication}
 \newcommand{\binarymultiply}[2]{\mbox{#1\space\textmultiplication\space#2}}
+\newcommand{\tightbinarymultiply}[2]{\mbox{#1\textmultiplicationce#2}}
 
-\newcommand{\binarydivide}[2]{\mbox{#1\space\textdivision#2}}
+\newcommand{\binarydivide}[2]{\mbox{#1\space\textdivision\space#2}}
+\newcommand{\tightbinarydivide}[2]{\mbox{#1\textdivision#2}}
 
-\newcommand{\lessthanbefore}[1]{<#1}
-\newcommand{\lessthanorequaltobefore}[1]{\textlessthanorequal#1}
-\newcommand{\greaterthanbefore}[1]{>#1}
-\newcommand{\greaterthanorequaltobefore}[1]{\textgreaterthanorequal#1}
+\newcommand{\lessthanbefore}[1]{\mbox{<#1}}
+\newcommand{\lessthanorequaltobefore}[1]{\mbox{\textlessthanorequal#1}}
+\newcommand{\greaterthanbefore}[1]{\mbox{>#1}}
+\newcommand{\greaterthanorequaltobefore}[1]{\mbox{\textgreaterthanorequal#1}}
 
-\newcommand{\binaryrelation}[3]{#1~#2~#3}
-\newcommand{\triperelation}[5]{#1~#2~#3~#4~#5}
+\newcommand{\binaryrelation}[3]{\mbox{#1\space#2\space#3}}
+\newcommand{\tightbinaryrelation}[3]{\mbox{#1#2#3}}
+\newcommand{\triperelation}[5]{\mbox{#1\space#2\space#3\space#4\space#5}}
+\newcommand{\tighttriperelation}[5]{\mbox{#1#2#3#4#5}}
 
 \newcommand{\degrees}[1]{#1\textdegrees}
 

@@ -127,7 +127,7 @@ A sustained climb relies on maximum power and full lift and is the most efficien
 
 \end{itemize}
 
-Example of a SC with excess altitude gain: A MiG-21 with a speed of 6.0 in the LO band, CL configured, and at AB power has a CCC value of 4. It may have up to 4 VFPs and chooses to do so. Since the CCC value is greater than 2.0 it may gain two levels per VFP. The player elects to move as follows; H, H, V+2, V+2, V+1, V+1 (moves forward two hexes and uses the four VFPs to gain 6 altitude levels). 0.5 Decel is incurred for each of the first four levels gained (the amount = to CCC value), and 1.0 decel for each of the last two (the amount exceeding CCC value). Total decel for climbing is 4.0.
+Example of a SC with excess altitude gain: A MiG-21 with a speed of 6.0 in the LO band, CL configured, and at AB power has a CCC value of 4. It may have up to 4 VFPs and chooses to do so. Since the CCC value is greater than 2.0 it may gain two levels per VFP. The player elects to move as follows; H, H, \tightbinaryplus{V}{2}, \tightbinaryplus{V}{2}, \tightbinaryplus{V}{1}, \tightbinaryplus{V}{1} (moves forward two hexes and uses the four VFPs to gain 6 altitude levels). 0.5 Decel is incurred for each of the first four levels gained (the amount = to CCC value), and 1.0 decel for each of the last two (the amount exceeding CCC value). Total decel for climbing is 4.0.
 
 }{
 
@@ -157,7 +157,7 @@ If the CC is exactly 1.0 or 2.0, each VFP gains 1 level. Otherwise, the first VF
 
 For computing DPs, on the game turn in which an aircraft attains a whole altitude level by accumulating fractional level, its climb capability has any fraction rounded up to the following whole number. Otherwise, its climb capability has any fraction rounded down. 
 
-Example: Consider a MiG-21 with a speed of 6.0 in the LO band, CL configured, and using afterburner power. It has a CC of 4.0. It may use up to 4 VFPs, and chooses to use all of them. Since its CC is more than 2.0, it may gain two levels per VFP. The player elects to move as follows; H, H, V+2, V+2, V+1, V+1 (i.e., move forward two hexes and use the four VFPs to gain six altitude levels). The aircraft receives 0.5 DPs for each of the first four levels gained (up to the CC) and 1.0 DPs for each of the last two (in excess of the CC). It receives a total of 4.0 DPs for climbing.
+Example: Consider a MiG-21 with a speed of 6.0 in the LO band, CL configured, and using afterburner power. It has a CC of 4.0. It may use up to 4 VFPs, and chooses to use all of them. Since its CC is more than 2.0, it may gain two levels per VFP. The player elects to move as follows; H, H, \tightbinaryplus{V}{2}, \tightbinaryplus{V}{2}, \tightbinaryplus{V}{1}, \tightbinaryplus{V}{1} (i.e., move forward two hexes and use the four VFPs to gain six altitude levels). The aircraft receives 0.5 DPs for each of the first four levels gained (up to the CC) and 1.0 DPs for each of the last two (in excess of the CC). It receives a total of 4.0 DPs for climbing.
 }
 
 \subsection{Vertical Climbs}
