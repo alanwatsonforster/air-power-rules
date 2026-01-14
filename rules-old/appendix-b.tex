@@ -1,232 +1,94 @@
 %!TEX root = ./rules-working.tex
 %LTeX: enabled=false
 
-\appendixchapter{Play Aids}
+\addedin{3A}{3A-updating-adcs}{
+\appendixchapter{Updating ADCs}
+\label{appendix:updating-adcs}
 
-This appendix repeats all of the tables and figures from the main body of the rules, in order.
+ADCs for many aircraft have been published in {\AirSup}, {\AirStr}, {\TSOH}, and {\APJ}. Still more have been created by players interested in less common aircraft. 
 
-%\runningtitle{Air Power Play Aids (\thisversion\thissubversion)}
+Many of the values in these ADCs remains relevant under the current rules, but some need updating. This appendix describes how to identify and update earlier ADCs. Figures \ref{figure:example-adc-v1}, \ref{figure:example-adc-v2}, and \ref{figure:example-adc-v3} give example version 1, 2, and 3 ADCs for the same aircraft.
 
-\cleardoublepage
-\onecolumn
-\aidstrue
-\input{tables/table-sequence-of-play}
-\input{tables/table-sequence-of-play-expanded}
-\input{tables/table-aircraft-flight-rules}
-\input{tables/table-fractions}
-\clearpage
-\input{tables/table-acceleration}
-\input{tables/table-departed-flight}
-\input{tables/table-supersonic}
-\clearpage
-\input{tables/table-turn}
-\input{tables/table-turn-minimum-speed}
-\input{tables/table-gloc}
-\clearpage
-\input{tables/table-gun-and-rocket-attack-modifiers}
-\input{tables/table-rocket-attack}
-\clearpage
-\input{tables/table-aircraft-damage-effects}
-\input{tables/table-aircraft-damage}
-\input{tables/table-system-loss}
-\input{tables/table-cumulative-damage}
-\input{tables/table-progressive-damage}
-\input{tables/table-optional-advanced-aircraft-damage}
-\clearpage
-\input{tables/table-visual-sighting}
-\input{tables/table-visual-sighting-modifiers}
-\clearpage
-\input{tables/table-initiative}
-\clearpage
-\input{tables/table-missile-launch-modifiers}
-\input{tables/table-missile-flight-rules}
-\input{tables/table-missile-attack-modifiers}
-\input{tables/table-missile-speed-attenuation-factor}
-\clearpage
-\input{tables/table-irm-field-of-view-limits}
-\input{tables/table-irm-angle-off-limits}
-\clearpage
-\input{tables/table-radar}
-\addedin{3A}{3A-combined-arcs}{
-    \input{tables/table-combined-arcs}
-}
-\clearpage
-\input{tables/table-crew-generation}
-\input{tables/table-crew-modifiers-summary}
-\input{tables/table-crew-quality-restrictions}
-\input{tables/table-crew-ejection}
-\input{tables/table-crew-post-egress-fate}
-\clearpage
-\input{tables/table-internal-dds}
-\input{tables/table-ew-decoy}
-\input{tables/table-ew-coverage}
-\input{tables/table-ew-bjm}
-\clearpage
-\input{tables/table-terrain-effects}
-\clearpage
-\input{tables/table-ground-units.tex}
-\input{tables/table-aiming.tex}
-\input{tables/table-air-to-ground-release-points.tex}
-\input{tables/table-air-to-ground-fas-computation.tex}
-\input{tables/table-air-to-ground-attack-results.tex}
-\input{tables/table-air-to-ground-attack-modifiers.tex}
-\clearpage
-\input{tables/table-air-to-ground-rocket-modifiers.tex}
-\clearpage
-\input{tables/table-aaa-unit-attack-modifiers.tex}
-\input{tables/table-djm-and-chaff-effects-against-fcrs.tex}
-\input{tables/table-jinking.tex}
-\input{tables/table-random-aaa.tex}
-\clearpage
-\input{tables/table-sam-launch-modifiers.tex}
-\input{tables/table-ewr-pass-down-modifiers.tex}
-\input{tables/table-sam-optical-lock-on-modifiers.tex}
-\input{tables/table-sam-radar-lock-on-modifiers.tex}
-\input{tables/table-sam-break-lock.tex}
-\clearpage
-\input{tables/table-bingo}
-\clearpage
-\input{tables/table-weather}
-\input{tables/table-sun-angle}
-\clearpage
-\addedin{2A}{2A-maritime-operations}{
-    \input{tables/table-radar-horizon.tex}
-    \input{tables/table-ship-movement.tex}
-    \input{tables/table-naval-critical-damage.tex}
-    \input{tables/table-asm-search-patterns.tex}
-    \input{tables/table-asm-hit-table.tex}
-    \clearpage
+
+\section{Identifying ADC Versions}
+
+First-edition ADCs can be identified in one of two ways:
+\begin{itemize} 
+\item They have the idle power labeled “Idle FP” or similar and the speedbrake row labeled “Spbr.\ FP” or similar. 
+\item They have “v1” in the upper right, next to the text “Air Power”.
+\end{itemize}
+
+Second-edition ADCs can be identified in one of two ways:
+\begin{itemize} 
+\item They have the idle power labeled “Idle DP” or similar and the speedbrake row labeled “Spbr.\ DP” or similar. 
+\item They have “v2” in the upper right, next to the text “Air Power”.
+\end{itemize}
+
+\addedin{3A}{3A-turn-drag}{
+Third-edition ADCs can be identified in one way:
+\begin{itemize} 
+\item They have “v3” in the upper right, next to the text “Air Power”.
+\end{itemize}
 }
 
-\clearpage
+\section{Updating First-Edition ADCs}
 
-\silentlychangedin{1B}{1B-figures}{
-    \begin{onecolumnfigure}
-    \simplefigurecaption{Air to Air Gun Attack:Legal Target Positions}
-    \medskip
-    \includegraphics[width=1.0\linewidth]{figures/aids-gun-attack.pdf}
-    \end{onecolumnfigure}
-}{
-    \input{figures/figure-air-to-air-gun-attacks}
-}
+To update first-edition ADCs for the second-edition rules:
 
-\silentlychangedin{1B}{1B-figures}{
-    \begin{twocolumnfigure}
-    \simplefigurecaption{Angle-Off Arcs}
-    \medskip
-    \includegraphics[width=1.0\linewidth]{figures/aids-angle-off-diagrams.pdf}
-    \end{twocolumnfigure}
-}{
-    \input{figures/figure-angle-off}
-}
+\begin{itemize}
 
-\silentlychangedin{1B}{1B-figures}{
-    \begin{twocolumnfigure}
-    \simplefigurecaption{SSGT Legal Lines of Approach}
-    \medskip
-    \includegraphics[width=1.0\linewidth]{figures/aids-ssgt.pdf}
-    \end{twocolumnfigure}
-}{
-    \input{figures/figure-ssgt-lines}
-}
+\itemaddedin{2A}{2A-idle}{Multiply the Idle FP values by two and interpret them as Idle DP values.}
 
-\silentlychangedin{1B}{1B-figures}{
-    \begin{onecolumnfigure}
-    \simplefigurecaption{AIR-2 Genie Scatter}
-    \medskip
-    \includegraphics[width=1.0\linewidth]{figures/aids-genie-scatter.pdf}
-    \addedin{1C}{1C-apj-23-errata}{
-        \medskip
-        \begin{minipage}{1.0\linewidth}
-        The aircraft counter represents the Genie's start position and facing from which the scattering is determined.
-        \end{minipage}
+\itemaddedin{2A}{2A-spbr}{Multiply the SPBR FP values by two and interpret them as SPBR DP values.}
+
+\itemaddedin{2B}{2B-roll-hfp-cost}{All displacement and lag rolls cost 1.0 HFP. Remove the roll HFP cost or replace it with 1.0.}
+
+\end{itemize}
+
+\silentlyaddedin{3A}{}{
+
+Then apply the additional changes described below to update a second-edition ADC for the third-edition rules.
+
+\section{Updating Second-Edition ADCs}
+
+To update second-edition ADCs for the third-edition rules:
+
+\begin{itemize}
+
+    \itemaddedin{3W}{3W-load-rounding}{As load totals are no longer rounded down, the load limits need adjusting:
+    \begin{itemize}
+        \item 
+        If the original load limit for CL configuration is “0--n”, the new load limit is “<(n+1)”.
+        \item 
+        If the original load limit for 1/2 configuration is “m--n”, the new load limit for 1/2 is “<(n+1)”.
+        \item
+        If the original load limit for DT configuration is “\plusafter{n}”, the new load limit for DT is “\greaterthanbefore{n}”.
+    \end{itemize}
     }
-    \end{onecolumnfigure}
-}{
-    \input{figures/figure-genie-scatter}
-}
 
-\silentlychangedin{1B}{1B-figures}{
-    \begin{onecolumnfigure}
-    \simplefigurecaption{Crash Site Determination}
-    \medskip
-    \includegraphics[width=1.0\linewidth]{figures/aids-crash-site.pdf}
-    \end{onecolumnfigure}
-}{
-    \input{figures/figure-crash-sites}
-}
+    \itemaddedin{3A}{3A-turn-drag}{Take the original turn drag values, halve them, and add 0.5 for normal aircraft, 0.25 for LBR aircraft, and 0.75 for HBR aircraft.}
+    
+    \itemaddedin{3W}{3W-roll-drag}{Take the original roll drag values and add 0.5.}
 
-\silentlychangedin{1B}{1B-figures}{
-    \begin{onecolumnfigure}
-    \simplefigurecaption{Slide Maneuver}
-    \medskip
-    \includegraphics[width=0.6\linewidth]{figures/aids-slide.pdf}
-    \end{onecolumnfigure}
-}{
-    \input{figures/figure-slide-maneuvers}
-}
+\end{itemize}
 
-\silentlychangedin{1B}{1B-figures}{
-    \begin{onecolumnfigure}
-    \simplefigurecaption{Displacement Roll Maneuver}
-    \medskip
-    \includegraphics[width=0.8\linewidth]{figures/aids-displacement-roll.pdf}
-    \end{onecolumnfigure}
-}{
-    \input{figures/figure-displacement-roll-maneuvers}
-}
+\begin{twocolumnfigure}
+    \includegraphics[width=0.90\linewidth]{figures/example-adc-v1.pdf}
+    \caption{An example version 1 ADC for the F-4E Phantom II.}
+    \label{figure:example-adc-v1}
+\end{twocolumnfigure}
 
-\silentlychangedin{1B}{1B-figures}{
-    \begin{onecolumnfigure}
-    \simplefigurecaption{Lag Roll Maneuver}
-    \medskip
-    \includegraphics[width=0.8\linewidth]{figures/aids-lag-roll.pdf}
-    \end{onecolumnfigure}
-}{
-    \input{figures/figure-lag-roll-maneuvers}
-}
+\begin{twocolumnfigure}
+    \includegraphics[width=0.90\linewidth]{figures/example-adc-v2.pdf}
+    \caption{An example version 2 ADC for the F-4E Phantom II.}
+    \label{figure:example-adc-v2}
+\end{twocolumnfigure}
 
-\silentlychangedin{1B}{1B-figures}{
-    \begin{onecolumnfigure}
-    \simplefigurecaption{Barrel Roll Maneuver}
-    \medskip
-    \includegraphics[width=0.6\linewidth]{figures/aids-barrel-roll.pdf}
-    \end{onecolumnfigure}
-}{
-    \input{figures/figure-barrel-roll-maneuvers}
-}
+\begin{twocolumnfigure}
+    \includegraphics[width=0.90\linewidth]{figures/example-adc-v3.pdf}
+    \caption{An example version 3 ADC for the F-4E Phantom II.}
+    \label{figure:example-adc-v3}
+\end{twocolumnfigure}
 
-\silentlychangedin{1B}{1B-figures}{
-    \begin{twocolumnfigure}
-    \simplefigurecaption{Limited Radar Arcs}
-    \medskip
-    \includegraphics[width=1.0\linewidth]{figures/aids-limited-arc.pdf}
-    \end{twocolumnfigure}
-}{
-    \input{figures/figure-limited-arc}
 }
-
-\addedin{2A}{2A-missile-attacks}{
-    \input{figures/figure-missile-attacks}
 }
-
-\silentlychangedin{1B}{1B-figures}{
-    \begin{twocolumnfigure}
-    \simplefigurecaption{Jamming Cell Formations}
-    \medskip
-    \includegraphics[width=0.6\linewidth]{figures/aids-jamming-cells.pdf}
-    \medskip
-    \begin{minipage}{0.6\linewidth}
-    \addedin{1C}{1C-apj-23-errata}{
-    \begin{enumerate}
-        \item To be in a valid Jamming Cell formation, aircraft must be in adjacent hexes (as depicted), with no more than 30 degrees difference in facing and within 1 altitude level of an adjacent aircraft.
-        \item The maximum size of a jamming cell is 4 aircraft. Each aircraft within those parameters has its ECM jammer rating increased by 1.
-    \end{enumerate}}
-    \end{minipage}
-    \end{twocolumnfigure}
-}{
-    \input{figures/figure-jamming-cell-formations}
-}
-
-\twocolumn
-\aidsfalse

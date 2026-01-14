@@ -1,19 +1,232 @@
 %!TEX root = ./rules-working.tex
 %LTeX: enabled=false
 
-\appendixchapter{Stores}
+\appendixchapter{Play Aids}
 
-This appendix contains the tables giving the characteristics of air-to-air missiles and other stores.
+This appendix repeats all of the tables and figures from the main body of the rules, in order.
 
-\addedin{3B}{3B-tables}{
-\input{tables/table-stores}
+%\runningtitle{Air Power Play Aids (\thisversion\thissubversion)}
+
+\cleardoublepage
+\onecolumn
+\aidstrue
+\input{tables/table-sequence-of-play}
+\input{tables/table-sequence-of-play-expanded}
+\input{tables/table-aircraft-flight-rules}
+\input{tables/table-fractions}
+\clearpage
+\input{tables/table-acceleration}
+\input{tables/table-departed-flight}
+\input{tables/table-supersonic}
+\clearpage
+\input{tables/table-turn}
+\input{tables/table-turn-minimum-speed}
+\input{tables/table-gloc}
+\clearpage
+\input{tables/table-gun-and-rocket-attack-modifiers}
+\input{tables/table-rocket-attack}
+\clearpage
+\input{tables/table-aircraft-damage-effects}
+\input{tables/table-aircraft-damage}
+\input{tables/table-system-loss}
+\input{tables/table-cumulative-damage}
+\input{tables/table-progressive-damage}
+\input{tables/table-optional-advanced-aircraft-damage}
+\clearpage
+\input{tables/table-visual-sighting}
+\input{tables/table-visual-sighting-modifiers}
+\clearpage
+\input{tables/table-initiative}
+\clearpage
+\input{tables/table-missile-launch-modifiers}
+\input{tables/table-missile-flight-rules}
+\input{tables/table-missile-attack-modifiers}
+\input{tables/table-missile-speed-attenuation-factor}
+\clearpage
+\input{tables/table-irm-field-of-view-limits}
+\input{tables/table-irm-angle-off-limits}
+\clearpage
+\input{tables/table-radar}
+\addedin{3A}{3A-combined-arcs}{
+    \input{tables/table-combined-arcs}
 }
-\input{tables/table-stores-missile-data}
-\input{tables/table-stores-BB}
-\input{tables/table-stores-WR}
-\input{tables/table-stores-GP}
-\input{tables/table-stores-EP}
-\input{tables/table-stores-EP-IRJM}
-\input{tables/table-stores-FT}
-\input{tables/table-stores-RK}
-\input{tables/table-stores-ARM}
+\clearpage
+\input{tables/table-crew-generation}
+\input{tables/table-crew-modifiers-summary}
+\input{tables/table-crew-quality-restrictions}
+\input{tables/table-crew-ejection}
+\input{tables/table-crew-post-egress-fate}
+\clearpage
+\input{tables/table-internal-dds}
+\input{tables/table-ew-decoy}
+\input{tables/table-ew-coverage}
+\input{tables/table-ew-bjm}
+\clearpage
+\input{tables/table-terrain-effects}
+\clearpage
+\input{tables/table-ground-units.tex}
+\input{tables/table-aiming.tex}
+\input{tables/table-air-to-ground-release-points.tex}
+\input{tables/table-air-to-ground-fas-computation.tex}
+\input{tables/table-air-to-ground-attack-results.tex}
+\input{tables/table-air-to-ground-attack-modifiers.tex}
+\clearpage
+\input{tables/table-air-to-ground-rocket-modifiers.tex}
+\clearpage
+\input{tables/table-aaa-unit-attack-modifiers.tex}
+\input{tables/table-djm-and-chaff-effects-against-fcrs.tex}
+\input{tables/table-jinking.tex}
+\input{tables/table-random-aaa.tex}
+\clearpage
+\input{tables/table-sam-launch-modifiers.tex}
+\input{tables/table-ewr-pass-down-modifiers.tex}
+\input{tables/table-sam-optical-lock-on-modifiers.tex}
+\input{tables/table-sam-radar-lock-on-modifiers.tex}
+\input{tables/table-sam-break-lock.tex}
+\clearpage
+\input{tables/table-bingo}
+\clearpage
+\input{tables/table-weather}
+\input{tables/table-sun-angle}
+\clearpage
+\addedin{2A}{2A-maritime-operations}{
+    \input{tables/table-radar-horizon.tex}
+    \input{tables/table-ship-movement.tex}
+    \input{tables/table-naval-critical-damage.tex}
+    \input{tables/table-asm-search-patterns.tex}
+    \input{tables/table-asm-hit-table.tex}
+    \clearpage
+}
+
+\clearpage
+
+\silentlychangedin{1B}{1B-figures}{
+    \begin{onecolumnfigure}
+    \simplefigurecaption{Air to Air Gun Attack:Legal Target Positions}
+    \medskip
+    \includegraphics[width=1.0\linewidth]{figures/aids-gun-attack.pdf}
+    \end{onecolumnfigure}
+}{
+    \input{figures/figure-air-to-air-gun-attacks}
+}
+
+\silentlychangedin{1B}{1B-figures}{
+    \begin{twocolumnfigure}
+    \simplefigurecaption{Angle-Off Arcs}
+    \medskip
+    \includegraphics[width=1.0\linewidth]{figures/aids-angle-off-diagrams.pdf}
+    \end{twocolumnfigure}
+}{
+    \input{figures/figure-angle-off}
+}
+
+\silentlychangedin{1B}{1B-figures}{
+    \begin{twocolumnfigure}
+    \simplefigurecaption{SSGT Legal Lines of Approach}
+    \medskip
+    \includegraphics[width=1.0\linewidth]{figures/aids-ssgt.pdf}
+    \end{twocolumnfigure}
+}{
+    \input{figures/figure-ssgt-lines}
+}
+
+\silentlychangedin{1B}{1B-figures}{
+    \begin{onecolumnfigure}
+    \simplefigurecaption{AIR-2 Genie Scatter}
+    \medskip
+    \includegraphics[width=1.0\linewidth]{figures/aids-genie-scatter.pdf}
+    \addedin{1C}{1C-apj-23-errata}{
+        \medskip
+        \begin{minipage}{1.0\linewidth}
+        The aircraft counter represents the Genie's start position and facing from which the scattering is determined.
+        \end{minipage}
+    }
+    \end{onecolumnfigure}
+}{
+    \input{figures/figure-genie-scatter}
+}
+
+\silentlychangedin{1B}{1B-figures}{
+    \begin{onecolumnfigure}
+    \simplefigurecaption{Crash Site Determination}
+    \medskip
+    \includegraphics[width=1.0\linewidth]{figures/aids-crash-site.pdf}
+    \end{onecolumnfigure}
+}{
+    \input{figures/figure-crash-sites}
+}
+
+\silentlychangedin{1B}{1B-figures}{
+    \begin{onecolumnfigure}
+    \simplefigurecaption{Slide Maneuver}
+    \medskip
+    \includegraphics[width=0.6\linewidth]{figures/aids-slide.pdf}
+    \end{onecolumnfigure}
+}{
+    \input{figures/figure-slide-maneuvers}
+}
+
+\silentlychangedin{1B}{1B-figures}{
+    \begin{onecolumnfigure}
+    \simplefigurecaption{Displacement Roll Maneuver}
+    \medskip
+    \includegraphics[width=0.8\linewidth]{figures/aids-displacement-roll.pdf}
+    \end{onecolumnfigure}
+}{
+    \input{figures/figure-displacement-roll-maneuvers}
+}
+
+\silentlychangedin{1B}{1B-figures}{
+    \begin{onecolumnfigure}
+    \simplefigurecaption{Lag Roll Maneuver}
+    \medskip
+    \includegraphics[width=0.8\linewidth]{figures/aids-lag-roll.pdf}
+    \end{onecolumnfigure}
+}{
+    \input{figures/figure-lag-roll-maneuvers}
+}
+
+\silentlychangedin{1B}{1B-figures}{
+    \begin{onecolumnfigure}
+    \simplefigurecaption{Barrel Roll Maneuver}
+    \medskip
+    \includegraphics[width=0.6\linewidth]{figures/aids-barrel-roll.pdf}
+    \end{onecolumnfigure}
+}{
+    \input{figures/figure-barrel-roll-maneuvers}
+}
+
+\silentlychangedin{1B}{1B-figures}{
+    \begin{twocolumnfigure}
+    \simplefigurecaption{Limited Radar Arcs}
+    \medskip
+    \includegraphics[width=1.0\linewidth]{figures/aids-limited-arc.pdf}
+    \end{twocolumnfigure}
+}{
+    \input{figures/figure-limited-arc}
+}
+
+\addedin{2A}{2A-missile-attacks}{
+    \input{figures/figure-missile-attacks}
+}
+
+\silentlychangedin{1B}{1B-figures}{
+    \begin{twocolumnfigure}
+    \simplefigurecaption{Jamming Cell Formations}
+    \medskip
+    \includegraphics[width=0.6\linewidth]{figures/aids-jamming-cells.pdf}
+    \medskip
+    \begin{minipage}{0.6\linewidth}
+    \addedin{1C}{1C-apj-23-errata}{
+    \begin{enumerate}
+        \item To be in a valid Jamming Cell formation, aircraft must be in adjacent hexes (as depicted), with no more than 30 degrees difference in facing and within 1 altitude level of an adjacent aircraft.
+        \item The maximum size of a jamming cell is 4 aircraft. Each aircraft within those parameters has its ECM jammer rating increased by 1.
+    \end{enumerate}}
+    \end{minipage}
+    \end{twocolumnfigure}
+}{
+    \input{figures/figure-jamming-cell-formations}
+}
+
+\twocolumn
+\aidsfalse
