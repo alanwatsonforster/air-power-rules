@@ -1,44 +1,80 @@
-%!TEX root = ./rules-working.tex
+%!TEX root = ../rules-working.tex
 %LTeX: enabled=true
 
 \addedin{1B}{1B-tables}{
-\begin{twocolumntablefloat}
-\begin{twocolumntable}
+    \begin{twocolumntablefloat}
+        \begin{twocolumntable}
 
-\tablecaption{table:air-to-ground-fas-computation}{Air-to-Ground FAS Computation.}
+            \tablecaption{table:air-to-ground-fas-computation}{Air-to-Ground FAS Computation.}
 
-\begin{tabularx}{1.0\linewidth}{lLl}
-\toprule
-Condition&Weapon Types&Modifier\doubleasteriskmark\\
-\midrule
-Individual Weapons&All&Use listed strength against hard/soft targets.\\
-Multiple Weapons&Guns&Sum the all attack ratings of all guns and GPs fired.\\
-&CBUs, RPs&Sum the attack strengths\\
-&RK Volley&2/3 sum of attack strengths \deletedin{2R}{2R-fas-rounding}{(round up)}\\
-&BBs, BGs, Fire, Napalm&2/3 sum as above\\
-&FAE&1/2 sum of attack strengths \deletedin{2R}{2R-fas-rounding}{(round up)}\\
-\tablerowaddedin{1C}{1C-original-play-aids}{%
-Infantry in open (not in bunkers or buildings)&
-Napalm, Fire&Multiply by 1.5
-}%
-\tablerowaddedin{1C}{1C-original-play-aids}{%
-Damaged POL, buildings, or urban hexes&
-Napalm, Fire, and Incendiary&Multiply by 2.0
-}%
-\tablerowaddedin{1C}{1C-original-play-aids}{%
-Runways, roads, bridges, dams, pier, and rail lines&
-CBU, Napalm, and Fire&Zero attack strength
-}%
-Versus Secondary Targets\asteriskmark&
-CBUs, Fire, Napalm, and RP salvoes of 4 or more pods&2/3 FAS used on primary target\\
-&All others&1/3 FAS used on primary target\\
-\bottomrule
-\end{tabularx}
-\begin{tablenote}{1.0\linewidth}
-\asteriskmark Make adjustments for hard/soft targets.
-\addedin{2R}{2R-fas-rounding}{\doubleasteriskmark Round the FAS up after multiplying by all applicable factors.}
+            % \begin{tabularx}{1.0\linewidth}{LLl}
+            %     \toprule
+            %     Condition&Weapon Types&Modifier\\
+            %     \midrule
+            %     Individual Weapons&All&Use listed strength against hard/soft targets.\\
+            %     Multiple Weapons&Guns&Sum the all attack ratings of all guns and GPs fired.\\
+            %     &CBUs, RPs&Sum the attack strengths\\
+            %     &RK Volley&2/3 sum of attack strengths \deletedin{2R}{2R-fas-rounding}{(round up)}\\
+            %     &BBs, BGs, Fire, Napalm&2/3 sum as above\\
+            %     &FAE&1/2 sum of attack strengths \deletedin{2R}{2R-fas-rounding}{(round up)}\\
+            %     \tablerowaddedin{1C}{1C-original-play-aids}{%
+            %         Infantry in open (not in bunkers or buildings)&
+            %         Napalm, Fire&Multiply by 1.5
+            %     }%
+            %     \tablerowaddedin{1C}{1C-original-play-aids}{%
+            %         Damaged POL, buildings, or urban hexes&
+            %         Napalm, Fire, and Incendiary&Multiply by 2.0
+            %     }%
+            %     \tablerowaddedin{1C}{1C-original-play-aids}{%
+            %         \changedin{1C}{1C-apj-23-errata}{Runways, roads, bridges, dams, piers, and rail lines}{Runways, roads, dams, piers, rail lines, hardened aircraft shelters, and steel/concrete bridges}&
+            %         \changedin{1C}{1C-apj-23-errata}{CBU, Napalm, and Fire}{CBUs, napalm, fire weapons, and rockets of less than 200~mm in size}&Zero attack strength
+            %     }%
+            %     \tablerowaddedin{1C}{1C-apj-23-errata}{%
+            %         Hardened aircraft shelters and steel/concrete bridges&
+            %         HE bombs with an attack strength of less than 1.0&Zero attack strength
+            %     }%
+            %     Versus Secondary Targets\asteriskmark&
+            %     CBUs, Fire, Napalm, and RP salvoes of 4 or more pods&2/3 FAS used on primary target\\
+            %     &All others&1/3 FAS used on primary target\\
+            %     \bottomrule
+            % \end{tabularx}
+            % \begin{tablenote}{1.0\linewidth}
+            %     \asteriskmark Make adjustments for hard/soft targets.
+            %     \addedin{2R}{2R-fas-rounding}{\asteriskmark After multiplying by all applicable factors, round down the FAS for secondary attacks and primary attacks with napalm or fire BBs/BGs and round up for primary attacks with other weapons.}
+            % \end{tablenote}
 
-\end{tablenote}
-\end{twocolumntable}
-\end{twocolumntablefloat}
+            \begin{tabularx}{1.0\linewidth}{Lll}
+                \toprule
+                Condition&Weapon Types&Modifier\doubleasteriskmark\\
+                \midrule
+                Multiple Weapons&Guns or GPs&\multiplybefore{1}\\
+                &RPs&\multiplybefore{1}\\
+                &RKs&\multiplybefore{\twothirds}\\
+                &Cluster BBs or BGs&\multiplybefore{1}\\
+                &FAE BBs or BGs&\multiplybefore{\onehalf}\\
+                &Other BBs or BGs&\multiplybefore{\twothirds}\\
+                Infantry not in bunkers or buildings&
+                Napalm or fire BBs or BGs&\multiplybefore{\threehalves}\\
+                Damaged POL, buildings, or urban hexes&
+                Napalm, fire, or incendiary BBs or BGs&\multiplybefore{2}\\
+                Runways, roads, dams, piers, and rail lines&
+                Napalm, fire, or cluster BBs or BGs&\multiplybefore{0}\\
+                &RKs/RPs of less than 200~mm&\multiplybefore{0}\\
+                Steel or concrete bridges and hardened aircraft shelters
+                &Napalm, fire, or cluster BBs or BGs&\multiplybefore{0}\\
+                &RKs or RPs of less than 200~mm&\multiplybefore{0}\\
+                &HE BB or BG with an attack strength of less than 1.0&\multiplybefore{0}\\
+                Secondary Attacks\asteriskmark&
+                Napalm, fire, or cluster BBs or BGs&\multiplybefore{\twothirds}\\
+                &Four or more RPs&\multiplybefore{\twothirds}\\
+                &Others weapons&\multiplybefore{\onethird}\\
+                \bottomrule
+            \end{tabularx}
+            \begin{tablenote}{1.0\linewidth}
+                \asteriskmark Make adjustments for hard/soft targets.
+                \doubleasteriskmark Sum the attack strengths of all the weapons used, multiply by all applicable factors, and then \changedin{2R}{2R-fas-rounding}{round up for attacks with multiple RKs or FAE BBs/BGs}{round down for secondary attacks and for primary attacks with napalm or fire BBs/BGs and round up for primary attacks with other weapons.}.
+            \end{tablenote}
+
+        \end{twocolumntable}
+    \end{twocolumntablefloat}
 }
