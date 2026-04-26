@@ -782,6 +782,11 @@ Version 2B contains nonauthoritative minor changes, normally to clarify existing
 
         EWR ECCM is always 0 in TSOH, but it could be different for more modern radars. I have added a rule that it can be different if specified in scenario notes.
 
+
+    \item\changetag{2B-fas-rounding}
+    
+    Explicitly state that the FAS is rounded after multiplying by all applicable factors. Complete the rounding rules, based on those in {\AirStr} and assuming primary attacks with a weapon of a given type always round the same way.
+    
     \item\changetag{2B-aiming-modifiers}
 
         The aiming modifier is now explicitly \minus{1} for FPs of at least 1/3 speed and \minus{2} for FPs of at least 2/3 speed.
@@ -845,13 +850,8 @@ Version 2B contains nonauthoritative minor changes, normally to clarify existing
 
 Version 2R is an internal version. It contains unauthoritative major changes intended for version 2B but currently under review.
 
-\begin{itemize}
-
-    \item\changetag{2R-fas-rounding}
-    
-    Explicitly state that the FAS is rounded after multiplying by all applicable factors. Complete the rounding rules, based on those in {\AirStr} and assuming primary attacks with a weapon of a given type always round the same way.
-
-\end{itemize}
+%\begin{itemize}
+%\end{itemize}
 
 \subsection{Version 2W}
 
