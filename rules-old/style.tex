@@ -1,8 +1,6 @@
 %!TEX root = ./rules-working.tex
 %LTeX: enabled=false
 
-\input{../../air-power-shared/latex/style.tex}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -190,16 +188,6 @@ minus \fontdimen4\font}
 \setlength{\columnseprule}{\columnseprule}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Style for the standard title page
-
-\let\originaltitle\title
-\renewcommand{\title}[1]{\originaltitle{\bfseries\Large\MakeUppercase{#1}}}
-\let\originalauthor\author
-\renewcommand{\author}[1]{\originalauthor{\parbox{0.5\linewidth}{\centering\itshape\normalsize #1}}}
-\let\originaldate\date
-\renewcommand{\date}[1]{\originaldate{\normalsize{#1}}}
-
 
 % The slash character in the following command is U+2044 FRACTION SLASH.
 \newcommand{\compactfraction}[2]{#1⁄#2}

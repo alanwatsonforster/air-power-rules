@@ -1,18 +1,10 @@
 %!LW recipe=latexmk (xelatex)
 %!TEX program = xelatex
 
-\documentclass[10pt]{report}
+\documentclass{report}
 
+\input{../../air-power-shared/latex/style.tex}
 \input style.tex
-
-\title{Updated Air Power Rules}
-\author{%
-    Alan Watson Forster
-    and
-    Carl Smeaton
-}
-\date{26 April 2026}
-\runningtitle{Updated Rules Project}
 
 \setcounter{secnumdepth}{0}
 %\setlist[enumerate,1]{label = (\alph*)}
@@ -21,9 +13,9 @@
 
 \begin{document}
 
-\twocolumn
-\thispagestyle{empty}
-\maketitle
+\maketitlepage{Updated Air Power Rules}{Alan Watson Forster \& Carl Smeaton}{26 April 2026}{}
+\runningtitle{Updated Rules Project}
+
 \suppressfloats
 \sloppy
 
