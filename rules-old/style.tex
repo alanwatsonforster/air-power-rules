@@ -19,18 +19,6 @@
 \usepackage{enotez}
 \usepackage{comment}
 
-% Basic spacing.
-
-\sloppy
-
-\newsavebox{\fitheightbox}
-\newenvironment{fitheight}[1]{%
-    \def\fitheight{#1}%
-    \begin{lrbox}{\fitheightbox}%
-}{%
-    \end{lrbox}%
-    \resizebox{!}{\fitheight}{\usebox{\fitheightbox}}%
-}
 
 % Sections
 
