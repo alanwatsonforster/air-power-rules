@@ -22,24 +22,22 @@
 
 % Sections
 
-
-
-\renewcommand{\chaptername}{Rule}
-
 \newcommand{\rulechapter}[1]{
     \typeout{}
     \typeout{==================================================================}
-    \chapter{#1}%
-    \addtocontents{toc}{\protect\vspace{-1ex}}%
-    \thispagestyle{fancy}%
+    \chapter{Rule \thechapter: #1}
+    \thispagestyle{fancy}
     \typeout{==================================================================}
     \typeout{}
 }
 \newcommand{\appendixchapter}[1]{
+    \typeout{}
+    \typeout{==================================================================}
     \typeout{Appendix \thechapter: #1}
-    \chapter{#1}%
-    \addtocontents{toc}{\protect\vspace{-1ex}}%
-    \thispagestyle{fancy}%
+    \chapter{Appendix \thechapter: #1}
+    \thispagestyle{fancy}
+    \typeout{==================================================================}
+    \typeout{}
 }
 
 \makeatletter
