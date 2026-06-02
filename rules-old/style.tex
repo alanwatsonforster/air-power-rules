@@ -3,22 +3,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{titletoc}
-\usepackage{fancyhdr}
-\usepackage{enumitem}
-\usepackage{hyperref}
-\usepackage{graphicx}
 \usepackage{xcolor}
-\usepackage{tabularx}
-\usepackage{tabulary}
-\usepackage{booktabs}
-\usepackage{multicol}
-\usepackage{microtype}
-\usepackage{multirow}
-\usepackage{pdflscape}
-\usepackage{enotez}
-\usepackage{comment}
-
 
 % Sections
 
@@ -78,25 +63,6 @@
 \begin{raggedleft} \emph{Relevant advanced rules: #1}\par
 \end{raggedleft}
 }
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Table of Contents
-
-\usepackage[toc]{multitoc}
-\renewcommand*{\multicolumntoc}{2}
-\setlength{\columnseprule}{\columnseprule}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% The slash character in the following command is U+2044 FRACTION SLASH.
-\newcommand{\compactfraction}[2]{#1⁄#2}
-
-\newcommand{\compactonequarter}{\compactfraction{1}{4}}
-\newcommand{\compactonethird}{\compactfraction{1}{3}}
-\newcommand{\compactonehalf}{\compactfraction{1}{2}}
-\newcommand{\compacttwothirds}{\compactfraction{2}{3}}
-\newcommand{\compactthreehalves}{\compactfraction{3}{2}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -184,17 +150,6 @@
 }{
     \end{figure*}
 }
-
-% Align floats in their own page or column to the top.
-% https://texfaq.org/FAQ-vertposfp
-\makeatletter
-\setlength{\@fptop}{5pt}
-\setlength{\@fpbot}{0pt plus 1fil}
-\setlength{\@fpsep}{5ex minus 0.1ex}
-\makeatother
-
-\setlength{\floatsep}{5ex minus 0.1ex}
-\setlength{\textfloatsep}{5ex plus 1fil minus 0.1ex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
