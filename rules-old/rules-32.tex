@@ -19,7 +19,7 @@ Moderate seas do not give any bonuses or penalties to radar or combat.
 
 When moderate or heavy seas are in effect, the scenario must specify the wind direction.  This affects the use of decoys (see rule \ref{rule:asm-decoys}).
 
-\paragraph{Radar Horizon.}
+\subsection{Radar Horizon}
 
 Because the sea is essentially flat, the radar horizon primarily depends on the height of the EWR above the water surface.  Heavy sea state can affect smaller ships because of wave heights and rolling of the radar beam, reducing the effective range of the radar.  Aircraft in TFF and ASM SS or SS+ missiles may be detected by ships with MTI capable EWR or “T” level capable SAMs having a line of sight to them. Table~\ref{table:radar-horizon} sets out the detection ranges in hexes.
 
@@ -29,7 +29,7 @@ Because the sea is essentially flat, the radar horizon primarily depends on the 
 
 Naval vessels are special targets whose characteristics are given in the Ship Data Tables rather than on their counters.  Ship counters always represent single sea vessels and must be faced\deletedin{3A}{3A-ship-facing}{, as for aircraft}.  Most ships are classified as warships, though some may be given other classifications such as fleet auxiliary, tanker, or transport.
 
-\paragraph{Ship Data Charts}
+\subsection{Ship Data Charts}
 The Ship Data Tables list the characteristics and values for each class of ship as follows:
 
 \begin{itemize}
@@ -67,13 +67,13 @@ The Ship Data Tables list the characteristics and values for each class of ship 
 
 \changedin{3A}{3A-ship-movement}{
 
-    \paragraph{Ship Movement.}
+    \subsection{Ship Movement}
 
     Ships may move on those turns specified by the scenario. Generally, warships can move one hex every other turn and merchants, tankers, and cargo ships can move one hex every fifth or sixth turn. They move at the end of the Flight Phase after all movement and ground/sea attacks are complete; they may only move one hex and must move directly ahead, as for aircraft.  Ships may not move onto hex-sides.  Unless otherwise specified, ships may always alter their heading by 30° every Flight Phase they are able to move, just before any forward movement takes place.  Warships (only) under Cruiser size may alter their heading up to 60° instead, but if they elect to do so they may not fire AAA or launch and/or guide SAMs in the following game turn.
 
 }{
 
-    \paragraph{Ship Movement Phase.}
+    \subsection{Ship Movement Phase}
 
     Actions related to ships' movement occur in the Ship Movement Phase, immediately after the Ground Unit Interactions phase. In the Ship Movement Phase:
     \begin{enumerate}
@@ -92,7 +92,7 @@ The Ship Data Tables list the characteristics and values for each class of ship 
 
     \input{tables/table-ship-movement.tex}
 
-    \paragraph{Ship Speed.}
+    \subsection{Ship Speed}
 
     Ships speeds are measured in knots, with 1 knot being approximately 1.15 mph. During the Ship Movement Phase, a ship may declare a new speed. The limits on the new speed depend on the size and type of ship, its current speed, whether it is turning, anchored, or crippled.
 
@@ -109,13 +109,13 @@ The Ship Data Tables list the characteristics and values for each class of ship 
 
     \end{itemize}
 
-    \paragraph{Ship Moves.}
+    \subsection{Ship Moves}
 
     The game scale has 100 mph or 87 knots corresponding to 1 hex per game turn. Since ships are slower than this, they do not move every game turn, but instead move one hex after accumulating game turns equal to or more than their current \emph{move cadence}. The count starts on the first game turn and is reset each time the ship moves one hex. A ship's move cadence is 87 divided by its speed in knots and rounded to the closest integer, with halves rounded up.
 
     For example, HMS {\itshape Arrow} is moving at 20 knots and has a move cadence of 4 (as 87/20 is 4.35 which rounds to 4). It will move forward one hex every four game turns.
 
-    \paragraph{Ship Turns.}
+    \subsection{Ship Turns}
 
     When a ship declares a turn, it indicates the direction and whether it is a \emph{normal} turn or a \emph{hard} turn.
 
@@ -140,41 +140,41 @@ The Ship Data Tables list the characteristics and values for each class of ship 
     \end{itemize}
     Figure \ref{figure:ship-movement-example} shows these moves and turns. Because of the hard turn declared during game turn 1, {\itshape Arrow} cannot perform AAA attacks or launch or guide SAMs on game turns 2 or 3, but it can on game turns 1 and 4.
 
-    \paragraph{Stopped Ships.} A stopped ship is one with a speed of 0 knots and that is neither anchored not crippled. It may not move or turn while stopped, but may increase its speed normally. Once its speed is more than 0 knots, it is no longer stopped and may move and turn normally.
+    \subsection{Stopped Ships} A stopped ship is one with a speed of 0 knots and that is neither anchored not crippled. It may not move or turn while stopped, but may increase its speed normally. Once its speed is more than 0 knots, it is no longer stopped and may move and turn normally.
 
-    \paragraph{Anchored Ships.} An anchored ship has a speed of 0 knots and may not increase its speed, move, or turn.
+    \subsection{Anchored Ships} An anchored ship has a speed of 0 knots and may not increase its speed, move, or turn.
 
-    \paragraph{Crippled Ships.} A crippled ship may not increase its speed, must decrease its speed at exactly half the maximum rate until its speed is 0 knots, and may not turn.
+    \subsection{Crippled Ships} A crippled ship may not increase its speed, must decrease its speed at exactly half the maximum rate until its speed is 0 knots, and may not turn.
 
 }
 
-\paragraph{Command Vessels.}
+\subsection{Command Vessels}
 
 Designated command ships have data\-links with friendly ships. If a command vessel detects a target with its EWR, all friendly ships with a line of sight to the target automatically detect it also.
 
-\paragraph{AEGIS.}
+\subsection{AEGIS}
 
 All AEGIS capable ships are considered command ships.   AEGIS EWRs passdown to their TTRs on a roll of 9 or less.  In addition, they may passdown to any friendly ship equipped with the SM-2 MR or SM-3 missile on a roll of 8 or less.  AEGIS vessels may illuminate air targets for other friendly ships firing the SM-2 MR or SM-3 missile.
 
-\paragraph{Self Defense.}  Naval targets (only) may sight and attack glide bombs, RG, RS and ARMs with AAA (not small-arms) and non-IR guided SAMs as if they were aircraft.  AAA may only affect weapons targeted at their ship, regardless of the type of fire used (AAA can engage any A/C within range and arc of fire).  SAMs may only launch if they are in the target's limited arc (ignore vertical limits).  Unless the External Stores Table specifies otherwise, the visibility and size numbers of all these weapons for combat purposes are \plus{2} (glide bombs) and \plus{4} (RG, RS, and ARMs) respectively.  Note that EWRs must roll to detect the weapon, even if launched from an already detected aircraft.  Any hit result of L or greater destroys the weapon.
+\subsection{Self Defense}  Naval targets (only) may sight and attack glide bombs, RG, RS and ARMs with AAA (not small-arms) and non-IR guided SAMs as if they were aircraft.  AAA may only affect weapons targeted at their ship, regardless of the type of fire used (AAA can engage any A/C within range and arc of fire).  SAMs may only launch if they are in the target's limited arc (ignore vertical limits).  Unless the External Stores Table specifies otherwise, the visibility and size numbers of all these weapons for combat purposes are \plus{2} (glide bombs) and \plus{4} (RG, RS, and ARMs) respectively.  Note that EWRs must roll to detect the weapon, even if launched from an already detected aircraft.  Any hit result of L or greater destroys the weapon.
 
-\paragraph{Naval Attack.} Attacks with all weapons other than ASMs are handled as for ground targets.  However, all BB attacks from level flight receive a \plus{2} die modifier unless they are attacking from the target's \arcplus{180} or \arcminus{30} arcs (inclusive of arc lines).  BZ counters are not placed unless the target ship takes 3 or more hits in a single attack.
+\subsection{Naval Attack} Attacks with all weapons other than ASMs are handled as for ground targets.  However, all BB attacks from level flight receive a \plus{2} die modifier unless they are attacking from the target's \arcplus{180} or \arcminus{30} arcs (inclusive of arc lines).  BZ counters are not placed unless the target ship takes 3 or more hits in a single attack.
 
 Each “D”, “2D” and “K” combat result corresponds to 1, 2, and 3 hits on the target ship.  Hits are cumulative with those of other attacks.   If hits are inflicted equal to the vessel's hull rating, the vessel is crippled and may not move, detect targets, fire weapons or employ jammers or decoys for the rest of the game.  If the total of hits exceeds the hull rating, the vessel is sinking, and in addition to the effects of being crippled, must roll one die at the end of the scenario, adding \plus{1} for each hit inflicted beyond the hull rating.  If the roll is equal to or greater than the ship's sinking number, the vessel has sunk; if the roll is less, it has been saved from sinking.
 
 The effects of suppression never apply to naval vessels.
 
-\paragraph{ARMs Versus Naval Radar.}  An ARM may attack only one radar aboard a naval vessel.  Naval vessels defend against ARMs as for any other weapon; however, if they shut down one radar, they must shut down all radars onboard.  If the ship's radars are shut down, Home on Jam capable ARMs may continue their attack if the target vessel is employing jamming.   Any “K” result will destroy the target radar (in addition to inflicting 3 hits on the vessel), and any other result may disable it as per the Target Radar Loss rules (see rule \ref{rule:arms}).  The Target Memory option may never be used against Naval Targets (Exception: Ships with a current movement of 0 (e.g., docked in port) can be attacked via Target Memory).
+\subsection{ARMs Versus Naval Radar}  An ARM may attack only one radar aboard a naval vessel.  Naval vessels defend against ARMs as for any other weapon; however, if they shut down one radar, they must shut down all radars onboard.  If the ship's radars are shut down, Home on Jam capable ARMs may continue their attack if the target vessel is employing jamming.   Any “K” result will destroy the target radar (in addition to inflicting 3 hits on the vessel), and any other result may disable it as per the Target Radar Loss rules (see rule \ref{rule:arms}).  The Target Memory option may never be used against Naval Targets (Exception: Ships with a current movement of 0 (e.g., docked in port) can be attacked via Target Memory).
 
-\paragraph{Critical Damage.} For each hit obtained against a naval vessel, the attacker must roll one die on the Table \ref{table:naval-critical-damage} and apply the result.  (Example: A 2D result would allow two critical rolls.)   If this results in a SAM, AAA or radar being disabled and more than one system is available, the actual system affected is determined randomly.
+\subsection{Critical Damage} For each hit obtained against a naval vessel, the attacker must roll one die on the Table \ref{table:naval-critical-damage} and apply the result.  (Example: A 2D result would allow two critical rolls.)   If this results in a SAM, AAA or radar being disabled and more than one system is available, the actual system affected is determined randomly.
 
 If the roll calls for a system to be disabled and no such system exists aboard the ship or is not currently operational, the roll has no effect.  Disabled systems may not function for the rest of the game.
 
 \input{tables/table-naval-critical-damage.tex}
 
-\paragraph{Electronic Countermeasures.}  Some naval targets are allowed to employ countermeasures against ARH and IRH ASMs.  Naval vessels that are alerted to ASMs may employ jammers and decoys on any turn thereafter, and announce whether they will do so in the Aircraft Decisions Phase.
+\subsection{Electronic Countermeasures}  Some naval targets are allowed to employ countermeasures against ARH and IRH ASMs.  Naval vessels that are alerted to ASMs may employ jammers and decoys on any turn thereafter, and announce whether they will do so in the Aircraft Decisions Phase.
 
-\paragraph{Decoys.} \label{rule:asm-decoys} Vessels employing decoys apply their decoy value as a modifier to all ASM lock-on attempts against the vessel as well as to to-hit rolls and rolls on the ASM hits (Table \ref{table:asm-hits}).  Additionally, each Air Radar Phase, after all lock-ons have been rolled for, vessels employing decoys may attempt to break ASM locks.   Roll a die for each lock-on, and on a roll equal to or less than the decoy value the lock is broken.
+\subsection{Decoys} \label{rule:asm-decoys} Vessels employing decoys apply their decoy value as a modifier to all ASM lock-on attempts against the vessel as well as to to-hit rolls and rolls on the ASM hits (Table \ref{table:asm-hits}).  Additionally, each Air Radar Phase, after all lock-ons have been rolled for, vessels employing decoys may attempt to break ASM locks.   Roll a die for each lock-on, and on a roll equal to or less than the decoy value the lock is broken.
 
 Before a target's decoy value is used as a die modifier or break-lock roll, it is reduced (to a minimum of zero) by any ECCM value the ASM (or air radar, see below) might have.
 
@@ -184,9 +184,9 @@ Versus ARH ASMs only, if the sea state is moderate or heavy and the naval vessel
 
 Aircraft radar lock-ons are not affected by decoys unless they are being used for radar bombing, in which case they are treated as ARH ASM locks and may be broken or modified by decoys.
 
-\paragraph{Jamming.}  Vessels using jammers may add their jam value to their decoy value for rolls for ARH ASM lock-ons, breaking lock-ons, and to hit rolls. Jamming has no effect on ASM hits (Table \ref{table:asm-hits}). If the ASM is within nine hexes (slant range) of the target, reduce the ship's jam value by one.
+\subsection{Jamming}  Vessels using jammers may add their jam value to their decoy value for rolls for ARH ASM lock-ons, breaking lock-ons, and to hit rolls. Jamming has no effect on ASM hits (Table \ref{table:asm-hits}). If the ASM is within nine hexes (slant range) of the target, reduce the ship's jam value by one.
 
-\paragraph{Naval Alert.}  Naval vessels may not employ jammers or decoys unless they are alerted to the presence of ASMs.  Unless specified otherwise, naval vessels do not begin a scenario alerted.  To become alerted, an unalerted naval vessel may make a die roll the first time one of the following events occurs in a game (if there is more than one friendly ship on-board in a scenario, only the vessel affected by the event rolls for alert):
+\subsection{Naval Alert}  Naval vessels may not employ jammers or decoys unless they are alerted to the presence of ASMs.  Unless specified otherwise, naval vessels do not begin a scenario alerted.  To become alerted, an unalerted naval vessel may make a die roll the first time one of the following events occurs in a game (if there is more than one friendly ship on-board in a scenario, only the vessel affected by the event rolls for alert):
 \begin{itemize}
     \item A launch or mid-course guiding aircraft attempts lock-on to a friendly naval target.
     \item An ARH ASM attempts lock-on to a friendly naval target.
@@ -203,15 +203,15 @@ On a roll of 7 or less, the vessel is alerted and may freely use jammers and dec
 
     Air to Surface Missiles (ASMs) are cruise missiles capable of homing in on their targets.  They are very long-ranged and rely on programmed flight profiles until within a terminal homing range.
 
-    \paragraph{ASM Types.} ASMs vary according to their seeker type: TV and IR seekers (like smart weapons); Active Radar Homing (ARH) seekers, and Infra-Red Homing (IRH) seekers.
+    \subsection{ASM Types} ASMs vary according to their seeker type: TV and IR seekers (like smart weapons); Active Radar Homing (ARH) seekers, and Infra-Red Homing (IRH) seekers.
 
-    \paragraph{ASM Launch.} The aircraft must be in level flight with wings level, recovered from any BT or greater turn and not turning or maneuvering at the end of its flight.  ASMs are launched in the Air-to-Air Missile Phase.
+    \subsection{ASM Launch} The aircraft must be in level flight with wings level, recovered from any BT or greater turn and not turning or maneuvering at the end of its flight.  ASMs are launched in the Air-to-Air Missile Phase.
 
     TV and IR ASMs must be aimed at the target as for smart weapons and may not be launched at unsighted targets unless using the datalink pod rules (see rule \ref{rule:data-link-pods}).  ARH and IRH ASMs do not require aiming, do not have to be on a LOA, and may be launched at unsighted targets.  An aircraft launching ASMs may not launch other missile types.  Up to two ASMs may be launched in a turn, provided they are of the same type.  A launch roll is required as for other missiles.
 
-    \paragraph{ASM Movement.} ASMs have a first turn flight speed equal to their listed cruise speed plus half the launch aircraft's speed.  On subsequent turns they fly at cruise speed.  It costs an ASM one VFP to climb one or two altitude levels, or dive two or three altitude levels.   An ASM may descend one level per HFP, and changing between flight types is handled as for air-to-air missiles.  No maneuvers are allowed except for slides, though ASMs in a terminal dive may vertically roll once, after spending any two or more consecutive VFPs.  ASMs turn like air-to-air missiles, though they may not turn except while in their terminal phase, or as allowed by their guidance mode.  ASM turning is unaffected by T-level flight.
+    \subsection{ASM Movement} ASMs have a first turn flight speed equal to their listed cruise speed plus half the launch aircraft's speed.  On subsequent turns they fly at cruise speed.  It costs an ASM one VFP to climb one or two altitude levels, or dive two or three altitude levels.   An ASM may descend one level per HFP, and changing between flight types is handled as for air-to-air missiles.  No maneuvers are allowed except for slides, though ASMs in a terminal dive may vertically roll once, after spending any two or more consecutive VFPs.  ASMs turn like air-to-air missiles, though they may not turn except while in their terminal phase, or as allowed by their guidance mode.  ASM turning is unaffected by T-level flight.
 
-    \paragraph{Enroute Guidance Modes.}  ASMs fly according to an enroute guidance mode selected at the moment of launch.  The ASM may be capable of the following modes, as noted on the Missile Data Tables:
+    \subsection{Enroute Guidance Modes}  ASMs fly according to an enroute guidance mode selected at the moment of launch.  The ASM may be capable of the following modes, as noted on the Missile Data Tables:
     \begin{itemize}
 
         \item \itemparagraph{Autopilot Mode.} The missile flies straight ahead after launch.  All missiles are capable of this mode.
@@ -232,7 +232,7 @@ On a roll of 7 or less, the vessel is alerted and may freely use jammers and dec
 
     \end{itemize}
 
-    \paragraph{Flight Profiles.}  Regardless of the flight mode used when they are launched, ASMs must use either surface skimming or terminal dive profiles (SS, SS+ or TD) during their movement, and may not deviate from them.  (Exception: pop-up missiles.)
+    \subsection{Flight Profiles}  Regardless of the flight mode used when they are launched, ASMs must use either surface skimming or terminal dive profiles (SS, SS+ or TD) during their movement, and may not deviate from them.  (Exception: pop-up missiles.)
 
     \begin{itemize}
 
@@ -248,9 +248,9 @@ On a roll of 7 or less, the vessel is alerted and may freely use jammers and dec
 
     \end{itemize}
 
-    \paragraph{TV/IR Guidance.} TV and IR ASMs may only attack the targets listed in rule \ref{rule:smart-weapons}.  After launch, they guide toward the target like smart weapons. If an INAV capable TV/IR ASM is launched at an unsighted target, the launch aircraft need not be on a LOA (although the offset aimpoint procedure must still be completed, see rule \ref{rule:offset-aimpoint-bombing}).  However, if the missile is not on a LOA at the moment it comes within sighting range of the target, it is removed from play.
+    \subsection{TV/IR Guidance} TV and IR ASMs may only attack the targets listed in rule \ref{rule:smart-weapons}.  After launch, they guide toward the target like smart weapons. If an INAV capable TV/IR ASM is launched at an unsighted target, the launch aircraft need not be on a LOA (although the offset aimpoint procedure must still be completed, see rule \ref{rule:offset-aimpoint-bombing}).  However, if the missile is not on a LOA at the moment it comes within sighting range of the target, it is removed from play.
 
-    \paragraph{ARH/IRH Terminal Guidance.} For ARH and IRH ASMs, if a target is within the ASMs terminal guidance range AND its seeker lock-on arc in the Air Radar Phase, the missile must immediately attempt a lock-on against it.  If this is obtained, the missile enters its terminal phase and will self-guide to the target like an AHM air-to-air missile.  An ASM is allowed to use its turning ability on all game-turns while it is in terminal phase.
+    \subsection{ARH/IRH Terminal Guidance} For ARH and IRH ASMs, if a target is within the ASMs terminal guidance range AND its seeker lock-on arc in the Air Radar Phase, the missile must immediately attempt a lock-on against it.  If this is obtained, the missile enters its terminal phase and will self-guide to the target like an AHM air-to-air missile.  An ASM is allowed to use its turning ability on all game-turns while it is in terminal phase.
 
     ARH ASMs may lock-on to any radar significant target; IRH ASMs may only lock on to ships.  Radar missiles in Autopilot or Search mode will attempt lock-on to the first eligible target that enters their terminal guidance range.  Radar missiles in INAV mode will attempt lock-on only when they are within their terminal guidance range of their original target.
 
@@ -258,11 +258,11 @@ On a roll of 7 or less, the vessel is alerted and may freely use jammers and dec
 
     In the case of anti-ship missiles, if more than one possible target is within the seeker's arc and range at the moment the lock-on attempt is made, the choice of target is determined randomly. Scenario instructions may designate some helicopter counters in play as having blip enhancers. Such units become radar significant ‘ships' for the purposes of ARH ASM lock-on and should be represented by dummy ship counters.  If an ASM attacks such a helicopter, it will destroy it on a To-Hit roll of 1 (do not modify); otherwise the attack fails.
 
-    \paragraph{Home On Jam.} If an ASM has Home-on-Jam capability it may lock-on and guide toward a jamming target provided it does not have a guidance lock-on. If the target ceases jamming, the missile will continue flying toward the target and attempt to reacquire the target using its normal guidance during the next lock-on phase.  If it does not acquire the target with a lock-on during the Air Radar Phase, the ASM will revert to Search Pattern Mode.
+    \subsection{Home On Jam} If an ASM has Home-on-Jam capability it may lock-on and guide toward a jamming target provided it does not have a guidance lock-on. If the target ceases jamming, the missile will continue flying toward the target and attempt to reacquire the target using its normal guidance during the next lock-on phase.  If it does not acquire the target with a lock-on during the Air Radar Phase, the ASM will revert to Search Pattern Mode.
 
-    \paragraph{ASM Vulnerability.}  Because of their size and slow speed, most ASMs may be sighted and attacked like aircraft.  The External Stores Table lists the visibility and target size numbers for each missile.  For the purposes of visual sighting; detection and lock-up by radar; attack by guns, air-to-air missiles, SAMs and AAA, ASMs are treated exactly like aircraft.  Any hit result of L or greater destroys the missile.  Note that small arms fire has no effect against ASMs, though other forms of barrage fire do.
+    \subsection{ASM Vulnerability}  Because of their size and slow speed, most ASMs may be sighted and attacked like aircraft.  The External Stores Table lists the visibility and target size numbers for each missile.  For the purposes of visual sighting; detection and lock-up by radar; attack by guns, air-to-air missiles, SAMs and AAA, ASMs are treated exactly like aircraft.  Any hit result of L or greater destroys the missile.  Note that small arms fire has no effect against ASMs, though other forms of barrage fire do.
 
-    \paragraph{ASM Attacks.} ASMs resolve their attack upon entering the target's hex at the same altitude.  If the target is a ground target, resolve the attack as for smart or guided weapons, applying modifiers only for odds ratio, terrain, datalink (if any) and smart guidance.
+    \subsection{ASM Attacks} ASMs resolve their attack upon entering the target's hex at the same altitude.  If the target is a ground target, resolve the attack as for smart or guided weapons, applying modifiers only for odds ratio, terrain, datalink (if any) and smart guidance.
 
     ASMs attacking naval targets must first roll a die, modifying for jamming and decoys (see rule \ref{rule:asms}
     ).  If the roll is equal to or less than the missile's listed To-Hit roll, it hits the target; otherwise it misses and is removed from play.

@@ -8,7 +8,7 @@ This chapter describes how the map hexes are utilized to position counters durin
 \section{Basic Elements of Position}
 \label{rule:position}
 
-\paragraph{Aircraft and Missile Counters.}
+\subsection{Aircraft and Missile Counters}
 Each aircraft and missile counter has a position which is defined by its map location, facing, and altitude.
 
 \begin{itemize}
@@ -21,13 +21,13 @@ Each aircraft and missile counter has a position which is defined by its map loc
 \end{itemize}
 
 \changedin{3A}{3A-ship-facing}{
-    \paragraph{Ground and Naval Unit Counters.}
+    \subsection{Ground and Naval Unit Counters}
     Ground combat units and naval units have their positions defined simply by map location. They are always placed wholly within hexes and never on hexsides. Ground units never consider facing\addedin{1C}{1C-apj-23-errata}{ (except heavy AAA units under advanced rule \ref{rule:heavy-aaa-unit-facing})}, but large naval units must be faced in specific directions as for aircraft and missiles.
 }{
-    \paragraph{Ground Unit Counters.}
+    \subsection{Ground Unit Counters}
     Each ground unit counter has a position which is defined simply by its map location. They are always placed wholly within hexes and never on hexsides. Ground units never consider facing (except heavy AAA units under advanced rule \ref{rule:heavy-aaa-unit-facing}). See Figure~\ref{figure:map-location-for-ground-units}.
 
-    \paragraph{Ship Counters.}
+    \subsection{Ship Counters}
     Each ship counter has a position which is defined by its map location and facing. They are always placed wholly within hexes and never on hexsides. Use the silhouette on the counter to show facing by pointing the bow of the ship in one of the six possible directions towards adjacent hexes. Unlike aircraft and missiles, ships cannot face towards hexsides. See Figure~\ref{figure:map-location-for-ships}.
 }
 
@@ -40,12 +40,12 @@ Each aircraft and missile counter has a position which is defined by its map loc
 
 It is allowed, within the limits given below, for more than one counter to be in the same position on the map at the same time. When counters end up on top of other counters at the end of a turn, they are considered stacked. Stacking restrictions apply only al the end of a turn after all moves are completed.
 
-\paragraph{In The Air.}
+\subsection{In The Air}
 Aircraft and missiles may freely fly through hexes or hexsides containing other game counters. They may freely stack on top of ground and naval units. They may freely stack with other aircraft and missiles that are not at the same altitude level. However, no more than two friendly aircraft may safely end up stacked together at the same altitude level (unless in Close Formation). Aircraft from opposing sides may not stack together at the same altitude safely. If these last two situations occur, you must check for collisions.
 
 Exception: Up to four aircraft may be stacked together and may safely fly together at the same altitude while in a close formation. See advanced rule \ref{rule:formations}.
 
-\paragraph{On The Ground.}
+\subsection{On The Ground}
 No more than four ground unit counters may ever stack in the same ground terrain hex. No more than four small naval unit counters may ever stack in the same water, coastal, or river terrain hex. No more than two large naval unit counters may ever stack in the same water hex. When taxiing on the ground, up to four aircraft may move together in a stack.
 
 \section{Aircraft Collisions}
@@ -61,10 +61,10 @@ Collisions are possible during the Flight Phase whenever an aircraft executes a 
         \itemaddedin{2B}{2B-stacking}{If more than four friendly aircraft are stacked at the same altitude after all aircraft have moved, even if they are in a close formation.}
 \end{itemize}
 
-\paragraph{Collision Resolution.}
+\subsection{Collision Resolution}
 \addedin{2B}{2B-collisions}{Potential collisions resulting from head-on gun attacks are resolved immediately after the attack. Other potential collisions are resolved at the end of the flight phase.} For each potential collision, the player who last moved into the position must roll the die. On a roll of 1, his aircraft collides with one of the others. Determine which aircraft it collides with randomly. Both aircraft immediately roll on the 10 column of \changedin{1B}{1B-tables}{the Damage table}{Table \ref{table:aircraft-damage}} to determine their damage.
 
-\paragraph{Collision Exceptions:} There are \changedin{1C}{1C-apj-36-errata}{two}{three} exceptions to the Potential Collision rule.
+\subsection{Collision Exceptions} There are \changedin{1C}{1C-apj-36-errata}{two}{three} exceptions to the Potential Collision rule.
 
 \begin{itemize}
     \item An aircraft tailing another will not collide with that aircraft.
@@ -82,7 +82,7 @@ Collisions are possible during the Flight Phase whenever an aircraft executes a 
 
     Other than in the one exceptional case noted subsequently, the range in hexes from one element to another is determined using the following procedure.
 
-    \paragraph{Range Procedure.}
+    \subsection{Range Procedure}
     The range has two components, the horizontal range and the vertical range. They are determined and combined as follows:
 
     \input{figures/figure-range}
@@ -106,14 +106,14 @@ Collisions are possible during the Flight Phase whenever an aircraft executes a 
 
     The horizontal range, vertical range, and range are always non-negative integers.
 
-    \paragraph{Range Exception.}
+    \subsection{Range Exception}
     The normal range procedure is \emph{not} used for air-to-air gun attacks. Instead, the range is determined according to rule~\ref{rule:air-to-air-gun-combat}.
 
 }
 
 \addedin{2B}{2B-closeness}{
 
-    \paragraph{Closeness.}
+    \subsection{Closeness}
     \label{rule:closeness}
 
     Range is used to determine closeness. If two aircraft have different ranges from a reference element, the one with the smaller range is considered to be closer to the reference element. If two aircraft have the same range, they are considered to be equally close.
