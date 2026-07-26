@@ -166,9 +166,9 @@
         \original@tablecaption{#1}{#2}
     }{
         \ifaids
-            \textaddedin{1B}{1B-tables}{Table~\ref{#1}: #2}
+            \textaddedin{1B}{1B-tables}{\textbf{TABLE~\ref{#1}: \MakeUppercase{#2}}}
         \else
-            \textaddedin{1B}{1B-tables}{\caption{#2\label{#1}}}
+            \textaddedin{1B}{1B-tables}{\caption{\MakeUppercase{#2}\label{#1}}}
         \fi
     }
     \par
@@ -180,7 +180,7 @@
     \silentlychangedin{1B}{1B-tables}{
         \original@tablecaptioncontinued{#2}
     }{
-        \textaddedin{1B}{1B-tables}{Table~\ref{#1} (continued): #2}
+        \textaddedin{1B}{1B-tables}{\textbf{TABLE~\ref{#1} (continued): \MakeUppercase{#2}}}
         \par
     }
     \medskip
@@ -188,13 +188,13 @@
 
 \makeatother
 
-\newcommand{\figurecaption}[3][]{
+\renewcommand{\figurecaption}[3][]{
     \ifaids
         \par
         \medskip
-        \textaddedin{1B}{1B-figures}{Figure~\ref{#2}: #3 {\normalfont #1}}
+        \textaddedin{1B}{1B-figures}{\textbf{FIGURE~\ref{#2}: \MakeUppercase{#3}} {\normalfont #1}}
     \else
-        \textaddedin{1B}{1B-figures}{\caption{#3\label{#2} {\normalfont #1}}}
+        \textaddedin{1B}{1B-figures}{\caption{\MakeUppercase{#3}\label{#2} {\normalfont #1}}}
     \fi
 }
 
@@ -215,7 +215,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Tables
-
 
 \newcommand{\advancedrulemark}{\tablenotemark{*}}
 \newcommand{\advancedruletext}{\tablenotetext{*}{Advanced rule.\space}}
