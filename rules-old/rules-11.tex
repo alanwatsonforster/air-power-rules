@@ -96,16 +96,33 @@ Padlocking is an administrative procedure used only in the Visual Sighting Phase
 \section{Sighting Ground and Naval Units}
 \label{rule:sighting-ground-and-naval-units}
 
-Each ground or naval unit (or target terrain type) has a sighting number on its counter. The sighting number is the range (in terms of hexes, count two altitude levels as one hex) at which it becomes automatically sighted to an aircraft. Any aircraft which starts a game-turn within that range may see and attack the sighted ground units and/or targets.
+Each ground or naval unit (or target terrain type) has a sighting number on its counter. The sighting number is the range (in terms of hexes, count two altitude levels as one hex) at which it becomes automatically sighted to an aircraft. 
+\deletedin{3W}{3W-continous-ground-sighting}{
+Any aircraft which starts a game-turn within that range may see and attack the sighted ground units and/or targets.
+}
 
-\subsection{Ground Sighting Procedure} During the visual sighting phase, aircraft may either participate in searching for enemy aircraft and missiles or they may sight ground targets.
+\subsection{Ground Sighting Procedure} 
+\changedin{3W}{3W-continuous-ground-sighting}{
+    During the visual sighting phase, aircraft may either participate in searching for enemy aircraft and missiles or they may sight ground targets.
 
-If they choose to sight ground units, two adjacent angle-off arcs about the aircraft may be looked into (except aircraft may not look into their blind arcs). Ground units and targets within their printed sighting range to the searching aircraft are automatically spotted unless;
+    If they choose to sight ground units, two adjacent angle-off arcs about the aircraft may be looked into (except aircraft may not look into their blind arcs).
+ Ground units and targets within their printed sighting range to the searching aircraft are automatically spotted unless;
+ }{
+    During the visual sighting phase, aircraft must declare whether they are sighting enemy aircraft and missiles or ground units and targets. If they chose to sight ground units and targets, they must select two adjacent arcs (outside of their blind arcs) for sighting.
+    Aircraft that are sighting enemy aircraft and missiles cannot sight ground units or targets.
+    Aircraft that are sighting ground unts or targets cannot sight enemy aircraft or missiles, except as allowed by the incidental sighting rule below.
+
+    If an aircraft is sighting ground units or targets, then while it moves, in the ground sighting stage before expending each FP, ground units and targets within their sighting range and within the sighting arcs at the current position of the aircraft are automatically sighted unless:
+ }
 
 \begin{itemize}
     \item The LINE OF SIGHT is blocked by terrain.
     \item The targets or ground units are camouflaged.
 \end{itemize}
+
+\addedin{3W}{3W-continuous-ground-sighting}{
+    Once a ground unit or target is sighted, it remains sighted for the rest of the game turn even if the aircraft moves so that the ground unit or target is no longer in the sighting arcs.
+}
 
 Note: Sighting ground targets (or FAC marks) is an individual affair. Only the aircraft looking for them, can see them. Aircraft looking for ground units do not normally participate in the sighting of aircraft or missiles. Exception, see incidental sighting rule below.
 
@@ -152,7 +169,17 @@ There exists a blocked line of sight between the aircraft and target if:
 
 Note: Aircraft deliberately flying so that terrain is blocking a line of sight between them and a ground unit, are using “Terrain Masking”.
 
-\subsection{Effects of Camouflage} Ground units may be camouflaged as a result of being in certain terrain types, or if designated as camouflaged in the scenario instructions. The sighting range of a camouflaged ground unit is half its normal range. Also, sighting is no longer automatic. When sighting a camouflaged unit, roll the die. On a 5 or less it is spotted. A \changedin{1E}{AWF}{minus 2}{\minus{2}} modifier applies to the roll if the target is marked by a FAC with smoke, or by laser if the sighting aircraft has laser spot tracker technology. Any crew quality or eyesight modifiers also apply unless VAS is used.
+\subsection{Effects of Camouflage} Ground units may be camouflaged as a result of being in certain terrain types, or if designated as camouflaged in the scenario instructions. The sighting range of a camouflaged ground unit is half its normal range. Also, sighting is no longer automatic. 
+\changedin{3W}{3W-continuous-ground-sighting}{
+    When sighting a camouflaged unit,
+}{
+    If an aircraft is sighting ground units or targets, then while it moves, in the ground sighting stage before expending each FP, it may attempt to sight camouflaged units within their reduced sighting range and within the sighting arcs.
+    When attempting to sight a camouflaged unit,
+}%
+roll the die. On a 5 or less it is spotted. A \changedin{1E}{AWF}{minus 2}{\minus{2}} modifier applies to the roll if the target is marked by a FAC with smoke, or by laser if the sighting aircraft has laser spot tracker technology. Any crew quality or eyesight modifiers also apply unless VAS is used. 
+\addedin{3W}{3W-continuous-ground-sighting}{
+    An aircraft may only make one attempt to sight each camouflaged unit each game turn.
+}
 
 \subsection{Effects of Activity by Camouflaged Units}  Any camouflaged AAA or SAM units which fired or launched missiles on the previous game turn may be sighted out to normal range with a die roll as above.
 
@@ -244,8 +271,12 @@ When a camouflaged AAA or SAM unit fires or launches a missile, it becomes “de
 
     \subsection{I.D. Procedure.} 
     Visual identification of ground and Naval units may occur before a unit is attacked or fires. 
+    \changedin{3W}{3W-continous-ground-sighting}{
     \changedin{2B}{2B-ground-unit-identification}{Aircraft may attempt to visually I.D. targets in the sighting phase after sighting them.}{Aircraft may attempt to visually I.D. sighted ground and naval units in the sighting phase.}
     Roll once for each sighted unit in an aircraft's searched arc. 
+    }{
+        While moving, in the ground identification stage before expending each FP, and aircraft may attempt to identify any sighted ground units. An aircraft may only make one attempt to identify each ground unit each game turn. To attempt to identify the unit, roll a die.
+    }%
     If the number is less than or equal to 10 minus the range in hexes (counting 2 altitude levels as a hex), the unit is identified and flipped over to its non-generic side. 
     Once a unit is identified through visual sighting or by attack or when it fires, it remains I.D.'d for the rest of the game.
 
