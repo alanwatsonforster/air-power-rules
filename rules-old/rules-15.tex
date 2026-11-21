@@ -22,10 +22,6 @@ To launch IRMs, the firing aircraft must:
 
 \subsection{IR Uncage Technology FOV} \label{rule:ir-uncage} Some aircraft have the ability to uncage a missile's IR seeker head allowing it to swivel freely to acquire targets over a wider area. An uncaged IR seeker always has an FOV equal to a 180{deg} radar arc. The act of uncaging missiles is declared in the Aircraft Decisions Phase. The technology section of the ADC indicates whether an aircraft has “IR Uncage” ability or not. Only “I”, “M”, or “A” type seekers can be uncaged.
 
-\addedin{1B}{1B-tables}{
-    \input{tables/table-irm-field-of-view-limits}
-    \input{tables/table-irm-angle-off-limits}
-}
 
 \subsection{Seeker Head Launch Angle-Off Limits} IR seeker heads cannot lock-up a target unless the firer is within the listed target angle-off arcs as given \changedin{1B}{1B-tables}{below by seeker type}{by Table~\ref{table:irm-seeker-limits}}.
 
@@ -40,6 +36,11 @@ If more than one aircraft, including friendlies, are in an UNCAGED FOV, the firi
 \addedin{1C}{1C-apj-27-qa/1C-apj-37-qa}{A separate roll is made for each missile fired after it is successfully launched.}
 
 \subsection{IRM Tracking Requirements} Once launched, all IRMs have an uncaged FOV. At the end of every game turn, and at the end of each proportional move for the missile, the target must still be in the missile's FOV otherwise the missile loses its lock-up and becomes unguided. At the instant a missile becomes unguided it is removed from play.
+
+\addedin{1B}{1B-tables}{
+    \input{tables/table-irm-field-of-view-limits}
+    \input{tables/table-irm-angle-off-limits}
+}
 
 \section{IRM Countermeasures}
 \label{rule:irm-countermeasures}

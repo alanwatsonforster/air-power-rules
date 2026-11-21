@@ -13,13 +13,10 @@ An aircraft may either climb or dive in a turn, but it may not do both.  When cl
 
 \subsection{Altitude Structure} In the game, the atmosphere is divided into 1,000-foot levels. These altitude levels are further grouped into altitude bands, each several levels thick. Aircraft and missile performance vary within each altitude band. An aircraft's altitude at the beginning of a turn is noted on the Start Altitude line of the aircraft log. A missile's altitude at the beginning of a turn is noted on the Missile Notes line of the launching aircraft's aircraft log. An aircraft may not climb higher than its ceiling. The altitude structure is depicted \changedin{1B}{1B-tables}{below:}{in Table~\ref{table:altitude-bands}.}
 
-\addedin{1B}{1B-tables}{
-    \input{tables/table-altitude-bands}
-}
-
 \subsection{Vertical Flight Points}
 
 FPs spent to gain or lose altitude levels are called Vertical Flight Points (VFPs). VFPs vary in the amount of altitude increase or decrease provided depending on the specific type of climb or dive used. VFPs are usually available as 1/3 or 2/3 of the total FPs; \changedin{1B}{1B-tables}{the 1/3-2/3 Table}{Table~\ref{table:fractions}} is a quick reference to the accepted proportions of VFPs to FPs available for most aircraft speeds. VFPs are only spent as full FPs. When \changedin{1B}{1B-tables}{the 1/3-2/3 Table}{Table~\ref{table:fractions}} provides half VFPs, they are ignored. \notein{1C}{AWF: APJ 21 QA, APJ 22 QA, and APJ 23 QA have comments on this, but they are superseded by the following change in the APJ 23 errata.}\changedin{1C}{1C-apj-23-errata}{A single VFP will never gain or lose more than two altitude levels.}{A single VFP will normally never gain or lose more than two altitude levels. (\changedin{2A}{2A-super-climbs}{The exception is in vertical dives where up to three levels may be lost per VFP.}{The exceptions are vertical dives, where up to three levels may be lost per VFP, and aircraft with CC values of 6.0 or more, which in zoom and sustained climbs can use one VFP to gain three levels.})}
+
 
 \section{Climbing Flight}
 \label{rule:climbing-flight}
@@ -42,6 +39,10 @@ A zoom climb is a maneuvering climb in which the aircraft gains altitude more fr
     \item\itemparagraph{ZC Decel Points:} \changedin{2A}{2A-zoom-climbs}{In the first turn of \changedin{1C}{1C-apj-36-errata}{a Zoom Climb, the aircraft}{climbing flight, an aircraft in a ZC} receives 1.0 decel point per altitude level gained; on \changedin{1C}{1C-apj-36-errata}{subsequent consecutive turns of ZC, the aircraft}{the second or subsequent consecutive turns of climbing flight, an aircraft in a ZC} receives 1.5 decel points per altitude level gained.}{An aircraft in a ZC receives 1.0 DP per altitude level gained.}
 
 \end{itemize}
+
+\addedin{1B}{1B-tables}{
+    \input{tables/table-altitude-bands}
+}
 
 \subsection{Sustained Climbs}
 \label{rule:sustained-climbs}

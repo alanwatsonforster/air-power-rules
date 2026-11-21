@@ -78,21 +78,30 @@
 
 % Floats
 
+% Align floats in their own page or column to the top.
+% https://texfaq.org/FAQ-vertposfp
+
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+\newlength{\floattopsep}
+\setlength{\floattopsep}{5pt}
+
 \newenvironment{onecolumntablefloat}[1][tp]{
     \ifaids
-        \begin{table}[tp]
+        \begin{table}[ht!]
         \centering
     \else
         \silentlychangedin{1B}{1B-tables}{
-            \begin{table}[h!]
+            \begin{table}[ht!]
         }{
             \begin{table}[#1]
         }
     \fi
+    \vspace{\floattopsep}
 }{
     \end{table}
 }
-
 
 \newenvironment{onecolumntable}{
     \begin{minipage}{\columnwidth}
@@ -103,7 +112,16 @@
 }
 
 \newenvironment{twocolumntablefloat}[1][tp]{
-    \begin{table*}[#1]
+    \ifaids
+        \begin{table*}[ht!]
+    \else
+        \silentlychangedin{1B}{1B-tables}{
+            \begin{table*}[ht!]
+        }{
+            \begin{table*}[#1]
+        }
+    \fi
+    \vspace{\floattopsep}
     \setlength{\columnseprule}{0pt}
     \centering
 }{
@@ -118,24 +136,34 @@
 }
 
 \newenvironment{fullwidthtable}[1][tp]{
-    \begin{table*}[#1]
+    \ifaids
+        \begin{table*}[ht!]
+    \else
+        \silentlychangedin{1B}{1B-tables}{
+            \begin{table*}[ht!]
+        }{
+            \begin{table*}[#1]
+        }
+    \fi
+    \vspace{\floattopsep}
     \centering
 }{
     \end{table*}
 }
 
-\newenvironment{onecolumnfigure}[1][tbp]{
+\newenvironment{onecolumnfigure}[1][tp]{
     \ifaids
-        \begin{figure}[#1]
+        \begin{figure}[ht!]
         \centering
         \begin{minipage}{0.5\linewidth}
     \else
         \silentlychangedin{1B}{1B-figures}{
-            \begin{figure}[h!]
+            \begin{figure}[ht!]
         }{
             \begin{figure}[#1]
         }        
     \fi
+    \vspace{\floattopsep}
     \centering
 }{
     \ifaids
@@ -145,7 +173,17 @@
 }
 
 \newenvironment{twocolumnfigure}[1][tp]{
-    \begin{figure*}[#1]
+    \ifaids
+        \begin{figure*}[ht!]
+        \centering
+    \else
+        \silentlychangedin{1B}{1B-figures}{
+            \begin{figure*}[ht!]
+        }{
+            \begin{figure*}[#1]
+        }        
+    \fi
+    \vspace{\floattopsep}
     \centering
 }{
     \end{figure*}

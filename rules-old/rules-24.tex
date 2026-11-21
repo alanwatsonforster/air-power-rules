@@ -16,8 +16,6 @@ AAA units also have a maximum effective altitude. The bottom left hand number on
 Example: The range to an aircraft three hexes away from, and ten altitude levels above a AAA unit is eight. Even if a AAA unit has an effective range better than eight, it may not hit the above target unless its maximum effective altitude is also ten or greater.
 
 \subsection{AAA Roll To Hit}
-\input{tables/table-aaa-unit-attack-modifiers.tex}
-\input{tables/table-djm-and-chaff-effects-against-fcrs.tex}
 The three numbers appearing in the middle row of the unfired side of the unit are the base “Roll to hit” numbers corresponding to each of the three effective ranges. When a AAA attack is announced against an aircraft, these numbers are referenced and a die is rolled and modified \changedin{1B}{1C-tables}{as appropriate}{according to Tables \ref{table:aaa-unit-attack-modifiers} and \ref{table:djm-and-chaff-effects-against-fcrs}}. If the result is less than or equal to the Roll to Hit number, a hit is achieved.
 
 Note:  If the roll to hit number is a zero, this means the gun cannot normally hit the target without the help of die roll modifiers which reduce the roll to zero or less.
@@ -25,6 +23,9 @@ Note:  If the roll to hit number is a zero, this means the gun cannot normally h
 \subsection{Attack Rating} The middle number on the bottom row of the unfired side of the AAA unit is its listed attack rating. AAA units have variable attack ratings however. The listed attack rating represents the maximum allowed attack rating that the unit can have. Each time a hit is achieved through aimed or plotted fire, roll the die again. If the result is greater than or equal to the AAA unit's maximum rating, then the rating is used in conjunction with the damage tables. If the second roll was less than the maximum rating, then the number on the die roll is used for the unit's attack rating. Once the attack rating is determined, roll for damage normally.
 
 Chance hits achieved in barrage fire zones or plotted fire zones are always resolved with an attack rating of 1 or 2 (depending on gun size), regardless of the unit's maximum allowed attack rating.
+
+\input{tables/table-aaa-unit-attack-modifiers.tex}
+\input{tables/table-djm-and-chaff-effects-against-fcrs.tex}
 
 \subsection{AAA Damage} Damage to aircraft is determined using the Damage tables as per Rule \ref{rule:aircraft-damage-resolution}.
 
